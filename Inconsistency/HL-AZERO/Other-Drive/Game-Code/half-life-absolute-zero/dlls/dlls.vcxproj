@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\vector.cpp" />
+    <ClCompile Include="..\config\external_lib_include.cpp" />
+    <ClCompile Include="..\game_shared\util\util_entity.cpp" />
+    <ClCompile Include="..\game_shared\util\util_printout.cpp" />
+    <ClCompile Include="..\game_shared\util\util_shared.cpp" />
+    <ClCompile Include="..\game_shared\util\util_version.cpp" />
+    <ClCompile Include="..\game_shared\voice_gamemgr.cpp" />
+    <ClCompile Include="..\pm_shared\pm_debug.c" />
+    <ClCompile Include="..\pm_shared\pm_math.c" />
+    <ClCompile Include="..\pm_shared\pm_printout.c" />
+    <ClCompile Include="..\pm_shared\pm_shared.c" />
+    <ClCompile Include="basemonster.cpp" />
+    <ClCompile Include="cbase.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="client_message.cpp" />
+    <ClCompile Include="combat.cpp" />
+    <ClCompile Include="decals.cpp" />
+    <ClCompile Include="defaultai.cpp" />
+    <ClCompile Include="entity\aflock.cpp" />
+    <ClCompile Include="entity\agrunt.cpp" />
+    <ClCompile Include="entity\airtank.cpp" />
+    <ClCompile Include="entity\animating.cpp" />
+    <ClCompile Include="entity\apache.cpp" />
+    <ClCompile Include="entity\archer.cpp" />
+    <ClCompile Include="entity\archer_ball.cpp" />
+    <ClCompile Include="entity\barnacle.cpp" />
+    <ClCompile Include="entity\barney.cpp" />
+    <ClCompile Include="entity\bigmomma.cpp" />
+    <ClCompile Include="entity\bmodels.cpp" />
+    <ClCompile Include="entity\bullsquid.cpp" />
+    <ClCompile Include="entity\buttons.cpp" />
+    <ClCompile Include="entity\chumtoad.cpp" />
+    <ClCompile Include="entity\controller.cpp" />
+    <ClCompile Include="entity\controller_head_ball.cpp" />
+    <ClCompile Include="entity\controller_zap_ball.cpp" />
+    <ClCompile Include="entity\crossbowbolt.cpp" />
+    <ClCompile Include="entity\doors.cpp" />
+    <ClCompile Include="entity\effects.cpp" />
+    <ClCompile Include="entity\explode.cpp" />
+    <ClCompile Include="entity\floater.cpp" />
+    <ClCompile Include="entity\flyingmonster.cpp" />
+    <ClCompile Include="entity\friendly.cpp" />
+    <ClCompile Include="entity\func_break.cpp" />
+    <ClCompile Include="entity\func_door_health.cpp" />
+    <ClCompile Include="entity\func_tank.cpp" />
+    <ClCompile Include="entity\gargantua.cpp" />
+    <ClCompile Include="entity\genericmonster.cpp" />
+    <ClCompile Include="entity\ggrenade.cpp" />
+    <ClCompile Include="entity\gib.cpp" />
+    <ClCompile Include="entity\gman.cpp" />
+    <ClCompile Include="entity\hassassin.cpp" />
+    <ClCompile Include="entity\hassault.cpp" />
+    <ClCompile Include="entity\headcrab.cpp" />
+    <ClCompile Include="entity\healthkit.cpp" />
+    <ClCompile Include="entity\hgrunt.cpp" />
+    <ClCompile Include="entity\hornet.cpp" />
+    <ClCompile Include="entity\hornet_kingpin.cpp" />
+    <ClCompile Include="entity\houndeye.cpp" />
+    <ClCompile Include="entity\h_battery.cpp" />
+    <ClCompile Include="entity\h_cine.cpp" />
+    <ClCompile Include="entity\h_cycler.cpp" />
+    <ClCompile Include="entity\ichthyosaur.cpp" />
+    <ClCompile Include="entity\islave.cpp" />
+    <ClCompile Include="entity\items.cpp" />
+    <ClCompile Include="entity\kingpin.cpp" />
+    <ClCompile Include="entity\kingpin_ball.cpp" />
+    <ClCompile Include="entity\leech.cpp" />
+    <ClCompile Include="entity\lights.cpp" />
+    <ClCompile Include="entity\maprules.cpp" />
+    <ClCompile Include="entity\monstermaker.cpp" />
+    <ClCompile Include="entity\mortar.cpp" />
+    <ClCompile Include="entity\nihilanth.cpp" />
+    <ClCompile Include="entity\nodes.cpp" />
+    <ClCompile Include="entity\osprey.cpp" />
+    <ClCompile Include="entity\panthereye.cpp" />
+    <ClCompile Include="entity\pathcorner.cpp" />
+    <ClCompile Include="entity\pickupwalker.cpp" />
+    <ClCompile Include="entity\plats.cpp" />
+    <ClCompile Include="entity\player.cpp" />
+    <ClCompile Include="entity\player_extra.cpp" />
+    <ClCompile Include="entity\rat.cpp" />
+    <ClCompile Include="entity\roach.cpp" />
+    <ClCompile Include="entity\scientist.cpp" />
+    <ClCompile Include="entity\scripted.cpp" />
+    <ClCompile Include="entity\snapbug.cpp" />
+    <ClCompile Include="entity\sound.cpp" />
+    <ClCompile Include="entity\soundent.cpp" />
+    <ClCompile Include="entity\spectator.cpp" />
+    <ClCompile Include="entity\squadmonster.cpp" />
+    <ClCompile Include="entity\squidspit.cpp" />
+    <ClCompile Include="entity\stukabat.cpp" />
+    <ClCompile Include="entity\subs.cpp" />
+    <ClCompile Include="entity\talkmonster.cpp" />
+    <ClCompile Include="entity\tentacle.cpp" />
+    <ClCompile Include="entity\triggers.cpp" />
+    <ClCompile Include="entity\turret.cpp" />
+    <ClCompile Include="entity\world.cpp" />
+    <ClCompile Include="entity\xen.cpp" />
+    <ClCompile Include="entity\zombie.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="gamerules.cpp" />
+    <ClCompile Include="gamerules_multiplay.cpp" />
+    <ClCompile Include="gamerules_singleplay.cpp" />
+    <ClCompile Include="gamerules_teamplay.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="healthmodule.cpp" />
+    <ClCompile Include="h_export.cpp" />
+    <ClCompile Include="monstersavestate.cpp" />
+    <ClCompile Include="monsterstate.cpp" />
+    <ClCompile Include="plane.cpp" />
+    <ClCompile Include="schedule.cpp" />
+    <ClCompile Include="skill.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="util_debugdraw.cpp" />
+    <ClCompile Include="util_model.cpp" />
+    <ClCompile Include="weapons.cpp" />
+    <ClCompile Include="weapon\chumtoadweapon.cpp" />
+    <ClCompile Include="weapon\crossbow.cpp" />
+    <ClCompile Include="weapon\crowbar.cpp" />
+    <ClCompile Include="weapon\egon.cpp" />
+    <ClCompile Include="weapon\gauss.cpp" />
+    <ClCompile Include="weapon\glock.cpp" />
+    <ClCompile Include="weapon\handgrenade.cpp" />
+    <ClCompile Include="weapon\hornetgun.cpp" />
+    <ClCompile Include="weapon\mp5.cpp" />
+    <ClCompile Include="weapon\python.cpp" />
+    <ClCompile Include="weapon\rpg.cpp" />
+    <ClCompile Include="weapon\satchel.cpp" />
+    <ClCompile Include="weapon\shotgun.cpp" />
+    <ClCompile Include="weapon\squeak.cpp" />
+    <ClCompile Include="weapon\tripmine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\vector.h" />
+    <ClInclude Include="..\config\build_settings.h" />
+    <ClInclude Include="..\config\external_lib_include.h" />
+    <ClInclude Include="..\config\ignore_warning_list.h" />
+    <ClInclude Include="..\config\version.h" />
+    <ClInclude Include="..\game_shared\util\cvar_custom.h" />
+    <ClInclude Include="..\game_shared\util\cvar_custom_info.h" />
+    <ClInclude Include="..\game_shared\util\cvar_custom_list.h" />
+    <ClInclude Include="..\game_shared\util\util_entity.h" />
+    <ClInclude Include="..\game_shared\util\util_preprocessor.h" />
+    <ClInclude Include="..\game_shared\util\util_printout.h" />
+    <ClInclude Include="..\game_shared\util\util_shared.h" />
+    <ClInclude Include="..\game_shared\util\util_version.h" />
+    <ClInclude Include="..\pm_shared\pm_debug.h" />
+    <ClInclude Include="..\pm_shared\pm_defs.h" />
+    <ClInclude Include="..\pm_shared\pm_info.h" />
+    <ClInclude Include="..\pm_shared\pm_materials.h" />
+    <ClInclude Include="..\pm_shared\pm_movevars.h" />
+    <ClInclude Include="..\pm_shared\pm_printout.h" />
+    <ClInclude Include="..\pm_shared\pm_shared.h" />
+    <ClInclude Include="entity\animating.h" />
+    <ClInclude Include="entity\archer.h" />
+    <ClInclude Include="entity\archer_ball.h" />
+    <ClInclude Include="entity\barnacle.h" />
+    <ClInclude Include="entity\barney.h" />
+    <ClInclude Include="entity\basebutton.h" />
+    <ClInclude Include="entity\basetoggle.h" />
+    <ClInclude Include="entity\chumtoad.h" />
+    <ClInclude Include="entity\controller_head_ball.h" />
+    <ClInclude Include="entity\controller_zap_ball.h" />
+    <ClInclude Include="entity\crossbowbolt.h" />
+    <ClInclude Include="entity\doors.h" />
+    <ClInclude Include="entity\effects.h" />
+    <ClInclude Include="entity\explode.h" />
+    <ClInclude Include="entity\floater.h" />
+    <ClInclude Include="entity\flyingmonster.h" />
+    <ClInclude Include="entity\friendly.h" />
+    <ClInclude Include="entity\func_break.h" />
+    <ClInclude Include="entity\func_door_health.h" />
+    <ClInclude Include="entity\gargantua.h" />
+    <ClInclude Include="entity\gib.h" />
+    <ClInclude Include="entity\hassault.h" />
+    <ClInclude Include="entity\healthkit.h" />
+    <ClInclude Include="entity\hgrunt.h" />
+    <ClInclude Include="entity\hornet.h" />
+    <ClInclude Include="entity\hornet_kingpin.h" />
+    <ClInclude Include="entity\items.h" />
+    <ClInclude Include="entity\kingpin.h" />
+    <ClInclude Include="entity\kingpin_ball.h" />
+    <ClInclude Include="entity\lights.h" />
+    <ClInclude Include="entity\maprules.h" />
+    <ClInclude Include="entity\nodes.h" />
+    <ClInclude Include="entity\panthereye.h" />
+    <ClInclude Include="entity\pickupwalker.h" />
+    <ClInclude Include="entity\plats.h" />
+    <ClInclude Include="entity\player.h" />
+    <ClInclude Include="entity\player_extra.h" />
+    <ClInclude Include="entity\scientist.h" />
+    <ClInclude Include="entity\scripted.h" />
+    <ClInclude Include="entity\snapbug.h" />
+    <ClInclude Include="entity\soundent.h" />
+    <ClInclude Include="entity\spectator.h" />
+    <ClInclude Include="entity\squadmonster.h" />
+    <ClInclude Include="entity\squidspit.h" />
+    <ClInclude Include="entity\stukabat.h" />
+    <ClInclude Include="entity\talkmonster.h" />
+    <ClInclude Include="entity\trains.h" />
+    <ClInclude Include="entity\turret.h" />
+    <ClInclude Include="entity\zombie.h" />
+    <ClInclude Include="weapon\chumtoadweapon.h" />
+    <ClInclude Include="weapon\crossbow.h" />
+    <ClInclude Include="weapon\crowbar.h" />
+    <ClInclude Include="weapon\egon.h" />
+    <ClInclude Include="weapon\gauss.h" />
+    <ClInclude Include="weapon\glock.h" />
+    <ClInclude Include="weapon\handgrenade.h" />
+    <ClInclude Include="weapon\hornetgun.h" />
+    <ClInclude Include="weapon\mp5.h" />
+    <ClInclude Include="weapon\python.h" />
+    <ClInclude Include="weapon\rpg.h" />
+    <ClInclude Include="weapon\satchel.h" />
+    <ClInclude Include="weapon\shotgun.h" />
+    <ClInclude Include="weapon\squeak.h" />
+    <ClInclude Include="weapon\tripmine.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6366ED8E-57FB-4037-BD4D-72765FE18D63}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">.\$(configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">.\$(configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\$(configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\$(configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>az</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <TargetName>az</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>az</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/dlls.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\;..\dlls;..\dlls\entity;..\dlls\weapon;..\common;..\pm_shared;..\engine;..\game_shared;..\game_shared\util;..\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;QUIVER;VOXEL;QUAKE2;VALVE_DLL;CLIENT_WEAPONS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\$(configuration)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(configuration)\</AssemblerListingLocation>
+      <ObjectFileName>.\$(configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>.\$(configuration)\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>.\$(configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\$(configuration)\$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\dlls.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\$(configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\$(configuration)\$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>.\$(configuration)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\$(configuration)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy ".\$(configuration)\$(TargetName).dll" "C:\Program Files (x86)\Valve\Half-Life NGHLv3\AbsoluteZero\dlls\az.dll"
+copy ".\$(configuration)\$(TargetName).pdb" "C:\Program Files (x86)\Valve\Half-Life NGHLv3\AbsoluteZero\dlls\az.pdb"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Profile/dlls.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\;..\dlls;..\dlls\entity;..\dlls\weapon;..\common;..\pm_shared;..\engine;..\game_shared;..\game_shared\util;..\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;QUIVER;VOXEL;QUAKE2;VALVE_DLL;CLIENT_WEAPONS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\$(configuration)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(configuration)\</AssemblerListingLocation>
+      <ObjectFileName>.\$(configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>.\$(configuration)\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BrowseInformationFile>.\$(configuration)\</BrowseInformationFile>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\$(configuration)\$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\dlls.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>.\$(configuration)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>.\$(configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\$(configuration)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy ".\$(configuration)\$(TargetName).dll" "C:\Program Files (x86)\Valve\Half-Life NGHLv3\AbsoluteZero\dlls\az.dll"
+copy ".\$(configuration)\$(TargetName).pdb" "C:\Program Files (x86)\Valve\Half-Life NGHLv3\AbsoluteZero\dlls\az.pdb"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\debug/dlls.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\dlls;..\dlls\entity;..\dlls\weapon;..\common;..\pm_shared;..\engine;..\game_shared;..\game_shared\util;..\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;QUIVER;VOXEL;QUAKE2;VALVE_DLL;CLIENT_WEAPONS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\$(configuration)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\$(configuration)\</AssemblerListingLocation>
+      <ObjectFileName>.\$(configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>.\$(configuration)\</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BrowseInformationFile>.\$(configuration)\</BrowseInformationFile>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\$(configuration)\$(TargetName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\dlls.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\$(configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>.\$(configuration)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>../lib/steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\$(configuration)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy ".\$(configuration)\$(TargetName).dll" "C:\Program Files (x86)\Valve\Half-Life NGHLv3\AbsoluteZero\dlls\az.dll"
+copy ".\$(configuration)\$(TargetName).pdb" "C:\Program Files (x86)\Valve\Half-Life NGHLv3\AbsoluteZero\dlls\az.pdb"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

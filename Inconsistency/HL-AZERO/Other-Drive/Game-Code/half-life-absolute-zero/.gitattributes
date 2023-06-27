@@ -1,0 +1,15 @@
+####################################################
+# New file, from the default C++ settings in GitHub Desktop.
+####################################################
+
+# Auto detect text files and perform LF normalization
+* text=auto
+###* text=false
+
+# Don't touch VS6 workspace/project line-endings, VS6 doesn't play well with different line endings in these files.
+# Strangely it still works with any line-ending in script files and the .def.
+# 'binary' keeps the line-endings from being changed, even though they are only made of text.
+# alternative:    text eol=crlf , to enforce the windows line-ending.
+*.dsw text eol=crlf
+*.dsp text eol=crlf
+

@@ -1,0 +1,180 @@
+\\ This is some shit ideas I had to apply the cut Day One anims so they don't go to waste, I know this is not 100% accurate to the beta, I don't even know if these animations were implemented at all. Feel free to add comments to discuss if some things don't make sense, or are not going to work within Goldsource's limits.
+
+=c1a0
+
+*Barney guarding the airlock
+
+Make him play his "standing" animations (barney guarding with his right hand ready to grab his pistol)
+
+Play "Looking" while you are far away from the room
+
+Play "Idle" while you are getting on the room
+
+Play "Halt" while you are in front of him, and make him say his line
+
+=c1a1 
+
+*add zombie throwing a scientist to a computer in(1)(2)
+a) The computer that exploded back at on c1a0
+
+b) any of the computers at the lab
+
+*place a scientist & a headcrab on the microwave room and make them play the soda machine crash animation(1)
+
+OR
+
+*place him on one of the Machines on the computer room
+
+*Scientist hanging from the bridge
+
+after he falls, make him play the swim, and swimming animation, not sure what to do after he does those animations
+
+a) place him on a safe place?
+
+b) use deadgate at the end of the water
+
+c) just make him dissapear
+
+*Bulljump cutscene
+
+On this animation, the scientist is running from something, but then it encounters a bullsquid, which jumps on him (or maybe just a poorly made animation, and the sci is just running from a bullsquid, which ends up killing him)
+
+We can place it here http://puu.sh/lNDc1/853ff9346c.jpg
+
+or here http://puu.sh/lNDjk/4b1f320fbd.jpg (1 and 3 are bullsquids, 2 is scientist) also we can be reverted, the scientist running to the metal door on 3, and 
+
+
+
+=c1a2
+
+*scientist banging the door next to the elevator
+
+1) Make him back up and stop trying to get it open, from there you can escort him.
+
+2) Make him crawl the window (crawlwindow in scientist) and;
+
+	a) Take the elevator, preventing the player to go back to a1a1 (if you rush him you can take the elevator with him)
+	b) Go to the dark room with the other scientists (if the door was unlocked).
+
+Optional : Make him play the startle_window animation like in opposing force
+
+*when you get through the window on the flooded floor, have one scientist play the jumpshock animation
+
+*classy barney & zombie fight, one thing that I noticed is the lack of sounds on both the zombie, barney, and specially the scientist witnessing everything
+
+the duo fighting can be fixed via .qc editing
+
+we should make the scientist play some animations while he is watching the fight, or he will be spamming his movements due to having an enemy in front of him
+
+- Waving when the animation starts, warning the guard.
+
+- Playing eyewipe when barney gets crushed on the wall, getting scared + wiping his eyes due to not believing what he saw would be a nice reaction to it // It seems it's an unused animation for the scare reaction, when you shoot around
+
+*Freezer
+
+On this section http://puu.sh/lzb7U/7975610540.png 
+
+Make the scientist play jerk_chicken animation, with the bullsquid also playing its animations, adding sound stuff via .qc editing.
+
+
+*Elevator to c1a3
+
+Watch a scientist climb the ladder from the other side of the hall, explaining why he is hanging from the elevator ladder.
+
+=c1a3
+
+*Vent fighting
+
+Both sdk and Day One, there are some unused animations regarding barney surviving this fight and laying on the floor, we can implement this as some sort of reward if the player waits 15 seconds or less
+
+If the player gets into the room through the vent maze, we can make the scientist play
+
+a) cpr from opposing force (on this animation the scientist fails to revive barney, and cleans his clothes) and proceed to say his lines
+
+b) play the startled animation, looking at you coming out of the vents, and say his line
+
+c) just place the sci there and make him say his lines
+
+=c1a4
+
+*there are 3 sequences going on while you are driving the mini-train section, seems like you can't stop the train you are driving(2)
+
+1) first barney (inspect_floor & c1a4_bottom) watches the situation incoming and gets to a safe spot
+
+2) second barney (c1a4_barney_flung) gets wrecked by you going fast and being unstoppable
+
+3) third barney watches the train coming, watches at the barney that is going to get killed, waves at you, tries to stop you pulling some sort of lever (seems to be failing at it) and waves at the surviving barney. (the idle is kibbitz_idle)
+
+Electrifying the rails would force the player to take the train, maybe blocking the path on the right with stuff should fix it too.
+
+Or maybe just let them play their animations, i dunno.
+
+It should be placed around here http://puu.sh/lCyVo/8a02068581.jpg, by watching how the 3 animations works, the building is supposed to be on the left side, maybe we can mirror the animations so we can place the station on the right side, since it fits better, or map another catwalk.
+
+=c2a1
+
+*Garg and the three hgrunts
+
+Place the garg very deep on the tunnel when you have to turn the generator on 
+Place a hgrunt playin the tunnel_throw anim
+Make the garg get near the debris, make him play the rollcar so he moves away the broken stuff
+Garg should head to any of the three hgrunts shooting at it and play the three executions:
+
+1) Throw a soldier away (Garg plays throw body ; hgrunt plays getthrown)
+2) Bite a soldier's head off (garg plays bitehead ; hgrunt plays headbite)
+3) Smash a soldier with his arm (garg plays smash : hgrunt plays smashed)
+
+There should be someway to lock the soldiers on their place, so the anims can be executed with no issues, I think they were canned because the player can interrupt those perfectly by killing them before the garg plays the anims, maybe making the npcs inmortal should fix the problem?
+
+Also reference for debris and maybe compare to retail geometry to add http://puu.sh/lCzax/0f4b62f269.png
+
+*Barney dying
+
+Not animation retaled but there is an unused sound for barney, trying to repeat the instructions he told you about the power being out (it seems he dies after that, maybe make him play dying_barney?) to be honest it would be cool to add it as a punishment for spamming the Use key on him.
+
+=c2a2
+
+*grunts talking about freeman should be playing their respective converse animations (they actually do, but they are not scripted well, they stop doing it) and they should play startleleft & startleright to look back at the player if he gets too close
+
+=c2a3
+
+zombie haves c2a3_snack_getup, i'll going to dig into it later
+
+c2a3_slip_n_fall on scientist
+
+*make a cinematic when you can see gordon getting captured by the hgrunts (Player plays ambushplayer, hgrunt plays ambush1), I have to dig more into in why ambush2 exists (coop? barney doesn't get killed on earlier stages?)
+
+iceslip on zombie
+
+*photos on magazines indicates that the fridge section on c2a3 was filled with zombies instead of vortigaunts, maybe this animation was made for it.
+
+=c2a4
+
+Barney (Or construction) on fence animation
+
+*After you climb up the ladder to the room filled with houndeyes, make him run to the electrified fence and play the animation.
+
+Barney on sterilizer
+
+*You can watch him from away playing his idle animation
+
+*When you get pass through the door, it closes off, plays the map event of the sterilizer wokrking, at the same time, barney plays the button animation, make him say his lines, while and after the animation.
+
+c3a2
+
+Sci hiding on one of the firing ranges.
+
+*For some reason the same scientist that introduces you to the gluon gun, was going to be hidden on one of the shooting ranges filled with enemies (maybe there was an agrunt?), after you kill whatever was making the sci hide, or when you step close, the scientist should play gluon_crawl and his corresponding voice lines. After that, make the npc check the existense of the w_egon.
+
+a) if the weapon is still there, make him play c3a2_sci_2glu
+
+
+b) or if the player picked it up before, make him play c3a2_sci_3glu
+
+
+1) not only c1a1, we can place this on other places, but it seems that the first post disaster maps, until we've got hostiles is just zombies
+2) we can replace it with a construction npc
+3) adding it on pre-fridge computer room could work
+
+I don't know what level this was intended for (Xen most likely), but there is a strange animation called slipnslide, where the bullsquid seems to leap from somewhere a bit above the floor and slides a long distance before stopping and getting up.
+

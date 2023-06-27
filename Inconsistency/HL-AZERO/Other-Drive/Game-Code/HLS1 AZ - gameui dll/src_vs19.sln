@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vgui2", "vgui2\src\vgui2.vcxproj", "{3C16BA59-C7B9-4C64-82AE-B30D6A79761F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gameui", "gameui\gameui.vcxproj", "{AFC85BF9-AA38-4852-A91B-DC27519408AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tier0", "tier0\tier0.vcxproj", "{6366ED8E-57FB-4037-BD4D-72765FE18D63}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vgui_controls", "vgui2\controls\vgui_controls.vcxproj", "{BEF986D7-4A14-4698-ADF2-403EEF8C074F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vstdlib", "vstdlib\vstdlib.vcxproj", "{1C040000-EDBC-4B65-AC47-9A2687373F56}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vgui_surfacelib", "vgui2\vgui_surfacelib\vgui_surfacelib.vcxproj", "{C1A42888-FD0D-497F-9A64-01519AAC9CC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "appframework", "appframework\appframework.vcxproj", "{2F429F85-3D42-4F4E-AA39-28114C310A38}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "filesystem_stdio", "filesystem\filesystem_stdio\filesystem_stdio.vcxproj", "{4713090E-1990-4253-8DAF-9BC20AA16B2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C16BA59-C7B9-4C64-82AE-B30D6A79761F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C16BA59-C7B9-4C64-82AE-B30D6A79761F}.Debug|Win32.Build.0 = Debug|Win32
+		{3C16BA59-C7B9-4C64-82AE-B30D6A79761F}.Release|Win32.ActiveCfg = Release|Win32
+		{3C16BA59-C7B9-4C64-82AE-B30D6A79761F}.Release|Win32.Build.0 = Release|Win32
+		{AFC85BF9-AA38-4852-A91B-DC27519408AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFC85BF9-AA38-4852-A91B-DC27519408AB}.Debug|Win32.Build.0 = Debug|Win32
+		{AFC85BF9-AA38-4852-A91B-DC27519408AB}.Release|Win32.ActiveCfg = Release|Win32
+		{AFC85BF9-AA38-4852-A91B-DC27519408AB}.Release|Win32.Build.0 = Release|Win32
+		{6366ED8E-57FB-4037-BD4D-72765FE18D63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6366ED8E-57FB-4037-BD4D-72765FE18D63}.Debug|Win32.Build.0 = Debug|Win32
+		{6366ED8E-57FB-4037-BD4D-72765FE18D63}.Release|Win32.ActiveCfg = Release|Win32
+		{6366ED8E-57FB-4037-BD4D-72765FE18D63}.Release|Win32.Build.0 = Release|Win32
+		{BEF986D7-4A14-4698-ADF2-403EEF8C074F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BEF986D7-4A14-4698-ADF2-403EEF8C074F}.Debug|Win32.Build.0 = Debug|Win32
+		{BEF986D7-4A14-4698-ADF2-403EEF8C074F}.Release|Win32.ActiveCfg = Release|Win32
+		{BEF986D7-4A14-4698-ADF2-403EEF8C074F}.Release|Win32.Build.0 = Release|Win32
+		{1C040000-EDBC-4B65-AC47-9A2687373F56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C040000-EDBC-4B65-AC47-9A2687373F56}.Debug|Win32.Build.0 = Debug|Win32
+		{1C040000-EDBC-4B65-AC47-9A2687373F56}.Release|Win32.ActiveCfg = Release|Win32
+		{1C040000-EDBC-4B65-AC47-9A2687373F56}.Release|Win32.Build.0 = Release|Win32
+		{C1A42888-FD0D-497F-9A64-01519AAC9CC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1A42888-FD0D-497F-9A64-01519AAC9CC4}.Debug|Win32.Build.0 = Debug|Win32
+		{C1A42888-FD0D-497F-9A64-01519AAC9CC4}.Release|Win32.ActiveCfg = Release|Win32
+		{C1A42888-FD0D-497F-9A64-01519AAC9CC4}.Release|Win32.Build.0 = Release|Win32
+		{2F429F85-3D42-4F4E-AA39-28114C310A38}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F429F85-3D42-4F4E-AA39-28114C310A38}.Debug|Win32.Build.0 = Debug|Win32
+		{2F429F85-3D42-4F4E-AA39-28114C310A38}.Release|Win32.ActiveCfg = Release|Win32
+		{2F429F85-3D42-4F4E-AA39-28114C310A38}.Release|Win32.Build.0 = Release|Win32
+		{4713090E-1990-4253-8DAF-9BC20AA16B2E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4713090E-1990-4253-8DAF-9BC20AA16B2E}.Debug|Win32.Build.0 = Debug|Win32
+		{4713090E-1990-4253-8DAF-9BC20AA16B2E}.Release|Win32.ActiveCfg = Release|Win32
+		{4713090E-1990-4253-8DAF-9BC20AA16B2E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FEBC151-132D-48D0-9F55-CB1C92FF147E}
+	EndGlobalSection
+EndGlobal

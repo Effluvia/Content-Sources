@@ -1,0 +1,384 @@
+// SCIENTIST (For voice tone/pitch reference, check the E3 1998 Office Complex video)
+
+//The scientist agrees to follow you
+
+SC_OK0 scientist/excellentteam "Sure, with my brains and your brawn, we can make an excellent team!"
+SC_OK1 scientist/fellowscientist "I'll be glad to help a fellow scientist."
+SC_OK2 scientist/fine "Fine then, you won't even know I am here."
+SC_OK3 scientist/hopeyouknow "I sincerely hope you know what you're doing."
+SC_OK4 scientist/leadtheway "Lead the way."
+SC_OK5 scientist/letsgo "Let's go!"
+SC_OK6 scientist/yesletsgo "Yes, let's go."
+SC_OK7 scientist/yes3 "Yes, ok."
+SC_OK8 scientist/alright "Alright. Let's get out of here!"
+
+//When the player doesn't want to be followed by a scientist
+
+SC_WAIT0 scientist/beenaburden "Have I really been a burden?" (reference retail wav for tone of voice)
+SC_WAIT1 scientist/slowingyou "I'm slowing you down, aren't I?"
+SC_WAIT2 scientist/reconsider "Fine, not that you will reconsider."
+SC_WAIT3 scientist/whyleavehere "Why are you leaving me here?" (quiet, frightened)
+SC_WAIT4 scientist/illwaithere "I will wait here."
+SC_WAIT5 scientist/istay "I will stay here."
+SC_WAIT6 scientist/illwait "Fine, I'll wait."
+
+// When the scientist can't follow you
+
+SC_STOP0 scientist/stop1 "This is as far as I can go."
+SC_STOP1 scientist/stop2 "I refuse to go another step!" (reference retail for tone of voice)
+SC_STOP2 scientist/stop3 "You are going to have to leave me here, Gordon."
+SC_STOP3 scientist/stop4 "I am going to stay here and wait for my colleagues."
+
+
+// When player is staring at scientist
+SC_STARE0 scientist/yees "Yeeeees?"
+SC_STARE1 scientist/areyouthink "Are you thinking what I am thinking?"
+SC_STARE2 scientist/noidea "You don't have any idea of what is going on, do you?"
+
+// When a scientist sees the player post-disaster
+
+SC_HELLO0 scientist/hellothere "Hello there!"
+SC_HELLO1 scientist/freemanalive "Freeman, who would have thought that you are still alive?!"
+SC_HELLO2 scientist/afellowsci "A fellow scientist!" (relieved)
+SC_HELLO3 scientist/greetings2 "Greetings." (relieved)
+SC_HELLO4 scientist/hello "Hello"
+SC_HELLO5 scientist/goodtoseeyou "Good to see you."
+SC_HELLO6 scientist/newhevsuit "I see you have that new HEV suit on. That should be quite useful!"
+SC_HELLO7 scientist/hellofromlab "Hello, you're from the labs? I do recognize you."
+SC_HELLO8 scientist/inmesstoo "Aah, I see you were in this mess too."
+
+// Scientist conversation answers
+
+SC_ANSWER0 scientist/notsure "I am not sure."
+SC_ANSWER1 scientist/notcertain "I'm not certain."
+SC_ANSWER2 scientist/perhaps "Perhaps..."
+SC_ANSWER3 scientist/whocansay "Who can say?"
+SC_ANSWER4 scientist/inconclusive "It's inconclusive."
+SC_ANSWER5 scientist/theoretically "Theoretically."
+SC_ANSWER6 scientist/whyaskme "Why ask me?"
+SC_ANSWER7 scientist/lowervoice "Kindly lower your voice."
+SC_ANSWER8 scientist/ofcourse "Of course!"
+SC_ANSWER9 scientist/absolutely "Absolutely."
+SC_ANSWER10 scientist/yes "Yes."
+SC_ANSWER11 scientist/ibelieveso "I believe so."
+SC_ANSWER12 scientist/right "Right."
+SC_ANSWER13 scientist/imsure "I am sure of it."
+SC_ANSWER14 scientist/positively "Positively!"
+SC_ANSWER15 scientist/nodoubt "I have no doubt."
+SC_ANSWER16 scientist/yees "Yeeees?"
+SC_ANSWER17 scientist/ofcoursenot "Of course not." (reference retail for tone)
+SC_ANSWER18 scientist/absolutelynot "Absolutely not!" (reference retail for tone)
+SC_ANSWER19 scientist/noo "Noooo..?"
+SC_ANSWER20 scientist/idontthinkso "I don't think so."
+SC_ANSWER21 scientist/completelywrong "You're completely wrong."
+SC_ANSWER22 scientist/cantbeserious "You can't be serious!"
+SC_ANSWER23 scientist/dontknow "I don't know."
+SC_ANSWER24 scientist/ridiculous
+SC_ANSWER25 scientist/shutup
+SC_ANSWER26 scientist/noguess
+SC_ANSWER27 scientist/stopasking
+SC_ANSWER28 scientist/justasked
+SC_ANSWER29 scientist/repeat
+
+// When the scientist asks a fellow scientist or barney something in conversation
+
+SC_QUESTION0 scientist/everseen
+SC_QUESTION1 scientist/needsleep
+SC_QUESTION2 scientist/areyouthink
+SC_QUESTION3 scientist/evergetout
+SC_QUESTION4 scientist/rightwayout
+SC_QUESTION5 scientist/cantbeworse
+SC_QUESTION6 scientist/rescueus
+SC_QUESTION7 scientist/fascinating
+SC_QUESTION8 scientist/stimulating
+SC_QUESTION9 scientist/luckwillchange
+SC_QUESTION10 scientist/hearsomething
+SC_QUESTION11 scientist/doyousmell
+SC_QUESTION12 scientist/uselessphd
+SC_QUESTION13 scientist/waithere
+SC_QUESTION14 scientist/survival
+SC_QUESTION15 scientist/headcrab
+SC_QUESTION16 scientist/goodpaper
+SC_QUESTION17 scientist/catchone
+SC_QUESTION18 scientist/dinner
+SC_QUESTION19 scientist/alientrick
+SC_QUESTION20 scientist/alienappeal
+SC_QUESTION21 scientist/rumorclean
+SC_QUESTION22 scientist/nothostile
+SC_QUESTION23 scientist/announcer
+SC_QUESTION24 scientist/smellburn
+SC_QUESTION25 scientist/noidea
+SC_QUESTION26 scientist/whatnext
+
+// Random babbling
+
+SC_IDLE0 scientist/ipredictedthis
+SC_IDLE1 scientist/containfail
+SC_IDLE2 scientist/chaostheory
+SC_IDLE3 scientist/howinteresting
+SC_IDLE4 scientist/neverseen
+SC_IDLE5 scientist/peculiarmarks
+SC_IDLE6 scientist/whoresponsible
+SC_IDLE7 scientist/nogrant
+SC_IDLE8 scientist/bloodsample
+SC_IDLE9 scientist/administrator
+SC_IDLE10 scientist/improbable
+SC_IDLE11 scientist/organicmatter
+SC_IDLE12 scientist/lambdalab
+SC_IDLE13 scientist/ihearsomething
+
+SC_NOGO scientist/dontgothere
+
+SC_MONST0 scientist/seeheadcrab
+SC_MONST1 scientist/importantspecies
+
+// The scientist hears something
+
+SC_HEAR0 scientist/ihearsomething
+SC_HEAR1 scientist/didyouhear
+SC_HEAR2 scientist/whatissound
+
+// Scientist detects the scent of a dead NPC
+
+SC_SMELL0 scientist/somethingfoul
+SC_SMELL1 scientist/odorfromyou
+SC_SMELL2 scientist/peculiarodor
+SC_SMELL3 scientist/stench
+
+// When the scientist is wounded
+
+SC_WOUND0 scientist/iwounded
+SC_WOUND1 scientist/iwounded2
+
+SC_MORTAL0 scientist/iwoundedbad
+SC_MORTAL1 scientist/iwounded2
+
+// When a scientist sees you badly wounded
+
+SC_CUREA scientist/youlookbad
+SC_CUREB scientist/youwounded
+SC_CUREC scientist/youneedmedic
+
+// When a scientist heals you in low health
+
+SC_HEAL0 scientist/heal1
+SC_HEAL1 scientist/heal2
+SC_HEAL2 scientist/youneedmedic, letstrythis
+SC_HEAL3 scientist/youlookbad, holdstill
+SC_HEAL4 scientist/youwounded, letstrythis
+SC_HEAL5 scientist/heal3
+SC_HEAL6 scientist/heal4
+SC_HEAL7 scientist/heal5
+
+// Random lines said after a scientist has been attacked by the player
+
+SC_PLFEAR0 scientist/whatyoudoing "What are you doing?" (reference beta sound for tone of the voice)
+SC_PLFEAR1 scientist/canttakemore
+SC_PLFEAR2 scientist/madness
+SC_PLFEAR3 scientist/noplease
+SC_PLFEAR4 scientist/getoutofhere
+SC_PLFEAR5 scientist/sorryimleaving
+
+// When a scientist sees one of his coworkers being attacked by the player
+
+SC_SCARED0 scientist/whatyoudoing "What are you doing?" (reference beta sound for tone of the voice)
+SC_SCARED1 scientist/stopattacking "Stop attacking!"
+SC_SCARED2 scientist/youinsane
+
+// Predisaster - When a scientist sees the player for the first time
+
+SC_PHELLO0 scientist/hellofreeman
+SC_PHELLO1 scientist/greetings2
+SC_PHELLO2 scientist/goodtoseeyou
+SC_PHELLO3 scientist/greetings
+SC_PHELLO4 scientist/hello
+SC_PHELLO5 scientist/hellothere
+SC_PHELLO6 scientist/freeman
+
+// Predisaster - scientist conversation questions
+
+SC_PQUEST0 scientist/beverage
+SC_PQUEST1 scientist/statusreport
+SC_PQUEST2 scientist/tunnelcalc
+SC_PQUEST3 scientist/shakeunification
+SC_PQUEST4 scientist/correcttheory
+SC_PQUEST5 scientist/analysis
+SC_PQUEST6 scientist/purereadings
+SC_PQUEST7 scientist/newsample
+SC_PQUEST8 scientist/perfectday
+SC_PQUEST9 scientist/cascade
+SC_PQUEST10 scientist/delayagain
+SC_PQUEST11 scientist/softethics
+SC_PQUEST12 scientist/tunedtoday
+SC_PQUEST13 scientist/donuteater
+SC_PQUEST14 scientist/seencup
+SC_PQUEST15 scientist/hungryyet
+SC_PQUEST16 scientist/recalculate
+SC_PQUEST17 scientist/checkatten
+
+// Predisaster - scientist random babbling
+
+SC_PIDLE0 scientist/hideglasses
+SC_PIDLE1 scientist/weartie
+SC_PIDLE2 scientist/runtest
+SC_PIDLE3 scientist/limitsok
+SC_PIDLE4 scientist/asexpected
+SC_PIDLE5 scientist/thatsodd
+SC_PIDLE6 scientist/allnominal
+SC_PIDLE7 scientist/shutdownchart
+SC_PIDLE8 scientist/reportflux
+SC_PIDLE9 scientist/simulation
+SC_PIDLE10 scientist/hopenominal
+
+//If you use/unuse Scientists in Hazard Course
+
+SC_HAZ_OK0 holo/tr_sci_use
+SC_HAZ_WAIT0 holo/tr_sci_unuse
+
+//Scientists in Hazard Course
+SC_GOODWORK holo/tr_sci_goodwork
+SC_HARDLYNOTICE holo/tr_sci_hardlynoticed
+SC_NEXTSTATION holo/tr_sci_nextstation
+
+//If you use Scientists before the disaster
+
+SC_POK0 scientist/sci_alone
+SC_POK1 scientist/sci_bother
+SC_POK2 scientist/sci_busy
+SC_POK3 scientist/sci_aftertest
+SC_POK4 scientist/sci_somewhere
+
+//narrative audio
+
+SC_1MUMBLE scientist/c1a0_sci_mumble 
+
+SC_DISA scientist/c1a0_sci_disa
+SC_DIS1A scientist/c1a0_sci_dis1a
+SC_DIS1B scientist/c1a0_sci_dis1b
+SC_DIS1C scientist/c1a0_sci_dis1c
+SC_DIS1D scientist/c1a0_sci_dis1d
+
+SC_DIS2A scientist/c1a0_sci_dis2a
+SC_DIS3A scientist/c1a0_sci_dis3a
+SC_DIS4A scientist/c1a0_sci_dis4a
+SC_DIS5A scientist/c1a0_sci_dis5a
+SC_DIS6A scientist/c1a0_sci_dis6a
+SC_DIS7A scientist/c1a0_sci_dis7a
+SC_DIS8A scientist/c1a0_sci_dis8a
+SC_DIS9A scientist/c1a0_sci_dis9a
+SC_DIS10A scientist/c1a0_sci_dis10a
+SC_DIS11A scientist/c1a0_sci_dis11a
+SC_DIS12A scientist/c1a0_sci_dis12a
+SC_DIS13A scientist/c1a0_sci_dis13a
+SC_DIS14A scientist/c1a0_sci_dis14a
+SC_DIS15A scientist/c1a0_sci_dis15a
+SC_DIS16A scientist/c1a0_sci_dis16a
+SC_DIS17A scientist/c1a0_sci_dis17a
+
+SC_itsyou scientist/c1a0_sci_itsyou "Oh, it's you, Freeman. Thought that it was one of the Administrator's men, as they're everywhere this morning." (GETAWAY most likely wasn't in the beta)
+SC_GMORN scientist/c1a0_sci_gm "Good morning, Dr. Freeman!"
+SC_BIGDAY scientist/c1a0_sci_bigday "Big day ahead, Freeman."
+SC_SAMPLE scientist/c1a0_sci_samp "Good morning! They're waiting for you in the control room." (reference original Decay voice line for tone, also rename the soundfile "c1a0_sci_contr")
+SC_NOTTHAT scientist/c1a0_sci_desk 
+
+SC_LOCK1A scientist/c1a0_sci_lock1a
+SC_LOCK2A scientist/c1a0_sci_lock2a
+SC_LOCK3A scientist/c1a0_sci_lock3a
+SC_LOCK4A scientist/c1a0_sci_lock4a
+SC_LOCK5A scientist/c1a0_sci_lock5a
+SC_LOCK6A scientist/c1a0_sci_lock6a
+SC_LOCK7A scientist/c1a0_sci_lock7a
+SC_LOCK8A scientist/c1a0_sci_lock8a
+SC_LOCK9A scientist/c1a0_sci_lock9a
+
+SC_CRIT1A scientist/c1a0_sci_crit1a
+SC_CRIT2A scientist/c1a0_sci_crit2a
+SC_CRIT3A scientist/c1a0_sci_crit3a
+
+SC_CTRL1A scientist/c1a0_sci_ctrl1a
+SC_CTRL2A scientist/c1a0_sci_ctrl2a
+SC_CTRL3A scientist/c1a0_sci_ctrl3a
+SC_CTRL4A scientist/c1a0_sci_ctrl4a
+
+SC_CONSOLE1A scientist/c1a1_sci_1scan
+SC_CONSOLE2A scientist/c1a1_sci_2scan
+SC_CONSOLE3A scientist/c1a1_sci_3scan
+SC_CONSOLE4A scientist/c1a1_sci_4scan
+SC_CONSOLE5A scientist/c1a1_sci_5scan
+SC_CONSOLERPT scientist/c1a1_sci_scanrpt
+
+//c1a2scripts
+
+SC_ZOMBIE1A scientist/c1a2_sci_1zomb "Get out of there! Run!"
+SC_ZOMBIE3A scientist/c1a2_sci_3zomb "Don't be a fool!"
+SC_ZOMBIE5A scientist/c1a2_sci_5zomb "Noooooo...."
+SC_ZOMBIE6A scientist/c1a2_sci_6zomb (to player) "Don't just stand there, take that gun and shoot that thing!!"
+
+SC_DANGLING scientist/c1a2_sci_dangling "I.. I don't think I can hold on much longer..."
+SC_DARKROOM scientist/c1a2_sci_darkroom "If I were a braver man, I would head for the surface. But, uh, I am afraid that the world finds out what we were doing here, Gordon, so please, just don't make me come with you."
+SC_ELEVATOR scientist/c1a2_sci_elevator
+SC_LOUNGE scientist/c1a2_sci_lounge
+SC_TRANSMISSION scientist/c1a2_sci_transm
+
+//c1a3 scripts
+SC_1MAN scientist/c1a3_sci_1man "Hear me out! I am the one man who knows EVERYTHING!"
+SC_ATLAST scientist/c1a3_sci_atlast
+SC_RESCUED scientist/c1a3_sci_rescued
+SC_SILO1A scientist/c1a3_sci_silo1a
+SC_SILO2A scientist/c1a3_sci_silo2a
+SC_TEAM scientist/c1a3_sci_team
+SC_THANKGOD scientist/c1a3_sci_thankgod
+
+//c1a4 scripts
+SC_TRAINEND scientist/c1a4_sci_trainend
+SC_ROCKET scientist/c1a4_sci_rocket
+SC_BLIND scientist/c1a4_sci_blind "Is someone there? I--I can't see a thing."
+SC_POWEROFF scientist/c1a4_sci_pwroff "I hope no-one will make me start up the generator! Smithers went to do that, but he never came back!"
+SC_POWERON scientist/c1a4_sci_pwr "Excellent! Looks like someone has restored the power and the engine will be up and running again in no time!"
+SC_GENER scientist/c1a4_sci_gener
+SC_TRUST scientist/c1a4_sci_trust
+SC_TENT scientist/c1a4_sci_tent
+
+//c2a3 scripts
+SC_ICKY scientist/c2a3_sci_icky "Did you see it? They claim it's from the Challenger Deep, but I am positive that beast never swam in terrestrial waters until a week ago! There is a crossbow in the shark cage, but I am not sure it's tranquilizing arrows will work on these species, but you're welcome to try."
+SC_TRACK scientist/c2a3_sci_track "You're Gordon Freeman, right? The Science Team has been tracking your progress through the facility with the Black Mesa Security System. Unfortunately, so has the military. That HEV suit is full of tracking devices! Still, it is better than going naked down here. It's cold in there and you have to hurry, as your suit power could be sapped in a matter of moments! If you want to get to the Lambda Labs, you will have to keep to the older industrial areas, where the security system doesn't reach. So far, this has worked for me."
+
+//c2a4 scripts
+SC_ARG1A scientist/c2a4_sci_arg2a "It isn't our fault, I tell you!"
+SC_ARG2A scientist/c2a4_sci_arg4a "Nature made them, we were only studying them!"
+
+SC_TAU2A scientist/c2a4_sci_2tau
+SC_TAU4A scientist/c2a4_sci_4tau
+
+SC_1PSURG scientist/c2a4_sci_scanner "All of us have retinal scanner access. Take us to the lobby and we can get out of the lab."
+SC_2PSURG scientist/c2a4_sci_sugicaloff
+SC_3PSURG scientist/c2a4_sci_surgury
+SC_ALLDIE scientist/c2a4_sci_alldie
+SC_LETOUT scientist/c2a4_sci_letout "Well, I will let you out, but I am warning you...it's HELL out there! It is completely under military control! You must sneak and fight your way from one end to the other and I'm not expecting you to meet many of our colleagues along the way. But if you manage to survive and somehow make it across the base, you will end up at the Lambda Labs, where the rest of the Science Team is taking cover. I won't go there myself, but I will let them know that you're on your way!"
+
+//c2a5 scripts
+SC_BOOBIE scientist/c2a5_sci_boobie "You're heading for the Lambda Labs, right? I was heading there myself, until I made it here and... I just lost it completely! Take ONE look through that door and you will see what I mean! I'm just going to wait out the disaster here. If you intend to go on, then you have to proceed with extreme caution!"
+SC_LEBUZ scientist/c2a5_sci_lebuz
+
+//c3a2 scripts
+
+SC_STRAWS scientist/c3a2_sci_straws
+SC_GLUON2A scientist/c3a2_sci_2glu
+SC_FLOOD scientist/c3a2_sci_flood
+SC_LINGER scientist/c3a2_sci_linger
+SC_SURVEY1A scientist/c3a2_sci_1surv
+SC_SURVEY3A scientist/c3a2_sci_3surv
+SC_SURVEY5A scientist/c3a2_sci_5surv
+SC_SURVEY7A scientist/c3a2_sci_7surv
+SC_LJUMP scientist/c3a2_sci_ljump
+SC_UPHERE scientist/c3a2_sci_uphere
+SC_PORTAL scientist/c3a2_sci_portal
+SC_PORTOPEN scientist/c3a2_sci_portopen
+SC_POSITION scientist/c3a2_sci_position
+SC_FOREVER scientist/c3a2_sci_forever
+SC_NOTYET scientist/c3a2_sci_notyet
+SC_FOOL scientist/c3a2_sci_fool
+
+//miscellaneous useful scripts
+SC_LETYOUIN scientist/letyouin
+SC_OVERHERE scientist/overhere

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7b2589d6-f525-4454-a390-fcfb371b10ce}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3db469b3-0bd9-426a-8c47-76fb3d2be47a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\public">
+      <UniqueIdentifier>{698388e2-fcbc-44c7-9896-e11b76b4f0d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\public\tier0">
+      <UniqueIdentifier>{462a7f33-ee7f-4dea-a681-0e7520a69f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\public">
+      <UniqueIdentifier>{56c13e26-188a-4ed7-9e64-9701df186a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\public\tier0">
+      <UniqueIdentifier>{a62e69e3-e4c7-43b3-8ad2-bf3452453a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{eade264a-09db-41a2-951a-7e69ba90e540}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseFileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem_stdio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\characterset.cpp">
+      <Filter>Source Files\public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\interface.cpp">
+      <Filter>Source Files\public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\utlsymbol.cpp">
+      <Filter>Source Files\public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

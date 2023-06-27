@@ -1,0 +1,81 @@
+add to this list, I need something to show to the coder so he knows what to do, I will start this list sometime someday
+
+- Re-activate shadows, fix z-fighting. 
+	Code exists in WON Goldsource Code, however, the shadows are broken, they fight with the model \\ Done
+
+- Implement Quake blood particles, explosions, and weapon decals
+	Deathmatch Classic uses some of the effects, not all of them however.
+	Example: http://puu.sh/j82iC/5e86691efc.jpg
+		 http://puu.sh/j82kv/1308e6f768.jpg
+		 http://puu.sh/j83rI/7d90dcb4bd.jpg
+		 https://www.youtube.com/watch?v=lxWUeyFadFY
+			There's probably more sources.
+
+	The alpha still have these programmed in, play it to see how they worked (chances are they're just toggled off in the final source code)
+
+- Readd the old houndeye effects
+	Example: http://puu.sh/j83z0/f4a6dedc50.jpg
+		Unknown: the Squad colors
+
+- Reenable the Houndeye's Squad leader look out, was disabled in the final product (add to HL1:S Update too)
+
+- Fix the houndeye's sleep, he should close his eye when asleep, but he doesn't (add to HL1:S Update too)
+
+- Readd the mirror effect (basically, it would reflect a model across glass if told to, however, it would not reflect world)
+	Example: http://puu.sh/j83Hd/8ea38d78fb.jpg
+		Sprit of Half-Life has this effect
+		 
+- Modify the weapon bob so it matches Day One's weapon bob (check the E3 98 videos) \\ Done
+
+- I don't know if it was official or something that Quiver made up, but the crossbow's bolt spawned the gauss particles after they land somewhere that is not an npc. (look into it)
+
+- Working silencer for Glock (make it toggleable in console, like allowglocksilencer then when set to 1, make it so the right key press makes the player install the silencer onto the glock)
+
+- Implement the scope on the 357 \\ Done
+
+- Readd the Egon's secondary fire
+
+- Readd the Powerup Canisters
+	Info on them: http://combineoverwiki.net/wiki/Powerup_Canisters
+
+- Bring back the unused HUD voiceclips (Weapon recognition when picking up for the first time, damage recognition when taking hazardous damage like radioactivity, fire, poison, etc)
+
+- Make the place tripmine animation work
+
+- finish up the weapon select, we need to make sprites on our end, you need to match up the code to match the beta
+	Still don't know how it worked fully, since like, you can't pickup the oxygen tank, which is on the sidebar there
+
+- Grenade used to have 3 different throw types, see if its still programmed in, if not make it, have fun with it. \\ Commented out in code
+
+- Reprogram in the Archer, Flocking Floater (if it does anything in the mdl), Mr. Friendly, Stukabat, Human Assault, Chumtoad (plus its weapon), and Panthereye
+	
+	Chumtoad (Source: http://combineoverwiki.net/wiki/Chumtoad)
+		- It will only affect certain npcs (Agrunts, Bullsquids, Islaves)
+			* Agrunts will try to use their hivehand to attack them
+			* Bullsquids will be forced to melee them
+			* Islaves will only follow the critters
+			* Human npcs will stare at them, without moving unless a map-script forces their movement
+		- If no other npc is seen by the chub, they will go roamer mode, or just stay where thrown
+		- In case there's a npc that can harm it, they will go in coward mode, like a scientist being threatened
+		- You can grab it by pressing E on it
+			* To successfully grab them, the player haves to approach the chubby slowly, using the walk or crouch mode, if not, the critter will go on coward mode (doesn't matter if it was already used or just discovered). *Think of the Postal 2 Cats*
+		- Both v_model and w_model will blink when idle
+
+	Info on the Stukabat: http://combineoverwiki.net/wiki/Stukabat
+	Info on the Human Assault: http://combineoverwiki.net/wiki/Human_Sargeant
+	Info on the Panthereye: http://combineoverwiki.net/wiki/Panther_Eye
+	Info on the Archer: http://combineoverwiki.net/wiki/Archer
+	Info on the the Flocker: http://combineoverwiki.net/wiki/Flocking_Floater
+	Info on Mr Friendly: http://combineoverwiki.net/wiki/Mr._Friendly
+		Most of the Models Source files can be found in the Half-Life SDK (which is on Steam)
+
+- Make it so the HGrunt only has the MP5 and only loads 1 head (since that's how it worked in the beta)
+
+- Agrunt : Disable muzzleflashes, and hornet sprites (muz1.spr), see into code about randomizing trail colour on two colours ; orange and light blue. \\ It's already implemented in retail, it randomizes through red-ish and orange, there is commented vars (suggested by Ted) that matches the ones on the screenshot.
+This picture http://vignette2.wikia.nocookie.net/half-life/images/a/ab/Beta_Alien_Grunts_firing.jpg/revision/latest?cb=20110219133337&path-prefix=en 
+
+- Restore the animated lambda spray
+
+- Make hgrunts strafe, and shoot while running/strafe (seems this was something they really wanted to do, since both strafe versions uses the hsarge mesh and beta mesh) \\ Recreate, there is no trace or signals about hgrunts strafing
+
+- Change the maximum ammo of the 9mm weapons (Glock, MP5) to 150 down from 250, as seen in some of the screenshots (although it is shown only in http://combineoverwiki.net/images/2/26/C1a3_entrance.jpg , it seems to be the maximum amount of ammo considering it's size. Especially considering the MP5 clip size is 30 in the beta and 50 in retail). Also increase the maximum amount of grenades that can be carried with the MP5 to 12, as shown in the Gruntfight video and some screenshots. (http://combineoverwiki.net/images/2/28/C1a3_early02.jpg and http://combineoverwiki.net/images/e/e7/C1a0_early01.jpg)

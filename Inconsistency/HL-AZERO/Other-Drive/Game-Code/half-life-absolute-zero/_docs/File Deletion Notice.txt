@@ -1,0 +1,82 @@
+
+***PENDING DELETE:, almost empty files.
+cl_dlls/hud_iface.h
+cl_dlls/cl_dll.h
+cl_dlls/cdll_dll.h
+
+dlls/extdll.h
+
+
+
+
+
+
+1) dlls/AI_BaseNPC_Schedule.cpp removed (clone of dlls/schedule.cpp)
+The file "AI_BaseNPC_Schedule.cpp" was deemed a clone of "schedule.cpp" in the starting SDK as is.  It has been removed.
+Unlike schedule.cpp, AI_BaseNPC_Schedule.cpp was also not in the Project's build-order.
+RemovedAI_BaseNPC_Schedule.cpp.  It was likely a backup of schedule.cpp even in the as-is SDK.
+
+
+2) dlls/glock.cpp removed (clone of dlls/wpn_shared/hl_wpn_glock.cpp). REPLACED NOW - SEE 2b BELOW!
+Although glock.cpp is not an exact clone of hl_wpn_glock.cpp, the areas it differs in are exclusive to glock.cpp (skipping a few filtered calls, like using gpGlobals->time straight away instead of UTIL_WeaponTimeBase like most other weapons do as-is).
+Also, glock.cpp calls some things in GlockFire that retail seems to leave to the event, client-side, in ev_hldm.cpp, like brass ejection.
+It is believable that glock.cpp is a version of hl_wpn_glock.cpp from an earlier version of development that does some things differently / put some responsibilities in different places.  Commenting out all of glock.cpp and running shows that it has no impact on the game too.  This makes it a strong candidate for deletion alone (also not a reference for valuable script; it is all outdated).
+One noteworthy thing was setting clip size to 18 instead of to the default 17 when reloading with at least one bullet still in clip.  This has to do with the glock having a bullet left in the firing chamber (but clip sizes are still a solid 12).  This was behavior present before some patch in the early WON days.  This is now optional by CVar support (glockOldReloadLogic).
+Furthermore, glock.cpp is not present in the solution explorer of Visual Studio for any projects.
+
+2b) What used to be "dlls/wpn_shared/hl_wpn_glock.cpp" has been renamed to "dlls/glock.cpp" to be more consistent with the naming convensions and placement of other weapons.
+No other file belongs in the "wpn_shared" folder, and being "shared" is not a special aspect of the glock. All player weapon files are compiled both clientside and serverside. It does not need to be placed / named so differently.
+
+    
+
+3) Although not deleted (CHANGED; now deleted) (slightly corrected for what errors remain to show up better at least), the following files:
+    cl_dlls/overview.h
+    cl_dlls/overview.cpp
+...have been excluded from the build. It used to be a grey area: overview.h was included (but never referred to thankfully), but overview.cpp was excluded (appeared in the soluton explorer with a red minus? no idea why it even showed up at all; it got ignored this way). When removed / readded, it has issues, mostly with missing engine function calls. Try readding and compiling to see those.
+Again, as of now, these files are completely excluded. No problems noticed from doing that.
+
+4) cl_dlls/soundsystem.cpp has been deleted. It was never included in the compile and is seen as irrelevant.
+
+5) dlls/tempmonster.cpp has been deleted. It is made obsolete by the more complete monster template at dlls/help/templpatemonster.h & .cpp.
+-also, tempmonster.cpp has been removed from the serverside compile. Why was it part of that to begin with?
+
+6) cl_dlls/util_vector.h and dlls/vector.h have been deleted and merged into common/vector.h to remove redundancy. References to either updated.
+
+7) dlls/monsters.h deleted, most of its contents were moved to basemonster.h. The CGib class is now in cbase.h, and the CUSTOM_SCHEDULES, DEFINE_CUSTOM_SCHEDULES, and IMPLEMENT_CUSTOM_SCHEDULES preprocessor methods were moved to util_preprocessor.h.
+~Also, Monsters.cpp has now been renamed to basemonster.cpp, which did not exist before.
+
+8) The following files that used to be in cl_dlls and dlls "not_compiled" subfolders have been removed:
+    cl_dlls/GameStudioModelRenderer_Sample.cpp
+    cl_dlls/GameStudioModelRenderer_Sample.h
+    cl_dlls/overview.cpp
+    cl_dlls/overview.h
+    dlls/mpstubb.cpp
+    dlls/playermonster.cpp
+    dlls/squad.h
+    dlls/stats.cpp
+    dlls/Wxdebug.cpp
+    dlls/wxdebug.h
+
+
+QUESTIONABLE:
+*  Sound file "tentacle/te_flies1.wav" is unused and practically identical to the used "ambient/flies.wav".
+   File size is slightly different but I can't hear a difference. Safe to delete this?
+*  Exact same case with "tentacle/te_squirm2.wav" being unused compared to "ambient/squirm2".
+   
+   
+*Some other compile changes:
+-cl_dlls/cl_util.h was completely missing from the compile (header files are here just for organization; they are included by .cpp files as needed).
+-dlls/game.h was completely missing from the compile.
+-dlls/map_rules.h was completely missing from the compile.
+-cl_dlls/tf_defs.h was completely missing from the compile.
+-cl_dlls/parsemsg.h was under the "Source" folder and not "Header"? Changed.
+-new file dlls/util_entity.cpp added to the client compile. These methods used to be inline and thus fully included in the client before (used to all in a .h file, now implementations moved to the .cpp file), not dummied out, and so should be present in the client as well.
+-cl_dlls/in_defs.h deleted.  Tiny, and the PITCH, etc. constants may as well be shared (util_shared.h).
+-dlls/h_ai.cpp removed.  Not many methods and most global variables inside were ignored, methods moved to util.h/cpp
+-cl_dlls/hud_msg.cpp deleted.  The new 'custom_message.h/.cpp' files may as well absorb it at this point.
+-common/nowin.h removed.  It only included 'unistd.h' and this is handled by external_lib_include.h now.
+-cl_dlls/com_weapons.h & .cpp removed.  Merged into cl_dlls/hl/hl_weapons.h & .cpp instead.
+
+---Various files across cl_dlls and dlls moved to "not_compiled" subdirectories. These files are never included or involved in the compile, consider deleting if everything in them is redundant, irrelevant or has no meaningful insights to early development.
+ 
+
