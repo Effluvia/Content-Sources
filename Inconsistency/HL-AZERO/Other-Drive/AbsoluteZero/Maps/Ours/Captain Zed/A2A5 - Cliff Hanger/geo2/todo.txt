@@ -1,0 +1,22 @@
+GEO2 is c2a5x, that's all we know of, valve stuck with this naming convention around some time after they decided to use another texture set for the rocks (bm132.bmp)
+	pointless insight: either geo1 or geo3 are the other desert area (c2a5w) with the electrified fence
+we are going to use the alpha rocks since they are more appealing and what would everyone expect
+
+geo2 was mostly left out as is, Casali just rotated some rocks around for making the "view" more obstructed from a first person perspective
+	Along with "walling" the bounds to give more immersion to the player and not making them able to get out of bounds or touch the sky brushes
+
+We got the almost everything of the "mine sign" area, it's probable that casali was going to map the mine field but never did, ence why he rotated the sign to face the opposite side
+	Thus turning this section of geo2 (c2a5x) into the minefield
+
+About the other area, which haves a tentacle on retail, we have very little of it (2 screenshots)
+	BUT, we can see where the connection to the mine field was (pretty much like retail but with less cluttered rocks)
+		As for the other half we are unable to see, slap some tent prefabs we did for the old bootcamp (the one we based on the cabal) and "tents n shit.jpg"
+			AS for the connections, i really don't know lol, probably we will make it so the tentacle area haves the exit to the next desert map (electrified fence) so make some path for it
+				Make it have a turn like casali did when the player goes from c2a5w to c2a5x
+
+PROTIP: Don't use RAD up until you get the brushwork going, it'll eat your cpu away
+	Turn every rock into func_detail, the sky brushes will determine the actual boundaries of the map so no worries about leaks
+	You will have to recreate all of the sand brushwork.
+		I'll ask slart if he can take the brushwork from sven coop's RMFs, but in the meantime, remake it.
+	The wierd ass cactus next to the mine sign is hidden somewhere on c2a5w's brushwork
+	No idea about where the player is facing in 203.jpg, the brushwork for the rocks on the middle is still on the game but the "wall rocks" are totally unique (and more primitive)

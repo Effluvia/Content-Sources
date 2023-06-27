@@ -1,0 +1,1 @@
+studiomdl.exe -b 512 big_mom

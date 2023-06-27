@@ -1,0 +1,1 @@
+studiomdl.exe -b 256 v_crowbar_bare

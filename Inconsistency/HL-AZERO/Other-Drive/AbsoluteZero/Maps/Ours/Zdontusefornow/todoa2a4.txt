@@ -1,0 +1,39 @@
+todo
+
+residue processing
+
+-readd intro sequence (player coming out of the pipe thanks to trigger_push and func_friction)
+-add floating scientist corpses at the pool where the player spawns
+	*Readd animations into the mdl (Day One model haves them)
+-restore cut cactus (it's in some of the c2a5 maps)
+-Revert most of the texture changes made by zed (Dead knows which ones should be fixed and which ones not)
+-Find a way to make the attached yellow lamps prettier (lighting leaks from above) //Light_surface should do the trick, will investigate further
+-Texture the conveyor supports with proper textures (GIRD textures)
+-Tweak lighting on most of the maps
+-Lift room should be tighter/smaller to avoid the player from falling and getting softlocked
+
+alien research lab
+
+-toss enemies around
+-make crates breakable and give loot
+-finish the puzzle on a2a4e
+	*The two rooms where the scientist are should have switches, these will have multisources to make the player able to open the door to the final map
+-add sounds
+-add env_sounds (DSP effects)
+-tweak rads for better lighting
+	*Greens are too strong
+	*Blue, Red and Yellow on a2a4d are too strong and dim
+-connect a2a4d with lobby map (leonelc's folder)
+-connect lobby map with a2a4g
+-connect a2a4g with a2a5 (I think that's been already done but idr)
+
+lobby area:
+
+-Either a bunch of grunts or a bunch of aliens //Maybe a bunch of aliens so the repel grunts have a heavier impact
+-Add a room on each hall, one should be accesible with goodies, the other unreachable (potential gman appearance)
+-You'd hear a scientist and barney argue (they aren't aware of your presence), from a security outpost where the desk is (make desk larger or extend it
+-Go through the metal detector to set it off, entire lobby enters into emergency mode, red lights everywhere, siren kicks in, grunts repel from ceiling
+-Once you kill everyone, siren goes off, barney and scientist come out of the outpost running
+	*Barney comments about the mess you did
+	*scientist recognizes you and tells you everything about the surface and how to get to lambda complex
+	*Opens the rotating door for you

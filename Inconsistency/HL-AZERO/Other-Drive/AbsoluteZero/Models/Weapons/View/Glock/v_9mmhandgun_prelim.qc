@@ -1,0 +1,48 @@
+/*
+==============================================================================
+
+glock viewmodel
+
+==============================================================================
+*/
+
+$modelname ./MDL_Prelim/v_9mmhandgun.mdl
+$cd ./SMD_Prelim
+$cdtexture ./Textures_Prelim
+$scale 1.0 
+
+// whole body
+
+$body studio "glock_reference"
+$body studio "clip_reference"
+
+$bodygroup silencer
+{
+blank
+studio "silencer_reference"
+}
+
+$body studio "Bare_Hands_Full"
+
+$origin 0.5 -6 65
+
+$attachment 0 "Bip01 R Hand" 10 2.25 4.25 X 1
+
+$sequence idle1 "glock_idle1" fps 16 loop
+$sequence idle2 "glock_idle2" fps 16 loop
+$sequence idle3 "glock_idle3" fps 14 loop
+$sequence shoot "glock_shoot" fps 25 { event 5001 0 "11" }
+$sequence shoot_empty "glock_shoot_slideback" fps 25 { event 5001 0 "11" }
+$sequence reload "Reload" fps 14 {
+{ event 5004 7 "items/9mmclip2.wav" }
+{ event 5004 12 "items/9mmclip1.wav" }
+{ event 5004 20 "items/guncock1.wav" } 
+}
+
+$sequence reload_noshot "glock_reload_from_idle" fps 18 {
+{ event 5004 4 "items/9mmclip2.wav" }
+{ event 5004 23 "items/9mmclip1.wav" }
+}
+$sequence draw "glock_draw" fps 20
+$sequence holster "glock_holster" fps 20
+$sequence add_silencer "glock_add_silencer" fps 18

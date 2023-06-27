@@ -1,0 +1,1 @@
+studiomdl.exe -b 256 v_tripmine_e3
