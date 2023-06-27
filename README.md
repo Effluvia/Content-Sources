@@ -31,7 +31,6 @@
 
 ## About The Project
 
-![Screen Shot]([images/screenshot.png](https://steamuserimages-a.akamaihd.net/ugc/1263771538532084697/823FDAACB82D9902FB994B5AB7CB2526273071B9/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false))
 
 Is a repository that serves as a hub for various content sources related to game development on the Goldsource and Source engines. This repository includes maps, source code, and other resources that are useful for game developers working with these engines.
 
