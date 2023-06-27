@@ -1,0 +1,317 @@
+hlcsg v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlcsg -----
+Command line: "C:\Program Files (x86)\Batch Compiler\hlcsg.exe"-nowadtextures -wadautodetect -cliptype Precise -chart -texdata 24000 -lightdata 8000 "C:\Program Files (x86)\Steam\steamapps\*****\half-life\ts\maps\frozen_valley_v3"
+Entering C:\Program Files (x86)\Steam\steamapps\*****\half-life\ts\maps\frozen_valley_v3.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       8 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [      on ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 24576000 ] [ 4194304 ]
+max lighting memory   [ 8192000 ] [ 6291456 ]
+priority              [  Normal ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [      on ] [      on ]
+clip hull type        [ precise ] [  legacy ]
+onlyents              [     off ] [     off ]
+wadtextures           [     off ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+nullfile              [    None ] [    None ]
+min surface area      [   0.500 ] [   0.500 ]
+brush union threshold [   0.000 ] [   0.000 ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+117 brushes (totalling 702 sides) discarded from clipping hulls
+CreateBrush:
+ (1.42 seconds)
+SetModelCenters:
+ (0.00 seconds)
+CSGBrush:
+ (2.43 seconds)
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              0/400            0/25600    ( 0.0%)
+planes          29284/32768     585680/655360   (89.4%)
+vertexes            0/65535          0/786420   ( 0.0%)
+nodes               0/32767          0/786408   ( 0.0%)
+texinfos         9262/32767     370480/1310680  (28.3%)
+faces               0/65535          0/1310700  ( 0.0%)
+clipnodes           0/32767          0/262136   ( 0.0%)
+leaves              0/8192           0/229376   ( 0.0%)
+marksurfaces        0/65535          0/131070   ( 0.0%)
+surfedges           0/512000         0/2048000  ( 0.0%)
+edges               0/256000         0/1024000  ( 0.0%)
+texdata          [variable]          0/24576000  ( 0.0%)
+lightdata        [variable]          0/8192000  ( 0.0%)
+visdata          [variable]          0/2097152  ( 0.0%)
+entdata          [variable]          0/524288   ( 0.0%)
+0 textures referenced
+=== Total BSP file data space used: 956160 bytes ===
+
+Using Wadfile: \program files\steam\steamapps\*****\half-life\ts\halflife.wad
+ - Contains 129 used textures, 27.98 percent of map (3116 textures in wad)
+Using Wadfile: \program files\steam\steamapps\*****\half-life\ts\packfrozenvalley.wad
+ - Contains 329 used textures, 71.37 percent of map (3953 textures in wad)
+Using Wadfile: \program files\steam\steamapps\*****\half-life\ts\ns.wad
+ - Contains 3 used textures, 0.65 percent of map (580 textures in wad)
+
+added 28 additional animating textures.
+Texture usage is at 16.78 mb (of 23.44 mb MAX)
+5.52 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlbsp -----
+Command line: "C:\Program Files (x86)\Batch Compiler\hlbsp.exe"-chart -texdata 24000 -lightdata 8000 "C:\Program Files (x86)\Steam\steamapps\*****\half-life\ts\maps\frozen_valley_v3"
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       8 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 24576000 ] [ 4194304 ]
+priority            [  Normal ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noopt               [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 8192)
+
+
+SolidBSP [hull 0] 500...1000...1500...2000...2500...3000...3500...4000...4500...5000...5500...6000...6500...7000...7500...8000...8500...9000...9443 (0.33 seconds)
+BSP generation successful, writing portal file 'C:\Program Files (x86)\Steam\steamapps\*****\half-life\ts\maps\frozen_valley_v3.prt'
+SolidBSP [hull 1] 500...1000...1500...2000...2500...3000...3500...4000...4500...5000...5500...6000...6500...7000...7500...8000...8500...8785 (0.28 seconds)
+SolidBSP [hull 2] 500...1000...1500...2000...2500...3000...3500...4000...4500...5000...5500...6000...6500...7000...7500...8000...8012 (0.24 seconds)
+SolidBSP [hull 3] 500...1000...1500...2000...2500...3000...3500...4000...4500...5000...5500...6000...6500...7000...7500...8000...8500...9000...9334 (0.31 seconds)
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models            219/400        14016/25600    (54.8%)
+planes          10423/32768     208460/655360   (31.8%)
+vertexes        29575/65535     354900/786420   (45.1%)
+nodes           11471/32767     275304/786408   (35.0%)
+texinfos         9262/32767     370480/1310680  (28.3%)
+faces           20669/65535     413380/1310700  (31.5%)
+clipnodes       29102/32767     232816/262136   (88.8%)
+leaves           7246/8192      202888/229376   (88.5%)
+marksurfaces    27095/65535      54190/131070   (41.3%)
+surfedges       98811/512000    395244/2048000  (19.3%)
+edges           51284/256000    205136/1024000  (20.0%)
+texdata          [variable]    17600226/24576000  (71.6%)
+lightdata        [variable]          0/8192000  ( 0.0%)
+visdata          [variable]          0/2097152  ( 0.0%)
+entdata          [variable]      79902/524288   (15.2%)
+489 textures referenced
+=== Total BSP file data space used: 20406942 bytes ===
+5.98 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlvis -----
+Command line: "C:\Program Files (x86)\Batch Compiler\hlvis.exe"-full -chart -texdata 24000 -lightdata 8000 "C:\Program Files (x86)\Steam\steamapps\*****\half-life\ts\maps\frozen_valley_v3"
+4782 portalleafs
+14863 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       8 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 24576000 ] [ 4194304 ]
+max vis distance    [       0 ] [       0 ]
+priority            [  Normal ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [      on ] [     off ]
+
+
+BasePortalVis:
+ (3.76 seconds)
+LeafThread:
+ (1580.70 seconds)
+
+
+average leafs visible: 399
+g_visdatasize:731494  compressed from 2859636
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models            219/400        14016/25600    (54.8%)
+planes          10423/32768     208460/655360   (31.8%)
+vertexes        29575/65535     354900/786420   (45.1%)
+nodes           11471/32767     275304/786408   (35.0%)
+texinfos         9262/32767     370480/1310680  (28.3%)
+faces           20669/65535     413380/1310700  (31.5%)
+clipnodes       29102/32767     232816/262136   (88.8%)
+leaves           7246/8192      202888/229376   (88.5%)
+marksurfaces    27095/65535      54190/131070   (41.3%)
+surfedges       98811/512000    395244/2048000  (19.3%)
+edges           51284/256000    205136/1024000  (20.0%)
+texdata          [variable]    17600226/24576000  (71.6%)
+lightdata        [variable]          0/6291456  ( 0.0%)
+visdata          [variable]     731494/2097152  (34.9%)
+entdata          [variable]      79902/524288   (15.2%)
+489 textures referenced
+=== Total BSP file data space used: 21138436 bytes ===
+1585.03 seconds elapsed [26m 25s]
+
+-----   END   hlvis -----
+
+
+
+hlrad v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlrad -----
+Command line: "C:\Program Files (x86)\Batch Compiler\hlrad.exe"-customshadowwithbounce -extra -bounce 1 -chop 120 -texchop 60 -nomatrix -chart -texdata 24000 -lightdata 8000 "C:\Program Files (x86)\Steam\steamapps\*****\half-life\ts\maps\frozen_valley_v3"
+
+-= Current hlrad Settings =-
+Name                | Setting             | Default
+--------------------|---------------------|-------------------------
+threads              [                 8 ] [            Varies ]
+verbose              [               off ] [               off ]
+log                  [                on ] [                on ]
+developer            [                 0 ] [                 0 ]
+chart                [                on ] [               off ]
+estimate             [               off ] [               off ]
+max texture memory   [          24576000 ] [           4194304 ]
+max lighting memory  [           8192000 ] [           6291456 ]
+priority             [            Normal ] [            Normal ]
+
+vismatrix algorithm  [          NoMatrix ] [          Original ]
+oversampling (-extra)[                on ] [               off ]
+bounces              [                 1 ] [                 1 ]
+bounce dynamic light [                on ] [                on ]
+ambient light        [ 0.000 0.000 0.000 ] [ 0.000 0.000 0.000 ]
+maximum light        [           255.000 ] [           256.000 ]
+circus mode          [               off ] [               off ]
+
+smoothing threshold  [            50.000 ] [            50.000 ]
+direct threshold     [            25.000 ] [            25.000 ]
+direct light scale   [             2.000 ] [             2.000 ]
+coring threshold     [             1.000 ] [             1.000 ]
+patch interpolation  [                on ] [                on ]
+
+texscale             [                on ] [                on ]
+patch subdividing    [                on ] [                on ]
+chop value           [           120.000 ] [            64.000 ]
+texchop value        [            60.000 ] [            32.000 ]
+
+global fade          [             1.000 ] [             1.000 ]
+global falloff       [                 2 ] [                 2 ]
+global light scale   [ 1.000 1.000 1.000 ] [ 1.000 1.000 1.000 ]
+global gamma         [ 0.500 0.500 0.500 ] [ 0.500 0.500 0.500 ]
+global light scale   [             1.000 ] [             1.000 ]
+global sky diffusion [             1.000 ] [             1.000 ]
+
+opaque entities      [                on ] [                on ]
+sky lighting fix     [                on ] [                on ]
+incremental          [               off ] [               off ]
+dump                 [               off ] [               off ]
+
+colour jitter        [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+monochromatic jitter [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+softlight hack       [   0.0 0.0 0.0 0.0 ] [   0.0 0.0 0.0 0.0 ]
+diffuse hack         [                on ] [                on ]
+spotlight points     [                on ] [                on ]
+
+custom shadows with bounce light
+                     [                on ] [               off ]
+rgb transfers        [               off ] [               off ]
+
+
+[Reading texlights from 'C:\Program Files (x86)\Batch Compiler\lights.rad']
+[92 texlights parsed from 'C:\Program Files (x86)\Batch Compiler\lights.rad']
+
+[Reading texlights from info_texlights map entity]
+[10 texlights parsed from info_texlights map entity]
+
+20669 faces
+Create Patches : 45933 base patches
+0 opaque faces
+1029287 square feet [148217392.00 square inches]
+3481 direct lights
+
+BuildFacelights:
+ (125.94 seconds)
+MakeScales:
+ (68.11 seconds)
+SwapTransfers:
+ (0.94 seconds)
+Transfer Lists :    25871688 :   25.87M transfers
+       Indices :    26026336 :   24.82M bytes
+          Data :   103486752 :   98.69M bytes
+GatherLight:
+ (0.18 seconds)
+FinalLightFace:
+ (0.14 seconds)
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models            219/400        14016/25600    (54.8%)
+planes          10423/32768     208460/655360   (31.8%)
+vertexes        29575/65535     354900/786420   (45.1%)
+nodes           11471/32767     275304/786408   (35.0%)
+texinfos         9262/32767     370480/1310680  (28.3%)
+faces           20669/65535     413380/1310700  (31.5%)
+clipnodes       29102/32767     232816/262136   (88.8%)
+leaves           7246/8192      202888/229376   (88.5%)
+marksurfaces    27095/65535      54190/131070   (41.3%)
+surfedges       98811/512000    395244/2048000  (19.3%)
+edges           51284/256000    205136/1024000  (20.0%)
+texdata          [variable]    17600226/24576000  (71.6%)
+lightdata        [variable]    1991667/8192000  (24.3%)
+visdata          [variable]     731494/2097152  (34.9%)
+entdata          [variable]      79902/524288   (15.2%)
+489 textures referenced
+=== Total BSP file data space used: 23130103 bytes ===
+196.17 seconds elapsed [3m 16s]
+
+-----   END   hlrad -----
+
+
+
