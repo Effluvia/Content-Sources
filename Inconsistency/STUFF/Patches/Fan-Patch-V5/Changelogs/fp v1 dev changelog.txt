@@ -1,0 +1,138 @@
+maps edited with Entspy
+
+
+background12 - fixed shadows by adding a shadow_control
+
+t0a0 - increased 2 pit hurt triggers damage from 10 to 99999. fixed pipe jump hologram getting stuck inside pipe after the first demontration, by enabling No Script Movement Flag for cjumphole scripted_sequence
+
+t0a0a - fixed long jump hologram being stuck in the ceiling before the sequence starts, by moving her 16 units down
+
+t0a0d - fixed soda cans after destroying a vending machine being completely black by changing their color value from 0 0 0 to 255 255 255, fixed shadows by adding a shadow_control
+
+c0a0e - increased pit hurt trigger damage from 10 to 100
+
+c1a0c - added logic suit which now spawns on NewGame
+
+c1a1b - fixed headcrab flowing away with the water by switching Start Disabled from No to Yes on all water_door_current(s)
+
+c1a1f - fixed books and env_shooter gibs being completely black by changing their color values from 0 0 0 to 255 255 255
+
+c1a2 - made the 2 damage triggers at the start do double damage as the first shock by using a SetDamage and then having it change back to normal damage
+
+c1a2a - fixed crate_blowup gibs and soda cans after destroying a vending machine being completely black by changing their color values from 0 0 0 to 255 255 255
+
+c1a2b - fixed zombie splat sound looping after loading into this map or loading a save, by enabling Is NOT Looped Flag and made input for it Fire once only
+
+c1a3a - increased pit trigger_hurt damage from 10 to 200
+
+c1a4 - decreased 8 goo trigger_hurt(s) damage from 10 to 3, changed func_tracktrain(s) Distance Between the Wheels from 50 to 150 to make the train turning less sudden
+
+c1a4i - deleted Damage Filter filter_invulnerable from the tentacles
+
+c1a4f - electrified water damage increased from 10 to 75, pit trigger_hurt (1) damage changed from 10 to 40, pit trigger_hurt (2) damage changed from 10 to 500 also disabled Only clients in vehicles flag and instead enabled Clients flag
+
+ {CUT} c2a1b - added scare scripted_sequence, added ambient_generic for scare growl (the sound can faintly be heard a a bit further away than it should in hl1), changed Next Script from scare to idle in drag scripted_sequence, deleted output to Kill scarey from dragmm multi_manager, disabled shadows on monster_bullchicken (scarey), enabled Efficient Flag for scarey, added inputs/outputs for scare and growl, added 1 other line into idle scripted_sequence to start scare, added env_shooter for fleshgibs and output for it in dragmm
+
+c2a2a - raised 1 battery by 4 units so it wouldn't fall through wooden plank, raised magnum by 4 units since it was stuck in ground
+
+c2a2b1 - fixed grunts and vortigaunts starting fighting on map load by changing almost everyones Sleep State from None to Waiting for PVS
+
+c2a2d - fixed 2 grunts running into the first room by changing theyre Sleep State from None to Waiting for PVS and added output to the vort spawn trigger to Wake them up, fixed 5 monster_generic gibs being completely black by changing their color values from 0 0 0 to 255 255 255
+
+c2a2f - fixed train not spawning with map command by changing the First Stop Target to the correct node
+
+c2a3e - fixed pipe fall damage and ground jump pad bug by changing breakfall trigger Speed of Push from 500 to 1200 and trigger 2 delay from 2.00 to 0.10
+
+c2a4 - removed all player_spawn_items which you shouldn't get
+
+c2a4b - fixed gib1_sound(s) and gib2_sound(s) looping after loading into this map or loading a save, by checking Is NOT Looped Flags for all of them
+
+c2a4d - turned on Client flag in the experiment room damage triggers, removed all player_spawn_items which you shouldn't get and added 2 ammo clips
+
+c2a4e - moved 2 tripmines 1 unit further from the computer so they wouldn't blow up on map reload, turned on Client flag in the experiment room damage triggers
+
+c2a4f - fixed gibs from all 6 env_shooter(s) being completely black by changing their color values from 0 0 0 to 255 255 255
+
+c2a4g - fixed shadows by adding a shadow_control
+
+c2a5 - fixed shadows by adding a shadow_control
+
+c2a5w - fixed shadows by adding a shadow_control
+
+c2a5x - fixed shadows by adding a shadow_control
+
+c2a5b - fixed shadows by adding a shadow_control
+
+c2a5e - fixed shadows by adding a shadow_control
+
+c2a5g - fixed shadows by adding a shadow_control
+
+c2a5d - lowered the box on the platform by 120 units so it wouldn't break on map load. fixed shadows by adding a shadow_control. improved the chase sequence slightly (by unchecking 3 flags from both grunt idle sequences and 1 flag from both main grunts), 1 of the grunts wouldn't activate properly and the other 2 would react very slowly
+
+c2a5f - tunnel fire damage raised from 10 to 50, raised 2 crossbow ammo so they wouldn't fall through shelf, fixed impaled grunt scripted sequence by adding a grunt for it and adding impaled animation to the script
+
+c3a1a - fixed shadows by adding a shadow_control
+
+c3a1b - raised 1 battery by 4 units so it wouldn't fall through the ground, fixed gibs from 5 env_shooter(s) being completely black by changing their color values from 0 0 0 to 255 255 255
+
+c3a2e - added NewGame items
+
+c3a2 - fixed grunt3_yell and grunt4_yell looping after loading into this map or loading a save, by checking Is NOT Looped Flags for both of them
+
+c3a2d - raised 2 batteries by 4 units so they wouldn't fall through the ground, fixed a teleport sound looping after loading into this map or loading a save, by checking Is NOT Looped Flag
+
+c4a1 - fixed Nihi audio by adding a trigger_auto for it
+
+c4a2 - fixed broken web that you could jump through from the corners by changing func_illusionary web into func_breakable (it now has flesh hit sound), checking Only Break on Trigger for all web parts, deleting web_wall1 (which also means that you can go 4 units closer to the web because no Clip) and deleting web_wall1 Kill output from multi_manager. added long jump module to player_spawn_items, fixed Nihi audio by checking the Play everywhere Flag
+
+c4a2a - fixed broken web that you could jump through from the corners by changing func_illusionary web into func_breakable (it now has flesh hit sound), checking Only Break on Trigger for all web parts, deleting web_wall2 (which also means that you can go 4 units closer to the web because no Clip) and deleting web_wall2 Kill output from multi_manager
+
+c4a1a - fixed Nihi audio by checking the Start Silent and Is NOT Looped Flags, deleted/changed a few things in logic auto. fixed teleport sound looping when loading a save. moved 1 healthkit in the vertically so it wouldn't get stuck in wall and fall OOB
+
+c4a1b - fixed Nihi audio by checking the Play everywhere Flag
+
+c4a1c - fixed Nihi audio by checking the Play everywhere and Start Silent Flags, fixed being able to see for a bit before the fade at the start begins by removing the 0.20 second delay from it
+
+c4a1f - fixed Nihi audio by checking the Play everywhere Flag. fixed a teleport sound looping after loading into this map or loading a save, by checking Is NOT Looped Flag (this also fixes it not playing when it should)
+
+c4a3 - added long jump module to player_spawn_items
+
+
+ c1a1, c1a4, c1a4b, c2a1a, c2a2a, c2a2b1, c2a2e, c2a2h, c2a4e, c2a4g, c2a5b, c2a5d, c2a5f, c2a5g, c3a1, c4a2b, c4a1a, c4a1b, c4a3 - fixed completely black gibs/props/entities by changing their color values from 0 0 0 to 255 255 255 (couldn't be bothered to mark down each of these separately)
+
+
+
+
+
+maps edited in hammer
+
+	(extra things i had to do because of decompiling:
+	replace Skip brushes by Clip brushes
+	change lighting textures from func_detail to World Geometry)
+
+
+t0a0b2 - fixed shooting range lighting problem by replacing the 6 light textures with the lit ones and shifted the textures to make them look as close to hl1 as possible
+
+c0a0 - changed Clips and Player Clips to Skips on train seats
+
+c0a0a - fixed train not spawning with map command by changing the First Stop Target to the correct node, changed Clips and Player Clips to Skips on train seats
+
+c0a0b - fixed train not spawning with map command by changing the First Stop Target to the correct node, changed Clips and Player Clips to Skips on train seats
+
+c0a0c - fixed train not spawning with map command by changing the First Stop Target to the correct node, changed Clips and Player Clips to Skips on train seats, made lighting bug at the start slightly less noticable (by spreading the bugged lighting out)
+
+c0a0d - lowered the 3 barrels and 6 boxes a bit so they wouldn't break on map load. gman was bugged looking away and walking in place (decompiling error), this was fixed by changing Move to Position in scripted_sequence from Walk to No. fixed train not spawning with map command by changing the First Stop Target to the correct node, changed Clips and Player Clips to Skips on train seats. fixed 2 robot bugs by changing its script start delay from 1.40 to 2.40 and checking its Not Solid Flag
+
+c1a0d - fixed suit holder lighting by adding an env_texturetoggle to change the light texture, disabling the green light from lights.rad and added 2 wider light_spots
+
+c1a0e - fixed tc glow by making orange and green lights (lower) inner and outer angles 90 degrees, increased middle hurt trigger damage from 10 to 200
+
+c1a1a - fixed suit holder lighting, fixed toilets (unless aiming flashlight at them) and soda cans after destroying a vending machine being completely black by changing their color value from 0 0 0 to 255 255 255
+
+c1a3 - fixed grunt scripted_sequence by changing Action Animation from idle1 to idle2 added idle1 to Post Action Idle Animation and checked Loop in Post Idle Flag. increased fan trigger_hurt damage from 10 to 500, raised the 2 ammo clips a little bit so they wouldn't fall through the ground, changed bulletproof glass from func_breakable to func_brush so you wouldn't be able shoot through it, added 2 new pixel player clips so you wouldn't be able to pick up shotgun ammo through glass, fixed soda cans after destroying the vending machines being completely black by changing their color value from 0 0 0 to 255 255 255
+
+c2a3a - fixed 3 autosaves not being set up properly
+
+c2a4a - fixed a section which was too dark by changing light intensity from 38 to 380 in the lights.rad and recompiling with it, fixed 3 autosaves not being set up properly
+
+c2a5c - electrified tower damage increased from 10 to 100, increased damage from 10 to 400 for 2 of the mines, fixed all skybox related issues by making a box for a map leak where the origin of a trigger was oob, fixed shadows by adding a shadow_control

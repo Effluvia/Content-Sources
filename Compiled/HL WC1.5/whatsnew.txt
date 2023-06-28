@@ -1,0 +1,252 @@
+			   What's new for 1.5b:
+
++ New icons and splash screen, courtesy of Walter |2| Costinak 
+  (2@2design.org). These are great! 
+
++ One vertex will snap to grid when you use the arrows to shift it, if it
+  was not already on the grid.
++ The Alt+P map checker now detects solid entities with no solids attached
+  to them. This happens rarely, but it's a pain to fix.
++ There's now an option to replace textures on hidden brushes.
++ There's now an option in the 2D Views tab to draw objects with the color
+  of the group they belong to in the 2D views.
++ You can now combine multiple solid entities into a single entity with the
+  toEntity command. You couldn't, before.
++ Copy/Paste entity properties buttons were added in the Object Properties
+  dialog box. Select an entity, hit COPY, and all its attributes are saved.
+  Select another entity, hit PASTE, and those attributes are copied over.
+  Pretty cool.
++ When you move stuff in the 2D views, the original object remains in place
+  once more.
++ Added arrows for texture scaling in the Texture Application Bar.
+
+* Ctrl+A stopped working to center the four views. Fixed.
+* Undoing texturing with the APPLY button in Texture Application mode didn't
+  work. Fixed.
+* Undo didn't update the 3D preview properly (this bug was only in the
+  last release.) Fixed.
+* The clip plane now uses the texture on existing faces of the brush
+  you're clipping when it adds a face to a brush. It used to add whatever
+  texture you currently had selected, which was a pain if that texture was
+  water or slime or whatever.
+* The clip plane didn't work on grouped objects/solid entities. Fixed.
+* Sometimes visgroups would be created with a very very dark color. Fixed.
+* Snap to grid indicator was flipped sometimes. Fixed.
+* "Goto" in the entity report no longer closes the report window.
+* Moving brushes with the arrow keys wasn't recorded in Undo. Fixed.
+* Adding an object to the prefab library crashed Worldcraft. Fixed.
+
+			What's new for 1.5a:
+
++ added a purge button to the filter control that deletes all 
+  unused VisGroups.
+* "Clear Selection" was incorrectly being put into the undo 
+  stack in most cases. fixed.
+* Changed face painting behavior: if you select a tool besides 
+  Select, Magnify, or Camera while you're in face painting mode, 
+  FP mode will be deactivated.
+* Map Checker was far too strict about finding points off a 
+  plane. Fixed.
+* Inserting a prefab while objects were selected screwed up 
+  the 2d display. Fixed.
+* file save actually goes to the map directory now. 
+* deleting all cameras then using pgup/pgdn crashed. fixed.
+* selecting object(s), editing their properties, then deselecting
+  all objects by clicking on blank space in 2d views did not 
+  save the changes you made. fixed.
+* copy/pasting an object required you to reselect that object 
+  to edit its properties. fixed.
+* fixed some face splitting problems.
+
+			 What's new for 1.5!
+
+Vertex Manipulation:
+	Vertex manipulation allows you to move each point on a solid
+	independently of the other points. You can even modify multiple 
+	points on multiple solids at the same time!
+
+	To use vertex manipulation, select the vertex tool from the 
+	toolbar. Before you can modify a solid's points, you have to
+	select the solid into morph mode by clicking on it in the 2D
+	(center handle only) or 3D views. You can select multiple
+	objects by holding down CTRL before you select it.
+
+	To select a vertex and move it, click the left mouse button
+	over it. To select multiple vertices, hold down CTRL and click.
+	You can use a selection box as well - just drag out a box, size
+	it to the vertices you want to select, and press ENTER.
+
+	Display Mode:
+	You can select to display only edge handles, only vertex 
+	handles, or both kinds of handle by pressing Shift+V or clicking
+	on the vertex tool icon repeatedly.
+
+	Face Splitting (Registered Only):
+	You can split a face into two by selecting just TWO edges
+	or two vertices and pressing Ctrl+F. You can't select an
+	edge and a vertex to split.
+
+Clip plane:
+	The clipping plane allows you to cut an object (or objects)
+	along a 2D plane.
+
+	To use it, select the objects you want to clip. Then press 
+	Shift+X or select the clip tool from the toolbar. Left-click
+	in the 2D view you want to use to clip and drag out the 
+	line you want to cut with. Release the left button. 
+	
+	A preview of the "clipped result" is drawn with thick lines
+	in the 2D views.
+
+	You can move the line around by holding CTRL and dragging it.
+	This moves both points instead of just one. Hold down SHIFT
+	and click-drag to start over in a new view.
+	
+	Clip Mode:
+	You can change the clip mode by pressing Shift+X or clicking 
+	on the clip tool repeatedly. There are three modes: 
+	Clip Left, Clip Right, and Split. The first two modes just toggle
+	which side of the original object is kept - left or right - and
+	the third mode splits the original object into two objects.
+
+	Remember that you can clip multiple objects at once - just 
+	select multiple objects before you go into clip mode.
+
+Texture locking:
+	When texture lock mode is ON, moving solids around keeps their
+	texture alignment intact. Rotating objects doesn't keep their
+	alignment - yet.
+
+	To toggle texture lock, press Shift+L or select "Texture Lock"
+	from the TOOLS menu.
+
+Redone Visgroups:
+	Visgroups are now actually usable. They work very differently
+	from before - the "Hide Objects" button on the toolbar creates
+	a new visgroup, puts the selected objects in that visgroup,
+	and hides it. The group is named "N objects", where N is the
+	number of objects that were hidden. Conversely, "Hide Unselected
+	Objects" puts all the objects that are not selected into a 
+	new visgroup and hides it.
+
+	Objects can now only be part of ONE visgroup. This new method 
+	takes a little bit of getting used to - it makes Visgroups a 
+	temporary method of organizing hidden objects instead of a
+	long-term strategy since the groups are so frequently broken 
+	up and destroyed.
+
+	To toggle the display of an existing visgroup, click just to
+	the left of its name in the filter control. The hand icon will
+	appear or disappear to show if the group is visible or not. You
+	must click APPLY for the changes to take effect. The "Show All 
+	Groups" button displays all the Visgroups.
+
+	The new Filter Control allows you to do several group operations
+	with the mouse:
+	
+	- you can combine a group with another group by click-dragging 
+	  it over the destination;
+	- you can delete a group by dragging it out of the listbox
+	- you can rename a group by selecting it and then clicking it
+	  again in the listbox.
+
+Texture browser features:
+	The texture browser has some new features. The name filter 
+	allows you to specify multiple search phrases, separated
+	by spaces. For example, "floor 1" will display all the textures
+	that have the words "floor" and "1" in them.
+
+	The filter list is now saved in a pull-down box, so you can
+	quickly recall previous filters.
+
+	The MARK button marks all the solids that use the currently
+	selected texture.
+
+	The REPLACE button brings up the texture replace dialog and 
+	fills in the "Search" field with the currently selected
+	texture.
+
+Select by handles:
+	The 2D and 3D Wireframe views now display an X in the middle
+	of every object to ease selection. This is especially useful
+	in 3D Wireframe mode, where it was difficult before to tell
+	which object was going to be selected (since you can see
+	through them all!)
+
+	You can toggle 2D selection ONLY by center handles by clicking
+	"Select By Handles" on the toolbar (this option is also
+	available in the Tools|Options|2D Views dialog.)
+
+Multiple cameras:
+	You can now create multiple persistent cameras. Hold down Shift
+	and left-click-drag to create a new camera in a 2D view. If there
+	are objects selected, the camera will be placed on the center of
+	the objects in the third axis (the "depth" axis of the 2D view you
+	create the camera in.)
+
+	More changes:
+	- the active camera (drawn with a red line) moves in 2D when the 3D 
+	  position changes.
+	- press DEL to delete the active camera.
+	- press PGUP and PGDN to cycle through the existing cameras.
+
+New Map Check features:
+	Map Check will now check for several more errors. In addition,
+	there's a "FIX ALL" button that fixes all the errors of the 
+	currently-highlighted kind. The new checks are:
+
+	- unrecognised texture - a texture on a face that's not found in
+	  any of the currently loaded WAD files. FIXing this error replaces
+	  the texture with the currently selected texture.
+	- invalid brush - a brush that's been mangled by vertex manipulation
+	  or other strange phenomena. FIXing this error causes Worldcraft 
+	  to closely approximate the invalid shape with a valid one. The
+	  results might not be desirable all the time.
+
+Other Small Features:
+	
+	Transformation previews in 2D:
+	When you select a bunch of objects and rotate/scale/shear/move them,
+	a preview is shown in the 2D views instead of just a simple box. 
+	This makes it easier to line things up when you're transforming a 
+	bunch of stuff.
+
+	Transform dialog:
+	Press Ctrl+M or select Tools|Transform to bring up a transformation
+	dialog, where you can transform the selected objects precisely by
+	entering a rotation, scale, or movement value.
+
+	Auto select:
+	This is a toggleable state. When it's ON, dragging a selection box
+	in a 2D view automatically selects everything in the box when the
+	left button is released, so you don't have to resize it in the other
+	2D views to get what you want.
+
+	Move 2d views with 3D camera:
+	This is an option in Tools|Options|2D Viewsa
+
+	New texture application features:
+	In texture application mode, there are some new features. The HIDE 
+	MASK button removes the red highlight of selected faces temporarily,
+	so you can see what you're aligning better. The Right Mouse Button
+	always APPLIES the currently selected texture to the face you click
+	on, and SHIFT+RMB applies the texture to the entire brush.
+	
+Tiny features:
+- 'D' and 'C' now zoom in the 2d views
+- Ctrl+E behavior:
+	- centers on selection
+	- centers on map (if no selection)
+	- centers on selected vertices (if in vertex mode)
+
+Important Bug Fixes:
+- fixed the 1-off scaling problem
+- fixed texture browser ugliness in NT
+- pasting objects snaps to grid
+- fixed the 45 degree texturing problem
+- toolbar doesn't flash anymore
+- copying a command sequence in the expert
+  run map feature used to crash.
+- lines are much crisper in the 2D views - no jaggies on
+  45 degree lines, for example.
+- shearing objects now snaps to grid.

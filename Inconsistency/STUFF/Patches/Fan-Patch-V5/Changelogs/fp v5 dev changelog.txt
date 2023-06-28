@@ -1,0 +1,155 @@
+background03 - changed skyname from xen9 to sky_wasteland02
+
+background07 - deleted damagefilter from tent1/2/3, deleted the filter_activator_class
+
+background15 - checked Toggle and Shade Start flags for 6 env_beam(s)
+
+c0a0 - lowered 2 scripted_sequence(s) by 1 unit and 2 scripted_sequence(s) by 2 units, deleted OPENTITLE3 env_message, deleted fade_out trigger_relay and the 2 hl1 outputs for it, deleted the 3 hl1 outputs from title_manager2 mm, renamed 1 forko monster_generic as forko2 and changed its scripted_sequence Target NPC to that as well
+
+c0a0b - deleted OPENTITLE3 env_message and the output for it, changed radius from 1250 to 512 for a steamjet1.wav ambient_generic
+
+c0a0c - removed hl1 target output from 2 gate1 func_door_rotating(s), moved 2 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, renamed the red lights_train_green1 func_button as lights_train_red1
+
+c0a0d - deleted title_manager mm and its trigger_auto
+
+c1a0 - replaced +0lab1_comp10b/c textures with lab1_comp10b/c000, changed skyname from morning to sky_wasteland02, changed radius from 1250 to 512 for a signalgear2.wav ambient_generic, lowered m6 scripted_sequence by 1 unit, changed switcheroo delay in buckylightson from 1.30 to 0.90, deleted office1mm multi_manager and officelightsw1 ambient_generic
+
+c1a0a - deleted a func_button, parented the ele upper func_button to vdeath, named the ele upper button as elebutton and added an output to it: OnIn elebutton Lock, added 2 outputs to vdeath func_door: OnFullyClosed/OnFullyOpen elebutton Unlock
+
+c1a0b - deleted c1a0e_auto_save trigger_autosave, changed radius from 1250 to 512/768 for 2 signalgear1.wav ambient_generic(s)
+
+c1a1 - deleted the bzfight trigger_once, removed physdamagescale and a flag from 8 monster_scientist_dead(s) and 1 monster_barney_dead that were accidentally created by me due to a faulty fgd, checked Only Once for 3_control_beam_hurtx in 3_control_beam_entity_1mm, moved 1_control_beam_entity_1mm output to the 4_control_beam_entity_1mm trigger_once and deleted the original trigger and extended the other trigger, changed crab_bake trigger_hurt textures from generic028 to toolstrigger and adjusted them, moved attacking_zombie_start scripted_sequence 1 unit down, renamed c1a1 area elebutton1 as elebutton1a/elebutton2 as elebutton2a and set their env_texturetoggle targets accordingly, unchecked Clients and changed Damage from 100 to 102 for kill_pain trigger_hurt, unchecked Only Once for 4 dethvmm func_breakble(s), checked Only Once for dethv in dethvmm and removed OHDEAR and kill_dethvmm outputs, removed kill_dethvmm mm
+
+c1a1a - fixed 14 textures that weren't animated but should've been, removed physdamagescale and a flag from 7 monster_scientist_dead(s) that were accidentally created by me due to a faulty fgd, named the lightswitch func_button as switcheroo and added an env_texturetoggle for it, added 2 outputs to switcheroo func_button: OnPressed switcheroo Lock and OnPressed switcherootex IncrementTextureIndex, changed hevmaster1 func_button into world geo
+
+c1a1c - removed physdamagescale and a flag from 1 monster_barney_dead that were accidentally created by me due to a faulty fgd
+
+c1a2 - changed 2 roach trigger_push textures from generic012 to toolstrigger and adjusted them, changed 2 signc1a2_6b textures to signc1a2_6a, deleted 1 world geo 'admin 2' sign, moved 13 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, removed shatterdoormm hl1 target from a trigger_once, added output to the chap start logic_auto: OnNewGame startele1 AddOutput OnOpen elebutton1:AddOutput:targetname elebutton1xxx:0:1, deleted looker4 scripted_sequence, removed physdamagescale and a flag from 1 monster_scientist_dead and 1 monster_barney_dead that were accidentally created by me due to a faulty fgd, lowered crab_zapper1/2/3/4 scripted_sequence(s) by 1 unit, removed 1 of the lightswitchtex outputs from lightswitch func_button and changed the other to OnPressed, removed flickerlight Kill output from a func_button and changed the TurnOff output delay from 0.01 to 0.25
+
+c1a2a - removed physdamagescale and a flag from 3 monster_scientist_dead(s) that were accidentally created by me due to a faulty fgd, moved lightsout1/2 scripted_sequence(s) 1 units down, changed lightswitch delay in lightsoutmm from 1.10 to 0.90, moved 1 mm outputs into the entity that triggers it and removed the mm and the output for it, deleted scilightsaudio ambient_generic, deleted OnOut and scilightsaudio outputs from lightswitch func_button and changed the remaining ones to OnPressed
+
+c1a2b - removed Action Animation from gman_glare2 and changed Y Z X from 0 270 0 to 0 0 0, removed the keypad_door1 output and the hl1 killtarget output from the keypad_door_sound func_door, unchecked Use Opens from the keypad_door_sound func_door, deleted zombiebob3 scripted_sequence, removed physdamagescale and a flag from 4 monster_scientist_dead(s) and 1 monster_barney_dead that were accidentally created by me due to a faulty fgd
+
+c1a3 - replaced +0~lab_crt2/8 textures with ~lab_crt2/8000, changed output in red/green vending machine func_breakable(s) from Kill to Toggle, added a world geo into the green vending machine, moved c1a3watch 8 units down, removed Action Animation from c1a3watch and changed Y Z X from 0 180 0 to 0 270 0, unchecked a flag from 5 monster_tripmine(s), removed physdamagescale and a flag from 3 monster_scientist_dead(s) and 2 monster_barney_dead(s) that were accidentally created by me due to a faulty fgd, changed skyname from sky_dawn01 to sky_wasteland02, deleted c1a3_vent01_mm, deleted the gmanlook hl1 output from beatglassmm
+
+c1a3a - unchecked a flag from 3 monster_tripmine(s)
+
+c1a3c - moved the 2 youdienow monster_human_grunt(s) to a different location
+
+c1a4 - changed info_player_start Y Z X from 0 268 0 to 0 272 0
+
+c1a4b - removed name and hl1 target from 2 movehoundeye_move_1 trigger_once(s)
+
+c1a4e - deleted the 2 filter_activator_class(es), deleted filtername from silofan_p/2 trigger_push, unchecked Everything and checked Clients for silofan_p trigger_push, unchecked Everything and checked NPCs, Pushables and Physics Objects for silofan_p2 trigger_push.
+
+c1a4f - deleted ele_ready_ms output from a lightson mm, added 1.00 delay to lights1 output in a lightson mm, changed alien_squid_walk2 scripted_sequence angles from 0 45 0 to 0 225 0, deleted deathlift_call1_tog/swinggo1_tog/swingreturn1_tog env_texturetoggle(s) and the 2 outputs for them
+
+c1a4g - removed physdamagescale and a flag from 1 monster_scientist_dead and 1 monster_barney_dead that were accidentally created by me due to a faulty fgd
+
+c1a4i - deleted the filter_activator_class, deleted dials output from PowerAuto1 trigger_auto, deleted hl1 outputs from Power/Oxy/FuelAuto1 trigger_auto(s), copied the output from Power/Fuel/OxyAutoMain1 trigger_auto(s) into Power/Oxy/FuelAuto1 trigger_auto(s) and deleted the Power/Fuel/OxyAutoMain1 trigger_auto(s), deleted tentacle_dead_ms hl1 output from init_rocket_fire mm, removed the 3 tentacle_thrashxxx logic_relay(s)
+
+c2a1 - checked Only Break on Trigger for crate_barrier func_breakable, unchecked Reverse Dir for 1 crate_barrier_dr and checked it for the other, replaced a +0~lab_crt1 texture with ~lab_crt1000, moved info_player_start and all the player spawn stuff to a different location and changed the info_player_start Y Z X from 0 127 0 to 0 22 0, removed the name from the music_track_13_trigger and the output for it in the chap start logic_auto, removed music_track_13 output from the chap start logic_auto, unchecked the flag from 7 info_target(s), renamed 1 of the target2 info_target(s) as target3, deleted rendercolor, renderamt, health and unchecked the flag from 9 info_node(s), changed scarebeam1/2/3 Width from 25 to 8 and Beam Color from 9 2 130 to 55 100 255, changed radius from 1250 to 512 for a deadsignal2.wav ambient_generic, changed radius from 1250 to 512 for 2 steamjet1.wav ambient_generic(s), changed radius from 1250 to 768 for a steamjet1.wav ambient_generic, deleted battlemm and throwgruntmm, lowered startgarg scripted_sequence by 1 unit and changed the angles from 0 0 0 to 0 270 0
+
+c2a1a - changed 1 gen_laser Width from 10 to 1, unchecked a flag from 2 scripted_sequence(s), removed Name from one of the balconygrunt2 monster_human_grunt(s), unchecked a flag from 5 monster_tripmine(s), changed radius from 1250 to 512 for a deadsignal2.wav ambient_generic, changed radius from 1250 to 768 for a steamjet1.wav ambient_generic, changed radius from 1250 to 512 for a signalgear2.wav ambient_generic, deleted hl1 target output from 2 p_power func_button(s)
+
+c2a2 - replaced 7 path_track(s) with info_target(s), changed the first flood7a/b pair name to flood6a/b and changed their env_beam Start/Ending Entity to those as well
+
+c2a2a - unchecked 2 flags from 2 weapon_handgrenade(s), removed physdamagescale from 1 monster_barney_dead that was accidentally created by me due to a faulty fgd, removed 2 flags from a monster_hgrunt_dead, changed skyname from black to sky_wasteland02, replaced 8 path_track(s) with info_target(s)
+
+c2a2b1 - unchecked a flag from 2 monster_tripmine(s), replaced a +0~lab_crt1 texture with ~lab_crt1000
+
+c2a2d - removed angles/activity/hinttype from 8 info_node(s), removed flags from 3 item_battery(s) and 1 ammo_ARgrenades, unchecked a flag from 5 monster_tripmine(s), removed a flag from a monster_hgrunt_dead
+
+c2a2e - removed angles/activity/hinttype/spawnflags in 2 info_node(s), unchecked a flag from 6 monster_tripmine(s)
+
+c2a2f - unchecked a flag from 3 monster_tripmine(s)
+
+c2a2g - moved 1 mm outputs into the entity that triggers it and removed the mm and the output for it, removed sniper_die1 hl1 target from a func_breakable, changed radius from 1250 to 512 for a deadsignal2.wav ambient_generic
+
+c2a2h - removed a flag from a monster_scientist_dead, changed radius from 1250 to 512 for 4 deadsignal2.wav ambient_generic(s), changed radius from 1250 to 512 for a deadsignal1.wav ambient_generic, changed radius from 1250 to 512 for 2 signalgear2.wav ambient_generic(s), added a shadow_control
+
+c2a3 - removed/unchecked flags from 12 env_sound(s), 2 env_spark(s), 1 multi_manager and 1 env_shake. unchecked flag 1 from a trigger_changelevel, removed angles and 3 flags from 88 info_node(s), removed flags from 2 ammo_9mmAR(s), removed 1 flag and delay from 2 ammo_9mmclip(s) and 1 ammo_ARgrenades, unchecked Use Opens and checked Toggle for 3 func_door_rotating(s)
+
+c2a3a - unchecked flag 1 from 2 trigger_changelevel(s), unchecked Use Opens for a func_door_rotating, removed suspense hl1 output from ickyjumpmm, removed icky output from ickyjumpmm, removed Startcombat output from 2 trigger_multiple(s) and changed the endcombat outputs to EndCombat, changed OnTrigger Startcombat output in eatmeicky trigger_multiple to OnStartTouch StartCombat and added OnEndTouch icky EndCombat output, changed cagebubbles trigger_multiple to Start Disabled and added 2 outputs: OnStartTouch/OnEndTouch icky StartCombat/EndCombat Only Once
+
+c2a3b - changed gman scripted_sequence Y Z X from 0 271 0 to 0 90 0, removed angles/spawnflags from 182 info_node(s), unchecked flag 1 from a trigger_changelevel, renamed one of the smtele_beamsvort1 as 2smtele_beamsvort1 and made a copy of the 2 original outputs with the new name, changed the Start Entity for 6 env_beam(s) to be itself
+
+c2a3d - unchecked flag 1 from a trigger_changelevel, changed the Start Entity for 1 env_beam to be itself
+
+c2a4 - moved info_player_start and all the player spawn stuff by 682 units and changed the info_player_start Y Z X from 0 5 0 to 0 0 0, checked Disable Touch for the prev map trigger_changelevel, deleted squid2 scripted_sequence
+
+c2a4a - adjusted the textures on the pipe func_breakable, replaced a c2a3turbine4 texture with black, changed radius from 1250 to 512 for 3 steamjet1.wav ambient_generic(s)
+
+(Entspy to Hammer) c2a4c - made world geos into func_detail (8 geo into 1 detail and 4 geo into 1 detail), fixed the steam version multicore rendering problem by decompiling and recompiling the map, moved a world geo sign 1 unit in the -y direction, did some stuff with 3 world geo in prev area to make it more like prev map and fixed some textures there
+
+c2a4d - moved info_player_start and all the player spawn stuff to a different location and changed the info_player_start Y Z X from 0 180 0 to 0 270 0, removed the name from the start_grate and the output for it in the chap start logic_auto, changed 2 houndeyeroom_laser1 Width from 10 to 1, deleted houndeye_cagebut1_tog env_texturetoggle and the output for it
+
+c2a4e - unchecked a flag from 5 monster_tripmine(s)
+
+c2a5 - changed can_expl5_push output in can_expl5_mm from Enable to Disable, deleted expl hl1 target from 25 trigger_once(s), slightly moved 2 expl trigger_once(s), unchecked NPCs from 27 expl trigger_once(s), unchecked NPCs from can_expl2/4/5_push, checked Physics Objects for can_expl4/5_push, moved info_player_start and all the player spawn stuff by 320 units, checked Clients for 4 suck_1 trigger_push(es), changed turbinesd output in valve_1 mm from Open to Kill, deleted sci_5 scripted_sequence
+
+c2a5a - removed 1 world geo, changed a func_detail into world geo, created a world geo box to contain a trigger_once origin, resized 5 world geo, deleted 2 clips, resized 1 world geo and changed its textures, extended the fade trigger_once, removed 1 world geo, created 2 world geo, deleted type and delay from an item_healthkit, removed angles/hinttype from 17 info_node(s) and just hinttype from 2 info_node(s)
+
+c2a5c - moved 14 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, removed sniper_die1 hl1 target from a func_breakable, extended a barbed wire clip by 24 units, changed mine0/1/2/3/4/5/6/8/9_hurt Disable 1.00 output in mine0/1/2/3/4/5/6/8/9_mm to Kill 0.10, deleted hl1 outputs from the rubble3 trigger_once, chhanged hurt2/3/4 Disable output in rubble2/3/4 func_breakable(s) to Kill, made the trigger_once origin box smaller, deleted dmg from mine1/2_hurt trigger_hurt(s), unchecked 3 flags for 8 env_shake(s) and 1 flag for 1 env_shake, unchecked a flag from 4 monster_tripmine(s)
+
+(Entspy to Hammer) c2a5d - made world geo into func_detail (1 geo into 1 detail), deleted the skybox, moved the shadow_control to a different location, changed prev map trigger_changelevel textures from out_wall3a to toolstrigger and adjusted them, unchecked Break on Pressure for 14 tripmine func_breakable(s), changed 14 tripmine func_breakable(s) textures from out_wall3a to toolsnpcclip and adjusted them, centered bcrate04 texture on 2 func_pushable(s) and 2 func_breakable(s), added a func_breakable for 1 tripmine that didn't have one, made the ele button trigger bigger, extended a trigger_autosave at the end by 128 units downwards, moved info_player_start 186 units down and changed rotation fro 0 227 0 to 0 133 0, changed map end trigger_hurt textures from c2a3turbine2 and black to toolstrigger and adjusted them, unchecked Use Opens from 3 door_neveropen func_door(s), unchecked a flag from 4 monster_tripmine(s), checked Touch Opens for 3 door_neveropen func_door(s), unchecked Use Opens for 3 func_door_rotating(s), changed radius from 1250 to 512 for a steamjet1.wav ambient_generic
+
+c2a5e - moved the secret_door_lower_ss scripted_sequence back to where it is in hl1 and removed the Action Animation from it, removed the delay from the sniperally_rotdoors output in a trigger_once and changed the other output in that trigger_once from OnTrigger to OnStartTouch and removed the hl1 target from the trigger_once, unchecked Passable from the 2 sniperally_rotdoors func_door_rotating(s), deleted the sniperally_rotdoors func_door, lowered watchout scripted_sequence by 8 units, checked Only Break on Trigger for 2 fescape_breaks func_breakable(s), moved 3 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, removed osprey_mm hl1 target from a trigger_once, deleted os1 output from osprey1, named the 2 osprey monster_human_grunt(s) as ospreymen, deleted the 2 ospreymen_hurt func_door(s), changed the ospreymen_hurt output in a trigger_once to ospreymen SetHealth -200, unchecked 2 flags from agrunt_breakout_doorr env_shake, changed radius from 1250 to 512 for a deadsignal2.wav ambient_generic, changed radius from 1250 to 512 for a steamjet1.wav ambient_generic, set ammorack1 as the name for a func_button and checked Don't move flag
+
+c2a5f - moved 7 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, changed grunt_wall_breakw output in the bustmm trigger_once from Kill to Toggle, changed bradley_door_shards output in the incoming_bradley_mm from Kill to Toggle, changed retreating_grunt_script_1/2 Search Radius from 512 to 0, unchecked Use Opens from hangar_door func_door, changed barney_door1 and barney_gate1 Target NPC from monster_barney to barney1, moved Action Animation into Post Action Idle Animation and checked Loop in Post Idle for the impaled scripted_sequence, moved the impaled_grunt to a slightly different location
+
+c2a5g - changed pod_sound_1 delay in pod_push_mm1 from 1.00 to 0.00, moved 6 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, renamed 1 of the powerbox_shardsw as powerbox_shardsw1 and made a copy of powerbox_shardsw output but with Toggle instead of Kill, deleted tower_col1 func_door and the output for it, deleted powerbox_shardsd Kill output from itself and unchecked Passable and changed Solid Type from BSP to VPhysics, deleted a garg_door trigger_auto, changed the garg_doord output in garg_door_gibs func_breakable from Open to Kill, removed name from table func_wall
+
+c2a5w - removed flag from an env_sound, removed flag from 2 ammo_crossbow(s)
+
+c2a5x - changed mine/0/1/2/3/4/5/6/7/8/9_hurt Disable 1.00 output in mine/0/1/2/3/4/5/6/7/8/9_mm to Kill 0.10, deleted dmg from mine/0/1/2/3/5/6/7/8/9_hurt trigger_hurt(s), moved 11 mm outputs into the entities that trigger them and removed the mm(s) and the output for them
+
+c3a1 - deleted the 2 radio1exp1 outputs from the radio func_breakable, moved 2 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, changed info_player_start Y Z X from 0 277 0 to 0 270 0, removed flag from 2 ammo_9mmAR/1 ammo_ARgrenades/1 item_battery/1 monster_hgrunt_dead, changed radius from 1250 to 512 for 2 steamjet1.wav ambient_generic(s)
+
+c3a1a - changed ichy output in a trigger_once from OnTrigger to OnStartTouch, changed radius from 1250 to 768 for 2 steamjet1.wav ambient_generic(s)
+
+c3a1b - changed c3a1transdoor output in the outside func_button from Toggle to Open, lowered 5 grunt_run1go scripted_sequence(s) by 9 units
+
+c3a2 - deleted a duplicate info_node, changed c3a2startdoors output in the outside func_button from Toggle to Open, added output to the chap start logic_auto: OnNewGame c3a2etrans_button Lock, moved info_player_start and all the player spawn stuff by 320 units (info_player_start also an extra 2 units down) and changed the info_player_start Y Z X from 0 87 0 to 0 90 0, removed physdamagescale and a flag from 1 monster_scientist_dead that were accidentally created by me due to a faulty fgd, checked Don't move for c3a2etrans_button func_button
+
+c3a2a - changed radius from 1250 to 512 and volume from 9 to 7 for a steamjet1.wav ambient_generic
+
+c3a2c - deleted the empty OnEndTouch output from a trigger_teleport, changed gman_tele Y Z X from 0 0 0 to 0 270 0, checked Play everywhere for c3a2_rumblesa ambient_generic, changed barnturn1 Target NPC from barneygreet1 to barney1, removed physdamagescale and a flag from 1 monster_scientist_dead that were accidentally created by me due to a faulty fgd, changed radius from 3000 to 768 for 2 steamjet1.wav ambient_generic(s), checked Toggle/Random Strike for 5 env_beam(s), raised gman_tele scripted_sequence by 9 units
+
+c3a2d - checked Play everywhere for c3a2_sciscream and 1 other ambient_generic, checked Start Silent for c3a2d_sound06 ambient_generic, unchecked Use Opens and checked Touch Opens for a func_door, changed radius from 1250 to 512 for a steamjet1.wav ambient_generic, checked Shade End flag for 10 env_beam(s), checked Random Strike/EndSparks/Shade End flags for 1 env_beam, checked Random Strike/Decal End/Shade End flags for 1 env_beam, checked Toggle/Random Strike flags for 1 env_beam, unchecked EndSparks and checked Toggle flags for 2 env_beam(s)
+
+c4a1 - moved b/1b/2b_1b output from b/1b/2bstop_1f to b/1b/2bstop_1e and checked Disabled for b/1b/2bstop_1f, changed /1/2beam_1a Width from 8 to 0.8
+
+c4a1a - added Reload to the partial output in a deathfall trigger_once, deleted deathfall hl1 target from 14 trigger_once(s), changed radius from 1250 to 768 for a steamjet1.wav ambient_generic, checked Toggle and Shade Start flags for 6 env_beam(s), checked Start On flag for an env_beam, deleted an empty trigger_multiple
+
+c4a1b - extended 2 solids of the deathfall1 trigger_once, deleted 5 clips in front of the sky textures, deleted deathfall1 hl1 target from a trigger_once, changed blocker func_wall_toggle textures from xeno_7wa to toolstrigger, deleted chaptertitle from worldspawn, checked Start On for an env_beam, checked EndSparks for an env_beam
+
+c4a1c - deleted chaptertitle from worldspawn, deleted go_1 scripted_sequence and 3 multi_manager(s)
+
+c4a1e - deleted chaptertitle from worldspawn, changed dn_1/2/3 func_platrot speed from 100 to 150, changed start_1a/2a/3a dn_1/2/3 hl1 output delay from 1 to 0, changed start_1a trigger_auto hl1 output delay from 0 to 1
+
+c4a1f - deleted chaptertitle from worldspawn, checked Start Silent and Is NOT Looped for horror ambient_generic, changed whore and relay multi_manager hl1 outputs into source outputs
+
+c4a2 - removed reachtarget from goose1b/1c/4 info_bigmomma(s), deleted a trigger_once
+
+c4a2a - added OnTrigger c4a2a_end Reload 1.10 to c4a2_playerdie mm, moved 2 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, deleted deathfall2 hl1 target from a trigger_once, checked GlobalShake for c4a2_shake2 env_shake, removed reachtarget from goose8 info_bigmomma
+
+c4a2b - deleted death scripted_sequence, removed reachtarget from goose8b/12/14 info_bigmomma(s)
+
+c4a3 - moved 6 mm outputs into the entities that trigger them and removed the mm(s) and the output for them, deleted 3 trigger_once(s), deleted n_teleport3 output from nih_speak4_ms trigger_once, deleted nih_speak4_ms trigger_multiple, checked Only Once for 4 outputs in the arena 3 trigger_teleport and removed exit_arena_4_mm, removed hl1 killtarget output from n_teleport1, removed n_teleport1/2/3 output from trigger_once(s), checked Only Once for 2 outputs in n_leaving4 logic_relay, changed a icky output in a trigger_multiple from StopCombat to EndCombat, checked Start Silent and named/renamed the alien_minddrill.wav and alien_cycletone.wav pair in each of the 3 arenas as arena1/2/3_sounds and added PlaySound/StopSound output to the arena trigger_teleport(s) and n_leaving relays, removed name from psp_1 light, removed 3 port_suckout1.wav ambient_generic(s) and 1 beamstart10.wav ambient_generic
+
+c5a1 - slightly moved a world geo, checked Start On for 4 env_beam(s), changed endroom info_target angles from 0 0 0 to 0 270 0, changed 5 textures on the func_train world geo box from black to toolsnodraw
+
+t0a0b - changed radius from 1250 to 200 and volume from 8 to 3 for a steamjet1.wav ambient_generic, lowered kickup scripted_sequence by 8 units
+
+
+
+
+sentences.txt - changed the WILD numbers so that they would be sequential, removed the extra ")" from WILD8
+
+titles.txt - removed OPENTITLE3/4 and C4A1B/C/E/FTITLE sections
+
+
++a~fifts_lght01.vmt - changed UnlitGeneric to LightmappedGeneric
+
+trk_grille.vmt - changed $surfaceprop from metalgrating to metalgrate
