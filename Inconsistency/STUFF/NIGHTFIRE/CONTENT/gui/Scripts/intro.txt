@@ -1,0 +1,928 @@
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+
+ 
+ 
+ 
+ 
+nightfire_intro_test_02.avi
+GUI_VARIABLE_FLOAT
+	NAME dolaunchMainMenu
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_VARIABLE_FLOAT
+	NAME initialized
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME exitedMovie
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_VARIABLE_FLOAT
+	NAME currentMovieNum
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 2
+	WRAP FALSE
+	LOOP FALSE
+END
+
+GUI_VARIABLE_MOVIE
+	NAME themovie
+#	TEXTURE movies/MGM_logo.avi
+	LOOPING FALSE
+	AUDIO TRUE
+	EXCLUSIVE TRUE
+END
+
+GUI_VARIABLE_FLOAT
+	NAME movieTimer
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 20000		#about 5.5 hours!
+	LERP_TIME 20000		
+	WRAP FALSE
+	LOOP FALSE
+	RUNNING FALSE
+END
+GUI_VARIABLE_FLOAT
+	NAME intro_can_exit
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_FLAGS
+#	USE_CURSOR
+	USE_INPUT
+	BLOCK_CURSOR
+	BLOCK_FRAME
+	BLOCK_INPUT
+	DYNAMIC
+	UNIQUE
+END
+
+GUI_ACTION
+	NAME LaunchMainMenu
+	# $param0 is 0 for escaped, 1 for finished
+	
+#	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU _gui_mainmenu END
+	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Mainmenu/legal.txt" END
+	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Dialogs/dlg_wait.txt" END
+END
+
+GUI_ACTION
+	NAME ExitMovie
+	# $param0 is 0 for escaped, 1 for finished
+	
+	GUI_COMMAND EQUALS exitedMovie 0 GUI_ACTION_MOVIE_VARIABLE themovie FREE END
+	GUI_COMMAND EQUALS exitedMovie 0 GUI_ACTION_VCR_VARIABLE movieTimer PAUSE END
+	GUI_COMMAND EQUALS exitedMovie 0 LaunchMainMenu $param0 END
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE exitedMovie 1 END
+	GUI_COMMAND GUI_ACTION_EXIT END 
+END
+
+GUI_ACTION
+	NAME TryExitMovie
+	# $param0 is 0 for escaped, 1 for finished
+	
+	GUI_COMMAND EQUALS intro_can_exit 1 ExitMovie $param0 END
+END
+
+GUI_ACTION
+	NAME _PlayMovie
+	# $param0 is the movie number to play
+	
+	GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE themovie STOP END
+	GUI_COMMAND EQUALS $param0 0 GUI_ACTION_SET_VARIABLE themovie "movies/EA_logo.avi" END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE themovie "movies/MGM_logo.avi" END
+#	GUI_COMMAND EQUALS $param0 2 GUI_ACTION_SET_VARIABLE themovie "movies/GBX_logo.avi" END
+
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE currentMovieNum $param0 END
+	
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE movieTimer REWIND END
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE movieTimer PLAY END
+	GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE themovie PLAY END
+END
+
+GUI_ACTION
+	NAME PlayMovie
+	
+	GUI_COMMAND EQUALS exitedMovie 0 _PlayMovie $param0 END
+END
+
+GUI_ACTION
+	NAME PlayNextMovie
+	
+	GUI_COMMAND GUI_ACTION_ADD_VARIABLE currentMovieNum 1 END
+	GUI_COMMAND GREATERTHAN currentMovieNum 1 ExitMovie 1 END
+	GUI_COMMAND EQUALS currentMovieNum 2 PlayMovie currentMovieNum END
+	GUI_COMMAND LESSTHAN currentMovieNum 2 PlayMovie currentMovieNum END
+END
+
+GUI_ACTION
+	NAME InitializeIntro
+	
+	GUI_COMMAND GUI_ACTION_DIALOG LOADACTION GUI_SETTINGS_FILE END
+	GUI_COMMAND GUI_SETTINGS_FILE LOAD "nightfire"" END
+	GUI_COMMAND GUI_SETTINGS_FILE VARIABLE intro_can_exit END
+	GUI_COMMAND GUI_SETTINGS_FILE CLOSE END
+	
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE movieTimer REWIND END
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE movieTimer PLAY END
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE exitedMovie 0 END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE initialized 1 END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE currentMovieNum 0 END
+	GUI_COMMAND PlayMovie currentMovieNum END
+END
+
+GUI_ACTION
+	NAME TryPlayNextMovie
+	
+	GUI_COMMAND EQUALS initialized 1 PlayNextMovie END
+	GUI_COMMAND EQUALS initialized 0 InitializeIntro END
+END
+
+GUI_SCREEN
+	NAME IntroMovieScreen
+
+	FADE_IN_TIME 0.25
+	FADE_OUT_TIME 0.25
+	
+	MATERIAL_INFO
+		MATERIAL solid
+		COLOR 0 0 0 255
+	END
+	
+	GUI_GENERIC
+		NAME MovieView
+		Z_PLANE 1
+		
+		SCREEN_RECT_LTWH 0 0 640 480
+		
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE @themovie
+			COLOR 255 255 255 0
+		END
+		
+		GUI_INPUT
+			CANCEL		GUI_COMMAND GREATERTHAN currentMovieNum 1 TryExitMovie 0 END
+#			CANCEL		GUI_COMMAND ExitMovie 0 END
+		END
+		
+		GUI_DEPENDENCY
+			NAME themovie
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0.0	#not ready
+				ON_RENDER GUI_COMMAND TryPlayNextMovie END
+				MATERIAL_INFO
+					COLOR 255 255 255 0
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1.0	#loaded
+				ON_RENDER GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE themovie PLAY END
+				MATERIAL_INFO
+					COLOR 255 255 255 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 2.0	#playing
+				ON_RENDER GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE themovie UPDATE END
+				MATERIAL_INFO
+					COLOR 255 255 255 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 3.0	#stopped
+				ON_RENDER GUI_COMMAND TryPlayNextMovie END
+				MATERIAL_INFO
+					COLOR 255 255 255 0
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 4.0	#finished
+				ON_RENDER GUI_COMMAND TryPlayNextMovie END
+				MATERIAL_INFO
+					COLOR 255 255 255 0
+				END
+			END
+		END
+		
+	END
+	
+	GUI_GENERIC
+		NAME initializer
+		Z_PLANE 1
+		ON_RENDER GUI_COMMAND EQUALS initialized 0 InitializeIntro END
+	END
+END

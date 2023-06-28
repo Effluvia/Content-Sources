@@ -1,0 +1,999 @@
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+
+GUI_FLAGS
+#	USE_CURSOR
+	USE_INPUT
+	BLOCK_CURSOR
+#	BLOCK_FRAME
+	BLOCK_INPUT
+	UNIQUE
+	DYNAMIC
+END
+
+GUI_VARIABLE_STRING
+	NAME con_server
+END
+
+GUI_VARIABLE_STRING
+	NAME con_missing_resource
+END
+GUI_VARIABLE_FLOAT
+	NAME con_status
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 13
+END
+GUI_VARIABLE_FLOAT
+	NAME old_con_status
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 13
+END
+GUI_VARIABLE_FLOAT
+	NAME con_retries
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 90
+END
+GUI_VARIABLE_FLOAT
+	NAME con_server_proto
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 10000
+END
+GUI_VARIABLE_FLOAT
+	NAME con_client_proto
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 10000
+END
+GUI_VARIABLE_FLOAT
+	NAME con_attempt_valid
+	INITIAL_VALUE 1
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME con_host_error
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME con_timer
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 6
+	LERP_TIME 6
+	WRAP FALSE
+	LOOP FALSE
+	RUNNING FALSE
+END
+
+GUI_VARIABLE_FLOAT
+	NAME isInitialized
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ConnectingInitialize
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE isInitialized 1 END
+END
+
+GUI_ACTION
+	NAME AskForPassword
+	
+	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Dialogs/dlg_password.txt" END
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE "gui/Scripts/Dialogs/dlg_password.txt" from_connecting_screen 1 END
+END
+
+GUI_ACTION
+	NAME CheckToStartTimeout
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TEMP_VAR 0 END
+	GUI_COMMAND GREATERTHAN con_status 3 GUI_ACTION_SET_VARIABLE TEMP_VAR 1 END
+	GUI_COMMAND EQUALS con_host_error 1 GUI_ACTION_SET_VARIABLE TEMP_VAR 1 END
+	
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE con_attempt_valid 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_VCR_VARIABLE con_timer REWIND END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_VCR_VARIABLE con_timer PLAY END
+END
+GUI_ACTION
+	NAME CheckTimeout
+	
+	GUI_COMMAND GREATERTHAN con_timer 5 AbortConnection END
+	GUI_COMMAND GREATERTHAN con_timer 5 GUI_ACTION_SET_VARIABLE con_timer PAUSE END
+	GUI_COMMAND GREATERTHAN con_timer 5 GUI_ACTION_VCR_VARIABLE con_timer REWIND END
+END
+
+GUI_ACTION
+	NAME StatusChanged
+	
+	GUI_COMMAND EQUALS con_status 3 AskForPassword END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE old_con_status con_status END
+END
+GUI_ACTION
+	NAME FrameUpdate
+	
+	GUI_COMMAND EQUALS isInitialized 0 ConnectingInitialize END
+	
+	GUI_COMMAND NOTEQUALS con_status old_con_status StatusChanged END
+	GUI_COMMAND EQUALS con_attempt_valid 1 CheckToStartTimeout END
+	GUI_COMMAND EQUALS con_attempt_valid 0 CheckTimeout END
+END
+GUI_ACTION
+	NAME AbortConnection
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "CL_Disconnect" END
+	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU _gui_mainmenu END
+	GUI_COMMAND GUI_ACTION_EXIT END
+END
+
+GUI_SCREEN
+	NAME ConnectingScreen
+	
+	MATERIAL_INFO
+		MATERIAL frontend
+		TEXTURE "gui/frontend/i_loading.png"
+		COLOR 255 255 255 255
+	END
+	
+	GUI_GENERIC
+		NAME con_server_info
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 10 420 640 20
+		GUI_CAPTION
+			TEXT "Connecting to %s ..."
+			PARAMS con_server END
+		END
+		GUI_CAPTION_DRAWER
+			FONT gui/fonts/ConduitITCTT_B-22
+			SCALE 0.55 0.55
+			MATERIAL frontend
+			DROPSHADOW YES
+			COLORS 242 222 172	255 242 222 172	255
+			VERTICAL CENTER
+			JUSTIFY CENTER
+			TRUNCATE 630
+		END
+		
+		ON_RENDER GUI_COMMAND FrameUpdate END
+		GUI_INPUT
+			CANCEL GUI_COMMAND AbortConnection END
+#			ACCEPT GUI_COMMAND GUI_ACTION_EXIT END
+		END
+	END
+	
+	GUI_GENERIC
+		NAME con_status_info
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 10 440 640 20
+		GUI_CAPTION
+			TEXT " "
+		END
+		GUI_CAPTION_DRAWER
+			FONT gui/fonts/ConduitITCTT_B-22
+			SCALE 0.55 0.55
+			MATERIAL frontend
+			DROPSHADOW YES
+			COLORS 242 222 172	255 242 222 172	255
+			VERTICAL CENTER
+			JUSTIFY CENTER
+			TRUNCATE 630
+		END
+		GUI_DEPENDENCY
+			NAME con_status
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 5000 0 1 1
+				GUI_CAPTION
+					TEXT " "
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Server not responding.  Retrying attempt %1.0f/3 ..."
+					PARAMS con_retries END
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 2
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Connected to server.  Continuing to load ..."
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 3
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Invalid Password"
+				END
+			END
+
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 4
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - No response from server"
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 5
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Authentication failed"
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 6
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - You have been banned from this server"
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 7
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Server is full"
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 8
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Server is running an older version (%2.0f) than your client (%2.0f)"
+					PARAMS con_server_proto con_client_proto END
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 9
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Server is running a newer version (%2.0f) than your client (%2.0f)"
+					PARAMS con_server_proto con_client_proto END
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 10
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Your map (%s) is invalid"
+					PARAMS con_missing_resource END
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 11
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Missing Resource (%s)"
+					PARAMS con_missing_resource END
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 12
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Mismatched DLL (%s)"
+					PARAMS con_missing_resource END
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 13
+				SCREEN_RECT_LTWH 10 440 640 20
+				GUI_CAPTION
+					TEXT "Error - Connection Failed"
+				END
+			END
+		END
+		
+		GUI_INPUT
+			CANCEL GUI_COMMAND AbortConnection END
+		END
+	END
+	
+END

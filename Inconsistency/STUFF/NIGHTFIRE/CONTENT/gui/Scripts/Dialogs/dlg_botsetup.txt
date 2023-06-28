@@ -1,0 +1,1465 @@
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+
+# basic dialog defines ------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+	
+ 
+	
+ 
+
+# simple text dialog template ------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+GUI_ACTION
+	NAME UpdateDialogButtonState
+	# $param0 is a 'disabled' variable or constant
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE DB_STATE 0 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_SET_VARIABLE DB_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_SET_VARIABLE DB_STATE 2 END
+	GUI_COMMAND EQUALS $param0 0 GUI_ACTION_SET_VARIABLE DB_STATE 3 END
+END
+GUI_VARIABLE_FLOAT
+	NAME DB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 3
+END
+ 
+
+# checkbox and radio button stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME SetCheck
+	# $param0 is the variable to change
+	# $param1 is the new value
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param0 $param1 END
+END
+GUI_ACTION
+	NAME ToggleCheck
+	# $param0 is the variable to toggle
+	
+	# oy, make a copy to test against
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE TEMP_VAR $param0 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE $param0 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 0 GUI_ACTION_SET_VARIABLE $param0 1 END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME CB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 5
+END
+GUI_ACTION
+	NAME UpdateCheckState
+	# $param0 is the check variable
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE CB_STATE 0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_ADD_VARIABLE CB_STATE 3 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_ADD_VARIABLE CB_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_ADD_VARIABLE CB_STATE 2 END
+END
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+	
+# slider bar stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME SliderUpdate	
+	GUI_COMMAND GUI_ACTION_SLIDER_HELPER UPDATE 12 $param0 $param1 $param2 $param3 $param4 END
+END
+GUI_ACTION
+	NAME SliderRefresh	
+	GUI_COMMAND GUI_ACTION_SLIDER_HELPER REFRESH 12 $param0 $param1 $param2 $param3 END
+END
+
+ 
+
+ 
+	
+# edit box stuff ---------------------------------------------------------------------
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME EDIT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 3
+END
+GUI_ACTION
+	NAME UpdateEditState
+	# $param0 is the string holding the results
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE EDIT_STATE 0 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_SET_VARIABLE EDIT_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_SET_VARIABLE EDIT_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 4 GUI_ACTION_SET_VARIABLE EDIT_STATE 2 END
+
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TEMP_VAR 0 END
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE EDIT_STATE 3 END
+END
+
+GUI_ACTION
+	NAME TempEditSetParams
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER SETPARAMS $param0 END
+END
+
+GUI_ACTION
+	NAME EditBoxInputCancel
+	# $param0 is the string variable
+	# $param1 is a no-param action to call if not editing
+	
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 0 $param1 END
+END
+
+GUI_ACTION
+	NAME EditBoxInputAccept
+	# $param0 is the string variable
+	# $param1 is the control
+	# $param2 is an action that sets up the editing parameters
+
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 0 BeginTextEntry $param0 $param1 $param2 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 1 END
+END
+GUI_ACTION
+	NAME BeginTextEntry
+	# $param0 is the string variable
+	# $param1 is the control
+	# $param2 is an action that sets up the editing parameters
+	
+	# first stop our current selection
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING ANY TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 1 END
+	
+	# start editing the new one
+	GUI_COMMAND $param2 END
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER BEGINENTRY $param0 END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param1 END
+END
+GUI_ACTION
+	NAME EndTextEntry
+
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY $param1 END
+END
+
+ 
+ 
+
+ 
+
+
+# tab-style buttons ---------------------------------------------------------------------
+ 
+ 
+ 
+GUI_VARIABLE_FLOAT
+	NAME TAB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 5
+END
+# norm,
+# press,
+# hot,
+# current,norm
+# current,press
+# current,hot
+GUI_ACTION
+	NAME UpdateTabBtnState
+	# $param0 is 1 if current, 0 if not
+	# $param1 is the element state
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TAB_STATE 0 END
+	GUI_COMMAND EQUALS $param1 2 GUI_ACTION_ADD_VARIABLE TAB_STATE 1 END
+	GUI_COMMAND EQUALS $param1 3 GUI_ACTION_ADD_VARIABLE TAB_STATE 2 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_ADD_VARIABLE TAB_STATE 3 END
+END
+
+ 
+
+ 
+	
+	
+
+ 
+
+GUI_ACTION
+	NAME GetCharacterModel
+	# $param0 is index
+	# $param1 is string result
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param1 "  " END
+	
+	GUI_COMMAND EQUALS $param0 0 	GUI_ACTION_SET_VARIABLE $param1 "MP_MI6_tux" 			END
+	GUI_COMMAND EQUALS $param0 1 	GUI_ACTION_SET_VARIABLE $param1 "MP_MI6_suit"			END
+	GUI_COMMAND EQUALS $param0 2 	GUI_ACTION_SET_VARIABLE $param1 "MP_MI6_stealth" 		END
+	GUI_COMMAND EQUALS $param0 3 	GUI_ACTION_SET_VARIABLE $param1 "MP_alura_combat"		END
+	GUI_COMMAND EQUALS $param0 4 	GUI_ACTION_SET_VARIABLE $param1 "MP_dominique" 			END
+	GUI_COMMAND EQUALS $param0 5 	GUI_ACTION_SET_VARIABLE $param1 "MP_zoe" 				END
+	GUI_COMMAND EQUALS $param0 6 	GUI_ACTION_SET_VARIABLE $param1 "MP_q" 					END
+	GUI_COMMAND EQUALS $param0 7	GUI_ACTION_SET_VARIABLE $param1 "MP_christmas_jones" 	END
+	GUI_COMMAND EQUALS $param0 8	GUI_ACTION_SET_VARIABLE $param1 "MP_pussy_galore" 		END
+	GUI_COMMAND EQUALS $param0 9	GUI_ACTION_SET_VARIABLE $param1 "MP_wai_lin" 			END
+	
+	GUI_COMMAND EQUALS $param0 10	GUI_ACTION_SET_VARIABLE $param1 "MP_castle_guard"		END
+	GUI_COMMAND EQUALS $param0 11	GUI_ACTION_SET_VARIABLE $param1 "MP_commando" 			END
+	GUI_COMMAND EQUALS $param0 12	GUI_ACTION_SET_VARIABLE $param1 "MP_drake" 				END
+	GUI_COMMAND EQUALS $param0 13	GUI_ACTION_SET_VARIABLE $param1 "MP_kiko" 				END
+	GUI_COMMAND EQUALS $param0 14	GUI_ACTION_SET_VARIABLE $param1 "MP_rook" 				END
+	GUI_COMMAND EQUALS $param0 15	GUI_ACTION_SET_VARIABLE $param1 "MP_snowguard" 			END
+	GUI_COMMAND EQUALS $param0 16	GUI_ACTION_SET_VARIABLE $param1 "MP_yakuza" 			END
+	GUI_COMMAND EQUALS $param0 17	GUI_ACTION_SET_VARIABLE $param1 "MP_mayday" 			END
+	GUI_COMMAND EQUALS $param0 18	GUI_ACTION_SET_VARIABLE $param1 "MP_xenia" 				END
+	GUI_COMMAND EQUALS $param0 19	GUI_ACTION_SET_VARIABLE $param1 "MP_jaws" 				END
+	GUI_COMMAND EQUALS $param0 20	GUI_ACTION_SET_VARIABLE $param1 "MP_oddjob" 			END
+	GUI_COMMAND EQUALS $param0 21	GUI_ACTION_SET_VARIABLE $param1 "MP_elektra" 			END	
+	GUI_COMMAND EQUALS $param0 22	GUI_ACTION_SET_VARIABLE $param1 "MP_goldfinger" 		END
+	GUI_COMMAND EQUALS $param0 23	GUI_ACTION_SET_VARIABLE $param1 "MP_baron_samedi" 		END
+	GUI_COMMAND EQUALS $param0 24	GUI_ACTION_SET_VARIABLE $param1 "MP_renard" 			END
+	GUI_COMMAND EQUALS $param0 25	GUI_ACTION_SET_VARIABLE $param1 "MP_scaramanga" 		END
+END
+GUI_ACTION
+	NAME GetCharacterName
+	# $param0 is index
+	# $param1 is string result
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param1 "  " END
+	
+	GUI_COMMAND EQUALS $param0 0 	GUI_ACTION_SET_VARIABLE $param1 "MI6 Tux" 			END
+	GUI_COMMAND EQUALS $param0 1 	GUI_ACTION_SET_VARIABLE $param1 "MI6 Suit"			END
+	GUI_COMMAND EQUALS $param0 2 	GUI_ACTION_SET_VARIABLE $param1 "MI6 Stealth" 		END
+	GUI_COMMAND EQUALS $param0 3 	GUI_ACTION_SET_VARIABLE $param1 "Alura"				END
+	GUI_COMMAND EQUALS $param0 4 	GUI_ACTION_SET_VARIABLE $param1 "Dominique" 		END
+	GUI_COMMAND EQUALS $param0 5 	GUI_ACTION_SET_VARIABLE $param1 "Zoe" 				END
+	GUI_COMMAND EQUALS $param0 6 	GUI_ACTION_SET_VARIABLE $param1 "Q" 				END
+	GUI_COMMAND EQUALS $param0 7	GUI_ACTION_SET_VARIABLE $param1 "Christmas Jones" 	END
+	GUI_COMMAND EQUALS $param0 8	GUI_ACTION_SET_VARIABLE $param1 "Pussy Galore" 		END
+	GUI_COMMAND EQUALS $param0 9	GUI_ACTION_SET_VARIABLE $param1 "Wai Lin" 			END
+	
+	GUI_COMMAND EQUALS $param0 10	GUI_ACTION_SET_VARIABLE $param1 "Castle Guard"		END
+	GUI_COMMAND EQUALS $param0 11	GUI_ACTION_SET_VARIABLE $param1 "Commando" 			END
+	GUI_COMMAND EQUALS $param0 12	GUI_ACTION_SET_VARIABLE $param1 "Drake" 			END
+	GUI_COMMAND EQUALS $param0 13	GUI_ACTION_SET_VARIABLE $param1 "Kiko" 				END
+	GUI_COMMAND EQUALS $param0 14	GUI_ACTION_SET_VARIABLE $param1 "Rook" 				END
+	GUI_COMMAND EQUALS $param0 15	GUI_ACTION_SET_VARIABLE $param1 "Snow Guard" 		END
+	GUI_COMMAND EQUALS $param0 16	GUI_ACTION_SET_VARIABLE $param1 "Yakuza" 			END	
+	GUI_COMMAND EQUALS $param0 17	GUI_ACTION_SET_VARIABLE $param1 "Mayday" 			END
+	GUI_COMMAND EQUALS $param0 18	GUI_ACTION_SET_VARIABLE $param1 "Xenia" 			END
+	GUI_COMMAND EQUALS $param0 19	GUI_ACTION_SET_VARIABLE $param1 "Jaws" 				END
+	GUI_COMMAND EQUALS $param0 20	GUI_ACTION_SET_VARIABLE $param1 "Oddjob" 			END
+	GUI_COMMAND EQUALS $param0 21	GUI_ACTION_SET_VARIABLE $param1 "Elektra" 			END
+	GUI_COMMAND EQUALS $param0 22	GUI_ACTION_SET_VARIABLE $param1 "Goldfinger" 		END
+	GUI_COMMAND EQUALS $param0 23	GUI_ACTION_SET_VARIABLE $param1 "Baron Samedi" 		END
+	GUI_COMMAND EQUALS $param0 24	GUI_ACTION_SET_VARIABLE $param1 "Renard" 			END
+	GUI_COMMAND EQUALS $param0 25	GUI_ACTION_SET_VARIABLE $param1 "Scaramanga" 		END
+END
+GUI_ACTION
+	NAME GetDMCharacterPic
+	# $param0 is index
+	# $param1 is string result
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param1 "  " END
+	
+	GUI_COMMAND EQUALS $param0 0 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_bond_b.png" 				END
+	GUI_COMMAND EQUALS $param0 1 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_bond_c.png"				END
+	GUI_COMMAND EQUALS $param0 2 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_bond_a.png" 				END
+	GUI_COMMAND EQUALS $param0 3 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_alura.png"				END
+	GUI_COMMAND EQUALS $param0 4 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_dominique.png" 			END
+	GUI_COMMAND EQUALS $param0 5 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_zoe.png" 				END
+	GUI_COMMAND EQUALS $param0 6 	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_mi6_q.png" 					END
+	GUI_COMMAND EQUALS $param0 7	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_christmas_jones.png" END
+	GUI_COMMAND EQUALS $param0 8	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_pussy_galore.png" 	END
+	GUI_COMMAND EQUALS $param0 9	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_wai_lin.png" 	END
+	
+	GUI_COMMAND EQUALS $param0 10	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_castle_guard.png"	END
+	GUI_COMMAND EQUALS $param0 11	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_commando.png" 		END
+	GUI_COMMAND EQUALS $param0 12	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_drake.png" 			END
+	GUI_COMMAND EQUALS $param0 13	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_kiko.png" 			END
+	GUI_COMMAND EQUALS $param0 14	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_rook.png" 			END
+	GUI_COMMAND EQUALS $param0 15	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_snow_guard.png" 		END
+	GUI_COMMAND EQUALS $param0 16	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_yakuza.png" 			END
+	GUI_COMMAND EQUALS $param0 17	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_mayday.png" 			END
+	GUI_COMMAND EQUALS $param0 18	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_xenia.png" 			END
+	GUI_COMMAND EQUALS $param0 19	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_jaws.png" 			END
+	GUI_COMMAND EQUALS $param0 20	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_oddjob.png" 			END
+	GUI_COMMAND EQUALS $param0 21	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_elektra.png" 		END
+	GUI_COMMAND EQUALS $param0 22	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_goldfinger.png" 		END
+	GUI_COMMAND EQUALS $param0 23	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_baron_samedi.png" 	END
+	GUI_COMMAND EQUALS $param0 24	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_renard.png" 			END
+	GUI_COMMAND EQUALS $param0 25	GUI_ACTION_SET_VARIABLE $param1 "gui/frontend/i_dm_phoenix_scaramanga.png" 		END
+END
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+# GUI definition stuff --------------------------------
+GUI_FLAGS
+	USE_CURSOR
+	USE_INPUT
+	BLOCK_CURSOR
+#	BLOCK_FRAME
+	BLOCK_INPUT
+	DYNAMIC
+END
+
+GUI_CURSOR
+	MATERIAL_INFO
+		MATERIAL frontend
+		TEXTURE gui/frontend/i_cursor.png
+		TEXTURE_RECT 0 0 32 32
+		COLOR 255 255 255 255
+	END
+	
+	HOTSPOT 0 0
+	SIZE 32 32
+END
+
+GUI_VARIABLE_STRING
+	NAME menuCaller
+END
+
+GUI_VARIABLE_FLOAT
+	NAME dlgInitialized
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME CloseDialog
+	
+	GUI_COMMAND EQUALS $param0 1 ApplyBot END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dlgInitialized 0 END
+	GUI_COMMAND GUI_ACTION_EXIT END
+END
+
+GUI_ACTION
+	NAME InitializeBotSetup
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dlgInitialized 1 END
+	GUI_COMMAND SetBotCharacter 0 END
+	GUI_COMMAND DoChooseNextSkill 0 END
+END
+
+
+GUI_ACTION
+	NAME ApplyBot
+	
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE menuCaller create_addbot_skin bot_model_index END
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE menuCaller create_addbot_name bot_name END
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE menuCaller create_addbot_skill bot_skill END
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE menuCaller create_addbot_valid 1 END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME bot_model_index
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 25
+	WRAP TRUE
+END
+GUI_VARIABLE_STRING
+	NAME bot_name
+END
+GUI_VARIABLE_TEXTURE
+	NAME bot_model_pic
+END
+GUI_ACTION
+	NAME SetBotCharacter
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE bot_model_index $param0 END
+	GUI_COMMAND GetCharacterName bot_model_index bot_name END
+	GUI_COMMAND GetDMCharacterPic bot_model_index bot_model_pic END
+END
+GUI_ACTION
+	NAME SetBotCharacterVar
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE bot_model_index $param0 END
+	GUI_COMMAND GetCharacterName bot_model_index bot_name END
+	GUI_COMMAND GetDMCharacterPic bot_model_index bot_model_pic END
+END
+GUI_ACTION
+	NAME SetEditNameParams
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER SETPARAMS STYLE "ALPHA,FOREIGN,NUMERIC" END	
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER SETPARAMS LENGTH 16 END	
+END
+
+GUI_ACTION
+	NAME ChooseBotCharacter
+	
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND GUI_ACTION_ADD_VARIABLE bot_model_index $param0 END
+	GUI_COMMAND SetBotCharacterVar bot_model_index END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME bot_skill
+	INITIAL_VALUE 2
+	MIN_VALUE 1
+	MAX_VALUE 3
+	WRAP TRUE
+END
+GUI_VARIABLE_STRING
+	NAME bot_skill_name
+END
+GUI_ACTION
+	NAME DoChooseNextSkill
+	
+	GUI_COMMAND GUI_ACTION_ADD_VARIABLE bot_skill $param0 END
+	GUI_COMMAND EQUALS bot_skill 3 GUI_ACTION_SET_VARIABLE bot_skill_name EASY END
+	GUI_COMMAND EQUALS bot_skill 2 GUI_ACTION_SET_VARIABLE bot_skill_name MEDIUM END
+	GUI_COMMAND EQUALS bot_skill 1 GUI_ACTION_SET_VARIABLE bot_skill_name HARD END
+END
+GUI_ACTION
+	NAME ChooseNextSkill
+	
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND DoChooseNextSkill $param0 END
+END
+
+GUI_ACTION
+	NAME ClickCloseButton
+	
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND CloseDialog $param0 END	
+END
+GUI_SCREEN
+	NAME BotSetupScreen
+	
+	GUI_GENERIC
+		NAME dlg_btn_cancel
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 350 370 90 21
+		GUI_CAPTION
+			TEXT "CANCEL"
+		END		
+		GUI_DEPENDENCY   	NAME CURRENT_ELEMENT_STATE   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 2   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 250 219 179 255 250 219 179 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 3   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 117 41 0 255 117 41 0 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 4   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   END
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickCloseButton 0 END
+			CANCEL GUI_COMMAND CloseDialog 0 END
+		END
+		ON_RENDER GUI_COMMAND EQUALS dlgInitialized 0 InitializeBotSetup END
+	END
+
+	GUI_GENERIC
+		NAME dlg_btn_ok
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 200 370 90 21
+		GUI_CAPTION
+			TEXT "OK"
+		END		
+		GUI_DEPENDENCY   	NAME CURRENT_ELEMENT_STATE   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 2   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 250 219 179 255 250 219 179 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 3   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 117 41 0 255 117 41 0 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 4   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   END
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickCloseButton 1 END
+			CANCEL GUI_COMMAND CloseDialog 0 END
+		END
+	END
+
+	GUI_GENERIC   	Z_PLANE 8   	NAME capback   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_fade.png   		COLOR 0 0 0 255   	END
+		SCREEN_RECT_LTWH 180 91 280 20
+	END
+	GUI_GENERIC
+		NAME textdlgcap
+		Z_PLANE 9
+		SCREEN_RECT_LTWH 180 90 280 20
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.45 0.75   	MATERIAL frontend   	COLORS 250 219 179 255 250 219 179 255   	VERTICAL CENTER   	JUSTIFY CENTER   	WRAP 280   END
+		GUI_CAPTION
+			TEXT "CUSTOMIZE NEW BOT"
+		END
+	END
+	
+	GUI_GENERIC
+		NAME edit_bot_name_cap
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 175 320 95 16
+		GUI_CAPTION
+			TEXT "NAME"
+		END
+		GUI_CAPTION_DRAWER
+			FONT gui/fonts/ConduitITCTT_BI-20
+			SCALE 0.35 0.6
+			MATERIAL frontend
+			COLORS 0 0 0 255 0 0 0 255
+			JUSTIFY RIGHT
+			VERTICAL CENTER
+			TRUNCATE 95
+		END
+	END
+	GUI_GENERIC   	GUI_DEPENDENCY   		NAME EDIT_STATE   		STATE_SELECTION_LINEAR FALSE   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 0   			GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	240 116 46 154	   END   				SCREEN_RECT_LTWH -2 -2 125 19   			END   			GUI_CAPTION_DRAWER   				FONT gui/fonts/ConduitMdITCTT-20   				SCALE 0.4 0.55   				MATERIAL frontend   				COLORS 0 0 0 255 0 0 0 255   				JUSTIFY LEFT   				VERTICAL CENTER   				TRUNCATE 125   			END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 1   			GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	117 41 0 255	   	117 41 0 255	   	117 41 0 255	   	117 41 0 255	   	117 41 0 255	   	117 41 0 255	   	117 41 0 255	   	117 41 0 255	   	240 116 46 154	   END   				SCREEN_RECT_LTWH -2 -2 125 19   			END   			GUI_CAPTION_DRAWER   				FONT gui/fonts/ConduitMdITCTT-20   				SCALE 0.4 0.55   				MATERIAL frontend   				COLORS 0 0 0 255 0 0 0 255   				JUSTIFY LEFT   				VERTICAL CENTER   				TRUNCATE 125   			END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 2   			GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	240 116 46 154	   END   				SCREEN_RECT_LTWH -2 -2 125 19   			END   			GUI_CAPTION_DRAWER   				FONT gui/fonts/ConduitMdITCTT-20   				SCALE 0.4 0.55   				MATERIAL frontend   				COLORS 0 0 0 255 0 0 0 255   				JUSTIFY LEFT   				VERTICAL CENTER   				TRUNCATE 125   			END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 3   			GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	250 219 179 255	   	0 0 0 255	   END   				SCREEN_RECT_LTWH -2 -2 125 19   			END   			GUI_CAPTION_DRAWER   				FONT gui/fonts/ConduitMdITCTT-20   				SCALE 0.4 0.55   				MATERIAL frontend   				COLORS 255 255 255 255 255 255 255 255   				JUSTIFY LEFT   				VERTICAL CENTER   				TRUNCATE 125   			END   		END   	END   
+		NAME edit_bot_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 275 320 125 12
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS bot_name END
+		END
+				
+		ON_RENDER GUI_COMMAND UpdateEditState bot_name END
+		LOSE_FOCUS GUI_COMMAND EndTextEntry bot_name 1 END
+		GUI_INPUT
+			CLICK GUI_COMMAND BeginTextEntry bot_name edit_bot_name SetEditNameParams END
+			ACCEPT GUI_COMMAND EditBoxInputAccept bot_name edit_bot_name SetEditNameParams END
+			CANCEL GUI_COMMAND EditBoxInputCancel bot_name ExitMultiplayerMenu END
+		END
+	END
+	
+	GUI_GENERIC
+		NAME bot_skill_cap
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 175 340 95 16
+		GUI_CAPTION
+			TEXT "SKILL"
+		END
+		GUI_CAPTION_DRAWER
+			FONT gui/fonts/ConduitITCTT_BI-20
+			SCALE 0.35 0.6
+			MATERIAL frontend
+			COLORS 0 0 0 255 0 0 0 255
+			JUSTIFY RIGHT
+			VERTICAL CENTER
+			TRUNCATE 95
+		END
+	END
+	GUI_GENERIC
+		NAME btn_skill
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 275 338 90 21
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS bot_skill_name END
+		END		
+		GUI_DEPENDENCY   	NAME CURRENT_ELEMENT_STATE   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 2   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 250 219 179 255 250 219 179 255   			VERTICAL CENTER   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 3   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 117 41 0 255 117 41 0 255   			VERTICAL CENTER   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 4   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   		END   	END   END
+		GUI_INPUT
+			CLICK GUI_COMMAND ChooseNextSkill -1 END
+			CANCEL GUI_COMMAND CloseDialog 0 END
+		END
+	END
+
+	GUI_GENERIC
+		SCREEN_RECT_LTWH 208 98 224 224
+		NAME pic_dial
+		Z_PLANE 9
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE gui/frontend/i_dial.png
+			COLOR 255 255 255 255
+		END
+	END
+	GUI_GENERIC
+		SCREEN_RECT_LTWH 265 156 112 112
+		NAME pic_dial
+		Z_PLANE 10
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE @bot_model_pic
+			COLOR 255 255 255 255
+		END
+	END
+	GUI_GENERIC
+		NAME bot_next
+		Z_PLANE 10
+		SCREEN_RECT_LTWH	420 194 32 32		
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE gui/frontend/i_arrow_right.png
+			TEXTURE_RECT	0 0 32 32	#32 0 0 32
+			COLOR 192 192 192 255
+		END		
+		GUI_DEPENDENCY
+			NAME CURRENT_ELEMENT_STATE
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0.0	#normal
+				MATERIAL_INFO
+					COLOR 128 128 128 255
+					MATERIAL spr_additive
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1.0	#gray
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 128 128 128 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 2.0	#pressed
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 255 255 255 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 3.0	#hot
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 192 192 192 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 4.0	#focus
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 128 128 128 255
+				END
+			END
+		END
+		GUI_INPUT
+			CLICK		GUI_COMMAND ChooseBotCharacter 1 END
+			CANCEL		GUI_COMMAND CloseDialog 0 END
+		END
+	END
+	
+	GUI_GENERIC
+		NAME bot_prev
+		Z_PLANE 10
+		SCREEN_RECT_LTWH	190 194 32 32		
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE gui/frontend/i_arrow_right.png
+			TEXTURE_RECT	32 0 0 32
+			COLOR 192 192 192 255
+		END		
+		GUI_DEPENDENCY
+			NAME CURRENT_ELEMENT_STATE
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0.0	#normal
+				MATERIAL_INFO
+					COLOR 128 128 128 255
+					MATERIAL spr_additive
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1.0	#gray
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 128 128 128 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 2.0	#pressed
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 255 255 255 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 3.0	#hot
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 192 192 192 255
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 4.0	#focus
+				MATERIAL_INFO
+					MATERIAL spr_additive
+					COLOR 128 128 128 255
+				END
+			END
+		END
+		GUI_INPUT
+			CLICK		GUI_COMMAND ChooseBotCharacter -1 END
+			CANCEL		GUI_COMMAND CloseDialog 0 END
+		END
+	END
+	
+	
+
+	MATERIAL_INFO   	MATERIAL solid   	COLOR 0 0 0 92   END   GUI_GENERIC   	NAME dialog_bg   	Z_PLANE 7   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_dialog_bg.png   		COLOR 255 255 255 255   	END
+		SCREEN_RECT_LTWH 160 80 320 320
+	END
+	GUI_GENERIC   	NAME dialog_bg   	Z_PLANE 6   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_fade.png   		COLOR 0 0 0 255   	END
+		SCREEN_RECT_LTWH 140 74 360 332
+	END
+END

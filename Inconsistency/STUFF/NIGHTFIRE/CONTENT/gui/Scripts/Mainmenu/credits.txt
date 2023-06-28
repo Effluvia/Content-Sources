@@ -1,0 +1,1841 @@
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+#include "gui/Scripts/common_controls.txt"
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+# rotation stuff ---------------------------------------------------
+ 
+
+ 
+
+
+# stars -------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME earthMover
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 25
+END
+
+# swirl -------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME swirlRotation
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 10
+END
+GUI_VARIABLE_FLOAT
+	NAME swirlRotation2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 20
+END
+
+ 
+
+ 
+
+
+# spinners -------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME spinRotation1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 20
+END
+ 
+
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME spinRotation4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 30
+END
+ 
+
+# other stuff -------------------------------------------
+
+ 
+
+# the dome thingy		
+ 
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+# chicks! ------------------------------------------------------------
+GUI_VARIABLE_MOVIE
+	NAME dancin_chick_pic
+#	TEXTURE "movies/i_bondgirl_4.avi"
+	LOOPING FALSE
+	AUDIO FALSE
+END
+
+GUI_VARIABLE_FLOAT
+	NAME chicknum
+	INITIAL_VALUE 0.01
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME chickpos
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_ACTION
+	NAME PickNewChick
+	
+	GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE dancin_chick_pic STOP END
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE chicknum RANDOMINT END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE chickpos RANDOM END
+	GUI_COMMAND EQUALS chicknum 0 GUI_ACTION_SET_VARIABLE dancin_chick_pic "movies/girl_01.avi" 
+	GUI_COMMAND EQUALS chicknum 1 GUI_ACTION_SET_VARIABLE dancin_chick_pic "movies/girl_02.avi" 
+
+	GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE dancin_chick_pic PLAY END
+END
+
+ 
+
+# Top menu bar layout -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+GUI_ACTION 
+	NAME DoMoveHighlight
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE current_selected_top_button $param0 END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dest_top_button $param0 END
+	
+	GUI_COMMAND EQUALS $param0 0 GUI_ACTION_SET_VARIABLE tab_show_0 1 END
+	GUI_COMMAND NOTEQUALS $param0 0 GUI_ACTION_SET_VARIABLE tab_show_0 0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE tab_show_1 1 END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_VARIABLE tab_show_1 0 END
+	GUI_COMMAND EQUALS $param0 2 GUI_ACTION_SET_VARIABLE tab_show_2 1 END
+	GUI_COMMAND NOTEQUALS $param0 2 GUI_ACTION_SET_VARIABLE tab_show_2 0 END
+END
+GUI_ACTION 
+	NAME TryMoveHighlight
+	GUI_COMMAND GREATERTHAN current_selected_top_button dest_top_button GUI_ACTION_ADD_VARIABLE current_selected_top_button -0.1 END
+	GUI_COMMAND LESSTHAN current_selected_top_button dest_top_button GUI_ACTION_ADD_VARIABLE current_selected_top_button 0.1 END
+	
+	GUI_COMMAND UpdateTab0 END
+	GUI_COMMAND UpdateTab1 END
+	GUI_COMMAND UpdateTab2 END
+#	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE current_selected_top_button dest_top_button END
+END
+
+# the top button highlight thingy
+GUI_ACTION 
+	NAME ChooseNewButton
+	GUI_COMMAND DoMoveHighlight $param0
+#	GUI_COMMAND GUI_ACTION_SET_VARIABLE dest_top_button $param0
+	GUI_COMMAND ChangeButtonFocus $param1 END
+END
+GUI_VARIABLE_FLOAT
+	NAME current_selected_top_button
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 2
+END
+GUI_VARIABLE_FLOAT
+	NAME dest_top_button
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 2
+END
+
+# screen 0 update funcs and variables --------------
+GUI_VARIABLE_FLOAT
+	NAME tab_show_0
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ShowTab0
+	GUI_COMMAND LESSTHAN current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_0 0.1 END
+	GUI_COMMAND EQUALS current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_0 0.1 END
+END
+GUI_ACTION
+	NAME HideTab0
+	GUI_COMMAND GREATERTHAN tab_show_0 0 GUI_ACTION_ADD_VARIABLE tab_show_0 -0.1 END
+END
+GUI_ACTION
+	NAME UpdateTab0
+	
+	GUI_COMMAND EQUALS dest_top_button 0 ShowTab0 END 
+	GUI_COMMAND NOTEQUALS dest_top_button 0 HideTab0 END 
+END
+ 
+
+# screen 1 update funcs and variables --------------
+GUI_VARIABLE_FLOAT
+	NAME tab_show_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ShowTab1
+	GUI_COMMAND GUI_ACTION_ADD_VARIABLE tab_show_1 0.1 END
+END
+GUI_ACTION
+	NAME HideTab1
+	GUI_COMMAND GREATERTHAN tab_show_1 0 GUI_ACTION_ADD_VARIABLE tab_show_1 -0.1 END
+END
+GUI_ACTION
+	NAME UpdateTab1
+	
+	GUI_COMMAND EQUALS dest_top_button 1 ShowTab1 END 
+	GUI_COMMAND NOTEQUALS dest_top_button 1 HideTab1 END 
+END
+ 
+
+# screen 2 update funcs and variables --------------
+GUI_VARIABLE_FLOAT
+	NAME tab_show_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ShowTab2
+	GUI_COMMAND GREATERTHAN current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_2 0.1 END
+	GUI_COMMAND EQUALS current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_2 0.1 END
+END
+GUI_ACTION
+	NAME HideTab2
+	GUI_COMMAND GREATERTHAN tab_show_2 0 GUI_ACTION_ADD_VARIABLE tab_show_2 -0.1 END
+END
+GUI_ACTION
+	NAME UpdateTab2
+	
+	GUI_COMMAND EQUALS dest_top_button 2 ShowTab2 END 
+	GUI_COMMAND NOTEQUALS dest_top_button 2 HideTab2 END 
+END
+ 
+
+# Help box stuff ---------------------------------------------------------------------	
+GUI_VARIABLE_STRING
+	NAME generic_help_var
+	VALUE "  "
+END
+
+ 
+
+GUI_ACTION
+	NAME SetHelpText
+	# param0 is the text	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE generic_help_var $param0 END	
+END	
+GUI_ACTION
+	NAME SetHelpTextVar
+	# param0 is the text	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE generic_help_var $param0 END	
+END
+
+# Screen title caption text-----------------------------------------------------------	
+ 
+ 
+
+ 
+
+GUI_VARIABLE_STRING
+	NAME generic_title_var
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME SetScreenTitle
+	# param0 is the title of the menu
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE generic_title_var $param0 END
+END
+
+# Buttons that appear at the bottom of the screen -------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+
+# specific button positions
+ 
+ 
+
+ 
+	
+# main-menu layout ------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_3
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_3
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_5
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_5
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_6
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_6
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_ACTION
+	NAME TryFadeHiliteOut
+	# $param0 is the state
+	
+	GUI_COMMAND GREATERTHAN $param0 0 GUI_ACTION_ADD_VARIABLE $param0 -3 END
+END
+GUI_ACTION
+	NAME TryFadeHiliteIn
+	# $param0 is the state
+	
+	GUI_COMMAND NOTEQUALS $param0 100 GUI_ACTION_SET_VARIABLE $param0 100 END
+END
+GUI_ACTION
+	NAME UpdateHiliteState
+	# $param0 is the visibility
+	# $param1 is the state
+	
+	GUI_COMMAND EQUALS $param0 0 TryFadeHiliteOut $param1 END
+	GUI_COMMAND EQUALS $param0 1 TryFadeHiliteIn $param1 END
+END
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GUI_ACTION
+	NAME SetDomePic
+	# $param0 ... 1 to turn on, 0 to turn off
+	# $param1 ... the texture, only valid if $param0 is 1
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dome_pic_vis $param0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE dome_pic_tex $param1 END
+END
+GUI_ACTION
+	NAME SetDomePicVar
+	# $param0 ... 1 to turn on, 0 to turn off
+	# $param1 ... the texture, only valid if $param0 is 1
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dome_pic_vis $param0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE_VARIABLE dome_pic_tex $param1 END
+END
+
+# context pic thingy
+GUI_VARIABLE_TEXTURE
+	NAME dome_pic_tex
+END
+GUI_VARIABLE_FLOAT
+	NAME dome_pic_vis
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+ 
+ 
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME DoOpenDifficultyDialog	
+
+	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Dialogs/dlg_difficulty.txt" END
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE "gui/Scripts/Dialogs/dlg_difficulty.txt" difficulty_map $param0 END
+END
+
+
+# GUI definition stuff
+GUI_FLAGS
+#	USE_CURSOR
+	USE_INPUT
+	BLOCK_CURSOR
+	BLOCK_FRAME
+	BLOCK_INPUT
+	DYNAMIC
+	UNIQUE
+END
+
+GUI_VARIABLE_FLOAT
+	NAME credits_timer
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 8
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING FALSE
+	LERP_TIME 8
+END
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+	
+GUI_VARIABLE_FLOAT
+	NAME credits_initialized
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME old_credits_timer
+	INITIAL_VALUE -1
+	MIN_VALUE -1
+	MAX_VALUE 10
+END
+
+GUI_ACTION
+	NAME Credits_FrameUpdate
+	
+	GUI_COMMAND EQUALS credits_initialized 0 Credits_Init END
+	GUI_COMMAND GREATERTHAN old_credits_timer credits_timer Credits_LoadNewData END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE old_credits_timer credits_timer END
+END
+GUI_ACTION
+	NAME Credits_Init
+	
+	GUI_COMMAND GUI_ACTION_DIALOG LOADACTION GUI_ACTION_MUSIC END
+	GUI_COMMAND GUI_ACTION_DIALOG LOADACTION GUI_FILE_PARSER END
+	GUI_COMMAND GUI_FILE_PARSER OPEN "gui/Scripts/Mainmenu/creditslist.txt" END	
+	GUI_COMMAND GUI_ACTION_MUSIC PLAY gui ambient frontend_ectest.ogg 0 100 5000 5000 END
+
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE credits_initialized 1 END
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE credits_timer REWIND END
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE credits_timer PLAY END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE old_credits_timer -1 END
+	GUI_COMMAND GUI_FILE_PARSER REWIND END
+	GUI_COMMAND Credits_LoadNewData END
+END
+GUI_ACTION
+	NAME Credits_Stop
+	
+	GUI_COMMAND EQUALS credits_initialized 1 GUI_FILE_PARSER CLOSE END
+	GUI_COMMAND EQUALS credits_initialized 1 GUI_ACTION_VCR_VARIABLE credits_timer REWIND END
+	GUI_COMMAND EQUALS credits_initialized 1 GUI_ACTION_VCR_VARIABLE credits_timer PAUSE END
+	GUI_COMMAND EQUALS credits_initialized 1 GUI_ACTION_SET_VARIABLE credits_initialized 0 END
+	GUI_COMMAND EQUALS credits_initialized 1 GUI_ACTION_SET_VARIABLE old_credits_timer -1 END
+	GUI_COMMAND GUI_ACTION_EXIT END
+END
+
+GUI_ACTION
+	NAME Credits_LoadNewData
+		
+	GUI_COMMAND ParseLine credit_style_1 credit_text_1 END
+	GUI_COMMAND ParseLine credit_style_2 credit_text_2 END
+	GUI_COMMAND ParseLine credit_style_3 credit_text_3 END
+	GUI_COMMAND ParseLine credit_style_4 credit_text_4 END
+	GUI_COMMAND ParseLine credit_style_5 credit_text_5 END
+	GUI_COMMAND ParseLine credit_style_6 credit_text_6 END
+	GUI_COMMAND ParseLine credit_style_7 credit_text_7 END
+	GUI_COMMAND ParseLine credit_style_8 credit_text_8 END
+	GUI_COMMAND ParseLine credit_style_9 credit_text_9 END
+	GUI_COMMAND ParseLine credit_style_10 credit_text_10 END
+	GUI_COMMAND ParseLine credit_style_11 credit_text_11 END
+	GUI_COMMAND ParseLine credit_style_12 credit_text_12 END
+	GUI_COMMAND ParseLine credit_style_13 credit_text_13 END
+	GUI_COMMAND ParseLine credit_style_14 credit_text_14 END
+	GUI_COMMAND ParseLine credit_style_15 credit_text_15 END
+	GUI_COMMAND ParseLine credit_style_16 credit_text_16 END
+	GUI_COMMAND ParseLine credit_style_17 credit_text_17 END
+END
+GUI_ACTION
+	NAME ParseLine
+	GUI_COMMAND GUI_FILE_PARSER PARSE 2 $param0 $param1 END
+END
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+GUI_SCREEN
+	NAME CreditsMenu
+
+	FADE_IN_TIME 0.25
+	FADE_OUT_TIME 0.25
+	
+	MATERIAL_INFO
+		MATERIAL solid
+		COLOR 0 0 0 255
+	END
+	
+	GUI_GENERIC
+		Z_PLANE 10
+		NAME btn_credits_back
+		SCREEN_RECT_LTWH 160 450 320 16
+		GUI_CAPTION
+			TEXT "PRESS ESCAPE TO CONTINUE"
+		END
+		GUI_CAPTION_DRAWER
+			FONT gui/fonts/ConduitMdITCTT-20
+			SCALE 0.65 0.65
+			MATERIAL frontend
+			COLORS 111	116 110 255 111	116 110 255
+			WRAP 320
+			JUSTIFY CENTER
+		END
+		GUI_INPUT
+#			CLICK		GUI_COMMAND Credits_Stop END
+#			ACCEPT		GUI_COMMAND Credits_Stop END
+			CANCEL		GUI_COMMAND Credits_Stop END
+		END
+		
+		ON_RENDER GUI_COMMAND Credits_FrameUpdate END
+	END
+	
+	
+	GUI_GENERIC
+		NAME credit_1
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 15 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_1 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_1
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_2
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 40 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_2 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_2
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_3
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 65 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_3 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_3
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_4
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 90 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_4 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_4
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_5
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 115 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_5 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_5
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_6
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 140 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_6 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_6
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_7
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 165 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_7 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_7
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_8
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 190 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_8 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_8
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_9
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 215 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_9 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_9
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_10
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 240 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_10 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_10
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_11
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 265 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_11 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_11
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_12
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 290 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_12 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_12
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_13
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 315 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_13 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_13
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_14
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 340 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_14 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_14
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_15
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 365 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_15 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_15
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_16
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 390 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_16 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_16
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME credit_17
+		Z_PLANE 11
+		SCREEN_RECT_LTWH 70 415 500 25
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS credit_text_17 END
+		END
+		GUI_DEPENDENCY   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.35 0.6   			MATERIAL frontend   			COLORS 255 216 181 255 255 216 181 255   			JUSTIFY CENTER   			DROPSHADOW YES   			TRUNCATE 500   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/SerpentineMedium-20   			SCALE 0.45 0.65   			MATERIAL frontend   			COLORS 255 179 64 255 255 179 64 255   			DROPSHADOW YES   			JUSTIFY CENTER   			TRUNCATE 500   		END   	END   	NAME 
+			credit_style_17
+		END
+		CREDITS_MODE_DEPENDENCY_TEXT
+		COLOR_MODULATE 255 255 255 0   GUI_DEPENDENCY   	NAME credits_timer   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE .5   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 6   		COLOR_MODULATE 255 255 255 255   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 7   		COLOR_MODULATE 255 255 255 0   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 8   		COLOR_MODULATE 255 255 255 0   	END   END	
+	END
+	
+	GUI_GENERIC
+		NAME pic_glowback
+		Z_PLANE 2
+		SCREEN_RECT 0 0 640 480
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE gui/frontend/i_glow_bg.png
+			COLOR 255 255 255 255
+		END
+	END
+#	GUI_GENERIC   	NAME pic_pierce   	Z_PLANE 7   	SCREEN_RECT 180 20 640 480   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_bond.png   		COLOR 255 255 255 255   	END   END
+	GUI_GENERIC   	NAME pic_swirl   	Z_PLANE 4   	MATERIAL_INFO   		MATERIAL spr_additive   		TEXTURE gui/frontend/i_swirl_01.png   		COLOR 255 255 255 96   		ROTATION 0   	END   	GUI_DEPENDENCY   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		MATERIAL_INFO   			ROTATION 0   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		MATERIAL_INFO   			ROTATION 359   		END   	END   		NAME swirlRotation   	END
+		SCREEN_RECT_LTWH 152 0 334 320
+	END
+	GUI_GENERIC   	NAME pic_swirl   	Z_PLANE 4   	MATERIAL_INFO   		MATERIAL spr_additive   		TEXTURE gui/frontend/i_swirl_06.png   		COLOR 255 255 255 96   		ROTATION 0   	END   	GUI_DEPENDENCY   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		MATERIAL_INFO   			ROTATION 0   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		MATERIAL_INFO   			ROTATION 359   		END   	END   		NAME swirlRotation2   	END
+		SCREEN_RECT_LTWH 152 0 334 320
+	END
+	GUI_GENERIC   	NAME pic_bottomcurve   	Z_PLANE 7   	SCREEN_RECT_LTWH 0 352 640 128   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_bottom_curve.png   		COLOR 255 255 255 255   	END   END
+	GUI_GENERIC   	NAME dancin_chick   	Z_PLANE 4   	SCREEN_RECT_LTWH 280 20 480 480   	MATERIAL_INFO   		MATERIAL frontend_reverse   		COLOR 255 255 255 255   		TEXTURE @dancin_chick_pic   	END   	GUI_DEPENDENCY   		NAME dancin_chick_pic   		STATE_SELECTION_LINEAR FALSE   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 0.0   			MATERIAL_INFO   				COLOR 255 255 255 0   			END   			ON_RENDER GUI_COMMAND PickNewChick END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 1.0   			MATERIAL_INFO   				COLOR 255 255 255 0   			END   			ON_RENDER GUI_COMMAND PickNewChick END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 2.0   			MATERIAL_INFO   				COLOR 192 192 192 192   			END   			ON_RENDER GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE dancin_chick_pic UPDATE END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 3.0   			MATERIAL_INFO   				COLOR 255 255 255 0   			END   			ON_RENDER GUI_COMMAND PickNewChick END   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 4.0   			MATERIAL_INFO   				COLOR 255 255 255 0   			END   			ON_RENDER GUI_COMMAND PickNewChick END   		END   	END   	GUI_DEPENDENCY   		NAME chickpos   		STATE_SELECTION_LINEAR TRUE   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 0   			SCREEN_RECT_LTWH 70 20 480 480   		END   		GUI_ELEMENT_STATE   			DEPENDS_VALUE 1   			SCREEN_RECT_LTWH 280 20 480 480   		END   	END   END	
+	
+END
+
+GUI_VARIABLE_FLOAT
+	NAME credit_style_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_3
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_5
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_6
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_7
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_8
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_9
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_10
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_11
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_12
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_13
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_14
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_15
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_16
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_17
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME credit_style_18
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_VARIABLE_STRING
+	NAME credit_text_1
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_2
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_3
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_4
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_5
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_6
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_7
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_8
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_9
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_10
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_11
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_12
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_13
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_14
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_15
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_16
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_17
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME credit_text_18
+	VALUE " "
+END

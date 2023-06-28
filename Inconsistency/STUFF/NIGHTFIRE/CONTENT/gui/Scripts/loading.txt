@@ -1,0 +1,719 @@
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+
+GUI_FLAGS
+#	USE_CURSOR
+#	USE_INPUT
+	BLOCK_CURSOR
+#	BLOCK_FRAME
+	BLOCK_INPUT
+	DYNAMIC
+	UNIQUE
+END
+
+GUI_SCREEN
+	NAME LoadingScreen
+	
+	MATERIAL_INFO
+		MATERIAL frontend
+		TEXTURE "gui/frontend/i_loading.png"
+		COLOR 255 255 255 255
+	END
+END

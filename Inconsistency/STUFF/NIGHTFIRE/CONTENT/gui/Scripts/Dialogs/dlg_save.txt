@@ -1,0 +1,2192 @@
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+
+# basic dialog defines ------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+	
+ 
+	
+ 
+
+# simple text dialog template ------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+GUI_ACTION
+	NAME UpdateDialogButtonState
+	# $param0 is a 'disabled' variable or constant
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE DB_STATE 0 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_SET_VARIABLE DB_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_SET_VARIABLE DB_STATE 2 END
+	GUI_COMMAND EQUALS $param0 0 GUI_ACTION_SET_VARIABLE DB_STATE 3 END
+END
+GUI_VARIABLE_FLOAT
+	NAME DB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 3
+END
+ 
+
+# checkbox and radio button stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME SetCheck
+	# $param0 is the variable to change
+	# $param1 is the new value
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param0 $param1 END
+END
+GUI_ACTION
+	NAME ToggleCheck
+	# $param0 is the variable to toggle
+	
+	# oy, make a copy to test against
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE TEMP_VAR $param0 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE $param0 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 0 GUI_ACTION_SET_VARIABLE $param0 1 END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME CB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 5
+END
+GUI_ACTION
+	NAME UpdateCheckState
+	# $param0 is the check variable
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE CB_STATE 0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_ADD_VARIABLE CB_STATE 3 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_ADD_VARIABLE CB_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_ADD_VARIABLE CB_STATE 2 END
+END
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+	
+# slider bar stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME SliderUpdate	
+	GUI_COMMAND GUI_ACTION_SLIDER_HELPER UPDATE 12 $param0 $param1 $param2 $param3 $param4 END
+END
+GUI_ACTION
+	NAME SliderRefresh	
+	GUI_COMMAND GUI_ACTION_SLIDER_HELPER REFRESH 12 $param0 $param1 $param2 $param3 END
+END
+
+ 
+
+ 
+	
+# edit box stuff ---------------------------------------------------------------------
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME EDIT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 3
+END
+GUI_ACTION
+	NAME UpdateEditState
+	# $param0 is the string holding the results
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE EDIT_STATE 0 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_SET_VARIABLE EDIT_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_SET_VARIABLE EDIT_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 4 GUI_ACTION_SET_VARIABLE EDIT_STATE 2 END
+
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TEMP_VAR 0 END
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE EDIT_STATE 3 END
+END
+
+GUI_ACTION
+	NAME TempEditSetParams
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER SETPARAMS $param0 END
+END
+
+GUI_ACTION
+	NAME EditBoxInputCancel
+	# $param0 is the string variable
+	# $param1 is a no-param action to call if not editing
+	
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 0 $param1 END
+END
+
+GUI_ACTION
+	NAME EditBoxInputAccept
+	# $param0 is the string variable
+	# $param1 is the control
+	# $param2 is an action that sets up the editing parameters
+
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 0 BeginTextEntry $param0 $param1 $param2 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 1 END
+END
+GUI_ACTION
+	NAME BeginTextEntry
+	# $param0 is the string variable
+	# $param1 is the control
+	# $param2 is an action that sets up the editing parameters
+	
+	# first stop our current selection
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING ANY TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 1 END
+	
+	# start editing the new one
+	GUI_COMMAND $param2 END
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER BEGINENTRY $param0 END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param1 END
+END
+GUI_ACTION
+	NAME EndTextEntry
+
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY $param1 END
+END
+
+ 
+ 
+
+ 
+
+
+# tab-style buttons ---------------------------------------------------------------------
+ 
+ 
+ 
+GUI_VARIABLE_FLOAT
+	NAME TAB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 5
+END
+# norm,
+# press,
+# hot,
+# current,norm
+# current,press
+# current,hot
+GUI_ACTION
+	NAME UpdateTabBtnState
+	# $param0 is 1 if current, 0 if not
+	# $param1 is the element state
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TAB_STATE 0 END
+	GUI_COMMAND EQUALS $param1 2 GUI_ACTION_ADD_VARIABLE TAB_STATE 1 END
+	GUI_COMMAND EQUALS $param1 3 GUI_ACTION_ADD_VARIABLE TAB_STATE 2 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_ADD_VARIABLE TAB_STATE 3 END
+END
+
+ 
+
+ 
+	
+	
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+	
+ 
+ 
+
+# GUI definition stuff --------------------------------
+GUI_FLAGS
+	USE_CURSOR
+	USE_INPUT
+	BLOCK_CURSOR
+#	BLOCK_FRAME
+	BLOCK_INPUT
+	DYNAMIC
+END
+
+GUI_CURSOR
+	MATERIAL_INFO
+		MATERIAL frontend
+		TEXTURE gui/frontend/i_cursor.png
+		TEXTURE_RECT 0 0 32 32
+		COLOR 255 255 255 255
+	END
+	
+	HOTSPOT 0 0
+	SIZE 32 32
+END
+
+GUI_VARIABLE_FLOAT
+	NAME isSaveMode
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_ACTION
+	NAME CloseDialog
+	
+# no need, is dynamic	GUI_COMMAND GUI_ACTION_SET_VARIABLE dlgInitialized 0 END
+	GUI_COMMAND GUI_ACTION_EXIT END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME topIndex
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME selValid
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME selIndex
+	INITIAL_VALUE -1
+	MIN_VALUE -1
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME realIndex
+	INITIAL_VALUE -1
+	MIN_VALUE -1
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME lastselIndex
+	INITIAL_VALUE -1
+	MIN_VALUE -1
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME saveCount
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME dlgInitialized
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME scrollFrac
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_ACTION
+	NAME FullFileListRefresh
+	GUI_COMMAND ScrollTopIndex 0 END
+	GUI_COMMAND GUI_ACTION_SAVE_LOAD_HELPER UPDATEFILELIST_SAVE END
+	GUI_COMMAND GUI_ACTION_SAVE_LOAD_HELPER COUNT saveCount END
+	GUI_COMMAND RefreshFileInfo END
+END
+GUI_ACTION
+	NAME InitializeLoadScreen
+	
+	GUI_COMMAND GUI_ACTION_DIALOG LOADACTION GUI_ACTION_SAVE_LOAD_HELPER END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS dlg_btn_cancel END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dlgInitialized 1 END
+	
+	GUI_COMMAND FullFileListRefresh END
+	GUI_COMMAND SelectFileIndex 0 END
+END
+
+GUI_ACTION
+	NAME GetFileListIndex
+	# $param0 is the visible list index
+	# $param1 is the variable to store the result
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE $param1 topIndex END
+	GUI_COMMAND GUI_ACTION_ADD_VARIABLE $param1 $param0 END
+END
+
+GUI_ACTION
+	NAME ScrollTopIndex
+	# $param0 is the number of items to scroll and the direction
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE TEMP_VAR topIndex END
+	GUI_COMMAND GUI_ACTION_SAVE_LOAD_HELPER SETSCROLL topIndex $param0 10 END
+	GUI_COMMAND GUI_ACTION_SAVE_LOAD_HELPER GETSCROLLFRAC topIndex scrollFrac 10 END
+	
+	GUI_COMMAND NOTEQUALS TEMP_VAR topIndex RefreshFileInfo END
+	GUI_COMMAND NOTEQUALS TEMP_VAR topIndex SelectFileIndex 0 END
+END
+GUI_ACTION
+	NAME ClickScrollTopIndex
+	
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND ScrollTopIndex $param0 END	
+END
+
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR_2
+	INITIAL_VALUE 0
+	MIN_VALUE -99999
+	MAX_VALUE 99999
+END
+GUI_ACTION
+	NAME ValidateFileIndex
+	# $param0 is the file index
+	# $param1 is the validated result
+	# $param2 will hold the real index computed
+	
+	# get the real index and store it away
+	GUI_COMMAND GetFileListIndex $param0 TEMP_VAR_2 END
+	GUI_COMMAND GUI_ACTION_SAVE_LOAD_HELPER GETFIELD EXISTS TEMP_VAR TEMP_VAR_2 END
+	
+	GUI_COMMAND EQUALS TEMP_VAR_2 0 GUI_ACTION_SET_VARIABLE TEMP_VAR 1 END		# always OK the 'new' selection
+
+	GUI_COMMAND EQUALS TEMP_VAR 0 GUI_ACTION_SET_VARIABLE_VARIABLE selIndex lastselIndex END	
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE selIndex $param0 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE_VARIABLE $param2 TEMP_VAR_2 END
+END
+GUI_ACTION
+	NAME SelectFileIndex
+	# $param0 is the index to try to select
+	
+	GUI_COMMAND NOTEQUALS $param0 -1 ValidateFileIndex $param0 selIndex realIndex END
+	GUI_COMMAND EQUALS $param0 -1 GUI_ACTION_SET_VARIABLE selIndex -1 END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE lastselIndex selIndex END
+	
+	GUI_COMMAND EQUALS selIndex -1 GUI_ACTION_SET_VARIABLE realIndex -1 END
+	GUI_COMMAND EQUALS selIndex -1 GUI_ACTION_SET_VARIABLE selValid 0 END
+	GUI_COMMAND NOTEQUALS selIndex -1 GUI_ACTION_SET_VARIABLE selValid 1 END
+END
+GUI_ACTION
+	NAME ClickSelectFileIndex
+	
+	GUI_COMMAND SelectFileIndex $param0 END	
+	GUI_COMMAND EQUALS selValid 1 STD_BUTTON_ACTION 1 END
+END
+
+GUI_ACTION
+	NAME GetFileDesc
+	# $param0 is the visible list index
+	# $param1 is the real list index
+	# $param2 is the desc variable
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param2 " " END
+	GUI_COMMAND EQUALS $param1 0 GUI_ACTION_SET_VARIABLE $param2 "NEW FILE" END
+#	GUI_COMMAND EQUALS $param1 1 GUI_ACTION_SET_VARIABLE $param2 "AUTO-SAVE" END
+#	GUI_COMMAND EQUALS $param1 2 GUI_ACTION_SET_VARIABLE $param2 "QUICK-SAVE" END
+	GUI_COMMAND GREATERTHAN $param1 0 GUI_ACTION_SAVE_LOAD_HELPER GETFIELD DESC $param2 $param1 END
+END
+GUI_ACTION
+	NAME GetFileDate
+	# $param0 is the visible list index
+	# $param1 is the real list index
+	# $param2 is the visibility var
+	# $param3 is the date variable
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param3 " " END
+#	GUI_COMMAND EQUALS $param1 1 GUI_ACTION_SET_VARIABLE $param3 "--" END
+#	GUI_COMMAND EQUALS $param1 2 GUI_ACTION_SET_VARIABLE $param3 "--" END
+	
+	GUI_COMMAND EQUALS $param2 1 GUI_ACTION_SAVE_LOAD_HELPER GETFIELD DATE $param3 $param1 END
+	GUI_COMMAND EQUALS $param1 0 GUI_ACTION_SET_VARIABLE $param3 "--" END
+END
+GUI_ACTION
+	NAME GetFileInfo
+	# $param0 is the index
+	# $param1 is the visibility var
+	# $param2 is the gamename var
+	# $param3 is the date var
+	
+	
+	# determine visibility (true if (index + top) <= server count)
+	GUI_COMMAND GetFileListIndex $param0 TEMP_VAR END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param1 0 END
+	GUI_COMMAND GUI_ACTION_SAVE_LOAD_HELPER GETFIELD EXISTS $param1 TEMP_VAR END
+	
+	GUI_COMMAND GetFileDate $param0 TEMP_VAR $param1 $param3 END
+	GUI_COMMAND GetFileDesc $param0 TEMP_VAR $param2 END
+#	GUI_COMMAND EQUALS $param1 1 GUI_ACTION_SAVE_LOAD_HELPER GETFIELD DATE $param3 TEMP_VAR END
+END
+
+GUI_ACTION
+	NAME RefreshFileInfo
+	
+	GUI_COMMAND GetFileInfo 0	game_1	game_name_1		game_date_1 END
+	GUI_COMMAND GetFileInfo 1	game_2	game_name_2		game_date_2 END
+	GUI_COMMAND GetFileInfo 2	game_3	game_name_3		game_date_3 END
+	GUI_COMMAND GetFileInfo 3	game_4	game_name_4		game_date_4 END
+	GUI_COMMAND GetFileInfo 4	game_5	game_name_5		game_date_5 END
+	GUI_COMMAND GetFileInfo 5	game_6	game_name_6		game_date_6 END
+	GUI_COMMAND GetFileInfo 6	game_7	game_name_7		game_date_7 END
+	GUI_COMMAND GetFileInfo 7	game_8	game_name_8		game_date_8 END
+	GUI_COMMAND GetFileInfo 8	game_9	game_name_9		game_date_9 END
+	GUI_COMMAND GetFileInfo 9	game_10	game_name_10	game_date_10 END
+END
+
+GUI_ACTION
+	NAME DoDeleteSelection
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND GREATERTHAN realIndex 0 GUI_ACTION_SAVE_LOAD_HELPER DELETEGAME realIndex END
+	GUI_COMMAND FullFileListRefresh END
+	GUI_COMMAND GREATERTHAN realIndex 0 SelectFileIndex 0 END
+END
+
+GUI_VARIABLE_STRING
+	NAME loadLaunchString
+	VALUE " "
+END
+GUI_ACTION
+	NAME DoSaveSelection
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND NOTEQUALS realIndex -1 CloseDialog END
+	
+	# save the game
+	GUI_COMMAND NOTEQUALS realIndex -1 GUI_ACTION_SAVE_LOAD_HELPER SAVEGAME realIndex END
+END
+
+GUI_ACTION
+	NAME UpdateDeleteButtonState
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE TEMP_VAR selValid END
+	GUI_COMMAND LESSTHAN realIndex 1 GUI_ACTION_SET_VARIABLE TEMP_VAR 0 END
+	GUI_COMMAND UpdateDialogButtonState TEMP_VAR END
+END
+GUI_ACTION
+	NAME ClickCloseButton
+	
+	GUI_COMMAND STD_BUTTON_ACTION 1 END
+	GUI_COMMAND CloseDialog END	
+END
+
+GUI_SCREEN
+	NAME SaveLoadScreen
+	
+# DELETE AND CANCEL BUTTONS ---------------------		
+	GUI_GENERIC
+		NAME dlg_btn_cancel
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 270 370 90 21
+		GUI_CAPTION
+			TEXT "CANCEL"
+		END		
+		GUI_DEPENDENCY   	NAME CURRENT_ELEMENT_STATE   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 2   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 250 219 179 255 250 219 179 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 3   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 117 41 0 255 117 41 0 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 4   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   END
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickCloseButton END
+			CANCEL GUI_COMMAND CloseDialog END
+		END
+	END
+
+	GUI_GENERIC
+		NAME dlg_btn_delete
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 170 370 90 21
+		GUI_CAPTION
+			TEXT "DELETE"
+		END		
+		GUI_DEPENDENCY   	NAME DB_STATE   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 250 219 179 255 250 219 179 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 2   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 117 41 0 255 117 41 0 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 3   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 64	64	64	255 64	64	64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   END
+		ON_RENDER GUI_COMMAND UpdateDeleteButtonState END
+		GUI_INPUT
+			CLICK GUI_COMMAND EQUALS selValid 1 DoDeleteSelection END
+			CANCEL GUI_COMMAND CloseDialog END
+		END
+	END
+	
+# LOAD GAME BUTTON, CAPTION	---------------------
+	GUI_GENERIC
+		NAME dlg_btn_load
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 370 370 90 21
+		GUI_CAPTION
+			TEXT "SAVE"
+		END		
+		GUI_DEPENDENCY   	NAME DB_STATE   	STATE_SELECTION_LINEAR FALSE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 255 179 64	255 255 179 64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 250 219 179 255 250 219 179 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 2   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 117 41 0 255 117 41 0 255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 3   		GUI_CAPTION_DRAWER   			FONT gui/fonts/ConduitITCTT_BI-20   			SCALE 0.45 0.8   			MATERIAL frontend   			DROPSHADOW YES   			COLORS 64	64	64	255 64	64	64	255   			VERTICAL CENTER   			JUSTIFY CENTER   			TRUNCATE 90   		END   	END   END
+		ON_RENDER GUI_COMMAND UpdateDialogButtonState selValid END
+		GUI_INPUT
+			CLICK GUI_COMMAND EQUALS selValid 1 DoSaveSelection END
+			CANCEL GUI_COMMAND CloseDialog END
+		END
+	END
+	
+# boxes ---------------------------------------------
+	GUI_GENERIC   	Z_PLANE 8   	NAME capback   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_fade.png   		COLOR 0 0 0 255   	END
+		SCREEN_RECT_LTWH 180 91 280 20
+	END
+	GUI_GENERIC
+		NAME textdlgcap
+		Z_PLANE 9
+		SCREEN_RECT_LTWH 180 90 280 20
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.45 0.75   	MATERIAL frontend   	COLORS 250 219 179 255 250 219 179 255   	VERTICAL CENTER   	JUSTIFY CENTER   	WRAP 280   END
+		GUI_CAPTION
+			TEXT "SAVE GAME"
+		END
+		ON_RENDER GUI_COMMAND EQUALS dlgInitialized 0 InitializeLoadScreen END
+	END
+
+	GUI_GENERIC
+		NAME sl_box_1
+		Z_PLANE 9
+		SCREEN_RECT_LTWH 170 120 1 1
+		GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 0	   END
+			SCREEN_RECT_LTWH 0 0 300 222
+		END
+	END
+	GUI_GENERIC
+		NAME sl_box_2
+		Z_PLANE 9
+		SCREEN_RECT_LTWH 170 120 1 1
+		GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	240 116 46 154	   END
+			SCREEN_RECT_LTWH 0 0 300 21
+		END
+	END
+
+# scroll bar ----------------------------------------
+	GUI_GENERIC
+		NAME sl_box_scroll
+		Z_PLANE 9
+		SCREEN_RECT_LTWH 454 139 16 203
+		GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	0 0 0 255	   	240 116 46 154	   END
+			SCREEN_RECT_LTWH 0 0 16 203
+		END
+	END
+	GUI_GENERIC
+		NAME sl_btn_up
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 454 139 16 16
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE gui/frontend/i_arrow_up.png
+			COLOR 255 255 255 255
+		END
+		GUI_DEPENDENCY	   	NAME CURRENT_ELEMENT_STATE	   	STATE_SELECTION_LINEAR FALSE	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 0.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 0 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 1.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 96 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 2.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 64 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 3.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 32 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 4.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 0 0 32 32	   		END	   	END	   END
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickScrollTopIndex -10 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_btn_down
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 454 326 16 16
+		MATERIAL_INFO
+			MATERIAL frontend
+			TEXTURE gui/frontend/i_arrow_down.png
+			COLOR 255 255 255 255
+		END
+		GUI_DEPENDENCY	   	NAME CURRENT_ELEMENT_STATE	   	STATE_SELECTION_LINEAR FALSE	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 0.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 0 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 1.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 96 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 2.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 64 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 3.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 32 0 32 32	   		END	   	END	   	GUI_ELEMENT_STATE	   		DEPENDS_VALUE 4.0	   		MATERIAL_INFO	   			TEXTURE_RECT_LTWH 0 0 32 32	   		END	   	END	   END
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickScrollTopIndex 10 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_slider_thumb
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 454 149 16 16
+		MATERIAL_INFO	   	MATERIAL frontend	   	TEXTURE gui/frontend/i_slider.png	   	TEXTURE_RECT_LTWH 0 0 32 32   	COLOR 255 255 255 255	   END
+
+		GUI_DEPENDENCY
+			NAME scrollFrac
+			STATE_SELECTION_LINEAR TRUE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0.0
+				SCREEN_RECT_LTWH 454 149 16 16
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1.0
+				SCREEN_RECT_LTWH 454 316 16 16
+			END
+		END
+	END	
+	
+# items ---------------------------------------------
+	GUI_GENERIC
+		NAME sl_game_name_0
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 120 115 20
+		GUI_CAPTION
+			TEXT "DESCRIPTION"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_0
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 120 115 20
+		GUI_CAPTION
+			TEXT "DATE"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+	END
+	
+# item 1 ------------------
+	GUI_GENERIC
+		NAME sl_game_1
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 140 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 0 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_1
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 140 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_1 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_1
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 140 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 140 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_1
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 140 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_1 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_1
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 140 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 140 155 20
+			END
+		END
+	END
+	
+# item 2 ------------------
+	GUI_GENERIC
+		NAME sl_game_2
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 160 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 1 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_2
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 160 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_2 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_2
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 160 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 160 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_2
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 160 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_2 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_2
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 160 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 160 155 20
+			END
+		END
+	END
+	
+# item 3 ------------------
+	GUI_GENERIC
+		NAME sl_game_3
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 180 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 2 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_3
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 180 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_3 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_3
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 180 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 180 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_3
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 180 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_3 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_3
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 180 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 180 155 20
+			END
+		END
+	END
+	
+# item 4 ------------------
+	GUI_GENERIC
+		NAME sl_game_4
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 200 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 3 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_4
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 200 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_4 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_4
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 200 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 200 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_4
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 200 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_4 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_4
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 200 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 200 155 20
+			END
+		END
+	END
+	
+# item 5 ------------------
+	GUI_GENERIC
+		NAME sl_game_5
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 220 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 4 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_5
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 220 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_5 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_5
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 220 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 220 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_5
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 220 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_5 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_5
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 220 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 220 155 20
+			END
+		END
+	END
+	
+# item 6 ------------------
+	GUI_GENERIC
+		NAME sl_game_6
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 240 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 5 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_6
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 240 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_6 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_6
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 240 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 240 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_6
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 240 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_6 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_6
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 240 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 240 155 20
+			END
+		END
+	END
+	
+# item 7 ------------------
+	GUI_GENERIC
+		NAME sl_game_7
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 260 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 6 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_7
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 260 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_7 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_7
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 260 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 260 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_7
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 260 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_7 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_7
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 260 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 260 155 20
+			END
+		END
+	END
+	
+# item 8 ------------------
+	GUI_GENERIC
+		NAME sl_game_8
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 280 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 7 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_8
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 280 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_8 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_8
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 280 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 280 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_8
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 280 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_8 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_8
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 280 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 280 155 20
+			END
+		END
+	END
+	
+# item 9 ------------------
+	GUI_GENERIC
+		NAME sl_game_9
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 300 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 8 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_9
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 300 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_9 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_9
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 300 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 300 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_9
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 300 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_9 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_9
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 300 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 300 155 20
+			END
+		END
+	END
+	
+# item 10 ------------------
+	GUI_GENERIC
+		NAME sl_game_10
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 320 275 20
+		GUI_INPUT
+			CLICK GUI_COMMAND ClickSelectFileIndex 9 END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_name_10
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 180 320 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_name_10 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 155   END
+		GUI_DEPENDENCY
+			NAME game_10
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 320 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 180 320 155 20
+			END
+		END
+	END
+	GUI_GENERIC
+		NAME sl_game_date_10
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 340 320 155 20
+		GUI_CAPTION
+			TEXT "%s"
+			PARAMS game_date_10 END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_BI-20   	SCALE 0.3 0.40   	MATERIAL frontend   	COLORS 0 0 0 255 0 0 0 255   	JUSTIFY LEFT   	VERTICAL CENTER   	TRUNCATE 115   END
+		GUI_DEPENDENCY
+			NAME game_10
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 320 155 20
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 340 320 155 20
+			END
+		END
+	END
+		
+	GUI_GENERIC
+		NAME con_item_hilite
+		Z_PLANE 8
+		SCREEN_RECT_LTWH 5000 CONTROLS_BOX1_Y CONTROLS_BOX1_W CONTROLS_BOX2_H
+		GUI_DEPENDENCY
+			NAME selIndex
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				SCREEN_RECT_LTWH 5000 CONTROLS_SLOT_TOP_1 CONTROLS_BOX1_W CONTROLS_BOX2_H
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 170 140 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1
+				SCREEN_RECT_LTWH 170 160 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 2
+				SCREEN_RECT_LTWH 170 180 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 3
+				SCREEN_RECT_LTWH 170 200 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 4
+				SCREEN_RECT_LTWH 170 220 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 5
+				SCREEN_RECT_LTWH 170 240 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 6
+				SCREEN_RECT_LTWH 170 260 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 7
+				SCREEN_RECT_LTWH 170 280 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 8
+				SCREEN_RECT_LTWH 170 300 1 1
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 9
+				SCREEN_RECT_LTWH 170 320 1 1
+			END
+		END
+		
+		GUI_FRAME   	MATERIAL frontend   	TEXTURE gui/frontend/i_box.png   	BLOCKSIZE 2 2   	TEXTURE_RECT	   	0 0 32 32	   	16 16 32 32	   	32 0 0 32	   	16 16 32 32	   	32 32 0 0	   	16 16 32 32	   	0 32 32 0	   	16 16 32 32	   	16 16 32 32	   END   	COLORS	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   	255 216 181 154	   END
+			SCREEN_RECT_LTWH 0 0 286 21
+		END
+	END
+
+	MATERIAL_INFO   	MATERIAL solid   	COLOR 0 0 0 92   END   GUI_GENERIC   	NAME dialog_bg   	Z_PLANE 7   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_dialog_bg.png   		COLOR 255 255 255 255   	END
+		SCREEN_RECT_LTWH 160 80 320 320
+	END
+	GUI_GENERIC   	NAME dialog_bg   	Z_PLANE 6   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_fade.png   		COLOR 0 0 0 255   	END
+		SCREEN_RECT_LTWH 140 74 360 332
+	END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME game_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_3
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_5
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_6
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_7
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_8
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_9
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME game_10
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_VARIABLE_STRING
+	NAME game_name_1
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_2
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_3
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_4
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_5
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_6
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_7
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_8
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_9
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_name_10
+	VALUE " "
+END
+
+
+GUI_VARIABLE_STRING
+	NAME game_date_1
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_2
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_3
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_4
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_5
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_6
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_7
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_8
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_9
+	VALUE " "
+END
+GUI_VARIABLE_STRING
+	NAME game_date_10
+	VALUE " "
+END

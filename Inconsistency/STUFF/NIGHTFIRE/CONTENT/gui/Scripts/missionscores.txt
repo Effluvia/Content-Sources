@@ -1,0 +1,2005 @@
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options -------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+# options->video ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->audio -----------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# options->controls ---------------------------------------
+#buttons
+ 
+ 
+
+# mouse settings
+ 
+ 
+
+# keybind headers
+ 
+ 
+ 
+
+
+# key actions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# Multiplayer ----------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Create ------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+# Multiplayer->Edit agent ---------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# Multiplayer->Join ---------------------------------------
+# buttons
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# column headers
+ 
+ 
+ 
+ 
+
+
+# dialog text ------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# mission selection ---------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# multiplayer connection screen --------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# mission scores screen ----------------------------------------------------------------------------------------
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# model names ---------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ 
+ 
+
+# cek: 10/30/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# cek: 11/4/2002 -------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+GUI_VARIABLE_STRING
+	NAME _gui_mainmenu
+	VALUE "gui/Scripts/Mainmenu/Nightfire.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapemenu
+	VALUE "gui/Scripts/Escapemenu/menu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_escapempmenu
+	VALUE "gui/Scripts/Escapemenu/mpmenu.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_intro
+	VALUE "gui/Scripts/intro.txt"
+END
+GUI_VARIABLE_STRING
+	NAME _gui_movieplayer
+	VALUE "gui/Scripts/MoviePlayer.txt"
+END
+GUI_VARIABLE_STRING
+	NAME THIS_MENU
+END
+GUI_VARIABLE_STRING
+	NAME THIS_GENERIC
+END
+
+
+
+
+# options menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# Cycle weapon or gadget select mode.
+# keybind tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+# audio tooltips ---------------------------------
+ 
+ 
+
+# video toooltips --------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# multiplayer menu tooltips --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+
+# create game tooltips ----------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# join game tooltips -------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+# edit agent ----------------------------------------
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+# standard button positions
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+# FONT LAYOUTS ----------------------------------------------
+# 20-pt gui/fonts/ConduitMdITCTT-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/SerpentineMedium-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 22-pt gui/fonts/ConduitITCTT_B-22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# 20-pt gui/fonts/ConduitITCTT_BI-20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+# old font layouts -------------------------------------------
+# 28-pt gui/fonts/ConduitMdITCTT-20
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20		gui/fonts/ConduitMdITCTT-20
+#define 0.4 0.55		0.3 0.4
+#define gui/fonts/ConduitMdITCTT-20			gui/fonts/ConduitMdITCTT-20
+#define 0.65 0.65			0.5 0.5
+#define gui/fonts/ConduitMdITCTT-20				gui/fonts/ConduitMdITCTT-20
+#define .4 .47				.3 .35
+
+# 28-pt gui/fonts/SerpentineMedium-20
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.60 0.75		0.55 0.6
+#define gui/fonts/SerpentineMedium-20					gui/fonts/SerpentineMedium-20
+#define 0.5 0.70					0.45 0.55
+#define gui/fonts/SerpentineMedium-20		gui/fonts/SerpentineMedium-20
+#define 0.8 0.8	0.6 0.6
+#define 0.65 0.75		0.5 0.55
+#define 0.45 0.65		0.35 0.5
+
+# 28-pt gui/fonts/ConduitITCTT_BI-20
+#define gui/fonts/ConduitITCTT_BI-20		gui/fonts/ConduitITCTT_BI-20
+#define 0.35 0.6		0.3 0.45
+#define gui/fonts/ConduitITCTT_BI-20				gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.3 0.45			0.25 0.35
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.75		0.35 0.5
+#define gui/fonts/ConduitITCTT_BI-20			gui/fonts/ConduitITCTT_BI-20
+#define 0.45 0.8			0.35 0.6
+#define 0.35 0.6		0.3 0.45
+
+
+GUI_VARIABLE_FLOAT
+	NAME IN_KEY_NUMBER
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME CURRENT_ELEMENT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_FLOAT
+	NAME TEMP_VAR
+	INITIAL_VALUE 0
+	MIN_VALUE -9999
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TEMP_STR
+	VALUE " "
+END
+
+# frame drawing stuff -----------------------------------------------------------------	
+ 
+
+# texture coords (NOT LTWH!)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+# standardized button stuff -----------------------------------------------------------------	
+ 
+
+ 
+
+# setting stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+
+ 
+	
+
+ 
+
+# standard actions ----------------------------------------------------------------------------------------
+GUI_ACTION
+	NAME GetHotAction
+	# $param0 is the help text
+	# $param1 set to non-zero to play the hotsound
+	GUI_COMMAND SetHelpText $param0 END
+	GUI_COMMAND GREATERTHAN $param1 0 PlayHotSound END
+END
+	
+GUI_ACTION
+	NAME PlayNothing
+
+END
+
+GUI_ACTION
+	NAME PlayHotSound
+
+END
+
+GUI_ACTION
+	NAME PlaySelect
+
+	GUI_COMMAND GUI_ACTION_BOND_SOUND buttons/fe.wav 1.0 END
+END
+
+GUI_ACTION
+	NAME ChangeButtonFocus
+	# $param0 == string name of button to change focus to
+
+	GUI_COMMAND PlaySelect END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param0 END
+END
+
+GUI_ACTION
+	NAME STD_BUTTON_ACTION
+	GUI_COMMAND EQUALS $param0 1 ChangeButtonFocus THIS_GENERIC END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_FOCUS THIS_GENERIC END
+END
+ 
+
+# variables required for the text window element
+GUI_VARIABLE_FLOAT
+	NAME TextWindowDataSourceCommandInput
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 9999
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandIsOutputValid
+	VALUE "false"
+END
+GUI_VARIABLE_STRING
+	NAME TextWindowDataSourceCommandOutputData
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME DoLoadGame
+	# $param0 contains the launchstring
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE "maxplayers 1" END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 END
+END
+
+GUI_ACTION
+	NAME DoConnectToServer
+	# $param0 is the string var of the server to connect to
+	
+	GUI_COMMAND GUI_ACTION_EXECUTE SETCVAR sv_newunit 0 END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADD "connect " END
+	GUI_COMMAND GUI_ACTION_EXECUTE ADDLINE $param0 QUOTED END
+END
+
+
+# checkbox and radio button stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME SetCheck
+	# $param0 is the variable to change
+	# $param1 is the new value
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE $param0 $param1 END
+END
+GUI_ACTION
+	NAME ToggleCheck
+	# $param0 is the variable to toggle
+	
+	# oy, make a copy to test against
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE TEMP_VAR $param0 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE $param0 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 0 GUI_ACTION_SET_VARIABLE $param0 1 END
+END
+
+GUI_VARIABLE_FLOAT
+	NAME CB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 5
+END
+GUI_ACTION
+	NAME UpdateCheckState
+	# $param0 is the check variable
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE CB_STATE 0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_ADD_VARIABLE CB_STATE 3 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_ADD_VARIABLE CB_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_ADD_VARIABLE CB_STATE 2 END
+END
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+	
+# slider bar stuff -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME SliderUpdate	
+	GUI_COMMAND GUI_ACTION_SLIDER_HELPER UPDATE 12 $param0 $param1 $param2 $param3 $param4 END
+END
+GUI_ACTION
+	NAME SliderRefresh	
+	GUI_COMMAND GUI_ACTION_SLIDER_HELPER REFRESH 12 $param0 $param1 $param2 $param3 END
+END
+
+ 
+
+ 
+	
+# edit box stuff ---------------------------------------------------------------------
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME EDIT_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 3
+END
+GUI_ACTION
+	NAME UpdateEditState
+	# $param0 is the string holding the results
+	
+	# compute the new element state
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE EDIT_STATE 0 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 3 GUI_ACTION_SET_VARIABLE EDIT_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 2 GUI_ACTION_SET_VARIABLE EDIT_STATE 1 END
+	GUI_COMMAND EQUALS CURRENT_ELEMENT_STATE 4 GUI_ACTION_SET_VARIABLE EDIT_STATE 2 END
+
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TEMP_VAR 0 END
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_SET_VARIABLE EDIT_STATE 3 END
+END
+
+GUI_ACTION
+	NAME TempEditSetParams
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER SETPARAMS $param0 END
+END
+
+GUI_ACTION
+	NAME EditBoxInputCancel
+	# $param0 is the string variable
+	# $param1 is a no-param action to call if not editing
+	
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 0 END
+	GUI_COMMAND EQUALS TEMP_VAR 0 $param1 END
+END
+
+GUI_ACTION
+	NAME EditBoxInputAccept
+	# $param0 is the string variable
+	# $param1 is the control
+	# $param2 is an action that sets up the editing parameters
+
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 0 BeginTextEntry $param0 $param1 $param2 END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 1 END
+END
+GUI_ACTION
+	NAME BeginTextEntry
+	# $param0 is the string variable
+	# $param1 is the control
+	# $param2 is an action that sets up the editing parameters
+	
+	# first stop our current selection
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING ANY TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY 1 END
+	
+	# start editing the new one
+	GUI_COMMAND $param2 END
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER BEGINENTRY $param0 END
+	GUI_COMMAND GUI_ACTION_SET_FOCUS $param1 END
+END
+GUI_ACTION
+	NAME EndTextEntry
+
+	GUI_COMMAND GUI_ACTION_TEXT_ENTRY_HELPER ISEDITING $param0 TEMP_VAR END
+	GUI_COMMAND EQUALS TEMP_VAR 1 GUI_ACTION_TEXT_ENTRY_HELPER ENDENTRY $param1 END
+END
+
+ 
+ 
+
+ 
+
+
+# tab-style buttons ---------------------------------------------------------------------
+ 
+ 
+ 
+GUI_VARIABLE_FLOAT
+	NAME TAB_STATE
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 5
+END
+# norm,
+# press,
+# hot,
+# current,norm
+# current,press
+# current,hot
+GUI_ACTION
+	NAME UpdateTabBtnState
+	# $param0 is 1 if current, 0 if not
+	# $param1 is the element state
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE TAB_STATE 0 END
+	GUI_COMMAND EQUALS $param1 2 GUI_ACTION_ADD_VARIABLE TAB_STATE 1 END
+	GUI_COMMAND EQUALS $param1 3 GUI_ACTION_ADD_VARIABLE TAB_STATE 2 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_ADD_VARIABLE TAB_STATE 3 END
+END
+
+ 
+
+ 
+	
+	
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+# rotation stuff ---------------------------------------------------
+ 
+
+ 
+
+
+# stars -------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME earthMover
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 25
+END
+
+# swirl -------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME swirlRotation
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 10
+END
+GUI_VARIABLE_FLOAT
+	NAME swirlRotation2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 20
+END
+
+ 
+
+ 
+
+
+# spinners -------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME spinRotation1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 20
+END
+ 
+
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME spinRotation4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+	WRAP TRUE
+	LOOP TRUE
+	RUNNING TRUE
+	LERP_TIME 30
+END
+ 
+
+# other stuff -------------------------------------------
+
+ 
+
+# the dome thingy		
+ 
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+# chicks! ------------------------------------------------------------
+GUI_VARIABLE_MOVIE
+	NAME dancin_chick_pic
+#	TEXTURE "movies/i_bondgirl_4.avi"
+	LOOPING FALSE
+	AUDIO FALSE
+END
+
+GUI_VARIABLE_FLOAT
+	NAME chicknum
+	INITIAL_VALUE 0.01
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME chickpos
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_ACTION
+	NAME PickNewChick
+	
+	GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE dancin_chick_pic STOP END
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE chicknum RANDOMINT END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE chickpos RANDOM END
+	GUI_COMMAND EQUALS chicknum 0 GUI_ACTION_SET_VARIABLE dancin_chick_pic "movies/girl_01.avi" 
+	GUI_COMMAND EQUALS chicknum 1 GUI_ACTION_SET_VARIABLE dancin_chick_pic "movies/girl_02.avi" 
+
+	GUI_COMMAND GUI_ACTION_MOVIE_VARIABLE dancin_chick_pic PLAY END
+END
+
+ 
+
+# Top menu bar layout -----------------------------------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+GUI_ACTION 
+	NAME DoMoveHighlight
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE current_selected_top_button $param0 END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dest_top_button $param0 END
+	
+	GUI_COMMAND EQUALS $param0 0 GUI_ACTION_SET_VARIABLE tab_show_0 1 END
+	GUI_COMMAND NOTEQUALS $param0 0 GUI_ACTION_SET_VARIABLE tab_show_0 0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE tab_show_1 1 END
+	GUI_COMMAND NOTEQUALS $param0 1 GUI_ACTION_SET_VARIABLE tab_show_1 0 END
+	GUI_COMMAND EQUALS $param0 2 GUI_ACTION_SET_VARIABLE tab_show_2 1 END
+	GUI_COMMAND NOTEQUALS $param0 2 GUI_ACTION_SET_VARIABLE tab_show_2 0 END
+END
+GUI_ACTION 
+	NAME TryMoveHighlight
+	GUI_COMMAND GREATERTHAN current_selected_top_button dest_top_button GUI_ACTION_ADD_VARIABLE current_selected_top_button -0.1 END
+	GUI_COMMAND LESSTHAN current_selected_top_button dest_top_button GUI_ACTION_ADD_VARIABLE current_selected_top_button 0.1 END
+	
+	GUI_COMMAND UpdateTab0 END
+	GUI_COMMAND UpdateTab1 END
+	GUI_COMMAND UpdateTab2 END
+#	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE current_selected_top_button dest_top_button END
+END
+
+# the top button highlight thingy
+GUI_ACTION 
+	NAME ChooseNewButton
+	GUI_COMMAND DoMoveHighlight $param0
+#	GUI_COMMAND GUI_ACTION_SET_VARIABLE dest_top_button $param0
+	GUI_COMMAND ChangeButtonFocus $param1 END
+END
+GUI_VARIABLE_FLOAT
+	NAME current_selected_top_button
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 2
+END
+GUI_VARIABLE_FLOAT
+	NAME dest_top_button
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 2
+END
+
+# screen 0 update funcs and variables --------------
+GUI_VARIABLE_FLOAT
+	NAME tab_show_0
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ShowTab0
+	GUI_COMMAND LESSTHAN current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_0 0.1 END
+	GUI_COMMAND EQUALS current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_0 0.1 END
+END
+GUI_ACTION
+	NAME HideTab0
+	GUI_COMMAND GREATERTHAN tab_show_0 0 GUI_ACTION_ADD_VARIABLE tab_show_0 -0.1 END
+END
+GUI_ACTION
+	NAME UpdateTab0
+	
+	GUI_COMMAND EQUALS dest_top_button 0 ShowTab0 END 
+	GUI_COMMAND NOTEQUALS dest_top_button 0 HideTab0 END 
+END
+ 
+
+# screen 1 update funcs and variables --------------
+GUI_VARIABLE_FLOAT
+	NAME tab_show_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ShowTab1
+	GUI_COMMAND GUI_ACTION_ADD_VARIABLE tab_show_1 0.1 END
+END
+GUI_ACTION
+	NAME HideTab1
+	GUI_COMMAND GREATERTHAN tab_show_1 0 GUI_ACTION_ADD_VARIABLE tab_show_1 -0.1 END
+END
+GUI_ACTION
+	NAME UpdateTab1
+	
+	GUI_COMMAND EQUALS dest_top_button 1 ShowTab1 END 
+	GUI_COMMAND NOTEQUALS dest_top_button 1 HideTab1 END 
+END
+ 
+
+# screen 2 update funcs and variables --------------
+GUI_VARIABLE_FLOAT
+	NAME tab_show_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_ACTION
+	NAME ShowTab2
+	GUI_COMMAND GREATERTHAN current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_2 0.1 END
+	GUI_COMMAND EQUALS current_selected_top_button 1 GUI_ACTION_ADD_VARIABLE tab_show_2 0.1 END
+END
+GUI_ACTION
+	NAME HideTab2
+	GUI_COMMAND GREATERTHAN tab_show_2 0 GUI_ACTION_ADD_VARIABLE tab_show_2 -0.1 END
+END
+GUI_ACTION
+	NAME UpdateTab2
+	
+	GUI_COMMAND EQUALS dest_top_button 2 ShowTab2 END 
+	GUI_COMMAND NOTEQUALS dest_top_button 2 HideTab2 END 
+END
+ 
+
+# Help box stuff ---------------------------------------------------------------------	
+GUI_VARIABLE_STRING
+	NAME generic_help_var
+	VALUE "  "
+END
+
+ 
+
+GUI_ACTION
+	NAME SetHelpText
+	# param0 is the text	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE generic_help_var $param0 END	
+END	
+GUI_ACTION
+	NAME SetHelpTextVar
+	# param0 is the text	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE_VARIABLE generic_help_var $param0 END	
+END
+
+# Screen title caption text-----------------------------------------------------------	
+ 
+ 
+
+ 
+
+GUI_VARIABLE_STRING
+	NAME generic_title_var
+	VALUE " "
+END
+
+GUI_ACTION
+	NAME SetScreenTitle
+	# param0 is the title of the menu
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE generic_title_var $param0 END
+END
+
+# Buttons that appear at the bottom of the screen -------------------------------------	
+ 
+ 
+ 
+ 
+ 
+ 
+
+# specific button positions
+ 
+ 
+
+ 
+	
+# main-menu layout ------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_1
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_2
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_3
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_3
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_4
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_5
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_5
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_state_6
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100
+END
+GUI_VARIABLE_FLOAT
+	NAME layout_hilite_visible_6
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+
+GUI_ACTION
+	NAME TryFadeHiliteOut
+	# $param0 is the state
+	
+	GUI_COMMAND GREATERTHAN $param0 0 GUI_ACTION_ADD_VARIABLE $param0 -3 END
+END
+GUI_ACTION
+	NAME TryFadeHiliteIn
+	# $param0 is the state
+	
+	GUI_COMMAND NOTEQUALS $param0 100 GUI_ACTION_SET_VARIABLE $param0 100 END
+END
+GUI_ACTION
+	NAME UpdateHiliteState
+	# $param0 is the visibility
+	# $param1 is the state
+	
+	GUI_COMMAND EQUALS $param0 0 TryFadeHiliteOut $param1 END
+	GUI_COMMAND EQUALS $param0 1 TryFadeHiliteIn $param1 END
+END
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GUI_ACTION
+	NAME SetDomePic
+	# $param0 ... 1 to turn on, 0 to turn off
+	# $param1 ... the texture, only valid if $param0 is 1
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dome_pic_vis $param0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE dome_pic_tex $param1 END
+END
+GUI_ACTION
+	NAME SetDomePicVar
+	# $param0 ... 1 to turn on, 0 to turn off
+	# $param1 ... the texture, only valid if $param0 is 1
+	
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE dome_pic_vis $param0 END
+	GUI_COMMAND EQUALS $param0 1 GUI_ACTION_SET_VARIABLE_VARIABLE dome_pic_tex $param1 END
+END
+
+# context pic thingy
+GUI_VARIABLE_TEXTURE
+	NAME dome_pic_tex
+END
+GUI_VARIABLE_FLOAT
+	NAME dome_pic_vis
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+ 
+ 
+ 
+ 
+ 
+ 
+
+GUI_ACTION
+	NAME DoOpenDifficultyDialog	
+
+	GUI_COMMAND GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Dialogs/dlg_difficulty.txt" END
+	GUI_COMMAND GUI_ACTION_DIALOG SETVARIABLE "gui/Scripts/Dialogs/dlg_difficulty.txt" difficulty_map $param0 END
+END
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+	
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GUI_FLAGS
+	USE_INPUT
+	BLOCK_CURSOR
+#	BLOCK_FRAME
+	BLOCK_INPUT
+	UNIQUE
+#	DYNAMIC
+END
+
+GUI_VARIABLE_FLOAT
+	NAME initialized
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME ms_can_exit
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 1
+END
+GUI_VARIABLE_FLOAT
+	NAME sv_newunit		# a cvar
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 2
+END
+
+GUI_VARIABLE_FLOAT
+	NAME scores_timer
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 60
+	LERP_TIME 60
+	WRAP FALSE
+	LOOP FALSE
+	RUNNING FALSE
+END
+
+ON_CLOSE GUI_COMMAND EQUALS initialized 1 GUI_ACTION_MUSIC STOPALL END
+
+GUI_ACTION
+	NAME ExitMissionScores
+	
+	GUI_COMMAND GUI_ACTION_EXIT END
+	GUI_COMMAND EQUALS sv_newunit 2 GUI_ACTION_DIALOG OPENMENU _gui_mainmenu END
+	GUI_COMMAND EQUALS sv_newunit 2 GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Mainmenu/Credits.txt" END
+#	GUI_COMMAND EQUALS sv_newunit 2 GUI_ACTION_DIALOG OPENMENU "gui/Scripts/Dialogs/dlg_wait.txt" END
+END
+GUI_ACTION
+	NAME CheckToEnableExit
+	
+	GUI_COMMAND GREATERTHAN scores_timer 5 GUI_ACTION_SET_VARIABLE ms_can_exit 1 END
+	GUI_COMMAND GREATERTHAN scores_timer 30 ExitMissionScores END
+END
+GUI_ACTION
+	NAME ScoresFrameFunc
+	
+	GUI_COMMAND EQUALS initialized 0 MissionInit END
+	GUI_COMMAND EQUALS sv_newunit 2 CheckToEnableExit END
+END
+GUI_ACTION
+	NAME MissionInit
+	
+	GUI_COMMAND GUI_ACTION_DIALOG LOADACTION GUI_ACTION_MUSIC END
+	GUI_COMMAND SetScreenTitle "MISSION RESULTS" END
+	GUI_COMMAND GUI_ACTION_SET_VARIABLE initialized 1 END
+	
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE scores_timer REWIND END
+	GUI_COMMAND GUI_ACTION_VCR_VARIABLE scores_timer PLAY END
+END
+
+GUI_SCREEN
+	NAME MissionScores
+
+	FADE_IN_TIME 0.25
+	FADE_OUT_TIME 0.25
+	
+	MATERIAL_INFO
+		MATERIAL solid
+		COLOR 0 0 0 255
+	END
+	
+	GUI_GENERIC
+		Z_PLANE 10
+		NAME ms_back
+		SCREEN_RECT_LTWH 160 450 320 16
+		GUI_CAPTION
+			TEXT "PRESS ESCAPE TO CONTINUE"
+		END
+		GUI_DEPENDENCY
+			NAME ms_can_exit
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				SCREEN_RECT_LTWH 5000 450 320 16
+				GUI_INPUT
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1
+				SCREEN_RECT_LTWH 160 450 320 16
+				GUI_INPUT
+					CANCEL		GUI_COMMAND ExitMissionScores END
+				END
+			END
+		END
+		GUI_CAPTION_DRAWER
+			FONT gui/fonts/ConduitMdITCTT-20
+			SCALE 0.65 0.65
+			MATERIAL frontend
+			COLORS 111	116 110 255 111	116 110 255
+			WRAP 320
+			JUSTIFY CENTER
+		END
+	END
+	
+	GUI_GENERIC
+		NAME theMedal
+		SCREEN_RECT_LTWH 54 110 128 128
+		Z_PLANE 12
+		MATERIAL_INFO
+			MATERIAL frontend
+			COLOR 255 255 255 0
+			TEXTURE gui/frontend/i_eol_medal_a.png
+		END
+
+		GUI_DEPENDENCY
+			NAME score_total_score
+			STATE_SELECTION_LINEAR FALSE
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE -1
+				MATERIAL_INFO
+					MATERIAL frontend
+					COLOR 255 255 255 0
+					TEXTURE gui/frontend/i_eol_medal_a.png
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 0
+				MATERIAL_INFO
+					MATERIAL frontend
+					COLOR 255 255 255 255
+					TEXTURE gui/frontend/i_eol_medal_a.png
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 500000
+				MATERIAL_INFO
+					MATERIAL frontend
+					COLOR 255 255 255 255
+					TEXTURE gui/frontend/i_eol_medal_b.png
+				END
+			END
+			GUI_ELEMENT_STATE
+				DEPENDS_VALUE 1000000
+				MATERIAL_INFO
+					MATERIAL frontend
+					COLOR 255 255 255 255
+					TEXTURE gui/frontend/i_eol_medal_c.png
+				END
+			END
+		END
+	END
+	
+	GUI_GENERIC
+		NAME rank_moments_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 260 140 155 18
+		GUI_CAPTION
+			TEXT "Bond Moves"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY LEFT   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME rank_moments_breakdown
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 420 140 110 18
+		GUI_CAPTION
+			TEXT "%.0f / %.0f"
+			PARAMS count_moves total_moves END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 110   END
+	END
+	GUI_GENERIC
+		NAME rank_moments_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 140 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_moves END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_dispatched_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 260 160 155 18
+		GUI_CAPTION
+			TEXT "Opponents Dispatched"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY LEFT   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME rank_dispatched_breakdown
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 420 160 110 18
+		GUI_CAPTION
+			TEXT "%.0f / %.0f"
+			PARAMS count_dispatched total_dispatched END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 110   END
+	END
+	GUI_GENERIC
+		NAME rank_dispatched_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 160 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_dispatched END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_nonlethal_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 260 180 155 18
+		GUI_CAPTION
+			TEXT "Non-Lethal Bonus"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY LEFT   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME rank_nonlethal_breakdown
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 420 180 110 18
+		GUI_CAPTION
+			TEXT "%.0f / %.0f"
+			PARAMS count_nonlethal total_nonlethal END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 110   END
+	END
+	GUI_GENERIC
+		NAME rank_nonlethal_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 180 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_nonlethal END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_accuracy_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 260 200 155 18
+		GUI_CAPTION
+			TEXT "Accuracy"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY LEFT   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME rank_accuracy_breakdown
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 420 200 110 18
+		GUI_CAPTION
+			TEXT "%.0f / %.0f"
+			PARAMS count_accuracy total_accuracy END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 110   END
+	END
+	GUI_GENERIC
+		NAME rank_accuracy_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 200 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_accuracy END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_secrets_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 260 220 155 18
+		GUI_CAPTION
+			TEXT "Secrets"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY LEFT   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME rank_secrets_breakdown
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 420 220 110 18
+		GUI_CAPTION
+			TEXT "%.0f / %.0f"
+			PARAMS count_secrets total_secrets END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 110   END
+	END
+	GUI_GENERIC
+		NAME rank_accuracy_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 220 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_secrets END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_time_name
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 260 240 155 18
+		GUI_CAPTION
+			TEXT "Time"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY LEFT   	TRUNCATE 155   END
+	END
+	GUI_GENERIC
+		NAME rank_secrets_breakdown
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 420 240 110 18
+		GUI_CAPTION
+			TEXT "%s / %s"
+			PARAMS count_time total_time END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 110   END
+	END
+	GUI_GENERIC
+		NAME rank_accuracy_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 240 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_time END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_subtotal_cap
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 320 310 210 18
+		GUI_CAPTION
+			TEXT "Subtotal :"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 210   END
+	END
+	GUI_GENERIC
+		NAME rank_subtotal_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 310 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_subtotal END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_bonus_cap
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 320 330 210 18
+		GUI_CAPTION
+			TEXT "Difficulty Bonus :"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 210   END
+	END
+	GUI_GENERIC
+		NAME rank_bonus_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 330 85 18
+		GUI_CAPTION
+			TEXT "%dx"
+			PARAMS score_bonus END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.45 0.6   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT   	TRUNCATE 85   END
+	END
+	
+	GUI_GENERIC
+		NAME rank_bottom_total_cap
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 320 360 210 18
+		GUI_CAPTION
+			TEXT "TOTAL :"
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.5 0.7   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT
+			TRUNCATE 210
+		END
+	END
+	GUI_GENERIC
+		NAME rank_bottom_total_score
+		Z_PLANE 10
+		SCREEN_RECT_LTWH 535 360 85 18
+		GUI_CAPTION
+			TEXT "%d"
+			PARAMS score_total_score END
+		END
+		GUI_CAPTION_DRAWER   	FONT gui/fonts/ConduitITCTT_B-22   	SCALE 0.5 0.7   	MATERIAL frontend   	DROPSHADOW YES   	COLORS 255 216 181 255 255 216 181 255   	VERTICAL CENTER   	JUSTIFY RIGHT
+			TRUNCATE 85
+		END
+	END
+	
+	
+	
+	
+	
+	GUI_GENERIC
+		NAME thingy
+		Z_PLANE 1
+		
+		SCREEN_RECT_LTWH 0 0 640 480
+		
+		ON_RENDER GUI_COMMAND ScoresFrameFunc END
+	END
+	
+	GUI_GENERIC	   	NAME gen_title_button	   	Z_PLANE 11	   	SCREEN_RECT_LTWH 13 42 220 22	   	GUI_CAPTION	   		TEXT "%s"	   		PARAMS generic_title_var END	   	END	   	GUI_CAPTION_DRAWER    		FONT gui/fonts/SerpentineMedium-20    		SCALE 0.5 0.70    		MATERIAL frontend    		COLORS 250 219 179 255 250 219 179 255    		DROPSHADOW YES	   		TRUNCATE 220    		JUSTIFY CENTER    	END	   END
+	GUI_GENERIC   	NAME pic_tabback   	Z_PLANE 2   	SCREEN_RECT 0 0 640 480   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_glow_bg2.png   		COLOR 255 255 255 255   	END   END   GUI_GENERIC   	NAME pic_swirl   	Z_PLANE 4   	MATERIAL_INFO   		MATERIAL spr_additive   		TEXTURE gui/frontend/i_swirl_01.png   		COLOR 255 255 255 96   		ROTATION 0   	END   	GUI_DEPENDENCY   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		MATERIAL_INFO   			ROTATION 0   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		MATERIAL_INFO   			ROTATION 359   		END   	END   		NAME swirlRotation   	END   	SCREEN_RECT_LTWH -50 14 334 320   END   GUI_GENERIC   	NAME pic_swirl   	Z_PLANE 4   	MATERIAL_INFO   		MATERIAL spr_additive   		TEXTURE gui/frontend/i_swirl_06.png   		COLOR 255 255 255 96   		ROTATION 0   	END   	GUI_DEPENDENCY   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		MATERIAL_INFO   			ROTATION 0   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		MATERIAL_INFO   			ROTATION 359   		END   	END   		NAME swirlRotation2   	END   	SCREEN_RECT_LTWH -50 14 334 320   END   GUI_GENERIC   	NAME pic_spin4   	Z_PLANE 6   	MATERIAL_INFO   		MATERIAL spr_additive   		TEXTURE gui/frontend/i_spin_04.png   		COLOR 255 255 255 255   	END   	GUI_DEPENDENCY   	STATE_SELECTION_LINEAR TRUE   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 0   		MATERIAL_INFO   			ROTATION 359   		END   	END   	GUI_ELEMENT_STATE   		DEPENDS_VALUE 1   		MATERIAL_INFO   			ROTATION 0   		END   	END   		NAME spinRotation4   	END   	SCREEN_RECT_LTWH -10 46 256 256   END   GUI_GENERIC   	SCREEN_RECT_LTWH -12 46 256 256   	NAME pic_dial   	Z_PLANE 6   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_dial.png   		COLOR 255 255 255 255   	END   END   GUI_GENERIC   	NAME pic_nflogo   	Z_PLANE 8   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_logo_nightfire.png   		COLOR 255 255 255 255   	END   	SCREEN_RECT_LTWH 400 36 190 45   END   GUI_GENERIC   	NAME pic_tm_1   	Z_PLANE 8   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_tm.png   		COLOR 230 179 76 255   	END   	SCREEN_RECT_LTWH 450 56 12 8   END   GUI_GENERIC   	NAME pic_tm_2   	Z_PLANE 8   	MATERIAL_INFO   		MATERIAL frontend   		TEXTURE gui/frontend/i_tm.png   		COLOR 255 255 255 255   	END   	SCREEN_RECT_LTWH 574 56 12 8   END
+END
+
+# score variables --------------------------------------------
+GUI_VARIABLE_FLOAT
+	NAME count_moves
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME total_moves
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_INTEGER
+	NAME score_moves
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+
+GUI_VARIABLE_FLOAT
+	NAME count_dispatched
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME total_dispatched
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_INTEGER
+	NAME score_dispatched
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+
+GUI_VARIABLE_FLOAT
+	NAME count_nonlethal
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME total_nonlethal
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_INTEGER
+	NAME score_nonlethal
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+
+GUI_VARIABLE_FLOAT
+	NAME count_accuracy
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME total_accuracy
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_INTEGER
+	NAME score_accuracy
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+
+GUI_VARIABLE_FLOAT
+	NAME count_secrets
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_FLOAT
+	NAME total_secrets
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 99999
+END
+GUI_VARIABLE_INTEGER
+	NAME score_secrets
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+
+GUI_VARIABLE_STRING
+	NAME count_time
+	VALUE "0:00"
+END
+GUI_VARIABLE_STRING
+	NAME total_time
+	VALUE "0:00"
+END
+GUI_VARIABLE_INTEGER
+	NAME score_time
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+
+GUI_VARIABLE_INTEGER
+	NAME score_subtotal
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 100000000
+END
+GUI_VARIABLE_INTEGER
+	NAME score_bonus
+	INITIAL_VALUE 0
+	MIN_VALUE 0
+	MAX_VALUE 10
+END
+
+GUI_VARIABLE_INTEGER
+	NAME score_total_score
+	INITIAL_VALUE -1
+	MIN_VALUE -1
+	MAX_VALUE 100000000
+END
