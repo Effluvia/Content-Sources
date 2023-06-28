@@ -1,1 +1,0 @@
-This is the full size beta shotgun texture, made by piecing multiple bits of a tiled texture together

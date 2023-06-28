@@ -1,1 +1,0 @@
-Turn off r_shadows! Recent updates to Half-Life have caused issues with the original code for the Shadows.

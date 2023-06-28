@@ -1,1 +1,0 @@
-studiomdl.exe -b 256 panthereye

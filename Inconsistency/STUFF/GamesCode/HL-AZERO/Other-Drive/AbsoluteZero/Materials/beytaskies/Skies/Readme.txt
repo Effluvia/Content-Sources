@@ -1,1 +1,0 @@
-Found on Opposing Force's disc, in a folder named TFC_WINNERS

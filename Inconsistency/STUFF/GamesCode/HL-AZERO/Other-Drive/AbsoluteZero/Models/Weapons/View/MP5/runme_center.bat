@@ -1,1 +1,0 @@
-studiomdl.exe -b 512 v_9mmAR_center

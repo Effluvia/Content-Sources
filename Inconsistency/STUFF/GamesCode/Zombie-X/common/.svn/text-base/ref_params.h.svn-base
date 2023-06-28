@@ -1,0 +1,105 @@
+/*
+    Copyright 2001 to 2004. The Battle Grounds Team and Contributors
+
+    This file is part of the Battle Grounds Modification for Half-Life.
+
+    The Battle Grounds Modification for Half-Life is free software;
+    you can redistribute it and/or modify it under the terms of the
+    GNU Lesser General Public License as published by the Free
+    Software Foundation; either version 2.1 of the License, or
+    (at your option) any later version.
+
+    The Battle Grounds Modification for Half-Life is distributed in
+    the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+    even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+    for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with The Battle Grounds Modification for Half-Life;
+    if not, write to the Free Software Foundation, Inc., 59 Temple Place,
+    Suite 330, Boston, MA  02111-1307  USA
+
+    You must obey the GNU Lesser General Public License in all respects for
+    all of the code used other than code distributed with the Half-Life
+    SDK developed by Valve.  If you modify this file, you may extend this
+    exception to your version of the file, but you are not obligated to do so.
+    If you do not wish to do so, delete this exception statement from your
+    version.
+*/
+
+/***
+*
+*	Copyright (c) 1996-2001, Valve LLC. All rights reserved.
+*	
+*	This product contains software technology licensed from Id 
+*	Software, Inc. ("Id Technology").  Id Technology (c) 1996 Id Software, Inc. 
+*	All Rights Reserved.
+*
+*   Use, distribution, and modification of this source code and/or resulting
+*   object code is restricted to non-commercial enhancements to products from
+*   Valve LLC.  All other use, distribution, or modification is prohibited
+*   without written permission from Valve LLC.
+*
+****/
+#if !defined( REF_PARAMSH )
+#define REF_PARAMSH
+
+typedef struct ref_params_s
+{
+	// Output
+	float	vieworg[3];
+	float	viewangles[3];
+
+	float	forward[3];
+	float	right[3];
+	float   up[3];
+
+	// Client frametime;
+	float	frametime;
+	// Client time
+	float	time;
+
+	// Misc
+	int		intermission;
+	int		paused;
+	int		spectator;
+	int		onground;
+	int		waterlevel;
+
+	float	simvel[3];
+	float	simorg[3];
+
+	float	viewheight[3];
+	float	idealpitch;
+
+	float	cl_viewangles[3];
+
+	int		health;
+	float	crosshairangle[3];
+	float	viewsize;
+
+	float	punchangle[3];
+	int		maxclients;
+	int		viewentity;
+	int		playernum;
+	int		max_entities;
+	int		demoplayback;
+	int		hardware;
+
+	int		smoothing;
+
+	// Last issued usercmd
+	struct usercmd_s *cmd;
+
+	// Movevars
+	struct movevars_s *movevars;
+
+	int		viewport[4];		// the viewport coordinates x ,y , width, height
+
+	int		nextView;			// the renderer calls ClientDLL_CalcRefdef() and Renderview
+								// so long in cycles until this value is 0 (multiple views)
+	int		onlyClientDraw;		// if !=0 nothing is drawn by the engine except clientDraw functions
+} ref_params_t;
+
+#endif // !REF_PARAMSH

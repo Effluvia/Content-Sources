@@ -1,1 +1,0 @@
-studiomdl.exe -b 512 w_medkit

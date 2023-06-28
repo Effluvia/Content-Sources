@@ -1,1 +1,0 @@
-studiomdl -b 512 g_heavy
