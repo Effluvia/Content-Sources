@@ -1,0 +1,2652 @@
+// HALF-LIFE 2 SPEECH SYSTEM SENTENCES.
+// Do not use TABS.  Separate sentence-names from wave definitions with single spaces only.
+// Sounds prefixed by "Q_" will be queued up for a while and played as soon as the NPC is allowed to speak
+
+
+//CHARACTER SECTION
+
+
+
+
+
+
+//COMBINE SOLDIER
+
+// COMBINE SOLDIER
+
+// V_ indicates 'virtual' name or number
+// last letter indicates type: 'S' = soldier
+
+// soldier names, remembered by speaker:
+
+V_MYNAMES0 leader {Len 0.4}
+V_MYNAMES1 flash {Len 0.4}
+V_MYNAMES2 ranger {Len 0.4}
+V_MYNAMES3 hunter {Len 0.4}
+V_MYNAMES4 blade {Len 0.4}
+V_MYNAMES5 scar {Len 0.4}
+V_MYNAMES6 hammer {Len 0.4}
+V_MYNAMES7 sweeper {Len 0.4}
+V_MYNAMES8 swift {Len 0.4}
+V_MYNAMES9 fist {Len 0.4}
+V_MYNAMES10 sword {Len 0.4}
+V_MYNAMES11 savage {Len 0.4}
+V_MYNAMES12 tracker {Len 0.4}
+V_MYNAMES13 slash {Len 0.4}
+V_MYNAMES14 razor {Len 0.4}
+V_MYNAMES15 stab {Len 0.4}
+V_MYNAMES16 spear {Len 0.4}
+V_MYNAMES17 striker {Len 0.4}
+V_MYNAMES18 dagger {Len 0.4}
+
+// air support names:
+
+V_RNDNAMES0 ghost {Len 0.4}
+V_RNDNAMES1 reaper {Len 0.4}
+V_RNDNAMES2 nomad {Len 0.4}
+V_RNDNAMES3 hurricane {Len 0.4}
+V_RNDNAMES4 phantom {Len 0.4}
+V_RNDNAMES5 judge {Len 0.4}
+V_RNDNAMES6 shadow {Len 0.4}
+V_RNDNAMES7 slam {Len 0.4}
+V_RNDNAMES8 stinger {Len 0.4}
+V_RNDNAMES9 storm {Len 0.4}
+V_RNDNAMES10 vamp {Len 0.4}
+V_RNDNAMES11 winder {Len 0.4}
+V_RNDNAMES12 star {Len 0.4}  
+
+//phonetic alphabet/codes:
+
+V_RNDCODES0 apex {Len 0.4}
+V_RNDCODES1 ion {Len 0.4}
+V_RNDCODES2 jet {Len 0.4}
+V_RNDCODES3 kilo {Len 0.4}
+V_RNDCODES4 mace {Len 0.4}
+V_RNDCODES5 nova {Len 0.4}
+V_RNDCODES6 payback {Len 0.4}
+V_RNDCODES7 sundown {Len 0.4}
+V_RNDCODES8 uniform {Len 0.4}
+V_RNDCODES9 boomer {Len 0.4}
+V_RNDCODES10 echo {Len 0.4}
+V_RNDCODES11 flatline {Len 0.4}
+V_RNDCODES12 helix {Len 0.4}
+V_RNDCODES13 ice {Len 0.4}
+V_RNDCODES14 quicksand {Len 0.4}
+V_RNDCODES15 payback {Len 0.4}
+V_RNDCODES16 ripcord {Len 0.4}
+
+//Numbers, remembered by speaker:
+
+V_MYNUMS0 zero {Len 0.4}
+V_MYNUMS1 one {Len 0.4}
+V_MYNUMS2 two {Len 0.4}
+V_MYNUMS3 three {Len 0.4}
+V_MYNUMS4 four {Len 0.4}
+V_MYNUMS5 five {Len 0.4}
+V_MYNUMS6 six {Len 0.4}
+V_MYNUMS7 seven {Len 0.4}
+V_MYNUMS8 eight {Len 0.4}
+V_MYNUMS9 niner {Len 0.4}
+
+// random numbers
+
+V_RNDNUMS0 zero {Len 0.4}
+V_RNDNUMS1 one {Len 0.4}
+V_RNDNUMS2 two {Len 0.4}
+V_RNDNUMS3 three {Len 0.4}
+V_RNDNUMS4 four {Len 0.4}
+V_RNDNUMS5 five {Len 0.4}
+V_RNDNUMS6 six {Len 0.4}
+V_RNDNUMS7 seven {Len 0.4}
+V_RNDNUMS8 eight {Len 0.4}
+V_RNDNUMS9 niner {Len 0.4}
+
+// numbers, must be in order, used for distance/heading to player use: V_DISTS or V_DIRS
+
+V_NUMBERSS0 zero {Len 0.4}
+V_NUMBERSS1 one {Len 0.4}
+V_NUMBERSS2 two {Len 0.4}
+V_NUMBERSS3 three {Len 0.4}
+V_NUMBERSS4 four {Len 0.4}
+V_NUMBERSS5 five {Len 0.4}
+V_NUMBERSS6 six {Len 0.4}
+V_NUMBERSS7 seven {Len 0.4}
+V_NUMBERSS8 eight {Len 0.4}
+V_NUMBERSS9 niner {Len 0.4}
+V_NUMBERSS10 ten {Len 0.4}
+V_NUMBERSS11 eleven {Len 0.4}
+V_NUMBERSS12 twelve {Len 0.4}
+V_NUMBERSS13 thirteen {Len 0.4}
+V_NUMBERSS14 fourteen {Len 0.4}
+V_NUMBERSS15 fifteen {Len 0.4}
+V_NUMBERSS16 sixteen {Len 0.4}
+V_NUMBERSS17 seventeen {Len 0.4}
+V_NUMBERSS18 eighteen {Len 0.4}
+V_NUMBERSS19 nineteen {Len 0.4}
+V_NUMBERSS20 twenty {Len 0.4}
+V_NUMBERSS21 thirty {Len 0.4}
+V_NUMBERSS22 fourty {Len 0.4}
+V_NUMBERSS23 fifty {Len 0.4}
+V_NUMBERSS24 sixty {Len 0.4}
+V_NUMBERSS25 seventy {Len 0.4}
+V_NUMBERSS26 eighty {Len 0.4}
+V_NUMBERSS27 ninety {Len 0.4}
+V_NUMBERSS28 onehundred {Len 0.4}
+V_NUMBERSS29 twohundred {Len 0.4}
+V_NUMBERSS30 threehundred {Len 0.4}
+
+// rnd global, used to designate target
+
+V_G0_PLAYERS0 freeman3 {len 0.5}
+V_G0_PLAYERS1 anticitizenone {len 0.5}
+V_G0_PLAYERS2 targetone {len 0.5}
+V_G0_PLAYERS3 priority1objective {len 0.5}
+V_G0_PLAYERS4 phantom {len 0.5}
+V_G0_PLAYERS5 ghost2 {len 0.5}
+
+// sequential gobal numbers, used for counting enemies down
+
+V_SEQGLOBNBRS0 zero {Len 0.4}
+V_SEQGLOBNBRS1 one {Len 0.4}
+V_SEQGLOBNBRS2 two {Len 0.4}
+V_SEQGLOBNBRS3 three {Len 0.4}
+V_SEQGLOBNBRS4 four {Len 0.4}
+V_SEQGLOBNBRS5 five {Len 0.4}
+V_SEQGLOBNBRS6 six {Len 0.4}
+V_SEQGLOBNBRS7 seven {Len 0.4}
+V_SEQGLOBNBRS8 eight {Len 0.4}
+V_SEQGLOBNBRS9 niner {Len 0.4}
+V_SEQGLOBNBRS10 ten {Len 0.4}
+V_SEQGLOBNBRS11 eleven {Len 0.4}
+V_SEQGLOBNBRS12 twelve {Len 0.4}
+V_SEQGLOBNBRS13 thirteen {Len 0.4}
+V_SEQGLOBNBRS14 fourteen {Len 0.4}
+V_SEQGLOBNBRS15 fifteen {Len 0.4}
+V_SEQGLOBNBRS16 sixteen {Len 0.4}
+V_SEQGLOBNBRS17 seventeen {Len 0.4}
+V_SEQGLOBNBRS18 eighteen {Len 0.4}
+V_SEQGLOBNBRS19 nineteen {Len 0.4}
+V_SEQGLOBNBRS20 twenty {Len 0.4}
+
+
+//PAIN
+COMBINE_PAIN0 npc/combine_soldier/pain1 {Len 0.30 closecaption NPC_Combine.Pain}
+COMBINE_PAIN1 npc/combine_soldier/pain2 {Len 0.30 closecaption NPC_Combine.Pain}
+COMBINE_PAIN2 npc/combine_soldier/pain3 {Len 0.26 closecaption NPC_Combine.Pain}
+
+//DIE
+COMBINE_DIE0 npc/combine_soldier/die1 V_IDIEDS {Len 0.62 closecaption NPC_Combine.Death}
+COMBINE_DIE1 npc/combine_soldier/die2 V_IDIEDS {Len 0.92 closecaption NPC_Combine.Death}
+COMBINE_DIE2 npc/combine_soldier/die3 V_IDIEDS {Len 0.80 closecaption NPC_Combine.Death}
+
+
+//KICK
+COMBINE_KICK0 npc/combine_soldier/kick1 {Len 0.26}
+COMBINE_KICK1 npc/combine_soldier/kick2 {Len 0.31}
+
+
+// I am about to start shooting
+// Marc, for any sentences you want to caption, just add the closecaption entry to the {Len} block as below
+// COMBINE_ANNOUNCE0 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS suppressing off1 {Len 0.96 closecaption}
+// To use a specified caption string, put it's name in there, too
+// COMBINE_ANNOUNCE0 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS suppressing off1 {Len 0.96 closecaption NPCSound.Caption}
+
+COMBINE_ANNOUNCE0 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS suppressing off1 {Len 0.96 closecaption NPC_Combine.Alert}
+COMBINE_ANNOUNCE1 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS gosharp off2 {Len 1.22 closecaption NPC_Combine.Alert}
+COMBINE_ANNOUNCE2 npc/combine_soldier/vo/(v100) on2 V_MYNAMES V_MYNUMS prosecuting off1 {Len 1.45 closecaption NPC_Combine.Alert}
+COMBINE_ANNOUNCE3 npc/combine_soldier/vo/(v100) on2 V_MYNAMES V_MYNUMS engaging off1 {Len 1.45 closecaption NPC_Combine.Alert}
+COMBINE_ANNOUNCE4 npc/combine_soldier/vo/(v100) on2 cover off1 {Len 1.45 closecaption NPC_Combine.Alert}
+
+// My enemy is close and I can see him
+
+COMBINE_ASSAULT0 npc/combine_soldier/vo/(v100) on1 contact V_G0_PLAYERS off1 {Len 0.87 closecaption NPC_Combine.Alert}
+COMBINE_ASSAULT1 npc/combine_soldier/vo/(v100) on1 contactconfirmprosecuting off1 {Len 1.23 closecaption NPC_Combine.Alert}
+COMBINE_ASSAULT2 npc/combine_soldier/vo/(v100) on2 contactconfim off1 {Len 1.08 closecaption NPC_Combine.Alert}
+COMBINE_ASSAULT3 npc/combine_soldier/vo/(v100) on2 targetmyradial V_DIRS degrees off3 {Len 1.45 closecaption NPC_Combine.Alert}
+
+// I am moving in
+
+COMBINE_FLANK0 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS closing off1 {Len 1.36 closecaption NPC_Combine.Coord}
+COMBINE_FLANK1 npc/combine_soldier/vo/(v100) on2 V_MYNAMES V_MYNUMS inbound off1 {Len 1.15 closecaption NPC_Combine.Coord}
+COMBINE_FLANK2 npc/combine_soldier/vo/(v100) on1 movein off2 {Len 1.15  closecaption NPC_Combine.Coord}
+COMBINE_FLANK3 npc/combine_soldier/vo/(v100) on2 V_MYNAMES V_MYNUMS sweepingin off1 {Len 1.15 closecaption NPC_Combine.Coord}
+COMBINE_FLANK4 npc/combine_soldier/vo/(v100) on1 coverme off1 {Len 1.15  closecaption NPC_Combine.Coord}
+COMBINE_FLANK5 npc/combine_soldier/vo/(v100) on1 V_MYNAMES unitisclosing off1 {Len 1.15 closecaption NPC_Combine.Coord}
+COMBINE_FLANK6 npc/combine_soldier/vo/(v100) on1 V_MYNAMES unitisinbound off1 {Len 1.15 closecaption NPC_Combine.Coord}
+COMBINE_FLANK7 npc/combine_soldier/vo/(v100) on1 V_MYNAMES unitismovingin off1 {Len 1.15 closecaption NPC_Combine.Coord}
+
+
+// I am still alert and pursuing enemy
+
+COMBINE_GO_ALERT0 npc/combine_soldier/vo/(v100) on1 alert1 off1 {Len 0.77  closecaption NPC_Combine.Coord}
+COMBINE_GO_ALERT1 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS executingfullresponse off1 {Len 0.77 closecaption NPC_Combine.Coord}
+
+// UNDONE: Nobody has seen enemy in 10 seconds
+
+COMBINE_LOST_LONG0 npc/combine_soldier/vo/(v100) on1 targetblackout off1 {Len 1.14 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_LONG1 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS lostcontact off1 {Len 1.08 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_LONG2 npc/combine_soldier/vo/(v100) on1 motioncheckallradials off1 {Len 1.05 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_LONG3 npc/combine_soldier/vo/(v100) on1 stayalertreportsightlines off1 {Len 1.05 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_LONG4 npc/combine_soldier/vo/(v100) on1 overwatch, teamdeployedandscanning off1 {Len 1.05 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_LONG5 npc/combine_soldier/vo/(v100) on1 overwatch, V_MYNAMES V_MYNUMS engagedincleanup off1 {Len 1.05 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_LONG6 npc/combine_soldier/vo/(v100) on1 readyweapons, stayalert off1 {Len 1.05 closecaption NPC_Combine.RadioChatter}
+
+// UNDONE: Nobody has seen enemy in 5 seconds
+
+COMBINE_LOST_SHORT0 npc/combine_soldier/vo/(v100) on1 targetisat shaddow4 off1 {Len 1.56 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_SHORT1 npc/combine_soldier/vo/(v100) on1 readyextractors off1 {Len 1.19 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_SHORT2 npc/combine_soldier/vo/(v100) on1 readycharges off1 {Len 1.13 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_SHORT3 npc/combine_soldier/vo/(v100) on1 fixsightlinesmovein  off1 {Len 1.13 closecaption NPC_Combine.RadioChatter}
+COMBINE_LOST_SHORT4 npc/combine_soldier/vo/(v100) on1 on1 containmentproceeding off1 {Len 0.98 closecaption NPC_Combine.RadioChatter}
+
+// I just saw a friendly die
+
+COMBINE_MAN_DOWN0 npc/combine_soldier/vo/(v100) on1 V_WHODIEDS onedown onedown off1 {Len 1.28 closecaption NPC_Combine.Alert}
+COMBINE_MAN_DOWN1 npc/combine_soldier/vo/(v100) on1 V_WHODIEDS onedutyvacated off1 {Len 1.41 closecaption NPC_Combine.Alert}
+COMBINE_MAN_DOWN2 npc/combine_soldier/vo/(v100) on2 heavyresistance off3 {Len 1.45 closecaption NPC_Combine.Alert}
+COMBINE_MAN_DOWN3 npc/combine_soldier/vo/(v100) on1 overwatchrequestreinforcement off3 {Len 1.45 closecaption NPC_Combine.Alert}
+COMBINE_MAN_DOWN4 npc/combine_soldier/vo/(v100) on1 V_WHODIEDS onedown, hardenthatposition off3 {Len 1.45 closecaption NPC_Combine.Alert}
+
+// UNDONE: Just found enemy after lost long
+
+COMBINE_REFIND_ENEMY0 npc/combine_soldier/vo/(v100) on1 target V_G0_PLAYERS, goactiveintercept off1 {Len 0.77 closecaption NPC_Combine.Alert}
+COMBINE_REFIND_ENEMY1 npc/combine_soldier/vo/(v100) on2 gosharp range V_DISTS off3 {Len 1.45 closecaption NPC_Combine.Alert}
+COMBINE_REFIND_ENEMY2 npc/combine_soldier/vo/(v100) on2 targetcontactat V_GRIDXS dash V_GRIDYS off3 {Len 1.45 closecaption NPC_Combine.Alert}
+COMBINE_REFIND_ENEMY3 npc/combine_soldier/vo/(v100) on2 viscon viscon(p110), range V_DISTS, bearing V_DIRS off3 {Len 1.45 closecaption NPC_Combine.Alert}
+
+// I am throwing a grenade
+
+COMBINE_THROW_GRENADE0 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS extractoraway off1 {Len 1.31 closecaption NPC_Combine.Grenade}
+COMBINE_THROW_GRENADE1 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS extractorislive off1 {Len 1.33 closecaption NPC_Combine.Grenade}
+COMBINE_THROW_GRENADE2 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS flush sharpzone off1 {Len 1.24 closecaption NPC_Combine.Grenade}
+COMBINE_THROW_GRENADE3 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS extractoraway sharpzone off1 {Len 1.24 closecaption NPC_Combine.Grenade}
+COMBINE_THROW_GRENADE4 npc/combine_soldier/vo/(v100) on1. six, five, four, three, two, one, flash flash(p105) flash(p110) off1 {Len 1.24 closecaption NPC_Combine.Grenade}
+
+//COMBINE_THROW1 npc/combine_soldier/vo/on1 (t30) take!(e75) this!(e100 t0) off1 {Len 1.03}
+//COMBINE_THROW2 npc/combine_soldier/vo/(v10) on1(p120) (t40) fire!(e90) in!(e90) the!(e60) hole!(e100) off1 {Len 1.37}
+
+// Enemy Grenade lands nearby (one man only)
+
+COMBINE_GREN0 npc/combine_soldier/vo/(v100) on1(p120) bouncerbouncer off1 {Len 1.17 closecaption NPC_Combine.Grenade}
+COMBINE_GREN1 npc/combine_soldier/vo/(v100) on1(p120) flaredown off1 {Len 1.17 closecaption NPC_Combine.Grenade}
+ 
+// Something dangerous nearby, need to run
+
+COMBINE_DANGER0 npc/combine_soldier/vo/(v100) on1(p120) displace off1 {Len 1.17}
+COMBINE_DANGER1 npc/combine_soldier/vo/(v100) on1(p120) displace2 off3 {Len 1.17}
+COMBINE_DANGER2 npc/combine_soldier/vo/(v100) on1(p120) ripcordripcord off1 {Len 1.17}
+
+// Player Alert - first contact and I'm the squad leader
+
+COMBINE_ALERT0 npc/combine_soldier/vo/(v100) on2(p110) contactconfim V_G0_PLAYERS, range V_DISTS meters, bearing V_DIRS degrees off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT1 npc/combine_soldier/vo/(v100) on1(p110) gosharpgosharp, V_DISTS meters off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT2 npc/combine_soldier/vo/(v100) on2(p110) callcontacttarget1, grid V_GRIDXS dash V_GRIDYS off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT3 npc/combine_soldier/vo/(v100) on1(p110) targetisat V_DISTS meters bearing V_DIRS degrees off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT4 npc/combine_soldier/vo/(v100) on1(p110) targetmyradial V_DIRS degrees off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT5 npc/combine_soldier/vo/(v100) on2(p110) contact V_G0_PLAYERS off3 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT6 npc/combine_soldier/vo/(v100) on1(p110) targetcontactat V_DISTS meters, bearing V_DIRS degrees off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT7 npc/combine_soldier/vo/(v100) on2(p110) designatetargetas V_G0_PLAYERS off1 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT8 npc/combine_soldier/vo/(v100) on1(p110) contactconfirmprosecuting off2 {Len 1.13 closecaption NPC_Combine.Alert}
+COMBINE_ALERT9 npc/combine_soldier/vo/(v100) on1(p110) contactconfim, designatetargetas V_G0_PLAYERS off1 {Len 1.13 closecaption NPC_Combine.Alert}
+
+// last soldier's hit damaged player significantly
+
+COMBINE_PLAYERHIT0 npc/combine_soldier/vo/(v100) targetcompromisedmovein off1 {Len 1.13}
+COMBINE_PLAYERHIT1 npc/combine_soldier/vo/(v100) affirmativewegothimnow off1 {Len 1.13}
+COMBINE_PLAYERHIT2 npc/combine_soldier/vo/(v100) thatsitwrapitup off2 {Len 1.13}
+
+// Monster Alert - first contact and I'm the squad leader
+
+COMBINE_MONST0 npc/combine_soldier/vo/(v100) confirmsectornotsterile off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST1 npc/combine_soldier/vo/(v100) visualonexogens off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST2 npc/combine_soldier/vo/(v100) overwatch sector V_SECTORS infected off1 {Len 1.72 closecaption NPC_Combine.Alert}
+
+// Monster Alert - by type
+
+COMBINE_MONST_BUGS0 npc/combine_soldier/vo/(v100) confirmsectornotsterile off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_BUGS1 npc/combine_soldier/vo/(v100) swarmoutbreakinsector V_SECTORS off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_BUGS2 npc/combine_soldier/vo/(v100) overwatch, weareinaninfestationzone, sector V_SECTORS off2 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_BUGS3 npc/combine_soldier/vo/(v100) overwatch, wehavenontaggedviromes, grid V_GRIDXS dash V_GRIDYS off1 {Len 1.72 closecaption NPC_Combine.Alert}
+
+COMBINE_MONST_CITIZENS0 npc/combine_soldier/vo/(v100) outbreak off1 {Len 1.72 closecaption NPC_Combine.Alert}
+
+COMBINE_MONST_CHARACTER0 npc/combine_soldier/vo/(v100) target, prioritytwoescapee off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_CHARACTER1 npc/combine_soldier/vo/(v100) outbreakstatusiscode hurricane off1 {Len 1.72 closecaption NPC_Combine.Alert}
+
+COMBINE_MONST_ZOMBIES0 npc/combine_soldier/vo/(v100) necrotics off3 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_ZOMBIES1 npc/combine_soldier/vo/(v100) necroticsinbound off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_ZOMBIES2 npc/combine_soldier/vo/(v100) overwatch, weareinaninfestationzone, sector V_SECTORS off2 {Len 1.72 closecaption NPC_Combine.Alert}
+
+COMBINE_MONST_PARASITES0 npc/combine_soldier/vo/(v100) callcontactparasitics off1 {Len 1.72 closecaption NPC_Combine.Alert}
+COMBINE_MONST_PARASITES1 npc/combine_soldier/vo/(v100) overwatch, wehavefreeparasites, sector V_SECTORS off1 {Len 1.72 closecaption NPC_Combine.Alert}
+
+// I killed a monster
+
+COMBINE_KILL_MONST0 npc/combine_soldier/vo/(v100) V_SEQGLOBNBRS cleaned off1 {Len 1.72 closecaption NPC_Combine.RadioChatter}
+COMBINE_KILL_MONST1 npc/combine_soldier/vo/(v100) V_SEQGLOBNBRS sterilized off3 {Len 1.72 closecaption NPC_Combine.RadioChatter}
+COMBINE_KILL_MONST2 npc/combine_soldier/vo/(v100) V_SEQGLOBNBRS contained off1 {Len 1.72 closecaption NPC_Combine.RadioChatter}
+
+// I was hit and it hurt. I'm taking cover (commented out in code)
+
+COMBINE_COVER0 npc/combine_soldier/vo/(v100) on1 coverhurt off1 {Len 0.95  closecaption NPC_Combine.Coord}
+COMBINE_COVER1 npc/combine_soldier/vo/(v100) on1 displace2 off1 {Len 0.95  closecaption NPC_Combine.Coord}
+COMBINE_COVER2 npc/combine_soldier/vo/(v100) on2 V_MYNAMES V_MYNUMS requestmedical off1 {Len 0.95 closecaption NPC_Combine.Coord}
+COMBINE_COVER3 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS requeststimdose off1 {Len 0.95 closecaption NPC_Combine.Coord}
+
+
+// I took damage but it didn't hurt much (commented out in code)
+
+COMBINE_TAUNT0 npc/combine_soldier/vo/(v100) on1(p110) targetineffective off1(p120) on1 {Len 1.32}
+COMBINE_TAUNT1 npc/combine_soldier/vo/(v100) on2(p110) bodypackholding off2(p120) on1 {Len 1.32}
+COMBINE_TAUNT2 npc/combine_soldier/vo/(v100) on1(p110) V_MYNAMES V_MYNUMS, fullactive off1(p120) on1 {Len 1.32}
+
+// I'm the last guy in the squad
+
+COMBINE_LAST_OF_SQUAD0 npc/combine_soldier/vo/(v100) on2 overwatchrequestreserveactivation off1 {len 1.5 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD1 npc/combine_soldier/vo/(v100) on1 overwatch, sectorisnotsecure off3 {Len 1.28 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD2 npc/combine_soldier/vo/(v100) on1 sector V_SECTORS, outbreak outbreak(p105) outbreak(p110) off1 {Len 1.28 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD3 npc/combine_soldier/vo/(v100) on1 V_MYNAMES V_MYNUMS isfinalteamunitbackup off1 {Len 1.28 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD4 npc/combine_soldier/vo/(v100) on1 overwatchteamisdown off1 {Len 1.28 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD5 npc/combine_soldier/vo/(v100) on2 overwatchsectoroverrun off2 {Len 1.28 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD6 npc/combine_soldier/vo/(v100) on1 overwatchrequestskyshield off1 {Len 0.95 closecaption NPC_Combine.Last}
+COMBINE_LAST_OF_SQUAD7 npc/combine_soldier/vo/(v100) on1 overwatchrequestwinder off1 {Len 0.95 closecaption NPC_Combine.Last}
+
+// player is dead
+
+COMBINE_PLAYER_DEAD0 npc/combine_soldier/vo/(v100) on1 overwatchconfirmhvtcontained off3 {Len 0.82}
+COMBINE_PLAYER_DEAD1 npc/combine_soldier/vo/(v100) on1 overwatchtarget1sterilized off1 {Len 1.87}
+COMBINE_PLAYER_DEAD2 npc/combine_soldier/vo/(v100) on2 overwatchtargetcontained off2 {Len 1.38}
+COMBINE_PLAYER_DEAD3 npc/combine_soldier/vo/(v100) on2 overwatch, stabilizationteamhassector off1 {Len 1.38}
+COMBINE_PLAYER_DEAD4 npc/combine_soldier/vo/(v100) on2 overwatch, V_G0_PLAYERS secure off3 {Len 1.38}
+COMBINE_PLAYER_DEAD5 npc/combine_soldier/vo/(v100) on1 overwatch, V_G0_PLAYERS delivered off1 {Len 1.38}
+COMBINE_PLAYER_DEAD6 npc/combine_soldier/vo/(v100) on1 overwatch, antiseptic administer off1 {Len 1.38}
+
+// Idle statement - my status, no enemy
+
+COMBINE_IDLE0 npc/combine_soldier/vo/(v30) on1 V_RNDNAMES V_RNDCODES V_RNDNUMS dash V_RNDNUMS off1 {Len 2.97 closecaption NPC_Combine.RadioChatter}
+COMBINE_IDLE1 npc/combine_soldier/vo/(v30) on1 overwatchreportspossiblehostiles off1 {Len 2.97 closecaption NPC_Combine.RadioChatter}
+COMBINE_IDLE2 npc/combine_soldier/vo/(v30) on1 ovewatchorders3ccstimboost off2 {Len 2.97 closecaption NPC_Combine.RadioChatter}
+COMBINE_IDLE3 npc/combine_soldier/vo/(v30) on2 stabilizationteamholding off1 {Len 2.97 closecaption NPC_Combine.RadioChatter}
+COMBINE_IDLE4 npc/combine_soldier/vo/(v30) on1 V_MYNAMES V_MYNUMS standingby] off1(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+
+// I'm asking a question while idle, which may be answered with affirmative
+
+COMBINE_QUEST0 npc/combine_soldier/vo/(v30) on1 readyweaponshostilesinbound off1(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+COMBINE_QUEST1 npc/combine_soldier/vo/(v30) on1 prepforcontact off3(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+COMBINE_QUEST2 npc/combine_soldier/vo/(v30) on2 skyshieldreportslostcontact, readyweapons off1(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+COMBINE_QUEST3 npc/combine_soldier/vo/(v30) on2 stayalert off3(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+COMBINE_QUEST4 npc/combine_soldier/vo/(v30) on2 weaponsoffsafeprepforcontact off2(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+COMBINE_QUEST5 npc/combine_soldier/vo/(v30) on1 overwatch isatcode V_RNDCODES V_RNDNUMS off1(p120) {Len 1.56 closecaption NPC_Combine.RadioChatter}
+
+// Answering affirmative
+
+COMBINE_ANSWER0 npc/combine_soldier/vo/(v30) on1 affirmative off1 {Len 1.57}
+COMBINE_ANSWER1 npc/combine_soldier/vo/(v30) on1 copy off1 {Len 1.57}
+COMBINE_ANSWER2 npc/combine_soldier/vo/(v30) on2 copythat off3 {Len 1.57}
+COMBINE_ANSWER3 npc/combine_soldier/vo/(v30) on1 affirmative2 off1 {Len 1.57}
+COMBINE_ANSWER4 npc/combine_soldier/vo/(v30) on1 copythat, V_RNDNAMES V_RNDCODES V_RNDNUMS dash V_RNDNUMS off1 {Len 1.57}
+
+// Answering all clear
+
+COMBINE_CLEAR0 npc/combine_soldier/vo/(v30) on1 V_MYNAMES V_MYNUMS hasnegativemovement grid V_GRIDXS dash V_GRIDYS on1 off2(p120) {Len 2.30}
+COMBINE_CLEAR1 npc/combine_soldier/vo/(v30) on1 V_MYNAMES V_MYNUMS isholdingatcode V_RNDCODES on1 off1(p120) {Len 2.30}
+COMBINE_CLEAR2 npc/combine_soldier/vo/(v30) on2 V_MYNAMES V_MYNUMS hasnegativemovement on1 off3(p120) {Len 2.30}
+COMBINE_CLEAR3 npc/combine_soldier/vo/(v30) on1 affirmative, noviscon on1 off1(p120) {Len 2.30}
+COMBINE_CLEAR4 npc/combine_soldier/vo/(v30) on1 sightlineisclear on1 off1(p120) {Len 2.30}
+COMBINE_CLEAR5 npc/combine_soldier/vo/(v30) on2 V_MYNAMES reportingclear on1 off3(p120) {Len 2.30}
+COMBINE_CLEAR6 npc/combine_soldier/vo/(v30) on1 sectorissecurenovison on1 off1(p120) {Len 2.30}
+
+// Questioning if all clear
+
+COMBINE_CHECK0 npc/combine_soldier/vo/(v30) on1 stayalertreportsightlines off3 {Len 1.63}
+COMBINE_CHECK1 npc/combine_soldier/vo/(v30) on2 reportallpositionsclear off3 {Len 1.63}
+COMBINE_CHECK2 npc/combine_soldier/vo/(v30) on1 reportallradialsfree off3 {Len 1.63}
+
+
+//-----------------------------------------------------------------------------
+// METROPOLICE STARTS HERE
+//-----------------------------------------------------------------------------
+
+// hl2 map names - 24 names max
+
+V_MAPNAME0 default
+V_MAPNAME1 trainstation
+V_MAPNAME2 canals
+V_MAPNAME3 eli
+V_MAPNAME4 town
+V_MAPNAME5 coast
+V_MAPNAME6 prison
+V_MAPNAME7 c17
+V_MAPNAME8 citadel
+
+// _MAP__ substring in word in sentence is replaced with _MAPxx where xx is mapnumber
+
+// location prefix by mapname (remembered) (duplicated for metropolice and overwatch)
+
+// map 0 default
+V_G1_LOCATION_MAP00P0 block
+V_G1_LOCATION_MAP00P1 zone
+V_G1_LOCATION_MAP00P2 sector
+
+// map 1 trainstation
+V_G1_LOCATION_MAP01P0 stationblock
+V_G1_LOCATION_MAP01P1 transitblock
+V_G1_LOCATION_MAP01P2 workforceintake
+
+// map 2 canals
+V_G1_LOCATION_MAP02P0 canalblock
+V_G1_LOCATION_MAP02P1 stormsystem
+V_G1_LOCATION_MAP02P2 wasteriver
+V_G1_LOCATION_MAP02P3 deservicedarea
+
+// map 3 eli
+V_G1_LOCATION_MAP03P0 industrialzone
+V_G1_LOCATION_MAP03P1 restrictedblock
+V_G1_LOCATION_MAP03P2 repurposedarea
+
+// map 4 town
+V_G1_LOCATION_MAP04P0 condemnedzone
+V_G1_LOCATION_MAP04P1 infestedzone
+V_G1_LOCATION_MAP04P2 nonpatrolregion
+
+// map 5 coast
+V_G1_LOCATION_MAP05P0 externaljurisdiction
+V_G1_LOCATION_MAP05P1 stabilizationjurisdiction
+V_G1_LOCATION_MAP05P2 outlandzone
+
+// map 6 prison
+V_G1_LOCATION_MAP06P0 externaljurisdiction
+V_G1_LOCATION_MAP06P1 stabilizationjurisdiction
+
+// map 7 c17
+V_G1_LOCATION_MAP07P0 residentialblock
+V_G1_LOCATION_MAP07P1 404zone
+V_G1_LOCATION_MAP07P2 distributionblock
+V_G1_LOCATION_MAP07P3 productionblock
+ 
+// map 8 citadel
+V_G1_LOCATION_MAP08P0 highpriorityregion
+V_G1_LOCATION_MAP08P1 terminalrestrictionzone
+V_G1_LOCATION_MAP08P2 controlsection
+
+
+
+// player names by mapname (remembered) (duplicated for metropolice and overwatch)
+
+V_G2_SUSPECT_MAP00P0 subject
+
+V_G2_SUSPECT_MAP01P0 citizen
+V_G2_SUSPECT_MAP01P1 UPI
+V_G2_SUSPECT_MAP01P2 subject
+
+V_G2_SUSPECT_MAP02P0 subject
+V_G2_SUSPECT_MAP02P1 noncitizen
+V_G2_SUSPECT_MAP02P2 sociocide
+V_G2_SUSPECT_MAP02P3 anticitizen
+
+V_G2_SUSPECT_MAP03P0 anticitizen
+V_G2_SUSPECT_MAP03P1 subject
+
+V_G2_SUSPECT_MAP04P0 freeman
+V_G2_SUSPECT_MAP04P1 subject
+V_G2_SUSPECT_MAP04P2 anticitizen
+
+V_G2_SUSPECT_MAP05P0 freeman
+V_G2_SUSPECT_MAP05P1 sociocide
+
+V_G2_SUSPECT_MAP06P0 freeman
+V_G2_SUSPECT_MAP06P1 infection
+
+V_G2_SUSPECT_MAP07P0 freeman
+
+V_G2_SUSPECT_MAP08P0 freeman
+
+// rnd address suffix (remembered) (duplicated for metropolice and overwatch)
+
+V_G3_NUMBP0 zero 
+V_G3_NUMBP1 one
+V_G3_NUMBP2 two
+V_G3_NUMBP3 three
+V_G3_NUMBP4 four
+V_G3_NUMBP5 five
+V_G3_NUMBP6 six
+V_G3_NUMBP7 seven
+V_G3_NUMBP8 eight
+V_G3_NUMBP9 nine
+
+
+// sequential global numbers, used for counting enemies down (duplicated for metropolice and overwatch)
+
+V_SEQG0_NBRP0 one {Len 0.4}
+V_SEQG0_NBRP1 two {Len 0.4}
+V_SEQG0_NBRP2 three {Len 0.4}
+V_SEQG0_NBRP3 four {Len 0.4}
+V_SEQG0_NBRP4 five {Len 0.4}
+V_SEQG0_NBRP5 six {Len 0.4}
+V_SEQG0_NBRP6 seven {Len 0.4}
+V_SEQG0_NBRP7 eight {Len 0.4}
+V_SEQG0_NBRP8 nine {Len 0.4}
+V_SEQG0_NBRP9 ten {Len 0.4}
+V_SEQG0_NBRP10 eleven {Len 0.4}
+V_SEQG0_NBRP11 twelve {Len 0.4}
+V_SEQG0_NBRP12 thirteen {Len 0.4}
+V_SEQG0_NBRP13 fourteen {Len 0.4}
+V_SEQG0_NBRP14 fifteen {Len 0.4}
+V_SEQG0_NBRP15 sixteen {Len 0.4}
+V_SEQG0_NBRP16 seventeen {Len 0.4}
+V_SEQG0_NBRP17 eighteen {Len 0.4}
+V_SEQG0_NBRP18 nineteen {Len 0.4}
+V_SEQG0_NBRP19 twenty {Len 0.4}
+
+// numbers, must be in order (duplicated for metropolice and overwatch)
+
+V_NUMBERSP0 zero {Len 0.4}
+V_NUMBERSP1 one {Len 0.4}
+V_NUMBERSP2 two {Len 0.4}
+V_NUMBERSP3 three {Len 0.4}
+V_NUMBERSP4 four {Len 0.4}
+V_NUMBERSP5 five {Len 0.4}
+V_NUMBERSP6 six {Len 0.4}
+V_NUMBERSP7 seven {Len 0.4}
+V_NUMBERSP8 eight {Len 0.4}
+V_NUMBERSP9 nine {Len 0.4}
+V_NUMBERSP10 ten {Len 0.4}
+V_NUMBERSP11 eleven {Len 0.4}
+V_NUMBERSP12 twelve {Len 0.4}
+V_NUMBERSP13 thirteen {Len 0.4}
+V_NUMBERSP14 fourteen {Len 0.4}
+V_NUMBERSP15 fifteen {Len 0.4}
+V_NUMBERSP16 sixteen {Len 0.4}
+V_NUMBERSP17 seventeen {Len 0.4}
+V_NUMBERSP18 eighteen {Len 0.4}
+V_NUMBERSP19 nineteen {Len 0.4}
+V_NUMBERSP20 twenty {Len 0.4}
+V_NUMBERSP21 thirty {Len 0.4}
+V_NUMBERSP22 fourty {Len 0.4}
+V_NUMBERSP23 fifty {Len 0.4}
+V_NUMBERSP24 sixty {Len 0.4}
+V_NUMBERSP25 seventy {Len 0.4}
+V_NUMBERSP26 eighty {Len 0.4}
+V_NUMBERSP27 ninety {Len 0.4}
+V_NUMBERSP28 onehundred {Len 0.4}
+V_NUMBERSP29 twohundred {Len 0.4}
+V_NUMBERSP30 threehundred {Len 0.4}
+
+// random codes, player is criminal (duplicated for metropolice and overwatch)
+
+V_RNDCODECRIM_P0 criminaltrespass63
+V_RNDCODECRIM_P1 nonsanctionedarson51
+V_RNDCODECRIM_P2 posession69
+V_RNDCODECRIM_P3 publicnoncompliance507
+V_RNDCODECRIM_P4 recklessoperation99
+V_RNDCODECRIM_P5 resistingpacification148
+V_RNDCODECRIM_P6 riot404
+V_RNDCODECRIM_P7 fugitive17f
+V_RNDCODECRIM_P8 weapon94
+V_RNDCODECRIM_P9 alarms62
+V_RNDCODECRIM_P10 assault243
+V_RNDCODECRIM_P11 illegalcarrying95
+V_RNDCODECRIM_P12 unlawfulentry603
+
+// random codes, player is not criminal (duplicated for metropolice and overwatch)
+
+V_RNDCODEPLR_P0 attemptedcrime27
+V_RNDCODEPLR_P1 disengaged647e
+V_RNDCODEPLR_P2 disturbingunity415
+V_RNDCODEPLR_P3 disturbancemental10-103m
+V_RNDCODEPLR_P4 illegalinoperation63s
+V_RNDCODEPLR_P5 threattoproperty51b
+
+// random action codes (duplicated for metropolice and overwatch)
+
+V_RNDACTP0 pressure
+V_RNDACTP1 document
+V_RNDACTP2 restrict
+V_RNDACTP3 intercede
+V_RNDACTP4 preserve
+V_RNDACTP5 search
+V_RNDACTP6 suspend
+V_RNDACTP7 investigate
+V_RNDACTP8 interlock
+V_RNDACTP9 isolate
+V_RNDACTP10 administer
+V_RNDACTP11 cauterize
+V_RNDACTP12 inject
+V_RNDACTP13 innoculate
+V_RNDACTP14 examine
+V_RNDACTP15 apply
+V_RNDACTP16 prosecute
+V_RNDACTP17 serve
+V_RNDACTP18 sterilize
+V_RNDACTP19 amputate
+V_RNDACTP20 lock
+
+
+// random number
+V_RNDNUMP0 zero {Len 0.4}
+V_RNDNUMP1 one {Len 0.4}
+V_RNDNUMP2 two {Len 0.4}
+V_RNDNUMP3 three {Len 0.4}
+V_RNDNUMP4 four {Len 0.4}
+V_RNDNUMP5 five {Len 0.4}
+V_RNDNUMP6 six {Len 0.4}
+V_RNDNUMP7 seven {Len 0.4}
+V_RNDNUMP8 eight {Len 0.4}
+V_RNDNUMP9 nine {Len 0.4}
+
+// unit names, remembered by speaker  (duplicated for metropolice and overwatch)
+
+V_MYNAMEP0 defender 
+V_MYNAMEP1 hero 
+V_MYNAMEP2 jury 
+V_MYNAMEP3 king 
+V_MYNAMEP4 line 
+V_MYNAMEP5 patrol 
+V_MYNAMEP6 quick 
+V_MYNAMEP7 roller 
+V_MYNAMEP8 stick 
+V_MYNAMEP9 tap 
+V_MYNAMEP10 union 
+V_MYNAMEP11 victor 
+V_MYNAMEP12 xray 
+V_MYNAMEP13 yellow 
+V_MYNAMEP14 vice
+
+
+// unit numbers, remembered by speaker: (duplicated for metropolice and overwatch)
+
+V_MYNUMP0 one
+V_MYNUMP1 two
+V_MYNUMP2 three
+V_MYNUMP3 four
+V_MYNUMP4 five
+V_MYNUMP5 six
+V_MYNUMP6 seven
+V_MYNUMP7 eight
+V_MYNUMP8 nine
+//V_MYNUMP9 15w40 
+//V_MYNUMP10 15w3
+//V_MYNUMP11 15r9
+//V_MYNUMP12 15l30
+//V_MYNUMP13 15w2
+//V_MYNUMP14 13x2
+//V_MYNUMP15 11x25
+//V_MYNUMP16 9l14
+//V_MYNUMP17 6r3
+
+//
+// Death sounds
+
+METROPOLICE_DIE0 npc/overwatch/radiovoice/(v80) die1 on3 unitdownat V_G1_LOCATION_MAP__P V_G3_NUMBP allteamsrespondcode3 V_IDIEDP off2 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE1 npc/overwatch/radiovoice/(v80) die2 on3 unitdownat V_G1_LOCATION_MAP__P V_G3_NUMBP V_IDIEDP off2 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE2 npc/overwatch/radiovoice/(v80) die3 on3 lostbiosignalforunit V_MYNAMEP V_MYNUMP V_IDIEDP off2 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE3 npc/overwatch/radiovoice/(v80) die1 on3 V_MYNAMEP V_MYNUMP unitdeserviced, remainingunitscontain V_IDIEDP off2 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE4 npc/overwatch/radiovoice/(v80) die2 on3 V_MYNAMEP V_MYNUMP unitdownat V_G1_LOCATION_MAP__P V_G3_NUMBP V_IDIEDP off2 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE5 npc/overwatch/radiovoice/(v80) die1 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE6 npc/overwatch/radiovoice/(v80) die2 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE7 npc/overwatch/radiovoice/(v80) die3 {Len 1.5 closecaption NPC_Combine.Death}
+METROPOLICE_DIE8 npc/overwatch/radiovoice/(v80) die1 {Len 1.5 closecaption NPC_Combine.Death}
+//
+// Alert sounds (unused currently) - see monst_player
+//
+METROPOLICE_GO_ALERT0 npc/metropolice/vo/(v100) on1 designatesuspectas V_G2_SUSPECT_MAP__P allunitscode2 off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_GO_ALERT1 npc/metropolice/vo/(v100) on2 thereheis V_DISTP meters off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_GO_ALERT2 npc/metropolice/vo/(v100) on2 contactwith243suspect, V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_GO_ALERT3 npc/metropolice/vo/(v100) on1 allunitsrespondcode3 off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+// location-specific alert sounds (unused currently)
+
+METROPOLICE_CANAL_ALERT0 npc/metropolice/vo/(v100) on1 suspectinstormrunoff V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_UPTHERE_ALERT0 npc/metropolice/vo/(v100) on1 hesupthere off4 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_WATER_ALERT0 npc/metropolice/vo/(v100) on1 suspectusingrestrictedcanals V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+//
+// Pain sounds
+//
+METROPOLICE_PAIN0 npc/metropolice/(v60) pain1 {Len 0.30 closecaption NPC_Combine.Pain}
+METROPOLICE_PAIN1 npc/metropolice/(v60) pain2 {Len 0.30 closecaption NPC_Combine.Pain}
+METROPOLICE_PAIN2 npc/metropolice/(v60) pain3 {Len 0.26 closecaption NPC_Combine.Pain}
+
+// Pain sounds (I'm still over 90% health, used only once)
+
+METROPOLICE_PAIN_LIGHT0 npc/metropolice/vo/(v100) on1 minorhitscontinuing off1 {Len 1.5 closecaption NPC_Combine.Pain}
+//METROPOLICE_PAIN_LIGHT1 npc/metropolice/vo/(v100) on1 V_MYNAMEP V_MYNUMP is10-108 off1 {Len 1.5 closecaption NPC_Combine.Pain}
+
+
+// Pain sounds (I'm under 25% health for the first time, used only once)
+
+
+METROPOLICE_PAIN_HEAVY0 npc/metropolice/vo/(v90) on1 11-99officerneedsassistance off1 {Len 1.5 closecaption NPC_Combine.Pain}
+METROPOLICE_PAIN_HEAVY1 npc/metropolice/vo/(v90) on1 officerneedshelp off1 {Len 1.5 closecaption NPC_Combine.Pain}
+METROPOLICE_PAIN_HEAVY2 npc/metropolice/vo/(v90) on1 dispatchIneed10-78 off4 {Len 1.5 closecaption NPC_Combine.Pain}
+METROPOLICE_PAIN_HEAVY3 npc/metropolice/vo/(v90) on1 officerneedsassistance off4 {Len 1.5 closecaption NPC_Combine.Pain}
+//METROPOLICE_PAIN_HEAVY3 npc/metropolice/vo/(v100) on1 V_MYNAMEP needsmedical11-99 off1 {Len 1.5 closecaption NPC_Combine.Pain}
+
+
+//
+// Idle sounds (precriminal)
+//
+
+// Simple idle sound, always used when not in squad, sometimes used when in squad
+METROPOLICE_IDLE0 npc/metropolice/vo/(v50) on1 unitis10-8standingby off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE1 npc/metropolice/vo/(v50) on2 unitisonduty10-8 off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE2 npc/metropolice/vo/(v50) on1 holdingon10-14duty off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE3 npc/metropolice/vo/(v50) on2 unitis10-65 off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE4 npc/metropolice/vo/(v50) on1 code7 off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE5 npc/overwatch/radiovoice/(v50) on3 V_RNDCODEPLR_P inprogress, respond off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE6 npc/overwatch/radiovoice/(v50) on3 airwatchcopiesnoactivity V_G1_LOCATION_MAP__P V_G3_NUMBP off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE7 npc/overwatch/radiovoice/(v50) on3 V_RNDACTP V_RNDNUMP V_RNDACTP off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// Check with squadmates
+METROPOLICE_IDLE_CHECK0 npc/metropolice/vo/(v50) on1 V_G1_LOCATION_MAP__P V_G3_NUMBP ptatlocationreport off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK1 npc/metropolice/vo/(v50) on2 anyonepickup647e off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK2 npc/metropolice/vo/(v50) on2 stillgetting647e off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK3 npc/overwatch/radiovoice/(v50) on3 teamsreportstatus off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+
+// Response to the check with squadmates
+METROPOLICE_IDLE_CLEAR0 npc/metropolice/vo/(v50) on1 clearno647no10-107 off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CLEAR1 npc/metropolice/vo/(v50) on2 wearesociostablethislocation off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CLEAR2 npc/metropolice/vo/(v50) on1 blockisholdingcohesive off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CLEAR3 npc/metropolice/vo/(v50) on2 control100percent off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// Ask a question to squadmates
+METROPOLICE_IDLE_QUEST0 npc/metropolice/vo/(v50) on1 anyonepickup647e off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST1 npc/metropolice/vo/(v50) on2 checkformiscount off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST2 npc/metropolice/vo/(v50) on1 catchthatbliponstabilization off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST3 npc/metropolice/vo/(v50) on2 pickingupnoncorplexindy off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST4 npc/overwatch/radiovoice/(v50) on3 confirmupialert off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST5 npc/overwatch/radiovoice/(v50) on3 recalibratesocioscan off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST6 npc/overwatch/radiovoice/(v50) on3 airwatchreportspossiblemiscount off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST7 npc/overwatch/radiovoice/(v50) on3 recalibratesocioscan, recievingconflictingdata off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// Answer to a question asked
+METROPOLICE_IDLE_ANSWER0 npc/metropolice/vo/(v50) on1 copy off4 {Len 1.5}
+METROPOLICE_IDLE_ANSWER1 npc/metropolice/vo/(v50) on1 rodgerthat off1 {Len 1.5}
+METROPOLICE_IDLE_ANSWER2 npc/metropolice/vo/(v50) on2 ten4 off4 {Len 1.5}
+METROPOLICE_IDLE_ANSWER3 npc/metropolice/vo/(v50) on1 ten2 off1 {Len 1.5}
+METROPOLICE_IDLE_ANSWER4 npc/metropolice/vo/(v50) on2 ten97 off3 {Len 1.5}
+METROPOLICE_IDLE_ANSWER5 npc/metropolice/vo/(v50) on1 affirmative off1 {Len 1.5}
+METROPOLICE_IDLE_ANSWER6 npc/metropolice/vo/(v50) on2 affirmative2 off1 {Len 1.5}
+
+// Player is near, cop is harassing him
+METROPOLICE_IDLE_HARASS_PLAYER0 npc/metropolice/vo/(v70) on1 getoutofhere off1 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER1 npc/metropolice/vo/(v70) on1 movealong off4 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER2 npc/metropolice/vo/(v70) on1 vacatecitizen off4 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER3 npc/metropolice/vo/(v70) on1 youwantamalcomplianceverdict off3 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER4 npc/metropolice/vo/(v70) on1 lookingfortrouble off3 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER5 npc/metropolice/vo/(v70) on2 possiblelevel3civilprivacyviolator off3 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER6 npc/metropolice/vo/(v70) on2 possible647erequestairwatch off3 {Len 1.5} 
+METROPOLICE_IDLE_HARASS_PLAYER7 npc/metropolice/vo/(v70) on2 possible10-103alerttagunits off4 {Len 1.5}
+METROPOLICE_IDLE_HARASS_PLAYER8 npc/metropolice/vo/(v70) on2 gota10-107sendairwatch off3 {Len 1.5}
+
+//
+// Idle sounds (criminal)
+//
+
+V_RNDPUNISHP0 permanentoffworld
+V_RNDPUNISHP1 immediateamputation
+V_RNDPUNISHP2 halfreproductioncredits
+V_RNDPUNISHP3 halfrankpoints
+
+// Simple idle sound, always used when not in squad, sometimes used when in squad
+METROPOLICE_IDLE_CR0 npc/metropolice/vo/(v50) on1 ten97suspectisgoa off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR1 npc/metropolice/vo/(v50) on2 suspect11-6my1020is V_G1_LOCATION_MAP__P V_G3_NUMBP off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR2 npc/metropolice/vo/(v50) on1 ten8standingby off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR3 npc/metropolice/vo/(v50) on2 code100 off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR4 npc/overwatch/radiovoice/(v50) on3 allunitsbolfor243suspect off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR5 npc/overwatch/radiovoice/(v50) on3 suspectisnow187 off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR6 npc/overwatch/radiovoice/(v50) on3 V_RNDCODECRIM_P inprogress, allunitsat V_G1_LOCATION_MAP__P V_G3_NUMBP respond off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR7 npc/overwatch/radiovoice/(v50) on3 politistablizationmarginal off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR8 npc/overwatch/radiovoice/(v50) on3 restrictedincursioninprogress, officerat V_G1_LOCATION_MAP__P V_G3_NUMBP investigateandreport off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR9 npc/overwatch/radiovoice/(v50) on3 socialfractureinprogress off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR10 npc/overwatch/radiovoice/(v50) on3 prematuremissiontermination V_RNDPUNISHP off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR11 npc/overwatch/radiovoice/(v50) on3 preparevisualdownload off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR12 npc/overwatch/radiovoice/(v50) on3 leadersreportratios off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR13 npc/overwatch/radiovoice/(v50) on3 V_RNDCODECRIM_P inprogress, investigateandreport off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR14 npc/overwatch/radiovoice/(v50) on3 failuretotreatoutbreak off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR15 npc/overwatch/radiovoice/(v50) on3 antifatigueration3mg off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR16 npc/overwatch/radiovoice/(v50) on3 accomplicesoperating off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR17 npc/overwatch/radiovoice/(v50) on3 remindermemoryreplacement off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CR18 npc/overwatch/radiovoice/(v50) on3 reminder100credits off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+
+// Check with squadmates
+METROPOLICE_IDLE_CHECK_CR0 npc/metropolice/vo/(v50) on1 ptatlocationreport V_G1_LOCATION_MAP__P V_G3_NUMBP off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR1 npc/metropolice/vo/(v50) on1 cprequestsallunitsreportin off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR2 npc/metropolice/vo/(v50) on2 cpbolforthat243 off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR3 npc/metropolice/vo/(v50) on1 localcptreportstatus off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR4 npc/overwatch/radiovoice/(v50) on3 allunitsbolfor243suspect off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR5 npc/overwatch/radiovoice/(v50) on3 statuson243suspect off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR6 npc/overwatch/radiovoice/(v50) on3 reporton V_G2_SUSPECT_MAP__P off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_CHECK_CR7 npc/metropolice/vo/(v50) on1 reportsightingsaccomplices V_G2_SUSPECT_MAP__P off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// Response to the check with squadmates
+METROPOLICE_IDLE_CLEAR_CR0 npc/metropolice/vo/(v50) on1 suspectlocationunknown off3 {Len 1.5}
+METROPOLICE_IDLE_CLEAR_CR1 npc/metropolice/vo/(v50) on1 clearandcode100 off1 {Len 1.5}
+METROPOLICE_IDLE_CLEAR_CR2 npc/metropolice/vo/(v50) on2 novisualonupi off4 {Len 1.5}
+METROPOLICE_IDLE_CLEAR_CR3 npc/metropolice/vo/(v50) on1 searchingforsuspect off4 {Len 1.5}
+METROPOLICE_IDLE_CLEAR_CR4 npc/metropolice/vo/(v50) on2 utlthatsuspect off1 {Len 1.5}
+
+// Ask a question to squadmates
+METROPOLICE_IDLE_QUEST_CR0 npc/metropolice/vo/(v50) on1 confirmadw off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST_CR1 npc/metropolice/vo/(v50) on1 allunitsbol34sat V_G1_LOCATION_MAP__P off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST_CR2 npc/metropolice/vo/(v50) on2 dispreportssuspectincursion V_G1_LOCATION_MAP__P V_G3_NUMBP off1 off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST_CR3 npc/metropolice/vo/(v50) on1 dispupdatingapb V_G2_SUSPECT_MAP__P off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST_CR4 npc/overwatch/radiovoice/(v50) on3 allunitsverdictcodeonsuspect V_G2_SUSPECT_MAP__P, isnow V_RNDACTP V_RNDNUMP V_RNDACTP off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST_CR5 npc/overwatch/radiovoice/(v50) on3 preparetoinnoculate V_G1_LOCATION_MAP__P off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_IDLE_QUEST_CR6 npc/overwatch/radiovoice/(v50) on3 allunitsreturntocode12 off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// Answer to a question asked
+METROPOLICE_IDLE_ANSWER_CR0 npc/metropolice/vo/(v50) on1 copy off1 {Len 1.5}
+METROPOLICE_IDLE_ANSWER_CR1 npc/metropolice/vo/(v50) on1 rodgerthat off4 {Len 1.5}
+METROPOLICE_IDLE_ANSWER_CR2 npc/metropolice/vo/(v50) on2 ten4 off1 {Len 1.5}
+METROPOLICE_IDLE_ANSWER_CR3 npc/metropolice/vo/(v50) on1 ten2 off3 {Len 1.5}
+METROPOLICE_IDLE_ANSWER_CR4 npc/metropolice/vo/(v50) on2 ten97 off4 {Len 1.5}
+METROPOLICE_IDLE_ANSWER_CR5 npc/metropolice/vo/(v50) on2 affirmative off1 {Len 1.5}
+METROPOLICE_IDLE_ANSWER_CR6 npc/metropolice/vo/(v50) on1 affirmative2 off4 {Len 1.5}
+
+//
+// Preciminal harrasment (amplifying in nastiness)
+//
+
+// These are done in sequence as the player persistently pesters the cops
+
+METROPOLICE_MOVE_ALONG_A0 npc/metropolice/vo/(v60) on1 movealong3 off1 {Len 1.5  closecaption NPC_MetroPolice.MoveAlong1}
+METROPOLICE_MOVE_ALONG_A1 npc/metropolice/vo/(v60) on1 move off4 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong1}
+METROPOLICE_MOVE_ALONG_A2 npc/metropolice/vo/(v60) on1 keepmoving off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong1}
+
+METROPOLICE_MOVE_ALONG_B0 npc/metropolice/vo/(v70) on1 Isaidmovealong off1 {Len  1.5closecaption NPC_MetroPolice.MoveAlong2}
+METROPOLICE_MOVE_ALONG_B1 npc/metropolice/vo/(v70) on2 youwantamalcomplianceverdict off3 {Len 1.5closecaption NPC_MetroPolice.MoveAlong2}
+//METROPOLICE_MOVE_ALONG_B2 npc/metropolice/vo/(v70) on1 moveaway off4 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong2}
+
+METROPOLICE_MOVE_ALONG_C0 npc/metropolice/vo/(v80) on2 level3civilprivacyviolator off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_MOVE_ALONG_C1 npc/metropolice/vo/(v80) on2 malcompliant10107my1020 off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_MOVE_ALONG_C2 npc/metropolice/vo/(v80) on2 preparingtojudge10-107 off4 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_MOVE_ALONG_C3 npc/metropolice/vo/(v80) on2 readytoprosecutefinalwarning off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong}
+
+// These also are done in sequence as the player persistently pesters the cops
+
+METROPOLICE_BACK_UP_A0 npc/metropolice/vo/(v60) on1 backup off1 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong1}
+METROPOLICE_BACK_UP_A1 npc/metropolice/vo/(v60) on1 getoutofhere off4 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong1}
+METROPOLICE_BACK_UP_A2 npc/metropolice/vo/(v60) on2 firstwarningmove off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong1}
+
+METROPOLICE_BACK_UP_B0 npc/metropolice/vo/(v70) on1 movebackrightnow off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong2}
+METROPOLICE_BACK_UP_B1 npc/metropolice/vo/(v70) on1 secondwarning off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong2}
+//METROPOLICE_BACK_UP_B2 npc/metropolice/vo/(v70) on2 moveawayenforcementarea off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong2}
+
+METROPOLICE_BACK_UP_C0 npc/metropolice/vo/(v80) on2 issuingmalcompliantcitation off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_BACK_UP_C1 npc/metropolice/vo/(v80) on2 possiblelevel3civilprivacyviolator off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_BACK_UP_C2 npc/metropolice/vo/(v80) on1 finalwarning off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_BACK_UP_C3 npc/metropolice/vo/(v80) on2 preparingtojudge10-107 off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+METROPOLICE_BACK_UP_C4 npc/metropolice/vo/(v80) on2 readytoprosecutefinalwarning off3 {Len 1.5 closecaption NPC_MetroPolice.MoveAlong3}
+ 
+//
+// Baton
+//
+
+// Take out my baton
+METROPOLICE_ACTIVATE_BATON0 npc/metropolice/vo/(v100) on1 issuingmalcompliantcitation off3 {Len 1.5}
+METROPOLICE_ACTIVATE_BATON1 npc/metropolice/vo/(v100) on1 pacifying off4 {Len 1.5}
+METROPOLICE_ACTIVATE_BATON2 npc/metropolice/vo/(v100) on1 off3 {Len 1.5}
+
+// Put away my baton
+METROPOLICE_DEACTIVATE_BATON0 npc/metropolice/vo/(v100) on1 off3 {Len 1.5}
+
+//
+// I'm on fire! Yeouch!
+//
+
+METROPOLICE_ON_FIRE0 npc/metropolice/vo/(v100) on1 officerneedshelp V_IDIEDS {Len 1.5 closecaption NPC_Combine.Pain}
+METROPOLICE_ON_FIRE1 npc/metropolice/vo/(v100) on1 help V_IDIEDS {Len 1.5 closecaption NPC_Combine.Pain}
+METROPOLICE_ON_FIRE2 npc/metropolice/pain1 V_IDIEDS {Len 1.5 closecaption NPC_Combine.Pain}
+
+
+//
+// Misc
+//
+
+// My enemy is behind cover; I'm shooting out his cover
+METROPOLICE_SHOOT_COVER0 npc/metropolice/vo/(v100) on1 breakhiscover off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_SHOOT_COVER1 npc/metropolice/vo/(v100) on1 destroythatcover off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_SHOOT_COVER2 npc/metropolice/vo/(v100) on1 firingtoexposetarget off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_SHOOT_COVER3 npc/metropolice/vo/(v100) on2 firetodislocateinterpose off1 {Len 1.5 closecaption NPC_Combine.Alert}
+
+// I'm moving more than 20ft to get into a new shooting position
+METROPOLICE_FLANK0 npc/metropolice/vo/(v100) on1 V_MYNAMEP V_MYNUMP ismovingin off3 {Len 1.5}
+METROPOLICE_FLANK1 npc/metropolice/vo/(v100) on1 covermegoingin off1 {Len 1.5}
+METROPOLICE_FLANK2 npc/metropolice/vo/(v100) on2 V_MYNAMEP V_MYNUMP isclosingonsuspect off3 {Len 1.5}
+METROPOLICE_FLANK3 npc/metropolice/vo/(v100) on1 V_MYNAMEP V_MYNUMP converging off4 {Len 1.5}
+METROPOLICE_FLANK4 npc/overwatch/radiovoice/(v100) on3 suspendnegotiations officerclosingonsuspect off2 {Len 1.5}
+METROPOLICE_FLANK5 npc/overwatch/radiovoice/(v100) on3 officerclosingonsuspect off2 {Len 1.5}
+METROPOLICE_FLANK6 npc/overwatch/radiovoice/(v100) on3 allunitsapplyforwardpressure off2 {Len 1.5}
+
+// I heard something
+METROPOLICE_HEARD_SOMETHING0 npc/metropolice/vo/(v60) on1 V_MYNAMEP V_MYNUMP investigating10-103 off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_HEARD_SOMETHING1 npc/metropolice/vo/(v60) on2 Ihave10-30my10-20responding off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_HEARD_SOMETHING2 npc/metropolice/vo/(v60) on1 V_MYNAMEP V_MYNUMP is415b off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_HEARD_SOMETHING3 npc/metropolice/vo/(v60) on2 V_MYNAMEP V_MYNUMP responding2 off4 {Len 1.5 closecaption NPC_Combine.Alert}
+
+V_RNDCHARGEP0 capitalmalcompliance
+V_RNDCHARGEP1 violationofcivictrust
+V_RNDCHARGEP2 promotingcommunalunrest
+V_RNDCHARGEP3 failuretocomply
+V_RNDCHARGEP4 level5anticivilactivity
+V_RNDCHARGEP5 destrutionofcpt
+V_RNDCHARGEP6 devisivesociocidal
+V_RNDCHARGEP7 incitingpopucide
+V_RNDCHARGES8 inciting404
+
+V_RNDJUDGEP0 immediateamputation
+V_RNDJUDGEP1 terminalprosecution
+V_RNDJUDGEP2 disassociationfromcivic
+
+
+// The player is significantly hurt
+METROPOLICE_PLAYERHIT0 npc/metropolice/vo/(v100) on1 wegotadbherecancel10-102 off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT1 npc/metropolice/vo/(v100) on2 suspectisbleeding off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT2 npc/metropolice/vo/(v100) on1 V_G2_SUSPECT_MAP__P ispassive off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT3 npc/metropolice/vo/(v100) on2 readytoamputate V_G2_SUSPECT_MAP__P off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT4 npc/metropolice/vo/(v100) on1 get11-44inboundcleaningup off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT5 npc/overwatch/radiovoice/(v100) on1, on1, on1, on3 attentionyouhavebeenchargedwith V_RNDCHARGEP, preparetoreceiveverdict V_RNDJUDGEP off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT6 npc/overwatch/radiovoice/(v100) on1, on1, on1, on3 attention V_G2_SUSPECT_MAP__P, prepareforfinalsentencing off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT7 npc/overwatch/radiovoice/(v100) on1, on1, on1, on3 youarechargedwithterminal, completesentencingatwill off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_PLAYERHIT8 npc/overwatch/radiovoice/(v100) on1, on1, on1, on3 attention V_G2_SUSPECT_MAP__P, youarejudgedguilty, allunitsdeliverterminalverdict off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+//
+// Taking cover
+//
+
+// Taking cover because I have no ammo
+METROPOLICE_COVER_NO_AMMO0 npc/metropolice/vo/(v100) on1 backmeupImout off1 {Len 1.5}
+//METROPOLICE_COVER_NO_AMMO1 npc/metropolice/vo/(v100) on1 noverdictslefttakingcover off4
+
+// Taking cover because I have low ammo
+METROPOLICE_COVER_LOW_AMMO0 npc/metropolice/vo/(v100) on1 runninglowonverdicts off1 {Len 1.5}
+
+// Taking cover because I have taken heavy damage recently
+
+METROPOLICE_COVER_HEAVY_DAMAGE0 npc/metropolice/vo/(v80) on1 officerunderfiretakingcover off1 {Len 1.5}
+METROPOLICE_COVER_HEAVY_DAMAGE1 npc/metropolice/vo/(v80) on1 officerneedsassistance off4 {Len 1.5}
+METROPOLICE_COVER_HEAVY_DAMAGE2 npc/metropolice/vo/(v80) on1 takecover {Len 1.5}
+METROPOLICE_COVER_HEAVY_DAMAGE3 npc/metropolice/vo/(v80 p110) on1 movingtocover {Len 1.5}
+METROPOLICE_COVER_HEAVY_DAMAGE4 npc/metropolice/vo/(v80) on2 off1 {Len 1.5}
+METROPOLICE_COVER_HEAVY_DAMAGE5 npc/metropolice/vo/(v80) on1 off3 {Len 1.5}
+// METROPOLICE_COVER_HEAVY_DAMAGE3 npc/metropolice/vo/(v100) on1 V_MYNAMEP needsmedical11-99 off4 {Len 1.5}
+
+//
+// Lost/refound enemy
+//
+
+// (UNDONE?) I lost my enemy under 10 seconds ago
+METROPOLICE_LOST_SHORT0 npc/metropolice/vo/(v60) on1 V_G2_SUSPECT_MAP__P hidinglastseenatrange V_DISTP meters off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_SHORT1 npc/metropolice/vo/(v60) on2 sweepingforsuspect off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_SHORT2 npc/overwatch/radiovoice/(v50) on3 switchcomtotac3, reportplease off4 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// (UNDONE?) I lost my enemy over 10 seconds ago
+METROPOLICE_LOST_LONG0 npc/metropolice/vo/(v60) on1 allunitsreportlocationsuspect off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_LONG1 npc/metropolice/vo/(v60) on1 V_MYNAMEP V_MYNUMP nocontact off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_LONG2 npc/metropolice/vo/(v60) on2 cpweneedtoestablishaperimeterat V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_LONG3 npc/metropolice/vo/(v60) on1 V_MYNAMEP V_MYNUMP utlsuspect off1 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_LONG4 npc/overwatch/radiovoice/(v60) on3 allunitsat V_G1_LOCATION_MAP__P V_G3_NUMBP, beginscanning10-0 off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+METROPOLICE_LOST_LONG5 npc/overwatch/radiovoice/(v60) on3 switchtotac5reporttocp off2 {Len 1.5 closecaption NPC_Combine.RadioChatter}
+
+// (UNDONE?) Just found enemy after lost long
+METROPOLICE_REFIND_ENEMY0 npc/metropolice/vo/(v100) on1 supsecthasmovednowto V_G1_LOCATION_MAP__P V_GRIDXP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_REFIND_ENEMY1 npc/metropolice/vo/(v100) on1 thereheis off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_REFIND_ENEMY2 npc/metropolice/vo/(v100) on1 therehegoeshesat V_DISTP meters off1 {Len 1.5 closecaption NPC_Combine.Alert}
+
+//
+// Monster Alert - first contact and I'm the squad leader
+//
+
+METROPOLICE_MONST0 npc/metropolice/vo/(v100) on1 outbreak V_RNDNUMP V_RNDACTP off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST1 npc/metropolice/vo/(v100) on1 V_RNDACTP V_RNDNUMP off1 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_MONST_PLAYER0 npc/metropolice/vo/(v100) on1 V_G2_SUSPECT_MAP__P matchonapblikeness off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER1 npc/metropolice/vo/(v100) on1 confirmpriority1sighted off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER2 npc/metropolice/vo/(v100) on2 allunitsrespondcode3, V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER3 npc/metropolice/vo/(v100) on1 V_G2_SUSPECT_MAP__P location V_G1_LOCATION_MAP__P V_G3_NUMBP off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER4 npc/metropolice/vo/(v100) on1 designatesuspectas V_G2_SUSPECT_MAP__P allunitscode2 off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER5 npc/metropolice/vo/(v100) on2 thereheis V_DISTP meters off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER6 npc/metropolice/vo/(v100) on2 contactwith243suspect, V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+
+METROPOLICE_MONST_PLAYER_VEHICLE0 npc/metropolice/vo/(v100) on2 airwatchsubjectis505 off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER_VEHICLE1 npc/metropolice/vo/(v100) on2 subjectis505 off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER_VEHICLE2 npc/metropolice/vo/(v100) on2 subjectisnowhighspeed off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PLAYER_VEHICLE3 npc/metropolice/vo/(v100) on2 Ivegot408hereatlocation V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_MONST_BUGS0 npc/metropolice/vo/(v100) on1 bugs off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_BUGS1 npc/metropolice/vo/(v100) on1 bugsontheloose off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_BUGS2 npc/metropolice/vo/(v100) on2 outbreak V_RNDNUMP converging off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_BUGS3 npc/metropolice/vo/(v100) on1 outlandbioticinhere off4 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_MONST_CITIZENS0 npc/metropolice/vo/(v100) on1 noncitizen outbreak off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_CITIZENS1 npc/metropolice/vo/(v100) on2 shotsfiredhostilemalignants off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_CITIZENS2 npc/metropolice/vo/(v100) on1 possible404here V_G1_LOCATION_MAP__P V_G3_NUMBP off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_MONST_CHARACTER0 npc/metropolice/vo/(v100) on1 contactwithpriority2 off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_CHARACTER1 npc/metropolice/vo/(v100) on2 priority2anticitizenhere off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_CHARACTER2 npc/metropolice/vo/(v100) on1 gotoneaccomplicehere off4 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_MONST_ZOMBIES0 npc/metropolice/vo/(v100) on1 freenecrotics, converging V_G1_LOCATION_MAP__P V_G3_NUMBP off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_ZOMBIES1 npc/metropolice/vo/(v100) on1 necrotics malignant location V_G1_LOCATION_MAP__P V_G3_NUMBP off4 {Len 1.5 closecaption NPC_Combine.Alert}
+
+METROPOLICE_MONST_PARASITES0 npc/metropolice/vo/(v100) on1 non-taggedviromeshere off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MONST_PARASITES1 npc/metropolice/vo/(v100) on1 looseparasitics off4 {Len 1.5 closecaption NPC_Combine.Alert} 
+
+//
+// I killed a monster - by type
+//
+
+METROPOLICE_KILL_MONST0 npc/metropolice/vo/(v100) on1 ten91dcountis V_SEQG0_NBRP off1 {Len 1.5}
+METROPOLICE_KILL_MONST1 npc/metropolice/vo/(v100) on1 tag10-91d V_SEQG0_NBRP off1 {Len 1.5}
+METROPOLICE_KILL_MONST2 npc/metropolice/vo/(v100) on2 sterilize V_SEQG0_NBRP off4 {Len 1.5}
+
+METROPOLICE_KILL_BUGS0 npc/metropolice/vo/(v100) on1 tagonebug off1 {Len 1.5}
+METROPOLICE_KILL_BUGS1 npc/metropolice/vo/(v100) on1 sterilize V_SEQG0_NBRP off1 {Len 1.5}
+
+METROPOLICE_KILL_PLAYER0 npc/metropolice/vo/(v100) on2 sentencedelivered off3 {Len 1.5}
+METROPOLICE_KILL_PLAYER1 npc/metropolice/vo/(v100) on2 V_G2_SUSPECT_MAP__P ispassive off3 {Len 1.5}
+METROPOLICE_KILL_PLAYER2 npc/metropolice/vo/(v100) on2 finalverdictadministered off3 {Len 1.5}
+METROPOLICE_KILL_PLAYER3 npc/metropolice/vo/(v100) on2 protectioncomplete off3 {Len 1.5}
+METROPOLICE_KILL_PLAYER4 npc/metropolice/vo/(v100) on2 sentencedelivered off3 {Len 1.5}
+METROPOLICE_KILL_PLAYER5 npc/metropolice/vo/(v100) on2 classifyasdbthisblockready off3 {Len 1.5}
+METROPOLICE_KILL_PLAYER6 npc/overwatch/radiovoice/(v100) on3 rewardnotice off2 {Len 1.5}
+METROPOLICE_KILL_PLAYER7 npc/overwatch/radiovoice/(v100) on3 allunitsreturntocode12 off2 {Len 1.5}
+METROPOLICE_KILL_PLAYER8 npc/overwatch/radiovoice/(v100) on3 finalverdictadministered, allunitsbeginwhitnesssterilization off2 {Len 1.5}
+METROPOLICE_KILL_PLAYER9 npc/overwatch/radiovoice/(v100) on3 sociostabilizationrestored off2 {Len 1.5}
+
+
+METROPOLICE_KILL_CITIZENS0 npc/metropolice/vo/(v100) on2 V_SEQG0_NBRP sentencedelivered off4 {Len 1.5}
+METROPOLICE_KILL_CITIZENS1 npc/metropolice/vo/(v100) on2 V_SEQG0_NBRP expired off4 {Len 1.5}
+METROPOLICE_KILL_CITIZENS2 npc/metropolice/vo/(v100) on2 V_SEQG0_NBRP malignant off1 {Len 1.5}
+METROPOLICE_KILL_CITIZENS3 npc/metropolice/vo/(v100) on2 noncitizen expired off1 {Len 1.5}
+
+METROPOLICE_KILL_CHARACTER0 npc/metropolice/vo/(v100) on1 V_SEQG0_NBRP sentenced off1 {Len 1.5}
+METROPOLICE_KILL_CHARACTER1 npc/metropolice/vo/(v100) on2 dbcountis V_SEQG0_NBRP off4 {Len 1.5}
+METROPOLICE_KILL_CHARACTER2 npc/metropolice/vo/(v100) on1 suspend V_SEQG0_NBRP off1 {Len 1.5}
+
+METROPOLICE_KILL_ZOMBIES0 npc/metropolice/vo/(v100) on1 tagonenecrotic off1 {Len 1.5}
+METROPOLICE_KILL_ZOMBIES1 npc/metropolice/vo/(v100) on1 sterilize V_SEQG0_NBRP off4 {Len 1.5}
+
+METROPOLICE_KILL_PARASITES0 npc/metropolice/vo/(v100) on2 tagoneparasitic off1 {Len 1.5}
+METROPOLICE_KILL_PARASITES1 npc/metropolice/vo/(v100) on1 sterilize V_SEQG0_NBRP off1 {Len 1.5}
+
+
+//
+// Manhack sounds
+//
+
+// Deploying a manhack
+METROPOLICE_DEPLOY_MANHACK0 npc/metropolice/vo/(v90) on1 visceratordeployed off3 {Len 1.5}
+METROPOLICE_DEPLOY_MANHACK1 npc/metropolice/vo/(v90) on1 tenzerovisceratorishunting off3 {Len 1.5} 
+//METROPOLICE_DEPLOY_MANHACK2 npc/metropolice/vo/(v90) on1 allunitsvisceratorisactive off4 {Len 1.5}
+
+// My manhack was killed
+METROPOLICE_MANHACK_KILLED0 npc/metropolice/vo/(v80) on1 visceratorisoffgrid off3 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MANHACK_KILLED1 npc/metropolice/vo/(v80) on1 requestsecondaryviscerator off3 {Len 1.5 closecaption NPC_Combine.Alert}
+
+//
+// Squad sounds
+//
+
+// A squadmate died
+METROPOLICE_MAN_DOWN0 npc/metropolice/vo/(v100) on1 wehavea10-108 off1 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MAN_DOWN1 npc/metropolice/vo/(v100) on1 V_WHODIEDP isdown off4 {Len 1.5 closecaption NPC_Combine.Alert}
+METROPOLICE_MAN_DOWN2 npc/metropolice/vo/(v100) on1 V_WHODIEDP is10-108 off1 {Len 1.5 closecaption NPC_Combine.Alert}
+
+// My last squadmate died; I'm all that's left!
+METROPOLICE_LAST_OF_SQUAD0 npc/metropolice/vo/(v100) on1 officerdowncode3tomy10-20 off1 {Len 1.5 closecaption NPC_Combine.Last}
+METROPOLICE_LAST_OF_SQUAD1 npc/metropolice/vo/(v100) on1 officerdownIam10-99 off4 {Len 1.5 closecaption NPC_Combine.Last}
+METROPOLICE_LAST_OF_SQUAD2 npc/metropolice/vo/(v100) on1 cpisoverrunwehavenocontainment off3 {Len 1.5 closecaption NPC_Combine.Last}
+METROPOLICE_LAST_OF_SQUAD3 npc/overwatch/radiovoice/(v100) on3 engagingteamisnoncohesive, reinforcementteamscode3 off2 {Len 1.5 closecaption NPC_Combine.Last}
+
+//
+// Danger sounds - by type
+//
+METROPOLICE_DANGER_GREN0 npc/metropolice/vo/(v100) on1 grenade {Len 1.5}
+METROPOLICE_DANGER_GREN1 npc/metropolice/vo/(v100) on1 thatsagrenade {Len 1.5} 
+METROPOLICE_DANGER_GREN2 npc/metropolice/vo/(v100) on1 getdown {Len 1.5}
+
+METROPOLICE_DANGER_MANHACK0 npc/metropolice/vo/(v100) on1 lookoutrogueviscerator off4 {Len 1.5}
+METROPOLICE_DANGER_MANHACK1 npc/metropolice/vo/(v100) on1 visceratorisoc off1 {Len 1.5}
+
+METROPOLICE_DANGER_VEHICLE0 npc/metropolice/vo/(v100) on1 shit {Len 1.5}
+METROPOLICE_DANGER_VEHICLE1 npc/metropolice/vo/(v100) on1 watchit {Len 1.5}
+METROPOLICE_DANGER_VEHICLE2 npc/metropolice/vo/(v100) on1 lookout {Len 1.5}
+
+METROPOLICE_DANGER0 npc/metropolice/vo/(v100) on1 moveit {Len 1.5}
+METROPOLICE_DANGER1 npc/metropolice/vo/(v100) on1 lookout {Len 1.5}
+
+//
+// Func_tank behavior
+//
+
+// I'm moving to man a func_tank
+METROPOLICE_FT_APPROACH0 npc/metropolice/vo/(v80) on1 V_MYNAMEP V_MYNUMP on1 movingtohardpoint off3 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I've just manned a func_tank
+METROPOLICE_FT_MOUNT0 npc/metropolice/vo/(v80) on1 V_MYNAMEP V_MYNUMP on1 inpositionathardpoint off3 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_FT_MOUNT1 npc/metropolice/vo/(v80) on2 V_MYNAMEP V_MYNUMP on2 isathardpointreadytoprosecute off3 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I'm manning a func_tank and am scanning for enemies
+METROPOLICE_FT_SCAN0 npc/metropolice/vo/(v80) on1 hardpointscanning off3 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_FT_SCAN1 npc/metropolice/vo/(v80) on2 sweepingforsuspect off4 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I've dismounted the func_tank
+METROPOLICE_FT_DISMOUNT0 npc/metropolice/vo/(v80) on1 V_MYNAMEP V_MYNUMP dismountinghardpoint off3 {Len 1.5 closecaption NPC_Combine.Coord}
+
+
+//
+// Assault behavior
+//
+
+// I've hit my rally point, waiting to move out
+METROPOLICE_AS_HIT_RALLY0 npc/metropolice/vo/(v70) on1 V_MYNAMEP V_MYNUMP inposition off3 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_HIT_RALLY1 npc/metropolice/vo/(v70) on2 V_MYNAMEP V_MYNUMP atcheckpoint off4 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_HIT_RALLY2 npc/metropolice/vo/(v70) on1 V_MYNAMEP V_MYNUMP on1 isreadytogo off1 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I've hit my assault point, waiting to move out
+METROPOLICE_AS_HIT_ASSAULT0 npc/metropolice/vo/(v70) on1 V_MYNAMEP V_MYNUMP readytojudge  off3 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_HIT_ASSAULT1 npc/metropolice/vo/(v70) on2 V_MYNAMEP V_MYNUMP inpositiononeready off4 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_HIT_ASSAULT2 npc/metropolice/vo/(v70) on1 V_MYNAMEP V_MYNUMP isgo off1 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I'm squad leader, ordering squad to move to rally point
+METROPOLICE_AS_ADV_RALLY0 npc/metropolice/vo/(v70) on1 proceedtocheckpoints off1 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_ADV_RALLY1 npc/metropolice/vo/(v70) on2 allunitscloseonsuspect off3 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_ADV_RALLY2 npc/metropolice/vo/(v70) on1 allunitsmovein off4 {Len 1.5 closecaption NPC_Combine.Coord}
+
+
+// I'm squad leader, ordering squad to move to assault point
+METROPOLICE_AS_ADV_ASSAULT0 npc/metropolice/vo/(v100) on1 teaminpositionadvance off3 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_ADV_ASSAULT1 npc/metropolice/vo/(v100) on2 ptgoagain off1 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_AS_ADV_ASSAULT2 npc/metropolice/vo/(v100) on1 assaultpointsecureadvance off4 {Len 1.5 closecaption NPC_Combine.Coord}
+//
+// Standoff behavior
+//
+
+// I'm squad leader telling squad to go into standoff
+METROPOLICE_SO_BEGIN0 npc/metropolice/vo/(v100) on1 holdthisposition off1 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_SO_BEGIN1 npc/metropolice/vo/(v100) on2 lockyourposition off4 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_SO_BEGIN2 npc/metropolice/vo/(v100) on1 allunitsmaintainthiscp off4 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_SO_BEGIN3 npc/overwatch/radiovoice/(v100) on3 lockdownlocationsacrificecode V_RNDACTP V_RNDNUMP off2 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I'm squad leader telling squad to end standoff
+METROPOLICE_SO_END0 npc/metropolice/vo/(v100) on1 cpiscompromised off1 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_SO_END1 npc/metropolice/vo/(v100) on1 establishnewcp off1 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// I'm being forced to take cover
+METROPOLICE_SO_FORCE_COVER0 npc/metropolice/vo/(v100) on1 officerunderfiretakingcover off4 {Len 1.5}
+METROPOLICE_SO_FORCE_COVER1 npc/metropolice/vo/(v100) on2 movingtocover off4 {Len 1.5}
+METROPOLICE_SO_FORCE_COVER2 npc/metropolice/vo/(v100) on1 takecover off1 {Len 1.5}
+
+// I'm peeking over cover to see if I can see the enemy
+METROPOLICE_SO_PEEK0 npc/metropolice/vo/(v100) on1 goingtotakealook off1 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_SO_PEEK1 npc/metropolice/vo/(v100) on1 acquiringonvisual off4 {Len 1.5 closecaption NPC_Combine.Coord}
+
+
+//
+// First arrest encounter speech
+//
+
+// First cop who finds you tells you to freeze
+METROPOLICE_FREEZE0 npc/metropolice/vo/(v100) on1 holditrightthere off4 {Len 1.5}
+METROPOLICE_FREEZE1 npc/metropolice/vo/(v100) on1 prepareforjudgement off4 {Len 1.5}
+
+// First cop then tells his buddies to come over
+METROPOLICE_OVER_HERE0 npc/metropolice/vo/(v80) on1 movetoarrestpositions off3 {Len 1.5}
+METROPOLICE_OVER_HERE1 npc/metropolice/vo/(v80) on2 positiontocontain off4 {Len 1.5}
+METROPOLICE_OVER_HERE2 npc/metropolice/vo/(v80) on1 preparefor1015 off1 {Len 1.5}
+
+// First cop tells his buddies the player is fleeing if he does
+METROPOLICE_HES_RUNNING0 npc/metropolice/vo/(v100) on1 hesrunning off1 {Len 1.5}
+METROPOLICE_HES_RUNNING1 npc/metropolice/vo/(v100) on2 hesgone148 off4 {Len 1.5}
+
+// Other squad cops signal when they get in position
+METROPOLICE_ARREST_IN_POS0 npc/metropolice/vo/(v80) on1 V_MYNAMEP V_MYNUMP, inposition off1 {Len 1.5 closecaption NPC_Combine.Coord}
+METROPOLICE_ARREST_IN_POS1 npc/metropolice/vo/(v80) on2 V_MYNAMEP V_MYNUMP, readytoprosecute off3 {Len 1.5 closecaption NPC_Combine.Coord}
+
+// First cop tells his buddies to fire once they are all in position 
+METROPOLICE_TAKE_HIM_DOWN0 npc/overwatch/radiovoice/(v100) on3 allunitsdeliverterminalverdict off2 {Len 2.5 closecaption NPC_Combine.Coord} 
+METROPOLICE_TAKE_HIM_DOWN1 npc/overwatch/radiovoice/(v100) on3 allunitsverdictcodeis V_RNDJUDGEP off2 {Len 2.5 closecaption NPC_Combine.Coord}
+METROPOLICE_TAKE_HIM_DOWN2 npc/overwatch/radiovoice/(v100) on3 suspectmalignantverdictcodeis V_RNDJUDGEP off2 {Len 2.5 closecaption NPC_Combine.Coord}
+
+
+// Cop is hit by physics object thrown by player (not with physcannon)
+
+METROPOLICE_HIT_BY_PHYSOBJECT0 on1 preparingtojudge10-107 off1 {Len 1.5}
+METROPOLICE_HIT_BY_PHYSOBJECT1 on1 movebackrightnow off1 {Len 1.5}
+METROPOLICE_HIT_BY_PHYSOBJECT2 on1 holditrightthere off1 {Len 1.5}
+METROPOLICE_HIT_BY_PHYSOBJECT3 on1 V_MYNAMEP V_MYNUMP hasmalcompliant off1 {Len 1.5}
+METROPOLICE_HIT_BY_PHYSOBJECT4 on1 malcompliant10107my1020 off1 {Len 1.5}
+
+
+//-----------------------------------------------------------------------------
+// METROPOLICE ENDS HERE
+//-----------------------------------------------------------------------------
+
+
+
+// HEV Suit
+
+// powerup
+
+HEV_AAx common/null.wav
+
+//HEV_logon, powerarmor_on, atmospherics_on,vitalsigns_on, automedic_on, weaponselect_on, munitionview_on, communications_on, safe_day {Len 41.76}
+
+//HEV_A0 hl1/fvox/bell, HEV_logon {Len 11.07}
+
+//HEV_A1 hl1/fvox/blip blip(p130) powermove_on {Len 3.71}
+//HEV_A2 hl1/fvox/blip blip powerarmor_on {Len 4.42}
+//HEV_A3 hl1/fvox/blip blip(p130) atmospherics_on {Len 4.41}
+//HEV_A4 hl1/fvox/blip blip vitalsigns_on boop, boop, boop {Len 5.28}
+//HEV_A5 hl1/fvox/blip blip(p130) munitionview_on {Len 3.84}
+//HEV_A6 hl1/fvox/blip blip communications_on {Len 3.59}
+//HEV_A7 hl1/fvox/blip blip(p70) weaponselect_on {Len 3.97}
+//HEV_A8 hl1/fvox/blip blip(p70) automedic_on {Len 3.77}
+//HEV_A9 hl1/fvox/fuzz power_level_is onehundred percent {Len 4.14}
+//HEV_A10 hl1/fvox/safe_day, bell {Len 3.66}
+
+// medical
+HEV_DEAD0 common/null.wav
+HEV_DEAD1 common/null.wav
+
+HEV_MED0 common/null.wav
+HEV_MED1 common/null.wav
+HEV_MED2 common/null.wav
+
+HEV_HEAL0 common/null.wav
+HEV_HEAL1 common/null.wav
+HEV_HEAL2 common/null.wav
+HEV_HEAL3 common/null.wav
+HEV_HEAL4 common/null.wav
+HEV_HEAL5 common/null.wav
+HEV_HEAL6 common/null.wav
+HEV_HEAL7 common/null.wav
+HEV_HEAL8 common/null.wav
+
+
+HEV_DMG0 common/null.wav
+HEV_DMG1 common/null.wav
+HEV_DMG2 common/null.wav
+HEV_DMG3 common/null.wav
+HEV_DMG4 common/null.wav
+HEV_DMG5 common/null.wav
+HEV_DMG6 common/null.wav
+HEV_DMG7 common/null.wav
+
+
+
+HEV_HLTH0 common/null.wav
+HEV_HLTH1 common/null.wav
+HEV_HLTH2 common/null.wav
+HEV_HLTH3 common/null.wav
+HEV_HLTH4 common/null.wav
+HEV_HLTH5 common/null.wav
+HEV_HLTH6 common/null.wav
+
+
+HEV_SHOCK common/null.wav
+HEV_FIRE common/null.wav
+
+// items
+HEV_AIM_ON common/null.wav
+HEV_AIM_OFF common/null.wav
+HEV_BATTERY common/null.wav
+HEV_MEDKIT common/null.wav
+
+HEV_PISTOL common/null.wav
+HEV_SHOTGUN common/null.wav
+HEV_GRENADE common/null.wav
+HEV_ASSAULT common/null.wav
+HEV_44PISTOL common/null.wav
+HEV_RPG common/null.wav
+HEV_SATCHEL common/null.wav
+HEV_TRIPMINE common/null.wav
+HEV_HORNET common/null.wav
+HEV_SQUEEK common/null.wav
+HEV_EGON common/null.wav
+HEV_GAUSS common/null.wav
+HEV_XBOW common/null.wav
+
+HEV_9MM common/null.wav
+HEV_44AMMO common/null.wav
+HEV_BUCKSHOT common/null.wav
+HEV_BOLTS common/null.wav
+HEV_RPGAMMO common/null.wav
+HEV_AGRENADE common/null.wav
+HEV_EGONPOWER common/null.wav
+
+// time
+
+//HEV_C1t hl1/fvox/bell time_is_now one AM
+//HEV_C13t hl1/fvox/bell time_is_now one PM
+
+// power levels
+
+HEV_D00 common/null.wav
+HEV_D01 common/null.wav
+
+HEV_0P common/null.wav
+HEV_1P common/null.wav
+HEV_2P common/null.wav
+HEV_3P common/null.wav
+HEV_4P common/null.wav
+HEV_5P common/null.wav
+HEV_6P common/null.wav
+HEV_7P common/null.wav
+HEV_8P common/null.wav
+HEV_9P common/null.wav
+HEV_10P common/null.wav
+HEV_11P common/null.wav
+HEV_12P common/null.wav
+HEV_13P common/null.wav
+HEV_14P common/null.wav
+HEV_15P common/null.wav
+HEV_16P common/null.wav
+HEV_17P common/null.wav
+HEV_18P common/null.wav
+HEV_19P common/null.wav
+
+// weapon/ammo
+
+HEV_AMO0 common/null.wav
+
+// suit
+
+HEV_V0 common/null.wav
+HEV_V1 common/null.wav
+
+
+HEV_E0 common/null.wav
+HEV_E1 common/null.wav
+HEV_E2 common/null.wav
+HEV_E3 common/null.wav
+HEV_E4 common/null.wav
+HEV_E5 common/null.wav
+
+// time remaining countdown
+
+//HEV_F10t hl1/fvox/bell time_remaining ten seconds
+//HEV_F15t hl1/fvox/bell time_remaining fifteen seconds
+//HEV_F20t hl1/fvox/bell time_remaining twenty seconds
+//HEV_F30t hl1/fvox/bell time_remaining thirty seconds
+
+// detections
+
+HEV_DET0 common/null.wav
+HEV_DET1 common/null.wav
+HEV_DET2 common/null.wav
+HEV_DET3 common/null.wav
+HEV_DET4 common/null.wav
+HEV_DET5 common/null.wav
+
+//HEV_GR0r hl1/fvox/range twenty meters(t60)
+//HEV_GR1r hl1/fvox/range nineteen meters
+//HEV_GR2r hl1/fvox/range eighteen meters
+
+
+// ========================================
+// Barney
+// ========================================
+
+// In Combat
+// ----------------------------------------
+
+// When I notice an enemy
+BA_ALERT0 common/null
+
+// When I am about to throw a grenade
+BA_THROW0 barney/eat_this {Len 1.3 closecaption BA_THROW0}
+
+// When I am about to run for cover
+BA_COVER0 barney/way_too_hot {Len 3.2 closecaption BA_COVER0}
+
+// When I am about to run out (from cover) and attack the enemy
+BA_CHARGE0 barney/rock_n_roll {Len 2.7 closecaption BA_CHARGE0}
+BA_CHARGE1 barney/turn_you_into_firewood {Len 1.9 closecaption BA_CHARGE1}
+BA_CHARGE2 barney/send_you_home {Len 2.2 closecaption BA_CHARGE2}
+BA_CHARGE3 barney/kick_your_ass {Len 1.6 closecaption BA_CHARGE3}
+
+// When there is a standoff and I want to taunt the enemy
+BA_TAUNT0 barney/bring_it_on {Len 2.0 closecaption BA_TAUNT0}
+
+// When I have killed something and am feeling pretty chuffed with myself
+BA_KILL0 barney/make_some_boots {Len 1.6 closecaption BA_KILL0}
+BA_KILL1 barney/trophy_room {Len 1.8 closecaption BA_KILL1}
+
+// When I have seen a zombie and am about to attack it
+BA_ZOMBIE0 barney/stay_dead {Len 1.4 closecaption BA_ZOMBIE0}
+BA_ZOMBIE1 barney/going_down {Len 1.5 closecaption BA_ZOMBIE1}
+BA_ZOMBIE2 barney/great_day_for_bbq {Len 3.5 closecaption BA_ZOMBIE2}
+BA_ZOMBIE3 barney/stamp_your_mealcard {Len 2.8 closecaption BA_ZOMBIE3}
+
+// When I see a grenade landing near me
+BA_GREN0 barney/get_down {Len 0.7 closecaption BA_GREN0}
+
+// When I hear the noise of combat (but can't see it)
+BA_HEAR0 barney/shh {Len 2.2 closecaption BA_HEAR0}
+
+// Idle Chatter
+// ----------------------------------------
+
+// Greeting Player (or squad commander?)
+BA_HELLO0 barney/morning_sir {Len 1.8 closecaption BA_HELLO0}
+BA_HELLO1 barney/whats_todays_op {Len 1.8 closecaption BA_HELLO1}
+
+// When I smell something unpleasant (usually blood and guts)
+BA_SMELL0 barney/starting_to_stink {Len 5.5 closecaption BA_SMELL0}
+BA_SMELL1 barney/smells_bad {Len 3.9 closecaption BA_SMELL1}
+
+// When I am near a friend and I ask him a question
+BA_QUESTION0 barney/bribe_mama_san {Len 5.2 closecaption BA_QUESTION0}
+BA_QUESTION1 barney/cold_beer {Len 4.5 closecaption BA_QUESTION1}
+BA_QUESTION2 barney/bammy_bam {Len 6.7 closecaption BA_QUESTION2}
+
+// When I am answering a question that someone asked
+BA_ANSWER0 barney/keep_it_down {Len 1.6 closecaption BA_ANSWER0}
+
+// When I am just standing around idly anywhere
+BA_IDLE0 barney/this_is_bullshit {Len 4.0 closecaption BA_IDLE0}
+BA_IDLE1 barney/noone_will_believe {Len 2.6 closecaption BA_IDLE1}
+BA_IDLE2 barney/didnt_sign_up {Len 2.0 closecaption BA_IDLE2}
+
+// Injuries
+// ----------------------------------------
+
+// When a friend is badly hurt
+BA_HURTC0 barney/surprised_you_can_walk {Len 2.2 closecaption BA_HURTC0}
+
+// When a friend is moderately hurt
+BA_HURTB0 barney/get_you_to_medic {Len 2.9 closecaption BA_HURTB0}
+
+// When a friend is mildly hurt
+BA_HURTA0 barney/that_injury {Len 1.9 closecaption BA_HURTA0}
+
+// When I am hurt a bit
+BA_WOUND0 barney/damn_that_hurts {Len 2.3 closecaption BA_WOUND0}
+BA_WOUND1 barney/make_it {Len 2.2 closecaption BA_WOUND1}
+
+// When I am very badly hurt
+BA_MORTAL0 barney/cant_take_much_more {Len 1.8 closecaption BA_MORTAL0}
+BA_MORTAL1 barney/tell_my_wife {Len 1.5 closecaption BA_MORTAL1}
+
+// When I see a friend's dead body
+BA_DEAD0 barney/bastards_got_bob {Len 2.2 closecaption BA_DEAD0}
+
+// When I'm hit
+BA_PAIN0 barney/aargh {Len 1.6 closecaption BA_PAIN0}
+BA_PAIN1 barney/urgh {Len 1.2 closecaption BA_PAIN1}
+
+// When I die
+BA_DIE0 barney/choke1 {Len 2.9 closecaption BA_DIE0}
+BA_DIE1 barney/choke2 {Len 0.7 closecaption BA_DIE1}
+
+// When I'm flying through the air after being hit by an explosion
+BA_EXPL0 barney/aargh {Len 1.6}
+
+// When a medic heals someone
+BA_HEAL0 common/null
+
+// When I am healed by a medic
+BA_HEALED0 common/null
+
+// Troop Orders
+// ----------------------------------------
+
+// When I am about to attack something / ordering my troops to attack something
+BA_ATTACK0 barney/attack {Len 1.1 closecaption BA_ATTACK0}
+
+// When I am ordering my troops to lay down surpressing fire
+BA_SURPRESS0 barney/surpress {Len 1.4}
+
+// When I am ordering my troops to retreat
+BA_RETREAT0 barney/lets_get_out {Len 1.4}
+
+// When I am ordering my troops to search for and destroy the enemy
+BA_SEARCH0 common/null
+
+// When I am ordering my troops to come to me
+BA_COME0 common/null
+
+// When I am injured and need a medic - this actually gives an order to a medic, although any rank can use it
+BA_MEDIC0 common/null
+
+// When I am getting the crap blown out of me and need assistance
+BA_HELP0 common/null
+
+// When I have found an enemy and want to inform everyone
+BA_FOUND0 common/null
+
+// When I want to get my troops to tell me if they can see any hostiles
+BA_CHECK0 common/null
+
+// Response to Troop Orders
+// ----------------------------------------
+
+// When I am about to lay down surpressing fire
+BA_SURPRESSING0 barney/surpressing {Len 1.7}
+
+// When I'm about to follow an order to search and destroy
+BA_SEARCHING0 barney/search_and_destroy {Len 1.8}
+
+// When I'm following an order to take cover
+BA_RETREATING0 barney/sir {Len 0.6}
+
+// Affirming that I've recieved an order (of some kind)
+BA_AFFIRMATIVE0 barney/sir {Len 0.6 closecaption BA_AFFIRMATIVE0}
+
+// All clear
+BA_CLEAR0 barney/sir {Len 0.6 closecaption BA_CLEAR0}
+
+// Player Interaction
+// ----------------------------------------
+
+// When I am told to stop following
+BA_UNUSE0 barney/secure_this_area {Len 1.8 closecaption BA_UNUSE0}
+BA_UNUSE1 barney/dont_forget_about_me {Len 4.5 closecaption BA_UNUSE1}
+BA_UNUSE2 barney/stand_fast {Len 2.0 closecaption BA_UNUSE2}
+
+// When I am told to follow
+BA_USE0 barney/got_your_six {Len 1.9 closecaption BA_USE0}
+BA_USE1 barney/right_behind_you {Len 2.3 closecaption BA_USE1}
+BA_USE2 barney/cover_you {Len 1.9 closecaption BA_USE2}
+BA_USE3 barney/moving_out {Len 2.1 closecaption BA_USE3}
+BA_USE4 barney/roger_that {Len 1.5 closecaption BA_USE4}
+BA_USE5 barney/sir {Len 0.6 closecaption BA_USE5}
+
+// When player has shot me and I'm warning him not to do it again
+BA_SHOT0 barney/watch_where_you_point {Len 1.8 closecaption BA_SHOT0}
+BA_SHOT1 barney/only_take_so_much {Len 2.1 closecaption BA_SHOT1}
+
+// When the player has shot one of my buddies (only if the player is supposed to be my friend)
+BA_NOSHOOT0 barney/come_here {Len 2.6 closecaption BA_NOSHOOT0}
+BA_NOSHOOT1 barney/watch_where_you_point {Len 1.8 closecaption BA_NOSHOOT1}
+
+// When I am mad at player for shooting me and am going to kill him?
+BA_MAD0 barney/pissed_me_off {Len 1.8 closecaption BA_MAD0}
+BA_MAD1 barney/fuck_you {Len 1.2 closecaption BA_MAD1}
+
+// When I am getting out of player's way
+BA_OUTWAY0 barney/sorry_sir {Len 0.9 closecaption BA_OUTWAY0}
+
+// When player (or my squad commander?) is staring at me
+BA_STARE0 barney/what_can_i_do {Len 1.2 closecaption BA_STARE0}
+BA_STARE1 barney/can_i_help {Len 1.0 closecaption BA_STARE1}
+BA_STARE2 barney/sir2 {Len 0.5 closecaption BA_STARE2}
+
+// When I am told to follow, but refuse
+BA_POK0 common/null
+
+// When I am standing around idly (Pre-disaster)
+BA_PIDLE0 common/null
+
+//Nam scripts
+
+BARNEY0 player/pl_tile2 pl_tile3 pl_tile1 pl_tile4 pl_tile3 {Len 1.0}
+BARNEY1 barney/barney1 {Len 1.3 closecaption BARNEY1}
+//BARNEY2 barney/barney2 {Len 3.2}
+BARNEY2a barney/hit_the_shower {Len 2.1 closecaption BARNEY2a}
+BARNEY2b barney/wanted_by_command {Len 1.2 closecaption BARNEY2b}
+BARNEY3 barney/barney3 {Len 0.8 closecaption BARNEY3}
+BARNEY4 barney/barney4 {Len 2.1 closecaption BARNEY4}
+BARNEY5 barney/barney5 {Len 1.2 closecaption BARNEY5}
+BARNEY6 barney/barney6 {Len 1.0 closecaption BARNEY6}
+BARNEY7 barney/barney7 {Len 1.7 closecaption BARNEY7}
+BARNEY8 barney/barney8 {Len 5.4 closecaption BARNEY8}
+BARNEY9 barney/barney9 {Len 3.6 closecaption BARNEY9}
+BARNEY10 barney/barney10 {Len 2.5 closecaption BARNEY10}
+BARNEY11 barney/barney11 {Len 2.0 closecaption BARNEY11}
+BARNEY12 barney/barney12 {Len 1.9 closecaption BARNEY12}
+BARNEY13 barney/barney13 {Len 2.1 closecaption BARNEY13}
+BARNEY14 barney/barney14_hacked {Len 6.8 closecaption BARNEY14}
+BARNEY15 barney/barney15 {Len 4.1 closecaption BARNEY15}
+BARNEY16 barney/barney16 {Len 1.9 closecaption BARNEY16}
+BARNEY17 barney/barney17 {Len 3.5 closecaption BARNEY17}
+BARNEY18 barney/barney18 {Len 3.4 closecaption BARNEY18}
+BARNEY19 barney/barney19 {Len 3.4 closecaption BARNEY19}
+BARNEY20 barney/barney20 {Len 13.2 closecaption BARNEY20}
+BARNEY21 barney/barney21 {Len 6.2 closecaption BARNEY21}
+BARNEY22 barney/barney22 {Len 6.6 closecaption BARNEY22}
+BARNEY23 barney/barney23 {Len 8.5 closecaption BARNEY23}
+BARNEY24 barney/barney24 {Len 16.9 closecaption BARNEY24}
+BARNEY25 barney/barney25 {Len 1.7 closecaption BARNEY25}
+BARNEY26 barney/barney26 {Len 3.6 closecaption BARNEY26}
+BARNEY27 barney/barney27 {Len 3.0 closecaption BARNEY27}
+BARNEY28 barney/barney28 {Len 4.3 closecaption BARNEY28}
+BARNEY29 barney/barney29 {Len 10.4 closecaption BARNEY29}
+BARNEY30 barney/barney30 {Len 4.0 closecaption BARNEY30}
+BARNEY31 barney/barney31 {Len 8.4 closecaption BARNEY31}
+BARNEY32 barney/barney32 {Len 3.1 closecaption BARNEY32}
+BARNEY33 barney/barney33 {Len 3.6 closecaption BARNEY33}
+BARNEY34 barney/barney34 {Len 2.7 closecaption BARNEY34}
+BARNEY35 barney/barney35 {Len 7.6 closecaption BARNEY35}
+BARNEY36 barney/barney36
+BARNEY37 barney/barney37 {Len 3.3}
+BARNEY38 barney/barney38 {Len 4.1 closecaption BARNEY38}
+
+// ========================================
+// Peasant
+// ========================================
+
+PS_PAIN0 scientist/sci_pain1 {Len 0.8 closecaption PS_PAIN0}
+PS_PAIN1 scientist/sci_pain4 {Len 0.4 closecaption PS_PAIN1}
+PS_PAIN2 scientist/sci_pain5 {Len 0.4 closecaption PS_PAIN2}
+
+PS_DIE0 scientist/sci_die1 {Len 1.4 closecaption PS_DIE0}
+PS_DIE1 scientist/sci_die2 {Len 0.5 closecaption PS_DIE1}
+PS_DIE2 scientist/sci_die3 {Len 0.3 closecaption PS_DIE2}
+PS_DIE3 scientist/sci_die4 {Len 0.4 closecaption PS_DIE3}
+
+PS_STARTLE0 scientist/startle1 {Len 0.4 closecaption PS_STARTLE0}
+PS_STARTLE1 scientist/startle2 {Len 0.4 closecaption PS_STARTLE1}
+PS_STARTLE2 scientist/startle3 {Len 0.8 closecaption PS_STARTLE2}
+PS_STARTLE3 scientist/startle4 {Len 0.4 closecaption PS_STARTLE3}
+
+PS_FEAR0 scientist/sci_fear1 {Len 0.6 closecaption PS_FEAR}
+PS_FEAR1 scientist/sci_fear2 {Len 0.7 closecaption PS_FEAR}
+PS_FEAR2 scientist/sci_fear3 {Len 0.4 closecaption PS_FEAR}
+PS_FEAR3 scientist/sci_fear4 {Len 0.6 closecaption PS_FEAR}
+PS_FEAR4 scientist/sci_fear5 {Len 0.8 closecaption PS_FEAR}
+PS_FEAR5 scientist/sci_fear8 {Len 0.5 closecaption PS_FEAR}
+PS_FEAR6 scientist/sci_fear9 {Len 1.1 closecaption PS_FEAR}
+PS_FEAR7 scientist/sci_fear10 {Len 0.5 closecaption PS_FEAR}
+
+PS_SCREAM0 scientist/scream01 {Len 1.3 closecaption PS_SCREAM}
+PS_SCREAM1 scientist/scream02 {Len 1.4 closecaption PS_SCREAM}
+PS_SCREAM2 scientist/scream03 {Len 1.3 closecaption PS_SCREAM}
+PS_SCREAM3 scientist/scream04 {Len 2.0 closecaption PS_SCREAM}
+PS_SCREAM4 scientist/scream05 {Len 2.2 closecaption PS_SCREAM}
+PS_SCREAM5 scientist/scream06 {Len 1.3 closecaption PS_SCREAM}
+PS_SCREAM6 scientist/scream07 {Len 1.9 closecaption PS_SCREAM}
+PS_SCREAM7 scientist/scream08 {Len 2.2 closecaption PS_SCREAM}
+PS_SCREAM8 scientist/scream09 {Len 0.6 closecaption PS_SCREAM}
+PS_SCREAM9 scientist/scream1 {Len 2.0 closecaption PS_SCREAM}
+PS_SCREAM10 scientist/scream2 {Len 1.2 closecaption PS_SCREAM}
+PS_SCREAM11 scientist/scream3 {Len 1.3 closecaption PS_SCREAM}
+PS_SCREAM12 scientist/scream4 {Len 1.4 closecaption PS_SCREAM}
+PS_SCREAM13 scientist/scream5 {Len 1.4 closecaption PS_SCREAM}
+PS_SCREAM14 scientist/scream6 {Len 0.8 closecaption PS_SCREAM}
+PS_SCREAM15 scientist/scream7 {Len 0.8 closecaption PS_SCREAM}
+PS_SCREAM16 scientist/scream14 {Len 0.4 closecaption PS_SCREAM}
+PS_SCREAM17 scientist/scream15 {Len 0.3 closecaption PS_SCREAM}
+PS_SCREAM18 scientist/scream16 {Len 0.2 closecaption PS_SCREAM}
+PS_SCREAM19 scientist/scream17 {Len 0.3 closecaption PS_SCREAM}
+PS_SCREAM20 scientist/scream18 {Len 0.3 closecaption PS_SCREAM}
+PS_SCREAM21 scientist/scream19 {Len 0.2 closecaption PS_SCREAM}
+PS_SCREAM22 scientist/scream20 {Len 1.9 closecaption PS_SCREAM}
+PS_SCREAM23 scientist/scream21 {Len 2.8 closecaption PS_SCREAM}
+PS_SCREAM24 scientist/scream22 {Len 1.4 closecaption PS_SCREAM}
+PS_SCREAM25 scientist/scream23 {Len 2.0 closecaption PS_SCREAM}
+PS_SCREAM26 scientist/scream24 {Len 2.1 closecaption PS_SCREAM}
+PS_SCREAM27 scientist/scream25 {Len 0.7 closecaption PS_SCREAM}
+
+//If you use them
+
+PS_MALE0 gook/(p105) hello_roundeye_be_my_friend {Len 6.2 closecaption PS_MALE0}
+PS_MALE1 gook/(p105) take_home_to_your_daughter {Len 4.8 closecaption PS_MALE1}
+PS_MALE2 gook/(p105) tell_you_about_girls {Len 11.0 closecaption PS_MALE2}
+PS_MALE3 gook/(p110) viet_is_there_an_interpreter {Len 1.9 closecaption PS_MALE3}
+PS_MALE4 gook/babble_singing {Len 4.6 closecaption PS_MALE4}
+
+PS_FEMALE0 gook/female_five_dollar {Len 2.1 closecaption PS_FEMALE0}
+PS_FEMALE1 gook/female_ho_chi_min_trail {Len 2.6 closecaption PS_FEMALE1}
+PS_FEMALE2 gook/female_me_so_horny {Len 1.9 closecaption PS_FEMALE2}
+PS_FEMALE3 gook/female_pregnant {Len 3.7 closecaption PS_FEMALE3}
+PS_FEMALE4 gook/female_tell_you_everything {Len 3.4 closecaption PS_FEMALE4}
+
+// ========================================
+//Charlies
+//the wavs with viet in front of them are actual Vietnamese (!), the following words are the English translation
+//the word babble indicates cod-Vietnamese invented by Travis
+//the rest is just english in a cheesy accent
+//ah, the joy of racial stereotyping
+// ========================================
+
+// In Combat
+// ----------------------------------------
+
+// When I notice an enemy
+CH_ALERT0 gook/(p95) babble_its_freeman1 {Len 1.8 closecaption CH_ALERT0}
+CH_ALERT1 gook/(p95) babble_its_freeman2 {Len 2.0 closecaption CH_ALERT1}
+CH_ALERT2 gook/(v70 p105) viet_enemy viet_unit {Len 1.1 closecaption CH_ALERT2}
+CH_ALERT3 gook/(v70 p105) viet_infantry2 {Len 1.4 closecaption CH_ALERT3}
+CH_ALERT4 gook/(v70 p105) viet_ground_forces {Len 1.1 closecaption CH_ALERT4}
+
+// When I am about to throw a grenade
+CH_THROW0 gook/(v70 p105) viet_hand_grenade {Len 0.6 closecaption CH_THROW0}
+
+// When I am about to run for cover
+CH_COVER0 gook/run_for_cover {Len 4.0 closecaption CH_COVER0}
+
+// When I am about to run out (from cover) and attack the enemy
+CH_CHARGE0 gook/(p95) babble_move_move {Len 1.7 closecaption CH_CHARGE0}
+CH_CHARGE1 gook/(v70 p105) viet_move_quickly {Len 0.6 closecaption CH_CHARGE1}
+CH_CHARGE2 gook/(v70 p105) viet_move_quickly2 {Len 1.3 closecaption CH_CHARGE2}
+
+// When there is a standoff and I want to taunt the enemy
+CH_TAUNT0 gook/(p95) you_die_quick_joe {Len 1.9 closecaption CH_TAUNT0}
+CH_TAUNT1 gook/(p95) i_kill_you_like_pig_joe {Len 2.0 closecaption CH_TAUNT1}
+CH_TAUNT2 gook/(p95) roundeye_over_here {Len 2.5 closecaption CH_TAUNT2}
+CH_TAUNT3 gook/come_out_my_yankee_friend {Len 5.8 closecaption CH_TAUNT3}
+
+// When I have killed something and am feeling pretty chuffed with myself
+CH_KILL0 gook/i_kill_it {Len 2.8 closecaption CH_KILL0}
+
+// When I have seen a zombie and am about to attack it
+CH_ZOMBIE0 gook/(v70 p105) viet_enemy_monster {Len 2.7 closecaption CH_ZOMBIE0}
+CH_ZOMBIE1 gook/(v70 p105) viet_enemy viet_monster {Len 1.2 closecaption CH_ZOMBIE1}
+CH_ZOMBIE2 gook/(v70 p105) viet_monster_move_quickly {Len 1.5 closecaption CH_ZOMBIE2}
+
+// When I see a grenade landing near me
+CH_GREN0 gook/(p95) holy_shit_grenade {Len 1.8 closecaption CH_GREN0}
+
+// When I hear the noise of combat (but can't see it)
+CH_HEAR0 gook/(p95) stay_alert_for_roundeye {Len 1.5 closecaption CH_HEAR0}
+CH_HEAR1 gook/(p95) stay_alert_for_yankee_pig {Len 1.6 closecaption CH_HEAR1}
+
+// Idle Chatter
+// ----------------------------------------
+
+// Greeting Player (or squad commander?)
+CH_HELLO0 gook/(v70 p105) viet_good_morning_commander {Len 1.6 closecaption CH_HELLO0}
+CH_HELLO1 gook/(v70 p105) viet_good_morning_sir {Len 0.5 closecaption CH_HELLO1}
+
+// When I smell something unpleasant (usually blood and guts)
+CH_SMELL0 gook/why_the_horrible_smell {Len 2.5 closecaption CH_SMELL0}
+
+// When I am near a friend and I ask him a question
+CH_QUESTION0 gook/(v70 p105) viet_what_is_wrong {Len 0.7 closecaption CH_QUESTION0}
+CH_QUESTION1 gook/(v70 p105) viet_which_is_the_way_out {Len 1.1 closecaption CH_QUESTION1}
+
+// When I am answering a question that someone asked
+CH_ANSWER0 gook/(v70 p105) viet_dont_be_afraid {Len 0.5 closecaption CH_ANSWER0}
+CH_ANSWER1 gook/(v70 p105) viet_go_on {Len 0.6 closecaption CH_ANSWER1}
+
+// When I am just standing around idly anywhere
+CH_IDLE0 gook/(p95) no_sign_of_enemy_sir {Len 1.6 closecaption CH_IDLE0}
+CH_IDLE1 gook/(p95) no_sign_of_yankee_pig_sir {Len 1.7 closecaption CH_IDLE1}
+CH_IDLE2 gook/(v70 p105) viet_constipated {Len 0.8 closecaption CH_IDLE2}
+
+// Injuries
+// ----------------------------------------
+
+// When a friend is badly hurt
+CH_HURTC0 gook/(v70 p105) viet_he_is_seriously_injured {Len 1.0 closecaption CH_HURTC0}
+
+// When a friend is moderately hurt
+CH_HURTB0 gook/you_not_hurt_bad {Len 4.1 closecaption CH_HURTB0}
+
+// When a friend is mildly hurt
+CH_HURTA0 gook/you_not_hurt {Len 5.4 closecaption CH_HURTA0}
+
+// When I am hurt a bit
+CH_WOUND0 gook/(v70 p105) viet_my_foot_hurts {Len 0.8 closecaption CH_WOUND0}
+
+// When I am very badly hurt
+CH_MORTAL0 gook/im_wounded {Len 6.8 closecaption CH_MORTAL0}
+
+// When I see a friend's dead body
+CH_DEAD0 gook/hes_gone {Len 8.0 closecaption CH_DEAD0}
+
+// When I'm hit
+CH_PAIN0 gook/(p95) piss_me_off {Len 1.9 closecaption CH_PAIN0}
+CH_PAIN1 gook/(p95) best_you_got {Len 1.8 closecaption CH_PAIN1}
+
+// When I die
+CH_DIE0 gook/(v70 p105) viet_monster_death {Len 3.0 closecaption CH_DIE0}
+CH_DIE1 gook/(p95) die_yankee_choke {Len 2.5 closecaption CH_DIE1}
+CH_DIE2 gook/(p95) choke_roundeye {Len 2.1 closecaption CH_DIE2}
+
+// When I'm flying through the air after being hit by an explosion
+CH_EXPL0 gook/viet_fly {Len 1.2 closecaption CH_EXPL0}
+
+// When a medic heals someone
+CH_HEAL0 common/null
+
+// When I am healed by a medic
+CH_HEALED0 common/null
+
+// Troop Orders
+// ----------------------------------------
+
+// When I am about to attack something / ordering my troops to attack something
+CH_ATTACK0 gook/attack_enemy {Len 2.7 closecaption CH_ATTACK0}
+
+// When I am ordering my troops to lay down surpressing fire
+CH_SURPRESS0 gook/(p95) americans_open_fire {Len 1.5 closecaption CH_SURPRESS0}
+
+// When I am ordering my troops to retreat
+CH_RETREAT0 gook/(p95) take_cover {Len 0.6 closecaption CH_RETREAT0}
+CH_RETREAT1 gook/(v70 p105) viet_evacuate {Len 0.5 closecaption CH_RETREAT1}
+
+// When I am ordering my troops to search for and destroy the enemy
+CH_SEARCH0 gook/we_gonna_get_you {Len 4.2 closecaption CH_SEARCH0}
+
+// When I am ordering my troops to come to me
+CH_COME0 gook/(p95) report_in_people {Len 1.1 closecaption CH_COME0}
+
+// When I am injured and need a medic - this actually gives an order to a medic, although any rank can use it
+CH_MEDIC0 gook/medic {Len 4.9 closecaption CH_MEDIC0}
+
+// When I am getting the crap blown out of me and need assistance
+CH_HELP0 gook/i_need_help {Len 5.2 closecaption CH_HELP0}
+
+// When I have found an enemy and want to inform everyone
+CH_FOUND0 gook/(p95) babble_we_have_hostile {Len 2.9 closecaption CH_FOUND0}
+
+// When I want to get my troops to tell me if they can see any hostiles
+CH_CHECK0 gook/(p95) stay_alert_for_roundeye {Len 1.5 closecaption CH_CHECK0}
+CH_CHECK1 gook/(p95) stay_alert_for_yankee_pig {Len 1.6 closecaption CH_CHECK1}
+
+// Response to Troop Orders
+// ----------------------------------------
+
+// When I am about to lay down surpressing fire
+CH_SURPRESSING0 gook/(v70 p105) viet_commander {Len 0.6 closecaption CH_SURPRESSING0}
+CH_SURPRESSING1 gook/(p95) oh_yes_sir {Len 0.6 closecaption CH_SURPRESSING1}
+
+// When I'm about to follow an order to search and destroy
+CH_SEARCHING0 gook/(v70 p105) viet_commander {Len 0.6 closecaption CH_SEARCHING0}
+CH_SEARCHING1 gook/(p95) oh_yes_sir {Len 0.6 closecaption CH_SEARCHING1}
+
+// When I'm about to follow an order to retreat
+CH_RETREATING0 gook/(v70 p105) viet_commander {Len 0.6 closecaption CH_RETREATING0}
+CH_RETREATING1 gook/(p95) oh_yes_sir {Len 0.6 closecaption CH_RETREATING1}
+
+// Affirming that I've recieved an order (of some kind)
+CH_AFFIRMATIVE0 gook/(v70 p105) viet_commander {Len 0.6 closecaption CH_AFFIRMATIVE0}
+CH_AFFIRMATIVE1 gook/(p95) oh_yes_sir {Len 0.6 closecaption CH_AFFIRMATIVE1}
+
+// All clear
+CH_CLEAR0 gook/(p95) no_sign_of_enemy_sir {Len 1.6 closecaption CH_CLEAR0}
+CH_CLEAR1 gook/(p95) no_sign_of_yankee_pig_sir {Len 1.7 closecaption CH_CLEAR1}
+
+
+// ========================================
+// Human Grunt
+// ========================================
+
+// In Combat
+// ----------------------------------------
+
+// When I notice an enemy
+HG_ALERT0 hgrunt/we_got_movement {Len 1.1 closecaption HG_ALERT0}
+HG_ALERT1 hgrunt/shit there_he_is {Len 2.2 closecaption HG_ALERT1}
+
+// When I am about to throw a grenade
+HG_THROW0 hgrunt/fire_in_the_hole {Len 1.2 closecaption HG_THROW0}
+HG_THROW1 hgrunt/grenade2 {Len 0.6 closecaption HG_THROW1}
+HG_THROW2 hgrunt/grenade3 {Len 0.6 closecaption HG_THROW2}
+
+// When I am about to run for cover
+HG_COVER0 hgrunt/oh_shit {Len 0.7 closecaption HG_COVER0}
+HG_COVER1 hgrunt/shit2 find_some_cover {Len 1.5 closecaption HG_COVER1}
+
+// When I am about to run out (from cover) and attack the enemy
+HG_CHARGE0 hgrunt/one_for_your_mother {Len 1.2 closecaption HG_CHARGE0}
+HG_CHARGE1 hgrunt/move_in_come_on_go {Len 1.7 closecaption HG_CHARGE1}
+HG_CHARGE2 hgrunt/burn_that_bastard {Len 1.4 closecaption HG_CHARGE2}
+HG_CHARGE3 hgrunt/kill_that_sob {Len 1.6 closecaption HG_CHARGE3}
+HG_CHARGE4 hgrunt/kill_that_sob2 {Len 1.6 closecaption HG_CHARGE4}
+HG_CHARGE5 hgrunt/shoot_the_bastard {Len 1.1 closecaption HG_CHARGE5}
+HG_CHARGE6 hgrunt/give_me_covering_fire {Len 1.3 closecaption HG_CHARGE6}
+HG_CHARGE7 hgrunt/covering_fire1 {Len 1.2 closecaption HG_CHARGE7}
+HG_CHARGE8 hgrunt/i_need_covering_fire {Len 1.6 closecaption HG_CHARGE8}
+HG_CHARGE9 hgrunt/covering_fire2 {Len 1.2 closecaption HG_CHARGE9}
+
+// When there is a standoff and I want to taunt the enemy
+HG_TAUNT0 hgrunt/send_you_home_inna_box {Len 2.3 closecaption HG_TAUNT0}
+
+// When I have killed something and am feeling pretty chuffed with myself
+HG_KILL0 hgrunt/thats_what_you_get {Len 3.9 closecaption HG_KILL0}
+HG_KILL1 hgrunt/look_at_your_face {Len 2.1 closecaption HG_KILL1}
+HG_KILL2 hgrunt/yeah_whos_with_me {Len 1.6 closecaption HG_KILL2}
+
+// When I have seen a zombie and am about to attack it
+HG_ZOMBIE0 hgrunt/shoot_those_bastards {Len 1.5 closecaption HG_ZOMBIE0}
+HG_ZOMBIE1 hgrunt/take_em_out {Len 0.7 closecaption HG_ZOMBIE1}
+HG_ZOMBIE2 hgrunt/we_got_bogies {Len 1.9 closecaption HG_ZOMBIE2}
+
+// When I see a grenade landing near me
+HG_GREN0 hgrunt/get_down {Len 0.7 closecaption HG_GREN0}
+HG_GREN1 hgrunt/grenade get_down2 {Len 1.3 closecaption HG_GREN1}
+HG_GREN2 hgrunt/grenade shit {Len 1.3 closecaption HG_GREN2}
+HG_GREN3 hgrunt/shit2 grenade3 {Len 1.3 closecaption HG_GREN3}
+HG_GREN4 hgrunt/watch_it {Len 0.6 closecaption HG_GREN4}
+
+// When I hear the noise of combat (but can't see it)
+HG_HEAR0 hgrunt/i_hear_something {Len 1.4 closecaption HG_HEAR0}
+HG_HEAR1 hgrunt/what_the_hell_was_that {Len 1.0 closecaption HG_HEAR1}
+HG_HEAR2 hgrunt/wheres_that_coming_from {Len 1.7 closecaption HG_HEAR2}
+HG_HEAR3 hgrunt/i_heard_something {Len 1.9 closecaption HG_HEAR3}
+
+// Idle Chatter
+// ----------------------------------------
+
+// Greeting Player (or squad commander?)
+HG_HELLO0 hgrunt/hows_it_going_sir {Len 0.7 closecaption HG_HELLO0}
+HG_HELLO1 hgrunt/good_morning_sir {Len 0.7 closecaption HG_HELLO1}
+HG_HELLO2 hgrunt/hey_sir {Len 0.4 closecaption HG_HELLO2}
+
+// When I smell something unpleasant (usually blood and guts)
+HG_SMELL0 hgrunt/did_something_die_here {Len 1.2 closecaption HG_SMELL0}
+HG_SMELL1 hgrunt/can_you_smell_that {Len 0.8 closecaption HG_SMELL1}
+
+// When I am near a friend and I ask him a question
+HG_QUESTION0 hgrunt/sir_what_are_your_orders {Len 1.3 closecaption HG_QUESTION0}
+HG_QUESTION1 hgrunt/how_far_are_we_going {Len 0.9 closecaption HG_QUESTION1}
+HG_QUESTION2 hgrunt/is_everybody_ok {Len 1.0 closecaption HG_QUESTION2}
+HG_QUESTION3 hgrunt/what_are_your_orders_sir {Len 1.0 closecaption HG_QUESTION3}
+
+// When I am answering a question that someone asked
+HG_ANSWER0 hgrunt/when_i_figure_that {Len 1.5 closecaption HG_ANSWER0}
+HG_ANSWER1 hgrunt/yeah_sure_whatever {Len 1.0 closecaption HG_ANSWER1}
+HG_ANSWER2 hgrunt/how_should_i_know {Len 0.8 closecaption HG_ANSWER2}
+HG_ANSWER3 hgrunt/whats_the_matter {Len 0.9 closecaption HG_ANSWER3}
+HG_ANSWER4 hgrunt/keep_your_eyes_open {Len 1.1 closecaption HG_ANSWER4}
+HG_ANSWER5 hgrunt/shutup {Len 0.7 closecaption HG_ANSWER5}
+
+// When I am just standing around idly anywhere
+HG_IDLE0 hgrunt/do_an_ammo_check {Len 1.6 closecaption HG_IDLE0}
+HG_IDLE1 hgrunt/check_rest_of_team {Len 2.1 closecaption HG_IDLE1}
+HG_IDLE2 hgrunt/where_the_hell_is_he {Len 1.4 closecaption HG_IDLE2}
+HG_IDLE3 hgrunt/pack_it_up {Len 1.1 closecaption HG_IDLE3}
+
+// Injuries
+// ----------------------------------------
+
+// When a friend is badly hurt
+HG_HURTC0 hgrunt/oh_shit you_need_a_medic_now {Len 2.0 closecaption HG_HURTC0}
+
+// When a friend is moderately hurt
+HG_HURTB0 hgrunt/report_to_the_medic {Len 1.3 closecaption HG_HURTB0}
+
+// When a friend is mildly hurt
+HG_HURTA0 hgrunt/youll_be_fine {Len 0.6 closecaption HG_HURTA0}
+
+// When I am hurt a bit
+HG_WOUND0 hgrunt/just_a_flesh_wound {Len 1.3 closecaption HG_WOUND0}
+
+// When I am very badly hurt
+HG_MORTAL0 hgrunt/ive_been_shot {Len 2.0 closecaption HG_MORTAL0}
+
+// When I see a friend's dead body
+HG_DEAD0 hgrunt/dead_kenny {Len 3.9 closecaption HG_DEAD0}
+
+// When I'm hit
+HG_PAIN0 hgrunt/pain1 {Len 0.3 closecaption HG_PAIN0}
+HG_PAIN1 hgrunt/pain2 {Len 0.5 closecaption HG_PAIN1}
+HG_PAIN2 hgrunt/pain3 {Len 0.8 closecaption HG_PAIN2}
+
+// When I die
+HG_DIE0 hgrunt/die1 {Len 0.8 closecaption HG_DIE0}
+HG_DIE1 hgrunt/die2 {Len 0.5 closecaption HG_DIE1}
+HG_DIE2 hgrunt/die3 {Len 1.0 closecaption HG_DIE2}
+HG_DIE3 hgrunt/die4 {Len 1.1 closecaption HG_DIE3}
+
+// When I'm flying through the air after being hit by an explosion
+HG_EXPL0 hgrunt/hgrunt_fly {Len 1.0 closecaption HG_EXPL0}
+
+// When a medic heals someone
+HG_HEAL0 hgrunt/hold_still_ya_bastard {Len 1.3 closecaption HG_HEAL0}
+HG_HEAL1 hgrunt/not_gonna_hurt_a_bit {Len 1.2 closecaption HG_HEAL1}
+
+// When I am healed by a medic
+HG_HEALED0 hgrunt/got_any_more_morphine {Len 1.4 closecaption HG_HEALED0}
+HG_HEALED1 hgrunt/stopped_the_bleeding {Len 1.2 closecaption HG_HEALED1}
+
+// Troop Orders
+// ----------------------------------------
+
+// When I am about to attack something / ordering my troops to attack something
+HG_ATTACK0 hgrunt/squad_go {Len 1.1 closecaption HG_ATTACK0}
+HG_ATTACK1 hgrunt/go_go_get_moving {Len 1.9 closecaption HG_ATTACK1}
+HG_ATTACK2 hgrunt/get_in_there {Len 0.8 closecaption HG_ATTACK2}
+HG_ATTACK3 hgrunt/move {Len 0.7 closecaption HG_ATTACK3}
+
+// When I am ordering my troops to lay down surpressing fire
+HG_SURPRESS0 hgrunt/supressing_fire {Len 1.2 closecaption HG_SURPRESS0}
+HG_SURPRESS1 hgrunt/give_me_supressing_fire {Len 1.4 closecaption HG_SURPRESS1}
+
+// When I am ordering my troops to retreat
+HG_RETREAT0 hgrunt/get_out_of_here {Len 0.9 closecaption HG_RETREAT0}
+HG_RETREAT1 hgrunt/fall_back_original_pos {Len 1.9 closecaption HG_RETREAT1}
+
+// When I am ordering my troops to search for and destroy the enemy
+HG_SEARCH0 hgrunt/find_em_and_gun_down {Len 1.5 closecaption HG_SEARCH0}
+HG_SEARCH1 hgrunt/search_and_destroy {Len 1.8 closecaption HG_SEARCH1}
+
+// When I am ordering my troops to come to me
+HG_COME0 hgrunt/everybody_pull_back {Len 1.4 closecaption HG_COME0}
+HG_COME1 hgrunt/squad_regroup {Len 1.2 closecaption HG_COME1}
+
+// When I am injured and need a medic - this actually gives an order to a medic, although any rank can use it
+HG_MEDIC0 hgrunt/medic1 {Len 0.7 closecaption HG_MEDIC0}
+HG_MEDIC1 hgrunt/medic2 {Len 0.7 closecaption HG_MEDIC1}
+HG_MEDIC2 hgrunt/i_need_a_medic {Len 1.4 closecaption HG_MEDIC2}
+
+// When I am getting the crap blown out of me and need assistance
+HG_HELP0 hgrunt/i_need_backup {Len 1.4 closecaption HG_HELP0}
+HG_HELP1 hgrunt/backup_my_sector {Len 1.6 closecaption HG_HELP1}
+
+// When I have found an enemy and want to inform everyone
+HG_FOUND0 hgrunt/theyre_in_my_sector {Len 1.3 closecaption HG_FOUND0}
+HG_FOUND1 hgrunt/over_here {Len 0.7 closecaption HG_FOUND1}
+HG_FOUND2 hgrunt/thats_him_shoot_him {Len 1.4 closecaption HG_FOUND2}
+
+// When I want to get my troops to tell me if they can see any hostiles
+HG_CHECK0 hgrunt/everybody_check_in {Len 1.2 closecaption HG_CHECK0}
+
+// Response to Troop Orders
+// ----------------------------------------
+
+// When I am about to lay down surpressing fire
+HG_SURPRESSING0 hgrunt/laying_down_sf {Len 1.5 closecaption HG_SURPRESSING0}
+HG_SURPRESSING1 hgrunt/yessir! {Len 0.6 closecaption HG_SURPRESSING1}
+
+// When I'm about to follow an order to search and destroy
+HG_SEARCHING0 hgrunt/recieved_and_understood {Len 2.0 closecaption HG_SEARCHING0}
+HG_SEARCHING1 hgrunt/got_it {Len 0.3 closecaption HG_SEARCHING1}
+HG_SEARCHING2 hgrunt/yessir {Len 0.5 closecaption HG_SEARCHING2}
+
+// When I'm about to follow an order to retreat
+HG_RETREATING0 hgrunt/got_it {Len 0.3 closecaption HG_RETREATING0}
+HG_RETREATING1 hgrunt/yessir {Len 0.5 closecaption HG_RETREATING1}
+HG_RETREATING2 hgrunt/yessir! {Len 0.6 closecaption HG_RETREATING2}
+
+// Affirming that I've recieved an order (of some kind)
+HG_AFFIRMATIVE0 hgrunt/got_it {Len 0.3 closecaption HG_AFFIRMATIVE0}
+HG_AFFIRMATIVE1 hgrunt/yessir {Len 0.5 closecaption HG_AFFIRMATIVE1}
+HG_AFFIRMATIVE2 hgrunt/yessir! {Len 0.6 closecaption HG_AFFIRMATIVE2}
+
+// All clear
+HG_CLEAR0 hgrunt/all_clear {Len 0.7 closecaption HG_CLEAR0}
+HG_CLEAR1 hgrunt/clear {Len 0.4 closecaption HG_CLEAR1}
+HG_CLEAR2 hgrunt/noone_down_here {Len 1.0 closecaption HG_CLEAR2}
+
+
+// ========================================
+// MikeForce
+// ========================================
+
+// In Combat
+// ----------------------------------------
+
+// When I notice an enemy
+MF_ALERT0 mikeforce/if_that_aint_the_enemy {Len 2.0 closecaption MF_ALERT0}
+MF_ALERT1 mikeforce/the_enemy {Len 0.7 closecaption MF_ALERT1}
+MF_ALERT2 mikeforce/enemy_across_the_way {Len 1.1 closecaption MF_ALERT2}
+
+// When I am about to throw a grenade
+MF_THROW0 mikeforce/something_for_ya {Len 2.1 closecaption MF_THROW0}
+MF_THROW1 mikeforce/grenade {Len 0.6 closecaption MF_THROW1}
+MF_THROW2 mikeforce/for_you_asshole {Len 2.2 closecaption MF_THROW2}
+MF_THROW3 mikeforce/stick_this_in_your_pipe {Len 2.3 closecaption MF_THROW3}
+MF_THROW4 mikeforce/have_a_grenade {Len 1.2 closecaption MF_THROW4}
+MF_THROW5 mikeforce/hit_the_deck {Len 1.5 closecaption MF_THROW5}
+MF_THROW6 mikeforce/the_pins_pulled {Len 1.6 closecaption MF_THROW6}
+
+// When I am about to run for cover
+MF_COVER0 mikeforce/im_running_for_cover {Len 0.9 closecaption MF_COVER0}
+MF_COVER1 mikeforce/damn_did_you_see_that {Len 3.0 closecaption MF_COVER1}
+MF_COVER2 mikeforce/aint_gonna_be_easy {Len 2.4 closecaption MF_COVER2}
+MF_COVER3 mikeforce/way_too_hot {Len 5.2 closecaption MF_COVER3}
+
+// When I am about to run out (from cover) and attack the enemy
+MF_CHARGE0 mikeforce/turn_you_into_firewood {Len 1.5 closecaption MF_CHARGE0}
+MF_CHARGE1 mikeforce/eat_this_motherfucker {Len 1.5 closecaption MF_CHARGE1}
+MF_CHARGE2 mikeforce/going_home_inna_crate {Len 1.6 closecaption MF_CHARGE2}
+MF_CHARGE3 mikeforce/rock_n_roll_time {Len 2.6 closecaption MF_CHARGE3}
+MF_CHARGE4 mikeforce/come_on_you_sobs {Len 3.9 closecaption MF_CHARGE4}
+MF_CHARGE5 mikeforce/yeah_rock_n_roll_time {Len 4.6 closecaption MF_CHARGE5}
+
+// When there is a standoff and I want to taunt the enemy
+MF_TAUNT0 mikeforce/show_me_what_you_got {Len 2.9 closecaption MF_TAUNT0}
+MF_TAUNT1 mikeforce/come_out_and_fight {Len 7.5 closecaption MF_TAUNT1}
+MF_TAUNT2 mikeforce/be_a_man {Len 6.4 closecaption MF_TAUNT2}
+MF_TAUNT3 mikeforce/see_what_you_got {Len 2.0 closecaption MF_TAUNT3}
+MF_TAUNT4 mikeforce/bring_it_on {Len 2.3 closecaption MF_TAUNT4}
+
+// When I have killed something and am feeling pretty chuffed with myself
+MF_KILL0 mikeforce/pleased_with_myself {Len 2.4 closecaption MF_KILL0}
+MF_KILL1 mikeforce/almost_like_a_pro {Len 2.4 closecaption MF_KILL1}
+MF_KILL2 mikeforce/how_you_bring_em_down {Len 1.6 closecaption MF_KILL2}
+MF_KILL3 mikeforce/damn_im_good {Len 1.0 closecaption MF_KILL3}
+MF_KILL4 mikeforce/im_frickin_golden {Len 6.2 closecaption MF_KILL4}
+MF_KILL5 mikeforce/duke_would_be_into_this {Len 1.9 closecaption MF_KILL5}
+MF_KILL6 mikeforce/oh_yeah_im_good {Len 2.1 closecaption MF_KILL6}
+MF_KILL7 mikeforce/target_destroyed {Len 3.4 closecaption MF_KILL7}
+MF_KILL8 mikeforce/collect_their_heads {Len 11.3 closecaption MF_KILL8}
+MF_KILL9 mikeforce/head_roll {Len 2.3 closecaption MF_KILL9}
+MF_KILL10 mikeforce/drunken_mike_song {Len 24.0 closecaption MF_KILL10}
+
+// When I have seen a zombie and am about to attack it
+MF_ZOMBIE0 mikeforce/just_a_little_closer {Len 3.7 closecaption MF_ZOMBIE0}
+MF_ZOMBIE1 mikeforce/you_dont_scare_me {Len 3.3 closecaption MF_ZOMBIE1}
+MF_ZOMBIE2 mikeforce/gonna_mash_you_up {Len 3.8 closecaption MF_ZOMBIE2}
+MF_ZOMBIE3 mikeforce/got_a_little_gift {Len 4.4 closecaption MF_ZOMBIE3}
+MF_ZOMBIE4 mikeforce/mess_this_thing_up {Len 1.9 closecaption MF_ZOMBIE4}
+MF_ZOMBIE5 mikeforce/wack_your_head_off {Len 3.5 closecaption MF_ZOMBIE5}
+MF_ZOMBIE6 mikeforce/sick_of_these_things {Len 3.9 closecaption MF_ZOMBIE6}
+MF_ZOMBIE7 mikeforce/stay_down_monster {Len 3.7 closecaption MF_ZOMBIE7}
+MF_ZOMBIE8 mikeforce/what_are_these_things {Len 8.5 closecaption MF_ZOMBIE8}
+MF_ZOMBIE9 mikeforce/put_you_down_for_good {Len 10.2 closecaption MF_ZOMBIE9}
+MF_ZOMBIE10 mikeforce/fill_your_head {Len 3.1 closecaption MF_ZOMBIE10}
+
+// When I see a grenade landing near me
+MF_GREN0 mikeforce/dammit_get_down {Len 1.7 closecaption MF_GREN0}
+MF_GREN1 mikeforce/argh_grenade {Len 1.2 closecaption MF_GREN1}
+MF_GREN2 mikeforce/grenade_hit_the_ground {Len 1.2 closecaption MF_MF_GREN2}
+
+// When I hear the noise of combat (but can't see it)
+MF_HEAR0 mikeforce/ssh_i_heard_something {Len 2.6 closecaption MF_HEAR0}
+
+// Idle Chatter
+// ----------------------------------------
+
+// Greeting Player (or squad commander?)
+MF_HELLO0 mikeforce/morning_sir_whats_next {Len 2.0 closecaption MF_HELLO0}
+MF_HELLO1 mikeforce/morning_sir_everybodys_up {Len 3.8 closecaption MF_HELLO1}
+
+// When I smell something unpleasant (usually blood and guts)
+MF_SMELL0 mikeforce/dead_critters_everywhere {Len 9.2 closecaption MF_SMELL0}
+MF_SMELL1 mikeforce/smells_like_hell {Len 5.8 closecaption MF_SMELL1}
+
+// When I am near a friend and I ask him a question
+MF_QUESTION0 mikeforce/get_her_to_help_us_out {Len 8.3 closecaption MF_QUESTION0}
+MF_QUESTION1 mikeforce/tiger_piss_beer {Len 9.2 closecaption MF_QUESTION1}
+MF_QUESTION2 mikeforce/saving_up_my_pay {Len 8.5 closecaption MF_QUESTION2}
+MF_QUESTION3 mikeforce/chainsaw {Len 2.5 closecaption MF_QUESTION3}
+
+// When I am answering a question that someone asked
+MF_ANSWER0 mikeforce/keep_it_down {Len 1.9}
+MF_ANSWER1 mikeforce/dont_freeze_on_me_jones {Len 10.0}
+MF_ANSWER2 mikeforce/look_at_me {Len 14.7}
+MF_ANSWER3 mikeforce/pep_talk {Len 8.9}
+
+// When I am just standing around idly anywhere
+MF_IDLE0 mikeforce/this_is_bullshit {Len 5.3 closecaption MF_IDLE0}
+MF_IDLE1 mikeforce/godamn_this_is_crazy {Len 3.7 closecaption MF_IDLE1}
+MF_IDLE2 mikeforce/didnt_sign_up {Len 4.3 closecaption MF_IDLE2}
+MF_IDLE3 mikeforce/this_is_shit_man {Len 10.6 closecaption MF_IDLE3}
+MF_IDLE4 mikeforce/bullshit_deal {Len 6.6 closecaption MF_IDLE4}
+
+// Injuries
+// ----------------------------------------
+
+// When a friend is badly hurt
+MF_HURTC0 mikeforce/amazed_you_can_walk {Len 3.3 closecaption MF_HURTC0}
+
+// When a friend is moderately hurt
+MF_HURTB0 mikeforce/youre_looking_fubar {Len 4.1 closecaption MF_HURTB0}
+MF_HURTB1 mikeforce/youre_not_looking_good {Len 3.6 closecaption MF_HURTB1}
+
+// When a friend is mildly hurt
+MF_HURTA0 mikeforce/you_dont_look_too_great {Len 7.1 closecaption MF_HURTA0}
+
+// When I am hurt a bit
+MF_WOUND0 mikeforce/argh_jesus_that_kills {Len 5.0 closecaption MF_WOUND0}
+MF_WOUND1 mikeforce/goddam_im_hit {Len 9.8 closecaption MF_WOUND1}
+MF_WOUND2 mikeforce/couple_of_rounds {Len 3.3 closecaption MF_WOUND2}
+
+// When I am very badly hurt
+MF_MORTAL0 mikeforce/crack_me_up {Len 5.4 closecaption MF_MORTAL0}
+MF_MORTAL1 mikeforce/that_postcard_i_wrote {Len 8.7 closecaption MF_MORTAL1}
+
+// When I see a friend's dead body
+MF_DEAD0 mikeforce/hes_gone_man {Len 7.2 closecaption MF_DEAD0}
+//MF_DEAD1 mikeforce/wring_its_neck {Len 4.6 closecaption MF_DEAD1}
+
+// When I'm hit
+MF_PAIN0 mikeforce/argh1 {Len 2.1 closecaption MF_PAIN0}
+MF_PAIN1 mikeforce/argh2 {Len 0.5 closecaption MF_PAIN1}
+MF_PAIN2 mikeforce/argh3 {Len 0.4 closecaption MF_PAIN2}
+
+// When I die
+MF_DIE0 mikeforce/choke1 {Len 2.6 closecaption MF_DIE0}
+MF_DIE1 mikeforce/choke2 {Len 3.2 closecaption MF_DIE1}
+MF_DIE2 mikeforce/huk_uk_aaargh {Len 4.4 closecaption MF_DIE2}
+
+// When I'm flying through the air after being hit by an explosion
+MF_EXPL0 mikeforce/mike_fly {Len 0.6}
+
+// When a medic heals someone
+MF_HEAL0 mikeforce/youre_gonna_be_ok {Len 5.7 closecaption MF_HEAL0}
+MF_HEAL1 mikeforce/get_you_fixed_up {Len 3.0 closecaption MF_HEAL1}
+
+// When I am healed by a medic
+MF_HEALED0 mikeforce/thanks_doc {Len 7.1 closecaption MF_HEALED0}
+
+// Troop Orders
+// ----------------------------------------
+
+// When I am about to attack something / ordering my troops to attack something
+MF_ATTACK0 mikeforce/come_on_attack_attack {Len 1.6 closecaption MF_ATTACK0}
+MF_ATTACK1 mikeforce/cover_me {Len 0.5 closecaption MF_ATTACK1}
+
+// When I am ordering my troops to lay down surpressing fire
+MF_SURPRESS0 mikeforce/lay_down_sf {Len 1.5}
+
+// When I am ordering my troops to retreat
+MF_RETREAT0 mikeforce/bullshit_on_this {Len 6.0}
+MF_RETREAT1 mikeforce/move_it {Len 4.6 closecaption MF_RETREAT1}
+
+// When I am ordering my troops to search for and destroy the enemy
+MF_SEARCH0 mikeforce/you_guys_loaded_up {Len 5.3}
+MF_SEARCH1 mikeforce/im_gonna_run_out {Len 3.1}
+MF_SEARCH2 mikeforce/im_gonna_attack {Len 2.8}
+MF_SEARCH3 mikeforce/on_my_mark {Len 3.5}
+MF_SEARCH4 mikeforce/were_moving_out {Len 2.4}
+MF_SEARCH5 mikeforce/wake_up {Len 7.5}
+
+// When I am ordering my troops to come to me
+MF_COME0 mikeforce/follow_me {Len 1.9}
+
+// When I am injured and need a medic - this actually gives an order to a medic, although any rank can use it
+MF_MEDIC0 mikeforce/medic {Len 8.0 closecaption MF_MEDIC0}
+
+// When I am getting the crap blown out of me and need assistance
+MF_HELP0 mikeforce/i_need_some_help {Len 6.8 closecaption MF_HELP0}
+
+// When I have found an enemy and want to inform everyone
+MF_FOUND0 mikeforce/look_over_there {Len 0.5 closecaption MF_FOUND0}
+MF_FOUND1 mikeforce/look_the_enemy {Len 0.6 closecaption MF_FOUND1}
+MF_FOUND2 mikeforce/look_sir_the_enemy {Len 1.1 closecaption MF_FOUND2}
+MF_FOUND3 mikeforce/look_out_its_the_enemy {Len 1.1 closecaption MF_FOUND3}
+MF_FOUND4 mikeforce/got_an_enemy {Len 3.9 closecaption MF_FOUND4}
+MF_FOUND5 mikeforce/spotted_an_enemy {Len 3.8 closecaption MF_FOUND5}
+
+// When I want to get my troops to tell me if they can see any hostiles
+MF_CHECK0 mikeforce/everybody_check_in {Len 1.5 closecaption MF_CHECK0}
+
+// Response to Troop Orders
+// ----------------------------------------
+
+// When I am about to lay down surpressing fire
+MF_SURPRESSING0 mikeforce/laying_down_sf_sir {Len 2.0}
+MF_SURPRESSING1 mikeforce/yes_sir {Len 0.8}
+
+// When I'm about to follow an order to search and destroy
+MF_SEARCHING0 mikeforce/search_and_destroy {Len 2.0}
+MF_SEARCHING1 mikeforce/s&d_moving_out {Len 3.3}
+
+// When I'm following an order to take cover
+MF_RETREATING0 mikeforce/yes_sir_taking_cover {Len 1.4}
+
+// Affirming that I've recieved an order (of some kind)
+MF_AFFIRMATIVE0 mikeforce/yes_sir {Len 0.8 closecaption MF_AFFIRMATIVE0}
+
+// All clear
+MF_CLEAR0 mikeforce/all_clear {Len 0.9 closecaption MF_CLEAR0}
+MF_CLEAR1 mikeforce/clear {Len 0.6 closecaption MF_CLEAR1}
+
+
+// Player Interaction
+// ----------------------------------------
+
+// When I am told to stop following
+MF_UNUSE0 mikeforce/no_need_to_follow {Len 2.5 closecaption MF_UNUSE0}
+MF_UNUSE1 mikeforce/ill_secure_this_area {Len 2.3 closecaption MF_UNUSE1}
+MF_UNUSE2 mikeforce/lucky_me_huh {Len 7.9 closecaption MF_UNUSE2}
+MF_UNUSE3 mikeforce/ill_stand_fast {Len 2.9 closecaption MF_UNUSE3}
+
+// When I am told to follow
+MF_USE0 mikeforce/i_got_your_six {Len 2.0 closecaption MF_USE0}
+MF_USE1 mikeforce/ready_to_go {Len 4.8 closecaption MF_USE1}
+MF_USE2 mikeforce/i_got_you_covered {Len 2.7 closecaption MF_USE2}
+MF_USE3 mikeforce/roger_that_sir {Len 3.2 closecaption MF_USE3}
+MF_USE4 mikeforce/what_can_i_do {Len 2.1 closecaption MF_USE4}
+MF_USE5 mikeforce/yes_sir {Len 0.8 closecaption MF_USE5}
+MF_USE6 mikeforce/sir {Len 0.6 closecaption MF_USE6}
+
+// When player has shot me and I'm warning him not to do it again
+MF_SHOT0 mikeforce/call_yourself_a_soldier {Len 6.4 closecaption MF_SHOT0}
+MF_SHOT1 mikeforce/you_horses_ass {Len 3.8 closecaption MF_SHOT1}
+MF_SHOT2 mikeforce/solo_artist {Len 16.6 closecaption MF_SHOT2}
+MF_SHOT3 mikeforce/you_couldnt_hit_a_barn {Len 5.0 closecaption MF_SHOT3}
+MF_SHOT4 mikeforce/crystal_clear {Len 16.5 closecaption MF_SHOT4}
+MF_SHOT5 mikeforce/nail_wheels_onto_a_cart {Len 7.0 closecaption MF_SHOT5}
+MF_SHOT6 mikeforce/out_of_a_dogs_ass {Len 6.0 closecaption MF_SHOT6}
+MF_SHOT7 mikeforce/could_whip_your_ass {Len 5.5 closecaption MF_SHOT7}
+
+// When the player has shot one of my buddies, and I'm going to kill player
+MF_NOSHOOT0 mikeforce/fuck_you_up_big_time {Len 3.8 closecaption MF_NOSHOOT0}
+MF_NOSHOOT1 mikeforce/whelching_on_bess {Len 8.0 closecaption MF_NOSHOOT1}
+
+// When I am mad at player for shooting me and am going to kill him?
+MF_MAD0 mikeforce/really_pissed_me_off {Len 3.0 closecaption MF_MAD0}
+MF_MAD1 mikeforce/you_ruined_my_lunch {Len 4.3 closecaption MF_MAD1}
+
+// When I am getting out of player's way
+MF_OUTWAY0 mikeforce/sorry_sir {Len 1.9 closecaption MF_OUTWAY0}
+MF_OUTWAY1 mikeforce/im_coming_through {Len 1.8 closecaption MF_OUTWAY1}
+
+// When player is staring at me
+MF_STARE0 mikeforce/staring_problem {Len 5.8 closecaption MF_STARE0}
+MF_STARE1 mikeforce/your_fucking_staring {Len 15.2 closecaption MF_STARE1}
+MF_STARE2 mikeforce/staring_at_my_helmet {Len 4.8 closecaption MF_STARE2}
+MF_STARE3 mikeforce/can_i_help_you {Len 1.6 closecaption MF_STARE3}
+
+// When I am standing around idly (Pre-disaster)
+MF_PIDLE0 mikeforce/street_advice {Len 14.8 closecaption MF_PIDLE0}
+MF_PIDLE1 mikeforce/street_advice2 {Len 10.9 closecaption MF_PIDLE1}
+MF_PIDLE2 mikeforce/get_her_to_help_us_out {Len 8.3 closecaption MF_PIDLE2}
+MF_PIDLE3 mikeforce/tiger_piss_beer {Len 9.2 closecaption MF_PIDLE3}
+MF_PIDLE4 mikeforce/saving_up_my_pay {Len 8.5 closecaption MF_PIDLE4}
+
+// When I decide to stop following player (Pre-disaster)
+MF_POK0 mikeforce/i_should_stay_here {Len 4.0 closecaption MF_POK0}
+MF_POK1 mikeforce/im_staying_here {Len 5.4 closecaption MF_POK1}
+
+
+//Scripts
+// ----------------------------------------
+
+MIKEFORCE1 mikeforce/mikeforce1 {Len 39.7 closecaption MIKEFORCE1}
+MIKEFORCE2 mikeforce/mikeforce2 {Len 5.9 closecaption MIKEFORCE2}
+MIKEFORCE3 mikeforce/mikeforce3 {Len 15.1 closecaption MIKEFORCE3}
+MIKEFORCE4 mikeforce/mikeforce4 {Len 31.6 closecaption MIKEFORCE4}
+MIKEFORCE5 mikeforce/mikeforce5 {Len 8.0 closecaption MIKEFORCE5}
+MIKEFORCE6 mikeforce/mikeforce6 {Len 6.5 closecaption MIKEFORCE6}
+MIKEFORCE7 mikeforce/mikeforce7 {Len 8.3 closecaption MIKEFORCE7}
+MIKEFORCE8 mikeforce/mikeforce8 {Len 18.8 closecaption MIKEFORCE8}
+MIKEFORCE9 mikeforce/mikeforce9 {Len 27.9 closecaption MIKEFORCE9}
+MIKEFORCE10 mikeforce/mikeforce10 {Len 2.2 closecaption MIKEFORCE10}
+MIKEFORCE11 mikeforce/mikeforce11 {Len 2.2 closecaption MIKEFORCE11}
+MIKEFORCE12 mikeforce/mikeforce12 {Len 44.3 closecaption MIKEFORCE12}
+MIKEFORCE13 mikeforce/mikeforce13 {Len 2.3 closecaption MIKEFORCE13}
+MIKEFORCE14 mikeforce/mikeforce14 {Len 29.8 closecaption MIKEFORCE14}
+
+// ========================================
+// outdoor
+// ========================================
+
+WILD0 ambience/(v30) quail1(p103), quail1(t10), quail1(p101) {Len 0.8}
+WILD1 ambience/bee1(v75) {Len 1.2}
+WILD2 ambience/bee2(p105) {Len 1.2}
+WILD3 ambience/hawk1(p98 v30) {Len 0.2}
+WILD4 ambience/hawk1(p105 v20) {Len 0.2}
+WILD5 ambience/(v50 p97) quail1, quail1(t15) {Len 0.5}
+WILD6 ambience/bee1(p98 v50) {Len 1.2}
+WILD7 ambience/bee1(p97) {Len 1.2}
+WILD8 ambience/quail1(p98 v20) {Len 0.3}
+WILD9 ambience/des_wind1(v50) {Len 3.9}
+WILD10 ambience/des_wind2(v50) {Len 2.9}
+WILD11 ambience/des_wind3(v50) {Len 4.4}
+WILD9 ambience/des_wind1(v40 p105) {Len 3.9}
+WILD10 ambience/des_wind2(v40 p98) {Len 2.9}
+WILD11 ambience/des_wind3(v40 p103) {Len 4.4}
+WILD12 ambience/wren1(v80) {Len 1.1}
+
+// ========================================
+// distant war zone
+// ========================================
+
+FAR_WAR0 ambience/(v50) distantmortar1 {Len 2.1}
+FAR_WAR1 ambience/(v60) distantmortar2 {Len 1.9}
+FAR_WAR2 ambience/(v50) distantmortar3 {Len 2.9}
+FAR_WAR3 ambience/(v15) biggun3 {Len 2.6}
+FAR_WAR4 ambience/(v20) rifle2 {Len 1.7}
+FAR_WAR5 ambience/(v30) mortar2 explode1 {Len 2.4}
+FAR_WAR6 ambience/(v10) mgun_burst4 {Len 2.7}
+FAR_WAR7 ambience/(v30) distantmortar1 distantmortar3 distantmortar2 {Len 6.8}
+FAR_WAR8 ambience/(v10) biggun2 biggun2 biggun2 {Len 5.8}
+FAR_WAR9 ambience/(v15) mgun_burst1 {Len 3.4}
+FAR_WAR10 ambience/(v20) biggun1 rifle2 {Len 2.8}
+FAR_WAR11 ambience/(v60) distantmortar1 distantmortar1, distantmortar2, distantmortar1 {Len 8.0}
+FAR_WAR12 ambience/(v30) distantmortar2, distantmortar2 distantmortar2 distantmortar2, distantmortar3 distantmortar1 {Len 12.4}
+FAR_WAR13 ambience/(v10) mgun_burst2 {Len 1.8}
+FAR_WAR14 ambience/(v15) mgun_burst3 mgun_burst3 {Len 1.5}
+FAR_WAR15 ambience/(v10) rifle1 rifle1 {Len 2.0}
+FAR_WAR16 ambience/(v10) biggun2, biggun2 biggun2 {Len 5.8}
+FAR_WAR17 ambience/(v50) distantmortar1 distantmortar4 explode2(v25) {Len 5.7}
+FAR_WAR18 ambience/(v40) mortar2 explode1 (v20) mgun_burst7 mgun_burst7 mgun_burst7, mgun_burst4(v30) {Len 6.3}
+FAR_WAR19 ambience/(v25) biggun3(e60) biggun3(e60) biggun3(e90) explode2(v40) {Len 9.4}
+FAR_WAR20 ambience/(v25) rifle2 rifle2 biggun2 mgun_burst6(v30) {Len 6.7}
+FAR_WAR21 ambience/(v25) jetdrop explode2 {Len 5.7}
+FAR_WAR22 ambience/(v30) mgun_burst6 mgun_burst6(e60) mgun_burst4(v20) {Len 5.3}
+FAR_WAR23 ambience/(v35) mgun_burst7 mgun_burst7 mgun_burst7 mgun_burst7 {Len 1.7}
+FAR_WAR24 ambience/(v40) distantmortar1 distantmortar3 distantmortar2 {Len 6.8}
+FAR_WAR25 ambience/(v25) mgun_burst8 mgun_burst8(e90) mgun_burst2 {Len 4.9}
+FAR_WAR26 ambience/(v30) mgun_burst8, mgun_burst6(e50), mgun_burst6  {Len 4.2}
+FAR_WAR27 ambience/(v20) mgun_burst5 mgun_burst5 mgun_burst4 {Len 4.4}
+FAR_WAR28 ambience/(v60) distantmortar4 distantmortar2, mgun_burst1(v45), distantmortar4 {Len 9.2}
+FAR_WAR29 ambience/(v40) distantmortar2, distantmortar4 distantmortar1 distantmortar2 mortar2(v25) explode1(v25) {Len 10.1}
+FAR_WAR30 ambience/(v20) mgun_burst2 mgun_burst3(v15) mgun_burst3(v10) {Len 3.3}
+FAR_WAR31 ambience/(v25) mgun_burst1, mgun_burst8 {Len 5.0}
+
+// ========================================
+// near war zone
+// ========================================
+
+NEAR_WAR0 ambience/(v60) mgun_burst3 mgun_burst3 mgun_burst3(v50) {Len 2.3}
+NEAR_WAR1 ambience/(v60) rifle1 rifle2 rifle2 rifle1 rifle1 {Len 6.4}
+NEAR_WAR2 ambience/(v60) jetdrop explode2 {Len 5.7}
+NEAR_WAR3 ambience/(v60) biggun3 biggun3 biggun3 {Len 7.7}
+NEAR_WAR4 ambience/(v60) mgun_burst4 mgun_burst3 rifle1 mgun_burst4 {Len 7.2}
+NEAR_WAR5 ambience/(v60) mgun_burst7 mgun_burst7 mgun_burst7 mgun_burst7 mgun_burst7 {Len 2.1}
+NEAR_WAR6 ambience/(v60) mgun_burst4 mgun_burst3 {Len 3.5}
+NEAR_WAR7 ambience/distantmortar1 distantmortar3 distantmortar2 {Len 6.8}
+NEAR_WAR8 ambience/(v60) biggun2 biggun2 biggun2 biggun2(v30) {Len 7.8}
+NEAR_WAR9 ambience/(v60) mgun_burst1 mgun_burst1 rifle2 mgun_burst3 {Len 9.4}
+NEAR_WAR10 ambience/(v45) mgun_burst1, mgun_burst5 mgun_burst5, mgun_burst6(v30) {Len 6.4}
+NEAR_WAR11 ambience/distantmortar1 distantmortar1, distantmortar2 {Len 6.0}
+NEAR_WAR12 ambience/(v60) mgun_burst2 mgun_burst2 mgun_burst3 mgun_burst2 {Len 6.1}
+NEAR_WAR13 ambience/(v70) mgun_burst3, mgun_burst3, mgun_burst8 {Len 3.1}
+NEAR_WAR14 ambience/(v60) jetdrop explode1 {Len 5.5}
+NEAR_WAR15 ambience/(v60) mgun_burst5 mgun_burst5 mgun_burst8 mortar2 explode1 mgun_burst1(v50) {Len 9.0}
+NEAR_WAR16 ambience/(v70) mgun_burst6(e60), mgun_burst6, mgun_burst2(v40) mortar2 explode1, mgun_burst8(v45) {Len 8.3}
+NEAR_WAR17 ambience/(v60) distantmortar2, distantmortar4 (v40) mgun_burst2 mgun_burst3 {Len 6.4}
+NEAR_WAR18 ambience/(v40) mgun_burst5 mgun_burst5, mgun_burst8 {Len 3.2}
+NEAR_WAR19 ambience/(v40) jetdrop explode2 {Len 5.7}
+NEAR_WAR20 ambience/(v40) mgun_burst7 mgun_burst7 mgun_burst7 mgun_burst7 {Len 1.7}
+NEAR_WAR21 ambience/(v60) mgun_burst8, mgun_burst6(e50), mgun_burst6 {Len 4.2}
+NEAR_WAR22 weapons/(v10) sbarrel1(e70) sbarrel1(e80) sbarrel1 mortar mortarhit(v20) {Len 9.5}
+NEAR_WAR23 ambience/(v60) mgun_burst4(e85) mgun_burst7 mgun_burst7 mgun_burst7 mgun_burst7, mgun_burst6 mortar2 explode1 {Len 8.0}
+NEAR_WAR24 ambience/(v80) mgun_burst3(p120) mgun_burst3 mgun_burst1 {Len 5.0}
+NEAR_WAR25 ambience/(v30) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1, rifle1(t60 e60) rifle1(t60 e60) rifle1(t60 e60) rifle1 {Len 14.0}
+NEAR_WAR26 ambience/(v10) rifle1(t60e60) rifle1(t60e60) rifle1(t60e60) rifle1 distantmortar4 {Len 5.9}
+NEAR_WAR27 ambience/(v60) biggun4, biggun4 biggun2(v15) {Len 3.4}
+NEAR_WAR28 ambience/(v30) jetdrop explode1 {Len 5.5}
+NEAR_WAR29 ambience/(v40) mortar2 explode1 {Len 2.4}
+
+// ========================================
+// jungle
+// ========================================
+
+JUNGLE0 ambience/(v70) monkey monkey(t50p120e60) monkey(s50e70p90), rifle2(p70v30), rifle2(p65v45e75) bee1(e50v50p140) bee1(s30v90p120) bee2(s50p110) {Len 19.1}
+JUNGLE1 ambience/hawks2 hawks2(t30e70) hawk1 hawk1(t50) hawk1(v50) birds3(p140v70) quail1(t20v50) quail1(t30s10v60) quail1(s10v30p80) bugs3(p60v20), distantmortar5 {Len 5.6}
+JUNGLE2 ambience/bugs3(p60), flies2(v50), bugs2 bugs2(p70), biggun3(p60v50) distantmortar7, birds3(v70) birds3(p130v20) quail1(p60v20) {Len 14.3}
+JUNGLE3 ambience/thunder3(p70v70) distantmortar2(p70t20v70) distantmortar5 bugs4(p50) birds3(p60v20) biggun3(p70v20) bugs3(p90e60) bugs3(p90v40) {Len 19.8}
+JUNGLE4 ambience/bird11khz(e30) bird11khz(e30p80t20v50), bird11khz(e30p60t30v10), hawks2(v30) hawks2(v20p90) monkey(t40p130e60) monkey(s30e60p80), bugs1(v90) bugs1(v80p95) bugs1(v60p100) {Len 20.3}
+JUNGLE5 ambience/biggun4(p70v40) rifle2a(v50) rifle2a(v60p90) rifle2b(v50) rifle2a(v45p110) rifle2c(v50p80) mgun_burst11 biggun2(p60v90) {Len 4.7}
+JUNGLE6 ambience/distantmortar6(e90) distantmortar7(e95) distantmortar8(p90) rocket_groan2(p80v30) mgun_burst13(e80v30) mgun_burst14(v50) {Len 14.3}
+JUNGLE7 ambience/(v70) mgun_burst11 mgun_burst11 mgun_burst10(p80) distantmortar4 mgun_burst9, bugs4, mgun_burst14(v20) bugs2(v50) {Len 13.3}
+JUNGLE8 ambience/(v60) rifle2a rifle2c rifle2a(p80t20) rifle2b rifle2c rifle2a(p110) rifle2b rifle2b(v40p90) mgun_burst12(e80) mgun_burst12(v50) {Len 3.4}
+JUNGLE9 ambience/rifle2a rifle2b rifle2b(p110), grrr, bird11khz(e70v40) birds3(t50p120e60) birds3(s50e70p90) thunder2 birds3(p140) birds3(p40v25) {Len 16.4}
+JUNGLE10 ambience/biggun2(p60v70) mgun_burst7(v100) mgun_burst7(v100) mgun_burst10(v60) mgun_burst1(v50) bee2(e75v80p140) bee2(v70p120) bee2(s80p150) thunder6(v20) distantmortar4(p80v60) {Len 18.2}
+JUNGLE11 ambience/grrr(v40p60) monkey(p60v70) monkey(p140e60v25) mgun_burst13 bugs1(v35) bugs1(v30) bugs1(v25) bugs1(v20) bugs1(v10) mgun_burst14(p70v30) {Len 23.6}
+JUNGLE12 ambience/hawks2, hawks1 hawks1, flies2(v40s30e60) flies2(v60p120) bee2(e60v30p140) bee1(e80v70p150) bee2(s40p135) birds4(v50) {Len 14.4}
+JUNGLE13 ambience/(p70) rifle2a rifle2b(p60) rifle2b rifle2a rifle2c rifle2a(p80) rifle2b rifle2c, rifle2a(p70) rifle2b(p50), rifle2b, rifle2c {Len 2.7}
+JUNGLE14 ambience/(p85v50) mgun_burst13 mgun_burst14(v35) mgun_burst13(v30) mgun_burst13(v55) mgun_burst10(p100) mgun_burst1(v30p100) mgun_burst12(v45e80) mgun_burst12(v25) mgun_burst10(v40p100) {Len 15.8}
+JUNGLE15 ambience/(p75) rifle2(t40e50v70) rifle2(p95t20e70v100) rifle1(p60t40e90) biggun3(v50p85e80) rifle2(p70e65v40) rifle2(p80v30), mgun_burst10(v25p100), distantmortar4(e70p100) distantmortar7(p100), distantmortar5(p100) {Len 17.5}
+JUNGLE16 ambience/bird11khz(p120v60) birds3(p60t20v15) hawks2 hawks2 hawks2, hawks2 hawks2(p95), hawks2(p90v85), monkey(p110v20) grrr(v30)  {Len 11.3}
+JUNGLE17 ambience/distantmortar6, distantmortar9 bugs4(e85) bugs3 mgun_burst7(t35v25) mgun_burst7(t35v25) mgun_burst7(t35v25) biggun3(p75v25s40) {Len 13.3}
+JUNGLE18 ambience/(v80) distantmortar5 distantmortar6 distantmortar8 distantmortar9 distantmortar7 distantmortar5(v40) mgun_burst12(v30) mgun_burst12(v40p115) {Len 16.2}
+JUNGLE19 ambience/birds3(t20e75) birds3(s20e80p90), grrr(p130) mgun_burst13(p60t20v30), mgun_burst13(p70t25v20), distantmortar1(v50) distantmortar6(v70) mgun_burst10(v60) {Len 15.9}
+JUNGLE20 ambience/bugs4, bugs3, bugs4(v60p80) distantmortar5(v20) bugs3(p110v50) bugs4(v75) mgun_burst11(t30) mgun_burst11(t30), mgun_burst11(t20e80), mgun_burst11(t30) mgun_burst9 {Len 16.4}
+JUNGLE21 ambience/distantmortar5(v70), distantmortar5(v30t20) rocket_groan2(p80v30) rocket_groan3(p85v60) mgun_burst1(s40p75) mgun_burst2(p100v60) {Len 11.9}
+JUNGLE22 ambience/distantmortar2(p70t20v70) distantmortar5 bugs4(p50) mgun_burst13 mgun_burst14(v35) mgun_burst13(v30), mgun_burst13(v55) {Len 14.0}
+JUNGLE23 ambience/bee2(t50s20e80) bee2 rifle2a rifle2c rifle2a(p80t20) rifle2b rifle2c rifle2a(p110) rifle2b rifle2b(v40p90) rifle2(p70e65v40) rifle2(p80v30) bugs2(p75) birds4 {Len 10.7}
+JUNGLE24 ambience/mgun_burst14 rocket_groan4(v75) monkey(v35s50e90) biggun4(p70v60) thunder2(p80v70) distantmortar7(v80) distantmortar7(s45v40p110) mgun_burst12 {Len 28.5}
+JUNGLE25 ambience/flies2(v50) flies2(v80t20) bugs1(v15) bugs2(v50) bugs4(t40) rifle2a rifle2c(p85) rifle2a rifle2c bugs3(t50p90) mgun_burst11(t50v30) mgun_burst10(v80) bugs3(t50p80), mgun_burst13 {Len 19.4}
+JUNGLE26 ambience/grrr(p130v50) birds4(p75v20), mgun_burst10, mgun_burst12(e70) mgun_burst12 flies2(p60v15) bugs2, bugs2, biggun1(p65v30) thunder3 distantmortar9(v30) {Len 25.8}
+JUNGLE27 ambience/(v50) distantmortar5(e50) distantmortar9(e50) distantmortar7(e90) thunder1(v30e60) distantmortar6(v50) distantmortar8(e60) distantmortar6(p120v20)  {Len 22.8}
+JUNGLE28 ambience/bugs3 birds3 birds6(v40) bugs3(v75) bugs4(p85) birds5 bugs2 bugs4(p130) flies2 birds3(p60) bee1(e70p140) bee1(s40p140) flies2(e60p120) flies2(s10p135) {Len 25.0}
+JUNGLE29 ambience/birds5 distantmortar6(v30p115) birds6(v50) birds6(v40p90), bugs2(p90v100) rocket_groan4(v75) monkey(v15s50e90) monkey(v15s15p105) bugs3(v10p140) rifle2(p75t30e70v25) rifle1(p40s10t20) {Len 29.6}
+JUNGLE30 ambience/birds4(e80) birds4(p130e60) bird11khz(v30t20) mgun_burst9(s20v20) birds3(p65) distantmortar5(v40p120e60) distantmortar5(p100v70) distantmortar8(v30) {Len 17.2}
+
+// ========================================
+// cavern impacts
+// ========================================
+
+IMPACT1 ambience/impact1 impact2 impact3 impact4 {Len 10.5}
+IMPACT2 ambience/impact1 impact3 impact4 impact2 {Len 10.5}
+IMPACT3 ambience/impact3 impact1 impact2 impact4 {Len 10.5}
+IMPACT4 ambience/impact2 impact1 impact4 impact3 {Len 10.5}
+
+// ========================================
+// thunder fx
+// ========================================
+THUNDER1 ambience/(v60) thunder2(p125e75) thunder1(p95v70e90) thunder4(v50e50) thunder6(e60) thunder3(e75) thunder3(s30v60p80e90) thunder1(t50e50p110) thunder6(v60e90) thunder1(v50p85) {Len 58.8}
+
+// ========================================
+// alien slave
+// ========================================
+
+SLV_IDLE0 aslave/slv_word1 slv_word2 {Len 1.76 closecaption SLV_IDLE}
+SLV_IDLE1 aslave/slv_word2 slv_word3(p95) {Len 2.67 closecaption SLV_IDLE}
+SLV_IDLE2 aslave/slv_word3 slv_word4 {Len 3.12 closecaption SLV_IDLE}
+SLV_IDLE3 aslave/slv_word4 slv_word5 slv_word5(p90) {Len 3.55 closecaption SLV_IDLE}
+SLV_IDLE4 aslave/slv_word2(p110) slv_word6 slv_word7 slv_word3 {Len 4.86 closecaption SLV_IDLE}
+SLV_IDLE5 aslave/slv_word6 slv_word7 slv_word2 {Len 3.24 closecaption SLV_IDLE}
+SLV_IDLE6 aslave/slv_word7 slv_word8 slv_word3 {Len 2.92 closecaption SLV_IDLE}
+SLV_IDLE7 aslave/slv_word8 slv_word1 slv_word8 slv_word8(p95) {Len 1.35 closecaption SLV_IDLE}
+SLV_IDLE8 aslave/slv_word1(p115) slv_word6 {Len 2.05 closecaption SLV_IDLE}
+SLV_IDLE9 aslave/slv_word3 slv_word3(p90) {Len 3.58 closecaption SLV_IDLE}
+SLV_IDLE10 aslave/slv_word7(p85) {Len 1.26 closecaption SLV_IDLE}
+
+SLV_ALERT0 aslave/(p105) slv_alert1 slv_word2 {Len 1.07 closecaption SLV_ALERT}
+SLV_ALERT1 aslave/(p105) slv_word8 slv_word8 slv_word8 slv_word5 {Len 1.40 closecaption SLV_ALERT}
+SLV_ALERT2 aslave/(p105) slv_alert4 slv_word4 slv_alert3 {Len 2.27 closecaption SLV_ALERT}
+SLV_ALERT3 aslave/(p108) slv_alert1 slv_word5 {Len 1.16 closecaption SLV_ALERT}
+SLV_ALERT4 aslave/(p108) slv_word5(p110) slv_word8 slv_word8 {Len 1.20 closecaption SLV_ALERT}
+SLV_ALERT5 aslave/(p108) slv_alert4 slv_word7 slv_alert1 {Len 1.64 closecaption SLV_ALERT}
+
+// ========================================
+// Sarge
+// ========================================
+
+SARGE0 sarge/sarge0 {Len 4.5 closecaption SARGE0}
+SARGE1 sarge/sarge1 {Len 6.3 closecaption SARGE1}
+SARGE2 sarge/on_your_own {Len 1.8 closecaption SARGE2}
+SARGE3 sarge/sarge3 {Len 3.7}
+SARGE4 sarge/sarge4 {Len 2.7}
+SARGE5 sarge/sarge5 {Len 4.3 closecaption SARGE5}
+SARGE6 sarge/sarge6 {Len 5.3 closecaption SARGE6}
+SARGE7 sarge/sarge7 {Len 3.1 closecaption SARGE7}
+SARGE8 sarge/sarge8 {Len 9.4 closecaption SARGE8}
+SARGE9 sarge/sarge9 {Len 5.3 closecaption SARGE9}
+SARGE10 sarge/sarge10 {Len 2.4 closecaption SARGE10}
+SARGE11 sarge/sarge11 {Len 9.3 closecaption SARGE11}
+SARGE12 sarge/sarge12 {Len 5.3 closecaption SARGE12}
+SARGE13 sarge/sarge13 {Len 16.2 closecaption SARGE13}
+SARGE14 sarge/sarge14 {Len 4.9 closecaption SARGE14}
+
+// ========================================
+// Officer1
+// ========================================
+
+OFFICER10 officer1/officer10 {Len 2.3}
+OFFICER11 officer1/officer11 {Len 1.9}
+OFFICER12 officer1/officer12 {Len 3.0}
+OFFICER13 officer1/officer13 {Len 6.8}
+OFFICER14 officer1/officer14 {Len 6.7}
+OFFICER15 officer1/officer15 {Len 2.8}
+OFFICER16 officer1/officer16 {Len 8.2}
+OFFICER17 officer1/officer17 {Len 5.9}
+OFFICER18 officer1/officer18 {Len 1.5}
+OFFICER19 officer1/officer19 {Len 4.0}
+OFFICER110 officer1/officer110 {Len 6.3}
+
+// ========================================
+// Officer2
+// ========================================
+
+OFFICER20 officer2/officer20 {Len 1.8}
+OFFICER21 officer2/officer21 {Len 5.5}
+OFFICER22 officer2/officer22 {Len 0.7}
+OFFICER23 officer2/officer23 {Len 4.6}
+OFFICER24 officer2/officer24 {Len 5.2}
+OFFICER25 officer2/officer25 {Len 5.1}
+
+// ========================================
+// Bob (meaning any random grunt)
+// ========================================
+
+BOB0 bob/bob0 {Len 1.4 closecaption BOB0}
+BOB1 bob/bob1 {Len 0.9 closecaption BOB1}
+BOB2 bob/bob2 {Len 2.2 closecaption BOB2}
+BOB3 bob/bob3 {Len 8.1 closecaption BOB3}
+BOB4 bob/bob4 {Len 4.5 closecaption BOB4}
+
+// ========================================
+// Civilian Suspect
+// ========================================
+
+CIVILSUSPECT0 civilsuspect/civilsuspect0 {Len 30.8 closecaption CIVILSUSPECT0}
+CIVILSUSPECT1 civilsuspect/civilsuspect1 {Len 21.8 closecaption CIVILSUSPECT1}
+CIVILSUSPECT2 civilsuspect/civilsuspect2 {Len 27.9 closecaption CIVILSUSPECT2}
+CIVILSUSPECT3 civilsuspect/civilsuspect3 {Len 3.7 closecaption CIVILSUSPECT3}
+CIVILSUSPECT4 civilsuspect/civilsuspect4 {Len 1.3 closecaption CIVILSUSPECT4}
+CIVILSUSPECT5 civilsuspect/civilsuspect5 {Len 1.9 closecaption CIVILSUSPECT5}
+CIVILSUSPECT6 civilsuspect/civilsuspect6 {Len 4.3 closecaption CIVILSUSPECT6}
+CIVILSUSPECT7 civilsuspect/civilsuspect7 {Len 1.9 closecaption CIVILSUSPECT7}
+CIVILSUSPECTDIE gook/choke_roundeye {Len 2.1}
+
+// ========================================
+// Kurtz
+// ========================================
+
+KURTZ0 kurtz/kurtz0 {Len 19.8 closecaption KURTZ0}
+KURTZ1 kurtz/kurtz1 {Len 33.4 closecaption KURTZ1}
+KURTZ2 kurtz/kurtz2 {Len 37.4 closecaption KURTZ2}
+KURTZ3 kurtz/kurtz3 {Len 23.9 closecaption KURTZ3}
+KURTZ4 kurtz/kurtz4 {Len 17.4 closecaption KURTZ4}
+KURTZ5 kurtz/kurtz5 {Len 6.9 closecaption KURTZ5}
+KURTZ6 kurtz/kurtz6 {Len 11.2 closecaption KURTZ6}
+KURTZ7 kurtz/kurtz7 {Len 13.9 closecaption KURTZ7}
+
+DONUTS scientist/donuteater {Len 4.0 closecaption DONUTS}
+
+// ========================================
+// SuperZombie
+// ========================================
+
+SZ_ALERT0 superzombie/zo_alert10 {closecaption SZ_ALERT0}
+SZ_ALERT1 superzombie/zo_alert20 {closecaption SZ_ALERT1}
+SZ_ALERT2 superzombie/zo_alert30 {closecaption SZ_ALERT2}
+
+SZ_ATTACK0 superzombie/zo_attack1
+SZ_ATTACK1 superzombie/zo_attack2
+SZ_ATTACK2 superzombie/zo_attack3
+SZ_ATTACK2 superzombie/zo_attack4
+
+SZ_IDLE0 superzombie/zo_idle1 {closecaption SZ_IDLE}
+SZ_IDLE1 superzombie/zo_idle2 {closecaption SZ_IDLE}
+SZ_IDLE2 superzombie/zo_idle3 {closecaption SZ_IDLE}
+SZ_IDLE3 superzombie/zo_idle4 {closecaption SZ_IDLE}
+SZ_IDLE4 superzombie/zo_idle5 {closecaption SZ_IDLE}
+SZ_IDLE5 superzombie/zo_idle6 {closecaption SZ_IDLE}
+SZ_IDLE6 superzombie/zo_idle7 {closecaption SZ_IDLE}
+SZ_IDLE7 superzombie/zo_idle8 {closecaption SZ_IDLE}
+
+SZ_PAIN0 superzombie/zo_pain1
+SZ_PAIN1 superzombie/zo_pain2
+
+SUPERZOMBIE0 superzombie/freeman_our_leader1 {Len 7.3 closecaption SUPERZOMBIE0}
+SUPERZOMBIE1 superzombie/freeman_our_leader2 {Len 7.9 closecaption SUERPZOMBIE1}
+
+// ========================================
+// THEM
+// ========================================
+
+THEM0 them/themnoise {Len 9.5 closecaption THEM0}
+THEM1 them/killthehealthy {Len 15.8 closecaption THEM1}
+

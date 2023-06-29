@@ -1,0 +1,19 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmapPlusMaskedSphericalEnvMap
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 2.5
+	"$basetexture" "halflife/introdr1e"
+	"$envmap" "environment maps/envmap001a"
+	"$basealphaenvmapmask" "1"
+	"$envmapcontrast" 1
+	"$envmaptint" "[ .8 .8 .8 ]"
+	"$surfaceprop" "metal"
+
+	// HOE
+	"LightmappedGeneric_HDR"
+	{
+		"$envmapcontrast" 1
+		"$envmaptint" "[ .1 .1 .1 ]"
+	}
+}

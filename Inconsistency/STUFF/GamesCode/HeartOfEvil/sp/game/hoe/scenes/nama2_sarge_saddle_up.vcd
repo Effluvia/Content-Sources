@@ -1,0 +1,44 @@
+// Choreo version 1
+actor "sarge"
+{
+  channel "speech"
+  {
+    event speak "NPC_Sarge.SaddleUp"
+    {
+      time 0.006667 2.406304
+      param "NPC_Sarge.SaddleUp"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.006667 2.413333
+      param "barney"
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.000000 2.420000
+      param "barney"
+    }
+  }
+  faceposermodel "models\sarge.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

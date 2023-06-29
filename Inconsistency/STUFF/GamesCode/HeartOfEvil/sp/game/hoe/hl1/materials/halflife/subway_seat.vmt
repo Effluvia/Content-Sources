@@ -1,0 +1,19 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 2.5
+	"$basetexture" "halflife/subway_seat"
+	"$surfaceprop" "paper"
+	"$envmap" "environment maps/envmap001a"
+	"$basealphaenvmapmask" "1"
+	"$envmapcontrast" 2
+	"$envmaptint" "[ .8 .8 .8 ]"
+
+	// HOE
+	"LightmappedGeneric_HDR"
+	{
+		"$envmapcontrast" 1
+		"$envmaptint" "[ .1 .1 .1 ]"
+	}
+}

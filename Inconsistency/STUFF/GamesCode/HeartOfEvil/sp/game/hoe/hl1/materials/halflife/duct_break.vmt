@@ -1,0 +1,18 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 2.5
+	"$basetexture" "halflife/duct_break"
+	"$envmap" "environment maps/ductenv1"
+	"$basealphaenvmapmask" "1"
+	"$envmapcontrast" 2
+	"$envmaptint" "[ .7 .7 .7 ]"
+
+	// HOE
+	"LightmappedGeneric_HDR"
+	{
+		"$envmapcontrast" 1
+		"$envmaptint" "[ .25 .25 .25 ]"
+	}
+}

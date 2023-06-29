@@ -1,0 +1,45 @@
+// Choreo version 1
+actor "barney"
+{
+  channel "animation"
+  {
+    event gesture "g_huey_kidnap"
+    {
+      time 0.000000 3.983333
+      param "g_huey_kidnap"
+      sequenceduration 4.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.000000 8.000000
+      param "!player"
+    }
+  }
+  channel "speech"
+  {
+    event speak "sir!"
+    {
+      time 1.450000 2.020386
+      param "NPC_Barney.Sir"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\Barney\barney.mdl"
+}
+
+scalesettings
+{
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap on
+ignorePhonemes off

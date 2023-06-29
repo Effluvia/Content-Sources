@@ -1,0 +1,58 @@
+criterion "ConceptTalkAlert" "Concept" "TLK_ALERT" required
+criterion "ConceptTalkCharge" "Concept" "TLK_CHARGE" required
+criterion "ConceptTalkCover" "Concept" "TLK_COVER" required
+criterion "ConceptTalkDead" "Concept" "TLK_DEAD" required
+criterion "ConceptTalkExpl" "Concept" "TLK_EXPL" required
+criterion "ConceptTalkFound" "Concept" "TLK_FOUND" required
+criterion "ConceptTalkGren" "Concept" "TLK_GREN" required
+criterion "ConceptTalkHead" "Concept" "TLK_HEAD" required
+//criterion "ConceptTalkHeal" "Concept" "TLK_HEAL" required
+criterion "ConceptTalkHealed" "Concept" "TLK_HEALED" required
+criterion "ConceptTalkHear" "Concept" "TLK_HEAR" required
+//criterion "ConceptTalkHello" "Concept" "TLK_HELLO" required
+criterion "ConceptTalkHelp" "Concept" "TLK_HELP" required
+criterion "ConceptTalkHurtA" "Concept" "TLK_HURTA" required
+criterion "ConceptTalkHurtB" "Concept" "TLK_HURTB" required
+criterion "ConceptTalkHurtC" "Concept" "TLK_HURTC" required
+//criterion "ConceptTalkIdle" "Concept" "TLK_IDLE" required
+criterion "ConceptTalkKill" "Concept" "TLK_KILL" required
+criterion "ConceptTalkMad" "Concept" "TLK_MAD" required
+criterion "ConceptTalkMedic" "Concept" "TLK_MEDIC" required
+//criterion "ConceptTalkMortal" "Concept" "TLK_MORTAL" required
+//criterion "ConceptTalkNoShoot" "Concept" "TLK_NOSHOOT" required
+criterion "ConceptTalkOutway" "Concept" "TLK_OUTWAY" required
+criterion "ConceptTalkPain" "Concept" "TLK_PAIN" required
+//criterion "ConceptTalkPIdle" "Concept" "TLK_PIDLE" required
+criterion "ConceptTalkPOk" "Concept" "TLK_POK" required
+//criterion "ConceptTalkQuestion" "Concept" "TLK_QUESTION" required
+criterion "ConceptTalkShot" "Concept" "TLK_SHOT" required
+criterion "ConceptTalkSquadAckGeneric" "Concept" "TLK_SQUAD_ACK_GENERIC" required
+criterion "ConceptTalkSquadAckCheck" "Concept" "TLK_SQUAD_ACK_CHECK" required
+criterion "ConceptTalkSquadAckRetreat" "Concept" "TLK_SQUAD_ACK_RETREAT" required
+criterion "ConceptTalkSquadAckSearch" "Concept" "TLK_SQUAD_ACK_SEARCH" required
+criterion "ConceptTalkSquadAckSuppress" "Concept" "TLK_SQUAD_ACK_SUPPRESS" required
+criterion "ConceptTalkSquadAttack" "Concept" "TLK_SQUAD_ATTACK" required
+criterion "ConceptTalkSquadCheck" "Concept" "TLK_SQUAD_CHECK" required
+criterion "ConceptTalkSquadCome" "Concept" "TLK_SQUAD_COME" required
+criterion "ConceptTalkSquadRetreat" "Concept" "TLK_SQUAD_RETREAT" required
+criterion "ConceptTalkSquadSearch" "Concept" "TLK_SQUAD_SEARCH" required
+criterion "ConceptTalkSquadSuppress" "Concept" "TLK_SQUAD_SUPPRESS" required
+//criterion "ConceptTalkStare" "Concept" "TLK_STARE" required
+criterion "ConceptTalkTaunt" "Concept" "TLK_TAUNT" required
+criterion "ConceptTalkThrow" "Concept" "TLK_THROW" required
+criterion "ConceptTalkUnUse" "Concept" "TLK_UNUSE" required
+//criterion "ConceptTalkUse" "Concept" "TLK_USE" required
+//criterion "ConceptTalkWound" "Concept" "TLK_WOUND" required
+
+criterion "EnemyIsSpx" "enemy" "npc_spx" required
+criterion "EnemyNotSpx" "enemy" "!npc_spx" required
+
+#include "talker/npc_army_medic.txt"
+#include "talker/hoe_barney.txt"
+#include "talker/npc_charlie.txt"
+#include "talker/npc_grunt_medic.txt"
+#include "talker/npc_human_grunt.txt"
+#include "talker/npc_mikeforce.txt"
+#include "talker/npc_peasant.txt"
+#include "talker/npc_sog.txt"
+

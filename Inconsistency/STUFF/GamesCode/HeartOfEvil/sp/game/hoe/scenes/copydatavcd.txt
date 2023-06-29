@@ -1,0 +1,18 @@
+// Choreo version 1
+actor "officer1"
+{
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 7.993334 15.393333
+      param "!player"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4880 0.9684
+      }
+    }
+  }
+  faceposermodel "models\officer1.mdl"
+}
+

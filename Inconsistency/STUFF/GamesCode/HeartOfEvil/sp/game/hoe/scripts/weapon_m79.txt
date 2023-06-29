@@ -1,0 +1,118 @@
+// Small Machine Gun 1
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HOE_M79"
+	"viewmodel"				"models/M79/v_m79/v_m79.mdl"
+	"playermodel"			"models/M79/w_m79/w_m79.mdl"
+	"anim_prefix"			"smg2"
+	"bucket"				"3"
+	"bucket_position"		"0"
+
+	"clip_size"				"1"
+	"clip2_size"			"-1"
+
+	"default_clip"			"1"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"AR_Grenade"
+	"secondary_ammo"		"None"
+
+	"weight"				"8" // HL1 correct value
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload"			"Weapon_SMG1.Reload"
+		"reload_npc"		"Weapon_SMG1.NPC_Reload"
+		"empty"				"Weapon_SMG1.Empty"
+		"single_shot"		"Weapon_M79.Single"
+		"single_shot_npc"	"Weapon_M79.NPC_Single"
+		"special1"			"Weapon_SMG1.Special1"
+		"special2"			"Weapon_SMG1.Special2"
+		"double_shot"		"Weapon_SMG1.Double"
+		"burst"				"Weapon_SMG1.Burst"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"font"		"HOEWeaponIcons"
+			"character" "H"
+		}
+		"weapon_s"
+		{
+			"font"		"HOEWeaponIconsSelected"
+			"character" "H"
+		}
+		"weapon_small"
+		{
+			"font"		"HOEWeaponIconsSmall"
+			"character" "H"
+		}
+//		"weapon"
+//		{
+//			"file"		"sprites/640namhud3"
+//			"x"			"40"
+//			"y"			"192"
+//			"width"		"170"
+//			"height"	"45"
+//		}
+//		"weapon_s"
+//		{	
+//			"file"		"sprites/640namhud3"
+//			"x"			"40"
+//			"y"			"192"
+//			"width"		"170"
+//			"height"	"45"
+////			"file"		"sprites/640namhud4"
+////			"x"			"40"
+////			"y"			"12"
+////			"width"		"170"
+////			"height"	"45"
+//		}
+		"ammo"
+		{
+			"file"		"sprites/640namhud1"
+			"x"			"208"
+			"y"			"212"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+
+	WeaponSelectionHUD
+	{
+		"angles"		"90 -180 0"
+		"origin"		"-60 0 0"
+		"anim"			"idle"
+	}
+
+	ViewModelFudge
+	{
+		"origin"		"-2 0 -2"
+	}
+
+	IronSights
+	{
+		"origin"	"-5.62 -10 1.75"
+		"angles"	"0 0 0"
+	}
+}

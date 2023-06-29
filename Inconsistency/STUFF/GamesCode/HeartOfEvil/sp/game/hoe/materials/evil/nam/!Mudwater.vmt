@@ -1,0 +1,49 @@
+"LightmappedGeneric"
+{
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 2.5
+
+	"$basetexture" "evil\nam\!Mudwater"
+	"%compilewater" 1
+	"$surfaceprop" "water"
+
+	"$translucent" 1
+	"$alpha" 0.85
+
+	"$bottommaterial" "dev/dev_waterbeneath2"
+	"$refracttexture" "_rt_WaterRefraction"
+//	"$refractamount" "3.0"
+
+	"$fogenable" 1
+	"$fogcolor" "{22 20 10}"
+	"$fogstart" 1.00
+	"$fogend" 100.00
+
+	$myvar "[0 0]"
+
+	"Proxies"
+	{
+		"Sine"
+		{
+			"sineperiod" 12
+			"sinemin" -0.05
+			"sinemax" 0.05
+			"timeoffset" 3
+			"resultVar" "$myvar[0]"
+		}
+		"Sine"
+		{
+			"sineperiod" 12
+			"sinemin" -0.05
+			"sinemax" 0.05
+//			"timeoffset" 6
+			"resultVar" "$myvar[1]"
+		}
+		"TextureTransform"
+		{
+			"translateVar" "$myvar"
+			"resultVar" "$baseTextureTransform"
+		}
+	}
+}
+

@@ -1,0 +1,79 @@
+criterion "IsPeasant" "classname" "npc_peasant" required
+criterion "IsMale" "gender" "male" required
+criterion "IsFemale" "gender" "female" required
+
+criterion "ConceptPeasantFear" "Concept" "TLK_PEASANT_FEAR" required
+criterion "ConceptPeasantScream" "Concept" "TLK_PEASANT_SCREAM" required
+criterion "ConceptPeasantStartle" "Concept" "TLK_PEASANT_STARTLE" required
+
+response PeasantMale
+{
+	sentence PS_MALE
+}
+rule PeasantMaleIdle
+{
+	criteria		IsPeasant IsMale ConceptTalkIdle
+	response		PeasantMale
+}
+rule PeasantMaleUse
+{
+	criteria		IsPeasant IsMale ConceptTalkUse
+	response		PeasantMale
+}
+
+response PeasantFemale
+{
+	sentence PS_FEMALE
+}
+rule PeasantFemaleIdle
+{
+	criteria		IsPeasant IsFemale ConceptTalkIdle
+	response		PeasantFemale
+}
+rule PeasantFemaleUse
+{
+	criteria		IsPeasant IsFemale ConceptTalkUse
+	response		PeasantFemale
+}
+
+response PeasantPain
+{
+	sentence PS_PAIN
+}
+rule PeasantPain
+{
+	criteria		IsPeasant ConceptTalkPain
+	response		PeasantPain
+}
+
+response PeasantStartle
+{
+	sentence PS_STARTLE
+}
+rule PeasantStartle
+{
+	criteria		IsPeasant ConceptPeasantStartle
+	response		PeasantStartle
+}
+
+response PeasantFear
+{
+	sentence PS_FEAR
+}
+rule PeasantFear
+{
+	criteria		IsPeasant ConceptPeasantFear
+	response		PeasantFear
+}
+
+response PeasantScream
+{
+	sentence PS_SCREAM
+}
+rule PeasantScream
+{
+	criteria		IsPeasant ConceptPeasantScream
+	response		PeasantScream
+}
+
+

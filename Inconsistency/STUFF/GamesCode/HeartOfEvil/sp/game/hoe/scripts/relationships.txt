@@ -1,0 +1,402 @@
+relationships
+{
+	group
+	{
+		name "barnacle"
+		member CLASS_BARNACLE
+	}
+	group
+	{
+		name "charlie"
+		member CLASS_CHARLIE
+	}
+	group
+	{
+		name "grunt"
+		member CLASS_HUMAN_GRUNT
+		member CLASS_GRUNT_MEDIC
+		member CLASS_SOG
+	}
+	group
+	{
+		name "helicopter"
+		member CLASS_HUEY
+		member CLASS_HUEY_FRIEND
+	}
+	group
+	{
+		name "monster"
+		member CLASS_BULLSQUID
+		member CLASS_GORILLA
+		member CLASS_HOUNDEYE
+		member CLASS_KOPHYAEGER
+		member CLASS_KOPHYAEGER_ADULT
+		member CLASS_SPX
+		member CLASS_SPX_BABY
+		member CLASS_SPX_FLYER
+		member CLASS_SUPERZOMBIE
+		member CLASS_VORTIGAUNT
+	}
+	group
+	{
+		name "peasant"
+		member CLASS_PEASANT
+	}
+	group
+	{
+		name "player_ally"
+		member CLASS_BARNEY
+		member CLASS_BARNEY_ZOMBIE
+		member CLASS_GRUNT_MEDIC_FRIEND
+		member CLASS_HUEY_FRIEND
+		member CLASS_HUMAN_GRUNT_FRIEND
+		member CLASS_MIKEFORCE
+		member CLASS_MIKEFORCE_MEDIC
+		member CLASS_SPX_FRIEND
+		member CLASS_SUPERZOMBIE_FRIEND
+	}
+	group
+	{
+		name "human"
+		member CLASS_BARNEY
+		member CLASS_CHARLIE
+		member CLASS_GRUNT_MEDIC
+		member CLASS_GRUNT_MEDIC_FRIEND
+		member CLASS_HUMAN_GRUNT
+		member CLASS_HUMAN_GRUNT_FRIEND
+		member CLASS_MIKEFORCE
+		member CLASS_MIKEFORCE_MEDIC
+		member CLASS_PEASANT
+		member CLASS_SOG
+	}
+	group
+	{
+		name "human_ally"
+		member CLASS_BARNEY
+		member CLASS_GRUNT_MEDIC_FRIEND
+		member CLASS_HUMAN_GRUNT_FRIEND
+		member CLASS_MIKEFORCE
+		member CLASS_MIKEFORCE_MEDIC
+	}
+
+	// Only humans get barnacled
+	barnacle
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 0
+		}
+		human
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	charlie
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 0
+		}
+		player_ally
+		{
+			disposition D_HT
+			priority 0
+		}
+		charlie
+		{
+			disposition D_LI
+			priority 0
+		}
+		grunt
+		{
+			disposition D_HT
+			priority 0
+		}
+		monster
+		{
+			disposition D_HT
+			priority 0
+		}
+
+		// CLASS_HUEY_FRIEND is in player_ally
+		// Game code changes this to D_FR if huey attacks the NPC.
+		// Game code changes this to D_NU if we don't have RPG.
+		CLASS_HUEY
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	grunt
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 0
+		}
+		player_ally
+		{
+			disposition D_HT
+			priority 0
+		}
+		charlie
+		{
+			disposition D_HT
+			priority 0
+		}
+		grunt
+		{
+			disposition D_LI
+			priority 0
+		}
+		monster
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	monster
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 0
+		}
+		player_ally
+		{
+			disposition D_HT
+			priority 0
+		}
+		charlie
+		{
+			disposition D_HT
+			priority 0
+		}
+		grunt
+		{
+			disposition D_HT
+			priority 0
+		}
+		helicopter
+		{
+			disposition D_NU // or D_FR?
+			priority 0
+		}
+		peasant
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	CLASS_SPX_FLYER
+	{
+		helicopter
+		{
+			disposition D_FR
+			priority 0
+		}
+	}
+
+	peasant
+	{
+		monster
+		{
+			disposition D_FR
+			priority 0
+		}
+		peasant
+		{
+			disposition D_LI
+			priority 0
+		}
+	}
+
+	player_ally
+	{
+		CLASS_PLAYER
+		{
+			disposition D_LI
+			priority 0
+		}
+		player_ally
+		{
+			disposition D_LI
+			priority 0
+		}
+		charlie
+		{
+			disposition D_HT
+			priority 0
+		}
+		grunt
+		{
+			disposition D_HT
+			priority 0
+		}
+		monster
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	human_ally
+	{
+		// CLASS_HUEY_FRIEND is in player_ally
+		// Game code changes this to D_FR if huey attacks the NPC.
+		// Game code changes this to D_NU if we don't have RPG.
+		CLASS_HUEY
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	// CLASS_HUEY_FRIEND is in player_ally
+	CLASS_HUEY
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 0
+		}
+		player_ally
+		{
+			disposition D_HT
+			priority 0
+		}
+		charlie
+		{
+			disposition D_HT
+			priority 0
+		}
+		grunt
+		{
+			disposition D_LI
+			priority 0
+		}
+		monster
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+
+	CLASS_SPX_BABY
+	{
+		CLASS_BULLSQUID
+		{
+			disposition D_FR
+			priority 0
+		}
+	}
+
+	CLASS_BULLSQUID
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 1
+		}
+		player_ally
+		{
+			disposition D_HT
+			priority 1
+		}
+		charlie
+		{
+			disposition D_HT
+			priority 1
+		}
+		grunt
+		{
+			disposition D_HT
+			priority 1
+		}
+		helicopter
+		{
+			disposition D_NU // or D_FR?
+			priority 1
+		}
+		peasant
+		{
+			disposition D_HT
+			priority 1
+		}
+		CLASS_BULLSQUID
+		{
+			disposition D_HT
+			priority 11 // NEMESIS
+		}
+		CLASS_CHUMTOAD
+		{
+			disposition D_HT
+			priority 0 // will ignore if other enemy available
+		}
+		CLASS_SPX_BABY
+		{
+			disposition D_HT
+			priority 0 // will ignore if other enemy available
+		}
+	}
+
+	CLASS_GORILLA
+	{
+		CLASS_GORILLA
+		{
+			disposition D_HT
+			priority 11 // NEMESIS
+		}
+	}
+	
+	CLASS_SUPERZOMBIE
+	{
+		CLASS_SUPERZOMBIE
+		{
+			disposition D_HT
+			priority 11 // NEMESIS
+		}
+	}
+
+	CLASS_SNARK
+	{
+		CLASS_PLAYER
+		{
+			disposition D_HT
+			priority 0
+		}
+		charlie
+		{
+			disposition D_HT
+			priority 0
+		}
+		grunt
+		{
+			disposition D_HT
+			priority 0
+		}
+		monster
+		{
+			disposition D_HT
+			priority 0
+		}
+		peasant
+		{
+			disposition D_HT
+			priority 0
+		}
+		player_ally
+		{
+			disposition D_HT
+			priority 0
+		}
+	}
+}
+

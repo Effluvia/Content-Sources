@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "sarge"
+{
+  channel "speech"
+  {
+    event speak "NPC_Sarge.GetInChopper"
+    {
+      time 0.006667 1.276871
+      param "NPC_Sarge.GetInChopper"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.000000 2.500000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,22 @@
+// HOE: this is copied from "halflife/~elev1_pan"
+// FIXME: just change texture in affected maps
+
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmapSelfIllum
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 2.5
+	"$basetexture" "halflife/~elev1_pan"
+	"$selfillum" 1
+	"$surfaceprop" "computer"
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 8
+		}
+	}
+}
+

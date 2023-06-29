@@ -1,0 +1,155 @@
+// Choreo version 1
+actor "officer1"
+{
+  channel "speech"
+  {
+    event speak "speak0"
+    {
+      time 1.120000 3.407801
+      param "Officer1.0"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event gesture "g_pipe_out"
+    {
+      time 0.000000 4.804828
+      param "g_pipe_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.209029
+        "loop" 0.420771
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "pipe_in"
+    {
+      time 4.460000 6.500000
+      param "g_pipe_in"
+      absolutetags playback_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.011494 4.335172
+      param "!player"
+    }
+    event lookat "Look at officer2"
+    {
+      time 4.346207 6.515862
+      param "officer2"
+    }
+    event lookat "Look at !player"
+    {
+      time 6.552759 7.382645
+      param "!player"
+      event_ramp leftedge curve_default_to_curve_default 1.000
+      {
+        0.6381 0.9737
+      }
+    }
+  }
+  faceposermodel "models\officer1.mdl"
+}
+
+actor "officer2"
+{
+  channel "speech"
+  {
+    event speak "Officer2.0"
+    {
+      time 4.346206 6.114732
+      param "Officer2.0"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event gesture "g_cigar_out"
+    {
+      time 3.526667 6.400231
+      param "g_cigar_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.240000
+        "loop" 0.563760
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_in"
+    {
+      time 5.926667 7.300000
+      param "g_cigar_in"
+      absolutetags playback_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.000000 5.982759
+      param "!player"
+    }
+  }
+  faceposermodel "models\officer2.mdl"
+}
+
+mapname "C:\Program Files\Steam\SteamApps\SourceMods\hoe\maps\nama2.bsp"
+scalesettings
+{
+  "SceneRampTool" "100"
+  "RampTool" "96"
+  "GestureTool" "46"
+  "ExpressionTool" "100"
+  "CChoreoView" "100"
+}
+fps 30
+snap off
+ignorePhonemes off

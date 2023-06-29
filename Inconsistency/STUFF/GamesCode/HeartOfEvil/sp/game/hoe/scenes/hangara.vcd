@@ -1,0 +1,66 @@
+// Choreo version 1
+actor "barney"
+{
+  channel "speech"
+  {
+    event speak "barney26"
+    {
+      time 0.760000 4.382359
+      param "barney\barney26.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "barney27"
+    {
+      time 7.586667 10.553017
+      param "barney\barney27.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "animation"
+  {
+    event sequence "buttonpush"
+    {
+      time 0.026666 1.126666
+      param "buttonpush"
+      fixedlength
+    }
+  }
+}
+
+actor "radio"
+{
+  channel "speech"
+  {
+    event speak "mikeforce10"
+    {
+      time 4.993333 7.179728
+      param "mikeforce\mikeforce10.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "mikeforce11"
+    {
+      time 11.000001 13.185670
+      param "mikeforce\mikeforce11.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

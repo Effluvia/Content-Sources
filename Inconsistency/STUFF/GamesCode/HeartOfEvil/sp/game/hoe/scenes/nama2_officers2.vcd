@@ -1,0 +1,425 @@
+// Choreo version 1
+actor "officer1"
+{
+  channel "speech"
+  {
+    event speak "Officer1.3"
+    {
+      time 8.240000 15.029024
+      param "Officer1.3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer1.4"
+    {
+      time 15.719999 22.408707
+      param "Officer1.4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer1.5"
+    {
+      time 25.633333 28.418640
+      param "Officer1.5"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer1.6"
+    {
+      time 28.793335 37.026985
+      param "Officer1.6"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer1.7"
+    {
+      time 43.760002 49.686169
+      param "Officer1.7"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event gesture "g_pipe_out"
+    {
+      time 6.806668 40.149197
+      param "g_pipe_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.027748
+        "loop" 0.037748
+        "end" 0.990313
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_pipe_in"
+    {
+      time 39.306664 40.813332
+      param "g_pipe_in"
+      absolutetags playback_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_pipe_out"
+    {
+      time 42.226669 50.445976
+      param "g_pipe_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.122151
+        "loop" 0.167114
+        "end" 0.949097
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_pipe_in"
+    {
+      time 49.533337 50.966667
+      param "g_pipe_in"
+      absolutetags playback_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at officer2"
+    {
+      time 0.006667 8.173335
+      param "officer2"
+      event_ramp
+      {
+        0.9760 1.0000
+        8.1667 1.0000
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 7.993334 20.786669
+      param "!player"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4880 0.9684
+        12.7933 1.0000
+      }
+    }
+    event lookat "Look at officer2"
+    {
+      time 20.379999 25.726667
+      param "officer2"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4900 0.9632
+        5.3467 1.0000
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 25.300001 33.199997
+      param "!player"
+      event_ramp
+      {
+        0.4940 0.9789
+        7.6387 0.9842
+      }
+    }
+    event lookat "Look at officer2"
+    {
+      time 33.000004 35.033337
+      param "officer2"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4900 0.9789
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 34.653336 38.900002
+      param "!player"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4900 0.9737
+        4.2467 1.0000
+      }
+    }
+    event lookat "Look at officer2"
+    {
+      time 38.733334 43.213329
+      param "officer2"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4840 0.9789
+        4.4800 1.0000
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 43.026669 50.960003
+      param "!player"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4900 0.9632
+        7.9333 1.0000
+      }
+    }
+  }
+  faceposermodel "models\officer1.mdl"
+}
+
+actor "officer2"
+{
+  channel "speech"
+  {
+    event speak "Officer2.1"
+    {
+      time 1.460000 6.941360
+      param "Officer2.1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer2.2"
+    {
+      time 22.973335 23.671204
+      param "Officer2.2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer2.3"
+    {
+      time 38.226665 42.826393
+      param "Officer2.3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event gesture "g_cigar_out"
+    {
+      time 0.020000 11.900662
+      param "g_cigar_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.079720
+        "loop" 0.099650
+        "end" 0.951911
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_in"
+    {
+      time 10.553333 12.353333
+      param "g_cigar_in"
+      absolutetags playback_time
+      {
+        "apex" 0.431111
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_out"
+    {
+      time 20.506666 24.891264
+      param "g_cigar_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.221255
+        "loop" 0.447932
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_in"
+    {
+      time 24.353333 25.913332
+      param "g_cigar_in"
+      absolutetags playback_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_out"
+    {
+      time 36.773335 46.595993
+      param "g_cigar_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.095018
+        "loop" 0.118773
+        "end" 0.957921
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_in"
+    {
+      time 45.506668 46.866669
+      param "g_cigar_in"
+      absolutetags playback_time
+      {
+        "apex" 0.497059
+        "loop" 0.955882
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.006667 7.260001
+      param "!player"
+      event_ramp leftedge curve_default_to_curve_default 1.000
+      {
+        6.9080 0.9842
+      }
+    }
+    event lookat "Look at officer1"
+    {
+      time 7.053334 11.206668
+      param "officer1"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4960 0.9526
+        4.1533 1.0000
+      }
+    }
+    event lookat "Look at officer1"
+    {
+      time 19.440001 34.926666
+      param "officer1"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4960 0.9842
+        15.4867 1.0000
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 34.873333 50.953331
+      param "!player"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.4940 0.9737
+        16.0800 1.0000
+      }
+    }
+    event gesture "g_picture"
+    {
+      time 0.960000 4.026667
+      param "g_picture"
+      absolutetags playback_time
+      {
+        "apex" 0.249783
+        "loop" 0.769565
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.315789
+        "loop" 0.631579
+        "end" 1.052632
+      }
+      sequenceduration 2.000000
+    }
+  }
+  faceposermodel "models\officer2.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 30
+snap off
+ignorePhonemes off

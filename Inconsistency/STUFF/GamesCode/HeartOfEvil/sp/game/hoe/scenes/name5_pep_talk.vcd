@@ -1,0 +1,153 @@
+// Choreo version 1
+event section "pause_medic_move"
+{
+  time 0.913334 -1.000000
+  param "noaction"
+}
+actor "pep_talk.leader"
+{
+  channel "speech"
+  {
+    event speak "NPC_MikeForce.PepTalk"
+    {
+      time 5.986667 22.700134
+      param "NPC_MikeForce.PepTalk"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+    event moveto "leader.move"
+    {
+      time 2.000000 5.000000
+      param "pep_talk.medic"
+      param2 "Walk"
+      distancetotarget 50.00
+    }
+  }
+  channel "face"
+  {
+    event face "face_medic"
+    {
+      time 1.000000 22.000000
+      param "pep_talk.medic"
+    }
+  }
+  channel "look"
+  {
+    event lookat "look_medic"
+    {
+      time 1.500000 22.000000
+      param "pep_talk.medic"
+    }
+  }
+  faceposermodel "models\mikeforce\mikeforce.mdl"
+}
+
+actor "pep_talk.medic"
+{
+  channel "move"
+  {
+    event moveto "medic.move"
+    {
+      time 0.020000 -1.000000
+      param "!target1"
+      param2 "Run"
+      resumecondition
+    }
+  }
+  channel "face"
+  {
+    event face "face_leader"
+    {
+      time 6.393334 22.886667
+      param "pep_talk.leader"
+    }
+    event face "face_barricade"
+    {
+      time 1.006667 2.513334
+      param "!target2"
+    }
+  }
+  channel "look"
+  {
+    event lookat "look_leader"
+    {
+      time 6.906667 22.920000
+      param "pep_talk.leader"
+    }
+  }
+  channel "animate"
+  {
+    event sequence "medic.kick"
+    {
+      time 1.493334 2.293334
+      param "frontkick"
+      fixedlength
+    }
+    event sequence "medic.kick"
+    {
+      time 3.413334 4.213334
+      param "frontkick"
+      fixedlength
+    }
+  }
+  channel "speech"
+  {
+    event speak "NPC_MikeForce.MedicPanic"
+    {
+      time 1.006667 4.855601
+      param "NPC_MikeForce.MedicPanic"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\armymedic\armymedic.mdl"
+}
+
+actor "pep_talk.listener"
+{
+  channel "speech"
+  {
+    event speak "NPC_MikeForce.BeQuiet"
+    {
+      time 23.746668 25.670839
+      param "NPC_MikeForce.BeQuiet"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+    event face "listener_face"
+    {
+      time 25.707951 26.207951
+      param "!target4"
+    }
+  }
+  channel "move"
+  {
+    event moveto "listener_move"
+    {
+      time 24.156668 24.656668
+      param "!target3"
+      param2 "Walk"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

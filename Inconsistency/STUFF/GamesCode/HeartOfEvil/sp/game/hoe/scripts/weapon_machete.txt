@@ -1,0 +1,96 @@
+// Crowbar
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HOE_Machete"
+	"viewmodel"				"models/machete/v_machete/v_machete.mdl"
+	"playermodel"			"models/machete/w_machete/w_machete.mdl"
+	"anim_prefix"			"crowbar"
+	"bucket"				"0"
+	"bucket_position"		"1"
+
+	"clip_size"				"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"				"4"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Machete.Single"
+		"melee_hit"			"Weapon_xxx.Melee_Hit"
+		"melee_hit_world"	"Weapon_xxx.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"font"		"HOEWeaponIcons"
+			"character" "G"
+		}
+		"weapon_s"
+		{
+			"font"		"HOEWeaponIconsSelected"
+			"character" "G"
+		}
+//		"weapon"
+//		{
+//			"file"		"sprites/640namhud1"
+//			"x"			"8"
+//			"y"			"12"
+//			"width"		"170"
+//			"height"	"45"
+//		}
+//		"weapon_s"
+//		{	
+//			"file"		"sprites/640namhud1"
+//			"x"			"8"
+//			"y"			"12"
+//			"width"		"170"
+//			"height"	"45"
+////			"file"		"sprites/640namhud1"
+////			"x"			"8"
+////			"y"			"57"
+////			"width"		"170"
+////			"height"	"45"
+//		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+
+	WeaponSelectionHUD
+	{
+		"angles"		"90 90 -90"
+		"origin"		"-50 0 3"
+		"anim"			"idle"
+	}
+}

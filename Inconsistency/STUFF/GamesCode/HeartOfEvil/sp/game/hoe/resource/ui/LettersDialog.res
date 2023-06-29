@@ -1,0 +1,48 @@
+"Resource/UI/LettersDialog.res"
+{
+	"letters"
+	{
+		"ControlName"		"CLettersDialog"
+		"fieldName"		"letters"
+		"xpos"		"20"
+		"ypos"		"20"
+		"wide"		"600"
+		"tall"		"400"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"settitlebarvisible"		"1"
+		"title"		"Letters"
+	}
+	"ListOfLetters"
+	{
+		"ControlName"		"ListPanel"
+		"fieldName"		"ListOfLetters"
+		"xpos"		"8"
+		"ypos"		"30"
+		"wide"		"180"
+		"tall"		"350"
+		"autoResize"		"2"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+	"LetterText"
+	{
+		"ControlName"		"RichText"
+		"fieldName"		"LetterText"
+		"xpos"		"194"
+		"ypos"		"30"
+		"wide"		"400"
+		"tall"		"350"
+		"autoResize"		"3"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"maxchars"		"-1"
+	}
+}

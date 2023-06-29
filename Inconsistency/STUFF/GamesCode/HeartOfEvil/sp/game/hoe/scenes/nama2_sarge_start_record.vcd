@@ -1,0 +1,44 @@
+// Choreo version 1
+actor "sarge"
+{
+  channel "animation"
+  {
+    event gesture "start"
+    {
+      time 2.546666 3.546666
+      param "g_start_record"
+    }
+  }
+  channel "speech"
+  {
+    event speak "NPC_Sarge.LightMusic"
+    {
+      time 0.013333 2.697868
+      param "NPC_Sarge.LightMusic"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.006666 2.586666
+      param "!player"
+    }
+  }
+  faceposermodel "models\sarge.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

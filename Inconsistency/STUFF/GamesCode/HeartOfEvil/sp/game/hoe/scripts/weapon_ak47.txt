@@ -1,0 +1,128 @@
+// Small Machine Gun 1
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HOE_AK47"
+	"viewmodel"				"models/AK47/v_ak47/v_ak47.mdl"
+	"playermodel"			"models/AK47/w_ak47/w_ak47.mdl"
+	"anim_prefix"			"smg2"
+	"bucket"				"2"
+	"bucket_position"		"1"
+
+	"clip_size"				"30"
+	"clip2_size"			"-1"
+
+	"default_clip"			"30"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"7_62x39mm_M1943"
+	"secondary_ammo"		"None"
+
+	"weight"				"11"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload"			"Weapon_AK47.ClipInsert"
+		"reload_npc"		"Weapon_SMG1.NPC_Reload"
+		"empty"				"Weapon_SMG1.Empty"
+		"single_shot"		"Weapon_AK47.Single"
+//		"single_shot_npc"	"Weapon_AK47.Burst"
+		"single_shot_npc"	"Weapon_AK47.Single"
+		"special1"			"Weapon_SMG1.Special1"
+		"special2"			"Weapon_SMG1.Special2"
+		"double_shot"		"Weapon_SMG1.Double"
+		"burst"				"Weapon_AK47.Burst"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"font"		"HOEWeaponIcons"
+			"character" "A"
+		}
+		"weapon_s"
+		{
+			"font"		"HOEWeaponIconsSelected"
+			"character" "A"
+		}
+		"weapon_small"
+		{
+			"font"		"HOEWeaponIconsSmall"
+			"character" "A"
+		}
+		"ammo"
+		{
+			"font"		"HOEAmmoIcons"
+			"character" "f"
+		}
+//		"weapon"
+//		{
+//			"file"		"sprites/640namhud2"
+//			"x"			"40"
+//			"y"			"147"
+//			"width"		"170"
+//			"height"	"45"
+//		}
+//		"weapon_s"
+//		{	
+//			"file"		"sprites/640namhud2"
+//			"x"			"40"
+//			"y"			"147"
+//			"width"		"170"
+//			"height"	"45"
+////			"file"		"sprites/640namhud2"
+////			"x"			"40"
+////			"y"			"192"
+////			"width"		"170"
+////			"height"	"45"
+//		}
+//		"ammo"
+//		{
+//			"file"		"sprites/640namhud1"
+//			"x"			"208"
+//			"y"			"184"
+//			"width"		"24"
+//			"height"	"24"
+//		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+
+	WeaponSelectionHUD
+	{
+		"angles"		"0 -180 0"
+		"origin"		"-60 2 5"
+		"anim"			"idle"
+	}
+
+	ViewModelFudge
+	{
+		"origin"		"-3 0 0"
+	}
+
+	IronSights
+	{
+		"origin"	"-5.54 -8 1.4"
+		"angles"	"-0.8 0 0"
+
+// Alternate values if changing FOV
+// "origin"	"-5.54 0 1.6"
+// "fov" 55
+	}
+}

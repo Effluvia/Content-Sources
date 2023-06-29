@@ -1,0 +1,39 @@
+// FIXME: wrong footstep sounds for non-hgrunt
+
+// Walking
+$animation a_walkS WalkS loop LX LY startloop 0 rotateto -180 alignto idle fps 30
+$animation a_walkSE WalkSW loop LX LY startloop 0 rotateto -135 alignto idle fps 30
+$animation a_walkE WalkW loop LX LY startloop 0 rotateto -90 alignto idle fps 30
+$animation a_walkNE WalkNW loop LX LY startloop 0 rotateto -45 alignto idle fps 30
+$animation a_walkN seq_walk loop LX LY startloop 0 rotateto 0 alignto idle fps 30
+$animation a_walkNW WalkNE loop LX LY startloop 0 rotateto 45 alignto idle fps 30
+$animation a_walkW WalkE loop LX LY startloop 0 rotateto 90 alignto idle fps 30
+$animation a_walkSW WalkSE loop LX LY startloop 0 rotateto 135 alignto idle fps 30
+$sequence walk  {
+    { event AE_NPC_RIGHTFOOT 3 "NPC_HGrunt.FootstepRight" }
+    { event AE_NPC_LEFTFOOT 18 "NPC_HGrunt.FootstepLeft" }
+    activity ACT_WALK 1
+
+    a_walkS a_walkSE a_walkE a_walkNE a_walkN a_walkNW a_walkW a_walkSW a_walkS
+    blendwidth 9
+    blend move_yaw -180 180
+}
+
+// Running
+$animation a_runS RunS loop LX LY startloop 0 rotateto -180 alignto idle fps 50
+$animation a_runSE RunSW loop LX LY startloop 0 rotateto -135 alignto idle fps 50
+$animation a_runE RunW loop LX LY startloop 0 rotateto -90 alignto idle fps 50
+$animation a_runNE RunNW loop LX LY startloop 0 rotateto -45 alignto idle fps 50
+$animation a_runN seq_run loop LX LY startloop 0 rotateto 0 alignto idle fps 50
+$animation a_runNW RunNE loop LX LY startloop 0 rotateto 45 alignto idle fps 50
+$animation a_runW RunE loop LX LY startloop 0 rotateto 90 alignto idle fps 50
+$animation a_runSW RunSE loop LX LY startloop 0 rotateto 135 alignto idle fps 50
+$sequence run {
+    { event AE_NPC_RIGHTFOOT 14 "NPC_HGrunt.RunFootstepRight" }
+    { event AE_NPC_LEFTFOOT 31 "NPC_HGrunt.RunFootstepLeft" }
+    activity ACT_RUN 1
+    
+    a_runS a_runSE a_runE a_runNE a_runN a_runNW a_runW a_runSW a_runS
+    blendwidth 9
+    blend move_yaw -180 180
+}

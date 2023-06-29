@@ -1,0 +1,481 @@
+criterion "IsArmyMedic" "classname" "npc_mikeforce_medic" required
+
+response ArmyMedicAlert
+{
+	sentence MF_ALERT
+}
+rule ArmyMedicAlert
+{
+	criteria		IsArmyMedic ConceptTalkAlert
+	response		ArmyMedicAlert
+}
+
+response ArmyMedicHello
+{
+	sentence MF_HELLO
+}
+rule ArmyMedicHello
+{
+	criteria		IsArmyMedic ConceptTalkHello
+	response		ArmyMedicHello
+}
+
+response ArmyMedicCharge
+{
+	sentence MF_CHARGE
+}
+rule ArmyMedicCharge
+{
+	criteria		IsArmyMedic ConceptTalkCharge EnemyNotSpx
+	response		ArmyMedicCharge
+}
+
+response ArmyMedicCover
+{
+	sentence MF_COVER
+}
+rule ArmyMedicCover
+{
+	criteria		IsArmyMedic ConceptTalkCover
+	response		ArmyMedicCover
+}
+
+response ArmyMedicDead
+{
+	sentence MF_DEAD
+}
+rule ArmyMedicDead
+{
+	criteria		IsArmyMedic ConceptTalkDead
+	response		ArmyMedicDead
+}
+
+response ArmyMedicExpl
+{
+	sentence MF_EXPL
+}
+rule ArmyMedic
+{
+	criteria		IsArmyMedic ConceptTalkExpl
+	response		ArmyMedicExpl
+}
+
+response ArmyMedicFound
+{
+	sentence MF_FOUND
+}
+rule ArmyMedicFound
+{
+	criteria		IsArmyMedic ConceptTalkFound
+	response		ArmyMedicFound
+}
+
+response ArmyMedicGren
+{
+	sentence MF_GREN
+}
+rule ArmyMedicGren
+{
+	criteria		IsArmyMedic ConceptTalkGren
+	response		ArmyMedicGren
+}
+
+response ArmyMedicHeal
+{
+	sentence MF_HEAL
+}
+rule ArmyMedicHeal
+{
+	criteria		IsArmyMedic ConceptTalkHeal
+	response		ArmyMedicHeal
+}
+
+response ArmyMedicHealed
+{
+	sentence MF_HEALED
+}
+rule ArmyMedicHealed
+{
+	criteria		IsArmyMedic ConceptTalkHealed
+	response		ArmyMedicHealed
+}
+
+response ArmyMedicHear
+{
+	sentence MF_HEAR
+}
+rule ArmyMedicHear
+{
+	criteria		IsArmyMedic ConceptTalkHear
+	response		ArmyMedicHear
+}
+
+response ArmyMedicHello
+{
+	sentence MF_HELLO
+}
+rule ArmyMedicHello
+{
+	criteria		IsArmyMedic ConceptTalkHello
+	response		ArmyMedicHello
+}
+
+response ArmyMedicHelp
+{
+	sentence MF_HELP
+}
+rule ArmyMedicHelp
+{
+	criteria		IsArmyMedic ConceptTalkHelp
+	response		ArmyMedicHelp
+}
+
+response ArmyMedicHurtA
+{
+	sentence MF_HURTA
+}
+rule ArmyMedicHurtA
+{
+	criteria		IsArmyMedic ConceptTalkHurtA
+	response		ArmyMedicHurtA
+}
+
+response ArmyMedicHurtB
+{
+//	sentence MF_HURTB // these mention a medic, but this NPC is a medic
+	sentence MF_HURTC
+}
+rule ArmyMedicHurtB
+{
+	criteria		IsArmyMedic ConceptTalkHurtB
+	response		ArmyMedicHurtB
+}
+
+response ArmyMedicHurtC
+{
+	sentence MF_HURTC
+}
+rule ArmyMedicHurtC
+{
+	criteria		IsArmyMedic ConceptTalkHurtC
+	response		ArmyMedicHurtC
+}
+
+response ArmyMedicIdle
+{
+	sentence MF_IDLE
+}
+rule ArmyMedicIdle
+{
+	criteria		IsArmyMedic ConceptTalkIdle
+	response		ArmyMedicIdle
+}
+
+// This guy shouldn't sing drunken_mike_song
+response ArmyMedicKill
+{
+	sentence !MF_KILL0
+	sentence !MF_KILL1
+	sentence !MF_KILL2
+	sentence !MF_KILL3
+	sentence !MF_KILL4
+	sentence !MF_KILL5
+	sentence !MF_KILL6
+	sentence !MF_KILL7
+}
+rule ArmyMedicKill
+{
+	criteria		IsArmyMedic ConceptTalkKill
+	response		ArmyMedicKill
+}
+
+response ArmyMedicMad
+{
+	sentence MF_MAD
+}
+rule ArmyMedicMad
+{
+	criteria		IsArmyMedic ConceptTalkMad
+	response		ArmyMedicMad
+}
+
+response ArmyMedicMedic
+{
+	sentence MF_MEDIC
+}
+rule ArmyMedicMedic
+{
+	criteria		IsArmyMedic ConceptTalkMedic
+	response		ArmyMedicMedic
+}
+
+response ArmyMedicMortal
+{
+	sentence MF_MORTAL
+}
+rule ArmyMedicMortal
+{
+	criteria		IsArmyMedic ConceptTalkMortal
+	response		ArmyMedicMortal
+}
+
+response ArmyMedicNoShoot
+{
+	sentence MF_NOSHOOT
+}
+rule ArmyMedicNoShoot
+{
+	criteria		IsArmyMedic ConceptTalkNoShoot
+	response		ArmyMedicNoShoot
+}
+
+response ArmyMedicOutway
+{
+	sentence MF_OUTWAY
+}
+rule ArmyMedicOutway
+{
+	criteria		IsArmyMedic ConceptTalkOutway
+	response		ArmyMedicOutway
+}
+
+response ArmyMedicPain
+{
+	sentence MF_PAIN
+}
+rule ArmyMedicPain
+{
+	criteria		IsArmyMedic ConceptTalkPain
+	response		ArmyMedicPain
+}
+
+response ArmyMedicPIdle
+{
+	sentence MF_PIDLE
+}
+rule ArmyMedicPIdle
+{
+	criteria		IsArmyMedic ConceptTalkPIdle
+	response		ArmyMedicPIdle
+}
+
+response ArmyMedicPOk
+{
+	sentence MF_POK
+}
+rule ArmyMedicPOk
+{
+	criteria		IsArmyMedic ConceptTalkPOk
+	response		ArmyMedicPOk
+}
+
+response ArmyMedicQuestion
+{
+	sentence MF_QUESTION
+}
+rule ArmyMedicQuestion
+{
+	criteria		IsArmyMedic ConceptTalkQuestion
+	response		ArmyMedicQuestion
+}
+
+response ArmyMedicShot
+{
+	sentence MF_SHOT
+}
+rule ArmyMedicShot
+{
+	criteria		IsArmyMedic ConceptTalkShot
+	response		ArmyMedicShot
+}
+
+response ArmyMedicSmell
+{
+	sentence MF_SMELL
+}
+rule ArmyMedicSmell
+{
+	criteria		IsArmyMedic ConceptTalkSmell
+	response		ArmyMedicSmell
+}
+
+response ArmyMedicSquadAckGeneric
+{
+	sentence MF_AFFIRMATIVE
+}
+rule ArmyMedicSquadAckGeneric
+{
+	criteria		IsArmyMedic ConceptTalkSquadAckGeneric
+	response		ArmyMedicSquadAckGeneric
+}
+
+response ArmyMedicSquadAckCheck
+{
+	sentence MF_CLEAR
+}
+rule ArmyMedicSquadAckCheck
+{
+	criteria		IsArmyMedic ConceptTalkSquadAckCheck
+	response		ArmyMedicSquadAckCheck
+}
+
+response ArmyMedicSquadAckRetreat
+{
+	sentence MF_RETREATING
+}
+rule ArmyMedicSquadAckRetreat
+{
+	criteria		IsArmyMedic ConceptTalkSquadAckRetreat
+	response		ArmyMedicSquadAckRetreat
+}
+
+response ArmyMedicSquadAckSearch
+{
+	sentence MF_SEARCHING
+}
+rule ArmyMedicSquadAckSearch
+{
+	criteria		IsArmyMedic ConceptTalkSquadAckSearch
+	response		ArmyMedicSquadAckSearch
+}
+
+response ArmyMedicSquadAckSuppress
+{
+	sentence MF_SURPRESSING
+}
+rule ArmyMedicSquadAckSuppress
+{
+	criteria		IsArmyMedic ConceptTalkSquadAckSuppress
+	response		ArmyMedicSquadAckSuppress
+}
+
+response ArmyMedicSquadAttack
+{
+	sentence MF_ATTACK
+}
+rule ArmyMedicSquadAttack
+{
+	criteria		IsArmyMedic ConceptTalkSquadAttack
+	response		ArmyMedicSquadAttack
+}
+
+response ArmyMedicSquadCheck
+{
+	sentence MF_CHECK
+}
+rule ArmyMedicSquadCheck
+{
+	criteria		IsArmyMedic ConceptTalkSquadCheck
+	response		ArmyMedicSquadCheck
+}
+
+response ArmyMedicSquadCome
+{
+	sentence MF_COME
+}
+rule ArmyMedicSquadCome
+{
+	criteria		IsArmyMedic ConceptTalkSquadCome
+	response		ArmyMedicSquadCome
+}
+
+response ArmyMedicSquadRetreat
+{
+	sentence MF_RETREAT
+}
+rule ArmyMedicSquadRetreat
+{
+	criteria		IsArmyMedic ConceptTalkSquadRetreat
+	response		ArmyMedicSquadRetreat
+}
+
+response ArmyMedicSquadSearch
+{
+	sentence MF_SEARCH
+}
+rule ArmyMedicSquadSearch
+{
+	criteria		IsArmyMedic ConceptTalkSquadSearch
+	response		ArmyMedicSquadSearch
+}
+
+response ArmyMedicSquadSuppress
+{
+	sentence MF_SURPRESS
+}
+rule ArmyMedicSquadSuppress
+{
+	criteria		IsArmyMedic ConceptTalkSquadSuppress
+	response		ArmyMedicSquadSuppress
+}
+
+response ArmyMedicStare
+{
+	sentence MF_STARE
+}
+rule ArmyMedicStare
+{
+	criteria		IsArmyMedic ConceptTalkStare
+	response		ArmyMedicStare
+}
+
+response ArmyMedicTaunt
+{
+	sentence MF_TAUNT
+}
+rule ArmyMedic
+{
+	criteria		IsArmyMedic ConceptTalkTaunt
+	response		ArmyMedicTaunt
+}
+
+response ArmyMedicThrow
+{
+	sentence MF_THROW
+}
+rule ArmyMedicThrow
+{
+	criteria		IsArmyMedic ConceptTalkThrow
+	response		ArmyMedicThrow
+}
+
+response ArmyMedicUnUse
+{
+	sentence MF_UNUSE
+}
+rule ArmyMedicUnUse
+{
+	criteria		IsArmyMedic ConceptTalkUnUse
+	response		ArmyMedicUnUse
+}
+
+response ArmyMedicUse
+{
+	sentence MF_USE
+}
+rule ArmyMedicUse
+{
+	criteria		IsArmyMedic ConceptTalkUse
+	response		ArmyMedicUse
+}
+
+response ArmyMedicWound
+{
+	sentence MF_WOUND
+}
+rule ArmyMedicWound
+{
+	criteria		IsArmyMedic ConceptTalkWound
+	response		ArmyMedicWound
+}
+
+response ArmyMedicZombie
+{
+	sentence MF_ZOMBIE
+}
+rule ArmyMedicZombie
+{
+	criteria		IsArmyMedic ConceptTalkCharge EnemyIsSpx
+	response		ArmyMedicZombie
+}
+

@@ -1,0 +1,374 @@
+criterion "IsBarney" "classname" "npc_barney" required
+
+// These sentence groups are all common/null:
+// BA_ALERT
+// BA_CHECK
+// BA_COME
+// BA_FOUND
+// BA_HEALED
+// BA_HELP
+// BA_MEDIC
+// BA_PIDLE
+// BA_POK
+// BA_SEARCH
+
+response BarneyHello
+{
+	sentence BA_HELLO
+}
+rule BarneyHello
+{
+	criteria		IsBarney ConceptTalkHello
+	response		BarneyHello
+}
+
+response BarneyCharge
+{
+	sentence BA_CHARGE
+}
+rule BarneyCharge
+{
+	criteria		IsBarney ConceptTalkCharge EnemyNotSpx
+	response		BarneyCharge
+}
+
+response BarneyCover
+{
+	sentence BA_COVER
+}
+rule BarneyCover
+{
+	criteria		IsBarney ConceptTalkCover
+	response		BarneyCover
+}
+
+response BarneyDead
+{
+	sentence BA_DEAD
+}
+rule BarneyDead
+{
+	criteria		IsBarney ConceptTalkDead
+	response		BarneyDead
+}
+
+response BarneyExpl
+{
+	sentence BA_EXPL
+}
+rule Barney
+{
+	criteria		IsBarney ConceptTalkExpl
+	response		BarneyExpl
+}
+
+response BarneyGren
+{
+	sentence BA_GREN
+}
+rule BarneyGren
+{
+	criteria		IsBarney ConceptTalkGren
+	response		BarneyGren
+}
+
+response BarneyHear
+{
+	sentence BA_HEAR
+}
+rule BarneyHear
+{
+	criteria		IsBarney ConceptTalkHear
+	response		BarneyHear
+}
+
+response BarneyHello
+{
+	sentence BA_HELLO
+}
+rule BarneyHello
+{
+	criteria		IsBarney ConceptTalkHello
+	response		BarneyHello
+}
+
+response BarneyHurtA
+{
+	sentence BA_HURTA
+}
+rule BarneyHurtA
+{
+	criteria		IsBarney ConceptTalkHurtA
+	response		BarneyHurtA
+}
+
+response BarneyHurtB
+{
+	sentence BA_HURTB
+}
+rule BarneyHurtB
+{
+	criteria		IsBarney ConceptTalkHurtB
+	response		BarneyHurtB
+}
+
+response BarneyHurtC
+{
+	sentence BA_HURTC
+}
+rule BarneyHurtC
+{
+	criteria		IsBarney ConceptTalkHurtC
+	response		BarneyHurtC
+}
+
+response BarneyIdle
+{
+	sentence BA_IDLE
+}
+rule BarneyIdle
+{
+	criteria		IsBarney ConceptTalkIdle
+	response		BarneyIdle
+}
+
+response BarneyKill
+{
+	sentence BA_KILL
+}
+rule BarneyKill
+{
+	criteria		IsBarney ConceptTalkKill
+	response		BarneyKill
+}
+
+response BarneyMad
+{
+	sentence BA_MAD
+}
+rule BarneyMad
+{
+	criteria		IsBarney ConceptTalkMad
+	response		BarneyMad
+}
+
+response BarneyMortal
+{
+	sentence BA_MORTAL
+}
+rule BarneyMortal
+{
+	criteria		IsBarney ConceptTalkMortal
+	response		BarneyMortal
+}
+
+response BarneyNoShoot
+{
+	sentence BA_NOSHOOT
+}
+rule BarneyNoShoot
+{
+	criteria		IsBarney ConceptTalkNoShoot
+	response		BarneyNoShoot
+}
+
+response BarneyOutway
+{
+	sentence BA_OUTWAY
+}
+rule BarneyOutway
+{
+	criteria		IsBarney ConceptTalkOutway
+	response		BarneyOutway
+}
+
+response BarneyPain
+{
+	sentence BA_PAIN
+}
+rule BarneyPain
+{
+	criteria		IsBarney ConceptTalkPain
+	response		BarneyPain
+}
+
+response BarneyQuestion
+{
+	sentence BA_QUESTION
+}
+rule BarneyQuestion
+{
+	criteria		IsBarney ConceptTalkQuestion
+	response		BarneyQuestion
+}
+
+response BarneyShot
+{
+	sentence BA_SHOT
+}
+rule BarneyShot
+{
+	criteria		IsBarney ConceptTalkShot
+	response		BarneyShot
+}
+
+response BarneySmell
+{
+	sentence BA_SMELL
+}
+rule BarneySmell
+{
+	criteria		IsBarney ConceptTalkSmell
+	response		BarneySmell
+}
+
+response BarneySquadAckGeneric
+{
+	sentence BA_AFFIRMATIVE
+}
+rule BarneySquadAckGeneric
+{
+	criteria		IsBarney ConceptTalkSquadAckGeneric
+	response		BarneySquadAckGeneric
+}
+
+response BarneySquadAckCheck
+{
+	sentence BA_CLEAR
+}
+rule BarneySquadAckCheck
+{
+	criteria		IsBarney ConceptTalkSquadAckCheck
+	response		BarneySquadAckCheck
+}
+
+response BarneySquadAckRetreat
+{
+	sentence BA_RETREATING
+}
+rule BarneySquadAckRetreat
+{
+	criteria		IsBarney ConceptTalkSquadAckRetreat
+	response		BarneySquadAckRetreat
+}
+
+response BarneySquadAckSearch
+{
+	sentence BA_SEARCHING
+}
+rule BarneySquadAckSearch
+{
+	criteria		IsBarney ConceptTalkSquadAckSearch
+	response		BarneySquadAckSearch
+}
+
+response BarneySquadAckSuppress
+{
+	sentence BA_SURPRESSING
+}
+rule BarneySquadAckSuppress
+{
+	criteria		IsBarney ConceptTalkSquadAckSuppress
+	response		BarneySquadAckSuppress
+}
+
+response BarneySquadAttack
+{
+	sentence BA_ATTACK
+}
+rule BarneySquadAttack
+{
+	criteria		IsBarney ConceptTalkSquadAttack
+	response		BarneySquadAttack
+}
+
+response BarneySquadRetreat
+{
+	sentence BA_RETREAT
+}
+rule BarneySquadRetreat
+{
+	criteria		IsBarney ConceptTalkSquadRetreat
+	response		BarneySquadRetreat
+}
+
+response BarneySquadSuppress
+{
+	sentence BA_SURPRESS
+}
+rule BarneySquadSuppress
+{
+	criteria		IsBarney ConceptTalkSquadSuppress
+	response		BarneySquadSuppress
+}
+
+response BarneyStare
+{
+	sentence BA_STARE
+}
+rule BarneyStare
+{
+	criteria		IsBarney ConceptTalkStare
+	response		BarneyStare
+}
+
+response BarneyTaunt
+{
+	sentence BA_TAUNT
+}
+rule Barney
+{
+	criteria		IsBarney ConceptTalkTaunt
+	response		BarneyTaunt
+}
+
+response BarneyThrow
+{
+	sentence BA_THROW
+}
+rule BarneyThrow
+{
+	criteria		IsBarney ConceptTalkThrow
+	response		BarneyThrow
+}
+
+response BarneyUnUse
+{
+	sentence BA_UNUSE
+}
+rule BarneyUnUse
+{
+	criteria		IsBarney ConceptTalkUnUse
+	response		BarneyUnUse
+}
+
+response BarneyUse
+{
+	sentence BA_USE
+}
+rule BarneyUse
+{
+	criteria		IsBarney ConceptTalkUse
+	response		BarneyUse
+}
+
+response BarneyWound
+{
+	sentence BA_WOUND
+}
+rule BarneyWound
+{
+	criteria		IsBarney ConceptTalkWound
+	response		BarneyWound
+}
+
+response BarneyZombie
+{
+	sentence BA_ZOMBIE
+}
+rule BarneyZombie
+{
+	criteria		IsBarney ConceptTalkCharge EnemyIsSpx
+	response		BarneyZombie
+}
+

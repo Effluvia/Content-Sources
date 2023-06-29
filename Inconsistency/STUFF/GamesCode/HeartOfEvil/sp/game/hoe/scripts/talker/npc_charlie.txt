@@ -1,0 +1,442 @@
+criterion "IsCharlie" "classname" "npc_charlie" required
+
+response CharlieAlert
+{
+	sentence CH_ALERT
+}
+rule CharlieAlert
+{
+	criteria		IsCharlie ConceptTalkAlert
+	response		CharlieAlert
+}
+
+response CharlieHello
+{
+	sentence CH_HELLO
+}
+rule CharlieHello
+{
+	criteria		IsCharlie ConceptTalkHello
+	response		CharlieHello
+}
+
+response CharlieCharge
+{
+	sentence CH_CHARGE
+}
+rule CharlieCharge
+{
+	criteria		IsCharlie ConceptTalkCharge EnemyNotSpx
+	response		CharlieCharge
+}
+
+response CharlieCover
+{
+	sentence CH_COVER
+}
+rule CharlieCover
+{
+	criteria		IsCharlie ConceptTalkCover
+	response		CharlieCover
+}
+
+response CharlieDead
+{
+	sentence CH_DEAD
+}
+rule CharlieDead
+{
+	criteria		IsCharlie ConceptTalkDead
+	response		CharlieDead
+}
+
+response CharlieExpl
+{
+	sentence CH_EXPL
+}
+rule Charlie
+{
+	criteria		IsCharlie ConceptTalkExpl
+	response		CharlieExpl
+}
+
+response CharlieFound
+{
+	sentence CH_FOUND
+}
+rule CharlieFound
+{
+	criteria		IsCharlie ConceptTalkFound
+	response		CharlieFound
+}
+
+response CharlieGren
+{
+	sentence CH_GREN
+}
+rule CharlieGren
+{
+	criteria		IsCharlie ConceptTalkGren
+	response		CharlieGren
+}
+
+response CharlieHealed
+{
+	sentence CH_HEALED
+}
+rule CharlieHealed
+{
+	criteria		IsCharlie ConceptTalkHealed
+	response		CharlieHealed
+}
+
+response CharlieHear
+{
+	sentence CH_HEAR
+}
+rule CharlieHear
+{
+	criteria		IsCharlie ConceptTalkHear
+	response		CharlieHear
+}
+
+response CharlieHello
+{
+	sentence CH_HELLO
+}
+rule CharlieHello
+{
+	criteria		IsCharlie ConceptTalkHello
+	response		CharlieHello
+}
+
+response CharlieHelp
+{
+	sentence CH_HELP
+}
+rule CharlieHelp
+{
+	criteria		IsCharlie ConceptTalkHelp
+	response		CharlieHelp
+}
+
+response CharlieHurtA
+{
+	sentence CH_HURTA
+}
+rule CharlieHurtA
+{
+	criteria		IsCharlie ConceptTalkHurtA
+	response		CharlieHurtA
+}
+
+response CharlieHurtB
+{
+	sentence CH_HURTB
+}
+rule CharlieHurtB
+{
+	criteria		IsCharlie ConceptTalkHurtB
+	response		CharlieHurtB
+}
+
+response CharlieHurtC
+{
+	sentence CH_HURTC
+}
+rule CharlieHurtC
+{
+	criteria		IsCharlie ConceptTalkHurtC
+	response		CharlieHurtC
+}
+
+response CharlieIdle
+{
+	sentence CH_IDLE
+}
+rule CharlieIdle
+{
+	criteria		IsCharlie ConceptTalkIdle
+	response		CharlieIdle
+}
+
+response CharlieKill
+{
+	sentence CH_KILL
+}
+rule CharlieKill
+{
+	criteria		IsCharlie ConceptTalkKill
+	response		CharlieKill
+}
+
+response CharlieMad
+{
+	sentence CH_MAD
+}
+rule CharlieMad
+{
+	criteria		IsCharlie ConceptTalkMad
+	response		CharlieMad
+}
+
+response CharlieMedic
+{
+	sentence CH_MEDIC
+}
+rule CharlieMedic
+{
+	criteria		IsCharlie ConceptTalkMedic
+	response		CharlieMedic
+}
+
+response CharlieMortal
+{
+	sentence CH_MORTAL
+}
+rule CharlieMortal
+{
+	criteria		IsCharlie ConceptTalkMortal
+	response		CharlieMortal
+}
+
+response CharliePain
+{
+	sentence CH_PAIN
+}
+rule CharliePain
+{
+	criteria		IsCharlie ConceptTalkPain
+	response		CharliePain
+}
+
+response CharliePIdle
+{
+	sentence CH_PIDLE
+}
+rule CharliePIdle
+{
+	criteria		IsCharlie ConceptTalkPIdle
+	response		CharliePIdle
+}
+
+response CharliePOk
+{
+	sentence CH_POK
+}
+rule CharliePOk
+{
+	criteria		IsCharlie ConceptTalkPOk
+	response		CharliePOk
+}
+
+response CharlieQuestion
+{
+	sentence CH_QUESTION
+}
+rule CharlieQuestion
+{
+	criteria		IsCharlie ConceptTalkQuestion
+	response		CharlieQuestion
+}
+
+response CharlieShot
+{
+	sentence CH_SHOT
+}
+rule CharlieShot
+{
+	criteria		IsCharlie ConceptTalkShot
+	response		CharlieShot
+}
+
+response CharlieSmell
+{
+	sentence CH_SMELL
+}
+rule CharlieSmell
+{
+	criteria		IsCharlie ConceptTalkSmell
+	response		CharlieSmell
+}
+
+response CharlieSquadAckGeneric
+{
+	sentence CH_AFFIRMATIVE
+}
+rule CharlieSquadAckGeneric
+{
+	criteria		IsCharlie ConceptTalkSquadAckGeneric
+	response		CharlieSquadAckGeneric
+}
+
+response CharlieSquadAckCheck
+{
+	sentence CH_CLEAR
+}
+rule CharlieSquadAckCheck
+{
+	criteria		IsCharlie ConceptTalkSquadAckCheck
+	response		CharlieSquadAckCheck
+}
+
+response CharlieSquadAckRetreat
+{
+	sentence CH_RETREATING
+}
+rule CharlieSquadAckRetreat
+{
+	criteria		IsCharlie ConceptTalkSquadAckRetreat
+	response		CharlieSquadAckRetreat
+}
+
+response CharlieSquadAckSearch
+{
+	sentence CH_SEARCHING
+}
+rule CharlieSquadAckSearch
+{
+	criteria		IsCharlie ConceptTalkSquadAckSearch
+	response		CharlieSquadAckSearch
+}
+
+response CharlieSquadAckSuppress
+{
+	sentence CH_SURPRESSING
+}
+rule CharlieSquadAckSuppress
+{
+	criteria		IsCharlie ConceptTalkSquadAckSuppress
+	response		CharlieSquadAckSuppress
+}
+
+response CharlieSquadAttack
+{
+	sentence CH_ATTACK
+}
+rule CharlieSquadAttack
+{
+	criteria		IsCharlie ConceptTalkSquadAttack
+	response		CharlieSquadAttack
+}
+
+response CharlieSquadCheck
+{
+	sentence CH_CHECK
+}
+rule CharlieSquadCheck
+{
+	criteria		IsCharlie ConceptTalkSquadCheck
+	response		CharlieSquadCheck
+}
+
+response CharlieSquadCome
+{
+	sentence CH_COME
+}
+rule CharlieSquadCome
+{
+	criteria		IsCharlie ConceptTalkSquadCome
+	response		CharlieSquadCome
+}
+
+response CharlieSquadRetreat
+{
+	sentence CH_RETREAT
+}
+rule CharlieSquadRetreat
+{
+	criteria		IsCharlie ConceptTalkSquadRetreat
+	response		CharlieSquadRetreat
+}
+
+response CharlieSquadSearch
+{
+	sentence CH_SEARCH
+}
+rule CharlieSquadSearch
+{
+	criteria		IsCharlie ConceptTalkSquadSearch
+	response		CharlieSquadSearch
+}
+
+response CharlieSquadSuppress
+{
+	sentence CH_SURPRESS
+}
+rule CharlieSquadSuppress
+{
+	criteria		IsCharlie ConceptTalkSquadSuppress
+	response		CharlieSquadSuppress
+}
+
+response CharlieStare
+{
+	sentence CH_STARE
+}
+rule CharlieStare
+{
+	criteria		IsCharlie ConceptTalkStare
+	response		CharlieStare
+}
+
+response CharlieTaunt
+{
+	sentence CH_TAUNT
+}
+rule Charlie
+{
+	criteria		IsCharlie ConceptTalkTaunt
+	response		CharlieTaunt
+}
+
+response CharlieThrow
+{
+	sentence CH_THROW
+}
+rule CharlieThrow
+{
+	criteria		IsCharlie ConceptTalkThrow
+	response		CharlieThrow
+}
+
+response CharlieUnUse
+{
+	sentence CH_UNUSE
+}
+rule CharlieUnUse
+{
+	criteria		IsCharlie ConceptTalkUnUse
+	response		CharlieUnUse
+}
+
+response CharlieUse
+{
+	sentence CH_USE
+}
+rule CharlieUse
+{
+	criteria		IsCharlie ConceptTalkUse
+	response		CharlieUse
+}
+
+response CharlieWound
+{
+	sentence CH_WOUND
+}
+rule CharlieWound
+{
+	criteria		IsCharlie ConceptTalkWound
+	response		CharlieWound
+}
+
+response CharlieZombie
+{
+	sentence CH_ZOMBIE
+}
+rule CharlieZombie
+{
+	criteria		IsCharlie ConceptTalkCharge EnemyIsSpx
+	response		CharlieZombie
+}
+

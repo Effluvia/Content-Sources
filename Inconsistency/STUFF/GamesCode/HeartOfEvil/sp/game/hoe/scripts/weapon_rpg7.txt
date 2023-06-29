@@ -1,0 +1,118 @@
+// Missile Launcher
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HOE_RPG7"
+	"viewmodel"				"models/RPG7/v_rpg7/v_rpg.mdl"
+	"playermodel"			"models/RPG7/w_rpg7/w_rpg.mdl"
+	"anim_prefix"			"missile launcher"
+	"bucket"				"3"
+	"bucket_position"		"2"
+//	"autoswitchfrom"		"0" // This is needed if we are using a laser sight
+
+	"clip_size"				"1"
+	"clip2_size"			"-1"
+	"default_clip"			"3"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"rpg_round"
+	"secondary_ammo"		"None"
+
+	"autoswitchto"			"0"
+	"weight"				"2"
+	"item_flags"			"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload"			"Weapon_RPG7.Reload"
+		"single_shot"		"Weapon_RPG7.Single"
+		"single_shot_npc"	"Weapon_RPG.NPC_Single"
+		//Laser on
+		"special1"			"Weapon_RPG.LaserOn"
+		//Laser off
+		"special2"			"Weapon_RPG.LaserOff"
+		"empty"				"Weapon_SMG1.Empty"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"font"		"HOEWeaponIcons"
+			"character" "J"
+		}
+		"weapon_s"
+		{
+			"font"		"HOEWeaponIconsSelected"
+			"character" "J"
+		}
+		"weapon_small"
+		{
+			"font"		"HOEWeaponIconsSmall"
+			"character" "J"
+		}
+		"ammo"
+		{
+			"font"		"HOEAmmoIcons"
+			"character" "g"
+		}
+//		"weapon"
+//		{
+//			"file"		"sprites/640namhud4"
+//			"x"			"40"
+//			"y"			"147"
+//			"width"		"170"
+//			"height"	"45"
+//		}
+//		"weapon_s"
+//		{	
+//			"file"		"sprites/640namhud4"
+//			"x"			"40"
+//			"y"			"147"
+//			"width"		"170"
+//			"height"	"45"
+////			"file"		"sprites/640namhud4"
+////			"x"			"40"
+////			"y"			"192"
+////			"width"		"170"
+////			"height"	"45"
+//		}
+//		"ammo"
+//		{
+//			"file"		"sprites/640namhud5"
+//			"x"			"112"
+//			"y"			"8"
+//			"width"		"24"
+//			"height"	"24"
+//		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"48"
+				"y"			"72"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+
+	WeaponSelectionHUD
+	{
+		"angles"		"0 -180 0"
+		"origin"		"-70 -3 2"
+		"anim"			"idle"
+	}
+
+	IronSights
+	{
+		"origin"	"-4.944 0 -1.7"
+		"angles"	"0 0 0"
+	}
+}

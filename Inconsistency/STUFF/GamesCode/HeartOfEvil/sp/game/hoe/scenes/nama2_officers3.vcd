@@ -1,0 +1,271 @@
+// Choreo version 1
+actor "officer1"
+{
+  channel "speech"
+  {
+    event speak "Officer1.8"
+    {
+      time 8.500001 9.994150
+      param "Officer1.8"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer1.9"
+    {
+      time 11.006667 14.982178
+      param "Officer1.9"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer1.10"
+    {
+      time 15.353334 21.671974
+      param "Officer1.10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 10.086667 -1.000000
+      param "1"
+    }
+    event gesture "g_pipe_out"
+    {
+      time 7.000000 25.898445
+      param "g_pipe_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.055514
+        "loop" 0.069944
+        "end" 0.981280
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_pipe_in"
+    {
+      time 24.546669 26.546669
+      param "g_pipe_in"
+      absolutetags playback_time
+      {
+        "apex" 0.499000
+        "loop" 0.861000
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !target1"
+    {
+      time 6.680001 15.493334
+      param "!target1"
+      event_ramp
+      {
+        0.4840 1.0000
+        8.4280 0.9947
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 15.120002 21.980001
+      param "!player"
+      event_ramp
+      {
+        0.5020 0.9895
+        6.5007 0.9737
+      }
+    }
+    event lookat "Look at officer2"
+    {
+      time 21.560001 23.326668
+      param "officer2"
+      event_ramp
+      {
+        0.4860 1.0000
+        1.3880 0.9842
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 23.106667 29.620001
+      param "!player"
+      event_ramp
+      {
+        0.4920 0.9789
+        5.9713 0.9737
+      }
+    }
+    event lookat "Look at officer2"
+    {
+      time 0.013333 4.026667
+      param "officer2"
+      event_ramp
+      {
+        0.0340 0.9895
+        3.4880 0.9895
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 3.540000 7.026667
+      param "!player"
+      event_ramp
+      {
+        0.4840 0.9737
+        2.9960 0.9842
+      }
+    }
+  }
+  faceposermodel "models\officer1.mdl"
+}
+
+actor "officer2"
+{
+  channel "speech"
+  {
+    event speak "Officer2.4"
+    {
+      time 1.493334 6.707211
+      param "Officer2.4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Officer2.5"
+    {
+      time 22.706669 27.816874
+      param "Officer2.5"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event gesture "g_cigar_out"
+    {
+      time -0.046667 7.823517
+      param "g_cigar_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.091993
+        "loop" 0.173067
+        "end" 0.939156
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_out"
+    {
+      time 21.133335 29.200348
+      param "g_cigar_out"
+      synctofollowinggesture
+      absolutetags playback_time
+      {
+        "apex" 0.139635
+        "loop" 0.174544
+        "end" 0.966488
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.689655
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_in"
+    {
+      time 28.160002 29.633335
+      param "g_cigar_in"
+      absolutetags playback_time
+      {
+        "apex" 0.522624
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+    event gesture "g_cigar_in"
+    {
+      time 6.606667 8.020000
+      param "g_cigar_in"
+      absolutetags playback_time
+      {
+        "apex" 0.522170
+        "loop" 0.862069
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.344828
+        "loop" 0.862069
+        "end" 1.034483
+      }
+      sequenceduration 1.000000
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.006667 6.753334
+      param "!player"
+    }
+    event lookat "Look at !target1"
+    {
+      time 6.633334 21.620001
+      param "!target1"
+    }
+    event lookat "Look at !player"
+    {
+      time 21.613335 29.620005
+      param "!player"
+    }
+  }
+  faceposermodel "models\officer2.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

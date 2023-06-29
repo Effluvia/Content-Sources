@@ -1,0 +1,84 @@
+// Choreo version 1
+actor "civilsuspect"
+{
+  channel "move"
+  {
+    event moveto "inspect_player"
+    {
+      time 0.500000 -1.000000
+      param "!target1"
+      param2 "Walk"
+    }
+    event moveto "inspect_zombie"
+    {
+      time 11.020000 -1.000000
+      param "!target3"
+      param2 "Run"
+    }
+    event moveto "inspect_prisoner1"
+    {
+      time 4.046667 -1.000000
+      param "!target2"
+      param2 "Walk"
+    }
+    event moveto "speech_target"
+    {
+      time 24.006666 -1.000000
+      param "!target4"
+      param2 "Run"
+    }
+  }
+  channel "face"
+  {
+    event face "face_player"
+    {
+      time 1.500000 4.019999
+      param "!player"
+    }
+    event face "face_prisoner1"
+    {
+      time 6.993334 9.500000
+      param "!target7"
+    }
+    event face "face_zombiedoor"
+    {
+      time 10.006667 15.960001
+      param "!target8"
+    }
+    event face "face_noise"
+    {
+      time 20.000000 22.000000
+      param "!target4"
+    }
+  }
+  channel "look"
+  {
+    event lookat "look_player"
+    {
+      time 0.006666 4.013333
+      param "!player"
+    }
+    event lookat "look_prisoner1"
+    {
+      time 7.006666 9.500000
+      param "!target7"
+    }
+    event lookat "look_zombiedoor"
+    {
+      time 11.033333 15.973333
+      param "!target8"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

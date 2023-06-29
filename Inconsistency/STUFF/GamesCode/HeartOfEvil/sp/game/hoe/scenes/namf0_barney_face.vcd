@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "barney"
+{
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.000000 1000.000000
+      param "!target1"
+    }
+  }
+}
+
+mapname "maps\namf0.bsp"
+scalesettings
+{
+  "CChoreoView" "72"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

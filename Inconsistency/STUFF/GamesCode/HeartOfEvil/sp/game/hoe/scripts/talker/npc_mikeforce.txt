@@ -1,0 +1,482 @@
+criterion "IsMikeForce" "classname" "npc_mikeforce" required
+
+response MikeForceAlert
+{
+	sentence MF_ALERT
+}
+rule MikeForceAlert
+{
+	criteria		IsMikeForce ConceptTalkAlert
+	response		MikeForceAlert
+}
+
+response MikeForceHello
+{
+	sentence MF_HELLO
+}
+rule MikeForceHello
+{
+	criteria		IsMikeForce ConceptTalkHello
+	response		MikeForceHello
+}
+
+response MikeForceCharge
+{
+	sentence MF_CHARGE
+}
+rule MikeForceCharge
+{
+	criteria		IsMikeForce ConceptTalkCharge EnemyNotSpx
+	response		MikeForceCharge
+}
+
+response MikeForceCover
+{
+	sentence MF_COVER
+}
+rule MikeForceCover
+{
+	criteria		IsMikeForce ConceptTalkCover
+	response		MikeForceCover
+}
+
+response MikeForceDead
+{
+	sentence MF_DEAD
+}
+rule MikeForceDead
+{
+	criteria		IsMikeForce ConceptTalkDead
+	response		MikeForceDead
+}
+
+response MikeForceExpl
+{
+	sentence MF_EXPL
+}
+rule MikeForce
+{
+	criteria		IsMikeForce ConceptTalkExpl
+	response		MikeForceExpl
+}
+
+response MikeForceFound
+{
+	sentence MF_FOUND
+}
+rule MikeForceFound
+{
+	criteria		IsMikeForce ConceptTalkFound
+	response		MikeForceFound
+}
+
+response MikeForceGren
+{
+	sentence MF_GREN
+}
+rule MikeForceGren
+{
+	criteria		IsMikeForce ConceptTalkGren
+	response		MikeForceGren
+}
+
+response MikeForceHead
+{
+	sentence !MF_KILL8
+	sentence !MF_KILL9
+}
+rule MikeForceHead
+{
+	criteria		IsMikeForce ConceptTalkHead
+	response		MikeForceHead
+}
+
+response MikeForceHealed
+{
+	sentence MF_HEALED
+}
+rule MikeForceHealed
+{
+	criteria		IsMikeForce ConceptTalkHealed
+	response		MikeForceHealed
+}
+
+response MikeForceHear
+{
+	sentence MF_HEAR
+}
+rule MikeForceHear
+{
+	criteria		IsMikeForce ConceptTalkHear
+	response		MikeForceHear
+}
+
+response MikeForceHello
+{
+	sentence MF_HELLO
+}
+rule MikeForceHello
+{
+	criteria		IsMikeForce ConceptTalkHello
+	response		MikeForceHello
+}
+
+response MikeForceHelp
+{
+	sentence MF_HELP
+}
+rule MikeForceHelp
+{
+	criteria		IsMikeForce ConceptTalkHelp
+	response		MikeForceHelp
+}
+
+response MikeForceHurtA
+{
+	sentence MF_HURTA
+}
+rule MikeForceHurtA
+{
+	criteria		IsMikeForce ConceptTalkHurtA
+	response		MikeForceHurtA
+}
+
+response MikeForceHurtB
+{
+	sentence MF_HURTB
+}
+rule MikeForceHurtB
+{
+	criteria		IsMikeForce ConceptTalkHurtB
+	response		MikeForceHurtB
+}
+
+response MikeForceHurtC
+{
+	sentence MF_HURTC
+}
+rule MikeForceHurtC
+{
+	criteria		IsMikeForce ConceptTalkHurtC
+	response		MikeForceHurtC
+}
+
+response MikeForceIdle
+{
+	sentence MF_IDLE
+}
+rule MikeForceIdle
+{
+	criteria		IsMikeForce ConceptTalkIdle
+	response		MikeForceIdle
+}
+
+response MikeForceKill
+{
+	sentence !MF_KILL0
+	sentence !MF_KILL1
+	sentence !MF_KILL2
+	sentence !MF_KILL3
+	sentence !MF_KILL4
+	sentence !MF_KILL5
+	sentence !MF_KILL6
+	sentence !MF_KILL7
+	// MF_KILL8, MF_KILL9 are used for TLK_HEAD
+	sentence !MF_KILL10
+}
+rule MikeForceKill
+{
+	criteria		IsMikeForce ConceptTalkKill
+	response		MikeForceKill
+}
+
+response MikeForceMad
+{
+	sentence MF_MAD
+}
+rule MikeForceMad
+{
+	criteria		IsMikeForce ConceptTalkMad
+	response		MikeForceMad
+}
+
+response MikeForceMedic
+{
+	sentence MF_MEDIC
+}
+rule MikeForceMedic
+{
+	criteria		IsMikeForce ConceptTalkMedic
+	response		MikeForceMedic
+}
+
+response MikeForceMortal
+{
+	sentence MF_MORTAL
+}
+rule MikeForceMortal
+{
+	criteria		IsMikeForce ConceptTalkMortal
+	response		MikeForceMortal
+}
+
+response MikeForceNoShoot
+{
+	sentence MF_NOSHOOT
+}
+rule MikeForceNoShoot
+{
+	criteria		IsMikeForce ConceptTalkNoShoot
+	response		MikeForceNoShoot
+}
+
+response MikeForceOutway
+{
+	sentence MF_OUTWAY
+}
+rule MikeForceOutway
+{
+	criteria		IsMikeForce ConceptTalkOutway
+	response		MikeForceOutway
+}
+
+response MikeForcePain
+{
+	sentence MF_PAIN
+}
+rule MikeForcePain
+{
+	criteria		IsMikeForce ConceptTalkPain
+	response		MikeForcePain
+}
+
+response MikeForcePIdle
+{
+	sentence MF_PIDLE
+}
+rule MikeForcePIdle
+{
+	criteria		IsMikeForce ConceptTalkPIdle
+	response		MikeForcePIdle
+}
+
+response MikeForcePOk
+{
+	sentence MF_POK
+}
+rule MikeForcePOk
+{
+	criteria		IsMikeForce ConceptTalkPOk
+	response		MikeForcePOk
+}
+
+response MikeForceQuestion
+{
+	sentence MF_QUESTION
+}
+rule MikeForceQuestion
+{
+	criteria		IsMikeForce ConceptTalkQuestion
+	response		MikeForceQuestion
+}
+
+response MikeForceShot
+{
+	sentence MF_SHOT
+}
+rule MikeForceShot
+{
+	criteria		IsMikeForce ConceptTalkShot
+	response		MikeForceShot
+}
+
+response MikeForceSmell
+{
+	sentence MF_SMELL
+}
+rule MikeForceSmell
+{
+	criteria		IsMikeForce ConceptTalkSmell
+	response		MikeForceSmell
+}
+
+response MikeForceSquadAckGeneric
+{
+	sentence MF_AFFIRMATIVE
+}
+rule MikeForceSquadAckGeneric
+{
+	criteria		IsMikeForce ConceptTalkSquadAckGeneric
+	response		MikeForceSquadAckGeneric
+}
+
+response MikeForceSquadAckCheck
+{
+	sentence MF_CLEAR
+}
+rule MikeForceSquadAckCheck
+{
+	criteria		IsMikeForce ConceptTalkSquadAckCheck
+	response		MikeForceSquadAckCheck
+}
+
+response MikeForceSquadAckRetreat
+{
+	sentence MF_RETREATING
+}
+rule MikeForceSquadAckRetreat
+{
+	criteria		IsMikeForce ConceptTalkSquadAckRetreat
+	response		MikeForceSquadAckRetreat
+}
+
+response MikeForceSquadAckSearch
+{
+	sentence MF_SEARCHING
+}
+rule MikeForceSquadAckSearch
+{
+	criteria		IsMikeForce ConceptTalkSquadAckSearch
+	response		MikeForceSquadAckSearch
+}
+
+response MikeForceSquadAckSuppress
+{
+	sentence MF_SURPRESSING
+}
+rule MikeForceSquadAckSuppress
+{
+	criteria		IsMikeForce ConceptTalkSquadAckSuppress
+	response		MikeForceSquadAckSuppress
+}
+
+response MikeForceSquadAttack
+{
+	sentence MF_ATTACK
+}
+rule MikeForceSquadAttack
+{
+	criteria		IsMikeForce ConceptTalkSquadAttack
+	response		MikeForceSquadAttack
+}
+
+response MikeForceSquadCheck
+{
+	sentence MF_CHECK
+}
+rule MikeForceSquadCheck
+{
+	criteria		IsMikeForce ConceptTalkSquadCheck
+	response		MikeForceSquadCheck
+}
+
+response MikeForceSquadCome
+{
+	sentence MF_COME
+}
+rule MikeForceSquadCome
+{
+	criteria		IsMikeForce ConceptTalkSquadCome
+	response		MikeForceSquadCome
+}
+
+response MikeForceSquadRetreat
+{
+	sentence MF_RETREAT
+}
+rule MikeForceSquadRetreat
+{
+	criteria		IsMikeForce ConceptTalkSquadRetreat
+	response		MikeForceSquadRetreat
+}
+
+response MikeForceSquadSearch
+{
+	sentence MF_SEARCH
+}
+rule MikeForceSquadSearch
+{
+	criteria		IsMikeForce ConceptTalkSquadSearch
+	response		MikeForceSquadSearch
+}
+
+response MikeForceSquadSuppress
+{
+	sentence MF_SURPRESS
+}
+rule MikeForceSquadSuppress
+{
+	criteria		IsMikeForce ConceptTalkSquadSuppress
+	response		MikeForceSquadSuppress
+}
+
+response MikeForceStare
+{
+	sentence MF_STARE
+}
+rule MikeForceStare
+{
+	criteria		IsMikeForce ConceptTalkStare
+	response		MikeForceStare
+}
+
+response MikeForceTaunt
+{
+	sentence MF_TAUNT
+}
+rule MikeForce
+{
+	criteria		IsMikeForce ConceptTalkTaunt
+	response		MikeForceTaunt
+}
+
+response MikeForceThrow
+{
+	sentence MF_THROW
+}
+rule MikeForceThrow
+{
+	criteria		IsMikeForce ConceptTalkThrow
+	response		MikeForceThrow
+}
+
+response MikeForceUnUse
+{
+	sentence MF_UNUSE
+}
+rule MikeForceUnUse
+{
+	criteria		IsMikeForce ConceptTalkUnUse
+	response		MikeForceUnUse
+}
+
+response MikeForceUse
+{
+	sentence MF_USE
+}
+rule MikeForceUse
+{
+	criteria		IsMikeForce ConceptTalkUse
+	response		MikeForceUse
+}
+
+response MikeForceWound
+{
+	sentence MF_WOUND
+}
+rule MikeForceWound
+{
+	criteria		IsMikeForce ConceptTalkWound
+	response		MikeForceWound
+}
+
+response MikeForceZombie
+{
+	sentence MF_ZOMBIE
+}
+rule MikeForceZombie
+{
+	criteria		IsMikeForce ConceptTalkCharge EnemyIsSpx
+	response		MikeForceZombie
+}
+

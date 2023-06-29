@@ -1,0 +1,81 @@
+// Based on weapon_frag.txt -- TNB
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"				"#HOE_Tripmine"
+	"viewmodel"				"models/tripmine/v_tripmine/v_tripmine.mdl"
+	"playermodel"			"models/tripmine/w_tripmine.mdl"
+	"anim_prefix"			"Grenade"
+	"bucket"				"4"
+	"bucket_position"		"2"
+
+	"clip_size"				"-1"
+	"clip2_size"			"-1"
+	"default_clip"			"1"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"Tripmine"
+	"secondary_ammo"		"None"
+
+	"weight"				"1"
+	"item_flags"			"18"	// ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_EXHAUSTIBLE
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"special1"		"WeaponFrag.Roll"
+		"double_shot"	"common/null.wav"
+		"single_shot"	"common/null.wav"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"font"		"HOEWeaponIconsSmall"
+			"character" "j"
+
+//			"file"		"sprites/640hud3"
+//			"x"			"0"
+//			"y"			"90"
+//			"width"		"170"
+//			"height"	"45"
+		}
+		"weapon_s"
+		{
+			"file"		"sprites/640hud3"
+			"x"			"0"
+			"y"			"90"
+			"width"		"170"
+			"height"	"45"
+
+//			"file"		"sprites/640hud6"
+//			"x"			"0"
+//			"y"			"90"
+//			"width"		"170"
+//			"height"	"45"
+		}
+		"ammo"
+		{
+			"font"		"HOEAmmoIcons"
+			"character" "j"
+		}
+//		"ammo"
+//		{
+//			"file"		"sprites/640hud7"
+//			"x"			"120"
+//			"y"			"96"
+//			"width"		"24"
+//			"height"	"24"
+//		}
+	}
+
+	WeaponSelectionHUD
+	{
+		"angles"		"0 -180 0"
+		"origin"		"-50 0 3.3"
+		"anim"			"idle"
+	}
+}

@@ -1,0 +1,25 @@
+$modelname "870\w_shot_22shells\w_elephant_22shells.mdl"
+$cdmaterials "models\870\w_shot_22shells"
+$cliptotextures
+
+$scale 0.75
+
+// 0 attachments
+
+// 0 bone controllers
+
+$bodygroup studio
+{
+studio "w_elephant_22shells.smd"
+}
+
+// 1 sequences
+$sequence idle "idle" fps 30 
+
+// auto-create a collisionmodel
+$collisionmodel "w_elephant_22shells.smd"
+{
+    // FIXME: proper mass
+    $mass 2.0
+}
+

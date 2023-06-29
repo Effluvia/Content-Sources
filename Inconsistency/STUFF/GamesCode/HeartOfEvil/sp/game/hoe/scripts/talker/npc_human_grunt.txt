@@ -1,0 +1,442 @@
+criterion "IsHumanGrunt" "classname" "npc_human_grunt" required
+
+response HumanGruntAlert
+{
+	sentence HG_ALERT
+}
+rule HumanGruntAlert
+{
+	criteria		IsHumanGrunt ConceptTalkAlert
+	response		HumanGruntAlert
+}
+
+response HumanGruntHello
+{
+	sentence HG_HELLO
+}
+rule HumanGruntHello
+{
+	criteria		IsHumanGrunt ConceptTalkHello
+	response		HumanGruntHello
+}
+
+response HumanGruntCharge
+{
+	sentence HG_CHARGE
+}
+rule HumanGruntCharge
+{
+	criteria		IsHumanGrunt ConceptTalkCharge EnemyNotSpx
+	response		HumanGruntCharge
+}
+
+response HumanGruntCover
+{
+	sentence HG_COVER
+}
+rule HumanGruntCover
+{
+	criteria		IsHumanGrunt ConceptTalkCover
+	response		HumanGruntCover
+}
+
+response HumanGruntDead
+{
+	sentence HG_DEAD
+}
+rule HumanGruntDead
+{
+	criteria		IsHumanGrunt ConceptTalkDead
+	response		HumanGruntDead
+}
+
+response HumanGruntExpl
+{
+	sentence HG_EXPL
+}
+rule HumanGrunt
+{
+	criteria		IsHumanGrunt ConceptTalkExpl
+	response		HumanGruntExpl
+}
+
+response HumanGruntFound
+{
+	sentence HG_FOUND
+}
+rule HumanGruntFound
+{
+	criteria		IsHumanGrunt ConceptTalkFound
+	response		HumanGruntFound
+}
+
+response HumanGruntGren
+{
+	sentence HG_GREN
+}
+rule HumanGruntGren
+{
+	criteria		IsHumanGrunt ConceptTalkGren
+	response		HumanGruntGren
+}
+
+response HumanGruntHealed
+{
+	sentence HG_HEALED
+}
+rule HumanGruntHealed
+{
+	criteria		IsHumanGrunt ConceptTalkHealed
+	response		HumanGruntHealed
+}
+
+response HumanGruntHear
+{
+	sentence HG_HEAR
+}
+rule HumanGruntHear
+{
+	criteria		IsHumanGrunt ConceptTalkHear
+	response		HumanGruntHear
+}
+
+response HumanGruntHello
+{
+	sentence HG_HELLO
+}
+rule HumanGruntHello
+{
+	criteria		IsHumanGrunt ConceptTalkHello
+	response		HumanGruntHello
+}
+
+response HumanGruntHelp
+{
+	sentence HG_HELP
+}
+rule HumanGruntHelp
+{
+	criteria		IsHumanGrunt ConceptTalkHelp
+	response		HumanGruntHelp
+}
+
+response HumanGruntHurtA
+{
+	sentence HG_HURTA
+}
+rule HumanGruntHurtA
+{
+	criteria		IsHumanGrunt ConceptTalkHurtA
+	response		HumanGruntHurtA
+}
+
+response HumanGruntHurtB
+{
+	sentence HG_HURTB
+}
+rule HumanGruntHurtB
+{
+	criteria		IsHumanGrunt ConceptTalkHurtB
+	response		HumanGruntHurtB
+}
+
+response HumanGruntHurtC
+{
+	sentence HG_HURTC
+}
+rule HumanGruntHurtC
+{
+	criteria		IsHumanGrunt ConceptTalkHurtC
+	response		HumanGruntHurtC
+}
+
+response HumanGruntIdle
+{
+	sentence HG_IDLE
+}
+rule HumanGruntIdle
+{
+	criteria		IsHumanGrunt ConceptTalkIdle
+	response		HumanGruntIdle
+}
+
+response HumanGruntKill
+{
+	sentence HG_KILL
+}
+rule HumanGruntKill
+{
+	criteria		IsHumanGrunt ConceptTalkKill
+	response		HumanGruntKill
+}
+
+response HumanGruntMad
+{
+	sentence HG_MAD
+}
+rule HumanGruntMad
+{
+	criteria		IsHumanGrunt ConceptTalkMad
+	response		HumanGruntMad
+}
+
+response HumanGruntMedic
+{
+	sentence HG_MEDIC
+}
+rule HumanGruntMedic
+{
+	criteria		IsHumanGrunt ConceptTalkMedic
+	response		HumanGruntMedic
+}
+
+response HumanGruntMortal
+{
+	sentence HG_MORTAL
+}
+rule HumanGruntMortal
+{
+	criteria		IsHumanGrunt ConceptTalkMortal
+	response		HumanGruntMortal
+}
+
+response HumanGruntPain
+{
+	sentence HG_PAIN
+}
+rule HumanGruntPain
+{
+	criteria		IsHumanGrunt ConceptTalkPain
+	response		HumanGruntPain
+}
+
+response HumanGruntPIdle
+{
+	sentence HG_PIDLE
+}
+rule HumanGruntPIdle
+{
+	criteria		IsHumanGrunt ConceptTalkPIdle
+	response		HumanGruntPIdle
+}
+
+response HumanGruntPOk
+{
+	sentence HG_POK
+}
+rule HumanGruntPOk
+{
+	criteria		IsHumanGrunt ConceptTalkPOk
+	response		HumanGruntPOk
+}
+
+response HumanGruntQuestion
+{
+	sentence HG_QUESTION
+}
+rule HumanGruntQuestion
+{
+	criteria		IsHumanGrunt ConceptTalkQuestion
+	response		HumanGruntQuestion
+}
+
+response HumanGruntShot
+{
+	sentence HG_SHOT
+}
+rule HumanGruntShot
+{
+	criteria		IsHumanGrunt ConceptTalkShot
+	response		HumanGruntShot
+}
+
+response HumanGruntSmell
+{
+	sentence HG_SMELL
+}
+rule HumanGruntSmell
+{
+	criteria		IsHumanGrunt ConceptTalkSmell
+	response		HumanGruntSmell
+}
+
+response HumanGruntSquadAckGeneric
+{
+	sentence HG_AFFIRMATIVE
+}
+rule HumanGruntSquadAckGeneric
+{
+	criteria		IsHumanGrunt ConceptTalkSquadAckGeneric
+	response		HumanGruntSquadAckGeneric
+}
+
+response HumanGruntSquadAckCheck
+{
+	sentence HG_CLEAR
+}
+rule HumanGruntSquadAckCheck
+{
+	criteria		IsHumanGrunt ConceptTalkSquadAckCheck
+	response		HumanGruntSquadAckCheck
+}
+
+response HumanGruntSquadAckRetreat
+{
+	sentence HG_RETREATING
+}
+rule HumanGruntSquadAckRetreat
+{
+	criteria		IsHumanGrunt ConceptTalkSquadAckRetreat
+	response		HumanGruntSquadAckRetreat
+}
+
+response HumanGruntSquadAckSearch
+{
+	sentence HG_SEARCHING
+}
+rule HumanGruntSquadAckSearch
+{
+	criteria		IsHumanGrunt ConceptTalkSquadAckSearch
+	response		HumanGruntSquadAckSearch
+}
+
+response HumanGruntSquadAckSuppress
+{
+	sentence HG_SURPRESSING
+}
+rule HumanGruntSquadAckSuppress
+{
+	criteria		IsHumanGrunt ConceptTalkSquadAckSuppress
+	response		HumanGruntSquadAckSuppress
+}
+
+response HumanGruntSquadAttack
+{
+	sentence HG_ATTACK
+}
+rule HumanGruntSquadAttack
+{
+	criteria		IsHumanGrunt ConceptTalkSquadAttack
+	response		HumanGruntSquadAttack
+}
+
+response HumanGruntSquadCheck
+{
+	sentence HG_CHECK
+}
+rule HumanGruntSquadCheck
+{
+	criteria		IsHumanGrunt ConceptTalkSquadCheck
+	response		HumanGruntSquadCheck
+}
+
+response HumanGruntSquadCome
+{
+	sentence HG_COME
+}
+rule HumanGruntSquadCome
+{
+	criteria		IsHumanGrunt ConceptTalkSquadCome
+	response		HumanGruntSquadCome
+}
+
+response HumanGruntSquadRetreat
+{
+	sentence HG_RETREAT
+}
+rule HumanGruntSquadRetreat
+{
+	criteria		IsHumanGrunt ConceptTalkSquadRetreat
+	response		HumanGruntSquadRetreat
+}
+
+response HumanGruntSquadSearch
+{
+	sentence HG_SEARCH
+}
+rule HumanGruntSquadSearch
+{
+	criteria		IsHumanGrunt ConceptTalkSquadSearch
+	response		HumanGruntSquadSearch
+}
+
+response HumanGruntSquadSuppress
+{
+	sentence HG_SURPRESS
+}
+rule HumanGruntSquadSuppress
+{
+	criteria		IsHumanGrunt ConceptTalkSquadSuppress
+	response		HumanGruntSquadSuppress
+}
+
+response HumanGruntStare
+{
+	sentence HG_STARE
+}
+rule HumanGruntStare
+{
+	criteria		IsHumanGrunt ConceptTalkStare
+	response		HumanGruntStare
+}
+
+response HumanGruntTaunt
+{
+	sentence HG_TAUNT
+}
+rule HumanGrunt
+{
+	criteria		IsHumanGrunt ConceptTalkTaunt
+	response		HumanGruntTaunt
+}
+
+response HumanGruntThrow
+{
+	sentence HG_THROW
+}
+rule HumanGruntThrow
+{
+	criteria		IsHumanGrunt ConceptTalkThrow
+	response		HumanGruntThrow
+}
+
+response HumanGruntUnUse
+{
+	sentence HG_UNUSE
+}
+rule HumanGruntUnUse
+{
+	criteria		IsHumanGrunt ConceptTalkUnUse
+	response		HumanGruntUnUse
+}
+
+response HumanGruntUse
+{
+	sentence HG_HELLO
+}
+rule HumanGruntUse
+{
+	criteria		IsHumanGrunt ConceptTalkUse
+	response		HumanGruntUse
+}
+
+response HumanGruntWound
+{
+	sentence HG_WOUND
+}
+rule HumanGruntWound
+{
+	criteria		IsHumanGrunt ConceptTalkWound
+	response		HumanGruntWound
+}
+
+response HumanGruntZombie
+{
+	sentence HG_ZOMBIE
+}
+rule HumanGruntZombie
+{
+	criteria		IsHumanGrunt ConceptTalkCharge EnemyIsSpx
+	response		HumanGruntZombie
+}
+

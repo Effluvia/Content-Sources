@@ -1,0 +1,452 @@
+criterion "IsGruntMedic" "classname" "npc_grunt_medic" required
+
+response GruntMedicAlert
+{
+	sentence HG_ALERT
+}
+rule GruntMedicAlert
+{
+	criteria		IsGruntMedic ConceptTalkAlert
+	response		GruntMedicAlert
+}
+
+response GruntMedicHello
+{
+	sentence HG_HELLO
+}
+rule GruntMedicHello
+{
+	criteria		IsGruntMedic ConceptTalkHello
+	response		GruntMedicHello
+}
+
+response GruntMedicCharge
+{
+	sentence HG_CHARGE
+}
+rule GruntMedicCharge
+{
+	criteria		IsGruntMedic ConceptTalkCharge EnemyNotSpx
+	response		GruntMedicCharge
+}
+
+response GruntMedicCover
+{
+	sentence HG_COVER
+}
+rule GruntMedicCover
+{
+	criteria		IsGruntMedic ConceptTalkCover
+	response		GruntMedicCover
+}
+
+response GruntMedicDead
+{
+	sentence HG_DEAD
+}
+rule GruntMedicDead
+{
+	criteria		IsGruntMedic ConceptTalkDead
+	response		GruntMedicDead
+}
+
+response GruntMedicExpl
+{
+	sentence HG_EXPL
+}
+rule GruntMedic
+{
+	criteria		IsGruntMedic ConceptTalkExpl
+	response		GruntMedicExpl
+}
+
+response GruntMedicFound
+{
+	sentence HG_FOUND
+}
+rule GruntMedicFound
+{
+	criteria		IsGruntMedic ConceptTalkFound
+	response		GruntMedicFound
+}
+
+response GruntMedicGren
+{
+	sentence HG_GREN
+}
+rule GruntMedicGren
+{
+	criteria		IsGruntMedic ConceptTalkGren
+	response		GruntMedicGren
+}
+
+response GruntMedicHeal
+{
+	sentence HG_HEAL
+}
+rule GruntMedicHeal
+{
+	criteria		IsGruntMedic ConceptTalkHeal
+	response		GruntMedicHeal
+}
+
+response GruntMedicHealed
+{
+	sentence HG_HEALED
+}
+rule GruntMedicHealed
+{
+	criteria		IsGruntMedic ConceptTalkHealed
+	response		GruntMedicHealed
+}
+
+response GruntMedicHear
+{
+	sentence HG_HEAR
+}
+rule GruntMedicHear
+{
+	criteria		IsGruntMedic ConceptTalkHear
+	response		GruntMedicHear
+}
+
+response GruntMedicHello
+{
+	sentence HG_HELLO
+}
+rule GruntMedicHello
+{
+	criteria		IsGruntMedic ConceptTalkHello
+	response		GruntMedicHello
+}
+
+response GruntMedicHelp
+{
+	sentence HG_HELP
+}
+rule GruntMedicHelp
+{
+	criteria		IsGruntMedic ConceptTalkHelp
+	response		GruntMedicHelp
+}
+
+response GruntMedicHurtA
+{
+	sentence HG_HURTA
+}
+rule GruntMedicHurtA
+{
+	criteria		IsGruntMedic ConceptTalkHurtA
+	response		GruntMedicHurtA
+}
+
+response GruntMedicHurtB
+{
+	sentence HG_HURTB
+}
+rule GruntMedicHurtB
+{
+	criteria		IsGruntMedic ConceptTalkHurtB
+	response		GruntMedicHurtB
+}
+
+response GruntMedicHurtC
+{
+	sentence HG_HURTC
+}
+rule GruntMedicHurtC
+{
+	criteria		IsGruntMedic ConceptTalkHurtC
+	response		GruntMedicHurtC
+}
+
+response GruntMedicIdle
+{
+	sentence HG_IDLE
+}
+rule GruntMedicIdle
+{
+	criteria		IsGruntMedic ConceptTalkIdle
+	response		GruntMedicIdle
+}
+
+response GruntMedicKill
+{
+	sentence HG_KILL
+}
+rule GruntMedicKill
+{
+	criteria		IsGruntMedic ConceptTalkKill
+	response		GruntMedicKill
+}
+
+response GruntMedicMad
+{
+	sentence HG_MAD
+}
+rule GruntMedicMad
+{
+	criteria		IsGruntMedic ConceptTalkMad
+	response		GruntMedicMad
+}
+
+response GruntMedicMedic
+{
+	sentence HG_MEDIC
+}
+rule GruntMedicMedic
+{
+	criteria		IsGruntMedic ConceptTalkMedic
+	response		GruntMedicMedic
+}
+
+response GruntMedicMortal
+{
+	sentence HG_MORTAL
+}
+rule GruntMedicMortal
+{
+	criteria		IsGruntMedic ConceptTalkMortal
+	response		GruntMedicMortal
+}
+
+response GruntMedicPain
+{
+	sentence HG_PAIN
+}
+rule GruntMedicPain
+{
+	criteria		IsGruntMedic ConceptTalkPain
+	response		GruntMedicPain
+}
+
+response GruntMedicPIdle
+{
+	sentence HG_PIDLE
+}
+rule GruntMedicPIdle
+{
+	criteria		IsGruntMedic ConceptTalkPIdle
+	response		GruntMedicPIdle
+}
+
+response GruntMedicPOk
+{
+	sentence HG_POK
+}
+rule GruntMedicPOk
+{
+	criteria		IsGruntMedic ConceptTalkPOk
+	response		GruntMedicPOk
+}
+
+response GruntMedicQuestion
+{
+	sentence HG_QUESTION
+}
+rule GruntMedicQuestion
+{
+	criteria		IsGruntMedic ConceptTalkQuestion
+	response		GruntMedicQuestion
+}
+
+response GruntMedicShot
+{
+	sentence HG_SHOT
+}
+rule GruntMedicShot
+{
+	criteria		IsGruntMedic ConceptTalkShot
+	response		GruntMedicShot
+}
+
+response GruntMedicSmell
+{
+	sentence HG_SMELL
+}
+rule GruntMedicSmell
+{
+	criteria		IsGruntMedic ConceptTalkSmell
+	response		GruntMedicSmell
+}
+
+response GruntMedicSquadAckGeneric
+{
+	sentence HG_AFFIRMATIVE
+}
+rule GruntMedicSquadAckGeneric
+{
+	criteria		IsGruntMedic ConceptTalkSquadAckGeneric
+	response		GruntMedicSquadAckGeneric
+}
+
+response GruntMedicSquadAckCheck
+{
+	sentence HG_CLEAR
+}
+rule GruntMedicSquadAckCheck
+{
+	criteria		IsGruntMedic ConceptTalkSquadAckCheck
+	response		GruntMedicSquadAckCheck
+}
+
+response GruntMedicSquadAckRetreat
+{
+	sentence HG_RETREATING
+}
+rule GruntMedicSquadAckRetreat
+{
+	criteria		IsGruntMedic ConceptTalkSquadAckRetreat
+	response		GruntMedicSquadAckRetreat
+}
+
+response GruntMedicSquadAckSearch
+{
+	sentence HG_SEARCHING
+}
+rule GruntMedicSquadAckSearch
+{
+	criteria		IsGruntMedic ConceptTalkSquadAckSearch
+	response		GruntMedicSquadAckSearch
+}
+
+response GruntMedicSquadAckSuppress
+{
+	sentence HG_SURPRESSING
+}
+rule GruntMedicSquadAckSuppress
+{
+	criteria		IsGruntMedic ConceptTalkSquadAckSuppress
+	response		GruntMedicSquadAckSuppress
+}
+
+response GruntMedicSquadAttack
+{
+	sentence HG_ATTACK
+}
+rule GruntMedicSquadAttack
+{
+	criteria		IsGruntMedic ConceptTalkSquadAttack
+	response		GruntMedicSquadAttack
+}
+
+response GruntMedicSquadCheck
+{
+	sentence HG_CHECK
+}
+rule GruntMedicSquadCheck
+{
+	criteria		IsGruntMedic ConceptTalkSquadCheck
+	response		GruntMedicSquadCheck
+}
+
+response GruntMedicSquadCome
+{
+	sentence HG_COME
+}
+rule GruntMedicSquadCome
+{
+	criteria		IsGruntMedic ConceptTalkSquadCome
+	response		GruntMedicSquadCome
+}
+
+response GruntMedicSquadRetreat
+{
+	sentence HG_RETREAT
+}
+rule GruntMedicSquadRetreat
+{
+	criteria		IsGruntMedic ConceptTalkSquadRetreat
+	response		GruntMedicSquadRetreat
+}
+
+response GruntMedicSquadSearch
+{
+	sentence HG_SEARCH
+}
+rule GruntMedicSquadSearch
+{
+	criteria		IsGruntMedic ConceptTalkSquadSearch
+	response		GruntMedicSquadSearch
+}
+
+response GruntMedicSquadSuppress
+{
+	sentence HG_SURPRESS
+}
+rule GruntMedicSquadSuppress
+{
+	criteria		IsGruntMedic ConceptTalkSquadSuppress
+	response		GruntMedicSquadSuppress
+}
+
+response GruntMedicStare
+{
+	sentence HG_STARE
+}
+rule GruntMedicStare
+{
+	criteria		IsGruntMedic ConceptTalkStare
+	response		GruntMedicStare
+}
+
+response GruntMedicTaunt
+{
+	sentence HG_TAUNT
+}
+rule GruntMedic
+{
+	criteria		IsGruntMedic ConceptTalkTaunt
+	response		GruntMedicTaunt
+}
+
+response GruntMedicThrow
+{
+	sentence HG_THROW
+}
+rule GruntMedicThrow
+{
+	criteria		IsGruntMedic ConceptTalkThrow
+	response		GruntMedicThrow
+}
+
+response GruntMedicUnUse
+{
+	sentence HG_UNUSE
+}
+rule GruntMedicUnUse
+{
+	criteria		IsGruntMedic ConceptTalkUnUse
+	response		GruntMedicUnUse
+}
+
+response GruntMedicUse
+{
+	sentence HG_USE
+}
+rule GruntMedicUse
+{
+	criteria		IsGruntMedic ConceptTalkUse
+	response		GruntMedicUse
+}
+
+response GruntMedicWound
+{
+	sentence HG_WOUND
+}
+rule GruntMedicWound
+{
+	criteria		IsGruntMedic ConceptTalkWound
+	response		GruntMedicWound
+}
+
+response GruntMedicZombie
+{
+	sentence HG_ZOMBIE
+}
+rule GruntMedicZombie
+{
+	criteria		IsGruntMedic ConceptTalkCharge EnemyIsSpx
+	response		GruntMedicZombie
+}
+

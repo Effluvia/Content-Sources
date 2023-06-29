@@ -1,0 +1,434 @@
+criterion "IsSOG" "classname" "npc_sog" required
+
+response SOGAlert
+{
+	sentence HG_ALERT
+}
+rule SOGAlert
+{
+	criteria		IsSOG ConceptTalkAlert
+	response		SOGAlert
+}
+
+response SOGHello
+{
+	sentence HG_HELLO
+}
+rule SOGHello
+{
+	criteria		IsSOG ConceptTalkHello
+	response		SOGHello
+}
+
+response SOGCharge
+{
+	sentence HG_CHARGE
+}
+rule SOGCharge
+{
+	criteria		IsSOG ConceptTalkCharge EnemyNotSpx
+	response		SOGCharge
+}
+
+response SOGCover
+{
+	sentence HG_COVER
+}
+rule SOGCover
+{
+	criteria		IsSOG ConceptTalkCover
+	response		SOGCover
+}
+
+response SOGExpl
+{
+	sentence HG_EXPL
+}
+rule SOG
+{
+	criteria		IsSOG ConceptTalkExpl
+	response		SOGExpl
+}
+
+response SOGFound
+{
+	sentence HG_FOUND
+}
+rule SOGFound
+{
+	criteria		IsSOG ConceptTalkFound
+	response		SOGFound
+}
+
+response SOGGren
+{
+	sentence HG_GREN
+}
+rule SOGGren
+{
+	criteria		IsSOG ConceptTalkGren
+	response		SOGGren
+}
+
+response SOGHealed
+{
+	sentence HG_HEALED
+}
+rule SOGHealed
+{
+	criteria		IsSOG ConceptTalkHealed
+	response		SOGHealed
+}
+
+response SOGHear
+{
+	sentence HG_HEAR
+}
+rule SOGHear
+{
+	criteria		IsSOG ConceptTalkHear
+	response		SOGHear
+}
+
+response SOGHello
+{
+	sentence HG_HELLO
+}
+rule SOGHello
+{
+	criteria		IsSOG ConceptTalkHello
+	response		SOGHello
+}
+
+response SOGHelp
+{
+	sentence HG_HELP
+}
+rule SOGHelp
+{
+	criteria		IsSOG ConceptTalkHelp
+	response		SOGHelp
+}
+
+response SOGHurtA
+{
+	sentence HG_HURTA
+}
+rule SOGHurtA
+{
+	criteria		IsSOG ConceptTalkHurtA
+	response		SOGHurtA
+}
+
+response SOGHurtB
+{
+	sentence HG_HURTB
+}
+rule SOGHurtB
+{
+	criteria		IsSOG ConceptTalkHurtB
+	response		SOGHurtB
+}
+
+response SOGHurtC
+{
+	sentence HG_HURTC
+}
+rule SOGHurtC
+{
+	criteria		IsSOG ConceptTalkHurtC
+	response		SOGHurtC
+}
+
+response SOGIdle
+{
+	sentence HG_IDLE
+}
+rule SOGIdle
+{
+	criteria		IsSOG ConceptTalkIdle
+	response		SOGIdle
+}
+
+response SOGKill
+{
+	sentence HG_KILL
+}
+rule SOGKill
+{
+	criteria		IsSOG ConceptTalkKill
+	response		SOGKill
+}
+
+response SOGMad
+{
+	sentence HG_MAD
+}
+rule SOGMad
+{
+	criteria		IsSOG ConceptTalkMad
+	response		SOGMad
+}
+
+response SOGMedic
+{
+	sentence HG_MEDIC
+}
+rule SOGMedic
+{
+	criteria		IsSOG ConceptTalkMedic
+	response		SOGMedic
+}
+
+response SOGMortal
+{
+	sentence HG_MORTAL
+}
+rule SOGMortal
+{
+	criteria		IsSOG ConceptTalkMortal
+	response		SOGMortal
+}
+
+response SOGPain
+{
+	sentence HG_PAIN
+}
+rule SOGPain
+{
+	criteria		IsSOG ConceptTalkPain
+	response		SOGPain
+}
+
+response SOGPIdle
+{
+	sentence HG_PIDLE
+}
+rule SOGPIdle
+{
+	criteria		IsSOG ConceptTalkPIdle
+	response		SOGPIdle
+}
+
+response SOGPOk
+{
+	sentence HG_POK
+}
+rule SOGPOk
+{
+	criteria		IsSOG ConceptTalkPOk
+	response		SOGPOk
+}
+
+response SOGQuestion
+{
+	sentence HG_QUESTION
+}
+rule SOGQuestion
+{
+	criteria		IsSOG ConceptTalkQuestion
+	response		SOGQuestion
+}
+
+response SOGShot
+{
+	sentence HG_SHOT
+}
+rule SOGShot
+{
+	criteria		IsSOG ConceptTalkShot
+	response		SOGShot
+}
+
+response SOGSquadAckGeneric
+{
+	sentence HG_AFFIRMATIVE
+}
+rule SOGSquadAckGeneric
+{
+	criteria		IsSOG ConceptTalkSquadAckGeneric
+	response		SOGSquadAckGeneric
+}
+
+response SOGSquadAckCheck
+{
+	sentence HG_CLEAR
+}
+rule SOGSquadAckCheck
+{
+	criteria		IsSOG ConceptTalkSquadAckCheck
+	response		SOGSquadAckCheck
+}
+
+response SOGSquadAckRetreat
+{
+	sentence HG_RETREATING
+}
+rule SOGSquadAckRetreat
+{
+	criteria		IsSOG ConceptTalkSquadAckRetreat
+	response		SOGSquadAckRetreat
+}
+
+response SOGSquadAckSearch
+{
+	sentence HG_SEARCHING
+}
+rule SOGSquadAckSearch
+{
+	criteria		IsSOG ConceptTalkSquadAckSearch
+	response		SOGSquadAckSearch
+}
+
+response SOGSquadAckSuppress
+{
+	sentence HG_SURPRESSING
+}
+rule SOGSquadAckSuppress
+{
+	criteria		IsSOG ConceptTalkSquadAckSuppress
+	response		SOGSquadAckSuppress
+}
+
+response SOGSquadAttack
+{
+	sentence HG_ATTACK
+}
+rule SOGSquadAttack
+{
+	criteria		IsSOG ConceptTalkSquadAttack
+	response		SOGSquadAttack
+}
+
+response SOGSquadCheck
+{
+	sentence HG_CHECK
+}
+rule SOGSquadCheck
+{
+	criteria		IsSOG ConceptTalkSquadCheck
+	response		SOGSquadCheck
+}
+
+response SOGSquadCome
+{
+	sentence HG_COME
+}
+rule SOGSquadCome
+{
+	criteria		IsSOG ConceptTalkSquadCome
+	response		SOGSquadCome
+}
+
+response SOGSquadRetreat
+{
+	sentence HG_RETREAT
+}
+rule SOGSquadRetreat
+{
+	criteria		IsSOG ConceptTalkSquadRetreat
+	response		SOGSquadRetreat
+}
+
+response SOGSquadSearch
+{
+	sentence HG_SEARCH
+}
+rule SOGSquadSearch
+{
+	criteria		IsSOG ConceptTalkSquadSearch
+	response		SOGSquadSearch
+}
+
+response SOGSquadSuppress
+{
+	sentence HG_SURPRESS
+}
+rule SOGSquadSuppress
+{
+	criteria		IsSOG ConceptTalkSquadSuppress
+	response		SOGSquadSuppress
+}
+
+response SOGStare
+{
+	sentence HG_STARE
+}
+rule SOGStare
+{
+	criteria		IsSOG ConceptTalkStare
+	response		SOGStare
+}
+
+response SOGTaunt
+{
+	sentence HG_TAUNT
+}
+rule SOG
+{
+	criteria		IsSOG ConceptTalkTaunt
+	response		SOGTaunt
+}
+
+response SOGThrow
+{
+	sentence HG_THROW
+}
+rule SOGThrow
+{
+	criteria		IsSOG ConceptTalkThrow
+	response		SOGThrow
+}
+
+response SOGUnUse
+{
+	sentence HG_UNUSE
+}
+rule SOGUnUse
+{
+	criteria		IsSOG ConceptTalkUnUse
+	response		SOGUnUse
+}
+
+response SOGUse
+{
+	sentence HG_USE
+}
+rule SOGUse
+{
+	criteria		IsSOG ConceptTalkUse
+	response		SOGUse
+}
+
+response SOGWound
+{
+	sentence HG_WOUND
+}
+rule SOGWound
+{
+	criteria		IsSOG ConceptTalkWound
+	response		SOGWound
+}
+
+response SOGZombie
+{
+	sentence HG_ZOMBIE
+}
+rule SOGZombie
+{
+	criteria		IsSOG ConceptTalkCharge EnemyIsSpx
+	response		SOGZombie
+}
+
+
+criterion "ConceptTalkThem" "Concept" "TLK_THEM" required
+response Them
+{
+	sentence THEM
+}
+rule Them
+{
+	criteria		ConceptTalkThem
+	response		Them
+}
+

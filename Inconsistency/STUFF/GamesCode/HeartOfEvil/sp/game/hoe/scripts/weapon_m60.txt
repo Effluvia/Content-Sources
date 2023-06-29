@@ -1,0 +1,126 @@
+// Small Machine Gun 1
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HOE_M60"
+	"viewmodel"				"models/M60/v_m60/v_m60.mdl"
+	"playermodel"			"models/M60/w_m60/w_m60.mdl"
+	"anim_prefix"			"smg2"
+	"bucket"				"3"
+	"bucket_position"		"1"
+
+	"clip_size"				"50"
+	"clip2_size"			"-1"
+
+	"default_clip"			"50"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"7_62mm"
+	"secondary_ammo"		"None"
+
+	// weight is from HL1
+	"weight"				"10"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload"			"Weapon_AK47.ClipInsert"
+		"reload_npc"		"Weapon_SMG1.NPC_Reload"
+		"empty"				"Weapon_SMG1.Empty"
+		"single_shot"		"Weapon_M60.Single"
+		"single_shot_npc"	"Weapon_M60.NPC_Single"
+		"special1"			"Weapon_SMG1.Special1"
+		"special2"			"Weapon_SMG1.Special2"
+		"double_shot"		"Weapon_SMG1.Double"
+		"burst"				"Weapon_SMG1.Burst"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"font"		"HOEWeaponIcons"
+			"character" "I"
+		}
+		"weapon_s"
+		{
+			"font"		"HOEWeaponIconsSelected"
+			"character" "I"
+		}
+		"weapon_small"
+		{
+			"font"		"HOEWeaponIconsSmall"
+			"character" "I"
+		}
+		"ammo"
+		{
+			"font"		"HOEAmmoIcons"
+			"character" "f"
+		}
+//		"weapon"
+//		{
+//			"file"		"sprites/640namhud3"
+//			"x"			"40"
+//			"y"			"102"
+//			"width"		"170"
+//			"height"	"45"
+//		}
+//		"weapon_s"
+//		{	
+//			"file"		"sprites/640namhud3"
+//			"x"			"40"
+//			"y"			"102"
+//			"width"		"170"
+//			"height"	"45"
+////			"file"		"sprites/640namhud3"
+////			"x"			"40"
+////			"y"			"147"
+////			"width"		"170"
+////			"height"	"45"
+//		}
+//		"ammo"
+//		{
+//			"file"		"sprites/640namhud1"
+//			"x"			"184"
+//			"y"			"212"
+//			"width"		"24"
+//			"height"	"24"
+//		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+
+	WeaponSelectionHUD
+	{
+		"angles"		"6 90 0"
+		"origin"		"-70 0 3"
+		"anim"			"idle"
+	}
+
+	ViewModelFudge
+	{
+		"origin"		"-3 0 -2"
+	}
+
+	IronSights
+	{
+//		"origin"	"-6.05 -8 0.6"
+//		"angles"	"0 0 0"
+		"origin"	"-6.05 -8 -0.0"
+		"angles"	"-3 0 0"
+	}
+}

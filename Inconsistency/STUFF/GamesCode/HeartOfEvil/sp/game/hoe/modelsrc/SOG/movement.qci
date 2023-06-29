@@ -1,0 +1,412 @@
+$poseparameter "move_yaw" -180 180 wrap
+
+$weightlist upperbodyreplace "Bip01 Spine" 1.0
+$weightlist HipsUpperbodyReplace "Bip01 Pelvis" 1.0 "Bip01 L Leg" 0.0 "Bip01 R Leg" 0.0 
+$weightlist LegsReplace "Bip01" 1.0 "Bip01 Pelvis" 1.0 "Bip01 Spine" 0.0 "Bip01 L Leg" 1.0 "Bip01 R Leg" 1.0 
+$weightlist pelvisonly "Bip01 Pelvis" 1.0 "Bip01 Spine" 0.0 "Bip01 L Leg" 0.0 "Bip01 R Leg" 0.0 
+
+// walking, no weapon
+$animation a_WalkS WalkS loop LX LY startloop 0 rotateto -180 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  5 11 25 30
+	// ikrule rfoot footstep 1 range 22 28  6 11
+}
+$animation a_WalkSE WalkSE loop LX LY startloop 0 rotateto -135 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  5  8 22 27
+	// ikrule rfoot footstep 1 range 20 25 6 11
+}
+$animation a_WalkE WalkE loop LX LY startloop 0 rotateto -90 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  2  9 19 28
+	// ikrule rfoot footstep 1 range 19 24  4  8
+}
+$animation a_WalkNE WalkNE loop LX LY startloop 0 rotateto -45 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  4 11 23  0
+	// ikrule rfoot footstep 1 range 18 25  8 13
+}
+$animation a_WalkN WalkN loop LX LY startloop 0 rotateto 0 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  4 10 19 25
+	// ikrule rfoot footstep 1 range 18 26 3 10
+}
+$animation a_WalkNW WalkNW loop LX LY startloop 0 rotateto 45 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  2  9 21 27
+	// ikrule rfoot footstep 1 range 18 25  7 13
+}
+$animation a_WalkW WalkW loop LX LY startloop 0 rotateto 90 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  2 11 22 28
+	// ikrule rfoot footstep 1 range 18 27  6 13
+}
+$animation a_WalkSW WalkSW loop LX LY startloop 0 rotateto 135 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  2 10 18 25
+	// ikrule rfoot footstep 1 range 16 22  7 12
+}
+
+// running, no weapon
+$animation a_RunS RunS loop LX LY startloop 0 rotateto -180 fps 31 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 9 12 ..
+	// ikrule rfoot footstep 1 range .. 0 3 ..
+}
+$animation a_RunSE RunSE loop LX LY startloop 0 rotateto -135 fps 29 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 7 11 ..
+	// ikrule rfoot footstep 1 range .. 17 1 ..
+}
+$animation a_RunE RunE loop LX LY startloop 0 rotateto -90 fps 31 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 7 9 ..
+	// ikrule rfoot footstep 1 range .. 14 0 ..
+}
+$animation a_RunNE RunNE loop LX LY startloop 0 rotateto -45 fps 29 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 6 10 ..
+	// ikrule rfoot footstep 1 range .. 17 19 ..
+}
+$animation a_RunN RunN loop LX LY startloop 0 rotateto 0 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 8 10 ..
+	// ikrule rfoot footstep 1 range .. 17 1 ..
+}
+$animation a_RunNW RunNW loop LX LY startloop 0 rotateto 45 fps 28 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 9 11 ..
+	// ikrule rfoot footstep 1 range .. 18 1 ..
+}
+$animation a_RunW RunW loop LX LY startloop 0 rotateto 90 fps 32 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 7 9 ..
+	// ikrule rfoot footstep 1 range .. 16 0 ..
+}
+$animation a_RunSW RunSW loop LX LY startloop 0 rotateto 135 fps 31 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 8 11 ..
+	// ikrule rfoot footstep 1 range .. 16 1 ..
+}
+
+// FIXME: loop?
+$sequence layer_run_holding "seq_run" weightlist upperbodyreplace hidden
+$sequence run_holding_all {
+	a_runS a_runSE a_runE a_runNE a_runN a_runNW a_runW a_runSW a_runS
+	blendwidth 9
+	blend move_yaw -180 180
+	addlayer layer_run_holding
+	addlayer layer_run_spine_delta
+	activity ACT_RUN 1
+	node "running"
+ 	{ event AE_NPC_LEFTFOOT 6 "NPC_SOG.RunFootstepLeft" }
+ 	{ event AE_NPC_RIGHTFOOT 15 "NPC_SOG.RunFootstepRight" }
+}
+
+//$sequence run_all {
+//	a_runS a_runSE a_runE a_runNE a_runN a_runNW a_runW a_runSW a_runS
+//	blendwidth 9
+//	blend move_yaw -180 180
+//	activity ACT_RUN 1 node "running"
+//}
+
+////////////////////////
+$animation a_WalkN_SMG WalkN_SMG1_Aim loop LX LY rotateto 0 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  4 10 19 25
+	// ikrule rfoot footstep 1 range 18 26 3 10
+}
+$animation a_walkS_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkS subtract a_walkS 0
+$animation a_walkSE_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkSE subtract a_walkSE 0
+$animation a_walkE_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkE subtract a_walkE 0
+$animation a_walkNE_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkNE subtract a_walkNE 0
+$animation a_walkN_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkN_SMG subtract a_walkN_SMG 0
+$animation a_walkNW_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkNW subtract a_walkNW 0
+$animation a_walkW_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkW subtract a_walkW 0
+$animation a_walkSW_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_walkSW subtract a_walkSW 0
+$sequence aim_walk_all_delta {
+	a_walkS_aim_delta a_walkSE_aim_delta a_walkE_aim_delta 
+	a_walkNE_aim_delta a_walkN_aim_delta a_walkNW_aim_delta 
+	a_walkW_aim_delta a_walkSW_aim_delta a_walkS_aim_delta 
+	weightlist pelvisonly
+	blendwidth 9 blend move_yaw -180 180
+//	iklock lfoot 1 1 iklock rfoot 1 1
+	delta
+	hidden
+}
+
+//$ikchain rfoot "Bip01 R Foot" Z 0
+//$ikchain lfoot "Bip01 L Foot" Z 0
+
+$animation a_RunN_SMG RunN_SMG1_Aim loop LX LY rotateto 0 {
+	alignto idle
+	// ikrule lfoot footstep 0 range  4 10 19 25
+	// ikrule rfoot footstep 1 range 18 26 3 10
+}
+$animation a_RunS_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunS subtract a_RunS 0
+$animation a_RunSE_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunSE subtract a_RunSE 0
+$animation a_RunE_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunE subtract a_RunE 0
+$animation a_RunNE_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunNE subtract a_RunNE 0
+$animation a_RunN_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunN_SMG subtract a_RunN_SMG 0
+$animation a_RunNW_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunNW subtract a_RunNW 0
+$animation a_RunW_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunW subtract a_RunW 0
+$animation a_RunSW_aim_delta WalkN_SMG1_Aim frame 0 0 weightlist pelvisonly alignto a_RunSW subtract a_RunSW 0
+$sequence aim_Run_all_delta {
+	a_RunS_aim_delta a_RunSE_aim_delta a_RunE_aim_delta 
+	a_RunNE_aim_delta a_RunN_aim_delta a_RunNW_aim_delta 
+	a_RunW_aim_delta a_RunSW_aim_delta a_RunS_aim_delta 
+	weightlist pelvisonly
+	blendwidth 9 blend move_yaw -180 180
+//	iklock lfoot 1 1 iklock rfoot 1 1
+	delta
+	hidden
+}
+
+$sequence layer_walk_holding "WalkNUpper" weightlist upperbodyreplace hidden
+$sequence walk_holding_all {
+	a_walkS a_walkSE a_walkE a_walkNE a_walkN a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9
+	blend move_yaw -180 180
+	addlayer aim_walk_all_delta
+	addlayer layer_walk_holding
+	activity ACT_WALK 1
+	node "walking"
+ 	{ event AE_NPC_LEFTFOOT 9 "NPC_SOG.FootstepLeft" }
+ 	{ event AE_NPC_RIGHTFOOT 23 "NPC_SOG.FootstepRight" }
+}
+
+$animation a_aim_neutral Aim9Directions frame 4 4 weightlist HipsUpperbodyReplace
+$animation a_aim_neutral2 Aim9Directions frame 4 4 weightlist HipsUpperbodyReplace
+$animation a_aim_down_right Aim9Directions frame 0 0 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_down_center Aim9Directions frame 1 1 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_down_left Aim9Directions frame 2 2 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_mid_right Aim9Directions frame 3 3 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_mid_center Aim9Directions frame 4 4 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_mid_left Aim9Directions frame 5 5 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_up_right Aim9Directions frame 6 6 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace 
+$animation a_aim_up_center Aim9Directions frame 7 7 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_up_left Aim9Directions frame 8 8 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+$animation a_aim_straight_up AimUp frame 0 0 subtract a_aim_neutral2 0 weightlist HipsUpperbodyReplace
+
+//$sequence aimup AimUp hidden
+
+$sequence aimup AimUp hidden
+
+$sequence layer_Aim_all  {
+			a_aim_straight_up a_aim_straight_up a_aim_straight_up
+			a_aim_up_right    a_aim_up_center   a_aim_up_left 
+			a_aim_mid_right   a_aim_mid_center  a_aim_mid_left 
+			a_aim_down_right  a_aim_down_center a_aim_down_left 
+			blendwidth 3
+			blend aim_yaw -30 30
+			blend aim_pitch -90 45
+			delta
+			hidden
+}
+
+// walk N, aiming a rifle
+$sequence layer_walk_aiming WalkN_SMG1_Aim weightlist upperbodyreplace addlayer layer_Aim_all hidden
+
+// Run N, aiming a rifle
+$sequence layer_run_aiming WalkN_SMG1_Aim weightlist upperbodyreplace addlayer layer_Aim_all hidden
+
+$animation a_RunN_aim RunN_smg1_Aim loop LX LY rotateto 0 {
+	alignto idle
+	// ikrule lfoot footstep 0 range .. 8 10 ..
+	// ikrule rfoot footstep 1 range .. 17 1 ..
+}
+
+$animation a_aim_combat_neutral "Aim9DirectionsCombat" frame 4 4 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_down_right Aim9DirectionsCombat frame 0 0 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_down_center Aim9DirectionsCombat frame 1 1 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_down_left Aim9DirectionsCombat frame 2 2 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_mid_right Aim9DirectionsCombat frame 3 3 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_mid_center Aim9DirectionsCombat frame 4 4 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_mid_left Aim9DirectionsCombat frame 5 5 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_up_right Aim9DirectionsCombat frame 6 6 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace 
+$animation a_aim_combat_up_center Aim9DirectionsCombat frame 7 7 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_up_left Aim9DirectionsCombat frame 8 8 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_combat_straight_up AimUpCombat frame 0 0 subtract a_aim_combat_neutral 0 weightlist HipsUpperbodyReplace
+
+$sequence layer_Aim_combatidle  {
+			a_aim_combat_straight_up a_aim_combat_straight_up a_aim_combat_straight_up
+			a_aim_combat_up_right    a_aim_combat_up_center   a_aim_combat_up_left 
+			a_aim_combat_mid_right   a_aim_combat_mid_center  a_aim_combat_mid_left 
+			a_aim_combat_down_right  a_aim_combat_down_center a_aim_combat_down_left 
+			blendwidth 3
+			blend aim_yaw -30 30
+			blend aim_pitch -90 45
+			delta
+			hidden
+}
+
+$sequence layer_combatidle_aiming a_aim_combat_neutral weightlist upperbodyreplace addlayer layer_Aim_combatidle hidden
+$animation a_combatidle_legs seq_combatidle weightlist LegsReplace
+$sequence combatidle seq_combatidle loop fps 10 {
+	addlayer layer_Aim_combatidle
+	activity ACT_IDLE_ANGRY 1
+	node "shooting"
+}
+
+$sequence walk_aiming_all {
+	a_walkS a_walkSE a_walkE a_walkNE a_walkN a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9
+	blend move_yaw -180 180
+	addlayer aim_walk_all_delta
+	addlayer layer_walk_aiming
+	activity ACT_WALK_AIM_RIFLE 1
+	node "walking"
+}
+
+$weightlist SpineOnly "Bip01 Spine1" 1.0 "Bip01 Spine2" 0.0
+$animation a_RunN_Spine_Delta RunN_Spine_Delta weightlist SpineOnly subtract a_RunN 0
+$animation a_RunW_Spine_Delta RunW_Spine_Delta weightlist SpineOnly subtract a_RunW 0
+$animation a_RunE_Spine_Delta RunE_Spine_Delta weightlist SpineOnly subtract a_RunE 0
+$animation a_RunNW_Spine_Delta RunNW_Spine_Delta weightlist SpineOnly subtract a_RunNW 0
+$animation a_RunNE_Spine_Delta RunNE_Spine_Delta weightlist SpineOnly subtract a_RunNE 0
+$animation a_RunSW_Spine_Delta RunSW_Spine_Delta weightlist SpineOnly subtract a_RunSW 0
+$animation a_RunSE_Spine_Delta RunSE_Spine_Delta weightlist SpineOnly subtract a_RunSE 0
+$animation a_RunS_Spine_Delta RunS_Spine_Delta weightlist SpineOnly subtract a_RunS 0
+$sequence layer_run_spine_delta {
+	a_RunS_Spine_Delta a_RunSE_Spine_Delta a_RunE_Spine_Delta 
+	a_RunNE_Spine_Delta a_RunN_Spine_Delta a_RunNW_Spine_Delta 
+	a_RunW_Spine_Delta a_RunSW_Spine_Delta a_RunS_Spine_Delta 
+	weightlist SpineOnly
+	blendwidth 9 blend move_yaw -180 180
+	delta
+	hidden
+}
+
+$sequence run_aiming_all {
+	a_runS a_runSE a_runE a_runNE a_runN_aim a_runNW a_runW a_runSW a_runS
+	blendwidth 9
+	blend move_yaw -180 180
+	addlayer layer_run_aiming
+	addlayer layer_run_spine_delta
+	activity ACT_RUN_AIM_RIFLE 1
+	node "running"
+ 	{ event AE_NPC_LEFTFOOT 6 "NPC_SOG.RunFootstepLeft" }
+ 	{ event AE_NPC_RIGHTFOOT 15 "NPC_SOG.RunFootstepRight" }
+}
+
+$sequence shootm21_aim seq_fire fps 20 {
+	addlayer layer_Aim_combatidle
+	activity ACT_RANGE_ATTACK_SNIPER_RIFLE 1
+	node "shooting"
+}
+
+$animation a_aim_crouch_neutral "Aim9DirectionsCrouch" frame 4 4 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_down_right Aim9DirectionsCrouch frame 0 0 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_down_center Aim9DirectionsCrouch frame 1 1 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_down_left Aim9DirectionsCrouch frame 2 2 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_mid_right Aim9DirectionsCrouch frame 3 3 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_mid_center Aim9DirectionsCrouch frame 4 4 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_mid_left Aim9DirectionsCrouch frame 5 5 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_up_right Aim9DirectionsCrouch frame 6 6 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace 
+$animation a_aim_crouch_up_center Aim9DirectionsCrouch frame 7 7 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_up_left Aim9DirectionsCrouch frame 8 8 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+$animation a_aim_crouch_straight_up AimUpCombat frame 0 0 subtract a_aim_crouch_neutral 0 weightlist HipsUpperbodyReplace
+
+$sequence layer_Aim_crouch  {
+			a_aim_crouch_straight_up a_aim_crouch_straight_up a_aim_crouch_straight_up
+			a_aim_crouch_up_right a_aim_crouch_up_center a_aim_crouch_up_left 
+			a_aim_crouch_mid_right a_aim_crouch_mid_center a_aim_crouch_mid_left 
+			a_aim_crouch_down_right a_aim_crouch_down_center a_aim_crouch_down_left 
+			blendwidth 3
+			blend aim_yaw -30 30
+			blend aim_pitch -90 45
+			delta
+			hidden
+}
+$sequence crouch_shootm21_aim seq_crouch_fire fps 20 {
+	addlayer layer_Aim_crouch
+	activity ACT_RANGE_ATTACK1_LOW 1
+	node "shootingCrouched"
+}
+
+$sequence crouch_combatidle seq_crouch_combatidle loop fps 30 {
+	addlayer layer_Aim_crouch
+	activity ACT_IDLE_ANGRY_LOW 1
+	node "shootingCrouched"
+}
+
+
+// this anim does nothing
+$sequence g_shootm21 a_aim_neutral fps 20 {
+	subtract g_shootm21 0
+	delta
+//	hidden
+	activity ACT_GESTURE_RANGE_ATTACK_SMG1 1
+	node shooting
+	weightlist HipsUpperbodyReplace
+}
+
+$sequence g_reload "seq_reload" fps 40 {
+	{ event 3015 40 }
+	activity ACT_GESTURE_RELOAD 1
+	weightlist HipsUpperbodyReplace
+}
+
+
+
+
+
+////////////////////////
+$sequence standing_to_shooting "seq_idle_to_fire" fps 40 {
+	blendlayer layer_Aim_combatidle 0 19 20 20
+	activity ACT_TRANSITION 1
+	transition standing shooting
+}
+$sequence shooting_to_standing "seq_fire_to_idle" fps 40 {
+	blendlayer layer_Aim_combatidle 0 0 0 19
+	activity ACT_TRANSITION 1
+	transition shooting standing
+}
+
+$sequence crouching_to_shootingCrouched "seq_crouchidle_to_crouchaim" {
+	blendlayer layer_Aim_crouch 0 19 20 20
+	activity ACT_TRANSITION 1
+	transition crouching shootingCrouched
+}
+$sequence shootingCrouched_to_crouching "seq_crouchaim_to_crouchidle" {
+	blendlayer layer_Aim_crouch 0 0 0 19
+	activity ACT_TRANSITION 1
+	transition shootingCrouched crouching
+}
+
+$sequence shooting_to_shootingCrouched "seq_aim_to_crouchaim" fps 20 {
+	blendlayer layer_Aim_combatidle 0 0 4 8
+	blendlayer layer_Aim_crouch 4 8 9 9
+	activity ACT_TRANSITION 1
+	transition "shooting" "shootingCrouched"
+}
+$sequence shootingCrouched_to_shooting "seq_crouchaim_to_aim" fps 20 {
+	blendlayer layer_Aim_crouch 0 0 4 8
+	blendlayer layer_Aim_combatidle 4 8 9 9
+	activity ACT_TRANSITION 1
+	transition "shootingCrouched" "shooting"
+}
+
+$sequence shooting_to_crouching "seq_aim_to_crouchidle" fps 30 {
+	blendlayer layer_Aim_combatidle 0 0 0 19
+	activity ACT_TRANSITION 1
+	transition "shooting" "crouching"
+}
+$sequence crouching_to_shooting "seq_crouchidle_to_aim" fps 30 {
+	blendlayer layer_Aim_combatidle 0 19 20 20
+	activity ACT_TRANSITION 1
+	transition "crouching" "shooting"
+}
+
+$sequence standing_to_shootingCrouched "seq_idle_to_crouchaim" fps 30 {
+	blendlayer layer_Aim_crouch 0 19 20 20
+	activity ACT_TRANSITION 1
+	transition "standing" "shootingCrouched"
+}
+$sequence shootingCrouched_to_standing "seq_crouchaim_to_idle" fps 30 {
+	blendlayer layer_Aim_crouch 0 0 0 19
+	activity ACT_TRANSITION 1
+	transition "shootingCrouched" "standing"
+}
+
+$skiptransition walking running

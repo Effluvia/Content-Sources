@@ -1,0 +1,173 @@
+Version 1
+- Initial release
+
+======================================================================
+
+Version 2
+- FIXED: ammo_m16clip was spawning ammo_m16box by mistake
+- FIXED: RPG was not auto-reloading when switching to it
+- FIXED: Chainsaw "start" sound was interrupted when picking up an item
+- FIXED: Medic's gun was positioned badly
+- FIXED: Peasant didn't look at player when speaking after being +USEd
+- FIXED: Human left/right turn animations were sometimes looping
+- FIXED: halflife/+0~elev1_pan texture wasn't animating (namf5 elevator light)
+- FIXED: func_healthcharger didn't go dim when empty
+- FIXED: Texture bug (black hole) on back of female peasant/zombie skirt
+- FIXED: Chainsaw sounds continued playing after weapon was holstered
+- FIXED: spx_flyer was precaching grenade_spit entity instead of spx_spit
+- FIXED: spx_flyer acid hit sound was missing
+- FIXED: spx_flyer acid impact decal was missing
+- FIXED: napalm explosions on namc1 were missing the fireball sprite
+- FIXED: off-by-1 error resulted in a transparent line between jungle textures
+- FIXED: missing polygons inside top of helmet (aka battery)
+- FIXED: superzombie not playing walk-hurt animation
+- FIXED: superzombie stand->shoot transition animations and combat-idle
+         animation
+- FIXED: Mikeforce and NamGrunt M16 shooting animations were too long,
+         resulting in too-few muzzleflashes and brass ejections
+- FIXED: Mikeforce/NamGrunt/Charlie stand->shoot and crouch->shoot transition
+         animations and combat-idle animations
+- FIXED: Peasant ragdoll was scaled improperly
+- FIXED: Human ragdoll hands bending too far
+- FIXED: Missing polygons on Kurtz' right hand (black pjs only)
+- FIXED: green blood on heads and gibs when shot
+- FIXED: kinked barnacle tongue
+- FIXED: namGrunt idle head turning
+- FIXED: aagun on name0 rotating in the wrong direction. Also added a
+         muzzleflash. Made the aagun explosions emit a fireball.
+- FIXED: non-solid airplane windows on name0
+
+- ADDED: Peasants move away when pushed by the player
+- ADDED: Kophyaeger ragdolls
+- ADDED: Kophyaeger eating behavior
+- ADDED: Cockroach
+- ADDED: shell/brass ejection to NPC 870/ak47/colt/m16/m60
+
+- CHANGED: AK47, COLT, M16, M60: lowered accuracy when used by an NPC
+- CHANGED: Increased damage inflicted by the player and reduced the damage
+           taken by the player on Easy/Medium difficulty.
+- CHANGED: Reduced the size of the COLT slightly to match HL1 version
+- CHANGED: Medic was not quite facing the shooting direction when standing
+- CHANGED: Zombies would walk too far to eat a corpse (for example if the
+           corpse was on the floor above the zombie).
+- CHANGED: spx_flyer acid delivers damage over time instead of immediately
+- CHANGED: Made spx_babys on name1 jump into the trench so they don't get
+           stuck on the side.
+- CHANGED: Made spx_babys on namg2 jump lower and closer to the broken edge
+           of the bridge.
+- CHANGED: health dispenser cabinet to replace func_healthcharger
+
+======================================================================
+
+Version 3
+- The Colt alternate fire is pistol whip as in the original game.
+  Hold the right mouse button down for 2 seconds before swinging
+  to do 3x damage. Mostly useful for killing crabs.
+- Humans create footstep splashes in shallow water.
+- The special-ops snipers have a "laser sight" to indicate where they are
+  aiming.  Just think of it as a gameplay mechanic rather that a real laser.
+- Helicopters do a tailspin for a few seconds before exploding into chunks.
+- Barney/soldiers can shoot and reload while running, and can run/walk while
+  facing in any direction.
+- Sarge flies off with his chopper after the episode B ambush instead of
+  going back into the house.
+- The two officers who tell you about Kurtz remove their smoking devices
+  while speaking.
+- The homing chumtoad leads you through the maze much quicker and then dies.
+- Added chumtoad ragdolls.
+- The 3-headed monkey scene plays out better; no more running back to the
+  invisible trigger to make the scene progress.
+- Created a TrueType font for the HUD.
+- Draw actual weapon models in the weapon selection menu.
+- The large monitor in the episode F Half-Life 2 map displays a hint of things
+  to come later in the game.
+- The flying critters have wings and move around more making them harder to
+  shoot.
+- The superzombie scene at the airfield in episode D plays out differently.
+  Bring the soldier from the prison with you for a surprise.
+- Humans and superzombies continue shooting corpses for a few seconds after
+  killing an NPC. The length of time can be controlled with the
+  hoe_shoot_dead_enemy_time console variable.
+- Tried to keep the 3 charlie "snipers" in Alamo in their rooms instead of
+  them running out of the building as soon as you show up.
+- Tried to keep the 2 charlies in their bunkers at the beginning of Alamo.
+- Reduced the delay between shots for NPCs using the rocket launcher.
+- Fixed the broken M60 viewmodel.  It had geometry cut out due to having too
+  many textures for the Source Engine.
+- The Colt viewmodel position was moved left and up.
+- Added missing muzzleflash to sniper rifle viewmodel when not zoomed.
+- Tweaked the scene where Barney is kidnapped in episode F by adding a rope
+  around his leg, making sure his muzzleflash plays, adding a dust trail,
+  and pulling him in a straight line.
+- Humans respond better to incoming M79 grenades (i.e. they run away if
+  the grenade isn't fired from too close range).
+- NPCs rapelling from a helicopter appear to come from inside the chopper
+  rather than magically appearing below it.
+- Randomized the spawn positions of the snipers in episode F.
+- Cut away the skyboxes in the last playable map.  As a result the helicopters
+  will shoot at you more, helicopter chunks won't land on invisible
+  surfaces in the sky, and your RPG rockets won't magically disappear where
+  they used to hit the skybox.  It's also possible to make some insane long
+  shots with the RPG against the helicopters.
+- Enabled helicopter rocket firing on the last playable map.
+- Helicopters can shoot rockets at a downward slope of several degrees.
+  Originally they could only shoot straight ahead.
+- Ragdoll corpses spawn blood when shot.
+- Made sure eating creatures face the corpse they are snacking on.
+- Fixed some of the "Them" blue-skinned aliens not having their skin, which
+  was a second model bodygroup.
+- All Hammer-placed corpses - including those hanging from ropes - are ragdolls.
+- The few "headless" corpses that were jammed into walls to hide the head
+  are now truly headless.
+- Lanterns are physics objects and can be destroyed to shut off the light.
+- Peasants hanging by their wrists become ragdolls attached to ropes when
+  killed rather than dropping to the ground.
+- Added ironsights. cvar hoe_ironsights enables/disables ironsights.
+  cvar hoe_ironsights_auto controls whether ironsights come on automatically.
+- Added a HOE-specific options dialog.
+- Added closed captions.
+- Added up/down head tilting for friendly NPCs. Previously they only turned
+  left/right.
+- The squad HUD element displays a health bar next to each member's icon.
+- If the crosshair is pointing at a commandable squad member his icon turns
+  green in the squad HUD element.
+- The sniper rifle has an ironsight zoomable scope. Use mousewheel to zoom
+  in/out (or whatever keys are assigned to prev/next inventory item).
+
+======================================================================
+
+Version 4
+- Fixed the wrong hat being dropped by npc_mikeforce.
+- Fixed superzombie/barneyzombie attacks being interrupted by light damage.
+- The M79 ammo pickup always gives 2 grenades regardless of the difficulty
+  setting.  Previously on 'hard' only 1 grenade was given; that made starting
+  with the M79 on Alamo a bit harder.
+- Added spent shell casing ejection to the 870 shotgun viewmodel.
+- Show the proper shell type (buckshot or elephantshot) during the 870 shotgun
+  reload animation.
+- Zombies and Superzombies receive 1/20th of their maximum health each time they
+  feed, rather than only 20 points.
+- Zombies will sometimes play a "big flinch" animation while chasing an enemy
+  when they take heavy damage (from a colt, shotgun or explosion for example).
+  The zombie stops and shakes its head when this happens.
+- Added hit and miss sounds for the bullsquid tail-spin attack.
+- Stopped the bullsquid spitting at the player right after throwing him/her
+  since the player is flying through the air at that point.
+- Zombie slash attacks push the player in the direction the zombie's arm swings,
+  opposite of how Half-Life 2 zombies do it.
+- Fiddled with some weapon viewmodels, moving them closer to the center of the
+  screen.  These can be adjusted by editing the ViewModelFudge entry in
+  the scripts/weapon_XYZ.txt file for the particular weapon.
+- Tweaked the spawn orientation of weapons in some maps to match the original.
+- Moved the player spawn position in alamo0 back a bit so the machete isn't
+  automatically picked up off the table.
+- Display the "Try not to shoot your own guys" message longer in alamo0.
+- Added the original RPG7 reload sound.
+- Fixed wrong texture on a lightbulb at end of the truck ride in map nama1.
+  It didn't match the same lightbulb in the next map that loaded.
+- Reduced the size of the tripmine worldmodel by 1/4 and the chainsaw worldmodel
+  by 1/3.
+- Added hand-grenade secondary fire: the underhand roll.
+- Shrunk and repositioned some of the hud elements.
+- Fixed the missing flashlight hud icon caused by a missing font definition in
+  ClientScheme.res.

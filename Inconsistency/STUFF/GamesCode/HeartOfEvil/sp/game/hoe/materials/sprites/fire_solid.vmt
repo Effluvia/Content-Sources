@@ -1,0 +1,21 @@
+"UnlitGeneric"
+{
+	"$basetexture" "sprites/fire_solid"
+
+	// I can't figure out how to get env_sprite to obey renderamt
+	"$translucent"	"1"
+	"$alpha" 0.39 // 100/255
+
+//	"$alphatest"	"1"
+//	"$ALPHATESTREFERENCE"	"0.5"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 30
+		}
+	}
+}

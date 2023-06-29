@@ -1,0 +1,2645 @@
+//TITLES FOR HALF-LIFE
+// Position command $position x y 
+// x & y are from 0 to 1 to be screen resolution independent
+// -1 means center in each dimension
+// Effect command $effect <effect number>
+// effect 0 is fade in/fade out
+// effect 1 is flickery credits
+// effect 2 is write out (training room)
+// Text color r g b command $color
+// fadein time fadeout time / hold time
+// $fadein (message fade in time - per character in effect 2)
+// $fadeout (message fade out time)
+// $holdtime (stay on the screen for this long)
+
+
+//NAM TITLES
+// This is the amount of time the highlight lags behind the leading edge of the text
+$fxtime 0.25
+// How long to hold the message on the screen (after it scans out)
+$holdtime 1
+// How long it takes to fade out the message after holding
+$fadeout 1
+
+
+////////////////////////////////////////////////////////////////
+// Object Titles
+////////////////////////////////////////////////////////////////
+
+$effect 0
+$fadein 0.01
+$color 100 100 100
+$color2 150 150 150
+$position -1 0.8
+
+
+$effect 1
+$color 230 0 0
+$color2 140 0 0
+PICKUP_CHAINSAW
+{
+You have picked up a chainsaw!  Go find some meat!
+}
+$color 100 100 100
+$color2 150 150 150
+$effect 0
+
+
+FREEMAN6
+{
+Slices of roast moose.
+}
+
+FREEMAN8
+{
+Record player.
+}
+
+FREEMAN11
+{
+Ignition key.
+}
+
+FREEMAN12
+{
+Rope.
+}
+
+FREEMAN13
+{
+Structurally unstable pillar.
+}
+
+FREEMAN14
+{
+Truck.
+}
+
+FREEMAN20
+{
+Not particularly useful-looking key.
+}
+
+FREEMAN21
+{
+Flare
+}
+
+FREEMAN22
+{
+This door is locked, but it looks like the sort
+of door that you might be able to find a key lying
+around somewhere for
+}
+
+FREEMAN26
+{
+Letter
+}
+
+OBJECT_SHOWER
+{
+Shower
+}
+
+OBJECT_TOILET_HANDLE
+{
+Toilet Handle
+}
+
+OBJECT_TOILET_SEAT
+{
+Toilet Seat
+}
+
+OBJECT_LETTER
+{
+Letter
+}
+
+OBJECT_DOOR
+{
+Door
+}
+
+OBJECT_DOORS
+{
+Doors
+}
+
+OBJECT_WINDOW
+{
+Window
+}
+
+OBJECT_TAP
+{
+Tap
+}
+
+OBJECT_TRUCK
+{
+Truck
+}
+
+OBJECT_GUN
+{
+Gun
+}
+
+OBJECT_RADIO
+{
+Radio Transmitter
+}
+
+OBJECT_BUTTON
+{
+Button
+}
+
+OBJECT_HANDBRAKE
+{
+Handbrake
+}
+
+OBJECT_GENERATOR
+{
+Backup Power Generator
+}
+
+OBJECT_FAN
+{
+Fan
+}
+
+OBJECT_PLANK
+{
+Plank
+}
+
+OBJECT_LEDGE
+{
+Window ledge
+}
+
+OBJECT_OVEN
+{
+Oven Door
+}
+
+OBJECT_PAINTING
+{
+Painting
+}
+
+OBJECT_GEM
+{
+Ancient Mystical Purple Gem of Virility
+}
+
+OBJECT_SLOT
+{
+The Sacred Slot of Chastity
+}
+
+OBJECT_JUSTICE
+{
+The Green Crystal of Justice
+}
+
+OBJECT_FREEDOM
+{
+The Orange Crystal of Freedom
+}
+
+OBJECT_BRACKET
+{
+Stone Bracket
+}
+
+OBJECT_KEY1
+{
+The Golden Key of Truth
+}
+
+OBJECT_KEYDOOR1
+{
+There is a gold plate set above the lock.
+}
+
+OBJECT_KEY2
+{
+The Silver Key of Beauty
+}
+
+OBJECT_KEYDOOR2
+{
+There is a silver plate set above the lock.
+}
+
+OBJECT_KEY3
+{
+The Emerald Key of Liberal Guilt
+}
+
+OBJECT_KEYDOOR3
+{
+There is an Emerald set above the lock.
+}
+
+OBJECT_KEY4
+{
+The Ruby Key of Regular Bowel Movements
+}
+
+OBJECT_KEYDOOR4
+{
+There is a Ruby set above the lock.
+}
+
+OBJECT_KEY5
+{
+The Topaz Key of Erectile Dysfunction
+}
+
+OBJECT_KEYDOOR5
+{
+There is an Topaz set above the lock.
+}
+
+OBJECT_RUSTYDOOR
+{
+A Rusty Old Door, that appears to be locked
+}
+
+OBJECT_RUSTYKEY
+{
+Rusty Key
+}
+
+OBJECT_CIVILSUSPECT
+{
+Suspicious-looking character
+}
+
+OBJECT_FEEDHOLE
+{
+Feeding hole
+}
+
+OBJECT_ZOMBIE_BLOCKED_DOOR
+{
+This door is blocked from the other side by the zombie.
+}
+
+OBJECT_LOCKED_DOOR
+{
+Locked door
+}
+
+OBJECT_PRISON_KEY
+{
+The key to the prison cells
+}
+
+OBJECT_TYRE1
+{
+An old tyre with a heart painted above it
+}
+
+OBJECT_TYRE2
+{
+An old tyre with a club painted above it
+}
+
+OBJECT_TYRE3
+{
+An old tyre with a diamond painted above it
+}
+
+OBJECT_TYRE4
+{
+An old tyre with a spade painted above it
+}
+
+OBJECT_AXLE1
+{
+The axle has a heart painted above it
+}
+
+OBJECT_AXLE2
+{
+The axle has a club painted above it
+}
+
+OBJECT_AXLE3
+{
+The axle has a diamond painted above it
+}
+
+OBJECT_AXLE4
+{
+The axle has a spade painted above it
+}
+
+OBJECT_PETROL
+{
+Petrol Pump
+}
+
+OBJECT_NOTICE
+{
+Notice
+}
+
+OBJECT_FUELTANK1
+{
+Fuel Tank 1 is empty
+}
+
+OBJECT_FUELTANK2
+{
+Fuel Tank 2 is empty
+}
+
+OBJECT_FUEL
+{
+Fuel
+}
+
+OBJECT_MAP
+{
+An enlarged map of the area
+}
+
+OBJECT_MICROPHONE
+{
+The microphone for the radio
+}
+
+OBJECT_RECEIVER
+{
+Radio
+}
+
+OBJECT_LEVER
+{
+Lever
+}
+
+OBJECT_MINIBUS
+{
+An old minibus with a broken steering wheel
+}
+
+OBJECT_PLANE
+{
+Cargo plane
+}
+
+OBJECT_DOCUMENT
+{
+Document
+}
+
+OBJECT_KEY
+{
+Key
+}
+
+OBJECT_BLOCKED_DOOR
+{
+This door is blocked from the other side
+}
+
+OBJECT_BLOCKED_DOORS
+{
+These doors are blocked from the other side
+}
+
+OBJECT_BOATHOUSE_KEY
+{
+Boathouse Key
+}
+
+OBJECT_EXPLOSIVES
+{
+Explosives
+}
+
+OBJECT_TIMER
+{
+Timer
+}
+
+OBJECT_BARRICADE
+{
+Barricade
+}
+
+OBJECT_BOAT
+{
+Boat Controls
+}
+
+OBJECT_JAMMED_DOOR
+{
+This door appears to be jammed shut
+}
+
+OBJECT_FREEZER_LOCK
+{
+Freezer Door Controls
+}
+
+OBJECT_KEYCARD
+{
+Keycard
+}
+
+OBJECT_KEYCARD_SLOT
+{
+Keycard Slot
+}
+
+OBJECT_COMPUTER
+{
+Computer Terminal
+}
+
+OBJECT_SHUTTER1
+{
+Shutter 1 Controls
+}
+
+OBJECT_SHUTTER2
+{
+Shutter 2 Controls
+}
+
+OBJECT_SHUTTER3
+{
+Shutter 3 Controls
+}
+
+OBJECT_SHUTTER4
+{
+Shutter 4 Controls
+}
+
+OBJECT_COIN
+{
+Coin
+}
+
+OBJECT_ARCADE
+{
+Strange Futuristic Device
+}
+
+OBJECT_CELL_KEY
+{
+Cell Key
+}
+
+OBJECT_CELL_DOOR
+{
+Cell Door
+}
+
+OBJECT_PADLOCK
+{
+Padlock
+}
+
+OBJECT_BARNEYBODY
+{
+Barney's Body
+}
+
+OBJECT_BARNEYHEAD
+{
+Barney's Head
+}
+
+OBJECT_DRUGS
+{
+Experimental Drugs
+}
+
+OBJECT_BOOK
+{
+Book
+}
+
+$holdtime 5
+ALAMO_KILL
+{
+Try not to shoot your own guys.
+}
+$holdtime 1
+
+ALAMO_KEY
+{
+The key to the 4 safes
+}
+
+ALAMO_TAKE_KEY
+{
+You have taken the key to the 4 safes
+}
+
+ALAMO_SAFE
+{
+Safe
+}
+
+ALAMO_SAFE_NOKEY
+{
+You need a key to open this safe
+}
+
+ALAMO_TAKE_SAFE
+{
+You have taken the contents of the safe
+}
+
+ALAMO_SAFE_THREE_REMAIN
+{
+There are 3 safes remaining
+}
+
+ALAMO_SAFE_TWO_REMAIN
+{
+There are 2 safes remaining
+}
+
+ALAMO_SAFE_ONE_REMAIN
+{
+There is 1 safe remaining
+}
+
+ALAMO_SAFE_NONE_REMAIN
+{
+You have recovered all 4 safes
+}
+
+////////////////////////////////////////////////////////////////
+// Character, intro and action titles
+////////////////////////////////////////////////////////////////
+
+$effect 2
+$fadein 0.03
+$position -1 -1
+
+
+// Take and fail to take titles
+////////////////////////////////////////////////////////////////
+
+$color 100 100 100
+$color2 150 150 150
+
+TAKE_KEY1
+{
+You have taken the Golden Key of Truth
+}
+
+TAKE_KEY2
+{
+You have taken the Silver Key of Beauty
+}
+
+TAKE_KEY3
+{
+You have taken the Emerald Key of Liberal Guilt
+}
+
+TAKE_KEY4
+{
+You have taken the Ruby Key of Regular Bowel Movements
+}
+
+TAKE_KEY5
+{
+You have taken the Topaz Key of Erectile Dysfunction
+}
+
+TAKE_RUSTYKEY
+{
+You have taken the rusty key
+}
+
+TAKE_GEM
+{
+You have taken the Mystical Purple Gem of Virility
+}
+
+TAKE_JUSTICE
+{
+You have taken the Green Crystal of Justice
+}
+
+TAKE_FREEDOM
+{
+You have taken the Orange Crystal of Freedom
+}
+
+TAKE_PLANK
+{
+You have taken the plank
+}
+
+NO_TAKE_TRUCK
+{
+Sadly you lack the intelligence to drive this truck
+}
+
+TAKE_PRISON_KEY
+{
+You have taken the key to the prison cells
+}
+
+TAKE_TYRE
+{
+You have taken the tyre
+}
+
+TAKE_FUEL
+{
+You have taken the fuel
+}
+
+TAKE_MAP
+{
+You have taken the map
+}
+
+TAKE_KEY
+{
+You have taken the key
+}
+
+TAKE_BOATHOUSE_KEY
+{
+You have taken the boathouse key
+}
+
+TAKE_EXPLOSIVES
+{
+You have taken the explosives
+}
+
+TAKE_TIMER
+{
+You have taken the timer
+}
+
+TAKE_KEYCARD
+{
+You have taken the keycard
+}
+
+TAKE_COIN
+{
+You have taken the coin
+}
+
+TAKE_CELL_KEY
+{
+You have taken the cell key
+}
+
+TAKE_BARNEYHEAD
+{
+You have taken Barney's head
+}
+
+// Use and fail to use titles
+////////////////////////////////////////////////////////////////
+
+USED_FLARE
+{
+You have used the flare
+}
+
+NO_USE_RADIO
+{
+Sadly you lack the intelligence to operate this radio
+transmitter
+}
+
+USE_GEM
+{
+You have inserted the Mystical Purple Gem of Virility
+into the Sacred Slot of Chastity
+}
+
+USE_FREEDOM
+{
+You have used the Orange Crystal of Freedom
+}
+
+USE_JUSTICE
+{
+You have used the Green Crystal of Justice
+}
+
+NO_USE_RUSTYDOOR
+{
+The key refuses to turn in the lock.  Perhaps the door
+is just stuck, rather than locked.  Get someone strong 
+to give it a good shove.
+}
+
+USE_CIVILSUSPECT
+{
+You have given all your weapons to the 
+suspicious-looking character
+}
+
+USE_TYRE
+{
+You have used the tyre
+}
+
+USE_PETROL
+{
+The petrol pump is empty
+}
+
+USE_EMPTYGUN
+{
+The gun is out of ammo
+}
+
+$holdtime 10
+USE_NOTICE1
+{
+(Translated from Vietnamese)
+
+The owner of these premises was found to be guilty of
+sympathising with the American Imperialist Aggressors
+and furthermore of harbouring Bourgeous Ideals contrary
+to the principles of our Glorious Revolution, and seeking
+to make personal profit from the sale of petrol rather 
+than distributing it freely among the people according
+to need.  For this reason he was sentenced to death and
+his petrol was confiscated.  The wrath of The People was
+swift and merciless!  Long live The Revolution!
+
+Signed: General Long Dhong
+}
+
+USE_NOTICE2
+{
+(Translated from Vietnamese)
+
+These individuals have been punished for crimes against
+The People.  Despite their Heinous Crimes, they were 
+shown Infinite Compassion by our Merciful Leader, General
+Long Dhong, but they nevertheless persisted in their 
+antisocial and deviant behaviour.  Accordingly The People's
+anger was terrible, and their vengeance was Just and 
+Righteous.  All those who defy the will of The People must
+be crushed!  Long live our Glorious Revolution!
+
+Signed: General Long Dhong
+}
+
+USE_NOTICE3
+{
+(Translated from Vietnamese)
+
+EXECUTION TODAY, 3:30 PM
+
+Our Noble and Glorious Leader, General Long Dhong, 
+invites you to attend the execution of five political
+prisoners in The People's Stadium this afternoon.  Watch
+as they are torn apart by Bloodthirsty Creatures that 
+were captured by General Dhong's Brave and Resourceful
+army.  Cheer as the enemies of The Revolution are
+dismembered by the monsters They created to destroy Us!
+
+Failure to attend will be considered an affront to the
+ideals of The Revolution and will be looked on with the
+Gravest of Suspicion by The People!  The People will show 
+no mercy to those who attempt to sabotage The Revolution!
+Long live The Revolution and our Glorious Leader, General 
+Long Dhong!
+
+Signed: General Long Dhong
+}
+
+USE_NOTICE4
+{
+(Translated from Vietnamese)
+
+General Long Dhong's Quarters
+
+The General is:
+
+IN
+
+Please do not disturb
+On pain of a horrible gruesome death
+}
+
+USE_LETTER1
+{
+(Translated from Vietnamese)
+
+To whoever should find this,
+
+I am writing this in the hope that someday this madness
+will end and someone will read my words and know what
+took place in this town.  I feel sure that I will be
+dead by then.
+
+The first attacks by the creatures came several months
+ago.  Men started returning from the jungle talking of 
+attacks by strange, violent animals... or sometimes they
+just didn't return at all.  They believed they were evil
+spirits.  At first few people believed them, but we soon 
+found out first-hand exactly what they were talking about.
+
+I remember the first time a Creature was sighted in the
+town.  It killed two people and badly lacerated a third
+before someone managed to find one of the local GIs, who
+shot it with his machine gun.  We started to lock our
+doors and make sure our children stayed inside, but we
+were disorganised and we simply weren't prepared for how
+many of them there were.  
+}
+
+USE_LETTER2
+{
+By the time we realised the extent of the problem, it
+was too late.  A lot of people tried to flee the town, 
+but I doubt if they got far - the jungle was swarming
+with creatures by that time.  The rest of us started
+to band together, barricading ourselves inside the
+largest buildings and preparing for the worst.
+
+That was how General Dhong rose to power.  He claimed
+to be high up in the North Vietnamese Army, but who 
+knows if that's true or not?  All that mattered was 
+that people followed him.  He gave speeches in the 
+centre of town, and everyone would come and cheer.
+Instead of attributing the creatures to evil spirits, 
+as everyone else had been doing, he placed the blame 
+for them squarely on the Americans.  That was why the 
+local Viet Cong supported him.  
+
+The General got everyone to erect huge barricades in
+the streets to keep the creatures out.  (Later, we
+realised they were also to keep the people in.)  At
+first it was voluntary, but soon his VC army began
+threatening and beating anyone who did not co-operate,
+or was considered not to be working hard enough.  
+People supported him, those that weren't being beaten,
+because he was keeping the creatures out.
+}
+
+USE_LETTER3
+{
+All food and fuel in the town was confiscated by
+the General's men.  Ostensibly this was so that it
+could be rationed out fairly in the event of a
+protracted siege, but it also meant we were now
+dependant on the General for everything.  Some people
+objected to having their houses raided and their 
+supplies taken, but they were accused of having
+'bourgeous ideals' and sympathising with the Americans,
+who were the ones responsible for this mess.
+
+The General began having public trials in the centre
+of town, where supposed dissenters to what he called
+The Revolution were publicly indicted, tried and 
+convicted.  They were always guilty.  They were then
+strung up outside the barricades for the creatures 
+to devour.  
+
+Later, he came up with the idea of capturing creatures
+and feeding 'enemies of The Revolution' to them in
+the stadium - which he renamed 'The People's Stadium'.
+It wasn't a misnomer.  The People loved it, standing
+up and cheering ecstatically at the site of those who
+had once been their friends and family being torn to
+shreds by creatures.  I believe as long as the General
+is able to supply them with food and executions, and
+keep the creatures out, he will have their full support.
+}
+
+USE_LETTER4
+{
+I have managed to escape from the General's compound, 
+and am hiding out in this apartment block.  If the 
+General's men find me, I'm dead.  If the creatures 
+find me, I'm dead.  I've placed tripmines on the 
+entrances to the building, and the area is booby-
+trapped.  It's a poor defense but it's better than
+nothing.  
+
+I have found an old minibus near the General's
+compound that still has some fuel in it.  I believe
+it could come in useful somehow.  In order to prevent
+anyone else from using it, I've removed the tyres
+and hidden them in various places around the town.
+I altered the axle to make sure only those tires
+would fit it, and marked them with the symbols from
+a pack of playing cards: Hearts, Diamonds, Clubs
+and Spades.
+
+One is hidden on the top floor of this apartment,
+another is in a stall in the market place, another 
+is next to the barricade where the prisoners are 
+hanged, and the last is in the old gas station.
+
+The gas station is barricaded shut, but I think the
+creatures got in through the sewers; there's no sign
+of life there anyway.  You can get anywhere through 
+the sewers; I even heard a couple of 'enemies of the 
+people' once escaped from the prison cells through 
+the sewers.
+}
+
+USE_LETTER5
+{
+Captain Freeman,
+
+I thought you were dead, but rumour has it you are
+still alive.  If this is true, there are some things
+you should know about your mission - and about Kurtz.  
+
+Colonel Kurtz passed through this base back in June
+on his way upriver.  He was on a mission to field test 
+some secret new weapon.  He had a group of SOG guys 
+with him, I didn't ask.  Later on, late August, I 
+heard that the field tests were cancelled.
+
+It was around September that we started getting messages
+from Command asking about Kurtz's stay here: had he
+been acting strangely at all, had he said anything
+unusual?  It was also around then that the first 
+creatures were sighted.
+
+On the fourth of November another man from Special 
+Forces stopped with us on his way upriver.  His 
+mission was identical to yours: to assassinate
+Colonel Kurtz.  No more was heard from him until
+late yesterday evening, when we received a letter from 
+him carried by a nervous Vietnamese courier.  The guy 
+had been running across creature-infested countryside 
+all night, I don't know how he made it through - 
+anyway he was pretty desperate to get out of here.
+}
+
+USE_LETTER6
+{
+The letter read simply:
+
+"When there's no more room in Hell, the dead will
+walk the Earth."
+
+This morning I had my last radio conversation with
+Command.  They told me they were assuming their
+assassin was dead and they had sent another man -
+you - to kill the Colonel.  Then I told them
+about the letter.  I also asked for more backup 
+to fight the creatures, as I have done every day 
+this week.
+
+There was a long pause and a whispered conversation
+which I did not catch properly.  Then the guy on
+the radio told me in a hurried voice that backup 
+would be sent very soon now - and hung up.  We have
+been unable to establish contact with them since 
+then.
+
+It is clear to me now that the generals want us all 
+dead, and soon they will come to destroy us.  I have 
+decided to take my chances upriver.  I will wait for
+you for a few hours in the boathouse, but if you do
+not come I will go on alone.
+
+Lt-Col. Bob Samuels, C/O, Buon Rau Bang Nui.
+}
+
+USE_DOCUMENT1
+{
+15th December, 1968
+
+Note to all units: Unfortunately as we are not a front
+line base we do not have much heavy armour 
+available to us.  In order to be able to respond
+better to the creatures attacks, we have volunteered
+Private Bob Neuman to maintain several weapons 
+caches which can be quickly accessed
+by defenders.  So far we have:
+
+- A captured RPG7 in the food storage area above the 
+kitchens and the canteen.
+
+- An M60 in the armory by the airfield.
+
+- An M79 and a vest full of ammo in the rec room 
+beneath the C/O quarters.
+}
+
+USE_TECHNOTE1
+{
+Technical Document:
+
+The Auxiliary Power Generator
+
+When Buon Rau Bang Nui base was expanded in 1967 to
+include the aircraft hangars it was found that the
+original mains supply from Dong Hoi was inadequate
+for all of our needs and the auxiliary power generator
+was built.  
+
+Maintainance:
+
+The generator is protected by a combination lock.  It
+can be turned off by blowing the fuses in the following
+sequence: 1:D 2:E 3:B 4:B 5:A
+
+According to the manufacturers: "Failure to enter the
+correct code may result in the generator exploding,
+causing the destruction of the entire universe and 
+everything in it.
+
+We apologise for any inconvenience this may cause."
+}
+
+USE_DOCUMENT2
+{
+Memo: 20th September 1968
+Lt-Col. Bob Samuels, C/O, Buon Rau Bang Nui.
+
+Received a message from Command today concerning the
+recent visit of Colonel Bob Kurtz to Buon Rau Bang Nui.
+They wanted to know, was he acting strangely at all?
+Apparently they'd had some peculiar messages from him:
+a couple of human ears sent in paper envelopes.
+
+I told them I don't care whatever's going on up there,
+I got bigger things to worry about.  It's been two days
+since we lost contact with the upriver patrol, and even
+if their radio broke down they should have returned by
+now.  Yet all our intelligence shows no enemy activity 
+in that sector.  Where the Hell are those guys?
+}
+
+USE_DOCUMENT3
+{
+I remember when I was with special forces.  It
+seems a thousand centuries ago.  We went into
+a camp to innoculate some children.  We left the
+camp after we had innoculated the children from
+polio.  And this old man came running after us
+and he was crying, he couldn't see.  We went back
+there, and THEY had come and hacked off every 
+innoculated arm.  There they were in a pile.  A
+pile of little arms.  And, I remember 
+I cried, I wept like some grandmother, I wanted to
+tear my teeth out, I didn't know what I wanted to
+do.  And I want to remember it, I never want to
+forget.  
+
+And then I realised, like I was shot with a diamond 
+- a diamond bullet right through my forehead, and 
+I thought my god the genius of that.  The genius, 
+the WILL to do that.  Perfect, genuine, complete, 
+crystalline, pure.  And then I realised, THEY were 
+stronger than we.  Because they could stand that 
+these were not monsters, these were men - trained 
+cadres - these men, who fought with their hearts, 
+who had families, who had children, who were filled 
+with love, but they had the strength to do that.  
+If I had ten divisions of those men then our 
+troubles here would be over very quickly.
+
+You have to have men who are moral, and at the 
+same time who are able to utilise their primordal 
+instincts to kill, without feeling, without passion, 
+without JUDGEMENT, because it's judgement that 
+defeats us.
+}
+
+USE_DOCUMENT4
+{
+One evening coming in with a candle I was startled
+to hear him say a little tremulously, "I am lying
+here in the dark waiting for death."  The light was
+within a foot of his eyes.  I forced myself to
+murmur, "Oh nonsense!" and stood over him as if
+transfixed.
+
+Anything approaching the change that came over his
+features I have never seen before, and hope never
+to see again.  Oh, I wasn't touched.  I was
+fascinated.  It was as though a veil had been rent.
+I saw on that ivory face the expression of sombre
+pride, of ruthless power, of craven terror - of an
+intense and hopeless despair.  Did he live his life
+again in every detail of desire, temptation, and
+surrender during that supreme moment of complete
+knowledge?  He cried in a whisper at some image,
+at some vision, - he cried out twice, a cry that
+was no more than a breath - 
+
+"The horror!  The horror!"
+}
+
+USE_DOCUMENT5
+{
+25th August, 1968
+This document is classified
+
+To: Colonel Bob Kurtz, Special Operations
+From: United States Army High Command
+
+Having reviewed the latest set of data your team
+has sent us we have decided on the following policy, 
+that:
+
+1. The field experiments MUST be halted as a 
+matter of utmost urgency.  
+
+2. It is in the interests the United States public 
+and indeed of mankind as a whole that, in order to
+prevent it from falling into the wrong hands, the 
+craft be transferred to a location in the United 
+States and its existence remain an official secret 
+for the forseeable future.
+
+3. While we are preparing the equipment to dig it
+out and ship it, the craft must continue to be guarded
+scrupulously in order to prevent its discovery by
+hostile interests.
+}
+
+USE_DOCUMENT6
+{
+Observations on the creatures, Part 1, Issue 5...
+
+...exceptionally tough hides and, perhaps even more 
+importantly, the simplistic anatomy, makes them
+impervious to all but the most determind assault
+with conventional weapons.  Like insects, their
+strategy is to reproduce fast and avoid the heavy
+dependence on complex organs such as brains that
+makes most larger animals so vulnerable...
+
+...Dr Bob Karlson's preliminary research into tumour 
+growth on the new samples turned up more surprising
+results.  Despite being around 150 percent more 
+susceptible to cancers than the control group, the
+new samples were also found to be better able to
+tolerate them and indeed adapt to them.  The
+committee notes that, if they could be controlled,
+the creatures could make a perfect weapon of last 
+resort in the event (God forbid) of a nuclear war, 
+since instead of killing them the radiation would 
+in all likelihood make them stronger...
+
+...conclusion, the unique physiology of the
+creatures, if it can really be harnessed, represents 
+a powerful weapon for the free world in the fight
+against Communism.  Just think of all the good we 
+could do with this kind of power in our hands!
+}
+
+USE_DOCUMENT7
+{
+Observations on the creatures, Part 4, Issue 7...
+
+...control system was established.  Although
+still very imperfect at this stage, we do seem
+to be able to give them creatures orders which
+they will obey to the extent that their 
+intelligence permits...
+
+...Unfortunately the most persistant problem,
+which we have not yet been able to make any
+headway at all with, is training them not
+to attack us.  The only thing we know of which
+they will not attack is members of their own
+species (and there are even some exceptions to
+this)...
+
+...therefore proposed that if a human being 
+were injected with the drug instead, it would 
+appear to the creatures as a member of their 
+own species and therefore not be attacked, and
+that this could be adopted as a temporary
+solution.  However, it is unclear to what 
+extent the same side effects would...
+
+...speculated that the creatures subscribe to a
+hierarchical leadership structure, like ordinary
+animal groups, where if a member of the
+pack challenges and kills the dominant male,
+he will become the new leader of the pack...
+}
+
+
+USE_COMPUTER1
+{
+Black Mesa Research Facility Reception Log
+
+Jun 2416: No Entries
+May 2416: No Entries
+Apr 2416: No Entries
+Mar 2416: No Entries
+Feb 2416: No Entries
+Jan 2416: No Entries
+Dec 2415: No Entries
+Nov 2415: No Entries
+Oct 2415: No Entries
+....
+}
+
+$holdtime 1
+USE_FUELTANK1
+{
+You have filled fuel tank 1
+}
+
+USE_FUELTANK2
+{
+You have filled fuel tank 2
+}
+
+USE_MICROPHONE
+{
+You have given Kilmore your map co-ordinates
+}
+
+USE_MOOSE
+{
+You have used the roast moose
+}
+
+NO_USE_PLANE
+{
+Sadly you lack the intelligence to operate this flying machine
+}
+
+USE_TIMER
+{
+You have used the timer
+}
+
+USE_EXPLOSIVES
+{
+You have used the explosives
+}
+
+SET_TIMER
+{
+You have set the timer.  You have six seconds...
+}
+SET_TIMER5
+{
+You have set the timer.  You have 5 seconds...
+}
+SET_TIMER4
+{
+You have set the timer.  You have 4 seconds...
+}
+SET_TIMER3
+{
+You have 3 seconds...
+}
+SET_TIMER2
+{
+You have 2 seconds...
+}
+SET_TIMER1
+{
+You have 1 second...
+}
+
+USE_BOAT
+{
+Tragically you are bereft of even the simple skills required
+to operate this boat.
+}
+
+USE_CELL_KEY
+{
+You have used the cell key
+}
+
+USE_BARNEYBODY
+{
+You have used Barney's head
+}
+
+USE_DRUGS
+{
+You have used the experimental drugs
+}
+
+USE_KEYCARD
+{
+You have used the keycard
+}
+
+// Freeman titles
+////////////////////////////////////////////////////////////////
+
+$color 100 100 100
+$color2 150 150 150
+
+FREEMAN0
+{
+Episode a:
+
+Saigon...
+Still only in Saigon...
+}
+
+FREEMAN1
+{
+HEART OF EVIL
+}
+
+FREEMAN2
+{
+The only Half-Life mod to be officially endorsed by 
+Satan's gigantic throbbing purple cock.
+}
+
+FREEMAN3
+{
+It is the 21st of December, 1968.
+
+You are Percy Freeman, 
+member of the United States Military, 
+Special Forces,
+currently stationed in Vietnam.
+}
+
+FREEMAN4
+{
+You've been waiting here, for a week so far,
+but you're still only in Saigon.
+
+Every minute you can feel yourself getting weaker, 
+while out in the jungle They are growing stronger.
+}
+
+FREEMAN5
+{
+Everyone gets everything he wants.
+
+You wanted a mission,
+and for your sins they gave you one.
+
+They brought it up to you like room service.  It was a real
+choice mission...
+}
+
+FREEMAN7
+{
+You have taken the slices of roast moose.
+}
+
+FREEMAN9
+{
+Episode b: 0600 hrs the following day...
+}
+
+FREEMAN10
+{
+Please do not get out of the aircraft until
+it has come to a complete stop.
+}
+
+FREEMAN15
+{
+You have taken the Ignition key.
+}
+
+FREEMAN16
+{
+You have taken the Rope.
+}
+
+FREEMAN17
+{
+You need an ignition key to start the truck.
+}
+
+FREEMAN18
+{
+You'd need a good reason to drive this truck
+because otherwise it would not be morally justified.
+}
+
+FREEMAN19
+{
+Barney has been killed, and it's all your fault.
+Overcome by shame and remorse, you commit Hara Kiri.
+}
+
+FREEMAN23
+{
+This key doesn't look particularly useful
+}
+
+FREEMAN24
+{
+You have taken the flare
+}
+
+$holdtime 10
+FREEMAN25
+{
+20th December, 1968
+
+To whom it may concern:
+
+It's no use, we've been overrun.  We should have
+exterminated the creatures when we had the chance, 
+but there are too many of them now.  They're not smart,
+but they just keep coming.  I can't take it anymore.
+My entire unit is gone.  I don't want to become one of
+them.
+I've been saving a few cartridges in my old 870 specially
+ever since we began running low on ammo.  If you're 
+already dead, they lose interest in you.  I don't want 
+my body walking around killing people after I'm dead.
+If you should read this, don't try and contact my
+family.  It's best if they don't know how or why it
+happened.  Just get out of here.  Get away from this
+place.  Run, I tell you, run!  Oh shit, I hear them.
+They're coming.  This is it!
+Sincerely,
+Bob Dickinson.
+
+PS. Look out, there's a zombie behind you!  Kidding.
+}
+
+FREEMAN27
+{
+17th December, 1968
+1900 hrs
+
+Here is the translation of the encoded radio transmission
+we received from Command at Long Binh this morning:
+
+YOUR MESSAGES HAVE ALL BEEN RECEIVED STOP APOLOGIES FOR
+DELAY STOP OUR FAULTY RADIO EQUIPMENT UNDERGOING EXTENSIVE
+REPAIRS STOP WE UNDERSTAND AND SYMPATHISE WITH YOUR
+PREDICAMENT STOP UNFORTUNATELY MEN HARD TO SPARE AT THIS
+TIME STOP ARE SENDING ONLY AVAILABLE AIR CAVALRY DIVISION
+TO AID YOU AS SOON AS POSSIBLE STOP EXPECT REINFORCEMENTS
+WITHIN SEVERAL DAYS STOP HANG IN THERE END
+
+I can't believe they tried to blame their silence on
+faulty radio equipment!  It's plain to see we'll all be
+dead by the time they arrive anyway, the way things are
+going.  They know if any of us make it out of here alive
+we'll tell the world what we saw and they'll have to
+admit they made a mistake.  We're screwed.
+
+Private Bob Kelley
+}
+
+FREEMAN28
+{
+Journal of Dr. Bob Lewis
+4th December, 1968
+
+Today some of the men were able to capture a live specimen
+of one of the creatures for the first time.  Their numbers
+have shown a dramatic increase over the past few weeks -
+patrols are reporting contact with one or more of them as
+often as three or four times a day now, which suggests
+that they must be breeding at a truly phenomenal rate.
+So little is known about them!
+
+Our analysis of their anatomy has so far proved fruitless;
+we remain just as baffled about their physiology, their 
+physical needs, and of course their origin, as we ever 
+were.  This  captured specimen represents a marvellous and 
+unique opportunity to observe their behaviour in the 
+controlled atmosphere of the laboratory.  If only we had 
+better facilities here.  A military hospital is hardly an 
+ideal place to conduct scientific research.
+}
+
+FREEMAN28A
+{
+All my requests to Command for better equipment have so
+far gone completely unanswered.  This does not surprise me.
+Indeed, it merely serves to further confirm my suspicions
+that these creatures are not a hitherto undiscovered 
+indigenous species or an aberration of nature, but are in 
+fact entirely the product of the American government.  We 
+have been hearing rumours about a revolutionary secret 
+project to be tested on the field in 'nam since early '66.  
+
+It seems to me that the experiment has gone badly wrong.  
+The creatures are devastating the local wildlife and 
+threatening the people.  There is sure to be an outcry back 
+home, when the press finds out.
+}
+
+FREEMAN29
+{
+Journal of Dr. Bob Lewis
+10th December, 1968
+
+The captive creatures in the laboratory continue to exhibit
+the same astonishing degree of agression as they have been
+doing since they were caught.  They mercilessly attack and
+devour any live animals we feed them, but remain strangely
+disinterested in meat that has been dead for longer than
+a few hours.  This is surely not a strategy that could have
+arisen naturally, through evolution.
+
+Besides being unnaturally vicious they are also deceptively
+strong.  Bob nearly had his hand torn off by one of them
+earlier today, and we are all becoming worried that their 
+cages may not be strong enough.  Two more patrols failed
+to return today, and the mood among the men is sharply
+deteriorating.
+}
+
+FREEMAN29A
+{
+In light of all this I have hidden The Gem in the vault and
+sealed the door with a combination lock.  To unlock the 
+door one must break the fuses in the following pattern:
+1:B, 2:D, 3:A, 4:D, 5:E.  Breaking the fuses requires
+considerable force to be applied; a shot from my .45
+ought to do it.  Failiure to break them in the right
+sequence will result in a nuclear explosion and the deaths
+of thousands of innocent people.  I believe this will be
+an adequate deterrent to anyone wishing to take away my Gem.
+
+I hope no one accidentally knocks them or anything.  I keep
+telling the guys not play with my stuff but they never
+listen do they?  But the important thing is that The Gem is
+safely hidden.  The only way to find out the combination
+would be to read this journal, and I don't plan to leave this
+just lying around!  Sally says my performance isn't as good
+without the mystical powers of The Gem but frankly I pay her
+good money so I don't know what she's got to complain about.
+}
+
+FREEMAN30
+{
+19th December 1968
+0500 Hrs
+
+The creatures have overrun the perimeter and those of us 
+who survived have fallen back into the main buildings and
+barricaded ourselves inside.  We've put all our remaining
+supplies and ammo in a big pile on the ground floor of
+this building, and now we are just waiting.
+
+All night long we've been hearing the sound of gunfire, 
+shouts and screams from the nearby buildings.  I've been 
+awake for nearly 30 hours now but I couldn't sleep.  None 
+of us could.  I'm so tired.  Our food and ammunition are 
+running out.  The chain of command is breaking down, 
+people are openly disobeying orders from their superiors.  
+Lt. Bob Heller disappeared a few hours ago: the story was
+he was taking a piss outside and the creatures got him, but
+I think it was a couple of the men.  Bob was always 
+unpopular with the men.
+}
+
+FREEMAN31
+{
+Journal of Colonel Bob Fish
+28th May 1968
+
+Kurtz's visit ended today.  He set off at dawn, heading
+further inwards into the jungle and the Cambodian border.
+
+Before he left he told me a story that took place during
+one of his earlier tours.  He and his men were under
+heavy NVA fire near a village in Dinh Lo province.
+They were surrounded, but had been ordered to defend
+the village.  It was clear, however, that the enemy
+was being supplied with ammunition by some of the
+villagers.  What's more, knowing that American troops 
+would be loth to shoot at children, the enemy was
+using the local children to ferry ammo between them.
+
+After almost twelve hours of intense fighting Kurtz
+had lost nearly half of his men.  Frustrated, he
+ordered the remaining ones to start firing at the kids.
+Running openly back and forth, they made easy targets.
+With their supply lines cut, the NVA was finally forced
+to retreat and Kurtz held the village.
+}
+
+FREEMAN32
+{
+Journal of Colonel Bob Fish
+23rd November 1968
+
+Another man was killed by the creatures today.  The
+grunts are becoming frightened and unruly, morale is
+dropping fast.  On the plus side, Viet Cong presence
+in the area is also decreasing, and the ones we do
+run into always seem to be on their way out of here.
+The creatures obviously have them spooked as well.
+
+A patrol by Lang Dau caught some prisoners and we 
+asked them if they knew where the creatures were
+coming from.  According to the report they just
+babbled incoherent gook-speak, but there was one
+word that kept being repeated: Kurtz.  I am now
+certain the creatures come from Kurtz.  The man is
+a visionary, he's a prodigy, an ambassador of mercy,
+and science, and progress, and fuck knows what
+else.  We need, for the guidance of the cause
+entrusted to us by the United States and the free
+world, so to speak, higher intelligence, wide
+sympathies, and a singleness of purpose.  And so
+He comes here, a special being, with the power to
+do all this.  He has some great purpose with the
+creatures, you may be sure of it.
+}
+
+FREEMAN33
+{
+Dearest Angela,
+
+I know it has been a long time since I last wrote,
+and I apologise for that.  Ever since Colonel Kurtz
+left our base, there have been some peculiar things
+happening around here.  The situation is getting
+quite out of control.  The local people say Kurtz
+has made a pact with the devil.  I cannot be any
+more specific than this, since I think this letter
+would not make it past the censors if I was.  But I
+fear for my life.  Give my love to Mom and Pop, and 
+tell them I've moved on from that whole Oedipus 
+thing, and I urge them to as well.
+
+Related to that; I have some bad news for you.  I'm
+afraid I can no longer continue our engagement.  I
+feel it is best that you know: I've found someone else.
+His - yes, his - name is Bob, just like mine.  What a
+coincidence, eh?  He sleeps in the bunk opposite me,
+and was always one of my best buddies here, but
+recently we decided to take it one step further and 
+declared our undying love for one another.  Do not
+judge me too harshly, Angela; the love of a man for
+for another man is a noble and beautiful thing, and
+impossible to resist when it takes you in its hand.
+
+Yours faithfully,
+Bob
+}
+$holdtime 1
+
+FREEMAN34
+{
+The painting is signed by Colonel Bob Kurtz
+}
+
+FREEMAN35
+{
+Episode c: The world of survival horror
+}
+
+FREEMAN36
+{
+Episode d: Revolution of the dead
+}
+
+FREEMAN37
+{
+Episode e: Outpost on the edge of darkness
+}
+
+FREEMAN38
+{
+Episode f: Kurtz
+}
+
+FREEMAN39
+{
+
+}
+
+$holdtime 3
+
+END
+{
+And so, zombies took over the world.  The end.
+}
+
+$holdtime 1
+
+// Was simply "CREDITS0" etc but source doesn't like it???
+NAMCREDITS0
+{
+Heart of Evil was made by...
+}
+
+NAMCREDITS1
+{
+Mapping:
+
+Nathan Ruck
+}
+
+NAMCREDITS2
+{
+Modelling, Model Textures, Animation:
+
+Chris Kane, Nathan Ruck, DarkReaper, Calosus, Zoic
+Sluggo, Pete Tomich
+}
+
+NAMCREDITS3
+{
+Sounds:
+
+Daniel Pickford
+}
+
+NAMCREDITS4
+{
+Voice Acting:
+
+Chris Kane, Carleton "Wintermute" Falzone, Daniel Pickford
+Travis Torrens, Mark Ferland, Dwayne Antila, Anita Gillett 
+Truong Nguyen
+}
+
+NAMCREDITS5
+{
+Coding:
+
+Nathan Ruck
+}
+
+NAMCREDITS6
+{
+Prefabs, Skies, World Textures:
+ 
+Nathan Ruck, Daniel Pickford, Jack Kubzine, Kevin Quang
+Scott Farby, Sock, Texture Universe
+}
+
+NAMCREDITS7
+{
+Walkthrough:
+
+David Bailey, DarkWolf
+}
+
+NAMCREDITS8
+{
+Thanks:
+
+Darkwolf and Silver Sorrow at Hangar 16 for reviewing 
+all the episodes
+Robert Prouse and Tour of Duty mod for some models and prefabs
+Laurie Cheers and TheTinySteini for the fog and mp3 code
+Valve ERC for tutorials and info
+Grunt! a useful Vietnam wargaming site
+Shadowman's Half-Life SDK2 tutorials
+All the beta testers from Hangar 16 and the Heart of Evil forums
+Everyone who played the early episodes and followed the mod
+Anyone with a Half-Life site with tutorials that I read
+id Software, Valve, for the obvious reasons
+George A Romero, for zombies
+Francis Ford Coppola, who would probably have a fit if he saw this
+Joseph Conrad, turning in his grave by now I expect
+Satan, for moral support during the tough times
+}
+
+NAMCREDITS9
+{
+Ported to the Source Engine by:
+
+Tim "EasyPickins" Baker
+}
+
+// Barney titles (redundant with voice acting)
+////////////////////////////////////////////////////////////////
+
+$color 0 100 0
+$color2 0 150 0
+
+BARNEY0
+{
+
+}
+
+BARNEY1
+{
+
+}
+
+BARNEY2
+{
+
+}
+
+BARNEY3
+{
+
+}
+
+BARNEY4
+{
+
+}
+
+BARNEY5
+{
+
+}
+
+BARNEY6
+{
+
+}
+
+BARNEY7
+{
+
+}
+
+BARNEY8
+{
+
+}
+
+BARNEY9
+{
+
+}
+
+BARNEY10
+{
+
+}
+
+BARNEY11
+{
+
+}
+
+BARNEY12
+{
+
+}
+
+BARNEY13
+{
+
+}
+
+BARNEY14
+{
+
+}
+
+BARNEY15
+{
+
+}
+
+BARNEY16
+{
+
+}
+
+BARNEY17
+{
+
+}
+
+BARNEY18
+{
+
+}
+
+BARNEY19
+{
+
+}
+
+BARNEY20
+{
+
+}
+
+BARNEY21
+{
+
+}
+
+BARNEY22
+{
+
+}
+
+BARNEY23
+{
+
+}
+
+BARNEY24
+{
+
+}
+
+BARNEY25
+{
+
+}
+
+BARNEY26
+{
+
+}
+
+BARNEY27
+{
+
+}
+
+BARNEY28
+{
+
+}
+
+BARNEY29
+{
+
+}
+
+BARNEY30
+{
+
+}
+
+BARNEY31
+{
+
+}
+
+BARNEY32
+{
+
+}
+
+BARNEY33
+{
+
+}
+
+BARNEY34
+{
+
+}
+
+BARNEY35
+{
+
+}
+
+BARNEY37
+{
+
+}
+
+BARNEY38
+{
+
+}
+
+
+// Civilian Suspect titles (redundant with voice acting)
+////////////////////////////////////////////////////////////////
+
+$color 150 150 0
+$color2 200 200 0
+
+CIVILSUSPECT0
+{
+
+}
+
+CIVILSUSPECT1
+{
+
+}
+
+CIVILSUSPECT2
+{
+
+}
+
+CIVILSUSPECT3
+{
+
+}
+
+CIVILSUSPECT4
+{
+
+}
+
+CIVILSUSPECT5
+{
+
+}
+
+CIVILSUSPECT6
+{
+
+}
+
+CIVILSUSPECT7
+{
+
+}
+
+
+// MikeForce titles (redundant with voice acting)
+////////////////////////////////////////////////////////////////
+
+$color 0 0 200
+$color2 0 0 250
+
+MIKEFORCE1
+{
+
+}
+
+MIKEFORCE2
+{
+
+}
+
+MIKEFORCE3
+{
+
+}
+
+MIKEFORCE4
+{
+
+}
+
+MIKEFORCE5
+{
+
+}
+
+MIKEFORCE6
+{
+
+}
+
+MIKEFORCE7
+{
+
+}
+
+MIKEFORCE8
+{
+
+}
+
+MIKEFORCE9
+{
+
+}
+
+MIKEFORCE10
+{
+
+}
+
+MIKEFORCE11
+{
+
+}
+
+MIKEFORCE12
+{
+
+}
+
+MIKEFORCE13
+{
+
+}
+
+
+// Officer1 titles (redundant with voice acting)
+////////////////////////////////////////////////////////////////
+
+$color 0 0 200
+$color2 0 0 250
+
+OFFICER10
+{
+
+}
+
+OFFICER11
+{
+
+}
+
+OFFICER12
+{
+
+}
+
+OFFICER13
+{
+
+}
+
+OFFICER14
+{
+
+}
+
+OFFICER15
+{
+
+}
+
+OFFICER16
+{
+
+}
+
+OFFICER17
+{
+
+}
+
+OFFICER18
+{
+
+}
+
+OFFICER19
+{
+
+}
+
+OFFICER110
+{
+
+}
+
+// Officer2 titles (redundant with voice acting)
+////////////////////////////////////////////////////////////////
+
+$color 200 0 100
+$color2 250 0 150
+
+OFFICER20
+{
+
+}
+
+OFFICER21
+{
+
+}
+
+OFFICER22
+{
+
+}
+
+OFFICER23
+{
+
+}
+
+OFFICER24
+{
+
+}
+
+OFFICER25
+{
+
+}
+
+
+// Sargeant Kilmore titles (redundant with voice acting)
+// actually the guy should be a lieutenant-captain or something
+// I just have absolutely no clue about army stuff
+////////////////////////////////////////////////////////////////
+
+$color 200 0 0
+$color2 250 0 0
+
+SARGE0
+{
+
+}
+
+SARGE1
+{
+
+}
+
+SARGE2
+{
+
+}
+
+SARGE3
+{
+
+}
+
+SARGE4
+{
+
+}
+
+SARGE5
+{
+
+}
+
+SARGE6
+{
+
+}
+
+SARGE7
+{
+
+}
+
+SARGE8
+{
+
+}
+
+SARGE9
+{
+
+}
+
+SARGE10
+{
+
+}
+
+SARGE11
+{
+
+}
+
+SARGE12
+{
+
+}
+
+
+// Bob titles
+////////////////////////////////////////////////////////////////
+
+$color 0 200 200
+$color2 0 250 250
+
+BOB0
+{
+
+}
+
+BOB1
+{
+
+}
+
+BOB2
+{
+
+}
+
+BOB3
+{
+
+}
+
+BOB4
+{
+
+}
+
+
+// Kurtz titles
+////////////////////////////////////////////////////////////////
+
+$color 200 200 200
+$color2 250 250 250
+
+KURTZ0
+{
+
+}
+
+KURTZ1
+{
+
+}
+
+KURTZ2
+{
+
+}
+
+KURTZ3
+{
+
+}
+
+KURTZ4
+{
+
+}
+
+KURTZ5
+{
+
+}
+
+KURTZ6
+{
+
+}
+
+KURTZ7
+{
+
+}
+
+
+// In-Game messages
+$position -1 0.65
+$effect 2
+// This is the final color
+$color 100 100 100
+// This is the highlight color
+$color2 240 110 0
+// This is the time it takes to fade each character
+$fadein 0.01
+// This is the amount of time the highlight lags behind the leading edge of the text
+$fxtime 0.25
+// How long to hold the message on the screen (after it scans out)
+$holdtime 2.0
+// How long it takes to fade out the message after holding
+$fadeout 0.5
+
+GAMESAVED
+{
+Saved...
+}
+
+// Game title
+// This is a placeholder to hold the effects controls for the "Half-Life" title
+$position -1 -1
+// Only effect 0 is supported for game title
+$effect 0
+// This is the final color
+$color 180 180 180
+// Not used color2
+$color2 0 0 0
+// This is the time it takes to fade in the title
+$fadein 1.0
+// How long to hold the message on the screen (after it scans out)
+$holdtime 3.0
+// How long it takes to fade out the message after holding
+$fadeout 1.5
+
+GAMETITLE
+{
+Half-Life
+}
+
+//HAZARD COURSE TEXT
+
+// Test values -- JAY
+$position -1 0.65
+// Scan-out text effect
+$effect 2
+// This is the final color
+$color 100 100 100
+// This is the highlight color
+$color2 0 200 50
+// This is the time it takes to fade each character
+$fadein 0.005
+// This is the amount of time the highlight lags behind the leading edge of the text
+$fxtime 0.5
+// How long to hold the message on the screen (after it scans out)
+$holdtime 3.5
+// How long it takes to fade out the message after holding
+$fadeout 1.5
+
+$position -1 0.3
+HZBUTTON1
+{
+PRESS YOUR USE KEY TO PUSH A BUTTON
+}
+
+$position -1 0.65
+HZBUTTON2
+{
+PRESS YOUR USE KEY TO PUSH A BUTTON
+}
+
+HZMOVE
+{
+MOVE FORWARD BY PRESSING FORWARD KEY
+MOVE BACKWARD BY PRESSING BACKWARD KEY
+MOVE LEFT BY PRESSING MOVELEFT
+MOVE RIGHT BY PRESSING MOVERIGHT
+}
+
+HZJUMP
+{
+PRESS FORWARD KEY TO RUN FORWARD
+PRESS JUMP KEY TO JUMP
+}
+
+HZDUCK
+{
+PRESS FORWARD KEY TO RUN FORWARD
+PRESS DUCK KEY TO DUCK
+PRESS FORWARD + DUCK KEYS TOGETHER 
+TO MOVE IN STEALTH MODE
+}
+
+HZCOMBO
+{
+PRESS FORWARD KEY TO RUN FORWARD
+PRESS JUMP KEY TO JUMP
+PRESS DUCK KEY TO DUCK
+PRESS JUMP KEY TO JUMP
+}
+
+HZDUCKJUMP
+{
+PRESS FORWARD + JUMP TOGETHER,
+THEN THE DUCK KEY
+}
+
+HZLADDER
+{
+PRESS FORWARD KEY TO MOVE UP LADDERS
+PRESS BACKWARD KEY TO MOVE DOWN LADDERS
+}
+
+HZLJUMP
+{
+WHILE MOVING FORWARD,
+HOLD DOWN DUCK KEY--
+THEN PRESS JUMP
+}
+
+$position -1 0.3
+HZLMOD
+{
+BE SURE YOU PICKED UP THE LONG-JUMP MODULE
+AT THE BEGINNING OF THE OBSTACLE
+}
+
+$position -1 0.65
+HZMEDKIT
+{
+USE MED-KITS BY HOLDING DOWN THE USE KEY
+HOLD DOWN USE KEY UNTIL HEALTH IS
+AT 100 OR KIT IS DEPLETED
+}
+
+HZMOMENT
+{
+ACTIVATE WHEELS AND DIALS 
+BY HOLDING DOWN THE USE KEY
+HOLD USE KEY UNTIL BRIDGE IS IN POSITION
+}
+
+HZPUSH
+{
+PRESS FORWARD KEY TO MOVE AGAINST BOX
+KEEP PRESSING FORWARD TO PUSH BOX
+}
+
+HZPULL
+{
+PRESS USE + BACKWARD KEYS TOGETHER
+TO PULL BOX BACKWARD
+}
+
+HZCROWBAR
+{
+MOVE UP TO CROWBAR
+PRESS ATTACK1 KEY TO BREAK OBJECTS
+}
+ 
+HZLITEON
+{
+PRESS FLASHLIGHT KEY 
+TO TURN FLASHLIGHT ON
+}
+
+HZLITEOFF
+{
+PRESS FLASHLIGHT KEY AGAIN 
+TO TURN FLASHLIGHT OFF
+}
+
+HZWEAPON
+{
+MOVE UP TO WEAPON TO PICK IT UP
+}
+
+HZFIREWEAP
+{
+PRESS ATTACK1 KEY FOR PRIMARY ATTACK
+PRESS ATTACK2 KEY FOR ALTERNATE ATTACK
+PRESS RELOAD KEY TO RELOAD AT WILL
+}
+
+HZARMOR
+{
+PRESS AND HOLD YOUR USE KEY
+HOLD DOWN UNTIL SUIT ARMOR IS CHARGED
+OR CHARGER IS DEPLETED
+}
+
+HZSWIM
+{
+PRESS YOUR FORWARD KEY
+AIM WITH THE MOUSE AS YOU SWIM
+FIND AIR IF YOU BEGIN TO LOSE HEALTH
+WAIT IN THE AIR UNTIL HEALTH 
+RETURNS TO FORMER LEVEL
+}
+
+HZDAMAGE
+{
+CERTAIN TYPES OF DAMAGE WILL REGISTER 
+ON YOUR HEADS-UP DISPLAY.
+DIRECTION OF DAMAGE IS INDICATED BY RED 
+FLASHES IN THE CENTER OF YOUR SCREEN
+}
+
+HZHAZARD
+{
+RADIATION HAZARDS 
+ACTIVATE A GEIGER COUNTER
+}
+
+HZSCIENTIST
+{
+APPROACH SCIENTIST
+PRESS USE KEY TO RECEIVE HEALTH FROM SCIENTIST
+}
+
+HZBARNEY
+{
+APPROACH SECURITY GUARD
+PRESS YOUR USE KEY TO GET HIS HELP
+WALK TOWARD DOOR AND GUARD
+WILL ACTIVATE BUTTONS
+}
+
+HZTRAIN
+{
+PRESS USE KEY TO ENGAGE TRAIN
+PRESS FORWARD KEY TO ACCELERATE
+PRESS BACKWARD KEY TO DECELERATE
+PRESS USE KEY AGAIN TO DISENGAGE
+}
+
+HZDONE
+{
+CONGRATULATIONS!
+YOU HAVE COMPLETED 
+THE BLACK MESA HAZARD COURSE.
+COME BACK ANY TIME.
+}
+

@@ -1,0 +1,112 @@
+// Choreo version 1
+event section "pause_move_to_door"
+{
+  time 3.716667 -1.000000
+  param "noaction"
+}
+actor "barney"
+{
+  channel "speech"
+  {
+    event speak "NPC_Barney.sorry_about_landing"
+    {
+      time 0.006667 1.503447
+      param "NPC_Barney.sorry_about_landing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Barney.get_hang_of_them"
+    {
+      time 2.013333 3.441814
+      param "NPC_Barney.get_hang_of_them"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Barney.suck_at_parking"
+    {
+      time 3.986666 5.721406
+      param "NPC_Barney.suck_at_parking"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Barney.dig_our_way_out"
+    {
+      time 8.500000 10.412653
+      param "NPC_Barney.dig_our_way_out"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.016667 5.766667
+      param "!player"
+    }
+    event face "face_door"
+    {
+      time 5.766667 8.116667
+      param "!target2"
+    }
+    event face "face_player"
+    {
+      time 8.133333 9.200000
+      param "!player"
+    }
+    event lookat "look_at_player"
+    {
+      time 8.133333 10.683333
+      param "!player"
+    }
+  }
+  channel "action"
+  {
+    event moveto "move_to_door"
+    {
+      time 3.466667 3.966667
+      param "!target1"
+      resumecondition
+    }
+    event firetrigger "open_door"
+    {
+      time 6.783333 -1.000000
+      param "1"
+      resumecondition
+    }
+    event sequence "buttonpush"
+    {
+      time 6.300000 7.400000
+      param "buttonpush"
+      fixedlength
+    }
+    event moveto "move_to_window"
+    {
+      time 10.800000 12.066667
+      param "!target3"
+      param2 "Run"
+    }
+    event firetrigger "trigger_vcs"
+    {
+      time 10.700000 -1.000000
+      param "2"
+    }
+  }
+  faceposermodel "models\Barney\barney.mdl"
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap on
+ignorePhonemes off

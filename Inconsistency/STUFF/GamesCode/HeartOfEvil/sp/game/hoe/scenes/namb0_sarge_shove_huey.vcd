@@ -1,0 +1,68 @@
+// Choreo version 1
+actor "sarge"
+{
+  channel "sequence"
+  {
+    event gesture "shove"
+    {
+      time 2.140000 3.390000
+      param "g_shove_in_huey"
+    }
+  }
+  channel "look"
+  {
+    event lookat "look_at_player"
+    {
+      time 0.003334 7.293334
+      param "!player"
+    }
+  }
+  channel "triggers"
+  {
+    event firetrigger "shoved"
+    {
+      time 3.376667 -1.000000
+      param "1"
+    }
+  }
+  channel "speech"
+  {
+    event speak "good_luck"
+    {
+      time 0.000000 2.113106
+      param "NPC_Sarge.GoodLuck"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\sarge.mdl"
+}
+
+actor "barney"
+{
+  channel "look"
+  {
+    event lookat "look_at_player"
+    {
+      time 0.006667 7.336667
+      param "!player"
+    }
+  }
+  channel "speech"
+  {
+  }
+  faceposermodel "models\Barney\barney.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

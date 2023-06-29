@@ -1,0 +1,139 @@
+$poseparameter "move_yaw" -180 180 wrap
+
+$weightlist upperbodyreplace "Bip01 Spine" 1.0
+$weightlist HipsUpperbodyReplace "Bip01 Pelvis" 1.0 "Bip01 L Leg" 0.0 "Bip01 R Leg" 0.0 
+$weightlist LegsReplace "Bip01" 1.0 "Bip01 Pelvis" 1.0 "Bip01 Spine" 0.0 "Bip01 L Leg" 1.0 "Bip01 R Leg" 1.0 
+$weightlist pelvisonly "Bip01 Pelvis" 1.0 "Bip01 Spine" 0.0 "Bip01 L Leg" 0.0 "Bip01 R Leg" 0.0 
+
+// walking, no weapon
+$animation a_WalkS WalkS loop LX LY startloop 0 rotateto -180 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  5 11 25 30
+	// ikrule rfoot footstep 1 range 22 28  6 11
+}
+$animation a_WalkSE WalkSE loop LX LY startloop 0 rotateto -135 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  5  8 22 27
+	// ikrule rfoot footstep 1 range 20 25 6 11
+}
+$animation a_WalkE WalkE loop LX LY startloop 0 rotateto -90 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  2  9 19 28
+	// ikrule rfoot footstep 1 range 19 24  4  8
+}
+$animation a_WalkNE WalkNE loop LX LY startloop 0 rotateto -45 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  4 11 23  0
+	// ikrule rfoot footstep 1 range 18 25  8 13
+}
+$animation a_WalkN WalkN loop LX LY startloop 0 rotateto 0 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  4 10 19 25
+	// ikrule rfoot footstep 1 range 18 26 3 10
+}
+$animation a_WalkNW WalkNW loop LX LY startloop 0 rotateto 45 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  2  9 21 27
+	// ikrule rfoot footstep 1 range 18 25  7 13
+}
+$animation a_WalkW WalkW loop LX LY startloop 0 rotateto 90 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  2 11 22 28
+	// ikrule rfoot footstep 1 range 18 27  6 13
+}
+$animation a_WalkSW WalkSW loop LX LY startloop 0 rotateto 135 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range  2 10 18 25
+	// ikrule rfoot footstep 1 range 16 22  7 12
+}
+
+// running, no weapon
+$animation a_RunS RunS loop LX LY startloop 0 rotateto -180 fps 31 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 9 12 ..
+	// ikrule rfoot footstep 1 range .. 0 3 ..
+}
+$animation a_RunSE RunSE loop LX LY startloop 0 rotateto -135 fps 29 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 7 11 ..
+	// ikrule rfoot footstep 1 range .. 17 1 ..
+}
+$animation a_RunE RunE loop LX LY startloop 0 rotateto -90 fps 31 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 7 9 ..
+	// ikrule rfoot footstep 1 range .. 14 0 ..
+}
+$animation a_RunNE RunNE loop LX LY startloop 0 rotateto -45 fps 29 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 6 10 ..
+	// ikrule rfoot footstep 1 range .. 17 19 ..
+}
+$animation a_RunN RunN loop LX LY startloop 0 rotateto 0 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 8 10 ..
+	// ikrule rfoot footstep 1 range .. 17 1 ..
+}
+$animation a_RunNW RunNW loop LX LY startloop 0 rotateto 45 fps 28 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 9 11 ..
+	// ikrule rfoot footstep 1 range .. 18 1 ..
+}
+$animation a_RunW RunW loop LX LY startloop 0 rotateto 90 fps 32 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 7 9 ..
+	// ikrule rfoot footstep 1 range .. 16 0 ..
+}
+$animation a_RunSW RunSW loop LX LY startloop 0 rotateto 135 fps 31 {
+	alignto idle1
+	// ikrule lfoot footstep 0 range .. 8 11 ..
+	// ikrule rfoot footstep 1 range .. 16 1 ..
+}
+
+// FIXME: loop?
+$sequence layer_run_nogun "run" weightlist upperbodyreplace hidden
+$sequence run_nogun {
+	a_runS a_runSE a_runE a_runNE a_runN a_runNW a_runW a_runSW a_runS
+	blendwidth 9
+	blend move_yaw -180 180
+	addlayer layer_run_nogun
+	addlayer layer_run_spine_delta
+	activity ACT_RUN 1
+	node "running"
+ 	{ event 6008 6 } // CL_EVENT_MFOOTSTEP_LEFT_LOUD
+ 	{ event 6009 15 } // CL_EVENT_MFOOTSTEP_RIGHT_LOUD
+}
+
+$animation a_walk walk startloop 10
+$sequence layer_walk_nogun "a_walk" weightlist upperbodyreplace hidden
+$sequence walk_nogun {
+	a_walkS a_walkSE a_walkE a_walkNE a_walkN a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9
+	blend move_yaw -180 180
+//	addlayer aim_walk_all_delta
+	addlayer layer_walk_nogun
+	activity ACT_WALK 1
+	node "walking"
+ 	{ event 6006 9 } // CL_EVENT_MFOOTSTEP_LEFT
+ 	{ event 6007 23 } // CL_EVENT_MFOOTSTEP_RIGHT
+}
+
+$weightlist SpineOnly "Bip01 Spine1" 1.0 "Bip01 Spine2" 0.0
+$animation a_RunN_Spine_Delta RunN_Spine_Delta weightlist SpineOnly subtract a_RunN 0
+$animation a_RunW_Spine_Delta RunW_Spine_Delta weightlist SpineOnly subtract a_RunW 0
+$animation a_RunE_Spine_Delta RunE_Spine_Delta weightlist SpineOnly subtract a_RunE 0
+$animation a_RunNW_Spine_Delta RunNW_Spine_Delta weightlist SpineOnly subtract a_RunNW 0
+$animation a_RunNE_Spine_Delta RunNE_Spine_Delta weightlist SpineOnly subtract a_RunNE 0
+$animation a_RunSW_Spine_Delta RunSW_Spine_Delta weightlist SpineOnly subtract a_RunSW 0
+$animation a_RunSE_Spine_Delta RunSE_Spine_Delta weightlist SpineOnly subtract a_RunSE 0
+$animation a_RunS_Spine_Delta RunS_Spine_Delta weightlist SpineOnly subtract a_RunS 0
+$sequence layer_run_spine_delta {
+	a_RunS_Spine_Delta a_RunSE_Spine_Delta a_RunE_Spine_Delta 
+	a_RunNE_Spine_Delta a_RunN_Spine_Delta a_RunNW_Spine_Delta 
+	a_RunW_Spine_Delta a_RunSW_Spine_Delta a_RunS_Spine_Delta 
+	weightlist SpineOnly
+	blendwidth 9 blend move_yaw -180 180
+	delta
+	hidden
+}
+
+$skiptransition walking running
