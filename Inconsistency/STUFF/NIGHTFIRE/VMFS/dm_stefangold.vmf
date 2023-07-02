@@ -1,0 +1,710 @@
+world
+{
+	"skycloudhigh" "none"
+	"skydome" "sky_dome_romania"
+	"skycloudlow" "sky_lower_afghanistan"
+	"skyterrain" "sky_terrain_afghanistan"
+	"skycloudlow_speed" "0.025  -0.0019"
+	"skycloudlow_height" "2000"
+	"skycloudlow_lightning" "1"
+	"skycloudhigh_speed" "0.035  0.0029"
+	"skycloudhigh_height" "1500"
+	"skycloudhigh_lightning" "1"
+	"sounds" "1"
+	"MaxRange" "16384"
+	"classname" "worldspawn"
+	"rendercolor" "255 255 255"
+	"id" "1"
+	solid
+	{
+		"id" "2"
+		side
+		{
+			"id" "3"
+			"plane" "(16 16 448) (0 0 448) (-16 16 448)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-384 -16 16) (-384 0 0) (-384 16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(640 16 16) (640 0 0) (640 -16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(16 128 16) (0 128 0) (16 128 -16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7"
+			"plane" "(16 -896 -16) (0 -896 0) (16 -896 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "8"
+			"plane" "(608 -864 416) (608 96 416) (-352 96 416)"
+			"material" "knox/gold_top"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "9"
+		side
+		{
+			"id" "10"
+			"plane" "(-384 -16 16) (-384 0 0) (-384 16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "11"
+			"plane" "(16 128 16) (0 128 0) (16 128 -16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "12"
+			"plane" "(16 -896 -16) (0 -896 0) (16 -896 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(16 16 416) (0 0 416) (-16 16 416)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(-352 96 32) (-352 -864 416) (-352 96 416)"
+			"material" "knox/gold_front"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "16"
+		side
+		{
+			"id" "17"
+			"plane" "(640 16 16) (640 0 0) (640 -16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "18"
+			"plane" "(16 128 16) (0 128 0) (16 128 -16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "19"
+			"plane" "(16 -896 -16) (0 -896 0) (16 -896 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "20"
+			"plane" "(16 16 416) (0 0 416) (-16 16 416)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "21"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "22"
+			"plane" "(608 -864 32) (608 96 416) (608 -864 416)"
+			"material" "knox/gold_front"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "23"
+		side
+		{
+			"id" "24"
+			"plane" "(16 128 16) (0 128 0) (16 128 -16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "25"
+			"plane" "(16 16 416) (0 0 416) (-16 16 416)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "27"
+			"plane" "(-352 -16 16) (-352 0 0) (-352 16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "28"
+			"plane" "(608 16 16) (608 0 0) (608 -16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29"
+			"plane" "(608 96 32) (-352 96 416) (608 96 416)"
+			"material" "knox/gold_side"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "30"
+		side
+		{
+			"id" "31"
+			"plane" "(16 -896 -16) (0 -896 0) (16 -896 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "32"
+			"plane" "(16 16 416) (0 0 416) (-16 16 416)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "34"
+			"plane" "(-352 -16 16) (-352 0 0) (-352 16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "35"
+			"plane" "(608 16 16) (608 0 0) (608 -16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "36"
+			"plane" "(-352 -864 32) (608 -864 416) (-352 -864 416)"
+			"material" "knox/gold_side"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "37"
+		side
+		{
+			"id" "38"
+			"plane" "(-16 16 0) (0 0 0) (16 16 0)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39"
+			"plane" "(-384 -16 16) (-384 0 0) (-384 16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "40"
+			"plane" "(640 16 16) (640 0 0) (640 -16 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "41"
+			"plane" "(16 128 16) (0 128 0) (16 128 -16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "42"
+			"plane" "(16 -896 -16) (0 -896 0) (16 -896 16)"
+			"material" "2/bunker_wall2"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "43"
+			"plane" "(608 96 32) (608 -864 32) (-352 -864 32)"
+			"material" "knox/gold_top"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+}
+entity
+{
+	"origin" "-256 0 88"
+	"classname" "info_player_deathmatch"
+	"rendercolor" "255 255 255"
+	"id" "44"
+}
+entity
+{
+	"origin" "512 -768 88"
+	"classname" "info_player_deathmatch"
+	"rendercolor" "255 255 255"
+	"id" "45"
+}
+entity
+{
+	"origin" "129 -384 39"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "46"
+}
+entity
+{
+	"origin" "512 0 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "47"
+}
+entity
+{
+	"origin" "-256 -768 34"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "48"
+}
+entity
+{
+	"origin" "127 0 33"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "49"
+}
+entity
+{
+	"origin" "128 -768 34"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_darts"
+	"rendercolor" "255 255 255"
+	"id" "50"
+}
+entity
+{
+	"origin" "510 -384 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_frinesi"
+	"rendercolor" "255 255 255"
+	"id" "51"
+}
+entity
+{
+	"origin" "-256 -384 33"
+	"angles" "0 0 0"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_ronin"
+	"rendercolor" "255 255 255"
+	"id" "52"
+}
+entity
+{
+	"origin" "321 -192 33"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "53"
+}
+entity
+{
+	"origin" "321 -192 33"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "54"
+}
+entity
+{
+	"origin" "321 -192 33"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "55"
+}
+entity
+{
+	"origin" "321 -192 33"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "56"
+}
+entity
+{
+	"origin" "321 -192 33"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "57"
+}
+entity
+{
+	"origin" "321 -576 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "58"
+}
+entity
+{
+	"origin" "321 -576 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "59"
+}
+entity
+{
+	"origin" "321 -576 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "60"
+}
+entity
+{
+	"origin" "321 -576 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "61"
+}
+entity
+{
+	"origin" "321 -576 35"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "62"
+}
+entity
+{
+	"origin" "-64 -192 36"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_fraggrenade"
+	"rendercolor" "255 255 255"
+	"id" "63"
+}
+entity
+{
+	"origin" "-64 -192 36"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_fraggrenade"
+	"rendercolor" "255 255 255"
+	"id" "64"
+}
+entity
+{
+	"origin" "-64 -192 36"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_fraggrenade"
+	"rendercolor" "255 255 255"
+	"id" "65"
+}
+entity
+{
+	"origin" "-64 -192 36"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_fraggrenade"
+	"rendercolor" "255 255 255"
+	"id" "66"
+}
+entity
+{
+	"origin" "-64 -192 36"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_fraggrenade"
+	"rendercolor" "255 255 255"
+	"id" "67"
+}
+entity
+{
+	"origin" "-64 -576 38"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_flashgrenade"
+	"rendercolor" "255 255 255"
+	"id" "68"
+}
+entity
+{
+	"origin" "-64 -576 38"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_flashgrenade"
+	"rendercolor" "255 255 255"
+	"id" "69"
+}
+entity
+{
+	"origin" "-64 -576 38"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_flashgrenade"
+	"rendercolor" "255 255 255"
+	"id" "70"
+}
+entity
+{
+	"origin" "-64 -576 38"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_flashgrenade"
+	"rendercolor" "255 255 255"
+	"id" "71"
+}
+entity
+{
+	"origin" "-64 -576 38"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_flashgrenade"
+	"rendercolor" "255 255 255"
+	"id" "72"
+}
+entity
+{
+	"origin" "129 -192 34"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "73"
+}
+entity
+{
+	"origin" "128 -576 36"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "74"
+}
+entity
+{
+	"origin" "318 -384 35"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_p99"
+	"rendercolor" "255 255 255"
+	"id" "75"
+}
+entity
+{
+	"origin" "-65 -384 37"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "76"
+}
+entity
+{
+	"origin" "128 -384 384"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "77"
+}

@@ -1,0 +1,5033 @@
+world
+{
+	"MaxRange" "16384"
+	"sounds" "1"
+	"skycloudhigh_lightning" "1"
+	"skycloudhigh_height" "1500"
+	"skycloudhigh_speed" "0.035  0.0029"
+	"skycloudlow_lightning" "1"
+	"skycloudlow_height" "2000"
+	"skycloudlow_speed" "0.025  -0.0019"
+	"skyterrain" "sky_terrain_afghanistan"
+	"skycloudlow" "sky_lower_afghanistan"
+	"skydome" "sky_dome_romania"
+	"defaultctf" "1"
+	"classname" "worldspawn"
+	"rendercolor" "255 255 255"
+	"id" "1"
+	solid
+	{
+		"id" "2"
+		side
+		{
+			"id" "3"
+			"plane" "(16 16 64) (0 0 64) (-16 16 64)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-640 -16 16) (-640 0 0) (-640 16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(640 16 16) (640 0 0) (640 -16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(16 384 16) (0 384 0) (16 384 -16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7"
+			"plane" "(16 -384 -16) (0 -384 0) (16 -384 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "8"
+			"plane" "(608 -352 32) (-608 352 32) (-608 -352 32)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "9"
+		side
+		{
+			"id" "10"
+			"plane" "(16 -384 -16) (0 -384 0) (16 -384 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "11"
+			"plane" "(16 16 32) (0 0 32) (-16 16 32)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "12"
+			"plane" "(-16 16 -288) (0 0 -288) (16 16 -288)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(-608 -16 16) (-608 0 0) (-608 16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(608 16 16) (608 0 0) (608 -16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(0 -352 -288) (608 -352 -288) (608 -352 32)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[1 0 0 128] 4.75"
+			"vaxis" "[0 0 -1 25.6] 1.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "16"
+		side
+		{
+			"id" "17"
+			"plane" "(-16 16 -320) (0 0 -320) (16 16 -320)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "18"
+			"plane" "(-640 -16 16) (-640 0 0) (-640 16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "19"
+			"plane" "(640 16 16) (640 0 0) (640 -16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "20"
+			"plane" "(16 384 16) (0 384 0) (16 384 -16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "21"
+			"plane" "(16 -384 -16) (0 -384 0) (16 -384 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "22"
+			"plane" "(608 352 -288) (-608 -352 -288) (-608 352 -288)"
+			"material" "osato/security_carpet_light"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "23"
+		side
+		{
+			"id" "24"
+			"plane" "(640 16 16) (640 0 0) (640 -16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "25"
+			"plane" "(16 384 16) (0 384 0) (16 384 -16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26"
+			"plane" "(16 -384 -16) (0 -384 0) (16 -384 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "27"
+			"plane" "(16 16 32) (0 0 32) (-16 16 32)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "28"
+			"plane" "(-16 16 -288) (0 0 -288) (16 16 -288)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29"
+			"plane" "(608 -352 -288) (608 352 -288) (608 352 32)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[0 1 0 128] 3"
+			"vaxis" "[0 0 -1 25.6] 1.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "30"
+		side
+		{
+			"id" "31"
+			"plane" "(16 384 16) (0 384 0) (16 384 -16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "32"
+			"plane" "(16 16 32) (0 0 32) (-16 16 32)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33"
+			"plane" "(-16 16 -288) (0 0 -288) (16 16 -288)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "34"
+			"plane" "(-608 -16 16) (-608 0 0) (-608 16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "35"
+			"plane" "(608 16 16) (608 0 0) (608 -16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "36"
+			"plane" "(608 352 -288) (-608 352 -288) (-608 352 32)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[1 0 0 128] 4.75"
+			"vaxis" "[0 0 -1 26] 1.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "37"
+		side
+		{
+			"id" "38"
+			"plane" "(-640 -16 16) (-640 0 0) (-640 16 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39"
+			"plane" "(16 384 16) (0 384 0) (16 384 -16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "40"
+			"plane" "(16 -384 -16) (0 -384 0) (16 -384 16)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "41"
+			"plane" "(16 16 32) (0 0 32) (-16 16 32)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "42"
+			"plane" "(-16 16 -288) (0 0 -288) (16 16 -288)"
+			"material" "6/whiteroof2_d"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "43"
+			"plane" "(-608 352 -288) (-608 -352 -288) (-608 -352 32)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[0 1 0 128] 3"
+			"vaxis" "[0 0 -1 25.6] 1.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+}
+entity
+{
+	"origin" "-476 -308 -284"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "44"
+}
+entity
+{
+	"origin" "572 312 -268"
+	"SpawnWithCaptureEnabled" "1"
+	"targetname" "rebel_flag"
+	"classname" "ctf_rebel_flag"
+	"rendercolor" "255 255 255"
+	"id" "45"
+}
+entity
+{
+	"origin" "-532 -308 -288"
+	"SpawnWithCaptureEnabled" "1"
+	"targetname" "combine_flag"
+	"classname" "ctf_combine_flag"
+	"rendercolor" "255 255 255"
+	"id" "46"
+}
+entity
+{
+	"origin" "-41 27 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1_winter"
+	"rendercolor" "255 255 255"
+	"id" "47"
+}
+entity
+{
+	"origin" "-29 56 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1_winter"
+	"rendercolor" "255 255 255"
+	"id" "48"
+}
+entity
+{
+	"origin" "-2 9 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "49"
+}
+entity
+{
+	"origin" "36 36 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "50"
+}
+entity
+{
+	"origin" "-3 51 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "51"
+}
+entity
+{
+	"origin" "-54 -2 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "52"
+}
+entity
+{
+	"origin" "-11 -17 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "53"
+}
+entity
+{
+	"origin" "19 -10 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "54"
+}
+entity
+{
+	"origin" "44 4 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "55"
+}
+entity
+{
+	"origin" "68 27 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "56"
+}
+entity
+{
+	"origin" "66 101 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "57"
+}
+entity
+{
+	"origin" "40 104 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "58"
+}
+entity
+{
+	"origin" "57 79 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "59"
+}
+entity
+{
+	"origin" "15 85 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "60"
+}
+entity
+{
+	"origin" "96 -2 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "61"
+}
+entity
+{
+	"origin" "115 21 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "62"
+}
+entity
+{
+	"origin" "114 53 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "63"
+}
+entity
+{
+	"origin" "82 -9 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "64"
+}
+entity
+{
+	"origin" "107 11 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "65"
+}
+entity
+{
+	"origin" "108 46 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "66"
+}
+entity
+{
+	"origin" "102 39 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "67"
+}
+entity
+{
+	"origin" "91 20 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "68"
+}
+entity
+{
+	"origin" "97 63 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "69"
+}
+entity
+{
+	"origin" "117 92 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "70"
+}
+entity
+{
+	"origin" "132 65 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "71"
+}
+entity
+{
+	"origin" "105 90 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "72"
+}
+entity
+{
+	"origin" "91 51 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "73"
+}
+entity
+{
+	"origin" "133 48 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "74"
+}
+entity
+{
+	"origin" "125 41 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "75"
+}
+entity
+{
+	"origin" "125 78 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "76"
+}
+entity
+{
+	"origin" "121 68 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "77"
+}
+entity
+{
+	"origin" "109 78 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "78"
+}
+entity
+{
+	"origin" "106 72 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "79"
+}
+entity
+{
+	"origin" "99 95 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "80"
+}
+entity
+{
+	"origin" "95 87 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "81"
+}
+entity
+{
+	"origin" "92 77 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "82"
+}
+entity
+{
+	"origin" "86 74 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "83"
+}
+entity
+{
+	"origin" "88 42 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "84"
+}
+entity
+{
+	"origin" "129 34 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "85"
+}
+entity
+{
+	"origin" "92 -7 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "86"
+}
+entity
+{
+	"origin" "86 -15 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "87"
+}
+entity
+{
+	"origin" "73 -19 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_minigun"
+	"rendercolor" "255 255 255"
+	"id" "88"
+}
+entity
+{
+	"origin" "-119 -95 -288"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "89"
+}
+entity
+{
+	"origin" "262 50 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "90"
+}
+entity
+{
+	"origin" "310 119 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "91"
+}
+entity
+{
+	"origin" "257 116 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "92"
+}
+entity
+{
+	"origin" "295 85 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "93"
+}
+entity
+{
+	"origin" "307 58 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "94"
+}
+entity
+{
+	"origin" "256 85 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "95"
+}
+entity
+{
+	"origin" "206 57 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "96"
+}
+entity
+{
+	"origin" "224 32 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "97"
+}
+entity
+{
+	"origin" "225 93 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "98"
+}
+entity
+{
+	"origin" "200 148 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "99"
+}
+entity
+{
+	"origin" "235 212 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "100"
+}
+entity
+{
+	"origin" "302 158 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "101"
+}
+entity
+{
+	"origin" "371 183 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "102"
+}
+entity
+{
+	"origin" "253 155 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "103"
+}
+entity
+{
+	"origin" "229 158 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "104"
+}
+entity
+{
+	"origin" "302 246 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "105"
+}
+entity
+{
+	"origin" "209 230 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "106"
+}
+entity
+{
+	"origin" "273 217 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "107"
+}
+entity
+{
+	"origin" "310 206 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "108"
+}
+entity
+{
+	"origin" "363 220 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "109"
+}
+entity
+{
+	"origin" "360 277 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "110"
+}
+entity
+{
+	"origin" "261 273 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "111"
+}
+entity
+{
+	"origin" "167 240 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "112"
+}
+entity
+{
+	"origin" "180 193 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "113"
+}
+entity
+{
+	"origin" "156 119 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "114"
+}
+entity
+{
+	"origin" "189 112 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "115"
+}
+entity
+{
+	"origin" "181 78 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "116"
+}
+entity
+{
+	"origin" "178 41 -288"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "117"
+}
+entity
+{
+	"origin" "130 -10 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "118"
+}
+entity
+{
+	"origin" "110 -31 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "119"
+}
+entity
+{
+	"origin" "122 -25 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "120"
+}
+entity
+{
+	"origin" "110 -20 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "121"
+}
+entity
+{
+	"origin" "119 -11 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "122"
+}
+entity
+{
+	"origin" "139 6 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "123"
+}
+entity
+{
+	"origin" "103 -44 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "124"
+}
+entity
+{
+	"origin" "91 -53 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "125"
+}
+entity
+{
+	"origin" "75 -48 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "126"
+}
+entity
+{
+	"origin" "26 -54 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "127"
+}
+entity
+{
+	"origin" "65 -71 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "128"
+}
+entity
+{
+	"origin" "56 -60 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "129"
+}
+entity
+{
+	"origin" "42 -49 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "130"
+}
+entity
+{
+	"origin" "78 -63 -288"
+	"classname" "item_armor_plate"
+	"rendercolor" "255 255 255"
+	"id" "131"
+}
+entity
+{
+	"origin" "417 280 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "132"
+}
+entity
+{
+	"origin" "420 237 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "133"
+}
+entity
+{
+	"origin" "416 188 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "134"
+}
+entity
+{
+	"origin" "413 153 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "135"
+}
+entity
+{
+	"origin" "401 120 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "136"
+}
+entity
+{
+	"origin" "388 95 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "137"
+}
+entity
+{
+	"origin" "414 107 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "138"
+}
+entity
+{
+	"origin" "401 69 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "139"
+}
+entity
+{
+	"origin" "391 36 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "140"
+}
+entity
+{
+	"origin" "388 4 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "141"
+}
+entity
+{
+	"origin" "383 -10 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "142"
+}
+entity
+{
+	"origin" "372 -35 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "143"
+}
+entity
+{
+	"origin" "369 -56 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "144"
+}
+entity
+{
+	"origin" "361 -72 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "145"
+}
+entity
+{
+	"origin" "355 -94 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "146"
+}
+entity
+{
+	"origin" "348 -111 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "147"
+}
+entity
+{
+	"origin" "314 -130 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "148"
+}
+entity
+{
+	"origin" "277 -124 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "149"
+}
+entity
+{
+	"origin" "214 -139 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "150"
+}
+entity
+{
+	"origin" "141 -139 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "151"
+}
+entity
+{
+	"origin" "248 -127 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "152"
+}
+entity
+{
+	"origin" "169 -139 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "153"
+}
+entity
+{
+	"origin" "91 -147 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "154"
+}
+entity
+{
+	"origin" "45 -144 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "155"
+}
+entity
+{
+	"origin" "6 -144 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "156"
+}
+entity
+{
+	"origin" "-55 -143 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "157"
+}
+entity
+{
+	"origin" "-112 -141 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "158"
+}
+entity
+{
+	"origin" "-190 -138 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "159"
+}
+entity
+{
+	"origin" "-291 -132 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "160"
+}
+entity
+{
+	"origin" "-332 -90 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "161"
+}
+entity
+{
+	"origin" "-344 -21 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "162"
+}
+entity
+{
+	"origin" "-320 47 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "163"
+}
+entity
+{
+	"origin" "-450 132 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "164"
+}
+entity
+{
+	"origin" "-431 203 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "165"
+}
+entity
+{
+	"origin" "-421 260 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "166"
+}
+entity
+{
+	"origin" "-417 309 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "167"
+}
+entity
+{
+	"origin" "-317 340 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "168"
+}
+entity
+{
+	"origin" "-108 304 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "169"
+}
+entity
+{
+	"origin" "-27 287 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "170"
+}
+entity
+{
+	"origin" "41 282 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "171"
+}
+entity
+{
+	"origin" "99 298 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "172"
+}
+entity
+{
+	"origin" "178 308 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "173"
+}
+entity
+{
+	"origin" "231 322 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "174"
+}
+entity
+{
+	"origin" "268 327 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "175"
+}
+entity
+{
+	"origin" "318 321 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "176"
+}
+entity
+{
+	"origin" "360 338 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "177"
+}
+entity
+{
+	"origin" "397 322 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "178"
+}
+entity
+{
+	"origin" "-80 47 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_qworm"
+	"rendercolor" "255 255 255"
+	"id" "179"
+}
+entity
+{
+	"origin" "-104 48 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_qworm"
+	"rendercolor" "255 255 255"
+	"id" "180"
+}
+entity
+{
+	"origin" "-564 308 -288"
+	"model" "models/large_plant.mdl"
+	"maxbbox" "0 0 0"
+	"minbbox" "0 0 0"
+	"sequencename" "idle1"
+	"rendercolor" "255 255 255"
+	"classname" "prop_dynamic"
+	"solid" "0"
+	"id" "181"
+}
+entity
+{
+	"origin" "-32 111 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "182"
+}
+entity
+{
+	"origin" "15 122 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "183"
+}
+entity
+{
+	"origin" "89 138 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "184"
+}
+entity
+{
+	"origin" "54 -29 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "185"
+}
+entity
+{
+	"origin" "-48 41 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "186"
+}
+entity
+{
+	"origin" "67 117 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "187"
+}
+entity
+{
+	"origin" "174 14 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "188"
+}
+entity
+{
+	"origin" "26 48 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "189"
+}
+entity
+{
+	"origin" "-62 76 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "190"
+}
+entity
+{
+	"origin" "-157 138 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "191"
+}
+entity
+{
+	"origin" "-54 23 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "192"
+}
+entity
+{
+	"origin" "-94 126 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "193"
+}
+entity
+{
+	"origin" "-231 119 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "194"
+}
+entity
+{
+	"origin" "-167 89 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "195"
+}
+entity
+{
+	"origin" "-176 39 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "196"
+}
+entity
+{
+	"origin" "-138 38 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "197"
+}
+entity
+{
+	"origin" "-109 45 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "198"
+}
+entity
+{
+	"origin" "-122 64 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "199"
+}
+entity
+{
+	"origin" "-150 92 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "200"
+}
+entity
+{
+	"origin" "-226 56 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "201"
+}
+entity
+{
+	"origin" "-218 92 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "202"
+}
+entity
+{
+	"origin" "-158 16 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "203"
+}
+entity
+{
+	"origin" "-172 0 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "204"
+}
+entity
+{
+	"origin" "-249 63 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "205"
+}
+entity
+{
+	"origin" "-253 39 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "206"
+}
+entity
+{
+	"origin" "-203 -18 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "207"
+}
+entity
+{
+	"origin" "-168 -20 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "208"
+}
+entity
+{
+	"origin" "-225 39 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "209"
+}
+entity
+{
+	"origin" "-196 20 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "210"
+}
+entity
+{
+	"origin" "-196 7 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "211"
+}
+entity
+{
+	"origin" "-231 14 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "212"
+}
+entity
+{
+	"origin" "-207 63 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "213"
+}
+entity
+{
+	"origin" "-211 138 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "214"
+}
+entity
+{
+	"origin" "-187 147 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "215"
+}
+entity
+{
+	"origin" "-145 56 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "216"
+}
+entity
+{
+	"origin" "-198 104 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "217"
+}
+entity
+{
+	"origin" "-90 -20 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "218"
+}
+entity
+{
+	"origin" "-87 -46 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "219"
+}
+entity
+{
+	"origin" "-107 -48 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "220"
+}
+entity
+{
+	"origin" "-117 8 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "221"
+}
+entity
+{
+	"origin" "-90 -4 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "222"
+}
+entity
+{
+	"origin" "-150 -6 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "223"
+}
+entity
+{
+	"origin" "-126 -37 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "224"
+}
+entity
+{
+	"origin" "-116 -10 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "225"
+}
+entity
+{
+	"origin" "-151 -31 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "226"
+}
+entity
+{
+	"origin" "-164 -45 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "227"
+}
+entity
+{
+	"origin" "-38 -37 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "228"
+}
+entity
+{
+	"origin" "14 24 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "229"
+}
+entity
+{
+	"origin" "15 -3 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "230"
+}
+entity
+{
+	"origin" "-44 -3 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "231"
+}
+entity
+{
+	"origin" "-51 -17 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "232"
+}
+entity
+{
+	"origin" "-7 -57 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "233"
+}
+entity
+{
+	"origin" "7 -14 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "234"
+}
+entity
+{
+	"origin" "-1 -28 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "235"
+}
+entity
+{
+	"origin" "132 -32 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "236"
+}
+entity
+{
+	"origin" "60 10 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "237"
+}
+entity
+{
+	"origin" "109 44 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "238"
+}
+entity
+{
+	"origin" "108 69 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "239"
+}
+entity
+{
+	"origin" "35 101 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "240"
+}
+entity
+{
+	"origin" "-59 164 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "241"
+}
+entity
+{
+	"origin" "-88 205 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "242"
+}
+entity
+{
+	"origin" "-158 217 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "243"
+}
+entity
+{
+	"origin" "-200 207 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "244"
+}
+entity
+{
+	"origin" "-229 171 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "245"
+}
+entity
+{
+	"origin" "-255 122 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "246"
+}
+entity
+{
+	"origin" "-257 87 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "247"
+}
+entity
+{
+	"origin" "-204 -30 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "248"
+}
+entity
+{
+	"origin" "-96 -88 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "249"
+}
+entity
+{
+	"origin" "-41 -75 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "250"
+}
+entity
+{
+	"origin" "14 -39 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "251"
+}
+entity
+{
+	"origin" "-108 -66 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "252"
+}
+entity
+{
+	"origin" "-222 14 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "253"
+}
+entity
+{
+	"origin" "-260 54 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "254"
+}
+entity
+{
+	"origin" "-256 19 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "255"
+}
+entity
+{
+	"origin" "-229 -6 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "256"
+}
+entity
+{
+	"origin" "-216 -18 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "257"
+}
+entity
+{
+	"origin" "-146 -54 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "258"
+}
+entity
+{
+	"origin" "-59 -52 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "259"
+}
+entity
+{
+	"origin" "-60 -66 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "260"
+}
+entity
+{
+	"origin" "-22 -68 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "261"
+}
+entity
+{
+	"origin" "-112 191 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "262"
+}
+entity
+{
+	"origin" "-117 145 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "263"
+}
+entity
+{
+	"origin" "-105 115 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "264"
+}
+entity
+{
+	"origin" "-88 157 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "265"
+}
+entity
+{
+	"origin" "-89 88 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "266"
+}
+entity
+{
+	"origin" "-129 166 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "267"
+}
+entity
+{
+	"origin" "-140 174 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "268"
+}
+entity
+{
+	"origin" "-155 189 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "269"
+}
+entity
+{
+	"origin" "-178 199 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "270"
+}
+entity
+{
+	"origin" "-157 167 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "271"
+}
+entity
+{
+	"origin" "-81 59 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "272"
+}
+entity
+{
+	"origin" "-19 80 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "273"
+}
+entity
+{
+	"origin" "6 141 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "274"
+}
+entity
+{
+	"origin" "1 195 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "275"
+}
+entity
+{
+	"origin" "23 211 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "276"
+}
+entity
+{
+	"origin" "78 200 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "277"
+}
+entity
+{
+	"origin" "91 168 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "278"
+}
+entity
+{
+	"origin" "43 189 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "279"
+}
+entity
+{
+	"origin" "39 173 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "280"
+}
+entity
+{
+	"origin" "55 168 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "281"
+}
+entity
+{
+	"origin" "-20 201 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "282"
+}
+entity
+{
+	"origin" "-42 171 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "283"
+}
+entity
+{
+	"origin" "-24 161 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "284"
+}
+entity
+{
+	"origin" "3 174 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "285"
+}
+entity
+{
+	"origin" "-55 126 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "286"
+}
+entity
+{
+	"origin" "-57 237 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "287"
+}
+entity
+{
+	"origin" "-2 244 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "288"
+}
+entity
+{
+	"origin" "-38 243 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "289"
+}
+entity
+{
+	"origin" "-57 220 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "290"
+}
+entity
+{
+	"origin" "-67 200 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "291"
+}
+entity
+{
+	"origin" "-42 205 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "292"
+}
+entity
+{
+	"origin" "-98 252 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "293"
+}
+entity
+{
+	"origin" "-86 257 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "294"
+}
+entity
+{
+	"origin" "-20 255 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "295"
+}
+entity
+{
+	"origin" "46 217 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "296"
+}
+entity
+{
+	"origin" "141 86 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "297"
+}
+entity
+{
+	"origin" "158 64 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "298"
+}
+entity
+{
+	"origin" "190 0 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "299"
+}
+entity
+{
+	"origin" "171 -27 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "300"
+}
+entity
+{
+	"origin" "-197 70 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "301"
+}
+entity
+{
+	"origin" "-138 52 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "302"
+}
+entity
+{
+	"origin" "-145 21 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "303"
+}
+entity
+{
+	"origin" "-169 104 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "304"
+}
+entity
+{
+	"origin" "-172 38 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "305"
+}
+entity
+{
+	"origin" "-136 35 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "306"
+}
+entity
+{
+	"origin" "-188 49 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "307"
+}
+entity
+{
+	"origin" "-186 83 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "308"
+}
+entity
+{
+	"origin" "-132 97 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "309"
+}
+entity
+{
+	"origin" "-79 114 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "310"
+}
+entity
+{
+	"origin" "-32 103 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "311"
+}
+entity
+{
+	"origin" "-82 160 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "312"
+}
+entity
+{
+	"origin" "-57 189 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "313"
+}
+entity
+{
+	"origin" "-53 146 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "314"
+}
+entity
+{
+	"origin" "-102 101 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "315"
+}
+entity
+{
+	"origin" "-123 86 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "316"
+}
+entity
+{
+	"origin" "-37 169 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "317"
+}
+entity
+{
+	"origin" "-14 110 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "318"
+}
+entity
+{
+	"origin" "16 123 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "319"
+}
+entity
+{
+	"origin" "91 175 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "320"
+}
+entity
+{
+	"origin" "53 144 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "321"
+}
+entity
+{
+	"origin" "42 257 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "322"
+}
+entity
+{
+	"origin" "-19 234 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "323"
+}
+entity
+{
+	"origin" "-40 214 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "324"
+}
+entity
+{
+	"origin" "197 -352 -100"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "325"
+}
+entity
+{
+	"origin" "453 -352 -134"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "326"
+}
+entity
+{
+	"origin" "596 -352 -145"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "327"
+}
+entity
+{
+	"origin" "385 -352 -193"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "328"
+}
+entity
+{
+	"origin" "134 -352 -240"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "329"
+}
+entity
+{
+	"origin" "335 -352 -172"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "330"
+}
+entity
+{
+	"origin" "217 -352 -194"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "331"
+}
+entity
+{
+	"origin" "470 -352 29"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "332"
+}
+entity
+{
+	"origin" "587 -352 -79"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "333"
+}
+entity
+{
+	"origin" "608 138 -60"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "334"
+}
+entity
+{
+	"origin" "608 293 -119"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "335"
+}
+entity
+{
+	"origin" "608 15 -161"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "336"
+}
+entity
+{
+	"origin" "608 83 -74"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "337"
+}
+entity
+{
+	"origin" "608 -77 -238"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "338"
+}
+entity
+{
+	"origin" "608 -180 -98"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "339"
+}
+entity
+{
+	"origin" "608 89 -43"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "340"
+}
+entity
+{
+	"origin" "608 91 -216"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "341"
+}
+entity
+{
+	"origin" "608 55 -107"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "342"
+}
+entity
+{
+	"origin" "608 231 -177"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "343"
+}
+entity
+{
+	"origin" "239 352 -128"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "344"
+}
+entity
+{
+	"origin" "231 352 -179"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "345"
+}
+entity
+{
+	"origin" "351 352 -172"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "346"
+}
+entity
+{
+	"origin" "345 352 -94"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "347"
+}
+entity
+{
+	"origin" "306 352 -47"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "348"
+}
+entity
+{
+	"origin" "404 352 -155"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "349"
+}
+entity
+{
+	"origin" "508 352 -65"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "350"
+}
+entity
+{
+	"origin" "608 180 -27"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "351"
+}
+entity
+{
+	"origin" "608 34 -79"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "352"
+}
+entity
+{
+	"origin" "608 -46 -124"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "353"
+}
+entity
+{
+	"origin" "608 -95 -200"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "354"
+}
+entity
+{
+	"origin" "608 162 -184"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "355"
+}
+entity
+{
+	"origin" "608 -201 -130"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "356"
+}
+entity
+{
+	"origin" "462 -200 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "357"
+}
+entity
+{
+	"origin" "243 -227 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "358"
+}
+entity
+{
+	"origin" "100 -190 -288"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "359"
+}
+entity
+{
+	"origin" "608 113 -133"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "360"
+}
+entity
+{
+	"origin" "608 -383 -196"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "361"
+}
+entity
+{
+	"origin" "317 -352 -211"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "362"
+}
+entity
+{
+	"origin" "264 -352 -105"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "363"
+}
+entity
+{
+	"origin" "322 -352 -38"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "364"
+}
+entity
+{
+	"origin" "246 -352 -92"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "365"
+}
+entity
+{
+	"origin" "197 -352 -196"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "366"
+}
+entity
+{
+	"origin" "193 -352 -139"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "367"
+}
+entity
+{
+	"origin" "484 -352 -1"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "368"
+}
+entity
+{
+	"origin" "340 -352 -114"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "369"
+}
+entity
+{
+	"origin" "271 -352 -69"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "370"
+}
+entity
+{
+	"origin" "323 -352 -87"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "371"
+}
+entity
+{
+	"origin" "446 -352 -71"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "372"
+}
+entity
+{
+	"origin" "140 -352 -117"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "373"
+}
+entity
+{
+	"origin" "122 -352 -142"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "374"
+}
+entity
+{
+	"origin" "112 -352 -129"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "375"
+}
+entity
+{
+	"origin" "-17 -352 -72"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "376"
+}
+entity
+{
+	"origin" "-51 -352 -185"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "377"
+}
+entity
+{
+	"origin" "8 -352 -16"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "378"
+}
+entity
+{
+	"origin" "-4 -352 -164"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "379"
+}
+entity
+{
+	"origin" "61 -352 -73"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "380"
+}
+entity
+{
+	"origin" "-217 -352 -34"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "381"
+}
+entity
+{
+	"origin" "-86 -352 -142"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "382"
+}
+entity
+{
+	"origin" "-93 -352 -47"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "383"
+}
+entity
+{
+	"origin" "-120 -352 -126"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "384"
+}
+entity
+{
+	"origin" "-181 -352 -147"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "385"
+}
+entity
+{
+	"origin" "157 -352 -90"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "386"
+}
+entity
+{
+	"origin" "-18 -352 -23"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "387"
+}
+entity
+{
+	"origin" "-345 -352 -4"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "388"
+}
+entity
+{
+	"origin" "-253 -352 -81"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "389"
+}
+entity
+{
+	"origin" "-396 -352 -133"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "390"
+}
+entity
+{
+	"origin" "-608 -318 -112"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "391"
+}
+entity
+{
+	"origin" "-608 -337 -227"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "392"
+}
+entity
+{
+	"origin" "-608 -297 -88"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "393"
+}
+entity
+{
+	"origin" "-608 -245 -181"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "394"
+}
+entity
+{
+	"origin" "-608 -229 -20"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "395"
+}
+entity
+{
+	"origin" "-608 -166 -150"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "396"
+}
+entity
+{
+	"origin" "-608 -166 -115"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "397"
+}
+entity
+{
+	"origin" "-608 -165 -233"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "398"
+}
+entity
+{
+	"origin" "-608 -207 -157"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "399"
+}
+entity
+{
+	"origin" "-608 -228 -129"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "400"
+}
+entity
+{
+	"origin" "-608 -208 -122"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "401"
+}
+entity
+{
+	"origin" "-608 -183 -143"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "402"
+}
+entity
+{
+	"origin" "-608 -109 -98"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "403"
+}
+entity
+{
+	"origin" "-608 -128 -184"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "404"
+}
+entity
+{
+	"origin" "-608 -136 -91"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "405"
+}
+entity
+{
+	"origin" "-608 -119 -74"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "406"
+}
+entity
+{
+	"origin" "-608 -106 -64"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "407"
+}
+entity
+{
+	"origin" "-608 -36 -163"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "408"
+}
+entity
+{
+	"origin" "-608 36 5"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "409"
+}
+entity
+{
+	"origin" "-106 -208 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "410"
+}
+entity
+{
+	"origin" "-525 -116 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "411"
+}
+entity
+{
+	"origin" "-317 -66 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "412"
+}
+entity
+{
+	"origin" "20 -248 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "413"
+}
+entity
+{
+	"origin" "-57 -237 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "414"
+}
+entity
+{
+	"origin" "-293 -161 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "415"
+}
+entity
+{
+	"origin" "-161 -101 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "416"
+}
+entity
+{
+	"origin" "-80 -155 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "417"
+}
+entity
+{
+	"origin" "-299 -55 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "418"
+}
+entity
+{
+	"origin" "-608 151 -5"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "419"
+}
+entity
+{
+	"origin" "-608 103 -105"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "420"
+}
+entity
+{
+	"origin" "-608 135 -162"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "421"
+}
+entity
+{
+	"origin" "-608 76 -190"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "422"
+}
+entity
+{
+	"origin" "-608 174 -145"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "423"
+}
+entity
+{
+	"origin" "-608 81 -255"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "424"
+}
+entity
+{
+	"origin" "-608 272 -209"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "425"
+}
+entity
+{
+	"origin" "-608 258 -186"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "426"
+}
+entity
+{
+	"origin" "-608 107 -125"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "427"
+}
+entity
+{
+	"origin" "-608 71 -156"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "428"
+}
+entity
+{
+	"origin" "-608 304 -85"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "429"
+}
+entity
+{
+	"origin" "-608 251 -125"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "430"
+}
+entity
+{
+	"origin" "-608 321 -102"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "431"
+}
+entity
+{
+	"origin" "-608 135 -88"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "432"
+}
+entity
+{
+	"origin" "-264 275 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "433"
+}
+entity
+{
+	"origin" "-458 352 -102"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "434"
+}
+entity
+{
+	"origin" "-447 352 -167"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "435"
+}
+entity
+{
+	"origin" "-493 352 -205"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "436"
+}
+entity
+{
+	"origin" "-438 352 -31"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "437"
+}
+entity
+{
+	"origin" "-520 352 -213"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "438"
+}
+entity
+{
+	"origin" "-555 352 -132"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "439"
+}
+entity
+{
+	"origin" "-433 352 -70"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "440"
+}
+entity
+{
+	"origin" "-356 352 -151"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "441"
+}
+entity
+{
+	"origin" "-422 352 -207"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "442"
+}
+entity
+{
+	"origin" "-457 352 -245"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "443"
+}
+entity
+{
+	"origin" "-383 352 -236"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "444"
+}
+entity
+{
+	"origin" "-343 352 -175"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "445"
+}
+entity
+{
+	"origin" "-292 352 -35"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "446"
+}
+entity
+{
+	"origin" "-259 352 -114"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "447"
+}
+entity
+{
+	"origin" "-275 352 -158"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "448"
+}
+entity
+{
+	"origin" "-299 352 -206"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "449"
+}
+entity
+{
+	"origin" "-182 352 -213"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "450"
+}
+entity
+{
+	"origin" "-151 352 -133"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "451"
+}
+entity
+{
+	"origin" "-162 352 -27"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "452"
+}
+entity
+{
+	"origin" "-72 352 -109"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "453"
+}
+entity
+{
+	"origin" "-54 352 -186"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "454"
+}
+entity
+{
+	"origin" "-54 352 -206"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "455"
+}
+entity
+{
+	"origin" "35 352 -167"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "456"
+}
+entity
+{
+	"origin" "46 352 -56"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "457"
+}
+entity
+{
+	"origin" "120 352 -111"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "458"
+}
+entity
+{
+	"origin" "111 352 -157"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "459"
+}
+entity
+{
+	"origin" "99 352 -254"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "460"
+}
+entity
+{
+	"origin" "153 352 -233"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "461"
+}
+entity
+{
+	"origin" "184 352 -126"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "462"
+}
+entity
+{
+	"origin" "227 352 -56"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "463"
+}
+entity
+{
+	"origin" "356 352 -87"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "464"
+}
+entity
+{
+	"origin" "330 352 -184"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "465"
+}
+entity
+{
+	"origin" "324 352 -237"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "466"
+}
+entity
+{
+	"origin" "401 352 -227"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "467"
+}
+entity
+{
+	"origin" "362 352 -217"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "468"
+}
+entity
+{
+	"origin" "267 352 -217"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "469"
+}
+entity
+{
+	"origin" "289 352 -201"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "470"
+}
+entity
+{
+	"origin" "385 352 -178"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "471"
+}
+entity
+{
+	"origin" "469 352 -229"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "472"
+}
+entity
+{
+	"origin" "487 352 -251"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "473"
+}
+entity
+{
+	"origin" "546 352 -209"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "474"
+}
+entity
+{
+	"origin" "480 352 -72"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "475"
+}
+entity
+{
+	"origin" "523 352 -28"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "476"
+}
+entity
+{
+	"origin" "406 226 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "477"
+}
+entity
+{
+	"origin" "408 120 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "478"
+}
+entity
+{
+	"origin" "339 352 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "479"
+}
+entity
+{
+	"origin" "94 352 26"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "480"
+}
+entity
+{
+	"origin" "125 230 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "481"
+}
+entity
+{
+	"origin" "340 208 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "482"
+}
+entity
+{
+	"origin" "414 200 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "483"
+}
+entity
+{
+	"origin" "437 159 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "484"
+}
+entity
+{
+	"origin" "452 79 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "485"
+}
+entity
+{
+	"origin" "281 65 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "486"
+}
+entity
+{
+	"origin" "182 81 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "487"
+}
+entity
+{
+	"origin" "321 20 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "488"
+}
+entity
+{
+	"origin" "378 31 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "489"
+}
+entity
+{
+	"origin" "290 296 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "490"
+}
+entity
+{
+	"origin" "346 119 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "491"
+}
+entity
+{
+	"origin" "476 39 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "492"
+}
+entity
+{
+	"origin" "304 38 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "493"
+}
+entity
+{
+	"origin" "217 65 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "494"
+}
+entity
+{
+	"origin" "252 -90 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "495"
+}
+entity
+{
+	"origin" "295 -51 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "496"
+}
+entity
+{
+	"origin" "360 -125 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "497"
+}
+entity
+{
+	"origin" "292 -145 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "498"
+}
+entity
+{
+	"origin" "462 -125 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "499"
+}
+entity
+{
+	"origin" "491 -139 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "500"
+}
+entity
+{
+	"origin" "316 -73 32"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "501"
+}
+entity
+{
+	"origin" "-417 -293 -288"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "502"
+}
+entity
+{
+	"origin" "564 204 -288"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "503"
+}
+entity
+{
+	"origin" "577 267 -272"
+	"angles" "0 180 0"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "504"
+}
+entity
+{
+	"origin" "-583 -259 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "505"
+}
+entity
+{
+	"origin" "-551 -254 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "506"
+}
+entity
+{
+	"origin" "-519 -262 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "507"
+}
+entity
+{
+	"origin" "-490 -263 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "508"
+}
+entity
+{
+	"origin" "-488 -237 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "509"
+}
+entity
+{
+	"origin" "-495 -204 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "510"
+}
+entity
+{
+	"origin" "-568 -192 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "511"
+}
+entity
+{
+	"origin" "-620 -217 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "512"
+}
+entity
+{
+	"origin" "-572 -228 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "513"
+}
+entity
+{
+	"origin" "532 327 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "514"
+}
+entity
+{
+	"origin" "532 306 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "515"
+}
+entity
+{
+	"origin" "528 270 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "516"
+}
+entity
+{
+	"origin" "534 250 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "517"
+}
+entity
+{
+	"origin" "530 224 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "518"
+}
+entity
+{
+	"origin" "541 190 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "519"
+}
+entity
+{
+	"origin" "554 156 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "520"
+}
+entity
+{
+	"origin" "570 124 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "521"
+}
+entity
+{
+	"origin" "536 122 -288"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "522"
+}
+entity
+{
+	"origin" "485 103 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "523"
+}
+entity
+{
+	"origin" "483 116 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "524"
+}
+entity
+{
+	"origin" "479 133 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "525"
+}
+entity
+{
+	"origin" "476 150 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "526"
+}
+entity
+{
+	"origin" "471 169 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "527"
+}
+entity
+{
+	"origin" "471 192 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "528"
+}
+entity
+{
+	"origin" "464 223 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "529"
+}
+entity
+{
+	"origin" "479 223 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "530"
+}
+entity
+{
+	"origin" "478 257 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "531"
+}
+entity
+{
+	"origin" "461 254 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "532"
+}
+entity
+{
+	"origin" "464 283 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "533"
+}
+entity
+{
+	"origin" "479 289 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "534"
+}
+entity
+{
+	"origin" "472 318 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "535"
+}
+entity
+{
+	"origin" "484 338 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "536"
+}
+entity
+{
+	"origin" "462 340 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "537"
+}
+entity
+{
+	"origin" "448 316 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "538"
+}
+entity
+{
+	"origin" "445 289 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "539"
+}
+entity
+{
+	"origin" "439 263 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "540"
+}
+entity
+{
+	"origin" "436 233 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "541"
+}
+entity
+{
+	"origin" "442 214 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "542"
+}
+entity
+{
+	"origin" "450 183 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "543"
+}
+entity
+{
+	"origin" "451 166 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "544"
+}
+entity
+{
+	"origin" "453 146 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "545"
+}
+entity
+{
+	"origin" "455 127 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "546"
+}
+entity
+{
+	"origin" "465 103 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "547"
+}
+entity
+{
+	"origin" "450 105 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "548"
+}
+entity
+{
+	"origin" "436 124 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "549"
+}
+entity
+{
+	"origin" "-370 -330 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "550"
+}
+entity
+{
+	"origin" "-365 -295 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "551"
+}
+entity
+{
+	"origin" "-363 -254 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "552"
+}
+entity
+{
+	"origin" "-355 -235 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "553"
+}
+entity
+{
+	"origin" "-358 -201 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "554"
+}
+entity
+{
+	"origin" "-364 -179 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "555"
+}
+entity
+{
+	"origin" "-375 -147 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "556"
+}
+entity
+{
+	"origin" "-388 -123 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "557"
+}
+entity
+{
+	"origin" "-408 -125 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "558"
+}
+entity
+{
+	"origin" "-405 -145 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "559"
+}
+entity
+{
+	"origin" "-398 -173 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "560"
+}
+entity
+{
+	"origin" "-396 -194 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "561"
+}
+entity
+{
+	"origin" "-396 -216 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "562"
+}
+entity
+{
+	"origin" "-398 -250 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "563"
+}
+entity
+{
+	"origin" "-386 -228 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "564"
+}
+entity
+{
+	"origin" "-428 -264 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "565"
+}
+entity
+{
+	"origin" "-424 -223 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "566"
+}
+entity
+{
+	"origin" "-426 -194 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "567"
+}
+entity
+{
+	"origin" "-432 -172 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "568"
+}
+entity
+{
+	"origin" "-435 -156 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "569"
+}
+entity
+{
+	"origin" "-437 -140 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "570"
+}
+entity
+{
+	"origin" "-443 -120 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "571"
+}
+entity
+{
+	"origin" "-462 -126 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "572"
+}
+entity
+{
+	"origin" "-467 -154 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "573"
+}
+entity
+{
+	"origin" "-451 -185 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "574"
+}
+entity
+{
+	"origin" "-457 -217 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "575"
+}
+entity
+{
+	"origin" "-450 -264 -288"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "576"
+}

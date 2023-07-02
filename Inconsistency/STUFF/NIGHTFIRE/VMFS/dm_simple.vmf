@@ -1,0 +1,617 @@
+world
+{
+	"MaxRange" "16384"
+	"sounds" "1"
+	"skycloudhigh_height" "1500"
+	"skycloudhigh_speed" "0.035  0.0029"
+	"skycloudlow_height" "2000"
+	"skycloudlow_speed" "0.025  -0.0019"
+	"skyterrain" "sky_terrain_afghanistan"
+	"skycloudhigh" "none"
+	"skycloudlow" "sky_lower_afghanistan"
+	"skydome" "sky_dome_romania"
+	"classname" "worldspawn"
+	"rendercolor" "255 255 255"
+	"id" "1"
+	solid
+	{
+		"id" "2"
+		side
+		{
+			"id" "3"
+			"plane" "(16 16 320) (0 0 320) (-16 16 320)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-512 -16 16) (-512 0 0) (-512 16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(768 16 16) (768 0 0) (768 -16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7"
+			"plane" "(16 -1152 -16) (0 -1152 0) (16 -1152 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "8"
+			"plane" "(0 224 288) (0 -1120 288) (736 -1120 288)"
+			"material" "osato/carpet_b1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "9"
+		side
+		{
+			"id" "10"
+			"plane" "(-16 16 0) (0 0 0) (16 16 0)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "11"
+			"plane" "(-512 -16 16) (-512 0 0) (-512 16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "12"
+			"plane" "(768 16 16) (768 0 0) (768 -16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(16 -1152 -16) (0 -1152 0) (16 -1152 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(736 224 32) (-480 -1024 32) (-480 0 32)"
+			"material" "osato/carpet_b1"
+			"uaxis" "[1 0 0 0] 0.5"
+			"vaxis" "[0 -1 0 0] 0.5"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "16"
+		side
+		{
+			"id" "17"
+			"plane" "(768 16 16) (768 0 0) (768 -16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "18"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "19"
+			"plane" "(16 -1152 -16) (0 -1152 0) (16 -1152 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "20"
+			"plane" "(16 16 288) (0 0 288) (-16 16 288)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "21"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "22"
+			"plane" "(736 0 32) (736 -1120 288) (736 -1120 32)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "23"
+		side
+		{
+			"id" "24"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "25"
+			"plane" "(16 16 288) (0 0 288) (-16 16 288)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "27"
+			"plane" "(-480 -16 16) (-480 0 0) (-480 16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "28"
+			"plane" "(736 16 16) (736 0 0) (736 -16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29"
+			"plane" "(736 224 32) (-480 224 32) (-480 224 288)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "30"
+		side
+		{
+			"id" "31"
+			"plane" "(16 -1152 -16) (0 -1152 0) (16 -1152 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "32"
+			"plane" "(16 16 288) (0 0 288) (-16 16 288)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "34"
+			"plane" "(-480 -16 16) (-480 0 0) (-480 16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "35"
+			"plane" "(736 16 16) (736 0 0) (736 -16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "36"
+			"plane" "(0 -1120 32) (736 -1120 288) (0 -1120 288)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "37"
+		side
+		{
+			"id" "38"
+			"plane" "(-512 -16 16) (-512 0 0) (-512 16 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "40"
+			"plane" "(16 -1152 -16) (0 -1152 0) (16 -1152 16)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "41"
+			"plane" "(16 16 288) (0 0 288) (-16 16 288)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "42"
+			"plane" "(-16 16 32) (0 0 32) (16 16 32)"
+			"material" "osato/ctf_carpet1"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "43"
+			"plane" "(-480 224 32) (-480 -1120 32) (-480 -1120 288)"
+			"material" "airfield/wall_b3_trimmed"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+}
+entity
+{
+	"origin" "385 -818 37"
+	"classname" "info_player_deathmatch"
+	"rendercolor" "255 255 255"
+	"id" "44"
+}
+entity
+{
+	"origin" "387 -784 32"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "45"
+}
+entity
+{
+	"origin" "402 -784 32"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "46"
+}
+entity
+{
+	"origin" "402 -789 32"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_pdw90"
+	"rendercolor" "255 255 255"
+	"id" "47"
+}
+entity
+{
+	"origin" "736 12 187"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "48"
+}
+entity
+{
+	"origin" "736 55 193"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "49"
+}
+entity
+{
+	"origin" "736 18 150"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "50"
+}
+entity
+{
+	"origin" "736 18 150"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "51"
+}
+entity
+{
+	"origin" "736 -35 145"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "52"
+}
+entity
+{
+	"origin" "736 -35 145"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "53"
+}
+entity
+{
+	"origin" "-480 -802 149"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "54"
+}
+entity
+{
+	"origin" "640 -548 87"
+	"classname" "info_player_deathmatch"
+	"rendercolor" "255 255 255"
+	"id" "55"
+}
+entity
+{
+	"origin" "401 -257 87"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "56"
+}
+entity
+{
+	"origin" "394 -250 32"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "57"
+}
+entity
+{
+	"origin" "366 -830 32"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "58"
+}
+entity
+{
+	"origin" "658 -539 32"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "59"
+}
+entity
+{
+	"origin" "348 -1120 133"
+	"angles" "0 0 0"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "60"
+}
+entity
+{
+	"origin" "736 -835 145"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "61"
+}
+entity
+{
+	"origin" "736 -819 149"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "62"
+}
+entity
+{
+	"origin" "237 224 125"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "63"
+}
+entity
+{
+	"origin" "135 -256 257"
+	"model" "models/Lg_light_hanging_cord.mdl"
+	"maxbbox" "0 0 0"
+	"minbbox" "0 0 0"
+	"sequencename" "idle1"
+	"rendercolor" "255 255 255"
+	"classname" "prop_dynamic"
+	"solid" "0"
+	"id" "64"
+}

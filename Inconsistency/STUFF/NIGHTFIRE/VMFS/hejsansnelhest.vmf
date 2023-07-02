@@ -1,0 +1,5220 @@
+world
+{
+	"MaxRange" "16384"
+	"sounds" "1"
+	"skycloudhigh_height" "1500"
+	"skycloudhigh_speed" "0.035  0.0029"
+	"skycloudlow_height" "2000"
+	"skycloudlow_speed" "0.025  -0.0019"
+	"skyterrain" "sky_terrain_afghanistan"
+	"skycloudhigh" "none"
+	"skycloudlow" "sky_lower_afghanistan"
+	"skydome" "sky_dome_romania"
+	"classname" "worldspawn"
+	"rendercolor" "255 255 255"
+	"id" "1"
+	solid
+	{
+		"id" "2"
+		side
+		{
+			"id" "3"
+			"plane" "(6783 255 129) (2432 -255 129) (2432 0 129)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(6784 0 128) (2432 256 128) (2432 0 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(2432 0 128) (2432 256 128) (2432 256 129)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(6784 256 128) (6784 -256 128) (6784 -256 129)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7"
+			"plane" "(6144 256 128) (2432 256 129) (2432 256 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "8"
+			"plane" "(6784 -256 128) (2432 -256 128) (2432 -256 129)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "9"
+		side
+		{
+			"id" "10"
+			"plane" "(6144 256 512) (2432 255 512) (2432 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "11"
+			"plane" "(6144 255 128) (2432 256 128) (2432 255 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "12"
+			"plane" "(2432 255 128) (2432 256 128) (2432 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(6784 256 128) (6784 255 128) (6784 255 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(6144 256 128) (2432 256 512) (2432 256 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(6144 255 129) (2432 255 129) (2432 255 511)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "16"
+		side
+		{
+			"id" "17"
+			"plane" "(6144 256 512) (2432 0 512) (2432 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "18"
+			"plane" "(6144 255 511) (2432 0 511) (2432 -255 511)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "19"
+			"plane" "(2432 0 511) (2432 256 511) (2432 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "20"
+			"plane" "(6784 256 511) (6784 -256 511) (6784 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "21"
+			"plane" "(6144 256 511) (2432 256 512) (2432 256 511)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "22"
+			"plane" "(6784 -256 511) (2432 -256 511) (2432 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "23"
+		side
+		{
+			"id" "24"
+			"plane" "(6783 0 512) (6783 256 512) (6784 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "25"
+			"plane" "(6783 256 128) (6783 -256 128) (6784 -256 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26"
+			"plane" "(6783 255 511) (6783 -255 511) (6783 -255 129)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "27"
+			"plane" "(6784 256 128) (6784 -256 128) (6784 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "28"
+			"plane" "(6783 256 128) (6784 256 128) (6784 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29"
+			"plane" "(6784 -256 128) (6783 -256 128) (6783 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "30"
+		side
+		{
+			"id" "31"
+			"plane" "(6144 -255 512) (2432 -256 512) (2432 -255 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "32"
+			"plane" "(6144 -256 128) (2432 -255 128) (2432 -256 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33"
+			"plane" "(2432 -256 128) (2432 -255 128) (2432 -255 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "34"
+			"plane" "(6784 -255 128) (6784 -256 128) (6784 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "35"
+			"plane" "(6144 -255 511) (2432 -255 511) (2432 -255 129)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "36"
+			"plane" "(6784 -256 128) (2432 -256 128) (2432 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "37"
+		side
+		{
+			"id" "38"
+			"plane" "(2048 1792 896) (-3072 1664 896) (-3072 1792 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39"
+			"plane" "(2048 1664 -1280) (-3072 1792 -1280) (-3072 1664 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "40"
+			"plane" "(-3072 1792 0) (-3072 1664 -1280) (-3072 1792 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "41"
+			"plane" "(2432 1664 0) (2432 1792 -1280) (2432 1664 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "42"
+			"plane" "(2432 1792 0) (-3072 1792 0) (-3072 1792 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "43"
+			"plane" "(2048 1664 895) (-3071 1664 -1024) (-3071 1664 0)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "44"
+		side
+		{
+			"id" "45"
+			"plane" "(2431 1024 896) (2431 1792 896) (2432 1792 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "46"
+			"plane" "(2431 1792 -1280) (2431 256 -1280) (2432 256 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "47"
+			"plane" "(2431 1664 895) (2431 256 -1279) (2431 1024 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "48"
+			"plane" "(2432 1024 896) (2432 1792 -1280) (2432 1024 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "49"
+			"plane" "(2432 1792 0) (2431 1792 -1280) (2432 1792 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "50"
+			"plane" "(2431 256 128) (2431 256 512) (2432 256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "51"
+		side
+		{
+			"id" "52"
+			"plane" "(2048 1920 896) (-3200 -1024 896) (-3200 0 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "53"
+			"plane" "(2432 1792 895) (-3200 1024 895) (-3200 0 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "54"
+			"plane" "(-3200 1024 895) (-3200 -2304 896) (-3200 -2304 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "55"
+			"plane" "(2432 1920 895) (2432 -2304 895) (2432 -2304 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "56"
+			"plane" "(2048 1920 895) (-3200 1920 896) (-3200 1920 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "57"
+			"plane" "(2432 -2304 895) (-3200 -2304 895) (-3200 -2304 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "58"
+		side
+		{
+			"id" "59"
+			"plane" "(2431 1664 -1279) (-3071 -2048 -1279) (-3071 -1024 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "60"
+			"plane" "(2432 1024 -1280) (-3072 -1024 -1280) (-3072 -2048 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "61"
+			"plane" "(-3072 1024 -1280) (-3072 -2176 -1279) (-3072 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "62"
+			"plane" "(2432 1792 -1280) (2432 -2176 -1280) (2432 -2176 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "63"
+			"plane" "(2048 1792 -1280) (-3072 1792 -1279) (-3072 1792 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "64"
+			"plane" "(2432 -2176 -1280) (-3072 -2176 -1280) (-3072 -2176 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "65"
+		side
+		{
+			"id" "66"
+			"plane" "(2431 0 896) (2431 256 896) (2432 256 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "67"
+			"plane" "(2431 256 512) (2431 -256 512) (2432 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "68"
+			"plane" "(2431 0 512) (2431 256 512) (2431 256 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "69"
+			"plane" "(2432 256 512) (2432 -256 512) (2432 -256 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "70"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "71"
+			"plane" "(16 -256 -16) (0 -256 0) (16 -256 16)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "72"
+		side
+		{
+			"id" "73"
+			"plane" "(2431 0 128) (2431 256 128) (2432 256 128)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "74"
+			"plane" "(2431 256 -1280) (2431 -256 -1280) (2432 -256 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "75"
+			"plane" "(2431 256 0) (2431 -256 0) (2431 -256 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "76"
+			"plane" "(2432 0 128) (2432 0 -1280) (2432 -256 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "77"
+			"plane" "(16 256 16) (0 256 0) (16 256 -16)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "78"
+			"plane" "(16 -256 -16) (0 -256 0) (16 -256 16)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "79"
+		side
+		{
+			"id" "80"
+			"plane" "(2431 -1024 896) (2432 -2176 896) (2431 -2176 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "81"
+			"plane" "(2431 -256 -1280) (2431 -2176 -1280) (2432 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "82"
+			"plane" "(2431 -256 0) (2431 -2175 0) (2431 -2175 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "83"
+			"plane" "(2432 -1024 896) (2432 -1024 -1280) (2432 -2048 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "84"
+			"plane" "(2432 -256 128) (2432 -256 512) (2431 -256 512)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "85"
+			"plane" "(2431 -2176 0) (2432 -2176 -1280) (2431 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "86"
+		side
+		{
+			"id" "87"
+			"plane" "(2048 -2175 896) (-3072 -2176 896) (-3072 -2175 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "88"
+			"plane" "(2048 -2176 -1280) (-3072 -2175 -1280) (-3072 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "89"
+			"plane" "(-3072 -2175 0) (-3072 -2176 -1280) (-3072 -2175 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "90"
+			"plane" "(2432 -2176 0) (2432 -2175 -1280) (2432 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "91"
+			"plane" "(2431 -2175 895) (-3071 -2175 0) (-3071 -2175 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "92"
+			"plane" "(2048 -2176 895) (-3072 -2176 -1024) (-3072 -2176 0)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "93"
+		side
+		{
+			"id" "94"
+			"plane" "(-1024 385 196) (-384 384 196) (-1024 384 196)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "95"
+			"plane" "(-1024 384 -1280) (-384 385 -1280) (-1024 385 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "96"
+			"plane" "(-1280 385 180) (-1280 384 -1279) (-1280 385 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "97"
+			"plane" "(-384 384 192) (-384 385 -1279) (-384 384 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "98"
+			"plane" "(-384 385 180) (-1024 385 -1279) (-384 385 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "99"
+			"plane" "(-1024 384 196) (-384 384 -1279) (-1024 384 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "100"
+		side
+		{
+			"id" "101"
+			"plane" "(-1024 392 180) (-580 -600 180) (-1024 -600 180)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "102"
+			"plane" "(-580 385 179) (-1024 -600 179) (-580 -600 179)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "103"
+			"plane" "(-1300 0 179) (-1300 -600 180) (-1300 -600 179)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "104"
+			"plane" "(-580 392 179) (-580 -600 179) (-580 -600 180)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105"
+			"plane" "(-1024 392 179) (-580 392 179) (-580 392 180)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "106"
+			"plane" "(-1280 -600 179) (-1300 -600 179) (-1300 -600 180)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "107"
+		side
+		{
+			"id" "108"
+			"plane" "(-379 392 177) (-380 -248 177) (-580 -248 177)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "109"
+			"plane" "(-372 0 176) (-600 384 176) (-600 0 176)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "110"
+			"plane" "(-600 385 176) (-600 -248 177) (-600 -248 176)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "111"
+			"plane" "(-372 392 176) (-372 -248 176) (-372 -248 177)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "112"
+			"plane" "(-600 392 176) (-372 392 176) (-372 392 177)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "113"
+			"plane" "(-372 -248 176) (-600 -248 176) (-600 -248 177)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "114"
+		side
+		{
+			"id" "115"
+			"plane" "(-380 0 192) (-379 -640 192) (-380 -640 192)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "116"
+			"plane" "(-380 372 -1276) (-380 -640 -1276) (-379 -640 -1276)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "117"
+			"plane" "(-380 372 177) (-380 -640 0) (-380 -640 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "118"
+			"plane" "(-379 0 192) (-379 0 -1276) (-379 -600 -1276)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "119"
+			"plane" "(-379 372 177) (-380 372 -1276) (-379 372 -1276)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "120"
+			"plane" "(-380 -640 0) (-379 -640 -1276) (-380 -640 -1276)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "121"
+		side
+		{
+			"id" "122"
+			"plane" "(-580 -600 896) (-580 -599 896) (-408 -599 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "123"
+			"plane" "(-411 -600 656) (-579 -599 656) (-579 -600 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "124"
+			"plane" "(-580 -600 656) (-580 -599 656) (-580 -599 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "125"
+			"plane" "(-408 -599 656) (-408 -600 656) (-408 -600 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "126"
+			"plane" "(-411 -599 656) (-580 -599 884) (-579 -599 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "127"
+			"plane" "(-408 -600 656) (-580 -600 656) (-580 -600 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "128"
+		side
+		{
+			"id" "129"
+			"plane" "(-436 -620 896) (-436 -288 896) (-435 -288 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "130"
+			"plane" "(-436 -288 656) (-436 -620 656) (-435 -620 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "131"
+			"plane" "(-436 -599 656) (-436 -288 656) (-436 -288 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "132"
+			"plane" "(-435 -288 656) (-435 -620 656) (-435 -620 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "133"
+			"plane" "(-435 -288 888) (-435 -288 895) (-436 -288 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "134"
+			"plane" "(-435 -620 656) (-436 -620 656) (-436 -620 895)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "135"
+		side
+		{
+			"id" "136"
+			"plane" "(-868 -600 192) (-376 -600 192) (-376 -601 192)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "137"
+			"plane" "(-892 -600 -1284) (-376 -601 -1284) (-376 -600 -1284)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "138"
+			"plane" "(-892 -600 -1024) (-892 -601 -1284) (-892 -600 -1284)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "139"
+			"plane" "(-376 -601 0) (-376 -600 -1284) (-376 -601 -1284)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "140"
+			"plane" "(-376 -600 177) (-892 -600 -1284) (-376 -600 -1284)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "141"
+			"plane" "(-379 -601 192) (-376 -601 -1284) (-892 -601 -1284)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "142"
+		side
+		{
+			"id" "143"
+			"plane" "(-580 -288 884) (-579 -288 884) (-579 -599 884)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "144"
+			"plane" "(-580 -248 648) (-580 -600 648) (-579 -600 648)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "145"
+			"plane" "(-580 -600 648) (-580 -248 648) (-580 -248 884)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "146"
+			"plane" "(-579 -248 648) (-579 -600 656) (-579 -599 884)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "147"
+			"plane" "(-580 -248 648) (-579 -248 648) (-579 -248 884)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "148"
+			"plane" "(-580 -600 656) (-580 -600 884) (-579 -600 884)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "149"
+		side
+		{
+			"id" "150"
+			"plane" "(-411 -596 464) (-572 -597 464) (-572 -596 464)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "151"
+			"plane" "(-572 -596 176) (-572 -597 176) (-392 -597 176)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "152"
+			"plane" "(-572 -596 424) (-572 -597 424) (-572 -597 176)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "153"
+			"plane" "(-392 -596 176) (-392 -597 176) (-392 -597 464)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "154"
+			"plane" "(-392 -596 424) (-572 -596 176) (-392 -596 176)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "155"
+			"plane" "(-411 -597 464) (-392 -597 176) (-572 -597 176)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "156"
+		side
+		{
+			"id" "157"
+			"plane" "(-572 -288 888) (-408 -287 888) (-408 -288 888)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "158"
+			"plane" "(-572 -287 632) (-408 -288 632) (-408 -287 632)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "159"
+			"plane" "(-572 -288 632) (-572 -287 632) (-572 -287 888)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "160"
+			"plane" "(-408 -287 632) (-408 -288 632) (-408 -288 888)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "161"
+			"plane" "(-572 -287 632) (-408 -287 632) (-408 -287 888)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "162"
+			"plane" "(-411 -288 888) (-412 -288 632) (-572 -288 632)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "163"
+		side
+		{
+			"id" "164"
+			"plane" "(-412 -599 876) (-412 -288 876) (-411 -288 876)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "165"
+			"plane" "(-412 -288 448) (-412 -600 448) (-411 -600 448)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "166"
+			"plane" "(-412 -288 656) (-412 -599 876) (-412 -600 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "167"
+			"plane" "(-411 -599 876) (-411 -288 448) (-411 -595 448)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "168"
+			"plane" "(-412 -288 448) (-411 -288 448) (-411 -288 632)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "169"
+			"plane" "(-412 -600 656) (-412 -600 876) (-411 -600 876)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "170"
+		side
+		{
+			"id" "171"
+			"plane" "(-408 -595 656) (-579 -596 656) (-579 -595 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "172"
+			"plane" "(-572 -596 424) (-400 -596 424) (-400 -595 424)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "173"
+			"plane" "(-580 -596 424) (-580 -595 656) (-580 -596 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "174"
+			"plane" "(-400 -595 424) (-400 -596 656) (-400 -595 656)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "175"
+			"plane" "(-411 -595 424) (-580 -595 648) (-580 -595 424)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "176"
+			"plane" "(-411 -596 656) (-580 -596 424) (-580 -596 648)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "177"
+		side
+		{
+			"id" "178"
+			"plane" "(-1024 -600 196) (-1024 -601 196) (-1280 -601 196)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "179"
+			"plane" "(-1024 -601 -980) (-1024 -600 -980) (-1279 -600 -980)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "180"
+			"plane" "(-1280 -600 0) (-1280 -601 0) (-1280 -601 -980)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "181"
+			"plane" "(-868 -601 192) (-868 -601 196) (-868 -600 196)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "182"
+			"plane" "(-868 -600 180) (-1280 -600 192) (-1279 -600 -980)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "183"
+			"plane" "(-1024 -601 196) (-1279 -601 -980) (-1280 -601 192)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "184"
+		side
+		{
+			"id" "185"
+			"plane" "(-1280 0 192) (-1279 -640 192) (-1280 -640 192)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "186"
+			"plane" "(-1280 384 -1280) (-1280 -640 -1280) (-1279 -640 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "187"
+			"plane" "(-1280 384 180) (-1280 -640 0) (-1280 -640 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "188"
+			"plane" "(-1279 0 192) (-1279 0 -1279) (-1279 -640 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "189"
+			"plane" "(16 384 16) (0 384 0) (16 384 -16)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "190"
+			"plane" "(-1280 -640 0) (-1279 -640 -1279) (-1280 -640 -1279)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+	solid
+	{
+		"id" "191"
+		side
+		{
+			"id" "192"
+			"plane" "(-3072 1024 896) (-3071 -2176 896) (-3072 -2176 896)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "193"
+			"plane" "(-3072 1792 -1280) (-3072 -2176 -1280) (-3071 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "194"
+			"plane" "(-3072 1792 0) (-3072 -2176 0) (-3072 -2176 -1024)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 -1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "195"
+			"plane" "(-3071 1024 895) (-3071 -2175 -1024) (-3071 -2175 0)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "196"
+			"plane" "(-3071 1792 0) (-3072 1792 -1280) (-3071 1792 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[-1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "197"
+			"plane" "(-3072 -2176 0) (-3071 -2176 -1280) (-3072 -2176 -1280)"
+			"material" "envmap/default_envmap_back"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+	}
+}
+entity
+{
+	"origin" "-2944 1536 -1192"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "198"
+}
+entity
+{
+	"origin" "2304 1536 -1192"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "199"
+}
+entity
+{
+	"origin" "2304 -2048 -1192"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "200"
+}
+entity
+{
+	"origin" "-2944 -2048 -1192"
+	"classname" "info_player_start"
+	"rendercolor" "255 255 255"
+	"id" "201"
+}
+entity
+{
+	"origin" "6121 60 129"
+	"state" "8"
+	"density" "8"
+	"raindistance" "800"
+	"fallspeed" "800"
+	"transluceny" "2"
+	"ydegrees" "2"
+	"xdegrees" "2"
+	"angles" "0 0 0"
+	"classname" "info_rain"
+	"rendercolor" "255 255 255"
+	"id" "202"
+}
+entity
+{
+	"origin" "5758 -255 232"
+	"state" "8"
+	"density" "8"
+	"raindistance" "800"
+	"fallspeed" "800"
+	"transluceny" "2"
+	"ydegrees" "2"
+	"xdegrees" "2"
+	"angles" "0 0 0"
+	"classname" "info_rain"
+	"rendercolor" "255 255 255"
+	"id" "203"
+}
+entity
+{
+	"origin" "6733 198 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "204"
+}
+entity
+{
+	"origin" "6731 107 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "205"
+}
+entity
+{
+	"origin" "6733 13 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "206"
+}
+entity
+{
+	"origin" "6733 -100 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "207"
+}
+entity
+{
+	"origin" "6734 -184 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "208"
+}
+entity
+{
+	"origin" "6675 -144 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "209"
+}
+entity
+{
+	"origin" "6672 -34 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "210"
+}
+entity
+{
+	"origin" "6663 85 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "211"
+}
+entity
+{
+	"origin" "6670 177 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "212"
+}
+entity
+{
+	"origin" "6671 31 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "213"
+}
+entity
+{
+	"origin" "6682 -83 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "214"
+}
+entity
+{
+	"origin" "6718 -53 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "215"
+}
+entity
+{
+	"origin" "6689 9 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "216"
+}
+entity
+{
+	"origin" "6706 109 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "217"
+}
+entity
+{
+	"origin" "6709 147 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "218"
+}
+entity
+{
+	"origin" "6714 186 129"
+	"classname" "item_armor_vest"
+	"rendercolor" "255 255 255"
+	"id" "219"
+}
+entity
+{
+	"origin" "-513 -566 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "220"
+}
+entity
+{
+	"origin" "-547 -476 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "221"
+}
+entity
+{
+	"origin" "-465 -482 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "222"
+}
+entity
+{
+	"origin" "-485 -417 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "223"
+}
+entity
+{
+	"origin" "-548 -383 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "224"
+}
+entity
+{
+	"origin" "-525 -324 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "225"
+}
+entity
+{
+	"origin" "-498 -320 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "226"
+}
+entity
+{
+	"origin" "-485 -370 895"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "227"
+}
+entity
+{
+	"origin" "-2155 -2175 -660"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "228"
+}
+entity
+{
+	"origin" "-2126 -2175 -686"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "229"
+}
+entity
+{
+	"origin" "-2122 -2175 -432"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "230"
+}
+entity
+{
+	"origin" "2431 1351 200"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "231"
+}
+entity
+{
+	"origin" "-1488 1664 -619"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "232"
+}
+entity
+{
+	"origin" "-3071 -966 -1007"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "233"
+}
+entity
+{
+	"origin" "-1917 -791 895"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "234"
+}
+entity
+{
+	"origin" "1624 -583 895"
+	"_falloff" "2"
+	"_light" "255 255 128 200"
+	"classname" "light"
+	"rendercolor" "255 255 255"
+	"id" "235"
+}
+entity
+{
+	"origin" "2290 1546 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_raptor"
+	"rendercolor" "255 255 255"
+	"id" "236"
+}
+entity
+{
+	"origin" "2304 -2032 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_raptor"
+	"rendercolor" "255 255 255"
+	"id" "237"
+}
+entity
+{
+	"origin" "-2962 -2049 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_raptor"
+	"rendercolor" "255 255 255"
+	"id" "238"
+}
+entity
+{
+	"origin" "-2936 1514 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_raptor"
+	"rendercolor" "255 255 255"
+	"id" "239"
+}
+entity
+{
+	"origin" "-1262 355 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "240"
+}
+entity
+{
+	"origin" "-1241 348 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "241"
+}
+entity
+{
+	"origin" "-1226 351 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "242"
+}
+entity
+{
+	"origin" "-1216 359 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "243"
+}
+entity
+{
+	"origin" "-1203 354 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "244"
+}
+entity
+{
+	"origin" "-1207 330 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "245"
+}
+entity
+{
+	"origin" "-1233 317 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "246"
+}
+entity
+{
+	"origin" "-1251 325 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "247"
+}
+entity
+{
+	"origin" "-1236 327 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "248"
+}
+entity
+{
+	"origin" "-1222 322 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "249"
+}
+entity
+{
+	"origin" "-1189 325 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "250"
+}
+entity
+{
+	"origin" "-1185 320 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "251"
+}
+entity
+{
+	"origin" "-1193 311 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "252"
+}
+entity
+{
+	"origin" "-1198 316 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_grapple"
+	"rendercolor" "255 255 255"
+	"id" "253"
+}
+entity
+{
+	"origin" "6574 -255 446"
+	"angles" "0 -180 180"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "254"
+}
+entity
+{
+	"origin" "6783 -175 323"
+	"model" "models/grapple_point.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_grappletarget"
+	"id" "255"
+}
+entity
+{
+	"origin" "-499 -435 895"
+	"state" "8"
+	"density" "8"
+	"raindistance" "800"
+	"fallspeed" "800"
+	"transluceny" "2"
+	"ydegrees" "2"
+	"xdegrees" "2"
+	"angles" "0 0 0"
+	"classname" "info_rain"
+	"rendercolor" "255 255 255"
+	"id" "256"
+}
+entity
+{
+	"origin" "2341 1536 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_raptor"
+	"rendercolor" "255 255 255"
+	"id" "257"
+}
+entity
+{
+	"origin" "2286 -2000 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_raptor"
+	"rendercolor" "255 255 255"
+	"id" "258"
+}
+entity
+{
+	"origin" "-2792 1538 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_raptor"
+	"rendercolor" "255 255 255"
+	"id" "259"
+}
+entity
+{
+	"origin" "-2977 -2091 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_raptor"
+	"rendercolor" "255 255 255"
+	"id" "260"
+}
+entity
+{
+	"origin" "-1232 -572 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1_winter"
+	"rendercolor" "255 255 255"
+	"id" "261"
+}
+entity
+{
+	"origin" "2725 205 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "262"
+}
+entity
+{
+	"origin" "2723 -205 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "263"
+}
+entity
+{
+	"origin" "2815 87 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "264"
+}
+entity
+{
+	"origin" "2805 -127 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "265"
+}
+entity
+{
+	"origin" "2730 47 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "266"
+}
+entity
+{
+	"origin" "2716 -37 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_l96a1"
+	"rendercolor" "255 255 255"
+	"id" "267"
+}
+entity
+{
+	"origin" "3856 168 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "268"
+}
+entity
+{
+	"origin" "3706 27 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "269"
+}
+entity
+{
+	"origin" "3772 -169 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "270"
+}
+entity
+{
+	"origin" "4037 -223 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "271"
+}
+entity
+{
+	"origin" "3967 -14 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "272"
+}
+entity
+{
+	"origin" "3818 -37 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "273"
+}
+entity
+{
+	"origin" "3721 142 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "274"
+}
+entity
+{
+	"origin" "3898 -74 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "275"
+}
+entity
+{
+	"origin" "6212 -221 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "276"
+}
+entity
+{
+	"origin" "6237 -135 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "277"
+}
+entity
+{
+	"origin" "6241 -122 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "278"
+}
+entity
+{
+	"origin" "6259 -38 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "279"
+}
+entity
+{
+	"origin" "6274 -4 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "280"
+}
+entity
+{
+	"origin" "6288 31 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "281"
+}
+entity
+{
+	"origin" "6328 1 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "282"
+}
+entity
+{
+	"origin" "6334 -7 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "283"
+}
+entity
+{
+	"origin" "6323 -80 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "284"
+}
+entity
+{
+	"origin" "6308 -118 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "285"
+}
+entity
+{
+	"origin" "6353 -108 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "286"
+}
+entity
+{
+	"origin" "6358 -57 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "287"
+}
+entity
+{
+	"origin" "6353 -21 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "288"
+}
+entity
+{
+	"origin" "6371 -36 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "289"
+}
+entity
+{
+	"origin" "6374 -58 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "290"
+}
+entity
+{
+	"origin" "6329 -40 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "291"
+}
+entity
+{
+	"origin" "6345 -91 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "292"
+}
+entity
+{
+	"origin" "6374 -88 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "293"
+}
+entity
+{
+	"origin" "6390 -82 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "294"
+}
+entity
+{
+	"origin" "6348 6 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "295"
+}
+entity
+{
+	"origin" "6313 68 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "296"
+}
+entity
+{
+	"origin" "6332 87 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "297"
+}
+entity
+{
+	"origin" "6369 40 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "298"
+}
+entity
+{
+	"origin" "6362 50 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "299"
+}
+entity
+{
+	"origin" "6351 77 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "300"
+}
+entity
+{
+	"origin" "6353 115 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "301"
+}
+entity
+{
+	"origin" "6350 72 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "302"
+}
+entity
+{
+	"origin" "6345 24 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "303"
+}
+entity
+{
+	"origin" "6330 38 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "304"
+}
+entity
+{
+	"origin" "6354 131 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "305"
+}
+entity
+{
+	"origin" "6343 115 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "306"
+}
+entity
+{
+	"origin" "6304 99 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "307"
+}
+entity
+{
+	"origin" "6352 -191 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "308"
+}
+entity
+{
+	"origin" "6355 -192 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "309"
+}
+entity
+{
+	"origin" "6262 -163 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "310"
+}
+entity
+{
+	"origin" "6307 -136 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "311"
+}
+entity
+{
+	"origin" "6406 -41 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_bondmine"
+	"rendercolor" "255 255 255"
+	"id" "312"
+}
+entity
+{
+	"origin" "6501 -115 129"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "313"
+}
+entity
+{
+	"origin" "6538 -2 129"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "314"
+}
+entity
+{
+	"origin" "6517 81 129"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "315"
+}
+entity
+{
+	"origin" "6525 173 129"
+	"spawnflags" "4"
+	"classname" "item_ctfspeed"
+	"rendercolor" "255 255 255"
+	"id" "316"
+}
+entity
+{
+	"origin" "6536 35 129"
+	"spawnflags" "4"
+	"classname" "item_ctfportablebattery"
+	"rendercolor" "255 255 255"
+	"id" "317"
+}
+entity
+{
+	"origin" "6560 -74 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_ronin"
+	"rendercolor" "255 255 255"
+	"id" "318"
+}
+entity
+{
+	"origin" "6511 -64 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_ronin"
+	"rendercolor" "255 255 255"
+	"id" "319"
+}
+entity
+{
+	"origin" "6588 -147 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_ronin"
+	"rendercolor" "255 255 255"
+	"id" "320"
+}
+entity
+{
+	"origin" "6591 143 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_ronin"
+	"rendercolor" "255 255 255"
+	"id" "321"
+}
+entity
+{
+	"origin" "6573 87 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_ronin"
+	"rendercolor" "255 255 255"
+	"id" "322"
+}
+entity
+{
+	"origin" "-379 781 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "323"
+}
+entity
+{
+	"origin" "195 631 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "324"
+}
+entity
+{
+	"origin" "596 435 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "325"
+}
+entity
+{
+	"origin" "668 -436 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "326"
+}
+entity
+{
+	"origin" "644 -534 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "327"
+}
+entity
+{
+	"origin" "800 -565 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "328"
+}
+entity
+{
+	"origin" "1259 108 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "329"
+}
+entity
+{
+	"origin" "1316 255 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "330"
+}
+entity
+{
+	"origin" "1508 859 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "331"
+}
+entity
+{
+	"origin" "1536 971 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "332"
+}
+entity
+{
+	"origin" "1378 771 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "333"
+}
+entity
+{
+	"origin" "1131 238 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "334"
+}
+entity
+{
+	"origin" "1096 100 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "335"
+}
+entity
+{
+	"origin" "1090 -254 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "336"
+}
+entity
+{
+	"origin" "945 -912 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "337"
+}
+entity
+{
+	"origin" "951 -1055 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "338"
+}
+entity
+{
+	"origin" "581 -1248 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "339"
+}
+entity
+{
+	"origin" "559 -1187 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "340"
+}
+entity
+{
+	"origin" "776 -801 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "341"
+}
+entity
+{
+	"origin" "276 -1228 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "342"
+}
+entity
+{
+	"origin" "18 -1350 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "343"
+}
+entity
+{
+	"origin" "-378 -1558 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "344"
+}
+entity
+{
+	"origin" "-350 -1224 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "345"
+}
+entity
+{
+	"origin" "-701 -1457 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "346"
+}
+entity
+{
+	"origin" "-1297 -1848 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "347"
+}
+entity
+{
+	"origin" "-1856 -1743 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "348"
+}
+entity
+{
+	"origin" "-1976 -1571 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "349"
+}
+entity
+{
+	"origin" "-2593 -1533 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "350"
+}
+entity
+{
+	"origin" "-2854 -1663 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "351"
+}
+entity
+{
+	"origin" "-2625 -1442 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "352"
+}
+entity
+{
+	"origin" "-1520 -1585 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "353"
+}
+entity
+{
+	"origin" "-1596 -1609 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "354"
+}
+entity
+{
+	"origin" "-1438 -1396 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "355"
+}
+entity
+{
+	"origin" "-1229 -1217 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "356"
+}
+entity
+{
+	"origin" "-1338 -1394 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "357"
+}
+entity
+{
+	"origin" "-1405 -1400 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "358"
+}
+entity
+{
+	"origin" "-1474 -1406 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "359"
+}
+entity
+{
+	"origin" "-1474 -1406 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "360"
+}
+entity
+{
+	"origin" "-1462 -1492 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "361"
+}
+entity
+{
+	"origin" "-1452 -1451 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "362"
+}
+entity
+{
+	"origin" "-1424 -1341 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "363"
+}
+entity
+{
+	"origin" "-1606 -1508 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "364"
+}
+entity
+{
+	"origin" "-1606 -1508 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "365"
+}
+entity
+{
+	"origin" "-1564 -1483 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "366"
+}
+entity
+{
+	"origin" "-1522 -1458 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "367"
+}
+entity
+{
+	"origin" "-1498 -1361 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "368"
+}
+entity
+{
+	"origin" "-1456 -1194 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "369"
+}
+entity
+{
+	"origin" "-379 -578 -961"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "370"
+}
+entity
+{
+	"origin" "529 -179 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "371"
+}
+entity
+{
+	"origin" "1123 116 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "372"
+}
+entity
+{
+	"origin" "1292 320 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "373"
+}
+entity
+{
+	"origin" "1363 390 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "374"
+}
+entity
+{
+	"origin" "1409 394 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "375"
+}
+entity
+{
+	"origin" "1447 355 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "376"
+}
+entity
+{
+	"origin" "1504 355 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "377"
+}
+entity
+{
+	"origin" "1509 353 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "378"
+}
+entity
+{
+	"origin" "1502 325 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "379"
+}
+entity
+{
+	"origin" "1477 425 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "380"
+}
+entity
+{
+	"origin" "1487 534 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "381"
+}
+entity
+{
+	"origin" "1564 841 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "382"
+}
+entity
+{
+	"origin" "1771 1260 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "383"
+}
+entity
+{
+	"origin" "1784 1273 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "384"
+}
+entity
+{
+	"origin" "1575 1410 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "385"
+}
+entity
+{
+	"origin" "999 706 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "386"
+}
+entity
+{
+	"origin" "964 82 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "387"
+}
+entity
+{
+	"origin" "1080 -517 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "388"
+}
+entity
+{
+	"origin" "1102 -695 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "389"
+}
+entity
+{
+	"origin" "1034 -962 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "390"
+}
+entity
+{
+	"origin" "696 -869 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "391"
+}
+entity
+{
+	"origin" "317 -449 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "392"
+}
+entity
+{
+	"origin" "-4 -366 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "393"
+}
+entity
+{
+	"origin" "185 -151 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "394"
+}
+entity
+{
+	"origin" "288 70 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "395"
+}
+entity
+{
+	"origin" "293 89 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "396"
+}
+entity
+{
+	"origin" "-379 -446 188"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "397"
+}
+entity
+{
+	"origin" "-379 -409 197"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "398"
+}
+entity
+{
+	"origin" "-379 -402 188"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "399"
+}
+entity
+{
+	"origin" "-379 -349 187"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "400"
+}
+entity
+{
+	"origin" "-895 -332 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "401"
+}
+entity
+{
+	"origin" "-892 -321 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "402"
+}
+entity
+{
+	"origin" "-848 -148 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "403"
+}
+entity
+{
+	"origin" "-832 -83 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "404"
+}
+entity
+{
+	"origin" "-379 9 191"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "405"
+}
+entity
+{
+	"origin" "-379 57 191"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "406"
+}
+entity
+{
+	"origin" "-788 91 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "407"
+}
+entity
+{
+	"origin" "-997 205 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "408"
+}
+entity
+{
+	"origin" "-970 309 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "409"
+}
+entity
+{
+	"origin" "-965 332 180"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "410"
+}
+entity
+{
+	"origin" "-379 280 188"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "411"
+}
+entity
+{
+	"origin" "-3071 1055 -429"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "412"
+}
+entity
+{
+	"origin" "-3099 1564 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "413"
+}
+entity
+{
+	"origin" "-1209 1125 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "414"
+}
+entity
+{
+	"origin" "-383 1192 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "415"
+}
+entity
+{
+	"origin" "326 1219 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "416"
+}
+entity
+{
+	"origin" "1005 1189 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "417"
+}
+entity
+{
+	"origin" "1268 1353 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "418"
+}
+entity
+{
+	"origin" "1539 1135 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "419"
+}
+entity
+{
+	"origin" "1475 882 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "420"
+}
+entity
+{
+	"origin" "1214 384 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "421"
+}
+entity
+{
+	"origin" "1044 -462 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "422"
+}
+entity
+{
+	"origin" "1146 -903 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "423"
+}
+entity
+{
+	"origin" "1155 -935 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "424"
+}
+entity
+{
+	"origin" "2170 -1909 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "425"
+}
+entity
+{
+	"origin" "1885 -1762 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "426"
+}
+entity
+{
+	"origin" "1709 -1623 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "427"
+}
+entity
+{
+	"origin" "1925 -1560 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "428"
+}
+entity
+{
+	"origin" "2202 -1423 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "429"
+}
+entity
+{
+	"origin" "2117 -1209 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "430"
+}
+entity
+{
+	"origin" "1903 -867 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "431"
+}
+entity
+{
+	"origin" "2213 -860 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "432"
+}
+entity
+{
+	"origin" "2159 -676 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "433"
+}
+entity
+{
+	"origin" "1926 -531 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "434"
+}
+entity
+{
+	"origin" "1896 -507 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "435"
+}
+entity
+{
+	"origin" "2133 289 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "436"
+}
+entity
+{
+	"origin" "2081 313 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "437"
+}
+entity
+{
+	"origin" "1858 572 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "438"
+}
+entity
+{
+	"origin" "2205 1009 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "439"
+}
+entity
+{
+	"origin" "2066 1060 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "440"
+}
+entity
+{
+	"origin" "2185 1413 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "441"
+}
+entity
+{
+	"origin" "2363 1243 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "442"
+}
+entity
+{
+	"origin" "2455 73 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "443"
+}
+entity
+{
+	"origin" "2363 613 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "444"
+}
+entity
+{
+	"origin" "2162 967 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "445"
+}
+entity
+{
+	"origin" "1977 1244 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "446"
+}
+entity
+{
+	"origin" "1945 1271 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "447"
+}
+entity
+{
+	"origin" "1281 1108 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "448"
+}
+entity
+{
+	"origin" "1048 1146 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "449"
+}
+entity
+{
+	"origin" "1340 1388 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "450"
+}
+entity
+{
+	"origin" "2287 1203 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "451"
+}
+entity
+{
+	"origin" "-2849 -1830 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "452"
+}
+entity
+{
+	"origin" "-2866 -1564 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "453"
+}
+entity
+{
+	"origin" "-2811 -1525 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "454"
+}
+entity
+{
+	"origin" "-2071 -1725 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "455"
+}
+entity
+{
+	"origin" "-1954 -1890 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "456"
+}
+entity
+{
+	"origin" "-2314 -1786 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "457"
+}
+entity
+{
+	"origin" "-2642 -1430 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "458"
+}
+entity
+{
+	"origin" "-1801 -1162 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "459"
+}
+entity
+{
+	"origin" "-2186 1092 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "460"
+}
+entity
+{
+	"origin" "-2310 863 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "461"
+}
+entity
+{
+	"origin" "-2997 949 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "462"
+}
+entity
+{
+	"origin" "-2850 1311 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "463"
+}
+entity
+{
+	"origin" "-2689 1334 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "464"
+}
+entity
+{
+	"origin" "-2553 1635 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "465"
+}
+entity
+{
+	"origin" "-2202 1356 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "466"
+}
+entity
+{
+	"origin" "-2056 1151 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "467"
+}
+entity
+{
+	"origin" "-2638 1359 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "468"
+}
+entity
+{
+	"origin" "-2049 1038 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_smokegrenade"
+	"rendercolor" "255 255 255"
+	"id" "469"
+}
+entity
+{
+	"origin" "2476 -182 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pen"
+	"rendercolor" "255 255 255"
+	"id" "470"
+}
+entity
+{
+	"origin" "2479 198 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pen"
+	"rendercolor" "255 255 255"
+	"id" "471"
+}
+entity
+{
+	"origin" "2477 69 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pen"
+	"rendercolor" "255 255 255"
+	"id" "472"
+}
+entity
+{
+	"origin" "2476 -61 129"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_pen"
+	"rendercolor" "255 255 255"
+	"id" "473"
+}
+entity
+{
+	"origin" "2478 -188 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_darts"
+	"rendercolor" "255 255 255"
+	"id" "474"
+}
+entity
+{
+	"origin" "2477 -54 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_darts"
+	"rendercolor" "255 255 255"
+	"id" "475"
+}
+entity
+{
+	"origin" "2478 74 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_darts"
+	"rendercolor" "255 255 255"
+	"id" "476"
+}
+entity
+{
+	"origin" "2477 197 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_darts"
+	"rendercolor" "255 255 255"
+	"id" "477"
+}
+entity
+{
+	"origin" "3512 170 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "478"
+}
+entity
+{
+	"origin" "3517 122 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "479"
+}
+entity
+{
+	"origin" "3465 41 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "480"
+}
+entity
+{
+	"origin" "3468 18 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "481"
+}
+entity
+{
+	"origin" "3476 -55 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "482"
+}
+entity
+{
+	"origin" "3450 -153 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "483"
+}
+entity
+{
+	"origin" "3455 -201 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "484"
+}
+entity
+{
+	"origin" "3338 -148 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "485"
+}
+entity
+{
+	"origin" "3348 -110 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "486"
+}
+entity
+{
+	"origin" "3356 -51 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "487"
+}
+entity
+{
+	"origin" "3377 36 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "488"
+}
+entity
+{
+	"origin" "3387 94 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "489"
+}
+entity
+{
+	"origin" "3395 175 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "490"
+}
+entity
+{
+	"origin" "3331 166 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "491"
+}
+entity
+{
+	"origin" "3298 83 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "492"
+}
+entity
+{
+	"origin" "3302 41 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "493"
+}
+entity
+{
+	"origin" "3283 -24 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "494"
+}
+entity
+{
+	"origin" "3253 -80 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "495"
+}
+entity
+{
+	"origin" "3261 -155 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "496"
+}
+entity
+{
+	"origin" "3264 -185 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "497"
+}
+entity
+{
+	"origin" "3319 -223 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "498"
+}
+entity
+{
+	"origin" "3437 -194 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_rocketlauncher"
+	"rendercolor" "255 255 255"
+	"id" "499"
+}
+entity
+{
+	"origin" "6443 -224 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "500"
+}
+entity
+{
+	"origin" "6438 -205 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "501"
+}
+entity
+{
+	"origin" "6429 -171 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "502"
+}
+entity
+{
+	"origin" "6425 -147 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "503"
+}
+entity
+{
+	"origin" "6436 -169 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "504"
+}
+entity
+{
+	"origin" "6440 -175 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "505"
+}
+entity
+{
+	"origin" "6441 -146 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "506"
+}
+entity
+{
+	"origin" "6442 -86 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "507"
+}
+entity
+{
+	"origin" "6430 -74 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "508"
+}
+entity
+{
+	"origin" "6427 -70 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "509"
+}
+entity
+{
+	"origin" "6432 -48 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "510"
+}
+entity
+{
+	"origin" "6450 -40 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "511"
+}
+entity
+{
+	"origin" "6458 -54 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "512"
+}
+entity
+{
+	"origin" "6445 -46 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "513"
+}
+entity
+{
+	"origin" "6454 -15 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "514"
+}
+entity
+{
+	"origin" "6435 24 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "515"
+}
+entity
+{
+	"origin" "6426 29 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "516"
+}
+entity
+{
+	"origin" "6422 18 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "517"
+}
+entity
+{
+	"origin" "6441 19 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "518"
+}
+entity
+{
+	"origin" "6466 58 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "519"
+}
+entity
+{
+	"origin" "6462 74 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "520"
+}
+entity
+{
+	"origin" "6449 71 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "521"
+}
+entity
+{
+	"origin" "6439 57 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "522"
+}
+entity
+{
+	"origin" "6425 71 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "523"
+}
+entity
+{
+	"origin" "6426 87 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "524"
+}
+entity
+{
+	"origin" "6439 114 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "525"
+}
+entity
+{
+	"origin" "6448 115 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "526"
+}
+entity
+{
+	"origin" "6453 138 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "527"
+}
+entity
+{
+	"origin" "6435 132 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "528"
+}
+entity
+{
+	"origin" "6424 111 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "529"
+}
+entity
+{
+	"origin" "6418 119 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "530"
+}
+entity
+{
+	"origin" "6446 186 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "531"
+}
+entity
+{
+	"origin" "6473 201 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "532"
+}
+entity
+{
+	"origin" "6447 203 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "533"
+}
+entity
+{
+	"origin" "6444 202 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "534"
+}
+entity
+{
+	"origin" "6430 186 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "535"
+}
+entity
+{
+	"origin" "6426 166 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "536"
+}
+entity
+{
+	"origin" "6464 187 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "537"
+}
+entity
+{
+	"origin" "6477 188 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "538"
+}
+entity
+{
+	"origin" "6460 168 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "539"
+}
+entity
+{
+	"origin" "6432 156 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "540"
+}
+entity
+{
+	"origin" "6423 143 129"
+	"fixedlight" "0 0 0"
+	"classname" "ammo_sniper"
+	"rendercolor" "255 255 255"
+	"id" "541"
+}
+entity
+{
+	"origin" "6351 -72 129"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "542"
+}
+entity
+{
+	"origin" "2431 -177 578"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "543"
+}
+entity
+{
+	"origin" "2431 -219 572"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "544"
+}
+entity
+{
+	"origin" "-1233 -601 -954"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "545"
+}
+entity
+{
+	"origin" "-1240 -601 -961"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "546"
+}
+entity
+{
+	"origin" "-1237 -601 -961"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "547"
+}
+entity
+{
+	"origin" "-1224 -601 -960"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "548"
+}
+entity
+{
+	"origin" "-1220 -601 -960"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "549"
+}
+entity
+{
+	"origin" "-1228 -601 -952"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "550"
+}
+entity
+{
+	"origin" "-1234 -601 -955"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "551"
+}
+entity
+{
+	"origin" "-1233 -601 -962"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "552"
+}
+entity
+{
+	"origin" "-1226 -601 -963"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "553"
+}
+entity
+{
+	"origin" "-1178 -601 -960"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "554"
+}
+entity
+{
+	"origin" "-1202 -601 -965"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "555"
+}
+entity
+{
+	"origin" "-1198 -601 -959"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "556"
+}
+entity
+{
+	"origin" "-1185 -601 -957"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "557"
+}
+entity
+{
+	"origin" "-1180 -601 -962"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "558"
+}
+entity
+{
+	"origin" "-1187 -601 -963"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "559"
+}
+entity
+{
+	"origin" "-1195 -601 -968"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "560"
+}
+entity
+{
+	"origin" "-1191 -601 -968"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "561"
+}
+entity
+{
+	"origin" "-1193 -601 -956"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "562"
+}
+entity
+{
+	"origin" "-1193 -601 -959"
+	"health" "90"
+	"breaksound" "misc/padlock.wav"
+	"model" "models/padlock.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_lasertarget"
+	"id" "563"
+}
+entity
+{
+	"origin" "-1114 -601 -957"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "564"
+}
+entity
+{
+	"origin" "-1106 -601 -951"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "565"
+}
+entity
+{
+	"origin" "-1103 -601 -955"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "566"
+}
+entity
+{
+	"origin" "-1099 -601 -961"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "567"
+}
+entity
+{
+	"origin" "-1063 -601 -962"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "568"
+}
+entity
+{
+	"origin" "-1062 -601 -959"
+	"model" "models/keycard.mdl"
+	"fixedlight" "0 0 0"
+	"rendercolor" "255 255 255"
+	"classname" "item_key"
+	"id" "569"
+}
+entity
+{
+	"origin" "-2763 -1485 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "570"
+}
+entity
+{
+	"origin" "-1230 -1120 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "571"
+}
+entity
+{
+	"origin" "-1431 999 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "572"
+}
+entity
+{
+	"origin" "-2569 -10 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "573"
+}
+entity
+{
+	"origin" "44 -1365 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "574"
+}
+entity
+{
+	"origin" "-388 -2124 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "575"
+}
+entity
+{
+	"origin" "-1625 -1344 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "576"
+}
+entity
+{
+	"origin" "-2110 -548 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "577"
+}
+entity
+{
+	"origin" "-1675 310 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "578"
+}
+entity
+{
+	"origin" "-1803 -810 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "579"
+}
+entity
+{
+	"origin" "-2057 -844 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "580"
+}
+entity
+{
+	"origin" "-2362 -296 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "581"
+}
+entity
+{
+	"origin" "-1875 845 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "582"
+}
+entity
+{
+	"origin" "-2885 -233 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "583"
+}
+entity
+{
+	"origin" "-2786 563 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "584"
+}
+entity
+{
+	"origin" "-2381 -358 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "585"
+}
+entity
+{
+	"origin" "-2425 -788 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "586"
+}
+entity
+{
+	"origin" "-2453 -1890 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "587"
+}
+entity
+{
+	"origin" "-1537 -1684 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "588"
+}
+entity
+{
+	"origin" "636 -1304 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "589"
+}
+entity
+{
+	"origin" "-149 -1705 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "590"
+}
+entity
+{
+	"origin" "-1311 -908 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "591"
+}
+entity
+{
+	"origin" "-2190 1201 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "592"
+}
+entity
+{
+	"origin" "-873 1196 -1279"
+	"classname" "info_target"
+	"rendercolor" "255 255 255"
+	"id" "593"
+}
+entity
+{
+	"origin" "-2466 -1872 -1279"
+	"fixedlight" "0 0 0"
+	"classname" "weapon_mp9"
+	"rendercolor" "255 255 255"
+	"id" "594"
+}
