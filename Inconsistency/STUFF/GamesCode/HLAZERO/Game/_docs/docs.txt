@@ -1,0 +1,1670 @@
+ABSOLUTE ZERO DOCUMENTATION
+
+Ingame: To see what map you're on, go in console, type "status".  Look at "Map  :"...
+
+
+
+
+
+
+============================================================================================================================================
+============================================================================================================================================
+============================================================================================================================================
+---IMPORTANT VISUAL STUDIO NOTE:
+The project can now automatically copy the DLL's to your Half-Life mod folder (AbsoluteZero) and run the game afer building both projects.
+In Visual Studio, there are four places that need to point to your installed game directory.
+1. In the solution explorer (open with the "View" tab at the top of visual studio, "Solution Explorer" if the window is missing)...
+   Right-click the "cl_dlls" project and pick "Properties".
+   See the left-hand menu for "Configuration Properties", down to "Debugging".
+   In the right-pane, look to the "Command" and "Working Directory" lines. Change these to refer to your own hl.exe file and folder it is in, respectively.
+2. Go down to "Build Events" in the left-pane. See the "Post-Build Event" (may need to open Build Events).
+   See the "Command Line" line to the right. It is one line but may be hard to look at. Click once in the box to the right and hit the arrow on the far right. Click "<Edit...>" below.
+   Now change this directory to refer to the place to place the client.dll (your game folder up to the "AbsoluteZero" or whatever you call it)
+   Should end in "/cl_dlls/client.dll".
+3. Repeat step 1. for the "hl" project in the solution explorer.
+4. Repeat step 2. for the "hl" project (properties probably still open). Of course with "/dll/az.dll" at the end of this path instead.
+   
+Intended for visual studio 2010 through 2019, although only 2010 and 2019 were tested.   Can compile in Visual Studio 6 too but this project is not updated as often.  Even so, an effort to keep script compatible with VS6 has been made.  Adjustments for future versions uncertain, but should be contained to the "externalLibInclude.h" file in the project's root for neatness and easy comparisons between visual studio versions.
+
+Building the solution should copy the client.dll and  hl.dll (renamed to az.dll) files to the game folder's cl_dlls and dlls.  If something prevents the .dll's from being copied over (such as compiling while the .dll's under teh game folder are already in use from runnnig the game), you must manually copy over the DLL's later or trigger a recompile of both the client and server projects to attempt a re-send (try putting a character in dlls/glock.cpp, backspace, save, build solution).
+
+To check the version and build date of the mod, type "mod_version_client" or "mod_version_server". However, the _server variant requires a game to be running (loads the server .dll; only the client .dll is loaded at all times).
+
+The project's version.h file lets you change the reported "version" (a letter typically) to prove the up-to-date DLLs made it over too.
+
+
+============================================================================================================================================
+============================================================================================================================================
+============================================================================================================================================
+
+DEBUG FEATURE. In debug or release builds, if you're having startup trouble, or think CVars aren't getting applied clientside, make a file called "helpme.txt", can remain empty, in your mod folder (<Half Life folder>/AbsoluteZero).
+The presence of this file alone turns on some printouts that may help figure things out. Note that some other printouts still require the "developer" CVar to be at least 1.
+
+
+
+
+
+
+HELPFUL: every entity (CBaseEntity or descendent) has a "edict()" instance method.
+         "ENT( yourEntityOrDescendent )" is also helpful.
+
+ATTENTION: Looks like the "UTIL_EmitAmbientSound" can also play sentences.
+(Since changed to UTIL_PlayAmbientSound)
+
+Attenuation can go from 0 to 4, verify exactly 0 and 4 though, I forget.
+Higher causes a sound to drop off faster with distance, good for sounds not meant to carry far like suit sounds
+(not that this really matters for single player).  Explosions have really low attenuation to sound similar close
+or far away to create an illusion of more loudness, it's usually fine to lower attenuation a lot to get more
+loudness when a volume of 1 isn't enough (hearing a sound the same at a great distance seems like loudness).
+
+
+Also, setting a monster's "pev->nextthink" to 0 may sound like a neat way to make it play instantly (after all, we're certianly past 0 at any point of time after start), but this actually disables the think method so that it cannot be called.
+To set a monster's think method to be called instantly, just set pev->nextthink to 0.1 (a tiny amount of time that's clearly been passed since the start of a game) or gpGlobals->time.
+
+MONSTER THINK LOGIC:
+For monster think logic, the core is "MonsterThink()" as seen in monsters.cpp. It calls RunAI() which can be seen in monsterstate.cpp. RunAI then calls FCheckAITrigger() (see if something about this monster satisfies a map condition, such as the agrunts dying in one map to signify spawning more and opening a door), PrescheduleThink() (has no logic in the base monster class, to be used or not in child classes), and then MaintainSchedule() (general logic to continue this schedule task by task or pick a new one).
+
+Many existing monsters override PrescheduleThink(), but I override MonsterThink() instead. More control this way, but understand the monster is braindead and animationless if CBaseMonster::MonsterThink() (or whatever parent class) goes uncalled.
+
+
+
+Do this to fix the 'thirdperson camera-is-to-the-side' issue.
+  thirdperson
+  cam_idealyaw 0 (or 1?)
+
+  
+PostRestore method
+!!! CRITICAL!!!   This method is not guaranteed to always be called for all entities.
+Must either use the default IMPLEMENT_SAVERESTORE, or copy its ::Restore method at least
+and get the part that calls "PostRestore"  (any copies from a while ago will be missing
+that part).
+
+
+
+
+
+===================================================================================================================================================
+SOME IMPORTANT NOTES ON gpGlobals->time:::
+
+Clientside can still refer to gpGlobals->time.  UTIL_WeaponTimeBase() takes an amount of time but treats it as relative to 'now',
+since it's expected to be used with existing synched vars that count down automatically (reduced by milliseconds in
+cl_dlls/hl/hl_weapons.cpp).  Anything tied to server logic only (rpg rockets) should still use gpGlobals->time, a relative time is not
+as helpful.
+
+BETWEEN MAPS:
+On going between transitions or loading an existing game, gpGlobals->time is always '1' in the middle of precache methods, including
+the 'OnMapLoadStart' event.  Some unknown operation later between the last precache and server frame and/or player think logic, it is set
+to the remembered value from loading a game, or from the previous time this map was visited (if it is not new during this run).
+It is reset to 0 on going to a never-visited map by transition or starting a fresh game with a map, and is rememembered/restored per map at this time.
+
+Few examples:
+* Starting a game, say on map 'A'.  Time begins at 0 and counts up while on the map.
+* 10 seconds pass. Save the game and load the same game.  The time will be what it was when the game was saved (10 seconds).
+* A minute passes, reach a transition and go to map 'B'.  70 seconds was the time on leaving map A, so that is saved to map A.
+  Since Map B is new this run (never visited), it begins with the time at 0 and counts up.
+* 30 seconds pass, the player goes back to map A.  Map B remembers 30 seconds as the time.
+  Map A has been visited, so gpGlobals->time is restored to that 70 seconds from when it was exited.
+* 10 seconds pass.  Go to map B again (map A saved with 80 seconds as gpGlobals->time).  Time restored to what it was when map
+  B was exited: 30 seconds.
+* 10 seconds pass.  Save the game and load it.  The time is again 30 seconds from being that way when map B was saved, and visiting
+  map A would show the time of 80 seconds.
+
+It is important to keep in mind, the time is remembered per map and not preserved going through transitions, assume it starts over
+at 0 (new map), but revisiting an existing map from a differnet point would leave the time as it was at the time, which may be less
+or higher than the current time.
+
+Why care about this?  Because global timers or time-vars can get screwy with these time changes if they're not updated on map changes.
+Say there is a timer, 'nextUpdate', set to gpGlobals->time (now 300) + 10, so nextUpdate = 310 (intended to be reached in 10 seconds).
+If, 6 seconds later (4 seconds left to go othrwise), the player loads a game or takes a transition to get to a map with an earlier
+remembered time (say 80 seconds), the gpGlobals->time of 80 will have to count all the way back up for nextUpdate's 310 to be reached,
+back when it was set at a gpGlobals->time of 300.  That's certianly further away than 4 seconds!
+
+If a map with a later time were loaded or taken by transition (say 800), the nextUpdate would be reached instantly instead: 800 > 310,
+reached.  This is not usuall a problem but it is worth looking into if it ever were.
+
+Broadest solution that often works fine is to set any global times to -1 or 0 in VidInit (clientside) or OnMapLoadStart (serverside),
+bount to register as 'over' in any map visited.
+
+It might be possible to handle the time difference during the first think-frame since changing maps (would pick-up on the time
+difference with some other var keeping track of the time at map change for shifting times between the maps).
+But again, I can't think of when that owuld be necessary.
+===================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONDITIONS - comparing SEE_ENEMY and ENEMY_OCCLUDED.
+bits_COND_SEE_ENEMY and bits_COND_ENEMY_OCCLUDED may sound similar, but they are a little different.
+bits_COND_SEE_ENEMY requires the enemy to be in the viewcone of the current monster (in sight).
+bits_COND_ENEMY_OCCLUDED, being absent, says that the monster COULD see its current enemy if it were facing a different direction.
+ Or in other words, there is a straight line between this monster's eyes and it's enemy's position, regardless of the direction the monster is facing.
+
+so OCCLUDED being true implies SEE_ENEMY must be false. But OCCLUDED being false can allow SEE_ENEMY to be either true or false.
+
+
+
+
+
+
+GLITCH FOUND IN HALF LIFE:
+Fire (left-mosue button tested) quickly. Click very fast or hold a little, and don't move the mouse at all.
+If you do it right, the weapon will continue firing even though you released the button.  Moving the mouse at all will make it stop firing.
+
+
+
+NOTE: The Half-Life SDK, as-is, came with an issue: the cl_dlls project includes "util.h", even though there isn't a util.h in the cl_dlls folder.
+It is a missing refernce. Removed.
+
+Also for the cl_dlls project, made the "cl_dlls" directory a default include. no idea why it wasn't but "dlls" was. Mistake?
+
+Looks like the as-is was using the "C/C++/Additional Include Directories" feature, not the "VC++ Directories/Include Directories" like I thought.
+
+There is now a more viable printout method available: easyPrint and easyPrintLine.
+In most clientside or serverside spots alike, use "easyPrint" or "easyPrintLine" (includes a newline at the end without being told).  Treat this like "printf" in C.
+Example:   easyPrintLine("some constant text: %d, %.2f, %s", 4, 7.2, "othertext")
+Result:    some constant text: 4, 7.20, othertext   (carriage return here)
+
+***Further note: easyPrint & easyPrintLine require the "developer" CVar to be at least 1 to show up.
+                 easyForcePrint & easyForcePrintLine bypass this requirement, they are better for responses to client commands
+                 that the user needs to see a response to regardless.
+
+
+A few sounds:
+~m4a1_silencer_on & off:   Counter-Strike Zero (glock silencer add / remove sounds)
+~Silencer.wav:         uh, some voice with that arcade-like announcer?  I dunno.
+
+
+
+Apparently, the player model's color can be customized in real time through CVars "bottomcolor" and "topcolor", defaults of 0 and 30 accordingly. There is probably a CVar for player decal choice & color too out there.
+For decals, the cl_logocolor is used. Any of these values is suitable (default is #Valve_Orange ):
+#Valve_Blue, #Valve_Brown, #Valve_Dkgray, #Valve_Ltblue, #Valve_Ltgray, #Valve_Green, #Valve_Orange, #Valve_Red, #Valve_Yellow
+(It looks like the logo must still be set in the Multiplayer tab in Options to take effect at all)
+
+
+mp_decals is a CVar that determines what to change r_decals to at the start of a multiplayer game. r_decals has an effect ingame and in real time with edits; mp_decals is merely copied to it to take effect. See config.cfg or userconfig.cfg to edit mp_decals.
+Also, it appears an r_decals setting of 90 is actually 1. It is as though the real decal limit subtracts 90 from r_decals and makes that the limit. For instance, an r_decals setting of 100 results in a limit of 10 decals before the oldest disappears. I bring this up because an unaltered NGHL half-life install sets mp_decals (and thus r_decals) to 90, or effectively 1 decal.
+
+
+
+NOTICE - client calls CVar creation through CVAR_CREATE, and offers CVar name, as well as options for initial value and flags. Returns a pointer to the new CVar.
+         server calls CVar creation through CVAR_REGISTER and takes a pointer to a "cvar_t" type variable (made up of name, default value, optional flags) as a parameter.
+             The newly created CVar is not returned; it must be acquired separately.
+
+
+			 
+The FL_WORLDBRUSH flag for pev->flags, added through "pev->flags |= FL_WORLDBRUSH;", looks interesting. 
+func_break.cpp says it will block all tracelines.
+It looks like in the case of unbreakable glasss, it detects glass as unbreakable by doing an "IsBreakable" check and a check for transparency (rendermode other than kRenderNormal).
+If so, this breakable gets the FL_WORLDBRUSH flag so that linetraces that ignore glass aren't even allowed to pass. Probably to prevent monsters with ranged attacks from trying to futily use them through unbreakable glass.
+
+
+GENERAL POINTER ABOUT TRACELINES - Don't trust that pHit being non-null alone is a good indication that the line trace necessarily hit something, check flFraciton too to see if it is 1 for no interrupting blocking object along the trace. Traceline results are rarely actually NULL, but at least report colliding with "Worldspawn", even if they clearly still don't collide with anything (nothing in the way from point A to point B, not even anything invisible).
+The point is, be sure to check if the hit entity "pHit" is worldspawn first, and, if so, check to see if flFraction is 1. If it is, that means it is indeed the case nothing was actually hit and for some reason "Worldspawn" also consists of the air the trace ended at.
+			 
+
+			 
+			 
+CINEMATICS - monsters may have a linked "scripted_sequence" object, called the "CCineMonster" class in C++ code (really) in the form of a "m_pCine" instance variable. Monsters in the MONSTERSTATE_SCRIPT state can check their associated "m_pCine" for other information like whether it is interruptible or not (spawnflag 32, 5th power of 2, AKA "SF_SCRIPT_NOINTERRUPT" in C++ code).
+			 
+			 
+
+
+
+"#pragma once".  Should this be used in more files under the "#ifndef X_H",  "#define X_H"  bits in .h files?
+
+
+<half life folder>/AbsoluteZero (or valve)/resource/gameui_english.txt:   string links?
+
+
+PRINTOUT METHOD INFO:
+/////////////////////////////////////////////////////////////////////////////////////////
+Some printout methods are influenced by the 'developer' CVAR.
+At 1 or above, I think all printout methods work (unless script explicilty checks for the 'developer' value
+differently, such as 'only do this for developer == 2').
+Any mentions of "developer 1" should also work for "developer 2".
+At a value of 0, some printout methods won't show anything.
+"easyForcePrint" calls ignore that check and work anyways, since calling for some client commands with an
+invisible response would just be confusing.
+
+Here's a list of printout methods that show up (plus) or don't (minus) with a developer value of 0.
+Also shows what color choice is used (between BrightControlText and ControlText, see below)
+
+CLIENTSIDE:
+   +, CT  gEngfuncs.pfnConsolePrint(par_string)
+   +, CT  gEngfuncs.Con_Printf(...)
+   -, BCT gEngfuncs.Con_DPrintf(...)
+
+SERVERSIDE:
+   -, CT  g_engfuncs.pfnAlertMessage(ALERT_TYPE::at_console, szFmt, ... )
+   -, BCT g_engfuncs.pfnClientPrintf(pEdict, PRINT_TYPE::print_console, szMsg)
+   +, CT  g_engfuncs.pfnServerPrint(szMsg)
+   
+There is also something unused, serverside's "pfnEngineFprintf", defined like so in dlls/eiface.h:
+	void		(*pfnEngineFprintf)			(FILE *pfile, char *szFmt, ...);
+...but it looks to be for writing files.  Even though that can be done in plain C/C++ without using this 
+call?  No idea.
+
+-CONSOLE TEXT COLOR
+For the colors seen in console text, go to "<half life folder>/AbsoluteZero/resource/TrackerScheme.res".
+If it's not there, the base one in the "Valve" game folder is being used instead.
+Most console text from printouts use either BrightControlText or ControlText in that file.
+'BrightControlText' is darker in my case, go figure.
+Making any generalization about which is used is hard.  Any "BrightControlText"-using text is blocked by
+"developer 0", but pfnAlertMessage uses "ControlText" and is also blocked by "developer 0".
+
+With "developer 1", the most recent printout in the "ControlText" color shows up at the top of
+the screen as yellow text for a few seconds.  Not present in "developer 0".
+
+Printouts don't appear to be affected by compiling for Debug or Release (engine-wise).
+However, prefixes can indicate the source of the printout in Debug mode, or Release mode if 
+the "FORCE_PRINTOUT_PREFIX" macro is set to 1 (see version.h).
+They are "CL" for printouts meant for 
+
+Anyway, "pfnClientPrintf" not working with "developer 0" poses a bit of a problem.
+Seems weird to have to use "ClientPrint" instead with a limit of 4 parameters just to get around that if
+we really needed to get client-specific printouts from the server (like in responses through
+dlls/client.cpp) with "developer 0".
+
+Unsure of the difference between pfnConsolePrint and Con_Printf.  Looks like it's best to just use
+Con_Printf for console printouts, pfnConsolePrint can support makinga message a "notification" instead
+if the first character is set to a value of 1 (not "1", but the literal 1 as a ASCII value).
+
+Also seen in the method list above, some printout methods support giving a number of variable arguments
+to fill the given format string:
+    "my message here %d %s", 17, "good job"
+...Others only accept a single string, so a temporary char array with the formatted string must be sent
+instead.  Don't have to worry about this if you use "easyPrint" methods, see "util_printout.h/.cpp".
+Most commonly wanted ways to print are supported and all easyPrint methods allow variable parameters,
+no temp char array required.
+
+There are some printout methods for the client in the codebase as-is but they're just re-directs
+to engine methods above (also in cl_dlls/cl_util.h):
+  ConsolePrint
+
+
+...or drawing text on screen:
+  TextMessageDrawChar
+  DrawConsoleString
+  GetConsoleStringSize
+  ConsoleStringLen
+  CenterPrint
+  
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+INTERESTING LOCATIONS :
+/////////////////////////////////////////////////////////////////////////////////////////
+g_engfuncs and gpGlobals are defined in:
+    client: cl_dlls/hl/hl_baseentity.cpp
+    server: dlls/h_export.cpp
+
+gEngfuncs is defined in:
+    cl_dlls/cdll_int.cpp
+
+g_engfunc's class (enginefuncs_t) is in engine/eiface.h.
+gEngfuncs's class (cl_enginefunc_t) is in engine/cdll_int.h.
+
+g_engfunc is typically used serverside, but can show up in some shared files too for clientside.
+ Client-only files typically don't involve g_engfunc.
+gEngfuncs looks to be clientside only.
+
+Also, cl_dlls/hl/hl_weapons.cpp does some odd things in the "HUD_InitClientWeapons" method, between g_engfuncs and
+gEngfuncs.
+That... actually might be because of g_engfunc showing up in client & serverside.  Clientside is the unusual one,
+so it does some special hookups there to dummy out some things unneeded (like precaches) that still show up client/
+serverside in the specific weapon files.
+So it's better to think of g_engfuncs as available clientside too when absolutely necessary, but more as a
+placeholder with minimal support.  It's primarily serverside.
+
+Anyway, a few other points.  Is the following method for g_engfuncs:
+	void		(*pfnEngineFprintf)			(FILE *pfile, char *szFmt, ...);
+...viable for clientside too?  Could be nice to use this to write the hiddenMem files instead of the standard
+C/C++ way, best  to use the engine-supported methods instead whenever possible.  Maybe.  Unless it that has some
+hideous side-effect.
+
+And why isn't "gpGlobals" available for HUD logic too?  Have to use "gHud.recentTime" to get the current time
+if it isn't supplied by the current method being provided with it by the base think/update/draw etc. method that
+called the specific screen's one.  Seems that as gpGlobals works fine for shared stuff, it should work fine for
+all clientside.  The type of gpGlobals (globalvars_t) is in engine\progdefs.h, which is included by dlls/extdll.h
+most of the time.  Just something to keep in mind.
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+cl_himodels is... something?  I think it only affects the player model (one seen by other players in multiplayer or 3rd person)
+
+
+***
+All references to HLDEMO_BUILD and OEM_BUILD in the codebase removed.  It doesn't make sense
+to preserve these after making so many additions to the code-base.  Who's to say what feature 
+would've been present under either/both/either constants.
+It's inconsistent to, say, have a build lack the apache and hgun to mimick a certain point of
+time, but have the chumtoad, kingpin, hassault, stukabat, panthereye, floater, holster anims,
+etc.
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+TRACE METHODS:
+There are quite a few serverside trace-related methods.
+Most trace methods are for sending a line or shape through 3D space to see what, if anything, gets hit along the way.
+Most are checks to see what entity is hit first, but some are hella gayt.
+
+Actual forms in engine/eiface.h:
+	void		(*pfnTraceLine)				(const float *v1, const float *v2, int fNoMonsters, edict_t *pentToSkip, TraceResult *ptr);
+	void		(*pfnTraceToss)				(edict_t* pent, edict_t* pentToIgnore, TraceResult *ptr);
+	int			(*pfnTraceMonsterHull)		(edict_t *pEdict, const float *v1, const float *v2, int fNoMonsters, edict_t *pentToSkip, TraceResult *ptr);
+	void		(*pfnTraceHull)				(const float *v1, const float *v2, int fNoMonsters, int hullNumber, edict_t *pentToSkip, TraceResult *ptr);
+	void		(*pfnTraceModel)			(const float *v1, const float *v2, int hullNumber, edict_t *pent, TraceResult *ptr);
+	const char *(*pfnTraceTexture)			(edict_t *pTextureEntity, const float *v1, const float *v2 );
+	void		(*pfnTraceSphere)			(const float *v1, const float *v2, int fNoMonsters, float radius, edict_t *pentToSkip, TraceResult *ptr);
+
+Macros for calling these too, if they exist, from dlls/enginecallback.h:
+	#define TRACE_LINE		(*g_engfuncs.pfnTraceLine)
+	#define TRACE_TOSS		(*g_engfuncs.pfnTraceToss)
+	#define TRACE_MONSTER_HULL		(*g_engfuncs.pfnTraceMonsterHull)
+	#define TRACE_HULL		(*g_engfuncs.pfnTraceHull)
+	(none)					pfnTraceModel
+	(none)					pfnTraceSphere
+	#define TRACE_TEXTURE				(*g_engfuncs.pfnTraceTexture)
+
+There is also this from engine/cdll_int.h:
+There is also something wpm_shared/pm_defs.h ?
+	struct pmtrace_s			*( *PM_TraceLine )			( float *start, float *end, int flags, int usehull, int ignore_pe );
+
+
+See what all the trace methods do if curious.  Some are rarely used, if ever.
+
+In the as-is codebase (not counting additions in the mod since then; good way to see intended usage)...
+--------------------------------------
+  TRACE_LINE is called by UTIL_TraceLine, which is called in many many places.
+  TRACE_TOSS is never called.
+  TRACE_MONSTER_HULL was used once by the ichthyosaur once.
+  TRACE_HULL is called by UTIL_TraceHull (dlls/util.cpp), which is called in various places, mostly
+      by melee attacks to find something vaguely in front of the attacker to hit.
+  pfnTraceModel is called by UTIL_TraceModel (dlls/util.cpp), which is called by maprules.cpp once.
+  pfnTraceSphere is never called.
+  TRACE_TEXTURE is called in dlls/player.cpp and sound.cpp to see what type of material/texture from
+      the map is closest to a given point for telling what sound to play.
+    *Clientside looks to have this equivalent, EV_TraceTexture, in common/event_api.h,
+	    const char *( *EV_TraceTexture ) ( int ground, float *vstart, float *vend );
+    *called like so:
+	    pTextureName = (char *)gEngfuncs.pEventAPI->EV_TraceTexture( ptr->ent, vecSrc, vecEnd )
+--------------------------------------
+  
+(engine/cdll_int.h doesn't have much trace-related but there's a bunch of engine hookups nonetheless) 
+
+And don't forget about common/event_api.h:
+	int	( *EV_IndexFromTrace) ( struct pmtrace_s *pTrace );
+	void ( *EV_SetTraceHull ) ( int hull );
+	void ( *EV_PlayerTrace ) ( float *start, float *end, int traceFlags, int ignore_pe, struct pmtrace_s *tr );
+	const char *( *EV_TraceTexture ) ( int ground, float *vstart, float *vend );
+
+...and random, but whateven calls "EV_SetSolidPlayers"? What could that possibly do.
+   Looks like it finishes adding in the bounds of other players so that clientside effects
+   can work off that?   okay..?
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+math_lib.h
+/////////////////////////////////////////////////////////////////////////////////////////
+So... noticed something weird.  We have two files with the same name in the codebase (as found of course):
+
+common/mathlib.h
+utils/common/mathlib.h
+
+...what?
+From what I can tell, the root's 'common' folder is part of the include path (it is a folder searched for
+any requests for single filenames, such as in:
+    #include "mathlib.h"
+Even though the user didn't specify it is in the common folder, that is one of the places checked and
+so common/mathlib.h is still returned.
+
+utils/common/mathlib.h must be referred to specifically in that way to be used instead.
+
+Looks like the only place that calls for utils/common/mathlib.h is dlls/util_model.h
+(used to be animating.h).
+The rest use only "mathlib.h", implying the common/mathlib.h one.  Half of the files that include this are
+in pm_shared.
+
+This leads me to believe common/mathlib.h has better compatability with the C language, as pm_shared files
+are for C.  And utils/common/mathlib.h is for C++ (util_modle.cpp clearly).
+
+Not really going to touch these either way, just thought I'd mention this.
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+			 
+NEW MAP KEYVALUES FOR NODES
+
+Alright, they're now in KeyValues for World (worldspawn?), kinda like that "pre-disaster" flag should've been.  I don't know if those are things that have to be set up in the Map editor FGD or however, but if you wanted to adjust them they are
+
+node_linktest_height (float, 8) - how high above the ground a land node should go to do a check for connections with other nodes.
+node_hulltest_height (float, 8) - similar to above, but for the WALK_MOVE checks for varrying bound sizes.  Less likely to benefit from changes.
+node_hulltest_heightswap (BOOL, 0) - Whether to swap what node is used for the start of a WALK_MOVE since there's a better chance of success going from lower to higher on inclines for whatever reason.
+
+I've found these make a1a2b's hall around the central area work fine:
+node_linktest_height 14
+node_hulltest_heightswap  1
+
+If these are never adjusted, there is no change to behavior for that map.  It's forced to the defaults on any new map so they don't stick if changed.  And you likely have to force the nodes to regenerate.  Go ingame and type
+    forceNodeUpdate
+to do that.  Any other time the map is loaded the same state of node places / connections is retained.
+
+
+NOTICE - "VARS(eoNullEntity)" will create a reference to the entity of ID 0 (since eoNullEntity alone is really a #define for the number 0... nothing more complicated).
+so it effectively makes "VARS(0)".  And from a printout of that thing's classname, this says it's "worldspawn".
+so you could send worldspawn as an inflictor or attacker.  Which is fine I guess, but his does not look intuitive.
+Does "VARS(eoNullEntity)" look like it's trying to send the map itself (worldspawn) or some example blank NULL entity?  Whatever works but just be careful with that.
+
+
+
+===================================================================================================================
+
+QUICK HELP:
+in console...
+type "fixcvar" or "fixcvars" to reset most CVars to their default values.
+type "fixprecache" or "fixcache" to make "precacheAll" and "soundSentenceSave" become "1".
+~Should only be an issue if done since a precache-related error in-game, but, to be safe restart the game (close / re-launch)
+ after doing this.
+
+CVar "nothingHurts" can be good for testing AI.  Use 1 to make nothing deal damage to one another, and 2 to make the player an exception to that rule for convenience (0 returns to normal)
+
+
+SCRIPT: hardware check:
+IEngineStudio.IsHardware()       ~returns a bool, so it can be used like so:
+if ( IEngineStudio.IsHardware() )
+{ ...
+
+Beware of using "UTIL_drawBox" too much (or just anything line-drawing, that ends up going to "TE_ShowLine").  If used every single frame or on way too many monsters (just, the point is, if you draw too many lines), calls will eventually start to get completely ignored, making things very confusing for update-checks.
+Instead, try only drawing lines at intervals (1 sec?), or at solid events that happen for not many frames at a time / without time inbetween.
+
+
+It seems as though more sounds can be played in "CHAN_STREAM" than in most others (namely, CHAN_WEAPON).
+Consider delegating sounds to CHAN_STREAM if the current channel seems to be unfit for playing a certain number of sounds at the same time, or some sounds interrupt others too easily.
+
+Collision getting you down?  Try messing with "SetObjectCollisionBox" for collision that affects only places that register shots in a model and don't block other movable entities.
+
+
+In places that are compiled by the server / client separately (like weapons.cpp or egon.cpp, or all weapons for that matter), you should try to
+refer to CVars in server-side only blocks (denoted by "#ifndef CLIENT_DLL", or "if not defined, clientside").
+Why referring to CVars in client-side causes a crash, despite getting CVars clientside by GUI being just fine.  Why?  Potatoes.  Potatoes.  Potatoes.  Fucking.  Potatoes.
+
+
+channel priority (incomplete)
+~this is poorly understood.  Even telling what channel has pure 'priority' (play nothing / don't replace anything from this channel if a lower channel requests a sound) is difficult:
+
+CHAN_WEAPON			seems commonly used, probably relatively low priority.
+CHAN_VOICE			high priority.
+CHAN_ITEM			even higher priority (at least it doesn't get block by "CHAN_VOICE"'s aggressiveness).
+CHAN_BODY			uncertain.  Probably low.
+CHAN_STREAM			seems unused (as of retail, is used by the mod).  Good priority, can store a lot of sounds at a time, but still succumbs to voice & item.
+CHAN_STATIC			seems to be used almost (if not completely) exclusively by the player's voice.  Probably top priority (those messages are meant to be important).
+
+
+channel_item > channel_voice >  channel_weapon & channel_stream
+
+===================================================================================================================
+
+added commands (search for "givedist" & "givelook" in client.cpp for the workings):
+givedist - works like "give", but spawns something a distance from you (see "offsetgivedistance" below).
+givelook - works like "give", but spawns something where your cursor intersects with a surface with a vertical offset (see "offsetgivelookvertica"l below).
+ent_create - same as "givelook".  Provided as an alias for those familiar with the Source 2 engine, since the result seems similar.
+
+getmap, currentmap, thismap - command.  Gets the name of the current map.  No more digging through a bunch of garbage from "status".
+
+removeFireFly - command.  Removes the glowing yellow dots from monsters that currently have it.
+showBounds - command.  Do when targeting a particular NPC to display its two types of main bounds (smaller collision and larger hit bounds) as two separate red boxes of dark red dotted lines.  These boxes last for 30 seconds and do not move with the entity.
+showBoundsAll - command.  Applies to all entities in a fair radius of the player.  Be careful, as too many entities will cause it to fail.  Best use "showBounds" individually when possible.
+
+sneaky - command; give no other number (just type "sneaky").  Toggles both player-sound-mute (AKA, impulse 105) and calls "notarget".  Isn't very smart, so just stick to using "sneaky" instead of either of the others.
+
+myCoords - command; print out the player's origin and angles as X,Y,Z coordinates.
+entCoords, monsterCoords - Find the thing the player is looking at (crosshair) and print out its coords.  Must be an entity / monster.
+remove, removeEnt, entRemove - mimmicks impulse 203, without the possible "can't take damage" restriction.  Removes the entity / monster the player is looking at from the game.  Does not count as "provoking" provokables.
+
+setMyHealth, getMyHealth - set / get health of the player.  To set health, provide a number too (separated by space).  Values between 1 and 100 (inclusive) advised.
+setEntHealth, getEntHealth - set / get health of the entity / monster in the player's crosshairs.  Provide a number to set the health of this entity.  Leave it out to get the health / maxhealth of the entity instead.
+~Example:
+~entHealth      - may tell you      monster_barney's health: 27 monster_barney's maxHealth: 35"
+~entHealth 33   - sets this monster_barney's health to 33.
+~Also has keywords for setting:     "setEntHealth full" restores ent health to max health, "setEntHealth dead" sets ent health to 0.
+
+~Commands "coords" and "health", inspecific to player ("my") or other monster ("ent") will check to see if there is something in the crossharis.  If so, applies to that. If not, applies to self.
+~Can still apply to odd things like "door" entities!  Easy mistake.
+
+hitbox, showhitbox
+~Use this command to show info about the monster's (sub) hit boxes. They are attached to bones on the monster (moving with changes in rotation / position) and used to further fine-tune collision for raycasts, not movement collision. See them with "r_drawentities 3" or "r_drawentities 4". "r_drawentities 1" is back to normal.
+~If given no number, shows all boxes. If given a number separated by a space, assumes it is for that numbered box (the order seen in the monster's list of hitboxes).
+~Special names "hitboxbone" and "hitboxgroup" use this input number to show hitboxes of those particular properties only.
+
+drawpath / drawpathall / drawpathstop
+~Use "drawpath" with an NPC targeted in the crosshairs to designate them for drawing a path on any movement.
+~Alternatively, type a monster ID after the command to pick a monster of that ID instead, if it exists.
+~Not to be confused with the "drawDebugPathfinding" CVar which draws for all NPC's but only on generating a new route, not every movement frame.
+~Use "drawpath" on the same NPC to disable drawing their path at movement.
+~"drawpathall" and "drawpathstop" sets "drawpath" for all monsters in a wide area accordingly.
+
+drawfov / drawfovall / drawfovstop
+~Similar to drawPath, use with a number to suggest a monster of that ID, or don't include a number to try to find a monster in the crosshairs. This designates that monster for drawing their FOV as two green lines for left and right extents. A blue line represents the exact direction it is facing.
+
+
+offsetgivedistance - number.  The distance to spawn something away from where you are looking.  Beware that too great a distance may spawn something under the world if you look down too far.
+offsetgivelookvertical - number.  The vertical offset in spawning something with "givelook", used in case aiming square at the ground still causes something to fall through.  Default is 2.  For stationary / non-gravity-affected objects, consider trying 0.  Increasingly positive values bring higher above ground.
+
+note that the above CVars only affect givedist & givelook respectively.
+
+
+hideFP, hideAll, hideMyShit - sets drawViewModel to 0 and drawHUD to -1 (crosshair block too). Effectively hides all drawn graphics, good for screenshots.
+
+showFP, showAll, showMyShit - sets drawViewModel to 1 and drawHUD to 1. Reverts the above.
+
+
+
+
+
+
+
+
+
+
+
+
+
+New NPCs:
+
+Mr. Friendly - "monster_friendly"
+-Scans for corpses and areas outside of the player's sight. Eats them and makes barnacle chewing noises.
+-Uses the vomit animation for eating for now.
+-Piss one off and it will try to bring you closer with the double-whip. When close up, it can vomit, making a low-pitched scientist scream. This rapidly cuts armor.
+
+Kingpin - "monster_kingpin"
+-powers up nearby alien grunts if alerted.  Has a variety of devastating psionic / electric attacks.  Will fire homing orbs of doom if the target hides for too long before chasing them down.
+
+floater - "monster_floater" or old name, "monster_bloater".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENTITIES:
+env_model
+env_modelsimple
+~has only  "m_iszSequence".  a string to be the name of a sequence to run 24/7 (say so if it doesn't seem to be working)
+
+
+
+
+NEW SKILL CVARS:
+sk_hornet_health - health given to a spawned hornet, indifferent of from the player or agrunt (can make separate).  Defaults to 1 if unspecified for all difficulties.
+sk_plr_hornet - damage for the player's hornet!  OK not to provide, defaults to 7 for all difficulties (hard-coded retail default from before)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+STUcheckDistH
+STUcheckDistV
+STUcheckDistD
+~Where to check, Horizontally, Vertically, and Diagonally (bottom only) for getting too close to a surface in the mentioned direction.
+
+STUextraTriangH
+STUextraTriangV
+~triangulation extra multiple.  Makes the routes it takes around objects a bit larger than just barely passing to reduce risk of snagging.
+
+STUrepelMulti
+~multiple applied to the force to get a stuka off of a surface.  A multi of "1" gets it to the edge alone.
+
+STUspeedMulti
+~multiple of stuka speed (for movement)
+
+STUexplodeTest  - DO NOT USE
+STUYawSpeedMulti - multiple of stuka speed for rotation (default of 0.88)
+
+STUDetection - mode var.  0, 1, 2.  Describes how easily the Stuka is triggered (or, "provoked") from a starting neutral state.
+0: most laxed.  Taking damage or hearing a loud noise nearby will trigger it.
+1: in addition to above, the player being in line-of-sigt (when the Stuka is not hanging from the ceiling) will also trigger it.
+2: most active.  Same vision as usual combat when not hanging, and will attack the player as soon as they are in proximity.
+
+
+shutupstuka - (NOW defaults to 1) stop the stukabat's "scientist scream" sound effect, when on.  Peace for the ears!
+stukaAdvancedCombat - boolean, defaults to 0.  If 1, the stuka will hover instead of fly at close proximity to target (possibly try to strafe around in the future), and do the "dive_cycler" animation on going at the target for a quick strike.  Otherwise (value = 1), flies for all movement, hovers only at midair with no movement or moving mainly up / down.
+
+
+
+
+
+
+
+sv_germancensorshipship - when 1, all red blood is colored black-grey, all human-gibs are replaced with robotic ones, and most human models are replaced with robots.  Germany be wack yo.
+*NOT TO BE CONFUSED WITH THE "CONTENT LOCK" FEATURE UNDER title screen -> Options -> Lock tab
+*"Content Lock" appears to set the following four CVars to 0 or 1 dependong on whether it is off or on:
+violence_ablood - show alien blood.  Never draws if 0.
+violence_hblood - show human blood.  Never draws if 0.
+violence_agibs - show alien gibs.  If 0, a "gibbed" enemy releases no parts and just fades out in place.
+violence_hgibs - ditto for people.
+*Note that if the "Content Lock" is turned on (violence_blood's are 1), not even the black-grey German blood will  be rendered.
+*"Content Lock" appears to be checked at game startup, turning on / off all violence_ CVars.  Changing any violence_ manually will still affect the present game regardless of Content lock setting, but changes would be reverted at next startup.
+*existing script MAY try to refer to some CVar "sv_language", but the game claims this does not exist.
+This name is NOT being reused to avoid any chance of conflict (think of "sv_germancensorshipship" just being "1 = German, 0 = Anything else" as a replacement)
+
+allowGermanModels (1) - BOOL. When on, substitution German robot models will be used instead of human ones where they exist. Requires sv_germancensorshipship to be 1.
+
+germanRobotGibs (1) - BOOL. Whether robots can spawn gibs from g_hgibs.mdl when destroyed. If off, robots simply fade out just like they would if the robot replacement models weren't available (allowGermanModels is off).
+~Requires "allowGermanModels" to be on for robot model replacements first.
+germanRobotBleedsOil (1) - BOOL. Whether robots bleed oil on taking damage.
+germanRobotDamageDecal (1) - BOOL. Whether damage done to robots, typically bullets and explosions, can draw oil decals on nearby surfaces similar to blood decals.
+germanRobotGibsDecal (1) - BOOL. Whether robot gibs leave oil on hitting the ground just like ordinary gibs do with blood.
+
+
+
+chromeEffect - defaults to 0.  When 1, try to make the chrome effect as seen on first-person weapon view models shift with movement.  The "light source" for the chrome is set to the origin of the world, as it was discovered by accident.
+0: off.
+1: on.
+~Please report any side-effects with attachment points, namely the gauss laser or the egon stream while this CVar is on / off, or in the abscence / presence of mirrors.
+
+hiddenMemPrintout (0).  When 1, shows printouts related to hidden (non-autocomplete) CVars.
+~Hard to be useful unless the save system is already working, as hidden CVars cannot be set until you are
+ ingame.  Applies to release builds only.
+
+leaderlessSquadAllowed (1) - When 1, squads spawned at startup with monsters of netnames (or "Squad names") can form, even if no member of the netname is designated as a "leader" by spawnflag (the very first of the netname, in spawn order, is picked as leader and recruits the others into its squad).
+~If any of the netname is picked to be the leader by spawnflag, this preference will still stand.
+
+nodeConnectionBreakableCheck (1) - MODEVAR. Mainly, this is to see if some breakble object (like glass) is between the nodes.  If so, don't allow that as a possible route to the enemy (would lead to... getting stuck on the glass and near irreversably fixated sometimes).
+~Does not make the offender forget the enemy seen through the glass, so they may still be fixated but just stand in place, as seen with a Barney.
+~0: no change, default behavior.
+~1: a "breakable" recorded as b/w two connections (check at startup) marks that connection as blocked.
+~2: same, but the dynamic (real-time) check is used instead.
+~3: 1 and 2 combined;  whichever works first.
+
+
+
+
+
+
+METHOD:
+fixStuka - reverts the above Stuka debug vars to their defaults that they started with at build.
+
+superman - sets normalSpeedMulti and jumpForceMulti to 3.  Sets noclipSpeedMulti to 5.
+normalman - sets normalSpeedMulti and jumpForceMulti to 1, noclipSpeedMulti to 2.5.
+
+revive, getup, risefromthegrave, suprisemotherfucker, alyxisnaked, myparentsarenthome - respawn the player in place, even without antidotes. If the player is not dead, aim at a dead monster (NPC) to revive it instead through playing its death animation backwards. Requires cheats.
+
+reviveall, thriller - like revive, but works for all ever once-living corpses on the map!
+~pre-placed dead map ones (monster_scientist_dead, etc.) lack the logic to revive
+
+god2 (also go) - same as "god".  Invulnerable to damage (battery is not).
+noclip2 (also nocli) - same as "noclip".  Collision free flying, use "NoclipSpeedMulti" to increase the speed of noclip.
+~"god" and "noclip" immitations.  These commands seem built-in and insistent on engine restrictions at times, like requiring a new map for sv_cheats to take effect, or not working at all in multi-player regardless.
+~can also be used through "_god" or "godalt", same for noclip.
+
+
+gib, gibbed, explode, myheadasplode - gib the player on command.
+
+pleaseDontCrash, DontCrash - runs some CVars that just turn off the gauss-explosion particles and explosion shrapnel.
+~To be specific, it just does
+explosionShrapnelMulti 0
+sparksAllMulti 0
+
+crash, divideByZero, iWantMyDesktop, iWannaGoHome - the game ends.  Yep.  This exists for some reason.
+
+id, getid - take the thing in the crosshairs.  If it is a monster, print a number unique only to it.  Good for tracking down who's printing out what.
+
+
+cmdclient - run console, runs under the currently connected client's console.
+~ Possibly redundant with ingame console usage, but eh, why not.
+
+cmdserver - run console, runs under the server console.  More likely to have different behavior.
+~ Hacker's best friend, maybe.  But really, why would you play AZ with shady fellas?  It's one big sandbox anyway.
+
+changelevel3 - a whole new kind of changelevel.  Meant to work like changelevel2, but use the exact call transitions use.
+  And... not crash because you gave it only one parameter.        That's nice too.
+  (Takes two parameters, map to change to and spot being used for the transition, see console after using a transition for its name near the top)
+  Why is there different behavior between that ingame call and the already provided changelevel2?      WHO KNOWS.
+  THIS JUST IN:  the ingame call has identical behavior to changelevel2 actually.  It's just that running changelevel2 with the console open,
+  even the game unpaused while it's open,  has different behavior from calling for changelevel2 without the console open in any way (typically 
+  touching a transition), like changelevel3 does now.
+  (run about half a second after closing the console,  then it calls changelevel2).
+  DONT LOOK AT ME LIKE I KNOW WHY THEY MADE THE DECISIONS THEY DID.
+
+
+
+/////////////////////////////////////////////
+PARTY / TECHNO / RAVE  CHEAT
+/////////////////////////////////////////////
+
+partyon, partytime, getwasted, fuckedup, rave - enable "myStrobe", "peopleStrobe", "forceWorldLightOff", "wildHeads".
+partyoff, partytimesover, nomoreclubbing, getbacktowork - disable the above 4 vars
+hyperrave, hardcore - WARNING: madness.
+
+fixparty, resetparty - reset all party CVars.
+
+forceWorldLightOff - bool, defaults to 0.  Turn all map-related light maps off (not fake light sprites though)
+wildHeads - bool, defaults to 0.  When on, scientists and barny's go mad.
+
+myStrobe - bool, defaults to 0.  When on, the player generates tons of club lights whever he goes.
+peopleStrobe - bool, defaults to 0.  When on, barny's and scientists have a massive club going on.  Crazy lights.
+
+raveEffectSpawnInterval - (0.22) time period between spawning rave effects.  That is, when this much time passes, spawn one light effect and "raveLaserFrequency" # of lasers.
+strobeDurationMin - (0.08)
+strobeDurationMax - (0.14)  min & max times a strobe light can last after spawn (randomized in this range) 
+strobeRadiusMin - (240)
+strobeRadiusMax - (410)  min & max amount of light a strobe light produces (random in range)
+strobeSpawnDistHori - (180) dist between 30 and THIS CVar that a strobe could possibly appear in on the XY plane (a "floor")
+strobeSpawnDistVertMin - (25)
+strobeSpawnDistVertMax - (75) - min & max dist above and below the strobe light could appear in.
+strobeMultiColor - (1) - boolean.  If 1, each flash is a random bright color.  At 0, all flashes are white.
+
+
+raveLaserEnabled (1) - allow "Lasers" to be spawned.  Triggered / disabled by parton / partyoff respectively.
+raveLaserSpawnFreq (2.3) - how many lasers appear in one spawn frame (AKA, when one light appears)?
+~Note that decimal values such as "2.3" will be guaranteed to produce the whole # of lasers (always 2 at least), and then treat the decimal as a chance of producing another one (30% chance of 3rd laser for 2.3).
+~Another example: 4.7 will generate 4 lasers, and have a 70% chance of generating a fifth.   "4" would generate 4 lasers only each time.
+raveLaserLength (180) - how long is a laser?  It is centered near the source's origin.
+raveLaserSpawnDistHoriMin (50) - random offset for spawning away on the X-Z plane (flat-ways, forward / backward and left/right)
+raveLaserSpawnDistHoriMax (110)
+raveLaserSpawnDistVertMin (-5) - random offset for appearing above or below the source.
+raveLaserSpawnDistVertMax (45)
+raveLaserBrightnessMin (1.0) - random brightness, expected range is 0 - 1.  Best not touch.
+~0 is invisible, 1 is brightest that preserves color (any higher starts forcing extremes, such as (255, 12, 0) to become bright yellow instead of off-red).  See footnote below for more info.
+raveLaserBrightnessMax (1.0)
+raveLaserDurationMin (0.06) - random time the laser lasts.
+raveLaserDurationMax (0.12)
+raveLaserThicknessMin (0.8) - random laser thickness.
+raveLaserThicknessMax (2.6)
+raveLaserNoiseMin (0) - random laser noise.  The default "0" bounds forces a normal straight line (laser), but play around to produce lightning-effects.
+raveLaserNoiseMax (0)
+raveLaserFrameRateMin (10) - unknown, but likely factors into how quickly the lightning from "noise" being non-0 animates.
+raveLaserFrameRateMax (10)
+raveLaserMultiColor - (1) - whether lasers use multiple colors or are always white.
+
+imAllFuckedUp (0) - try 1, uh, you'll figure it out.
+thatWasntGrass (0) - try 1, another case of, "you'll figure it out".
+thatWasntPunch (0) - try 1, the scientists and barneys are a little "odd" today.
+
+BRIGHTNESS FOOTNOTE:
+~It appears the RGB values, usually bytes (integers of range 0 - 255) need to be interpreted in range (0, 255^2) instead
+ to work as expected for lasers.  Or, in other words, get the RGB value between 0 and 255, then divide by 255 squared
+ (= 65025).  The result is 0 to 0.00392, where "0.00392" is maximum brightness. Why is this necessary?  No idea. 
+ What does this have to do with brightness?  It appears all "brightness" is is a multiple that acts upon the R,G,B before they're applied in-engine.  So just making it 1 (multiplication by 1) makes it have no effect.
+ To test, the brightness was set to 1/255 (0.00392) and sent colors were just divided by only 255, not squared.  It worked exactly the same.
+ If RGB values end up too far above 0.00392, they will just be horribly exaggerated.
+ (255, 20, 20), divided improperly, would show up as pure white.   (255, 75, 0) would show up as bright yellow, not slightly off-red (tint of orange).
+ Note that the engine treats anything less than full brightness as transparency at the same intensity of color, so lowering the
+ brightness will just make the lasers a blend of dimmer and thinner around the edges.  A brightness of 0, making all RGB colors 0 (since it is multiplied by them),
+ will not show up as black (expected for (0,0,0) ) so much as simply not appear at all.
+
+ 
+ANOTHER RANDOM CHEAT (because why not)
+iHaveAscended (0) - 1. Ascend to a higher plane of existence and see in all directions at the same time.
+ 
+ 
+ 
+ 
+ 
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////
+FOG
+/////////////////////////////////////////////
+When the rendering mode is OpenGL (see Options -> Video tab -> Render dropdown), fog can be rendered depending on some CVars.
+~Note that it seems imposslbe to render any custom fog when underwater (or, when player->pev->waterlevel = 3) because the game forces the fog this way.
+fogTest - mode var.
+0: no effect
+1: render green fog at all times.
+2: render party fog, changes colors fairly often.
+
+fogNear - distance fog starts showing up.
+fogFar - distance fog ends.
+~making these values exactly the same is really weird.  Making them way too close is also pretty strange.
+
+
+
+/////////////////////////////////////////////
+CAMERA EDITS
+/////////////////////////////////////////////
+~Adjust the camera.  Give it a constant offset or a fixed rotation / position (best with "thirdperson", of course)
+
+myCameraSucks (0) - primary var to work with the below.  At "0", no effect, normal camera behavior.
+0: normal.
+1: freeze the camera where it is now.  Could have other side effects, very crude edit.  Load a game / go to a new map to see the camera's default position (unchanged)
+2: allows the CVars below to have influence on the player camera.
+3: normal (CVars below ignored), and prints out camera angles.
+4: allows CVars below to work, and prints out camera angles.
+
+//Note that these CVars follow some rules in regard to priority:
+//~If a "Fixed" CVar is -1, that axis for position / rotation will be free, allowing the offset to have an impact.
+// That is, -1 for a position fixed var allows that axis to take the player's position into account.  -1 for a rotation fixed var allows the camera to take the player's rotation into account.
+//~If a "Fixed" CVar isn't -1, the corresponding "Offset" CVar is completely ignored.
+//~Offset Cvars act upon the given position / rotation respectively, and just add to it.  Makes the most sense for positions.
+// The default camera CVars show a "top-down" view of the player.
+
+METHOD:
+fixCamera, resetCamera - change camera CVars to the default, sets "myCameraSucks" to 0.
+
+cameraPosFixedX (-1) - left & right
+cameraPosFixedY (-1) - forward & backward
+cameraPosFixedZ (-1) - up & down
+cameraPosOffX (0) - 
+cameraPosOffY (0) - 
+cameraPosOffZ (260) - 
+cameraRotFixedX (90) - up & down
+cameraRotFixedY (-1) - left & right
+cameraRotFixedZ (-1) - roll?
+cameraRotOffX (0) - 
+cameraRotOffY (0) - 
+cameraRotOffZ (0) - 
+		
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+
+
+
+
+/////////////////////////////////////////////
+SOUNDTEST & SENTENCETEST
+/////////////////////////////////////////////
+
+soundtest - give it a sound after a space.  Example:
+soundtest player/pl_swim1.wav
+~Note that errors are usually cryptic, as "sound not precached" will be the error for
+ either a missing sound, missing the extension, or the game indeed did not "precache" it but it exists.
+
+Use "sentencetest" instead for sentences, OR just put a "!" in front in soundtest.
+Example:
+    soundtest !HOLO_FANTASTIC
+    sentencetest HOLO_FANTASTIC
+    sentencetest !HOLO_FANTASTIC
+~(all do the same exact thing)
+
+Other example.  Playing a bullsquid attack sound directly:
+    soundtest bullchicken/bc_attack3.wav
+Playing a bullsquid attack sound through a sentence (the exact name must exist in sentences.txt):
+    soundtest !bullchicken_bc_attack3
+    sentencetest bullchicken_bc_attack3
+~the first "soundtest" line, playing a .wav file directly without using a sentence, requires the sound to be precached.
+ Since the soundSentenceSave system skips for several sounds, direct plays won't work. You must use the sentence 
+ equivalent shown in the last two lines to play it if so.
+~the formula for sound path to sentence name is "directory_name", all lowercase, no extension.
+~mostly the sounds for enemies are done this way. Do NOT expect it to work for anything not in "sentences.txt".
+
+~NEW! Now supports playing a sound at a pitch.  Enter a number between 0 and 255 after the sound path or sentence name.
+~Examples:
+    soundtest bullchicken/bc_attack3.wav 120
+	sentencetest bullchicken_bc_attack3 120
+~...default pitch (raw sound) is 100.  This is implied if a pitch number is not provided.
+
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+/////////////////////////////////////////////
+JUKEBOX
+/////////////////////////////////////////////
+Access Jukebox commands by typing "jukebox", followed by (optional) the sound to play (or keyword).
+  jukebox
+with nothing else, will play a random song from Half-Life01.mp3 to Half-Life17.mp3, usually found in valve/media.  Not intelligent; only limited to those 17 filenames.
+  jukebox Half-Life08.mp3
+~given a filename, .mp3 or not (implied always), plays it.  Pretty much simplified "mp3 play media/Half-Life08.mp3"
+  jukebox stop     OR     jukebox off
+~cancel playing music.  Same as "mp3 stop".
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+
+
+
+COMMANDS AGAIN:
+
+debugNode, nodeDebug - turn on the key node-debugging CVars (drawNodeAll to 230, drawNodeConnections to 2).
+debugNodeWeak, nodeDebugWeak - turn drawNodeAll to 500, drawNodeConnections to 1 (so connections don't spam)
+debugNodeOff, nodeDebugOff - turn off all node-debugging-related-CVars.
+
+
+reportAI - if targeted at a monster or descendents, prints out a lot of information about its current state and AI. Schedule name, task number (line up with the enumeration in tasks.h), etc.
+~Can also give a number instead to get the same information out of a monster of a particular ID. Such as:
+  reportAI 14
+will try to find a monster with a MonsterID of 14 and print out its stats.
+MonsterID is assigned by spawn order.  Gaps created by deleted monsters are not filled by further spawns.
+
+report - if target at any entity, returns some general information and possibly information specific to that type of entity.
+~calls reportAI when used on monsters or monster descendents. Does not take MonsterID as only monsters have those.
+
+
+
+squadReport - if targeted at a SquadMonster or descendents (hgrunt, houndeye, stuka, etc.), prints out that monster's squad's info (members, leader, and where the picked monster is in the list)
+
+nodeCon, nodeConnections - supply a number (node ID) to temporarily show all outgoing connections as red-dotted lines.
+
+getclosestnode, nearestNode - argument(s) optional (each separated by space).  By default, gets the nearest node to the player, NOT the crosshairs.
+ARGUMENTS:
+ai - get the nearestnode exactly how the AI would from this location (a bit different; requires some validation and proof of being able to get there)
+special - marks the closest node as the "special" node, shading it white.
+target - change the search location to where the crosshairs are looking.
+
+printoutisolatednodes - print a list of all nodes that have no outgoing connections.  This is significant because, as far as I know, only outgoing connections matter to the pathfinding.
+printoutisolatednodes - print a list of all nodes that have no outgoing connections.  This is significant because, as far as I know, only outgoing connections matter to the pathfinding.
+
+printoutnodemap - print a list of each node's outgoing connections.
+~Format is:     Node#: outgoing1, outgoing2, outgoing3...      for all Node #'s.
+
+NodeTP, TPNode, TeleportToNode - with a node ID for an argument, send the player to the node's location.
+~May clip through terrain in some cases; noclip out.
+
+TeleportToMonster, MonsterTP - with a monster ID for an argument, send the player to that monster's location.
+~use "autoSneaky 1" first to stop the monster from reacting, and use noclip to get unstuck.
+
+apacheRocket - generate and send an apache HVR rocket toward the crosshairs.  BOOM.
+checklocalmove - Treats the player like an AI monster and sees if it would be valid to straight-shot from here to the destination.  Says "SUCCESS!" or "Stopped this far:" for how far it got before failing.
+
+moveEnt - gets the entity at the crosshairs and moves it to your position (best with noclip).  Does not support coordinates by entry.
+forcetaskcomplete - gets the monster at the crosshairs and "completes" the current task it is on in the AI, allowing it to move on to the next task in this schedule (or pick a new schedule if that was the last task of the current schedule).
+forcefailtask - gets the monster at the crosshairs and "fails" the task, which terminates the entire schedule regardless of how many tasks were left in order to pick a new one (before going through a possible "fail" task, possibly set by a recent schedule to fall back on)
+forgettarget - gets the monster at the crosshairs, sets "m_hTarget" to NULL (an entity to focus on, possibly not combat related, like a scientist knowing to follow the player).   (can crash in the middle of some tasks)
+forgetenemy - gets the monster at the crosshairs, sets "m_hEnemy" to NULL.  Will most likely fetch the nearest hostile in sight as a new enemy (can crash in the middle of some tasks)
+forgetenemyandtarget - gets the monster at the crosshairs, forgets both enemy & target.
+
+getSize - gets the monster at the crosshairs, prints out info about two ways of getting size:  mins & maxs, and absmin & absmax.  Reports the delta of each, as well as the total "size" of each.
+~"mins & maxs" more often has to do with the crude, square collision box that blocks movement by other entities.  It is often set by script, so results could be inconsistent with expectation.  IE, agrunt and gargantua have identical "maxs - mins" size, as their hitboxes just say to use the same 64x64x64 area.
+~"absmin & absmax" more often has to do with an even wider box that is often automatically set by the model's own physical extents, and usually mean the area that is checked for when determining whether a bullet / source of damage struck a inner model hitbox (a crude rotated cube), and then a more precise one on the model's own surface.  The gargantua's absmax - absmin is greater than that of the agrunt.
+
+removeAllMonsters - deletes all non-player monsters. Good for reducing printout spam.
+
+drawPathTrack # - draws the specified path_track. ID determined by spawn order.
+~draws a vertical green or red line at this path_track's origin, dependong on whether the SF_PATH_DISABLED spawn flag is not or is present accordingly.
+~draws a yellow line from this path_track's origin to the previous path_track link's origin, if given.
+~draws a blue line from this path_track's origin to the next path_track link's origin, if given.
+~draws a white line from this path_track's origin to the alternate 
+~Also generates a "report" printout of this path_track, since they can not be seen to be targeted by player crosshairs for reports.
+
+teleportPathTrack # - moves the player to the origin of the path_track of this ID. Turn on noclip first.
+
+drawTrackChange # - draws the specified func_trackchange.
+~draws a cyan (blue-green) line at the func_trackchange's origin. May be obscured or underground. Try teleportTrackChange.
+~draws the top and bottom path_track links exactly like drawPathTrack individal calls.
+~Also generates a "report" of this func_trackchange. This will show its top and bottom path_track link's IDs.
+
+teleportTrackChange # - moves the player to the origin of this teleportTrackChange.
+
+enablepathtrack # - removes the SF_PATH_DISABLED spawn flag, which may be adjusted in real time by target firing or other logic.
+~allows movement if it was blocking, but does not guaranteed related entities like func_trackchange are listening anymore.
+
+disablepathtrack # - adds the SF_PATH_DISABLED spawn flag.
+~blocks a train that tries to pass this path_track.
+
+
+removeItems - Removes everything, including the suit from item_suit (or most other cheat commands).  Includes power canisters.
+removeWeapons - Removes all equipable items (weapon select menu shows all empty slots).  Includes power canisters.
+removeAmmo - remove all ammo in reserve for all ammo types (does not affect weapon clip ammo).
+removeSuit - Remove only the item_suit.
+removepowercanisters - Power canisters.  Really everything in the right-sidebar open during weapon select (longjumpcharge and air tank time too).
+
+
+
+
+NEW SPAWN FLAGS!
+Beams:
+~SF_BEAM_REDUCEDSPARKS - 0x0200.  This beam will spawn half the usual particle balls (in case of partical overflow crashes)
+
+Apache:
+~SF_MONSTER_APACHE_CINBOUNDS - 1024.  This apache has a more accurate hitbox for sitting on the ground (see CVar "apacheForceCinBounds")
+
+Stukabat:
+~SF_MONSTER_STUKA_ONGROUND - 8.  The stukabat will try to spawn snapped to the ground if it is sufficiently close.  Otherwise, it will try to spawn to a surface above (also if close enough).  If both checks fail, it spawns mid-air, hovering (support for a flying-route may follow?)
+
+Scientist:
+~SF_MONSTER_TALKMONSTER_BLOODY - 8.  whether a scientist (only, yet) spawns with the dirty skin (alpha models) or not.  off = no, on = yes.
+
+HGrunt:
+~SF_HGRUNT_DISALLOW_PROMOTION - 8. causes an HGrunt to not allow itself to be replaced with an HAssault (commando version) at map / level start.
+                                   By default, one hgrunt in a squad is selected to be replaced with an HAssault if no other HAssault is found at mapstart.
+
+
+OTHER FLAGS (general):
+~Squad leader - 32.  Space that leaders of squads seem to use (declared "leader" by the map), so best not use this for squad-monsters for any other purpose.
+~SF_MONSTER_DYNAMICSPAWN - 2^30, or "2 to the 30th".  Enemies spawned in real-time, like by the player's spawn commands, get this tag.  Unverified if those spawned by other means (other NPCs, Gonarch?) also receive it.
+
+~SF_PICKUP_NOREPLACE - 8 - Used to tell a spawned weapon (snark, chumtoad) not to replace itself with the walkable version. This is also to stop the version spawned by a walkable from wanting to spawn.
+
+
+
+
+UNRESOLVED EXTERNAL COMPILATION ERRORS NOTE
+...also, I feel that, for any future scripters, a good note is that a REALLY confusing error is when the compiler complains about an "unresolved external symbol" (IE, telling it to expect a method by name / preliminary details, like what args to accept, but never defining it), despite doing EXACTLY that.       It is often because of script that compiles both server-side AND client-side (some .h file),  so the server-side's implementations were likely handled (.cpp file included), but the client-side WASN'T (.cpp file excluded), even if the client-side is completely unused (usually the case).   So do what the dev's did: in hl_baseentity.cpp,   a ton of the same events are just dummied (same identification stuff, do nothing).    This kind of thing is VERY frustrating to find out for the first time..
+~Note that this should only happen in script that is run by both the client and server (usually, only the server needs to do anything), so only methods called in script run client / serverside need to be dummied client-side.  If unsure, just try to dummy anyways and see if it complains about not seeing it.  You may need to separate the prototyping (class stuff) from the implementations (what methods do) to inherit from serverside .h files to get the needed prototypes in scope (getting implementations multiple times causes tons of errors!).
+
+
+
+
+
+
+
+GOING TO NEW MAP NO LONGER NEEDED FOR SV_CHEATS CHANGES TO TAKE EFFECT!
+Yep, change "sv_cheats" at anytime and it's effects will apply instantly.
+You can spawn things immediately after loading a game, provided sv_cheats was 1 prior to saving it.
+This is because of changes in "client.cpp" and "player.cpp" that check "sv_cheats" and update "g_flWeaponCheat", the determiner of several console commands, namely give & impulse commands, upon using a command involving "g_flWeaponCheat".  Before, only loading a new map triggered that update.
+
+
+NEW SPAWNNABLES
+item_antidote (already there, but your HUD shows it where the emptying-bucket symbol is).  Likely used for stopping continuing toxic - damage effects.
+item_adrenaline (cloned from antidote, uses w_adrenaline.mdl for the in-game pickup-able).  Likely used to give the player a jumpstart at death (not-gibbed).
+item_radiation (same idea s the above.  A syringe for radiation treatment, stopping continuing damage of that kind.  Uses the w_rad.mdl model.
+~The above have no funciton / way of being used.  The antidote has some script in player.cpp that relates to stopping longer-lasting toxic damage, but I don't know of a way to trigger that / use an antidote.
+~Same story for the adrenaline: some mentioning of it, not used.
+~All items use the antidote's suit voice "antitoxin levels 100%" or something like that.  Search for others?
+item_longjumpcharge (a clone of the "item_longjump" that gives one "long jump charge" instead of the long jump ability, which is now implied always on, but requires said charges to work).
+
+
+
+Also, experiment with removed enemys, like monster_bloater, monster_rat (or maybe just rat), etc, since most models are now precached on map start.
+
+
+
+
+
+Noteworthy new methods:
+CBaseEntity::precacheAll() in cbase.cpp
+This method is called by "world.cpp"'s CWorld :: Precache method, since that method ends up getting called upon loading a saved game or going to a new map.
+It effectively makes any resources (models, sounds, textures) listed pre-cached and available in any map.
+It is the result of pasting the contents of many entity's precache lists from across the project into this method, then filtering that to remove any copies to make it take less lines (halved in size).  Some entities precache the same things as others, like a zombie claw sound effect for a generic swipe sound.
+If you want to see the list before the duplicate reduction, say so.
+If you spawn an entity and the game crashes, check the error relating to precaching and report what you tried to spawn, along with what the error says.  Adding that entity's precache list / adding particular precache statements to the indicated file should fix that.
+
+PRECACHE ERROR
+NOTE::: There seem to be two prominent types of precache errors.
+
+1) One from loading too many entities:
+Host_Error: PF_precache_sound_I: Sound 'X' failed to precache because the item count is over the 512 limit
+~This error happened because too much stuff was precached.  Try turning "precacheAll" off (that's CVar now) to solve this.
+~Too much stuff is precached because this particualr map may have a lot of stuff precached already (even sounds).
+~But, turning off precacheAll makes the next error possible:
+
+2) One from attempting to create (almost always player spawning) something the map has not precached ahead of time:
+Host_Error: PF_precache_model_I: 'X' Precache can only be done in spawn functions
+
+So, the best idea is to find a place that has few entities precached (most maps in the training course seem okay), turn on precacheAll, save/reload, spawn away.
+In most of the game, go with "precacheAll" off, but if you do need it on, request a skimmed-down version that has what you need.
+
+IMPORTANT: either of the above precache errors will send you back to the main menu.  
+Don't load any maps (or load / start a game), because the precache error can cause some rather nasty clientside glitches.  Just restart the game.
+Best change "precacheAll" in the menu, in a level itself should be okay though.
+
+
+
+
+
+
+Chud::drawAdditiveFilter
+~clientside: in hud.cpp
+called in place of "SPR_DrawAdditive", but accepts the same vars.
+Will draw whatever it was meant to, and draw the broken-transparency on top of it if "showBrokenHUDAlpha", a reference to the cvar, is true.
+
+CHudHealth::deriveColorFromHealth
+~clientside: in health.cpp
+sets the r, g, b arguments (incoming as addresses to the vars they refer to in an outside context) depending on a split formula.  Color ends up traversing from green to yellow from 100 to 70, and yellow to red (orange inbetween) from 70 to 0.  The midpoint (70, the var "yellowMark") can be changed gracefully.
+
+
+CEgon::ItemPreFrame in egon.cpp
+The method happens right before every frame and handles what to do if the player holds the secondary attack control (run until the animation to toggle b/w primary and secondary is done), is flexibile for being interrupted / cancled by releasing.
+
+
+About the glock silencer:
+glock silencer now working!  CVars related to whether it is currently "on" or not are no longer necessary.
+Just see "wpn_glocksilencer"
+
+
+
+
+
+WORTH MENTIONING
+major changes to "CHud::DrawHudNumber" (in hud_redraw.cpp) to accept the "fontID" integer argument.
+Between 0, 1, and 2, draws the standard, boxed, and tiny fonts respectively.
+~OUT OF DATE, much has been added, see this method for yourself.
+
+
+
+
+
+COMMUNICATING BETWEEN THE SERVER AND THE CLIENT
+I haven't done much testing with this, but this format can be used to send arguments to methods between places usually unreachable (example from player.cpp shown):
+
+MESSAGE_BEGIN( MSG_ONE, gmsgBattery, NULL, pev );
+	WRITE_SHORT( (int)pev->armorvalue);
+MESSAGE_END();
+
+This works anywhere in methods where you want to send an argument (pev->armorvalue) to a method elsewhere, provided a few things are setup.
+
+Top-level, not particular to any method (found in player.cpp):
+int gmsgBattery = 0;
+
+Inside "LinkUserMessages" of player.cpp (I assume other places called in a similar fashion work):
+gmsgBattery = REG_USER_MSG( "Battery", 2);
+..."MsgFunc_Battery" will be the name of the method the signal "gmsgBattery" connects to.  It's number is rather arbitrary, more of a separate ID given to it.  The "MsgFunc_" part is implied and should not show up here, and will make more sense later.
+
+Then, you need to setup a place to receive the message.  The client's "battery.cpp" file has the following:
+
+Top-level (yep, semicolon not required):
+DECLARE_MESSAGE(m_Battery, Battery)
+
+"m_Battery" is the particular instance of some class that has the method to be received.
+"Battery" should be the exact same thing from "REG_USER_MSG( "Battery"...;", the "Battery".
+
+Then, this, "CHudBattery::Init", from battery.cpp:
+HOOK_MESSAGE(Battery);
+
+It is another part of connecting the method to the external call.  Again, same "Battery".
+
+And finally, "int CHudBattery:: MsgFunc_Battery", also battery.cpp, is the method to be reached upon the call.
+These two lines in that method seem to be the most significant:
+BEGIN_READ( pbuf, iSize );
+int x = READ_SHORT();
+
+I think "BEGIN_READ( pbuf, iSize );" is required for getting any arguments sent from the external call, and "x = READ_SHORT();" gets the first argument (int).
+That gets the "pev->armorvalue" sent much further above.
+All in all, the player's armor (server) ends up connected to what's displayed onscreen (the client).
+
+
+
+
+
+
+
+
+
+MANAGING / CREATING EVENTS
+It seems that events are a convenient way for server-side script to access client-side script, which certainly has its benefits.
+The best example of its use is to trigger animation events for the first-person view from the server's logic (just fired?  Play the recoil, make bullet decal, etc.).
+However, it can be used more simply to just call a method in hl_evdlm.cpp that is clientside.
+
+To do this (one way that's worked)...
+1. Declare a number to represent the event in a place that is compiled relatively early (to ensure most places you may want it will have access to it at their time of compile).
+~Example: goto "combat.cpp", one such place.  Anywhere in top-level scope (but to stay organized, put it under "MODDD - CUSTOM EVENTS HERE"), add your new event var in a new line:
+	unsigned short g_EVENTNAME;
+~That's all, but feel free to refer to your var here in combat.cpp if it is needed.  For anywhere else, follow step 4 first in that file.
+2. That number var needs to be used to store this event as an ID (handled by the engine).  Events are linked b/w the server and client by files, but it seems fine if the file is completely empty.
+~Goto client.cpp's "ClientPrecache" method.  At the bottom, you should see "MODDD - LINK EVENTS TO FILES, SERVERSIDE".  Insert a line like this:
+	g_EVENTNAME = PRECACHE_EVENT( 1, events/EVENTNAME.sc);
+~I haven't tested with a missing file, so you should go to the mod folder (<half-life dir>/AbsoluteZero), to the "events" folder, and adding "EVENTNAME.sc" as a file.   Just make a new text document, rename it to "EVENTNAME", and make its extension ".sc".  Enable common file extensions (in Windows, under folder options) on your system if this new text document is missing its standard ".txt" to be changed.
+3. Still in client.cpp, there is one more step here.  Near the top, after any #include lines (just a preference, mostly), notice "MODDD - including event ID's".  Make a line like this:
+	extern unsigned short g_EVENTNAME;
+~This tells the compiler to expect a top-level var of this name and type to be present by the time compilation reaches this file.  This is needed to ensure you are editing the exact same var.  Otherwise, edits done in this file (precaching the event to link / use it) would never translate over to any other files.  Missing it altogether would make the compiler give up on "unknown symbol g_EVENTNAME".
+4. Apply step #3 to any file (generally serverside .cpp files specific to objects / broad types like "weapons") to make this event available.
+5. Now, to call the event, insert this line in the method where the event should be called:
+	PLAYBACK_EVENT_FULL (FEV_GLOBAL, NULL, g_EVENTNAME, 0.0, (float *)&SOMELOCATION, (float *)&SOMEDIRECTION, 0.0, 0.0, 0, 0, FALSE, FALSE);
+~WOA, What!  Let's break that down...
+~FEV_GLOBAL  - unsure, but no issues with it, see "event_flags.h" for other event flags, fool around if you want to later.
+~NULL        - this spot is a reference to the thing calling the method.  For some events, this is unnecessary, so just send nothing: NULL.  However, weapon-firing events care about who fired it, so those would send "m_pPlayer->edict()" instead.
+~g_EVENTNAME - your event index that was declared in combat.cpp (or some other early-compiling place), and linked to the file for use in "client.cpp".  If the compiler complains about it being unavailable, follow step 4 for this file (but still make sure the other steps have been followed).
+~0.0         - delay before playing the event.  I haven't tested around much to see if its intuitive (in GoldSource, trust NOTHING, relying on assumptions rarely turns out well).
+~(float *)&SOMELOCATION - This is referring to some Vector (series of 3 numbers) declared earlier.  It must be converted to a float pointer to be interpreted as an array of 3 floats (hence the cast, the  "(float *)" part).  If you already are using an array of 3 floats, skip that cast, as well as the "&", since getting the address of an array is redundant.
+~(float *)&SOMEDIRECTION - Same as before, but this is often used for sending generated projectiles / particles / something contextually sensitive in a direction (if used that way).  If this is indeterminable / unavailable, just send "Vector(0,0,0)" in place of "SOMEDIRECTION" to send all 0's, consider randomizing the direction in the actual event later if particles should fly around from the source.
+0.0, 0.0, 0, 0, FALSE, FALSE
+~Talking about these at the same time, because there's not much to it.  These are pairs of numbers of the same type: float (decimals), int (whole #'s), and Booleans (0 or 1, FALSE or TRUE).
+~They can be used by the event for logic.  For instance, the alpha-sparks effect uses the first integer (3rd argument here) to denote the number of particles to spawn.  This way, two separate events need not be created for such a trivial difference in logic.
+~If unused, just skip them and use 0-like values.  Straight 0's would have been okay, but this makes it more clear what's what (don't send floats in places where whole #'s are expected, unless you want to lose the decimal to truncation, bool's don't fare well with values other than 0 or 1 without a firm grasp of boolean logic, etc.)
+OKAY.  So the server can now find our event and call it.   But what will the client do?  It doesn't know how to understand the event!  So, load it from there too, and define what to do when this event is called!
+6. goto "hl_events.cpp".  Scroll down a bit to see several events prototype'd as "void EV_something( ...) ".  Look near the bottom for the customs that have been added already.
+~Add a line like this (but take note of the end bracket "}" there.  Place this line BEFORE that, make new lines if you have to):
+	void EV_EVENTNAME (struct event_args_s *args);
+~Also, note that this name does NOT need to match up with the server-side one exactly.  Events are linked b/w the server/client by the file, not by having the same name as their client / server counterparts (but you can still do this).
+7. Still in "hl_events.cpp",  goto the bottom.  Also before that "}", insert this line:
+	gEngfuncs.pfnHookEvent( "events/EVENTNAME.sc",				EV_EVENTNAME );
+~of course, the file part (EVENTNAME.sc) does have to match your named, empty file in the "AbsoluteZero/events" folder.  The right-hand part must match the name of the event declared above.
+
+
+8.  Getting close.  Goto "ev_hldm.cpp".  Scroll down a bit below like before and, again, notice the other custom events.  Add a line like this (again, regard the "}", before that):
+void EV_EVENTNAME( event_args_t* args);
+
+9.  Still in ev_hldm.cpp, go to the very bottom (preferrably, but between most methods should be fine too) and make a new method like this:
+void EV_EVENTNAME (event_args_t *args)
+{
+
+}
+~...And THIS is where the event will actually do something from the client's perspective!
+Some things can be done from the client that are impossible / harder to pull off on the server.
+Some common pointers though:
+~It IS kinda important to actually use some of the stuff send (location, direction (possibly), intended parameters, etc.).  To do this, use lines like these:
+args->origin
+args->angles
+args->iparam1
+args->iparam2
+args->fparam1
+args->fparam2
+args->bparam1
+args->bparam2
+...There may be others, see "event_args.h" for all things available to the "args" var (but only rely on things that you expect the server to actually send as non-zero values.  Why treat a var that's always 0 as a factor?).
+Also, referring to models (or sprites, this works for both, interestingly) is very useful to do at runtime with a line like this:
+int someModel = gEngfuncs.pEventAPI->EV_FindModelIndex( "sprites/MODELNAME.mdl" );
+(note that sprites end in the ".spr" extension.  No difference in use though).
+This "someModel" var can be given to methods that require a model, like several effect methods in "r_efx.h".
+NOTE that you need to have precached this event already at the time the map was loaded in order to use it, or else the effect will likely fail to show up!  A good place to precache most things is "client.cpp" in "ClientPrecache" (again).
+~So, in our case, to precache "MODELNAME":
+PRECACHE_MODEL( "models/MODELNAME.mdl" );
+~I believe any "precache" call returns a number (Index) that can be used to hold on to this precached thing, but this probably won't be helpful for you.  I haven't tested, but I don't think that same ID translates well from the server/client message, so it is best to stick with re-getting the server-precached thing anyways like before (the dev's did it this way, I trust it is for a reason).
+
+But, consider testing your event to make sure everything is set up correctly.  Just put a print statement:
+	easyPrintLine("EVENTNAME CALLED!")
+...and see if this shows up when the server-side method you placed the event call in (step #4) is called.  Consider putting a print statement in there too to make sure the server is sending the event message in the first place.
+
+Finally, see other methods for pointers on things that client-side script can do.  Happy hunting!
+
+
+
+SOME NOTES ON THE INHERITENCE HEIRARCY:
+inheritence is used quite a bit throughout this program, but the greatest case of it is for all living game entities
+(enemies, npc's, the player, etc.)
+
+
+
+
+
+METHOD STUBS FOR CLIENT (covers all three classes below)
+hl_baseentity.cpp
+
+CBaseEntity:    cbase.h,        cbase.cpp
+CBaseMonster:   basemonster.h, monsters.h, combat.cpp, monsters.cpp, defaultai.cpp, AI_BaseNPC_Schedule.cpp   (why is this a mess...)
+CBasePlayer:    Player.h   Player.cpp
+
+~also consider "monsterstate.cpp", and "SquadMonster" .h & .cpp.
+
+
+DEBUG DIFFERENCES:
+Note that compiling with "Debug" (as opposed to "Release") has some sublte differences, such as some extra
+console messages that can print out for AI failures and sparks appearing above the heads of NPCs that fail
+to perform a task, can't get a schedule, whichever.
+The yellow dots that appear on badly placed enemies (spawned partially in a wall, not enough room, can't be 
+auto-adjusted) always appear regardless of debug or release compiling, and regardless of whether the user
+starts the game with the "-dev" flag on.
+As for the script, see "schedule.cpp" and search for "UTIL_Sparks", a line that, further above, depends on
+the constant "DEBUG" existing.  This constant ONLY exists when compiling in "Debug", but not directly.
+Go to dlls/extdll.h and, near the top, there is
+#ifdef _DEBUG
+#define DEBUG 1
+#endif
+...I can only imply that "#ifdef _DEBUG" is referring to a variable (_DEBUG, separate from DEBUG) that only exists
+when compiling in "Debug".  If so, it then creates "DEBUG".
+Or, in other words, "_DEBUG" is a constant created (or marked as "true") when compiling in "Debug", while "DEBUG"
+is a similarly named constant created just by the dev's of Half Life.
+Why?  No idea.  But know that both mean pretty much the same thing, and the 2nd one pretty much just exists to fuck up
+searches.  (oh yea, do I have a chip on my shoulder).
+
+Anyhow, do not mix up this sparking with the supposed, but definitely irrelevant, "PATH_SPARKLE_DEBUG" that is defined
+(or was) in trains.h.  It was found, commented out by the developers, and so is never on, regardless of compiling mode.
+I tried turning it on and can not notice any difference.  Then again, I never noticed the sparks on NPCs, so that 
+doesn't really mean anything.
+"PATH_SPARKLE_DEBUG" is referred to a few times in "pathcorner.cpp", and one part required some editing to even compile.
+So, who knows, it may be broken because of some "logic" errors (script that is legal, but behaves differently from a 
+misunderstanding b/w the programmer and the compiler / engine).
+
+
+
+
+
+
+
+
+~search by raw text of "not in table" across the files:
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\AI_BaseNPC_Schedule.cpp : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\cbase.cpp : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\debughl\cbase.obj : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\debughl\hl.dll : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\debughl\schedule.obj : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\Releasehl\cbase.obj : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\Releasehl\hl.dll : CONTAINS: "not in table".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\schedule.cpp : CONTAINS: "not in table".
+
+
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\barney.cpp : CONTAINS: "= monsterstate_prone".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\hgrunt.cpp : CONTAINS: "= monsterstate_prone".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\monsters.cpp : CONTAINS: "= monsterstate_prone".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\monsterstate.cpp : CONTAINS: "= monsterstate_prone".
+C:\Users\Administrator\Desktop\SM\HLS1 AZ\dlls\talkmonster.cpp : CONTAINS: "= monsterstate_prone".
+
+useful?
+someMonster = MonsterEDICT->MyMonsterPointer();
+
+
+
+
+NOTE: types of "edict_t*" can be converted to a more workable class, usually like this:
+
+CBaseEntity* someEntity = CBaseEntity::Instance(someEdict);
+...experiment with other classes, cast if necessary.
+
+ALSO: consider using "postItemFrameThink" instead of "postItemFrame" (same for "preItemFrame") to have more control.  The ordinary "postItemFrame" seems to not get called if the player has recently fired (waiting for the delay made from "m_flFireDelay to pass).  "postItemFrameThink", however, happens regardless of that (again, same for pre).
+
+
+
+Need to add a command tied by console (IE, call a method by typing something in console, no varaibles, by "pfnAddCommand")?   If it happens to be server-side (to get access to things client-side, the only place to do "pfnAddCommand", can't get to), consider making a method client-side anyways that does this:
+gEngfuncs.pfnClientCmd("IGNOREmyCVar 1");
+
+then, in client.cpp's (serverside) postFrame method (or anywhere called every frame, maybe "PlayerPostThink"), check to see if "IGNOREmyCVar" (common naming for variables that aren't intended to be changed by the user) has been set to "1", and, if so, do the server-side things needed there.
+
+
+
+
+
+
+
+Play MP3 files in run-time like so:
+mp3 play media/FILENAME.mp3
+
+~unknown if other sub-folders would work the same (alternatives to the "media" folder, that is)
+
+
+
+
+
+
+
+
+
+//////////////////
+SPAWNFLAG NOTES
+
+Damage types from halflife.fgd (see Half-Life model SDK)
+		0 : "GENERIC"
+		1 : "CRUSH"
+		2 : "BULLET"
+		4 : "SLASH"
+		8 : "BURN"
+		16 : "FREEZE"
+		32 : "FALL"
+		64 : "BLAST"
+		128 : "CLUB"
+		256 : "SHOCK"
+		512 : "SONIC"
+		1024 : "ENERGYBEAM"
+		16384: "DROWN"
+		32768 : "PARALYSE"
+		65536 : "NERVEGAS"
+		131072 : "POISON"
+		262144 : "RADIATION"
+		524288 : "DROWNRECOVER"
+		1048576 : "CHEMICAL"
+		2097152 : "SLOWBURN"
+		4194304 : "SLOWFREEZE"
+
+~also see halflife.fgd for how spawnflags are divvied out (to powers of 2 as well).
+~Can issue "halflife.fgd" on request.
+~Common place for halflife.fgd in the sdk:
+  ...\Half-Life SDK\Hammer Editor\fgd\half-life\halflife.fgd
+
+  
+  
+  ...in setting up GUI (script), see the method "AddHudElem" client-side.  It links a given GUI section (ammo, health, etc.) to a place in "m_pHudList", commonly in "init" methods per GUI piece.
+  
+  Also, see method "Redraw" in "hud_redraw.cpp" for where each member of the list has its "draw" method called.
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///SENTENCES TUTORIAL
+///sentences.txt
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+sentences.txt is in <half-life dir>/AbsoluteZero/sound.  You add sounds like this, one per line:
+
+name folder/wavfilenoext wavfilenoext wavfilenoext...
+
+so you just give the folder once, slash, one file, then subsequently only refer to files.  Can not refer to another path, only in the same path, so any sounds for one sentence have to be in the same folder, I believe.  There are options like pitch adjustment, start / end offsets, like   wavfilenoext(s20 e80 p50).  s20 = start 20% in, e80 = end 80% in, p50 = half normal pitch,  unsure what "t" does but it is an option, could be speed without affecting pitch, but glitches at extreme values.  Careful about too many sounds in one sentence as some may be skipped toward the end.
+
+
+~The "entities" console command, present since retail, is certainly something.  Maybe that's useful?
+~Seems to print out the positions of everything that exists in-level.
+
+
+
+
+NOTICE: new spawnables for breakables by these indexes for the .fgd:
+
+spawnobject(choices) : "Spawn On Break" : 0 =
+    [
+        0: "Nothing"
+		...
+		22: "item_antidote"
+		23: "item_adrenaline"
+		24: "item_radiation"
+		25: "item_longjumpcharge"
+	]
+(I'm using actual spawnable names, in design of the FGD, these can be anything more appealing, but what is what matches by number)
+
+
+
+
+
+HIDDEN SAVE SYSTEM INFO: copied to docs for importance.
+
+MAJOR: hidden CVars can now be saved (Release mode only; no CVars are hidden on debug, and save just fine).
+The only way I know of is getting the HL.exe executable path (don't know how to get the mod folder's name,
+in case that is changed beyond what it comes as) and just using that folder.
+
+hiddenMemPrintout
+To see printouts related to the hidden CVar system, turn "hiddenMemPrintout" on.
+
+Unfortunately, the system kind of has to be working already for this to be terribly useful, as this
+CVar is also hidden and can't be changed until you are ingame (when loading is already done).  You
+can see printouts for saving though on editing any hidden CVar.
+
+For instance, ingame, in a release build, in console, try
+sv_germancensorshipship 1
+
+Then exit the game and restart.  It should remember "sv_germancensorshipship" being something other than the
+default of 0.
+
+Files are saved to ...<hl.exe's folder>\absZeroMem.txt
+
+in name - value pairs, like a config value, but this only works for CVars in my format.  Ordinary CVars 
+or other commands cannot be put here, use the usual config.
+
+
+
+IMPORTANT: Cinematics (Scriped_Sequence, check your .fgd) now have a new option for m_fMoveTo.
+Insert a new line like this, after the latest (5):
+		6 : "Instantaneous NOSCRIPT"
+...Same as teleport (4), but this should stop the issue with monsters getting stuck in the "Scripted" state, which turns off AI most of the time.
+
+
+	
+NOTE: not wise to use soundsentencesave for things played rapidly like geiger sounds...  this gets spammed.
+    Sentence or Pitch shift ignored. > 16 playing!
+
+
+
+HELPFUL BUILT-IN CVARS:
+
+r_drawentities (1) - int; can draw models differently to emphasize hitboxes with numbers other than 1.
+ 
+
+
+
+
+ what is "tr.flPlaneDist", where tr is a TraceResult?    What does that even measure.  Nothing uses flPlaneDist.
+
+
+
+When bulletholeAlertStukaOnly is set to 0,   scientists will flee if shots occur close to them.   Otherwise they won't even flinch at long enough of a distance
+(only respond to the AI sounds made by being near the scientist when firing).   Not a problem, just mentioning it.
+
+
+
+
+If running the mod in WON half-life and there is a black bar along the bottom or also along the sides/top of the screen, see the "viewsize" CVar.
+This is also able to be set in the video options as a slider (move 'video size' all the way to the right), or go to console and enter
+    viewsize 120
+
+Should AZ go aheand and default to this instead?  Looks like non-WON doesn't pay any attention to viewsize.
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+DAMNED BE THEE WHO DARES TO SET m_pPlayer->m_flNextAttack YET NEGLECT TO SET m_flNextPrimaryAttack AND/OR m_flNextSecondaryAttack.
+...strangely, setting m_flNextAttack only, especially often when cheat_minimumfiredelay is on it seems, causes 
+the m_flNextPrimary coming in from the server to client at cl_dlls/hl/hl_weapons.cpp to randomly shoot up from
+as it looks like it's counting down (0.5, 0.4, 0.3, 0.2, -> 0.5? ).   Absolutely no idea what this is.
+Maybe the server doesn't even like sending really low m_flNextPrimary values to clientside.
+Could test by enforcing a minimum m_flNextPrimary of 0 and try with m_flNextAttack set only again.
+
+
+
+Also, the player/pl_wade#.wav sounds that play on objects reaching out of bounds areas sometimes
+(map walls) seems to come from reaching areas that change the water-level or play with solid-ness
+in some other way maybe?  no idea, happens on the player turning off noclip too sometimes.
+These sounds are generated by the engine and can't be adjusted/changed/stopped from the codebase.
+That's gggrrrrrrrreeeeeeeeeeaaaaaaaaaattttttt.    Like underwater's gl_fog (or whatever it is) calls
+that override any other attempts.  Except maybe in xash, although fog calls that wouldn't normally work
+in goldsrc work in that at least.
+
+
+For any laginess, look for calls to 'FindRandom', it could do pathfind-checks for multiple points before settling on one.
+The controller now uses it (good for stress-testing AI).  HAssault also uses it when failing pathfinding-related things, usually.
+
+
+Seems a bit odd that melee-focused things (like zombies) will endlessly walk into turrets and miniturrets on the ground
+and never start a melee attack.  Looks to be becase the default CheckMeleeAttack1 (basemonster.cpp) expected the enemy
+to be on the ground (FL_ONGROUND), yet even spawned turrets placed on the ground don't count as that?
+Maybe from having no gravity to touch the ground for the engine to set that.
+Then again the sentry is attackable just fine (has the flag).  Weird.
+But nevermind, onground requirement removed from CheckMeleeAttack1 anyway.
+
+----------------------------------------------------------------------------------------------------------------------------
+IMPORTANT.  Remember how I complained about touch methods seeming to lack a way to get any more info about the actual touch,
+similar to what a UTIL_TraceLine would give?
+Check out this from controller_head_ball.cpp:
+
+void CControllerHeadBall::BounceTouch( CBaseEntity *pOther )
+{
+	Vector vecDir = m_vecIdeal.Normalize( );
+	TraceResult tr = UTIL_GetGlobalTrace( );
+	float n = -DotProduct(tr.vecPlaneNormal, vecDir);
+	vecDir = 2.0 * tr.vecPlaneNormal * n + vecDir;
+	m_vecIdeal = vecDir * m_vecIdeal.Length();
+}
+
+There we go,  UTIL_GetGlobalTrace in Touch methods.  Keep that in mind.
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+emergencyFix ?   Not a whole lot of purpose anymore it seems, may as well delete your hidden
+CVar text file to get a fresh start next time.
+
+
+BIZARRE... 'behavior'.  Not sure what else to call this.
+On some maps, like a1a2, do 'removeAllMonsters'.  Now the shotgun and shotgun ammo spawned before the barney vs. zombie sequence
+will be able to be shifted by moving close to it, noticeable by crouching on top of it, looking down and moving on it slowly.
+It can be pushed off the ammobox where it will fall and clip through the box a bit (centered on the origin without solid collision bounds).
+It even happens on newly spawned shotgun ammo and likely other items.  No idea what causes this behavior here.
+Even removing monsters one-at-a time is unhelpful, it's seemingly random what one removed causes the behavior to start.
+Many other maps with all monsters removed don't do this.
+
+
+BEWARE:  Two similarly named move utilities:
+  UTIL_SetOrigin
+    force the origin to a point, no collision checks;  good for teleports or other placement, but can clip through stuff
+    Still better to use compared to setting pev->origin.z directly (slight fudging pev->origin directly may be ok, like 
+    pushing the z up to break contact with the ground; retail did that)
+  UTIL_MoveToOrigin   
+    Moves the monster from its currnet position to the new one with collision checks, and against the ground
+    (for the right movetype?  FL_FLY or FL_SWIM flags?  unsure what causes ground-snapping)
+    In any case, gorund-snapped or not, it is unable to clip through objects, unless its bounds change after
+    the move to include things it should have not been allowed to get so close to.
+    In other words it puts the origin towards the given point but stops if something collidable interrupts that.
+    May be similar to WALK_MOVE but not interchangeable.
+
+
+Unused engine methods?
+
+#define MAKE_STATIC		(*g_engfuncs.pfnMakeStatic)
+ this might've been made obsolete by 'pev->flags & FL_ONGROUND' or 'pev->groundentity' checks.
+#define ENT_IS_ON_FLOOR	(*g_engfuncs.pfnEntIsOnFloor)
+#define BUILD_SOUND_MSG (*g_engfuncs.pfnBuildSoundMsg)
+

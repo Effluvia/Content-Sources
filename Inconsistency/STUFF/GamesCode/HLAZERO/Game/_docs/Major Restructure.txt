@@ -1,0 +1,9 @@
+
+Some changes in organization have been made from the HL SDK:
+- cl_dll folder and any references or project-related files named after it changed to 'cl_dlls' to mirror the folder the client.dll goes to in the base game.
+- dlls folder project-related files (named hl.*) changed to dlls.*
+- compiled serverside DLL (for example, dlls/Debug/hl.dll) renamed to az.dll, same for other build-related files.
+- debughl and releasehl build folders merged with the Debug and Release build folders, same for the profile build (which isn't a priority; configuration may be removed)
+- Root solution file 'src_dll.sln' converted for Visual Studio 2019 and renamed to 'src_vs19.sln'.
+- Similarly, a VS6 workspace file 'src_vs6.dsw' has been made in the root for linking cl_dlls.dsp and dlls.dsp.  Beware creation of blank 'Debug' or 'Release' folders from building or changing the active configuration (could be a VS6 glitch; seems to be no harm from this)
+- Subfolders in each of the projects for files in large categories (cl_dlls/hud, dlls/entity, dlls/weapon).

@@ -1,0 +1,99 @@
+
+Little problem: It's wonky to be unable to tell whether a difference in elevation at times is just due to
+a difference between the point along the ground and where we tested is too high, or because the other ent is indeed
+in a place that's too high to ever have a satisfying route toward (endlessly running into near its position on the ground,
+as seen standing on the edge of a box right out of a panthereye's reach while it does that).
+This is because the CheckLocalMove in MovePRE goes from this monster's origin right the goal node, which may be placed
+between terrain (since CheckLocalMove allows this for a map-nodeless route).  Often this works fine in a straight-elevation
+path.  However, this point can be through terrain if this monster is deep behind an incline on the high side compared to the
+target or vice versa, because a straight line from 'me' to 'the goal' goes into the ground and comes out of the ramp.
+This causes there to be a difference in 'the point the monster reached from WALK_MOVE' (which does indeed travel down the ramp
+the whole time), and the unreachable point (elevation-wise) that is above or below (into)
+the ground, that gets treated as the Z difference for whether to kill the route or not, when it should've been a flat 0
+difference.  There should only be a difference if the target point (where the enemy is standing now) is indeed above the point
+reached by calling WALK_MOVE.
+Short version: for ground-movers, any build-route CheckLocalMove calls should snap the start/end points to the ground
+(emphasis on the end point), whether that means bringing the end point down to ground-level (started above in mid-air) or
+bringing it up through the map.
+
+To be clear, it is perfectly fine if the end-point to test in CheckLocalMove is separated from the monster by a ramp from
+either point being far behind the upward spot of the ramp.  The problem is that this point must be accurate to where the monster
+would end up on the ramp if the CheckLocalMove were to reach that point (it snaps to the ramp as it moves already).  But we need
+a way to tell if that point reached is accurate to where the goal is, if the goal really is too high or low compared to that point
+(like a monster standing on some boxes).
+
+
+BUT WAIT!  What if the ground is a thin platform (empty space below)?  Then simply having the end point begin in empty space
+leaves things ambigious:  is the 'ground' I would walk over higher or lower than this point?  It almost always works to
+assume starting in mid-air space means, snap to the ground, and starting within the map means, rise through the map, but what if
+there is both ground above (with its own empty space above itself) and below this mid-air space?
+
+Idea:  Depends on whether this is checking for a path from a point to the goal (definite good point) or a 'so-far' point, like
+up to 300 distance in the direction I want to go  (rapid checks done to see if something is in my immediate way to be cheaper).
+If the definite point is known, just snap to the ground where it is, assume it's good. (or rise above the ground if into it anyway?).
+
+Otherwise (general point towards goal, like myOrigin + vecDirTowardsGoal * 300), do some more logic.
+Do a yaw-wise trace toward the goal instead (no Z shift between start and end).  If this doesn't run into anything, snap to the
+ground and use for CheckLocalMove as the end point.  If it hits something, stop there, back up a tiny amount maybe (0.5 units?) trace
+down.
+Nope, although rare, could get tripped up by a ledge on roughly equal to lower Z value compared to where the pathfinder is standing,
+so that backwards a tiny bit and dowards still lands on the ledge which has nothing to do with goind down the ramp below.  BAH.
+
+!!!
+How about, that's really overthinking it.  Just use the blind myOrigin + vecDirTowardsGoal * 300.
+If it is in the map, try to rise through by 100 first.
+If in the air, try to snap to the ground by 100 first.
+If either fails to find the end (rise above the ground or snap to ground below), try the opposite direction.
+If both fail, give up.  (How would a route have lead to this point to even be tried?)
+
+Now with a valid point right above the ground, do another trace to the goal for 100 units (ignore monsters).  If closer to the goal
+than that, pick the goal itself.  (the goal info may need to be separately handled, not in checkLocalMove).
+If unobscurred, it is ok to use this point.  If this runs into map geometry, whoops.  Try the opposite way of earlier
+instead (if this point was from starting in mid-air and snapping to the bottom, look above 100 instead for going through and snapping;
+if this point was from starting in the ground, go below and try to snap to the ground below that).  If this fails to reach
+valid ground, give up.   Otherwise, try the trace toward the goal again.  It passes, ok, use this point as the end.  It fails,  give up.
+!!!
+
+ANOTHER IDEA:  no need for even this.
+In building a route (includes the intended goal), do the Z check as usual.  Having too off of a Z value compared to the target when
+CheckLocalMove's WALK_MOVE calls finally reach the goal is bad.
+
+But if a CheckLocalMove is going towards the goal is a partial distance (myOrigin + vecDirTowardsGoal * 300), ignore the Z check
+completely. Whatever WalkMove reaches over that distance, so long as it's unobstructed, was a valid point.
+
+
+
+
+Take the first crude trace from 'me' to 'the goal' (which made hit map geometry). If it's a clear shot, don't do
+anything, just the usual snap-to-ground just in case.  If something is in the way, don't use the end point.  Do another trace
+that is yaw-wise only (no Z change, but in the direction of me to my goal against the ground; 2D).  If that runs into something
+<cut>
+
+
+
+Attempting to snap to the ground in such a case will just go deeper into the ground.
+Idea: Check to see if the target point is solid (fStartSolid)
+
+Alternate idea below (but it won't be used, far hard to reliably prove works all the time).
+
+IDEA:  Could a special CheckLocalMove (like during route-building methods) check for changes in elevation as it does
+the steps, and on noticing one, marks the point where the slope changed for planting a node on?
+On going down a ramp, the front points of the steps are more important.
+On goind up a ramp, the behind points of the steps are more important.  This removes the chance of a trace
+from either low/high extent of the ramp to the other from running into the ramp itself.
+
+          node here
+           |
+            ________
+           /
+          /
+---------/
+        |  and above here
+
+That way, CheckLocalMove doesn't try to go through the ramp on checking between an ent on the low-end of the ramp behind
+something far behind the high point of the ramp, or try going through the floor on checking between an ent far behind the
+high point of the ramp and something on the low-end of the ramp. 
+Unfortunately, has some minor flaws.  Anywhere with lots of uneven changes in elevation could go crazy or never have a clear
+mark for the begin/end points of any one 'ramp'.
+
+
