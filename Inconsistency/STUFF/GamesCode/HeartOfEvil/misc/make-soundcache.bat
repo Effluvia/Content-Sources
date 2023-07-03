@@ -1,1 +1,0 @@
-@"c:\Program Files (x86)\Steam\Steam.exe" -applaunch 243730 -game "C:\Programming\heart of evil 2013\sp\game\hoe" +sv_cheats 1 -sw -console -condebug -nocrashdialog -makereslists -usereslistfile maplist.txt +mat_picmip 2 +r_lod 3 -autoconfig
