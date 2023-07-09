@@ -1,0 +1,144 @@
+﻿Build started 2/23/2018 3:08:07 PM.
+     1>Project "C:\HLMods\Duke\projects\vs2010\hldll.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\dlls /I..\..\engine /I..\..\common /I..\..\pm_shared /I..\..\game_shared /I..\..\public /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D QUIVER /D VOXEL /D QUAKE2 /D VALVE_DLL /D CLIENT_WEAPONS /D _WINDLL /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\hldll\int\\" /Fd"Debug\hldll\int\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\dlls\player.cpp
+         player.cpp
+     1>c:\hlmods\duke\dlls\player.cpp(1047): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1049): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1050): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\hlmods\duke\dlls\player.cpp(1075): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1077): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1078): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\hlmods\duke\dlls\player.cpp(1775): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1776): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1794): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1824): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(1837): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(2334): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\hlmods\duke\dlls\player.cpp(2335): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\hlmods\duke\dlls\player.cpp(4311): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(253) : see declaration of 'stricmp'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\dlls\hl.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\HLMods\Duke\projects\vs2010\..\..\dlls\hl.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\dlls\hl.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\dlls\hl.lib" /MACHINE:X86 /DLL Debug\hldll\int\hldll.res
+         Debug\hldll\int\aflock.obj
+         Debug\hldll\int\agrunt.obj
+         Debug\hldll\int\airtank.obj
+         Debug\hldll\int\animating.obj
+         Debug\hldll\int\animation.obj
+         Debug\hldll\int\apache.obj
+         Debug\hldll\int\barnacle.obj
+         Debug\hldll\int\barney.obj
+         Debug\hldll\int\bigmomma.obj
+         Debug\hldll\int\bloater.obj
+         Debug\hldll\int\bmodels.obj
+         Debug\hldll\int\bullsquid.obj
+         Debug\hldll\int\buttons.obj
+         Debug\hldll\int\cbase.obj
+         Debug\hldll\int\client.obj
+         Debug\hldll\int\combat.obj
+         Debug\hldll\int\controller.obj
+         Debug\hldll\int\crossbow.obj
+         Debug\hldll\int\crowbar.obj
+         Debug\hldll\int\defaultai.obj
+         Debug\hldll\int\doors.obj
+         Debug\hldll\int\effects.obj
+         Debug\hldll\int\egon.obj
+         Debug\hldll\int\explode.obj
+         Debug\hldll\int\flyingmonster.obj
+         Debug\hldll\int\func_break.obj
+         Debug\hldll\int\func_tank.obj
+         Debug\hldll\int\game.obj
+         Debug\hldll\int\gamerules.obj
+         Debug\hldll\int\gargantua.obj
+         Debug\hldll\int\gauss.obj
+         Debug\hldll\int\genericmonster.obj
+         Debug\hldll\int\ggrenade.obj
+         Debug\hldll\int\globals.obj
+         Debug\hldll\int\gman.obj
+         Debug\hldll\int\handgrenade.obj
+         Debug\hldll\int\hassassin.obj
+         Debug\hldll\int\headcrab.obj
+         Debug\hldll\int\healthkit.obj
+         Debug\hldll\int\hgrunt.obj
+         Debug\hldll\int\hornet.obj
+         Debug\hldll\int\hornetgun.obj
+         Debug\hldll\int\houndeye.obj
+         Debug\hldll\int\h_ai.obj
+         Debug\hldll\int\h_battery.obj
+         Debug\hldll\int\h_cine.obj
+         Debug\hldll\int\h_cycler.obj
+         Debug\hldll\int\h_export.obj
+         Debug\hldll\int\ichthyosaur.obj
+         Debug\hldll\int\islave.obj
+         Debug\hldll\int\items.obj
+         Debug\hldll\int\leech.obj
+         Debug\hldll\int\lights.obj
+         Debug\hldll\int\maprules.obj
+         Debug\hldll\int\monstermaker.obj
+         Debug\hldll\int\monsters.obj
+         Debug\hldll\int\monsterstate.obj
+         Debug\hldll\int\mortar.obj
+         Debug\hldll\int\mp5.obj
+         Debug\hldll\int\multiplay_gamerules.obj
+         Debug\hldll\int\nihilanth.obj
+         Debug\hldll\int\nodes.obj
+         Debug\hldll\int\observer.obj
+         Debug\hldll\int\osprey.obj
+         Debug\hldll\int\pathcorner.obj
+         Debug\hldll\int\plane.obj
+         Debug\hldll\int\plats.obj
+         Debug\hldll\int\player.obj
+         Debug\hldll\int\python.obj
+         Debug\hldll\int\rat.obj
+         Debug\hldll\int\roach.obj
+         Debug\hldll\int\rpg.obj
+         Debug\hldll\int\satchel.obj
+         Debug\hldll\int\schedule.obj
+         Debug\hldll\int\scientist.obj
+         Debug\hldll\int\scripted.obj
+         Debug\hldll\int\shotgun.obj
+         Debug\hldll\int\singleplay_gamerules.obj
+         Debug\hldll\int\skill.obj
+         Debug\hldll\int\sound.obj
+         Debug\hldll\int\soundent.obj
+         Debug\hldll\int\spectator.obj
+         Debug\hldll\int\squadmonster.obj
+         Debug\hldll\int\squeakgrenade.obj
+         Debug\hldll\int\subs.obj
+         Debug\hldll\int\talkmonster.obj
+         Debug\hldll\int\teamplay_gamerules.obj
+         Debug\hldll\int\tempmonster.obj
+         Debug\hldll\int\tentacle.obj
+         Debug\hldll\int\triggers.obj
+         Debug\hldll\int\tripmine.obj
+         Debug\hldll\int\turret.obj
+         Debug\hldll\int\util.obj
+         Debug\hldll\int\weapons.obj
+         Debug\hldll\int\world.obj
+         Debug\hldll\int\hl_wpn_glock.obj
+         Debug\hldll\int\xen.obj
+         Debug\hldll\int\zombie.obj
+         Debug\hldll\int\voice_gamemgr.obj
+         Debug\hldll\int\pm_debug.obj
+         Debug\hldll\int\pm_math.obj
+         Debug\hldll\int\pm_shared.obj
+         hldll.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\dlls\hl.dll
+     1>Done Building Project "C:\HLMods\Duke\projects\vs2010\hldll.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.03

@@ -1,0 +1,99 @@
+﻿Build started 2/23/2018 2:53:48 PM.
+     1>Project "C:\HLMods\Duke\projects\vs2010\hl_cdll.vcxproj" on node 3 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\dlls /I..\..\cl_dll /I..\..\public /I..\..\common /I..\..\pm_shared /I..\..\engine /I..\..\utils\vgui\include /I..\..\game_shared /I..\..\external /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D CLIENT_DLL /D CLIENT_WEAPONS /D HL_DLL /D _WINDLL /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\hl_cdll\int\\" /Fd"Debug\hl_cdll\int\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\dlls\crowbar.cpp
+         crowbar.cpp
+     1>c:\hlmods\duke\dlls\crowbar.cpp(444): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\cl_dlls\client.dll" /INCREMENTAL /NOLOGO ..\..\utils\vgui\lib\win32_vc6\vgui.lib wsock32.lib ..\..\lib\public\sdl2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\cl_dlls\client.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\cl_dlls\client.lib" /MACHINE:X86 /DLL Debug\hl_cdll\int\ammo.obj
+         Debug\hl_cdll\int\ammohistory.obj
+         Debug\hl_cdll\int\ammo_secondary.obj
+         Debug\hl_cdll\int\battery.obj
+         Debug\hl_cdll\int\cdll_int.obj
+         Debug\hl_cdll\int\com_weapons.obj
+         Debug\hl_cdll\int\death.obj
+         Debug\hl_cdll\int\demo.obj
+         Debug\hl_cdll\int\entity.obj
+         Debug\hl_cdll\int\events.obj
+         Debug\hl_cdll\int\ev_common.obj
+         Debug\hl_cdll\int\ev_hldm.obj
+         Debug\hl_cdll\int\flashlight.obj
+         Debug\hl_cdll\int\GameStudioModelRenderer.obj
+         Debug\hl_cdll\int\geiger.obj
+         Debug\hl_cdll\int\health.obj
+         Debug\hl_cdll\int\hl_baseentity.obj
+         Debug\hl_cdll\int\hl_events.obj
+         Debug\hl_cdll\int\hl_objects.obj
+         Debug\hl_cdll\int\hl_weapons.obj
+         Debug\hl_cdll\int\hud.obj
+         Debug\hl_cdll\int\hud_bench.obj
+         Debug\hl_cdll\int\hud_benchtrace.obj
+         Debug\hl_cdll\int\hud_msg.obj
+         Debug\hl_cdll\int\hud_redraw.obj
+         Debug\hl_cdll\int\hud_servers.obj
+         Debug\hl_cdll\int\hud_spectator.obj
+         Debug\hl_cdll\int\hud_update.obj
+         Debug\hl_cdll\int\input.obj
+         Debug\hl_cdll\int\inputw32.obj
+         Debug\hl_cdll\int\interpolation.obj
+         Debug\hl_cdll\int\in_camera.obj
+         Debug\hl_cdll\int\menu.obj
+         Debug\hl_cdll\int\message.obj
+         Debug\hl_cdll\int\saytext.obj
+         Debug\hl_cdll\int\statusbar.obj
+         Debug\hl_cdll\int\status_icons.obj
+         Debug\hl_cdll\int\StudioModelRenderer.obj
+         Debug\hl_cdll\int\studio_util.obj
+         Debug\hl_cdll\int\text_message.obj
+         Debug\hl_cdll\int\train.obj
+         Debug\hl_cdll\int\tri.obj
+         Debug\hl_cdll\int\util.obj
+         Debug\hl_cdll\int\vgui_ClassMenu.obj
+         Debug\hl_cdll\int\vgui_ControlConfigPanel.obj
+         Debug\hl_cdll\int\vgui_CustomObjects.obj
+         Debug\hl_cdll\int\vgui_int.obj
+         Debug\hl_cdll\int\vgui_MOTDWindow.obj
+         Debug\hl_cdll\int\vgui_SchemeManager.obj
+         Debug\hl_cdll\int\vgui_ScorePanel.obj
+         Debug\hl_cdll\int\vgui_ServerBrowser.obj
+         Debug\hl_cdll\int\vgui_SpectatorPanel.obj
+         Debug\hl_cdll\int\vgui_TeamFortressViewport.obj
+         Debug\hl_cdll\int\vgui_teammenu.obj
+         Debug\hl_cdll\int\view.obj
+         Debug\hl_cdll\int\voice_status.obj
+         Debug\hl_cdll\int\parsemsg.obj
+         Debug\hl_cdll\int\crossbow.obj
+         Debug\hl_cdll\int\crowbar.obj
+         Debug\hl_cdll\int\egon.obj
+         Debug\hl_cdll\int\gauss.obj
+         Debug\hl_cdll\int\handgrenade.obj
+         Debug\hl_cdll\int\hornetgun.obj
+         Debug\hl_cdll\int\mp5.obj
+         Debug\hl_cdll\int\python.obj
+         Debug\hl_cdll\int\rpg.obj
+         Debug\hl_cdll\int\satchel.obj
+         Debug\hl_cdll\int\shotgun.obj
+         Debug\hl_cdll\int\squeakgrenade.obj
+         Debug\hl_cdll\int\tripmine.obj
+         Debug\hl_cdll\int\hl_wpn_glock.obj
+         Debug\hl_cdll\int\vgui_checkbutton2.obj
+         Debug\hl_cdll\int\vgui_grid.obj
+         Debug\hl_cdll\int\vgui_helpers.obj
+         Debug\hl_cdll\int\vgui_listbox.obj
+         Debug\hl_cdll\int\vgui_loadtga.obj
+         Debug\hl_cdll\int\vgui_scrollbar2.obj
+         Debug\hl_cdll\int\vgui_slider2.obj
+         Debug\hl_cdll\int\voice_banmgr.obj
+         Debug\hl_cdll\int\pm_debug.obj
+         Debug\hl_cdll\int\pm_math.obj
+         Debug\hl_cdll\int\pm_shared.obj
+         Debug\hl_cdll\int\interface.obj
+         ..\..\lib\public\game_controls.lib
+         hl_cdll.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Half-Life\halfnuked\cl_dlls\client.dll
+     1>Done Building Project "C:\HLMods\Duke\projects\vs2010\hl_cdll.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.88
