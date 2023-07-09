@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC1DD765-CFEB-47DA-A2EA-9F1E20A24272}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>hl_cdll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(HALF_LIFE_DIR)\half_payne\cl_dlls\</OutDir>
+    <TargetName>client</TargetName>
+    <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(HALF_LIFE_DIR)\half_payne\cl_dlls\</OutDir>
+    <TargetName>client</TargetName>
+    <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CLIENT_DLL;CLIENT_WEAPONS;HL_DLL;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(WindowsSdkDir)Include\um;..\..\dlls;..\..\cl_dll;..\..\public;..\..\common;..\..\pm_shared;..\..\engine;..\..\utils\vgui\include;..\..\game_shared;..\..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4091; 4996</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\wsock32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\kernel32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\user32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\gdi32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\winspool.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\comdlg32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\advapi32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\shell32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\ole32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\oleaut32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\uuid.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\odbc32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\odbccp32.lib;$(VC_LibraryPath_VC_x86_desktop)\delayimp.lib;..\..\utils\vgui\lib\win32_vc6\vgui.lib;..\..\lib\public\sdl2.lib;..\..\lib\public\OpenGL32.lib;..\..\lib\public\bass.lib;..\..\lib\public\bass_fx.lib</AdditionalDependencies>
+      <BaseAddress>
+      </BaseAddress>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <AdditionalOptions>/SAFESEH:NO /DELAYLOAD:bass.dll /DELAYLOAD:bass_fx.dll %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Post-Build Event</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CLIENT_DLL;CLIENT_WEAPONS;HL_DLL;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(WindowsSdkDir)Include\um;..\..\dlls;..\..\cl_dll;..\..\public;..\..\common;..\..\pm_shared;..\..\engine;..\..\utils\vgui\include;..\..\game_shared;..\..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4091; 4996</DisableSpecificWarnings>
+      <AdditionalOptions>/Zo %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\wsock32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\kernel32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\user32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\gdi32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\winspool.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\comdlg32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\advapi32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\shell32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\ole32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\oleaut32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\uuid.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\odbc32.lib;$(WindowsSdkDir)\Lib\$(TargetPlatformVersion)\um\x86\odbccp32.lib;$(VC_LibraryPath_VC_x86_desktop)\delayimp.lib;..\..\utils\vgui\lib\win32_vc6\vgui.lib;..\..\lib\public\sdl2.lib;..\..\lib\public\OpenGL32.lib;..\..\lib\public\bass.lib;..\..\lib\public\bass_fx.lib</AdditionalDependencies>
+      <BaseAddress>
+      </BaseAddress>
+      <AdditionalOptions>/SAFESEH:NO /DELAYLOAD:bass.dll /DELAYLOAD:bass_fx.dll %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Post-Build Event</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cl_dll\aim_entity.cpp" />
+    <ClCompile Include="..\..\cl_dll\ammo.cpp" />
+    <ClCompile Include="..\..\cl_dll\ammohistory.cpp" />
+    <ClCompile Include="..\..\cl_dll\ammo_secondary.cpp" />
+    <ClCompile Include="..\..\cl_dll\battery.cpp" />
+    <ClCompile Include="..\..\cl_dll\cdll_int.cpp" />
+    <ClCompile Include="..\..\cl_dll\com_weapons.cpp" />
+    <ClCompile Include="..\..\cl_dll\counter.cpp" />
+    <ClCompile Include="..\..\cl_dll\death.cpp" />
+    <ClCompile Include="..\..\cl_dll\demo.cpp" />
+    <ClCompile Include="..\..\cl_dll\endcredits.cpp" />
+    <ClCompile Include="..\..\cl_dll\endscreen.cpp" />
+    <ClCompile Include="..\..\cl_dll\entity.cpp" />
+    <ClCompile Include="..\..\cl_dll\events.cpp" />
+    <ClCompile Include="..\..\cl_dll\ev_common.cpp" />
+    <ClCompile Include="..\..\cl_dll\ev_hldm.cpp" />
+    <ClCompile Include="..\..\cl_dll\flash.cpp" />
+    <ClCompile Include="..\..\cl_dll\flashlight.cpp" />
+    <ClCompile Include="..\..\cl_dll\gamemode_gui.cpp" />
+    <ClCompile Include="..\..\cl_dll\GameStudioModelRenderer.cpp" />
+    <ClCompile Include="..\..\cl_dll\game_log.cpp" />
+    <ClCompile Include="..\..\cl_dll\game_log_world.cpp" />
+    <ClCompile Include="..\..\cl_dll\geiger.cpp" />
+    <ClCompile Include="..\..\cl_dll\health.cpp" />
+    <ClCompile Include="..\..\cl_dll\hl\hl_baseentity.cpp" />
+    <ClCompile Include="..\..\cl_dll\hl\hl_events.cpp" />
+    <ClCompile Include="..\..\cl_dll\hl\hl_objects.cpp" />
+    <ClCompile Include="..\..\cl_dll\hl\hl_weapons.cpp" />
+    <ClCompile Include="..\..\cl_dll\hl_imgui.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_bench.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_benchtrace.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_msg.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_redraw.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_servers.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_spectator.cpp" />
+    <ClCompile Include="..\..\cl_dll\hud_update.cpp" />
+    <ClCompile Include="..\..\cl_dll\input.cpp" />
+    <ClCompile Include="..\..\cl_dll\inputw32.cpp" />
+    <ClCompile Include="..\..\cl_dll\interpolation.cpp" />
+    <ClCompile Include="..\..\cl_dll\in_camera.cpp" />
+    <ClCompile Include="..\..\cl_dll\menu.cpp" />
+    <ClCompile Include="..\..\cl_dll\message.cpp" />
+    <ClCompile Include="..\..\cl_dll\model_indexes.cpp" />
+    <ClCompile Include="..\..\cl_dll\painkiller.cpp" />
+    <ClCompile Include="..\..\cl_dll\player_info_window.cpp" />
+    <ClCompile Include="..\..\cl_dll\central_label.cpp" />
+    <ClCompile Include="..\..\cl_dll\random_gameplay_mods.cpp" />
+    <ClCompile Include="..\..\cl_dll\saytext.cpp" />
+    <ClCompile Include="..\..\cl_dll\score.cpp" />
+    <ClCompile Include="..\..\cl_dll\slowmotion.cpp" />
+    <ClCompile Include="..\..\cl_dll\soundmanager.cpp" />
+    <ClCompile Include="..\..\cl_dll\statusbar.cpp" />
+    <ClCompile Include="..\..\cl_dll\status_icons.cpp" />
+    <ClCompile Include="..\..\cl_dll\StudioModelRenderer.cpp" />
+    <ClCompile Include="..\..\cl_dll\studio_util.cpp" />
+    <ClCompile Include="..\..\cl_dll\subtitles.cpp" />
+    <ClCompile Include="..\..\cl_dll\text_message.cpp" />
+    <ClCompile Include="..\..\cl_dll\timer.cpp" />
+    <ClCompile Include="..\..\cl_dll\train.cpp" />
+    <ClCompile Include="..\..\cl_dll\tri.cpp" />
+    <ClCompile Include="..\..\cl_dll\util.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_ClassMenu.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_ControlConfigPanel.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_CustomObjects.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_int.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_MOTDWindow.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_SchemeManager.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_ScorePanel.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_ServerBrowser.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_SpectatorPanel.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_TeamFortressViewport.cpp" />
+    <ClCompile Include="..\..\cl_dll\vgui_teammenu.cpp" />
+    <ClCompile Include="..\..\cl_dll\view.cpp" />
+    <ClCompile Include="..\..\cl_dll\voice_status.cpp" />
+    <ClCompile Include="..\..\common\parsemsg.cpp" />
+    <ClCompile Include="..\..\dlls\chicken.cpp" />
+    <ClCompile Include="..\..\dlls\crossbow.cpp" />
+    <ClCompile Include="..\..\dlls\crowbar.cpp" />
+    <ClCompile Include="..\..\dlls\egon.cpp" />
+    <ClCompile Include="..\..\dlls\gauss.cpp" />
+    <ClCompile Include="..\..\dlls\handgrenade.cpp" />
+    <ClCompile Include="..\..\dlls\hornetgun.cpp" />
+    <ClCompile Include="..\..\dlls\ingram.cpp" />
+    <ClCompile Include="..\..\dlls\ingram_twin.cpp" />
+    <ClCompile Include="..\..\dlls\m249.cpp" />
+    <ClCompile Include="..\..\dlls\mp5.cpp" />
+    <ClCompile Include="..\..\dlls\python.cpp" />
+    <ClCompile Include="..\..\dlls\rpg.cpp" />
+    <ClCompile Include="..\..\dlls\satchel.cpp" />
+    <ClCompile Include="..\..\dlls\shotgun.cpp" />
+    <ClCompile Include="..\..\dlls\squeakgrenade.cpp" />
+    <ClCompile Include="..\..\dlls\tripmine.cpp" />
+    <ClCompile Include="..\..\dlls\wpn_shared\hl_wpn_glock.cpp" />
+    <ClCompile Include="..\..\dlls\wpn_shared\hl_wpn_glock_twin.cpp" />
+    <ClCompile Include="..\..\fmt\format.cc" />
+    <ClCompile Include="..\..\fmt\ostream.cc" />
+    <ClCompile Include="..\..\fmt\posix.cc" />
+    <ClCompile Include="..\..\fmt\printf.cc" />
+    <ClCompile Include="..\..\game_shared\custom_gamemode_config.cpp" />
+    <ClCompile Include="..\..\game_shared\custom_gamemode_record.cpp" />
+    <ClCompile Include="..\..\game_shared\fs_aux.cpp" />
+    <ClCompile Include="..\..\game_shared\gameplay_mod.cpp" />
+    <ClCompile Include="..\..\game_shared\gameplay_mod_definitions.cpp" />
+    <ClCompile Include="..\..\game_shared\sha1.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_checkbutton2.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_grid.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_helpers.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_listbox.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_loadtga.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_scrollbar2.cpp" />
+    <ClCompile Include="..\..\game_shared\vgui_slider2.cpp" />
+    <ClCompile Include="..\..\game_shared\voice_banmgr.cpp" />
+    <ClCompile Include="..\..\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\imgui\imgui_impl_sdl.cpp" />
+    <ClCompile Include="..\..\pm_shared\pm_debug.c" />
+    <ClCompile Include="..\..\pm_shared\pm_math.c" />
+    <ClCompile Include="..\..\pm_shared\pm_shared.c" />
+    <ClCompile Include="..\..\public\interface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cl_dll\aim_entity.h" />
+    <ClInclude Include="..\..\cl_dll\ammo.h" />
+    <ClInclude Include="..\..\cl_dll\ammohistory.h" />
+    <ClInclude Include="..\..\cl_dll\camera.h" />
+    <ClInclude Include="..\..\cl_dll\cl_dll.h" />
+    <ClInclude Include="..\..\cl_dll\cl_util.h" />
+    <ClInclude Include="..\..\cl_dll\com_weapons.h" />
+    <ClInclude Include="..\..\cl_dll\demo.h" />
+    <ClInclude Include="..\..\cl_dll\eventscripts.h" />
+    <ClInclude Include="..\..\cl_dll\ev_hldm.h" />
+    <ClInclude Include="..\..\cl_dll\flash.h" />
+    <ClInclude Include="..\..\cl_dll\gamemode_gui.h" />
+    <ClInclude Include="..\..\cl_dll\GameStudioModelRenderer.h" />
+    <ClInclude Include="..\..\cl_dll\health.h" />
+    <ClInclude Include="..\..\cl_dll\hl_imgui.h" />
+    <ClInclude Include="..\..\cl_dll\hud.h" />
+    <ClInclude Include="..\..\cl_dll\hud_servers.h" />
+    <ClInclude Include="..\..\cl_dll\hud_servers_priv.h" />
+    <ClInclude Include="..\..\cl_dll\hud_spectator.h" />
+    <ClInclude Include="..\..\cl_dll\interpolation.h" />
+    <ClInclude Include="..\..\cl_dll\in_defs.h" />
+    <ClInclude Include="..\..\cl_dll\kbutton.h" />
+    <ClInclude Include="..\..\cl_dll\model_indexes.h" />
+    <ClInclude Include="..\..\cl_dll\player_info_window.h" />
+    <ClInclude Include="..\..\cl_dll\soundmanager.h" />
+    <ClInclude Include="..\..\cl_dll\StudioModelRenderer.h" />
+    <ClInclude Include="..\..\cl_dll\subtitles.h" />
+    <ClInclude Include="..\..\cl_dll\tri.h" />
+    <ClInclude Include="..\..\cl_dll\util_vector.h" />
+    <ClInclude Include="..\..\cl_dll\vgui_ControlConfigPanel.h" />
+    <ClInclude Include="..\..\cl_dll\vgui_int.h" />
+    <ClInclude Include="..\..\cl_dll\vgui_SchemeManager.h" />
+    <ClInclude Include="..\..\cl_dll\vgui_ScorePanel.h" />
+    <ClInclude Include="..\..\cl_dll\vgui_ServerBrowser.h" />
+    <ClInclude Include="..\..\cl_dll\vgui_SpectatorPanel.h" />
+    <ClInclude Include="..\..\cl_dll\view.h" />
+    <ClInclude Include="..\..\cl_dll\wrect.h" />
+    <ClInclude Include="..\..\common\parsemsg.h" />
+    <ClInclude Include="..\..\fmt\container.h" />
+    <ClInclude Include="..\..\fmt\format.h" />
+    <ClInclude Include="..\..\fmt\ostream.h" />
+    <ClInclude Include="..\..\fmt\posix.h" />
+    <ClInclude Include="..\..\fmt\printf.h" />
+    <ClInclude Include="..\..\fmt\string.h" />
+    <ClInclude Include="..\..\fmt\time.h" />
+    <ClInclude Include="..\..\game_shared\argument.h" />
+    <ClInclude Include="..\..\game_shared\bass.h" />
+    <ClInclude Include="..\..\game_shared\bass_fx.h" />
+    <ClInclude Include="..\..\game_shared\cpp_aux.h" />
+    <ClInclude Include="..\..\game_shared\custom_gamemode_config.h" />
+    <ClInclude Include="..\..\game_shared\custom_gamemode_record.h" />
+    <ClInclude Include="..\..\game_shared\FontAwesome.h" />
+    <ClInclude Include="..\..\game_shared\fs_aux.h" />
+    <ClInclude Include="..\..\game_shared\gameplay_mod.h" />
+    <ClInclude Include="..\..\game_shared\sha1.h" />
+    <ClInclude Include="..\..\game_shared\shared_memory.h" />
+    <ClInclude Include="..\..\game_shared\vgui_scrollbar2.h" />
+    <ClInclude Include="..\..\game_shared\vgui_slider2.h" />
+    <ClInclude Include="..\..\game_shared\voice_banmgr.h" />
+    <ClInclude Include="..\..\game_shared\voice_status.h" />
+    <ClInclude Include="..\..\imgui\imconfig.h" />
+    <ClInclude Include="..\..\imgui\imgui.h" />
+    <ClInclude Include="..\..\imgui\imgui_impl_sdl.h" />
+    <ClInclude Include="..\..\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\imgui\stb_rect_pack.h" />
+    <ClInclude Include="..\..\imgui\stb_textedit.h" />
+    <ClInclude Include="..\..\imgui\stb_truetype.h" />
+    <ClInclude Include="..\..\pm_shared\pm_debug.h" />
+    <ClInclude Include="..\..\pm_shared\pm_defs.h" />
+    <ClInclude Include="..\..\pm_shared\pm_info.h" />
+    <ClInclude Include="..\..\pm_shared\pm_materials.h" />
+    <ClInclude Include="..\..\pm_shared\pm_movevars.h" />
+    <ClInclude Include="..\..\pm_shared\pm_shared.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\lib\public\game_controls.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
